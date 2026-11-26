@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>6-Month CA Rapid Revision (Part 1) — Repeated Revision Questions — Learn & Practice (White Theme)</title>
+<style>
+  :root {
+    --bg-page: #ffffff;
+    --bg-panel: #f9fafb;
+    --bg-card: #ffffff;
+    --border-light: #e5e7eb;
+    --border-strong: #d1d5db;
+    --text-main: #111827;
+    --text-sub: #4b5563;
+    --text-muted: #6b7280;
+    --primary: #1d4ed8;
+    --primary-soft: #eff6ff;
+    --primary-border: #bfdbfe;
+    --green-bg: #f0fdf4;
+    --green-border: #22c55e;
+    --green-text: #15803d;
+    --red-bg: #fef2f2;
+    --red-border: #ef4444;
+    --red-text: #b91c1c;
+    --amber-bg: #fffbeb;
+    --amber-border: #f59e0b;
+    --amber-text: #92400e;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background-color: var(--bg-page);
+    color: var(--text-main);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Arial, sans-serif;
+    line-height: 1.6;
+  }
+
+  header {
+    background-color: #ffffff;
+    border-bottom: 1px solid var(--border-light);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 14px 20px;
+  }
+
+  .header-wrap {
+    max-width: 1060px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .title-block h1 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--text-main);
+  }
+
+  .title-block p {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+  }
+
+  .tabs {
+    display: inline-flex;
+    background-color: var(--bg-panel);
+    border: 1px solid var(--border-light);
+    border-radius: 8px;
+    padding: 4px;
+    gap: 4px;
+  }
+
+  .tab-btn {
+    border: none;
+    background: transparent;
+    color: var(--text-sub);
+    font-size: 0.88rem;
+    font-weight: 600;
+    padding: 7px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.15s ease;
+  }
+
+  .tab-btn.active {
+    background-color: #ffffff;
+    color: var(--primary);
+    border: 1px solid var(--border-light);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
+  }
+
+  .main-container {
+    max-width: 1060px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .controls-bar {
+    background-color: var(--bg-panel);
+    border: 1px solid var(--border-light);
+    border-radius: 10px;
+    padding: 12px 16px;
+    margin-bottom: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .filter-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    flex: 1;
+  }
+
+  select, input[type="text"] {
+    background-color: #ffffff;
+    color: var(--text-main);
+    border: 1px solid var(--border-strong);
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 0.875rem;
+    outline: none;
+  }
+
+  select:focus, input[type="text"]:focus {
+    border-color: var(--primary);
+  }
+
+  input[type="text"] {
+    min-width: 230px;
+  }
+
+  .score-group {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.84rem;
+    font-weight: 600;
+  }
+
+  .pill {
+    background-color: #ffffff;
+    border: 1px solid var(--border-light);
+    border-radius: 999px;
+    padding: 4px 11px;
+    color: var(--text-sub);
+  }
+
+  .pill.green {
+    background-color: var(--green-bg);
+    border-color: var(--green-border);
+    color: var(--green-text);
+  }
+
+  .pill.red {
+    background-color: var(--red-bg);
+    border-color: var(--red-border);
+    color: var(--red-text);
+  }
+
+  .action-btn {
+    background-color: #ffffff;
+    color: var(--text-main);
+    border: 1px solid var(--border-strong);
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .action-btn:hover {
+    background-color: #f3f4f6;
+  }
+
+  .learn-subbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 14px;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+  }
+
+  .card {
+    background-color: #ffffff;
+    border: 1px solid var(--border-light);
+    border-radius: 10px;
+    padding: 18px 20px;
+    margin-bottom: 14px;
+  }
+
+  .card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    gap: 8px;
+  }
+
+  .badge-group {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .badge-num {
+    background-color: var(--primary-soft);
+    color: var(--primary);
+    border: 1px solid var(--primary-border);
+    font-size: 0.78rem;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 5px;
+  }
+
+  .badge-seq {
+    background-color: var(--bg-panel);
+    color: var(--text-sub);
+    border: 1px solid var(--border-light);
+    font-size: 0.74rem;
+    font-weight: 600;
+    padding: 2px 7px;
+    border-radius: 5px;
+  }
+
+  .badge-cat {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+
+  .question-text {
+    font-size: 1.02rem;
+    font-weight: 600;
+    color: var(--text-main);
+    margin-bottom: 12px;
+  }
+
+  .learn-answer-box {
+    display: inline-block;
+    background-color: var(--green-bg);
+    border: 1px solid #bbf7d0;
+    color: var(--green-text);
+    font-weight: 700;
+    font-size: 0.94rem;
+    padding: 6px 12px;
+    border-radius: 6px;
+    margin-bottom: 12px;
+  }
+
+  .learn-answer-box.blurred {
+    filter: blur(5px);
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .exam-points {
+    background-color: var(--amber-bg);
+    border: 1px solid #fde68a;
+    border-left: 4px solid var(--amber-border);
+    border-radius: 6px;
+    padding: 10px 14px;
+  }
+
+  .exam-points-heading {
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--amber-text);
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    margin-bottom: 4px;
+  }
+
+  .exam-points ul {
+    margin-left: 18px;
+    font-size: 0.88rem;
+    color: #374151;
+  }
+
+  .exam-points li {
+    margin-bottom: 3px;
+  }
+
+  .options-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 10px;
+  }
+
+  .option-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    text-align: left;
+    background-color: #ffffff;
+    border: 1.5px solid var(--border-light);
+    border-radius: 8px;
+    padding: 11px 14px;
+    font-size: 0.92rem;
+    font-weight: 500;
+    color: var(--text-main);
+    cursor: pointer;
+    transition: all 0.15s ease;
+  }
+
+  .option-btn:hover:not(:disabled) {
+    border-color: var(--primary);
+    background-color: var(--primary-soft);
+  }
+
+  .option-btn:disabled {
+    cursor: default;
+  }
+
+  .opt-circle {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: var(--bg-panel);
+    border: 1px solid var(--border-strong);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--text-sub);
+    flex-shrink: 0;
+  }
+
+  .option-btn.correct {
+    background-color: var(--green-bg);
+    border-color: var(--green-border);
+    color: var(--green-text);
+    font-weight: 700;
+  }
+
+  .option-btn.correct .opt-circle {
+    background-color: var(--green-border);
+    border-color: var(--green-border);
+    color: #ffffff;
+  }
+
+  .option-btn.wrong {
+    background-color: var(--red-bg);
+    border-color: var(--red-border);
+    color: var(--red-text);
+    font-weight: 600;
+  }
+
+  .option-btn.wrong .opt-circle {
+    background-color: var(--red-border);
+    border-color: var(--red-border);
+    color: #ffffff;
+  }
+
+  .answer-panel {
+    display: none;
+    margin-top: 14px;
+    padding-top: 14px;
+    border-top: 1px solid var(--border-light);
+    animation: slideDown 0.18s ease-out;
+  }
+
+  .answer-panel.visible {
+    display: block;
+  }
+
+  .result-banner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+
+  .result-pill {
+    font-size: 0.84rem;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 6px;
+  }
+
+  .result-pill.right {
+    background-color: var(--green-bg);
+    color: var(--green-text);
+    border: 1px solid var(--green-border);
+  }
+
+  .result-pill.wrong {
+    background-color: var(--red-bg);
+    color: var(--red-text);
+    border: 1px solid var(--red-border);
+  }
+
+  .correct-label {
+    font-size: 0.92rem;
+    font-weight: 700;
+    color: var(--text-main);
+  }
+
+  .correct-label span {
+    color: var(--green-text);
+  }
+
+  .hidden {
+    display: none !important;
+  }
+
+  .no-results {
+    text-align: center;
+    padding: 40px 20px;
+    border: 1px dashed var(--border-strong);
+    border-radius: 10px;
+    color: var(--text-muted);
+  }
+
+  @keyframes slideDown {
+    from { opacity: 0; transform: translateY(-4px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @media (max-width: 640px) {
+    .header-wrap { flex-direction: column; align-items: flex-start; }
+    .options-list { grid-template-columns: 1fr; }
+    input[type="text"] { width: 100%; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-wrap">
+    <div class="title-block">
+      <h1>6-Month CA Rapid Revision (Part 1) — Repeated Revision Questions (34 Questions)</h1>
+      <p>Pradeep Sir Session (English) | Questions Overlapping with Previous 8 HTML Files</p>
+    </div>
+    <div class="tabs">
+      <button class="tab-btn active" id="btn-learn" onclick="setMode('learn')">📖 Learn Mode</button>
+      <button class="tab-btn" id="btn-practice" onclick="setMode('practice')">✍️ Practice MCQs</button>
+    </div>
+  </div>
+</header>
+
+<div class="main-container">
+  <div class="controls-bar">
+    <div class="filter-group">
+      <select id="catSelect" onchange="render()">
+        <option value="ALL">All Categories (34)</option>
+      </select>
+      <input type="text" id="searchBox" placeholder="Search question, answer, or extra points..." oninput="render()">
+    </div>
+    <div class="score-group">
+      <span class="pill">Attempted: <span id="cnt-attempted">0</span>/34</span>
+      <span class="pill green">Correct: <span id="cnt-correct">0</span></span>
+      <span class="pill red">Wrong: <span id="cnt-wrong">0</span></span>
+      <button class="action-btn" onclick="resetAll()">Reset Practice</button>
+    </div>
+  </div>
+
+  <div class="learn-subbar" id="learnSubbar">
+    <span id="showingCount">Showing 34 questions</span>
+    <button class="action-btn" id="blurBtn" onclick="toggleBlur()">👁️ Hide Answers (Self-Test)</button>
+  </div>
+
+  <div id="cardsContainer"></div>
+</div>
+
+<script>
+const QUESTIONS = [{"id": 1, "video_q": 2, "cat": "Government Schemes & Initiatives", "q": "Consider the following statements regarding the PM SVANidhi scheme: (1) Launched in June 2020; (2) Extended up to March 2030 (slide tested March 2028 as incorrect); (3) Implemented by MoHUA; (4) Provides working capital loans to street vendors. Which statements are correct?", "opts": ["2, 3, and 4 only", "1 and 2 only", "1, 3, and 4 only (Extended up to March 2030)", "All 1, 2, 3, and 4"], "ans": 2, "p1": "Repeated From Previous Sources: Priya Ma'am 6M GA (New) Q.8 — PM SVANidhi scheme extended up to 31 March 2030 & implemented by MoHUA.", "p2": "Exam Fact: Implemented by the Ministry of Housing and Urban Affairs (MoHUA) to provide collateral-free working capital loans to urban street vendors."}, {"id": 2, "video_q": 7, "cat": "Infrastructure, Ports & Energy", "q": "Regarding Pradhan Mantri Surya Sarovar Yojana (floating solar capacity): (1) Total outlay is ₹5,070 crore; (2) Target capacity is 5,000 MW (not 10,000 MW); (3) Implementation period is 2027–2031; (4) Implemented by MNRE. Which statements are correct?", "opts": ["All 1, 2, 3, and 4", "1 and 2 only", "2 and 4 only", "1, 3, and 4 only (Target is 5,000 MW)"], "ans": 3, "p1": "Repeated From Previous Sources: Priya Ma'am 6M GA (New) Q.74 — Pradhan Mantri Surya Sarovar Yojana total outlay of ₹5,070 crore.", "p2": "Exam Fact: Implemented by the Ministry of New and Renewable Energy (MNRE) from 2027 to 2031 with an outlay of ₹5,070 crore."}, {"id": 3, "video_q": 8, "cat": "National & State Affairs", "q": "Who inaugurated the 5-day 'First North-East Wari Leeba Festival' held in Imphal West, Manipur?", "opts": ["Ajay Kumar Bhalla (Governor of Manipur)", "N. Biren Singh", "Lakshman Prasad Acharya", "Kiren Rijiju"], "ans": 0, "p1": "Repeated From Previous Sources: Priya Ma'am 6M GA (New) Q.1 — Sikkim was the 15th state to receive President's Police Colour (Manipur Governor Ajay Kumar Bhalla).", "p2": "Exam Fact: Celebrates traditional storytelling, folk arts, and cultural heritage of Manipur and the North-East."}, {"id": 4, "video_q": 9, "cat": "Banking, Finance & Regulatory", "q": "The Bankers' Books Evidence Act, 2026 (effective 1 October 2026) replaced the colonial-era Bankers' Books Evidence Act of which year?", "opts": ["1881", "1891", "1934", "1949"], "ans": 1, "p1": "Repeated From Previous Sources: Priya Ma'am 6M GA (New) Q.153 — Bankers' Books Evidence Act effective from 1 October 2026.", "p2": "Exam Fact: Recognizes cloud-based, API-authenticated, and digital banking records as primary admissible evidence in courts."}, {"id": 5, "video_q": 11, "cat": "Government Schemes & Initiatives", "q": "In August 2026, the Union Cabinet approved the continuation of PM-KISAN from FY 2026–27 to FY 2030–31 with what total 5-year budget allocation?", "opts": ["₹5.00 lakh crore", "₹2.50 lakh crore", "₹4.47 lakh crore", "₹3.15 lakh crore"], "ans": 3, "p1": "Repeated From Previous Sources: Banking Awareness PDF (New) Q.78 & Priya Ma'am 6M GA (New) Q.71 — PM-KISAN ₹6,000/year in 3 installments.", "p2": "Exam Fact: PM-KISAN is a 100% Central Sector Scheme providing ₹6,000/year in three equal installments of ₹2,000."}, {"id": 6, "video_q": 12, "cat": "Polity, Bills & Governance", "q": "Regarding 'Vande Mataram' & Prevention of Insults to National Honour (Amendment) Bill, 2026: (1) Section 3 of the 1971 Act was amended; (2) Penalty is up to 3 years imprisonment (not 7 years); (3) Composed by Bankim Chandra Chattopadhyay in 1875; (4) First sung by Rabindranath Tagore in 1896 (not 1911). Which statements are correct?", "opts": ["1 and 3 only (Penalty up to 3 years; first sung in 1896)", "1, 2, and 3 only", "2 and 4 only", "All 1, 2, 3, and 4"], "ans": 0, "p1": "Repeated From Previous Sources: Priya Ma'am 6M GA (New) Q.50 & Q.221 — Vande Mataram composed by Bankim Chandra Chattopadhyay.", "p2": "Exam Fact: Vande Mataram was written in 1875 and published in Bankim Chandra Chattopadhyay's novel 'Anandamath' (1882)."}, {"id": 7, "video_q": 15, "cat": "Government Schemes & Initiatives", "q": "What is the duration (in weeks) of the 'Nasha Mukt Yuva for Viksit Bharat Sankalp Abhiyan' launched by PM Narendra Modi in August 2026?", "opts": ["150 weeks", "52 weeks", "75 weeks", "100 weeks"], "ans": 3, "p1": "Repeated From Previous Sources: Priya Ma'am 6M GA (New) Q.88 — Nasha Mukt Bharat Abhiyaan target year 2029.", "p2": "Exam Fact: Reinforces the Nasha Mukt Bharat Abhiyaan target of making India drug-free by 2029."}, {"id": 8, "video_q": 17, "cat": "Infrastructure, Ports & Energy", "q": "Regarding the 'WT-MART' portal launched in June 2026: (1) Full form: Wind Turbine Materials and Resources Tracker; (2) Launched at the Global Wind Conference in Goa; (3) India targets 100 GW wind capacity by 2030 (not 2035); (4) Solar DCR portal was also launched alongside it. Which statements are correct?", "opts": ["1 and 2 only", "1, 2, and 4 only (100 GW wind target is by 2030)", "2 and 3 only", "All 1, 2, 3, and 4"], "ans": 1, "p1": "Repeated From Previous Sources: Priya Ma'am 6M GA (New) Q.40 & Q.41 — WPI & PPI base year 2022–23 and 5-year transition.", "p2": "Exam Fact: WT-MART is India's first wind turbine supply chain management portal."}, {"id": 9, "video_q": 19, "cat": "Environment, Parks & GI Tags", "q": "Regarding new Ramsar Sites announced in October 2026: (1) Sukhna Wetland is in UT of Chandigarh; (2) Sarsai Nawar / Sahj Jheel is in Uttar Pradesh (not Madhya Pradesh); (3) Total Ramsar sites in India reached 103. Which statements are correct?", "opts": ["All 1, 2, and 3", "1 and 2 only", "2 and 3 only", "1 and 3 only (Sahj Jheel is in Uttar Pradesh)"], "ans": 3, "p1": "Repeated From Previous Sources: Priya Ma'am 6M GA (New) Q.64 & Q.75 — India's total Ramsar sites reached 103.", "p2": "Exam Fact: Tamil Nadu holds the highest number of Ramsar sites in India (20 sites)."}, {"id": 10, "video_q": 20, "cat": "Economy & Agriculture", "q": "For the 2027–28 Rabi Marketing Season, the Cabinet Committee on Economic Affairs (CCEA) approved the highest absolute MSP increase (₹675 per quintal, +10.3%) for which crop?", "opts": ["Safflower", "Wheat", "Mustard / Rapeseed", "Lentil (Masur)"], "ans": 0, "p1": "Repeated From Previous Sources: Banking Awareness PDF (New) Q.15 & Q.16 — MSP (Minimum Support Price) for Rabi crops.", "p2": "Exam Fact: CACP (Commission for Agricultural Costs and Prices) recommends MSP for 22 mandated crops plus FRP for sugarcane."}, {"id": 11, "video_q": 21, "cat": "Science, Space & Environment", "q": "The 'Semicon India 2.0' portal launched by MeitY aims to support at least how many chip design startup companies?", "opts": ["100", "200", "150", "250"], "ans": 1, "p1": "Repeated From Previous Sources: Priya Ma'am 6M GA (New) Q.137 & Q.146 — Semicon India 2.0 portal launched by MeitY.", "p2": "Exam Fact: MeitY is headed by Union Minister Ashwini Vaishnaw."}, {"id": 12, "video_q": 23, "cat": "Environment, Parks & GI Tags", "q": "Which institute in Bhopal implements 'PRAMAAN' under the Indian Forest and Wood Certification Scheme (IFWCS)?", "opts": ["Indian Council of Forestry Research and Education (ICFRE)", "Forest Research Institute (FRI), Dehradun", "Wildlife Institute of India (WII), Dehradun", "Indian Institute of Forest Management (IIFM), Bhopal"], "ans": 3, "p1": "Repeated From Previous Sources: Priya Ma'am 6M GA (New) Q.254 — PRAMAAN under Indian Forest & Wood Certification Scheme (IFWCS).", "p2": "Exam Fact: PRAMAAN certifies sustainable forest management and agroforestry timber products."}, {"id": 13, "video_q": 26, "cat": "Polity, Bills & Governance", "q": "What is the primary purpose of the dedicated portal launched by Union Home Minister Amit Shah alongside the 'PRAHAAR' Counter-Terrorism Policy?", "opts": ["Monitoring coastal fishing vessel transponders", "Issuing digital arms licenses to state police", "Tracking and accelerating extradition of fugitives abroad", "Managing border road construction tenders"], "ans": 2, "p1": "Repeated From Previous Sources: Priya Ma'am 6M GA (New) Q.255 — PRAHAAR Counter-Terrorism Policy inaugurated by Union Home Minister Amit Shah.", "p2": "Exam Fact: PRAHAAR establishes India's unified counter-terrorism policy doctrine."}, {"id": 14, "video_q": 31, "cat": "Polity, Bills & Governance", "q": "Regarding DILRMP 3.0 (September 2026): (1) Outlay is ₹565.5 crore for 2026–31; (2) 100% centrally funded; (3) ULPIN is called Bhu-Aadhaar (not Bhu-Naksha); (4) Integrated GIS-based land stack. Which statements are correct?", "opts": ["All 1, 2, 3, and 4", "1 and 3 only", "2 and 3 only", "1, 2, and 4 only (ULPIN is called Bhu-Aadhaar)"], "ans": 3, "p1": "Repeated From Previous Sources: Priya Ma'am 6M GA (New) Q.205 — Centrally Sponsored Scheme tenure FY 2026–27 to FY 2030–31.", "p2": "Exam Fact: DILRMP stands for Digital India Land Records Modernization Programme under the Ministry of Rural Development."}, {"id": 15, "video_q": 36, "cat": "Science, Space & Environment", "q": "In October 2026, the Defence Acquisition Council (DAC) accorded Acceptance of Necessity (AoN) for capital acquisition proposals worth what amount?", "opts": ["₹2.12 lakh crore", "₹1.45 lakh crore", "₹3.25 lakh crore", "₹85,000 crore"], "ans": 0, "p1": "Repeated From Previous Sources: Priya Ma'am 6M GA (New) Q.12 & Q.13 — Defence procurement & ₹3.25 lakh crore Rafale deal.", "p2": "Exam Fact: The Defence Acquisition Council (DAC) is chaired by the Union Minister of Defence (Rajnath Singh)."}, {"id": 16, "video_q": 39, "cat": "Polity, Bills & Governance", "q": "Regarding Registration of Births and Deaths Rules, 2026: (1) Effective from 1 October 2026; (2) Must generally be reported within 21 days; (3) Notified by Registrar General of India (not Chief Election Commissioner); (4) Late registration beyond 1 year requires Magistrate's order. Which statements are correct?", "opts": ["All 1, 2, 3, and 4", "1 and 3 only", "2 and 3 only", "1, 2, and 4 only (Notified by Registrar General of India)"], "ans": 3, "p1": "Repeated From Previous Sources: Priya Ma'am 6M GA (New) Q.125 & Q.153 — Effective date 1 October 2026.", "p2": "Exam Fact: Digital birth certificates serve as a single conclusive proof of date and place of birth for educational, passport, and electoral purposes."}, {"id": 17, "video_q": 44, "cat": "Government Schemes & Initiatives", "q": "Regarding Pradhan Mantri Viksit Gram Swaraj Yojana (approved October 2026): (1) Outlay is ₹7,395.55 crore; (2) It is a Centrally Sponsored Scheme (not Central Sector); (3) Covers 2.55 lakh Panchayats & traditional local bodies; (4) Period is FY 2027–31. Which statements are correct?", "opts": ["1, 3, and 4 only (It is a Centrally Sponsored Scheme)", "1 and 2 only", "2 and 3 only", "All 1, 2, 3, and 4"], "ans": 0, "p1": "Repeated From Previous Sources: Priya Ma'am 6M GA (New) Q.205 — Pradhan Mantri Viksit Gram Swaraj Yojana (Centrally Sponsored Scheme).", "p2": "Exam Fact: Strengthens capacity building and digital infrastructure across 2.55 lakh Gram Panchayats."}, {"id": 18, "video_q": 48, "cat": "Environment, Parks & GI Tags", "q": "Regarding Suraha Tal (India's 100th Ramsar Site): (1) Located in Ballia district, UP; (2) Officially known as Jai Prakash Narayan Bird Sanctuary; (3) It is the 13th Ramsar site of Uttar Pradesh (not 10th); (4) Ramsar Convention was signed in 1971 (not 1975). Which statements are correct?", "opts": ["1 and 2 only (13th Ramsar site of UP; Ramsar Convention signed in 1971)", "1, 2, and 3 only", "2 and 4 only", "All 1, 2, 3, and 4"], "ans": 0, "p1": "Repeated From Previous Sources: Priya Ma'am 6M GA (New) Q.22 & Q.23 — Suraha Tal (Jai Prakash Narayan Bird Sanctuary) in Ballia, UP as India's 100th Ramsar Site.", "p2": "Exam Fact: India acceded to the Ramsar Convention in 1982."}, {"id": 19, "video_q": 49, "cat": "Banking, Finance & Regulatory", "q": "Which two Union Territories became the first to operationalize CBDC-based Direct Benefit Transfer (DBT) for beneficiaries under PM Garib Kalyan Anna Yojana via QR/OTP?", "opts": ["Delhi and Puducherry", "Chandigarh and Dadra & Nagar Haveli and Daman & Diu", "Ladakh and Jammu & Kashmir", "Lakshadweep and Andaman & Nicobar Islands"], "ans": 1, "p1": "Repeated From Previous Sources: Priya Ma'am 6M GA (New) Q.80 — CBDC-based DBT rollout under PM Garib Kalyan Anna Yojana in Chandigarh.", "p2": "Exam Fact: Uses RBI's retail Central Bank Digital Currency (e₹-R) redeemable via QR code or OTP."}, {"id": 20, "video_q": 50, "cat": "Government Schemes & Initiatives", "q": "Under which adult literacy programme was Lakshadweep declared a 100% literate Union Territory (requiring ≥95% literacy benchmark)?", "opts": ["Padhna Likhna Abhiyan", "Saakshar Bharat Mission", "ULLAS (Nav Bharat Saaksharta Karyakram)", "NIPUN Bharat Mission"], "ans": 2, "p1": "Repeated From Previous Sources: Priya Ma'am 6M GA (New) Q.88 — Lakshadweep 100% literate UT under ULLAS.", "p2": "Exam Fact: Ladakh was the first UT and Mizoram was the first full state declared functionally literate (≥95%) under ULLAS."}, {"id": 21, "video_q": 51, "cat": "Government Schemes & Initiatives", "q": "Regarding the expanded GOBARdhan Scheme (August 2026): (1) Outlay is ₹23,731 crore; (2) Nodal ministry for CBG/biogas production scale-up noted as Ministry of Petroleum & Natural Gas (alongside Jal Shakti sanitation component); (3) 10-year horizon (2027–2036); (4) Aims to increase Compressed Biogas (CBG) production 10-fold. Which statements are correct?", "opts": ["All 1, 2, 3, and 4", "1 and 2 only", "2 and 3 only", "1, 3, and 4 only (CBG scale-up anchored under Petroleum & Natural Gas)"], "ans": 3, "p1": "Repeated From Previous Sources: Banking Awareness PDF (New) Q.76 & Priya Ma'am 6M GA (New) Q.71 — GOBARdhan scheme (Galvanizing Organic Bio-Agro Resources Dhan).", "p2": "Exam Fact: GOBARdhan stands for Galvanizing Organic Bio-Agro Resources Dhan (originally launched in 2018)."}, {"id": 22, "video_q": 52, "cat": "International & Summits", "q": "Regarding India's candidature for a UNSC non-permanent seat for the 2028–29 term: (1) Campaign theme is 'Shanti'; (2) India competes in the Asia-Pacific Group (endorsing Tajikistan); (3) Election is scheduled for June 2027 (not December); (4) India has previously served 8 terms on the UNSC (not 5). Which statements are correct?", "opts": ["1 and 2 only (Election in June 2027; India served 8 prior terms)", "1, 2, and 3 only", "2 and 4 only", "All 1, 2, 3, and 4"], "ans": 0, "p1": "Repeated From Previous Sources: Priya Ma'am 6M GA (New) Q.16, Q.17 & Q.18 — UNSC non-permanent membership & India's 8 terms.", "p2": "Exam Fact: If elected, 2028–29 will be India's 9th term as a non-permanent member of the UN Security Council."}, {"id": 23, "video_q": 56, "cat": "Polity, Bills & Governance", "q": "Who was appointed Chairperson of the 31-member Joint Parliamentary Committee (21 Lok Sabha + 10 Rajya Sabha) constituted in September 2026 to examine the FCRA Amendment Bill, 2026?", "opts": ["Sanjay Jaiswal", "Om Birla", "P. P. Chaudhary", "Bhartruhari Mahtab"], "ans": 0, "p1": "Repeated From Previous Sources: Priya Ma'am 6M GA (New) Q.58 — Lok Sabha Speaker Om Birla & Parliamentary Committees.", "p2": "Exam Fact: FCRA stands for Foreign Contribution (Regulation) Act, administered by the Ministry of Home Affairs."}, {"id": 24, "video_q": 57, "cat": "Government Schemes & Initiatives", "q": "Regarding Street Food Hubs under PM SVANidhi: (1) Lakhanpur (Kathua district, J&K) was the first town selected; (2) Financial assistance is ₹4 crore per hub (not ₹10 crore); (3) Up to 50 street food hubs planned across India; (4) Jointly implemented by MoHUA, Ministry of Tourism, and FSSAI. Which statements are correct?", "opts": ["1 and 2 only", "1, 3, and 4 only (Financial assistance is ₹4 crore per hub)", "2 and 3 only", "All 1, 2, 3, and 4"], "ans": 1, "p1": "Repeated From Previous Sources: Priya Ma'am 6M GA (New) Q.54 — Lakhanpur (Kathua district, J&K) selected for PM SVANidhi Street Food Hub.", "p2": "Exam Fact: FSSAI (Food Safety and Standards Authority of India) was established under the Food Safety and Standards Act, 2006."}, {"id": 25, "video_q": 60, "cat": "Environment, Parks & GI Tags", "q": "Regarding 'Mission Golden Spice' (July 2026): (1) Promotes GI-tagged Lakadong Turmeric of Meghalaya; (2) Known for HIGH curcumin content (not low); (3) Grown in Jaintia Hills; (4) Implemented in 2 phases. Which statements are correct?", "opts": ["1, 3, and 4 only (Known for HIGH curcumin content)", "1 and 2 only", "2 and 3 only", "All 1, 2, 3, and 4"], "ans": 0, "p1": "Repeated From Previous Sources: Priya Ma'am 6M GA (New) Q.61 & Q.62 — Mission Golden Spice promoting GI-tagged Lakadong Turmeric of Meghalaya.", "p2": "Exam Fact: Total project outlay is ₹175.45 crore."}, {"id": 26, "video_q": 64, "cat": "Government Schemes & Initiatives", "q": "What benefit does Kerala's 'Priyadarshini Scheme' (launched in 2026) provide?", "opts": ["Free bus travel for women and transgender persons", "Interest-free education loans for girl students", "Subsidized electric scooters for working women", "Monthly pension for elderly widows"], "ans": 0, "p1": "Repeated From Previous Sources: Priya Ma'am 6M GA (New) Q.33 — VISTAR scheme & 8th Economic Census.", "p2": "Exam Fact: Similar to Tamil Nadu's Vidiyal Payanam Thittam and Karnataka's Shakti scheme."}, {"id": 27, "video_q": 66, "cat": "Science, Space & Environment", "q": "Which company is leading the consortium selected by IN-SPACe in August 2026 to build India's first fully commercial Earth Observation (EO) satellite constellation?", "opts": ["Agnikul Cosmos", "Dhruva Space", "Pixxel Space India", "Satellize"], "ans": 2, "p1": "Repeated From Previous Sources: Priya Ma'am 6M GA (New) Q.91 — Cheetahs in Kuno National Park (Madhya Pradesh).", "p2": "Exam Fact: IN-SPACe (Indian National Space Promotion and Authorisation Centre) is headquartered in Ahmedabad, Gujarat."}, {"id": 28, "video_q": 67, "cat": "Infrastructure, Ports & Energy", "q": "Regarding India's Green Hydrogen Certification Portal (MNRE): (1) Hydrogen is classified as 'Green' if well-to-gate emissions do not exceed 2 kg CO2 equivalent per kg of H2; (2) Portal became operational from 1 July 2026 (not April); (3) Manages MRV (Measurement, Reporting, and Verification) and certification. Which statements are correct?", "opts": ["All 1, 2, and 3", "1 and 2 only", "2 and 3 only", "1 and 3 only (Portal operational from 1 July 2026)"], "ans": 3, "p1": "Repeated From Previous Sources: Priya Ma'am 6M GA (New) Q.87 — Mission Rangeen Machhli 2031 launched at Agatti, Lakshadweep.", "p2": "Exam Fact: Part of the National Green Hydrogen Mission (outlay ₹19,744 crore, targeting 5 MMT annual production by 2030)."}, {"id": 29, "video_q": 69, "cat": "Government Schemes & Initiatives", "q": "Regarding MoHUA's 'PRAGATI-50' initiative: (1) Develops 50 clean role-model cities under SBM-Urban 2.0; (2) Spread across 24 States/UTs (not 18); (3) Swachh Bharat Test Bed Innovation Centre is in Durgapur; (4) Partnered with IIT Kanpur (not IIT Madras). Which statements are correct?", "opts": ["1, 2, and 3 only", "1 and 3 only (Spread across 24 States; partnered with IIT Kanpur)", "2 and 4 only", "All 1, 2, 3, and 4"], "ans": 1, "p1": "Repeated From Previous Sources: Priya Ma'am 6M GA (New) Q.168 & Q.184 — Fast Track Special Courts (FTSC) expanded from 779 to 850.", "p2": "Exam Fact: Accelerates scientific solid waste management and circular economy practices in urban India."}, {"id": 30, "video_q": 72, "cat": "Polity, Bills & Governance", "q": "Regarding the extended Fast Track Special Courts (FTSC) scheme (approved November 2026): (1) Outlay is ₹3,788.04 crore; (2) Extended till 31 March 2031; (3) Funded from Nirbhaya Fund (not PM CARES); (4) Functional courts expanded from 779 to 850 (not 1,023). Which statements are correct?", "opts": ["1 and 2 only (Funded via Nirbhaya Fund; expanded to 850 courts)", "1, 2, and 3 only", "2 and 4 only", "All 1, 2, 3, and 4"], "ans": 0, "p1": "Repeated From Previous Sources: Priya Ma'am 6M GA (New) Q.155 — EPFO mandatory wage ceiling raised from ₹15,000 to ₹25,000/month.", "p2": "Exam Fact: Originally launched in October 2019 for expeditious trial of sexual offence cases."}, {"id": 31, "video_q": 73, "cat": "Environment, Parks & GI Tags", "q": "In which Indian state was the new lizard species 'Mesalina bishnoii' (named in honor of the Bishnoi community) discovered by ZSI?", "opts": ["Gujarat", "Rajasthan", "Haryana", "Madhya Pradesh"], "ans": 1, "p1": "Repeated From Previous Sources: Priya Ma'am 6M GA (New) Q.52 & Q.53 — NABARD launched Gramodyam on 45th Foundation Day targeting 4,000 rural entrepreneurs.", "p2": "Exam Fact: Named after the Bishnoi community of Rajasthan, renowned for centuries of wildlife and desert ecosystem conservation."}, {"id": 32, "video_q": 78, "cat": "Environment, Parks & GI Tags", "q": "From which district of Rajasthan did a male cheetah (KP-4) stray before being safely rescued and translocated back to Kuno National Park?", "opts": ["Kota", "Sawai Madhopur", "Baran", "Jhalawar"], "ans": 2, "p1": "Repeated From Previous Sources: Priya Ma'am 6M GA (New) Q.106 — Centres of Excellence for Classical Languages (Assamese, Bengali, Marathi, Pali, Prakrit).", "p2": "Exam Fact: Kuno National Park and Gandhi Sagar Sanctuary together form the Kuno–Gandhi Sagar cheetah landscape."}, {"id": 33, "video_q": 80, "cat": "Banking, Finance & Regulatory", "q": "What percentage share of Adjusted Gross Revenue (AGR) did TRAI propose as the license/authorization fee for satellite communication service providers?", "opts": ["8%", "4%", "5%", "10%"], "ans": 0, "p1": "Repeated From Previous Sources: Priya Ma'am 6M GA (New) Q.33 — VISTAR scheme outlay & statistical modernization.", "p2": "Exam Fact: Governs LEO/MEO satellite broadband providers under the Telecommunications Act, 2023."}, {"id": 34, "video_q": 89, "cat": "Science, Space & Environment", "q": "Phase-2 of the Biomedical Research Career Programme (BRCP), launched in July 2026 with a ₹1,500 crore outlay, is implemented by DBT in partnership with which organization?", "opts": ["Bill & Melinda Gates Foundation", "Wellcome Trust (UK)", "World Health Organization (WHO)", "Rockefeller Foundation"], "ans": 1, "p1": "Repeated From Previous Sources: Priya Ma'am 6M GA (New) Q.241 — Chief Justice of India Justice Surya Kant.", "p2": "Exam Fact: Supports world-class biomedical and clinical health fellowships in India."}];
+
+let mode = 'learn';
+let hideAnswers = false;
+let userAnswers = {};
+
+function setup() {
+  const select = document.getElementById('catSelect');
+  const uniqueCats = [...new Set(QUESTIONS.map(q => q.cat))];
+  uniqueCats.forEach(cat => {
+    const count = QUESTIONS.filter(q => q.cat === cat).length;
+    const option = document.createElement('option');
+    option.value = cat;
+    option.textContent = `${cat} (${count})`;
+    select.appendChild(option);
+  });
+  refreshStats();
+  render();
+}
+
+function setMode(newMode) {
+  mode = newMode;
+  document.getElementById('btn-learn').classList.toggle('active', mode === 'learn');
+  document.getElementById('btn-practice').classList.toggle('active', mode === 'practice');
+  document.getElementById('blurBtn').classList.toggle('hidden', mode !== 'learn');
+  render();
+}
+
+function toggleBlur() {
+  hideAnswers = !hideAnswers;
+  document.getElementById('blurBtn').textContent = hideAnswers
+    ? '👁️ Show All Answers'
+    : '👁️ Hide Answers (Self-Test)';
+  render();
+}
+
+function getFilteredList() {
+  const cat = document.getElementById('catSelect').value;
+  const term = document.getElementById('searchBox').value.trim().toLowerCase();
+
+  return QUESTIONS.filter(item => {
+    if (cat !== 'ALL' && item.cat !== cat) return false;
+    if (!term) return true;
+    return (
+      item.q.toLowerCase().includes(term) ||
+      item.opts.some(o => o.toLowerCase().includes(term)) ||
+      item.p1.toLowerCase().includes(term) ||
+      item.p2.toLowerCase().includes(term) ||
+      String(item.video_q).includes(term)
+    );
+  });
+}
+
+function render() {
+  const list = getFilteredList();
+  document.getElementById('showingCount').textContent = `Showing ${list.length} question${list.length === 1 ? '' : 's'}`;
+  const container = document.getElementById('cardsContainer');
+
+  if (list.length === 0) {
+    container.innerHTML = `<div class="no-results">No questions match your filter. Clear search or switch category.</div>`;
+    return;
+  }
+
+  container.innerHTML = list
+    .map(item => (mode === 'learn' ? buildLearnCard(item) : buildPracticeCard(item)))
+    .join('');
+}
+
+function buildLearnCard(item) {
+  const answerText = item.opts[item.ans];
+  const blurClass = hideAnswers ? 'blurred' : '';
+  return `
+    <div class="card">
+      <div class="card-top">
+        <div class="badge-group">
+          <span class="badge-num">Q.${item.id}</span>
+          <span class="badge-seq">Video #${item.video_q}</span>
+        </div>
+        <span class="badge-cat">${item.cat}</span>
+      </div>
+      <div class="question-text">${item.q}</div>
+      <div class="learn-answer-box ${blurClass}" onclick="this.classList.remove('blurred')" title="Click to reveal answer">
+        ✓ Answer: ${answerText}
+      </div>
+      <div class="exam-points">
+        <div class="exam-points-heading">📌 2 Exam-Related Extra Points</div>
+        <ul>
+          <li>${item.p1}</li>
+          <li>${item.p2}</li>
+        </ul>
+      </div>
+    </div>
+  `;
+}
+
+function buildPracticeCard(item) {
+  const record = userAnswers[item.id];
+  const isAnswered = record !== undefined;
+  const letters = ['A', 'B', 'C', 'D'];
+
+  const optsMarkup = item.opts
+    .map((opt, idx) => {
+      let cls = '';
+      if (isAnswered) {
+        if (idx === item.ans) cls = 'correct';
+        else if (idx === record.picked && !record.correct) cls = 'wrong';
+      }
+      return `
+        <button class="option-btn ${cls}" ${isAnswered ? 'disabled' : ''} onclick="selectOption(${item.id}, ${idx})">
+          <span class="opt-circle">${letters[idx]}</span>
+          <span>${opt}</span>
+        </button>
+      `;
+    })
+    .join('');
+
+  const bannerMarkup = isAnswered
+    ? record.correct
+      ? `<span class="result-pill right">✓ Correct!</span>`
+      : `<span class="result-pill wrong">✕ Wrong Answer</span>`
+    : '';
+
+  return `
+    <div class="card" id="card-${item.id}">
+      <div class="card-top">
+        <div class="badge-group">
+          <span class="badge-num">Q.${item.id}</span>
+          <span class="badge-seq">Video #${item.video_q}</span>
+        </div>
+        <span class="badge-cat">${item.cat}</span>
+      </div>
+      <div class="question-text">${item.q}</div>
+      <div class="options-list">
+        ${optsMarkup}
+      </div>
+      <div class="answer-panel ${isAnswered ? 'visible' : ''}" id="panel-${item.id}">
+        <div class="result-banner">
+          ${bannerMarkup}
+          <div class="correct-label">Correct Answer: <span>${letters[item.ans]}. ${item.opts[item.ans]}</span></div>
+        </div>
+        <div class="exam-points">
+          <div class="exam-points-heading">📌 2 Exam-Related Extra Points</div>
+          <ul>
+            <li>${item.p1}</li>
+            <li>${item.p2}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+function selectOption(qId, pickedIdx) {
+  if (userAnswers[qId] !== undefined) return;
+  const item = QUESTIONS.find(q => q.id === qId);
+  if (!item) return;
+
+  userAnswers[qId] = {
+    picked: pickedIdx,
+    correct: pickedIdx === item.ans
+  };
+
+  refreshStats();
+  const cardEl = document.getElementById(`card-${qId}`);
+  if (cardEl) {
+    cardEl.outerHTML = buildPracticeCard(item);
+  }
+}
+
+function refreshStats() {
+  const keys = Object.keys(userAnswers);
+  const attempted = keys.length;
+  const correct = keys.filter(k => userAnswers[k].correct).length;
+  const wrong = attempted - correct;
+
+  document.getElementById('cnt-attempted').textContent = attempted;
+  document.getElementById('cnt-correct').textContent = correct;
+  document.getElementById('cnt-wrong').textContent = wrong;
+}
+
+function resetAll() {
+  userAnswers = {};
+  refreshStats();
+  render();
+}
+
+setup();
+</script>
+</body>
+</html>

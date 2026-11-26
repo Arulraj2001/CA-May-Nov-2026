@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Static GK Master Revision (Verified) — SBI & IBPS Mains</title>
+<style>
+  :root {
+    --bg-primary: #0f172a;
+    --bg-secondary: #1e293b;
+    --bg-card: #1e293b;
+    --bg-card-hover: #26354d;
+    --accent: #38bdf8;
+    --accent-glow: rgba(56, 189, 248, 0.15);
+    --answer-bg: rgba(16, 185, 129, 0.12);
+    --answer-border: #10b981;
+    --answer-text: #34d399;
+    --verified-badge: rgba(245, 158, 11, 0.15);
+    --verified-text: #fbbf24;
+    --text-main: #f1f5f9;
+    --text-muted: #94a3b8;
+    --border-color: #334155;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--bg-primary);
+    color: var(--text-main);
+    line-height: 1.6;
+    padding-bottom: 4rem;
+  }
+
+  header {
+    background: linear-gradient(135deg, #0b1120 0%, #1e293b 100%);
+    border-bottom: 1px solid var(--border-color);
+    padding: 2rem 1.5rem 1.5rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  }
+
+  .header-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .header-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.25rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: -0.01em;
+  }
+
+  h1 span {
+    color: var(--accent);
+  }
+
+  .controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    align-items: center;
+  }
+
+  .search-box {
+    background: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    color: var(--text-main);
+    padding: 0.5rem 0.9rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    width: 240px;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+
+  .search-box:focus {
+    border-color: var(--accent);
+  }
+
+  .btn {
+    background: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    color: var(--text-main);
+    padding: 0.5rem 0.95rem;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .btn:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+
+  .btn-primary {
+    background: var(--accent);
+    color: #0f172a;
+    border-color: var(--accent);
+  }
+
+  .btn-primary:hover {
+    background: #7dd3fc;
+    color: #0f172a;
+  }
+
+  .nav-pills {
+    display: flex;
+    gap: 0.5rem;
+    overflow-x: auto;
+    padding-bottom: 0.25rem;
+    scrollbar-width: thin;
+  }
+
+  .nav-pill {
+    background: rgba(15, 23, 42, 0.7);
+    border: 1px solid var(--border-color);
+    color: var(--text-muted);
+    padding: 0.35rem 0.85rem;
+    border-radius: 999px;
+    font-size: 0.82rem;
+    font-weight: 500;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all 0.2s;
+  }
+
+  .nav-pill:hover, .nav-pill.active {
+    background: var(--accent-glow);
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+
+  main {
+    max-width: 1100px;
+    margin: 2rem auto 0;
+    padding: 0 1.5rem;
+  }
+
+  .stats-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    font-size: 0.88rem;
+    color: var(--text-muted);
+  }
+
+  .section-block {
+    margin-bottom: 2.75rem;
+  }
+
+  .section-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--accent);
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--border-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .section-badge {
+    font-size: 0.78rem;
+    background: var(--accent-glow);
+    color: var(--accent);
+    padding: 0.2rem 0.65rem;
+    border-radius: 999px;
+    font-weight: 600;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 1rem;
+  }
+
+  .card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 1.15rem 1.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.15s ease, border-color 0.2s ease, background 0.2s ease;
+    cursor: pointer;
+  }
+
+  .card:hover {
+    border-color: #475569;
+    background: var(--bg-card-hover);
+    transform: translateY(-2px);
+  }
+
+  .q-header {
+    display: flex;
+    gap: 0.65rem;
+    align-items: flex-start;
+    margin-bottom: 0.85rem;
+  }
+
+  .q-num {
+    background: var(--bg-primary);
+    color: var(--accent);
+    border: 1px solid var(--border-color);
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 0.15rem 0.5rem;
+    border-radius: 6px;
+    flex-shrink: 0;
+    margin-top: 0.15rem;
+  }
+
+  .q-text {
+    font-size: 0.98rem;
+    font-weight: 600;
+    color: var(--text-main);
+  }
+
+  .a-box {
+    background: var(--answer-bg);
+    border-left: 3px solid var(--answer-border);
+    padding: 0.55rem 0.85rem;
+    border-radius: 0 6px 6px 0;
+    font-size: 0.92rem;
+    font-weight: 600;
+    color: var(--answer-text);
+    transition: filter 0.2s ease, opacity 0.2s ease;
+  }
+
+  .updated-tag {
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    background: var(--verified-badge);
+    color: var(--verified-text);
+    padding: 0.1rem 0.45rem;
+    border-radius: 4px;
+    margin-bottom: 0.35rem;
+  }
+
+  body.quiz-mode .card:not(.revealed) .a-box {
+    filter: blur(6px);
+    user-select: none;
+    opacity: 0.65;
+  }
+
+  body.quiz-mode .card:not(.revealed)::after {
+    content: "Click card to reveal answer";
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    margin-top: 0.45rem;
+    text-align: right;
+  }
+
+  @media print {
+    header, .controls, .nav-pills, .stats-bar {
+      display: none !important;
+    }
+    body {
+      background: #fff;
+      color: #000;
+    }
+    .card {
+      background: #fff;
+      border: 1px solid #ccc;
+      break-inside: avoid;
+    }
+    .q-text {
+      color: #000;
+    }
+    .a-box {
+      background: #f0fdf4;
+      color: #065f46;
+      filter: none !important;
+      opacity: 1 !important;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="header-top">
+      <h1>Static GK Master Sheet (Verified) <span>| SBI & IBPS Mains</span></h1>
+      <div class="controls">
+        <input type="text" id="searchInput" class="search-box" placeholder="Search question or answer...">
+        <button id="toggleQuizBtn" class="btn btn-primary">Quiz Mode: OFF</button>
+        <button onclick="window.print()" class="btn">Print / Save PDF</button>
+      </div>
+    </div>
+    <div class="nav-pills" id="categoryNav">
+      <button class="nav-pill active" data-cat="all">All Categories (152)</button>
+      <button class="nav-pill" data-cat="banking-hq">1. Banking Heads & HQ</button>
+      <button class="nav-pill" data-cat="abbreviations">2. Abbreviations</button>
+      <button class="nav-pill" data-cat="india-static">3. States, Parks & Ramsar</button>
+      <button class="nav-pill" data-cat="countries">4. Countries & Currencies</button>
+      <button class="nav-pill" data-cat="ministers">5. Union Ministers</button>
+      <button class="nav-pill" data-cat="intl-orgs">6. Intl. Organizations</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="stats-bar">
+    <span id="visibleCount">Showing all 152 verified questions</span>
+    <span>Tip: Enable <strong>Quiz Mode</strong> to blur answers for self-testing.</span>
+  </div>
+  <div id="contentContainer"></div>
+</main>
+
+<script>
+const sections = [
+  {
+    id: "banking-hq",
+    title: "1. Banking Heads & Headquarters",
+    items: [
+      { q: "Asian Development Bank (ADB) — Head & Headquarters", a: "Masato Kanda | Manila, Philippines" },
+      { q: "India Post Payments Bank (IPPB) — Head & Headquarters", a: "R. Viswesvaran | New Delhi" },
+      { q: "Reserve Bank of India (RBI) — Head & Headquarters", a: "Sanjay Malhotra | Mumbai, Maharashtra" },
+      { q: "Bandhan Bank — Head", a: "Partha Pratim Sengupta" },
+      { q: "Bandhan Bank — Headquarters", a: "Kolkata, West Bengal" },
+      { q: "Jammu & Kashmir Bank — Head", a: "Amitava Chatterjee" },
+      { q: "Jammu & Kashmir Bank — Headquarters", a: "Srinagar, Jammu & Kashmir" },
+      { q: "Life Insurance Corporation of India (LIC) — Headquarters", a: "Mumbai, Maharashtra" },
+      { q: "SIDBI (Small Industries Development Bank of India) — Head", a: "Manoj Mittal" }
+    ]
+  },
+  {
+    id: "abbreviations",
+    title: "2. Banking & Financial Abbreviations",
+    items: [
+      { q: "AEPS", a: "Aadhaar Enabled Payment System" },
+      { q: "BCBS", a: "Basel Committee on Banking Supervision" },
+      { q: "CBDC", a: "Central Bank Digital Currency" },
+      { q: "CRAR", a: "Capital to Risk-Weighted Assets Ratio" },
+      { q: "DBT", a: "Direct Benefit Transfer" },
+      { q: "ECB", a: "External Commercial Borrowing" },
+      { q: "FDI", a: "Foreign Direct Investment" },
+      { q: "FER", a: "Foreign Exchange Risk" },
+      { q: "FSDC", a: "Financial Stability and Development Council" },
+      { q: "FCNR", a: "Foreign Currency Non-Resident" },
+      { q: "FPI", a: "Foreign Portfolio Investment / Investor" },
+      { q: "GDP", a: "Gross Domestic Product" },
+      { q: "IFSCA", a: "International Financial Services Centres Authority" },
+      { q: "IBC", a: "Insolvency and Bankruptcy Code" },
+      { q: "IPO", a: "Initial Public Offering" },
+      { q: "IRR", a: "Interest Rate Risk" },
+      { q: "InvIT", a: "Infrastructure Investment Trust" },
+      { q: "KYC", a: "Know Your Customer" },
+      { q: "LCR", a: "Liquidity Coverage Ratio" },
+      { q: "MDR", a: "Merchant Discount Rate" },
+      { q: "NPA", a: "Non-Performing Asset" },
+      { q: "NSFR", a: "Net Stable Funding Ratio" },
+      { q: "OFCB", a: "Overseas Foreign Currency Bond" },
+      { q: "PCR", a: "Provisioning Coverage Ratio" },
+      { q: "PSP", a: "Payment Service Provider" },
+      { q: "PPI", a: "Prepaid Payment Instrument" },
+      { q: "PMS", a: "Portfolio Management Service" },
+      { q: "REITs", a: "Real Estate Investment Trusts" },
+      { q: "SIF", a: "Specialized Investment Fund" },
+      { q: "TReDS", a: "Trade Receivables Discounting System" },
+      { q: "SAT", a: "Securities Appellate Tribunal" },
+      { q: "UIDAI", a: "Unique Identification Authority of India" },
+      { q: "UMI", a: "Unified Market Interface" },
+      { q: "UPI", a: "Unified Payments Interface" },
+      { q: "UTP", a: "Unified Ticketing Platform" }
+    ]
+  },
+  {
+    id: "india-static",
+    title: "3. Indian States & UTs: Capitals, Parks, Sanctuaries & Ramsar Sites",
+    items: [
+      { q: "Capital of Bihar", a: "Patna" },
+      { q: "Where is Kanwar Taal (Kabartal) Wetland Ramsar Site located?", a: "Bihar" },
+      { q: "Capital of Chhattisgarh", a: "Raipur" },
+      { q: "Where are Bhairamgarh and Bhoramdeo Wildlife Sanctuaries located?", a: "Chhattisgarh" },
+      { q: "Capital of Gujarat", a: "Gandhinagar" },
+      { q: "Where are Gir and Marine National Parks located?", a: "Gujarat" },
+      { q: "Capital of Haryana", a: "Chandigarh" },
+      { q: "Where are Chhilchhila and Nahar Wildlife/Bird Sanctuaries located?", a: "Haryana" },
+      { q: "Seasonal Capitals of Himachal Pradesh", a: "Shimla (Summer) and Dharamshala (Winter)" },
+      { q: "Where are Khirganga and Inderkilla National Parks located?", a: "Himachal Pradesh" },
+      { q: "Seasonal Capitals of Jammu & Kashmir", a: "Srinagar (Summer) and Jammu (Winter)" },
+      { q: "Where is Dachigam National Park located?", a: "Jammu & Kashmir" },
+      { q: "Capital of Karnataka", a: "Bengaluru" },
+      { q: "Where are Anshi and Bandipur National Parks located?", a: "Karnataka" },
+      { q: "Capital of Maharashtra", a: "Mumbai" },
+      { q: "Where are Aner Dam and Chaprala Wildlife Sanctuaries located?", a: "Maharashtra" },
+      { q: "Capital of Rajasthan", a: "Jaipur" },
+      { q: "Where are Ranthambore and Sariska Tiger Reserves located?", a: "Rajasthan" },
+      { q: "Capital of Uttarakhand", a: "Dehradun" },
+      { q: "Where is Asan Conservation Reserve (Ramsar Site) located?", a: "Uttarakhand" },
+      { q: "Capital of West Bengal", a: "Kolkata" },
+      { q: "Where are East Kolkata Wetlands and Sundarban Wetland located?", a: "West Bengal" },
+      { q: "Renamed Capital of Andaman & Nicobar Islands (formerly Port Blair)", a: "Sri Vijaya Puram" }
+    ]
+  },
+  {
+    id: "countries",
+    title: "4. Countries: Capitals & Currencies",
+    items: [
+      { q: "Argentina", a: "Buenos Aires | Peso" },
+      { q: "Belgium", a: "Brussels | Euro" },
+      { q: "Bhutan", a: "Thimphu | Ngultrum" },
+      { q: "Dominican Republic", a: "Santo Domingo | Dominican Peso" },
+      { q: "Estonia", a: "Tallinn | Euro" },
+      { q: "United Kingdom (England)", a: "London | Pound Sterling" },
+      { q: "France", a: "Paris | Euro" },
+      { q: "Kazakhstan", a: "Astana | Tenge" },
+      { q: "Kyrgyzstan", a: "Bishkek | Som" },
+      { q: "Malaysia", a: "Kuala Lumpur | Malaysian Ringgit" },
+      { q: "Mongolia", a: "Ulaanbaatar | Tugrik" },
+      { q: "Sri Lanka", a: "Sri Jayawardenepura Kotte (Administrative) / Colombo (Executive) | Sri Lankan Rupee" },
+      { q: "Türkiye (Turkey)", a: "Ankara | Turkish Lira" },
+      { q: "United States of America (USA)", a: "Washington, D.C. | US Dollar" },
+      { q: "Uzbekistan", a: "Tashkent | Uzbekistani Som" }
+    ]
+  },
+  {
+    id: "ministers",
+    title: "5. Union Ministers, Ministers of State (MoS) & Constituencies",
+    items: [
+      { q: "Minister of Consumer Affairs, Food and Public Distribution", a: "Pralhad Joshi" },
+      { q: "Constituency of Rajnath Singh (Minister of Defence)", a: "Lucknow, Uttar Pradesh" },
+      { q: "Minister of State for Youth Affairs and Sports", a: "Raksha Khadse (Union Minister: Mansukh Mandaviya)" },
+      { q: "Minister of Micro, Small and Medium Enterprises (MSME)", a: "Jitan Ram Manjhi" },
+      { q: "Constituency of Rao Inderjit Singh (MoS Independent Charge - Statistics & Programme Implementation)", a: "Gurugram, Haryana" },
+      { q: "Minister of State for Education", a: "Sukanta Majumdar" },
+      { q: "Minister of Fisheries, Animal Husbandry and Dairying", a: "Rajiv Ranjan Singh (Lalan Singh)" },
+      { q: "Constituency of Annpurna Devi (Minister of Women and Child Development)", a: "Kodarma, Jharkhand" },
+      { q: "Minister of State for Home Affairs", a: "Nityanand Rai" },
+      { q: "Minister of Law and Justice (Independent Charge)", a: "Arjun Ram Meghwal" },
+      { q: "Constituency of Piyush Goyal (Minister of Commerce and Industry)", a: "Mumbai North, Maharashtra" },
+      { q: "Minister of State for Railways", a: "V. Somanna (Union Minister: Ashwini Vaishnaw)" },
+      { q: "Minister of Rural Development", a: "Shivraj Singh Chouhan" },
+      { q: "Constituency of Nirmala Sitharaman (Minister of Finance)", a: "Rajya Sabha, Karnataka" },
+      { q: "Minister of State for Agriculture and Farmers' Welfare", a: "Ram Nath Thakur" },
+      { q: "Minister of State (Independent Charge) for Science and Technology", a: "Dr. Jitendra Singh" },
+      { q: "Constituency of Bhupender Yadav (Minister of Environment, Forest and Climate Change)", a: "Alwar, Rajasthan" },
+      { q: "Minister of State for Petroleum and Natural Gas", a: "Suresh Gopi (Union Minister: Hardeep Singh Puri)" },
+      { q: "Minister of Housing and Urban Affairs", a: "Manohar Lal Khattar" },
+      { q: "Minister of Electronics and Information Technology", a: "Ashwini Vaishnaw" },
+      { q: "Constituency of Ashwini Vaishnaw", a: "Rajya Sabha, Odisha" },
+      { q: "Minister of State for Mines", a: "Satish Chandra Dubey (Union Minister: G. Kishan Reddy)" },
+      { q: "Minister of Power", a: "Manohar Lal Khattar" },
+      { q: "Constituency of Kinjarapu Rammohan Naidu (Minister of Civil Aviation)", a: "Srikakulam, Andhra Pradesh" },
+      { q: "Minister of State for Health and Family Welfare", a: "Anupriya Patel (Union Minister: J.P. Nadda)" },
+      { q: "Minister of State (Independent Charge) for Skill Development and Entrepreneurship", a: "Jayant Chaudhary" },
+      { q: "Constituency of Prataprao Ganpatrao Jadhav (MoS Independent Charge - AYUSH)", a: "Buldhana, Maharashtra" },
+      { q: "Minister of State for Ports, Shipping and Waterways", a: "Shantanu Thakur (Union Minister: Sarbananda Sonowal)" },
+      { q: "Minister of Jal Shakti", a: "C.R. Paatil" }
+    ]
+  },
+  {
+    id: "intl-orgs",
+    title: "6. International Organizations: Heads, Headquarters & Founding Years",
+    items: [
+      { q: "World Health Organization (WHO) — Established Year", a: "1948" },
+      { q: "World Food Programme (WFP) — Headquarters", a: "Rome, Italy" },
+      { q: "Food and Agriculture Organization (FAO) — Head", a: "Qu Dongyu" },
+      { q: "World Economic Forum (WEF) — Established Year", a: "1971" },
+      { q: "World Meteorological Organization (WMO) — Headquarters", a: "Geneva, Switzerland" },
+      { q: "World Federation of the Deaf (WFD) — Head", a: "Joseph J. Murray" },
+      { q: "World Heart Federation (WHF) — Established Year", a: "1978" },
+      { q: "World Duchenne Organization (WDO) — Headquarters", a: "Netherlands" },
+      { q: "United Nations (UN) — Secretary-General / Head", a: "António Guterres" },
+      { q: "UNICEF — Established Year", a: "1946" },
+      { q: "UNESCO — Headquarters", a: "Paris, France" },
+      { q: "United Nations General Assembly (UNGA) — President / Head", a: "Annalena Baerbock (80th Session, 2025–26) / Philemon Yang (79th Session)", updated: true },
+      { q: "United Nations Environment Programme (UNEP) — Established Year", a: "1972" },
+      { q: "UN Department of Economic and Social Affairs (UN DESA) — Headquarters", a: "New York, USA" },
+      { q: "UN Office for South-South Cooperation (UNOSSC) — Head", a: "Dima Al-Khatib" },
+      { q: "UN Convention to Combat Desertification (UNCCD) — Established Year", a: "1994" },
+      { q: "UN Human Settlements Programme (UN-Habitat) — Headquarters", a: "Nairobi, Kenya" },
+      { q: "UN World Tourism Organization (UN Tourism) — Head", a: "Shaikha Nasser Al Nowais (Term from Jan 2026; preceded by Zurab Pololikashvili)", updated: true },
+      { q: "When did the International Maritime Organization (IMO) Convention enter into force?", a: "17 March 1958" },
+      { q: "International Energy Agency (IEA) — Headquarters", a: "Paris, France" },
+      { q: "International Labour Organization (ILO) — Head", a: "Gilbert F. Houngbo" },
+      { q: "Inter-Parliamentary Union (IPU) — Founded Year", a: "1889" },
+      { q: "International Centre for Integrated Mountain Development (ICIMOD) — Headquarters", a: "Lalitpur, Nepal" },
+      { q: "International Federation of Environmental Health (IFEH) — Head", a: "David Musau Kioko", updated: true },
+      { q: "INTERPOL — Established Year", a: "1923" },
+      { q: "International Labour Organization (ILO) — Headquarters", a: "Geneva, Switzerland" },
+      { q: "International Association for Suicide Prevention (IASP) — Head", a: "Prof. Jo Robinson" },
+      { q: "Alzheimer's Disease International (ADI) — Established Year", a: "1984" },
+      { q: "International Pharmaceutical Federation (FIP) — Headquarters", a: "The Hague, Netherlands" },
+      { q: "International Rhino Foundation (IRF) — Head", a: "Nina Fascione" },
+      { q: "International Tennis Hall of Fame — Established Year", a: "1954" },
+      { q: "Association of Tennis Professionals (ATP) — Headquarters", a: "London, United Kingdom" },
+      { q: "International Hockey Federation (FIH) — Head", a: "Tayyab Ikram" },
+      { q: "Asian Hockey Federation (AHF) — Established Year", a: "1958" },
+      { q: "Asian Cricket Council (ACC) — Headquarters", a: "Dubai, UAE" },
+      { q: "World Pickleball Federation (WPF) — Head", a: "Seymour Rifkind", updated: true },
+      { q: "International Chess Federation (FIDE) — Founded Year", a: "1924" },
+      { q: "NASA — Headquarters", a: "Washington, D.C., USA" },
+      { q: "Isar Aerospace — Head", a: "Daniel Metzler" },
+      { q: "Skytrax — Established Year", a: "1989" },
+      { q: "Council for Agricultural Science and Technology (CAST)", a: "Headquarters: Ames, Iowa, USA | Founded: 1972" }
+    ]
+  }
+];
+
+const container = document.getElementById("contentContainer");
+const searchInput = document.getElementById("searchInput");
+const toggleQuizBtn = document.getElementById("toggleQuizBtn");
+const navPills = document.querySelectorAll(".nav-pill");
+const visibleCountEl = document.getElementById("visibleCount");
+
+let activeCategory = "all";
+let quizMode = false;
+
+function render() {
+  container.innerHTML = "";
+  const query = searchInput.value.trim().toLowerCase();
+  let globalIndex = 0;
+  let shownCount = 0;
+
+  sections.forEach(sec => {
+    if (activeCategory !== "all" && activeCategory !== sec.id) {
+      globalIndex += sec.items.length;
+      return;
+    }
+
+    const filteredItems = [];
+    sec.items.forEach(item => {
+      globalIndex++;
+      const match = item.q.toLowerCase().includes(query) || item.a.toLowerCase().includes(query);
+      if (match) {
+        filteredItems.push({ num: globalIndex, ...item });
+      }
+    });
+
+    if (filteredItems.length === 0) return;
+    shownCount += filteredItems.length;
+
+    const secEl = document.createElement("section");
+    secEl.className = "section-block";
+
+    const titleEl = document.createElement("div");
+    titleEl.className = "section-title";
+    titleEl.innerHTML = `<span>${sec.title}</span><span class="section-badge">${filteredItems.length} Questions</span>`;
+    secEl.appendChild(titleEl);
+
+    const gridEl = document.createElement("div");
+    gridEl.className = "grid";
+
+    filteredItems.forEach(item => {
+      const card = document.createElement("div");
+      card.className = "card";
+      const badgeHtml = item.updated ? `<div class="updated-tag">Verified Fix</div>` : "";
+      card.innerHTML = `
+        <div class="q-header">
+          <span class="q-num">#${item.num}</span>
+          <div class="q-text">${item.q}</div>
+        </div>
+        <div class="a-box">${badgeHtml}<div>${item.a}</div></div>
+      `;
+      card.addEventListener("click", () => {
+        if (quizMode) {
+          card.classList.toggle("revealed");
+        }
+      });
+      gridEl.appendChild(card);
+    });
+
+    secEl.appendChild(gridEl);
+    container.appendChild(secEl);
+  });
+
+  visibleCountEl.textContent = shownCount === 152
+    ? "Showing all 152 verified questions"
+    : `Showing ${shownCount} of 152 verified questions`;
+}
+
+searchInput.addEventListener("input", render);
+
+toggleQuizBtn.addEventListener("click", () => {
+  quizMode = !quizMode;
+  document.body.classList.toggle("quiz-mode", quizMode);
+  toggleQuizBtn.textContent = quizMode ? "Quiz Mode: ON" : "Quiz Mode: OFF";
+  document.querySelectorAll(".card.revealed").forEach(c => c.classList.remove("revealed"));
+});
+
+navPills.forEach(pill => {
+  pill.addEventListener("click", () => {
+    navPills.forEach(p => p.classList.remove("active"));
+    pill.classList.add("active");
+    activeCategory = pill.dataset.cat;
+    render();
+  });
+});
+
+render();
+</script>
+</body>
+</html>

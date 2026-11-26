@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>6-Month CA Rapid Revision (Part 4: Slides #451–#600) — New & Unique Questions — Learn & Practice (White Theme)</title>
+<style>
+  :root {
+    --bg-page: #ffffff;
+    --bg-panel: #f9fafb;
+    --bg-card: #ffffff;
+    --border-light: #e5e7eb;
+    --border-strong: #d1d5db;
+    --text-main: #111827;
+    --text-sub: #4b5563;
+    --text-muted: #6b7280;
+    --primary: #1d4ed8;
+    --primary-soft: #eff6ff;
+    --primary-border: #bfdbfe;
+    --green-bg: #f0fdf4;
+    --green-border: #22c55e;
+    --green-text: #15803d;
+    --red-bg: #fef2f2;
+    --red-border: #ef4444;
+    --red-text: #b91c1c;
+    --amber-bg: #fffbeb;
+    --amber-border: #f59e0b;
+    --amber-text: #92400e;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background-color: var(--bg-page);
+    color: var(--text-main);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Arial, sans-serif;
+    line-height: 1.6;
+  }
+
+  header {
+    background-color: #ffffff;
+    border-bottom: 1px solid var(--border-light);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 14px 20px;
+  }
+
+  .header-wrap {
+    max-width: 1060px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .title-block h1 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--text-main);
+  }
+
+  .title-block p {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+  }
+
+  .tabs {
+    display: inline-flex;
+    background-color: var(--bg-panel);
+    border: 1px solid var(--border-light);
+    border-radius: 8px;
+    padding: 4px;
+    gap: 4px;
+  }
+
+  .tab-btn {
+    border: none;
+    background: transparent;
+    color: var(--text-sub);
+    font-size: 0.88rem;
+    font-weight: 600;
+    padding: 7px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.15s ease;
+  }
+
+  .tab-btn.active {
+    background-color: #ffffff;
+    color: var(--primary);
+    border: 1px solid var(--border-light);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
+  }
+
+  .main-container {
+    max-width: 1060px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .controls-bar {
+    background-color: var(--bg-panel);
+    border: 1px solid var(--border-light);
+    border-radius: 10px;
+    padding: 12px 16px;
+    margin-bottom: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .filter-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    flex: 1;
+  }
+
+  select, input[type="text"] {
+    background-color: #ffffff;
+    color: var(--text-main);
+    border: 1px solid var(--border-strong);
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 0.875rem;
+    outline: none;
+  }
+
+  select:focus, input[type="text"]:focus {
+    border-color: var(--primary);
+  }
+
+  input[type="text"] {
+    min-width: 230px;
+  }
+
+  .score-group {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.84rem;
+    font-weight: 600;
+  }
+
+  .pill {
+    background-color: #ffffff;
+    border: 1px solid var(--border-light);
+    border-radius: 999px;
+    padding: 4px 11px;
+    color: var(--text-sub);
+  }
+
+  .pill.green {
+    background-color: var(--green-bg);
+    border-color: var(--green-border);
+    color: var(--green-text);
+  }
+
+  .pill.red {
+    background-color: var(--red-bg);
+    border-color: var(--red-border);
+    color: var(--red-text);
+  }
+
+  .action-btn {
+    background-color: #ffffff;
+    color: var(--text-main);
+    border: 1px solid var(--border-strong);
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .action-btn:hover {
+    background-color: #f3f4f6;
+  }
+
+  .learn-subbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 14px;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+  }
+
+  .card {
+    background-color: #ffffff;
+    border: 1px solid var(--border-light);
+    border-radius: 10px;
+    padding: 18px 20px;
+    margin-bottom: 14px;
+  }
+
+  .card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    gap: 8px;
+  }
+
+  .badge-group {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .badge-num {
+    background-color: var(--primary-soft);
+    color: var(--primary);
+    border: 1px solid var(--primary-border);
+    font-size: 0.78rem;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 5px;
+  }
+
+  .badge-seq {
+    background-color: var(--bg-panel);
+    color: var(--text-sub);
+    border: 1px solid var(--border-light);
+    font-size: 0.74rem;
+    font-weight: 600;
+    padding: 2px 7px;
+    border-radius: 5px;
+  }
+
+  .badge-cat {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+
+  .question-text {
+    font-size: 1.02rem;
+    font-weight: 600;
+    color: var(--text-main);
+    margin-bottom: 12px;
+  }
+
+  .learn-answer-box {
+    display: inline-block;
+    background-color: var(--green-bg);
+    border: 1px solid #bbf7d0;
+    color: var(--green-text);
+    font-weight: 700;
+    font-size: 0.94rem;
+    padding: 6px 12px;
+    border-radius: 6px;
+    margin-bottom: 12px;
+  }
+
+  .learn-answer-box.blurred {
+    filter: blur(5px);
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .exam-points {
+    background-color: var(--amber-bg);
+    border: 1px solid #fde68a;
+    border-left: 4px solid var(--amber-border);
+    border-radius: 6px;
+    padding: 10px 14px;
+  }
+
+  .exam-points-heading {
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--amber-text);
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    margin-bottom: 4px;
+  }
+
+  .exam-points ul {
+    margin-left: 18px;
+    font-size: 0.88rem;
+    color: #374151;
+  }
+
+  .exam-points li {
+    margin-bottom: 3px;
+  }
+
+  .options-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 10px;
+  }
+
+  .option-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    text-align: left;
+    background-color: #ffffff;
+    border: 1.5px solid var(--border-light);
+    border-radius: 8px;
+    padding: 11px 14px;
+    font-size: 0.92rem;
+    font-weight: 500;
+    color: var(--text-main);
+    cursor: pointer;
+    transition: all 0.15s ease;
+  }
+
+  .option-btn:hover:not(:disabled) {
+    border-color: var(--primary);
+    background-color: var(--primary-soft);
+  }
+
+  .option-btn:disabled {
+    cursor: default;
+  }
+
+  .opt-circle {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: var(--bg-panel);
+    border: 1px solid var(--border-strong);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--text-sub);
+    flex-shrink: 0;
+  }
+
+  .option-btn.correct {
+    background-color: var(--green-bg);
+    border-color: var(--green-border);
+    color: var(--green-text);
+    font-weight: 700;
+  }
+
+  .option-btn.correct .opt-circle {
+    background-color: var(--green-border);
+    border-color: var(--green-border);
+    color: #ffffff;
+  }
+
+  .option-btn.wrong {
+    background-color: var(--red-bg);
+    border-color: var(--red-border);
+    color: var(--red-text);
+    font-weight: 600;
+  }
+
+  .option-btn.wrong .opt-circle {
+    background-color: var(--red-border);
+    border-color: var(--red-border);
+    color: #ffffff;
+  }
+
+  .answer-panel {
+    display: none;
+    margin-top: 14px;
+    padding-top: 14px;
+    border-top: 1px solid var(--border-light);
+    animation: slideDown 0.18s ease-out;
+  }
+
+  .answer-panel.visible {
+    display: block;
+  }
+
+  .result-banner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+
+  .result-pill {
+    font-size: 0.84rem;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 6px;
+  }
+
+  .result-pill.right {
+    background-color: var(--green-bg);
+    color: var(--green-text);
+    border: 1px solid var(--green-border);
+  }
+
+  .result-pill.wrong {
+    background-color: var(--red-bg);
+    color: var(--red-text);
+    border: 1px solid var(--red-border);
+  }
+
+  .correct-label {
+    font-size: 0.92rem;
+    font-weight: 700;
+    color: var(--text-main);
+  }
+
+  .correct-label span {
+    color: var(--green-text);
+  }
+
+  .hidden {
+    display: none !important;
+  }
+
+  .no-results {
+    text-align: center;
+    padding: 40px 20px;
+    border: 1px dashed var(--border-strong);
+    border-radius: 10px;
+    color: var(--text-muted);
+  }
+
+  @keyframes slideDown {
+    from { opacity: 0; transform: translateY(-4px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @media (max-width: 640px) {
+    .header-wrap { flex-direction: column; align-items: flex-start; }
+    .options-list { grid-template-columns: 1fr; }
+    input[type="text"] { width: 100%; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-wrap">
+    <div class="title-block">
+      <h1>6-Month CA Rapid Revision (Part 4: Slides #451–#600) — New & Unique Questions (128 Questions)</h1>
+      <p>Jeevitha Ma'am Session (English) | Exclusive Questions Not Covered in All 14 Previous Files</p>
+    </div>
+    <div class="tabs">
+      <button class="tab-btn active" id="btn-learn" onclick="setMode('learn')">📖 Learn Mode</button>
+      <button class="tab-btn" id="btn-practice" onclick="setMode('practice')">✍️ Practice MCQs</button>
+    </div>
+  </div>
+</header>
+
+<div class="main-container">
+  <div class="controls-bar">
+    <div class="filter-group">
+      <select id="catSelect" onchange="render()">
+        <option value="ALL">All Categories (128)</option>
+      </select>
+      <input type="text" id="searchBox" placeholder="Search question, answer, or extra points..." oninput="render()">
+    </div>
+    <div class="score-group">
+      <span class="pill">Attempted: <span id="cnt-attempted">0</span>/128</span>
+      <span class="pill green">Correct: <span id="cnt-correct">0</span></span>
+      <span class="pill red">Wrong: <span id="cnt-wrong">0</span></span>
+      <button class="action-btn" onclick="resetAll()">Reset Practice</button>
+    </div>
+  </div>
+
+  <div class="learn-subbar" id="learnSubbar">
+    <span id="showingCount">Showing 128 questions</span>
+    <button class="action-btn" id="blurBtn" onclick="toggleBlur()">👁️ Hide Answers (Self-Test)</button>
+  </div>
+
+  <div id="cardsContainer"></div>
+</div>
+
+<script>
+const QUESTIONS = [{"id": 1, "slide_q": 452, "cat": "Banking, Finance & Regulatory", "q": "Regarding SEBI's framework permitting REITs and InvITs to raise funds through Depository Receipts (DRs): (1) Requires at least 75% unitholder approval; (2) Listed on India INX and NSE International Exchange (NSE IX) at GIFT City; (3) Issued to Non-Resident Indians (NRIs) / foreign investors (not resident Indians); (4) OFS cooling-off period is 8 weeks. Which statements are correct?", "opts": ["2 and 4 only", "1, 2, and 3 only", "1 and 2 only (Issued to NRIs/foreign investors, not resident Indians)", "All 1, 2, 3, and 4"], "ans": 2, "p1": "Correction Note: Depository Receipts issued at GIFT City IFSC are meant for Non-Resident Indians (NRIs) and foreign investors (not resident Indians).", "p2": "Exam Fact: Requires ≥75% unitholder approval and lists on India INX and NSE IX at GIFT City."}, {"id": 2, "slide_q": 454, "cat": "Banking, Finance & Regulatory", "q": "In October 2026, SEBI imposed a ₹1 crore monetary penalty on which Market Infrastructure Institution (MII)?", "opts": ["Central Depository Services (India) Limited (CDSL)", "National Securities Depository Limited (NSDL)", "National Stock Exchange (NSE)", "Bombay Stock Exchange (BSE)"], "ans": 0, "p1": "Penalized MII: Central Depository Services (India) Limited (CDSL, HQ: Mumbai, Maharashtra; founded 1999).", "p2": "Exam Fact: Market Infrastructure Institutions (MIIs) comprise Stock Exchanges, Clearing Corporations, and Depositories."}, {"id": 3, "slide_q": 455, "cat": "Banking, Finance & Regulatory", "q": "On which two international exchanges at GIFT City IFSC are Depository Receipts issued by REITs and InvITs listed?", "opts": ["London Stock Exchange and Singapore Exchange", "India INX and NSE International Exchange (NSE IX)", "NASDAQ and NYSE", "Dubai Financial Market and Abu Dhabi Securities Exchange"], "ans": 1, "p1": "Exchanges: India International Exchange (India INX, BSE subsidiary) and NSE International Exchange (NSE IX, NSE subsidiary) at GIFT City, Gandhinagar.", "p2": "Exam Fact: Regulated by the International Financial Services Centres Authority (IFSCA)."}, {"id": 4, "slide_q": 457, "cat": "Economy, GDP & Corporate Deals", "q": "In October 2026, India's import GST revenue increased by 42% to reach what amount?", "opts": ["₹65,900 crore", "₹58,420 crore", "₹84,110 crore", "₹72,246 crore"], "ans": 3, "p1": "Figure: ₹72,246 crore (+42% rise in import GST revenue).", "p2": "Exam Fact: Goods and Services Tax (GST) was rolled out across India on 1 July 2017 via the 101st Constitutional Amendment Act."}, {"id": 5, "slide_q": 458, "cat": "Economy, GDP & Corporate Deals", "q": "In November 2026, the Central Board of Indirect Taxes and Customs (CBIC) notified which sections of the Finance Act, 2026 governing post-supply discounts, credit notes, and GST refunds?", "opts": ["Sections 153 to 155", "Sections 110 to 112", "Sections 135 to 138", "Sections 180 to 182"], "ans": 0, "p1": "Sections Notified: Sections 153 to 155 of the Finance Act, 2026.", "p2": "Exam Fact: CBIC operates under the Department of Revenue, Ministry of Finance."}, {"id": 6, "slide_q": 460, "cat": "Economy, GDP & Corporate Deals", "q": "Adani Power and Bhutan's Druk Green Power Corporation (DGPC) signed an agreement for the 770 MW Chamkharchhu-I Hydroelectric Project. What is Adani Power's equity share in this joint venture?", "opts": ["50%", "51%", "49%", "26%"], "ans": 2, "p1": "Shareholding Split: Adani Power holds 49% stake and Bhutan's state-owned DGPC holds 51% majority stake.", "p2": "Exam Fact: Capital of Bhutan: Thimphu | Currency: Bhutanese Ngultrum (pegged 1:1 with Indian Rupee)."}, {"id": 7, "slide_q": 461, "cat": "Economy, GDP & Corporate Deals", "q": "Air India partnered with Bhutan's royal flag carrier Drukair in August 2026 to connect Indian hubs with which international airport in Bhutan?", "opts": ["Yonphula Airport", "Gelephu International Airport", "Bathpalathang Airport", "Paro International Airport"], "ans": 3, "p1": "Airport: Paro International Airport (Bhutan's sole international airport, renowned for its challenging Himalayan approach).", "p2": "Exam Fact: Air India is owned by the Tata Group (CEO: Campbell Wilson)."}, {"id": 8, "slide_q": 462, "cat": "Economy, GDP & Corporate Deals", "q": "What is the total investment value of the MoU signed between Vedanta/AL and International Resources Holding (IRH) for an integrated aluminium project in Odisha?", "opts": ["USD 11.5 billion", "USD 5.2 billion", "USD 8.0 billion", "USD 15.0 billion"], "ans": 0, "p1": "Project Value: USD 11.5 billion in Odisha (India's largest bauxite and aluminium producing state).", "p2": "Exam Fact: Bauxite is the primary ore used for extracting aluminium."}, {"id": 9, "slide_q": 464, "cat": "Economy, GDP & Corporate Deals", "q": "S&P Global Ratings projected India's GDP growth at 6.6%. In which year was S&P's predecessor (Henry Varnum Poor's publishing firm) established?", "opts": ["1917", "1909", "1860", "1941"], "ans": 2, "p1": "History: Founded in 1860 by Henry Varnum Poor; merged with Standard Statistics in 1941 to form Standard & Poor's (HQ: New York, USA).", "p2": "Exam Fact: Moody's Investors Service was founded later in 1909 by John Moody."}, {"id": 10, "slide_q": 465, "cat": "Science, Space & Technology", "q": "Which AI security alliance was jointly launched by NVIDIA, Microsoft, IBM, and industry partners?", "opts": ["CyberSafe AI Shield", "Global Frontier AI Consortium", "Trusted Compute Coalition", "Open Secure AI Alliance"], "ans": 3, "p1": "Founders: NVIDIA, Microsoft, IBM, and global tech partners.", "p2": "Exam Fact: Promotes open-source AI security frameworks and enterprise AI deployment safeguards."}, {"id": 11, "slide_q": 466, "cat": "Economy, GDP & Corporate Deals", "q": "Regarding the IMF World Economic Outlook (WEO): (1) IMF was established at the Bretton Woods Conference in 1944; (2) India's FY27 growth projected at 6.4% while FY28 is 6.7%; (3) Global growth projected at 3.0% for 2026. Which statements are correct?", "opts": ["1, 3, and 4 (FY28 India growth projected at 6.7%)", "1 and 2 only", "2 and 3 only", "All 1, 2, 3, and 4"], "ans": 0, "p1": "Correction Note: IMF projected India's FY28 GDP growth at 6.7% (and 6.4% for FY27), with global growth at 3.0%.", "p2": "Exam Fact: IMF publishes the World Economic Outlook (WEO) twice a year (April and October)."}, {"id": 12, "slide_q": 467, "cat": "Economy, GDP & Corporate Deals", "q": "Adani Ports and Special Economic Zone (APSEZ) secured a 10-year USD 70 million marine services contract for the first Liquefied Natural Gas (LNG) export project of which country?", "opts": ["Mozambique", "Argentina", "Guyana", "Suriname"], "ans": 1, "p1": "Country: Argentina (Capital: Buenos Aires | Currency: Argentine Peso).", "p2": "Exam Fact: Supports Argentina's Vaca Muerta shale gas LNG export terminal operations."}, {"id": 13, "slide_q": 468, "cat": "Economy, GDP & Corporate Deals", "q": "According to the Ministry of Finance's Monthly Economic Review (October 2026), what was India's nowcasted Q2 FY27 GDP growth rate?", "opts": ["7.80%", "6.80%", "7.35%", "6.50%"], "ans": 2, "p1": "Growth Figure: 7.35% Q2 FY27 real GDP growth nowcast.", "p2": "Exam Fact: Published monthly by the Department of Economic Affairs (DEA), Ministry of Finance."}, {"id": 14, "slide_q": 470, "cat": "Economy, GDP & Corporate Deals", "q": "Adani Energy Solutions topped the FTSE Global ESG Ranking for electric utilities with what ESG score (out of 100)?", "opts": ["90", "82", "85", "95"], "ans": 0, "p1": "Score: 90 out of 100 in FTSE Russell's Global ESG Ranking for utilities.", "p2": "Exam Fact: ESG stands for Environmental, Social, and Governance."}, {"id": 15, "slide_q": 471, "cat": "Science, Space & Technology", "q": "Amazon announced a USD 48 billion investment in India by 2030. In which year was Amazon Web Services (AWS) originally launched?", "opts": ["2002", "2006", "2010", "2012"], "ans": 1, "p1": "AWS Launch: 2006 (completing 20 years in 2026).", "p2": "Exam Fact: Amazon committed USD 48 billion cumulative investment in India by 2030 across cloud AI infrastructure and e-commerce."}, {"id": 16, "slide_q": 472, "cat": "Government Schemes & Initiatives", "q": "Regarding the Mobile Phone Manufacturing Scheme (approved July 2026): (1) Outlay is ₹62,500 crore for FY 2027–31; (2) Succeeds the Production Linked Incentive (PLI) scheme for Large-Scale Electronics Manufacturing; (3) Sales incentive is 2.25% to 5%; (4) Export target is ₹15 lakh crore. Which statements are correct?", "opts": ["2 and 4 only", "1, 2, and 3 only", "1 and 2 only (Incentive is 2.25%–5%; export target ₹15 lakh crore)", "All 1, 2, 3, and 4"], "ans": 2, "p1": "Details: Total outlay of ₹62,500 crore (25² × 100) for FY 2027–31, succeeding the Large-Scale Electronics Manufacturing PLI scheme.", "p2": "Exam Fact: India is the world's second-largest mobile phone manufacturer."}, {"id": 17, "slide_q": 473, "cat": "Economy, GDP & Corporate Deals", "q": "Gurugram-based auto component maker Sona Comstar signed a joint venture agreement in July 2026 with which Japanese company to manufacture electric and hybrid powertrain systems?", "opts": ["Hitachi Astemo", "Aisin Corporation", "Nidec Corporation", "Denso Corporation"], "ans": 3, "p1": "Partner: Denso Corporation (Headquarters: Kariya, Aichi, Japan).", "p2": "Exam Fact: Sona BLW Precision Forgings (Sona Comstar) is headquartered in Gurugram, Haryana."}, {"id": 18, "slide_q": 474, "cat": "Economy, GDP & Corporate Deals", "q": "NTPC Limited signed a cooperation agreement with pan-African infrastructure platform 'Africa50' primarily for which objective?", "opts": ["Developing power projects and cross-border electricity trade across Africa", "Importing rough diamonds into Surat", "Building railway corridors in East Africa", "Setting up pharmaceutical plants in Nigeria"], "ans": 0, "p1": "Focus: Renewable & thermal power project development and cross-border electricity trade across Africa.", "p2": "Exam Fact: Africa50 was founded by African governments and the African Development Bank (AfDB, HQ: Abidjan, Côte d'Ivoire)."}, {"id": 19, "slide_q": 476, "cat": "Science, Space & Technology", "q": "Adani Enterprises and US-based Jabil formed a 50:50 joint venture to manufacture what in India?", "opts": ["Submarine Sonar Systems", "Commercial Passenger Aircraft", "AI Data Center Hardware", "Semiconductor Lithography Machines"], "ans": 2, "p1": "Joint Venture: 50:50 JV between Adani Enterprises and Jabil (Headquarters: St. Petersburg, Florida, USA).", "p2": "Exam Fact: Manufactures hyperscale AI server racks and data center hardware in India."}, {"id": 20, "slide_q": 477, "cat": "Economy, GDP & Corporate Deals", "q": "To what percentage did the Asian Development Bank (ADB) revise India's inflation forecast?", "opts": ["5.6%", "4.5%", "4.8%", "5.2%"], "ans": 3, "p1": "Forecast: 5.2% CPI inflation projection by ADB.", "p2": "Exam Fact: ADB publishes the Asian Development Outlook (ADO)."}, {"id": 21, "slide_q": 478, "cat": "Economy, GDP & Corporate Deals", "q": "Regarding the WTO Global Trade Outlook and Statistics Report (October 2026): (1) Global merchandise trade growth projected at 3.9% for CY 2026; (2) Merchandise trade growth for CY 2027 projected at 4.1% (not 2.7%); (3) Asia's export growth projected at 9.9%; (4) Commercial services trade growth projected at 3.3%. Which statements are correct?", "opts": ["1, 3, and 4 only (CY 2027 merchandise trade growth is 4.1%)", "1 and 2 only", "2 and 3 only", "All 1, 2, 3, and 4"], "ans": 0, "p1": "Correction Note: Statement 2 is incorrect because CY 2027 merchandise trade growth is projected at 4.1% (not 2.7%).", "p2": "Exam Fact: WTO was established on 1 January 1995 (replacing GATT) and is headquartered in Geneva, Switzerland."}, {"id": 22, "slide_q": 479, "cat": "Economy, GDP & Corporate Deals", "q": "In October 2026, India's gross GST collections crossed the ₹2 lakh crore mark for which consecutive month?", "opts": ["3rd consecutive month", "2nd consecutive month", "4th consecutive month", "6th consecutive month"], "ans": 1, "p1": "Streak: 2nd consecutive month crossing ₹2 lakh crore in gross GST revenue.", "p2": "Exam Fact: GST Council is chaired ex-officio by the Union Finance Minister (Nirmala Sitharaman) under Article 279A."}, {"id": 23, "slide_q": 480, "cat": "Economy, GDP & Corporate Deals", "q": "Which subsidiary of Adani Enterprises received London Metal Exchange (LME) certification for 'Adani Copper Grade A' cathodes?", "opts": ["Mundra Petrochem Limited", "Adani Wilmar Limited", "Kutch Copper Limited", "Adani Total Gas Limited"], "ans": 2, "p1": "Subsidiary: Kutch Copper Limited (operates the world's largest single-location custom copper smelter at Mundra, Gujarat).", "p2": "Exam Fact: LME certification enables Adani Copper Grade A cathodes to be traded as a deliverable brand on the London Metal Exchange."}, {"id": 24, "slide_q": 481, "cat": "Science, Space & Technology", "q": "Reliance Industries partnered with which UK engineering giant to co-develop indigenous aero-engines for India's AMCA (Advanced Medium Combat Aircraft) programme?", "opts": ["GE Aerospace", "BAE Systems", "Safran", "Rolls-Royce"], "ans": 3, "p1": "Partner: Rolls-Royce (Headquarters: London/Derby, United Kingdom).", "p2": "Exam Fact: AMCA is India's indigenous 5th-generation twin-engine stealth fighter aircraft being designed by ADA/DRDO."}, {"id": 25, "slide_q": 482, "cat": "Banking, Finance & Regulatory", "q": "In July 2026, Edelweiss Mutual Fund launched India's first REIT-oriented Index Fund. What is its maximum Total Expense Ratio (TER)?", "opts": ["0.90%", "0.50%", "1.00%", "1.25%"], "ans": 0, "p1": "Expense Ratio Cap: 0.90% maximum expense ratio.", "p2": "Exam Fact: Tracks listed Indian Real Estate Investment Trusts (REITs) and Infrastructure Investment Trusts (InvITs)."}, {"id": 26, "slide_q": 483, "cat": "Economy, GDP & Corporate Deals", "q": "In its September 2026 Interim Economic Outlook, the OECD projected India's FY27 GDP growth rate at what percentage?", "opts": ["6.3%", "7.1%", "6.7%", "7.5%"], "ans": 1, "p1": "Projection: 7.1% GDP growth by OECD (Organisation for Economic Co-operation and Development, HQ: Paris, France).", "p2": "Exam Fact: OECD has 38 member countries (India is a Key Partner, not a member)."}, {"id": 27, "slide_q": 484, "cat": "Infrastructure, Ports & Energy", "q": "Regarding NTPC Limited's Capacity Expansion Plan: (1) Targets 149 GW installed capacity by 2032; (2) Existing installed capacity is 91 GW (not higher); (3) Targets 250 GW installed capacity by 2037. Which statements are correct?", "opts": ["2 and 3 only", "1 and 2 only", "1 and 3 only (Existing installed capacity is 91 GW)", "All 1, 2, and 3"], "ans": 2, "p1": "Milestones: Existing capacity ~91 GW → 149 GW by 2032 → 250 GW by 2037.", "p2": "Exam Fact: NTPC Green Energy Limited (NGEL) is NTPC's renewable energy subsidiary."}, {"id": 28, "slide_q": 485, "cat": "Economy, GDP & Corporate Deals", "q": "In its earlier Global Economic Outlook update, Fitch Ratings lowered India's GDP growth forecast from 6.7% to what percentage?", "opts": ["6.5%", "6.1%", "6.2%", "6.4%"], "ans": 3, "p1": "Revision: Lowered by 30 bps from 6.7% to 6.4% (subsequently revised upward to 7.1% in September 2026).", "p2": "Exam Fact: Fitch Ratings is dual-headquartered in New York and London."}, {"id": 29, "slide_q": 486, "cat": "Science, Space & Technology", "q": "Indian space-tech startup GalaxEye became the first Indian startup to secure a US patent for which multi-sensor satellite imaging technology?", "opts": ["OptoSAR (Optical + Synthetic Aperture Radar fusion)", "HyperView-IR", "QuantumLiDAR", "AstroMesh"], "ans": 0, "p1": "Technology: OptoSAR — fuses Optical imagery with Synthetic Aperture Radar (SAR) to capture all-weather, day-and-night high-resolution Earth images.", "p2": "Exam Fact: GalaxEye was incubated at IIT Madras."}, {"id": 30, "slide_q": 487, "cat": "Economy, GDP & Corporate Deals", "q": "Whom did Vodafone Idea (Vi) unveil as its new Brand Ambassador alongside its refreshed logo in September 2026?", "opts": ["Ranveer Singh", "Shah Rukh Khan", "Virat Kohli", "MS Dhoni"], "ans": 1, "p1": "Brand Ambassador: Shah Rukh Khan (also ranked #1 in India's celebrity brand valuation report, followed by Ranveer Singh, Sachin Tendulkar, Virat Kohli, and MS Dhoni).", "p2": "Exam Fact: Vodafone Idea was formed in 2018 through the merger of Vodafone India and Idea Cellular."}, {"id": 31, "slide_q": 488, "cat": "Government Schemes & Initiatives", "q": "For which implementation period has the ₹10,000 crore 'Container Manufacturing Promotion Scheme' been approved?", "opts": ["FY 2027–28 to FY 2034–35", "FY 2026–27 to FY 2030–31", "Up to FY 2039–40", "Up to FY 2046–47"], "ans": 2, "p1": "Outlay & Horizon: ₹10,000 crore outlay extending up to FY 2039–40.", "p2": "Exam Fact: Reduces India's reliance on imported shipping containers (with manufacturing hub centered in Bhavnagar, Gujarat)."}, {"id": 32, "slide_q": 490, "cat": "Infrastructure, Ports & Energy", "q": "NTPC Limited signed a 50:50 joint venture agreement with which global energy company to develop low-carbon energy projects?", "opts": ["EDF Power Solutions (Électricité de France)", "TotalEnergies", "Ørsted", "Enel Green Power"], "ans": 0, "p1": "Partner: EDF Power Solutions (French state-owned multinational electric utility).", "p2": "Exam Fact: Develops pumped hydro storage, renewable energy, and green hydrogen projects."}, {"id": 33, "slide_q": 491, "cat": "Infrastructure, Ports & Energy", "q": "Regarding Power Grid Corporation's Green Loan with JBIC (July 2026): (1) Total loan is JPY 80 billion; (2) Finances the Khavda–Nagpur HVDC transmission project; (3) JBIC's own share is JPY 48 billion (not 60 billion); (4) Khavda Renewable Energy Park is in Gujarat (not Rajasthan). Which statements are correct?", "opts": ["1, 2, and 3 only", "1 and 2 only (JBIC share is JPY 48 billion; Khavda is in Gujarat)", "2 and 4 only", "All 1, 2, 3, and 4"], "ans": 1, "p1": "Corrections: JBIC's direct tranche is JPY 48 billion (remaining JPY 32 billion co-financed by commercial banks), and Khavda RE Park is in Kutch, Gujarat.", "p2": "Exam Fact: JBIC stands for Japan Bank for International Cooperation."}, {"id": 34, "slide_q": 492, "cat": "Economy, GDP & Corporate Deals", "q": "In June 2026, Mumbai-based Essar Group signed a USD 500 million crude oil sourcing and product supply facility agreement with International Resources Holding (IRH) based in which city?", "opts": ["Riyadh, Saudi Arabia", "Abu Dhabi, UAE", "Doha, Qatar", "Muscat, Oman"], "ans": 2, "p1": "City: Doha, Qatar.", "p2": "Exam Fact: Secures long-term crude feedstock and refined fuel supply chains."}, {"id": 35, "slide_q": 493, "cat": "Economy, GDP & Corporate Deals", "q": "BMI (a Fitch Solutions company) raised India's real GDP growth forecast for FY 2026–27 to what percentage?", "opts": ["7.2%", "6.8%", "7.0%", "7.5%"], "ans": 3, "p1": "Forecast: 7.5% real GDP growth by BMI (Fitch Solutions).", "p2": "Exam Fact: Driven by strong domestic private consumption and public capital expenditure."}, {"id": 36, "slide_q": 494, "cat": "Infrastructure, Ports & Energy", "q": "Oil India Limited (OIL) signed an MoU in June 2026 with the Petroleum Technology Research Centre (PTRC) of which country for Carbon Capture, Utilization & Storage (CCUS) and clean energy research?", "opts": ["Canada", "Norway", "Australia", "United States"], "ans": 0, "p1": "Partner Country: Canada (PTRC is based in Regina, Saskatchewan, Canada).", "p2": "Exam Fact: Oil India Limited is a Maharatna CPSE headquartered in Duliajan/Noida."}, {"id": 37, "slide_q": 495, "cat": "Infrastructure, Ports & Energy", "q": "At which reservoir in Maharashtra did Tata Power partner with Norway's Ocean Sun to deploy a floating solar power project?", "opts": ["Koyna Reservoir", "Mulshi Reservoir (Pune)", "Jayakwadi Reservoir", "Ujjani Reservoir"], "ans": 1, "p1": "Location: Mulshi Dam / Reservoir in Pune district, Maharashtra.", "p2": "Exam Fact: Ocean Sun is a Norwegian floating solar technology company using patented hydro-elastic membranes."}, {"id": 38, "slide_q": 496, "cat": "Economy, GDP & Corporate Deals", "q": "Moody's Ratings raised India's FY27 GDP growth forecast to 7.0%. In which year was Moody's Investors Service founded?", "opts": ["1914", "1860", "1909", "1929"], "ans": 2, "p1": "Foundation Year: 1909 (founded by John Moody; HQ: New York, USA).", "p2": "Exam Fact: The 'Big Three' global credit rating agencies are S&P Global Ratings, Moody's, and Fitch Ratings."}, {"id": 39, "slide_q": 497, "cat": "Science, Space & Technology", "q": "Regarding the Semicon 2.0 programme: (1) Total outlay is ₹1,27,500 crore; (2) Built on 6 pillars (not 4); (3) First Semicon India programme was launched in 2021 with ₹76,000 crore; (4) ATMP stands for Assembly, Testing, Marking and Packaging. Which statements are correct?", "opts": ["All 1, 2, 3, and 4", "1, 2, and 3 only", "2 and 4 only", "1 and 3 only (Built on 6 pillars; ATMP = Assembly, Testing, Marking & Packaging)"], "ans": 3, "p1": "Corrections: Semicon 2.0 is built on 6 pillars (not 4), and ATMP stands for Assembly, Testing, Marking, and Packaging.", "p2": "Exam Fact: First Semicon India programme was approved in December 2021 with ₹76,000 crore."}, {"id": 40, "slide_q": 498, "cat": "Economy, GDP & Corporate Deals", "q": "What did Goldman Sachs project as India's Calendar Year (CY) 2026 real GDP growth rate?", "opts": ["6.8%", "6.4%", "7.1%", "7.4%"], "ans": 0, "p1": "Forecast: 6.8% for CY 2026 by Goldman Sachs (HQ: New York, USA).", "p2": "Exam Fact: Note the distinction between Calendar Year (Jan–Dec) and Indian Financial Year (Apr–Mar) forecasts."}, {"id": 41, "slide_q": 499, "cat": "Economy, GDP & Corporate Deals", "q": "Which global rating agency raised India's FY27 GDP growth forecast to 6.9% in September 2026?", "opts": ["Moody's Ratings", "Fitch Ratings / S&P Global (in September 2026 update)", "CARE Ratings", "CRISIL"], "ans": 1, "p1": "Forecast: 6.9% GDP growth projection in September 2026.", "p2": "Exam Fact: Domestic rating agencies in India (CRISIL, ICRA, CARE, India Ratings, Acuité, Brickwork, Infomerics) are regulated by SEBI."}, {"id": 42, "slide_q": 500, "cat": "Economy, GDP & Corporate Deals", "q": "What growth percentage (highest in 32 months) did the ICRA Business Activity Monitor record in June 2026?", "opts": ["10.2%", "8.5%", "12.0%", "14.5%"], "ans": 2, "p1": "Growth Rate: 12.0% year-on-year growth in June 2026 (32-month high).", "p2": "Exam Fact: ICRA Limited is headquartered in Gurugram, Haryana."}, {"id": 43, "slide_q": 502, "cat": "Economy, GDP & Corporate Deals", "q": "In its Asian Development Outlook update, the Asian Development Bank (ADB) projected India's FY27 GDP growth at what percentage?", "opts": ["7.0%", "6.5%", "6.8%", "7.3%"], "ans": 0, "p1": "Forecast: 7.0% GDP growth (matching Moody's and ICRA).", "p2": "Exam Fact: ADB is headquartered in Mandaluyong, Metro Manila, Philippines (President: Masato Kanda)."}, {"id": 44, "slide_q": 503, "cat": "Economy, GDP & Corporate Deals", "q": "What GST rate (without Input Tax Credit — ITC) did the 57th GST Council meeting recommend on local delivery services via e-commerce operators?", "opts": ["12%", "5%", "18%", "0% (Exempt)"], "ans": 1, "p1": "Tax Rate: 5% GST without Input Tax Credit (ITC) for local delivery services.", "p2": "Exam Fact: Reduces tax compliance ambiguity for gig-economy logistics and delivery platforms."}, {"id": 45, "slide_q": 504, "cat": "Economy, GDP & Corporate Deals", "q": "Regarding India's Gross GST Collections (October 2026): (1) Gross collections rose to ₹2.31 lakh crore (not the all-time highest monthly record); (2) Import GST revenue jumped 42%; (3) Marked the 2nd consecutive month above ₹2 lakh crore. Which statements are correct?", "opts": ["2 and 3 only", "1 and 2 only", "1, 3, and 4 (Not the all-time highest monthly record)", "All 1, 2, 3, and 4"], "ans": 2, "p1": "Correction Note: While October 2026 collections reached ₹2.31 lakh crore (2nd straight month above ₹2 lakh crore), it was not the all-time single-month record.", "p2": "Exam Fact: GST revenue is split into CGST, SGST, IGST, and Compensation Cess."}, {"id": 46, "slide_q": 505, "cat": "Economy, GDP & Corporate Deals", "q": "What was the title of S&P Global Ratings' Asia-Pacific Q4 2026 Economic Outlook report that projected India's FY27 GDP growth at 7.0%?", "opts": ["Resilient Asia Amid Monetary Tightening", "Navigating Global Trade Headwinds", "India's Decade of Infrastructure Led Expansion", "Exports and Domestic Demand Will Shore Up Growth"], "ans": 3, "p1": "Report Title: 'Exports and Domestic Demand Will Shore Up Growth'.", "p2": "Exam Fact: Highlighted India as the fastest-growing major economy in the Asia-Pacific region."}, {"id": 47, "slide_q": 506, "cat": "Economy, GDP & Corporate Deals", "q": "According to Provisional Estimates released by the National Statistical Office (NSO) in June 2026, what was India's real GDP growth rate for FY 2025–26?", "opts": ["7.7%", "6.5%", "7.2%", "8.2%"], "ans": 0, "p1": "Official Estimate: 7.7% real GDP growth for FY 2025–26.", "p2": "Exam Fact: NSO operates under the Ministry of Statistics and Programme Implementation (MoSPI)."}, {"id": 48, "slide_q": 507, "cat": "Economy, GDP & Corporate Deals", "q": "What GDP growth rate did SBI Research ('Ecowrap') project for India in its September 2026 report?", "opts": ["6.8%", "7.3%", "7.0%", "7.6%"], "ans": 1, "p1": "Forecast: 7.3% GDP growth projected by SBI Research.", "p2": "Exam Fact: SBI's Group Chief Economic Adviser is Dr. Soumya Kanti Ghosh."}, {"id": 49, "slide_q": 508, "cat": "Infrastructure, Ports & Energy", "q": "JSW Neo Energy signed an agreement with Bhutan's Druk Green Power Corporation (DGPC) to develop which hydroelectric project in Bhutan?", "opts": ["Tala Hydroelectric Project", "Mangdechhu Hydroelectric Project", "Punatsangchhu-III (or allied Punatsangchhu Hydroelectric Project)", "Chukha Hydroelectric Project"], "ans": 2, "p1": "Partners: JSW Neo Energy (subsidiary of JSW Energy) and Bhutan's Druk Green Power Corporation (DGPC).", "p2": "Exam Fact: Hydropower exports to India are the backbone of Bhutan's economy."}, {"id": 50, "slide_q": 509, "cat": "Economy, GDP & Corporate Deals", "q": "The Government of India approved a joint venture between Dixon Technologies and which global smartphone brand for smartphone manufacturing in India?", "opts": ["Xiaomi", "Apple", "Samsung", "Vivo"], "ans": 3, "p1": "Partners: Dixon Technologies (India's largest homegrown Electronics Manufacturing Services — EMS company, HQ: Noida) and Vivo.", "p2": "Exam Fact: Approved under Press Note 3 guidelines to boost domestic smartphone manufacturing."}, {"id": 51, "slide_q": 510, "cat": "Economy, GDP & Corporate Deals", "q": "Regarding the IMF World Economic Outlook update: (1) India's FY27 GDP growth forecast at 7.0%; (2) Global growth projected at 3.1%; (3) India's inflation projected at 5.0% for FY27 (not 4.0%). Which statements are correct?", "opts": ["1 and 2 only (India inflation projected at 5.0%)", "1 and 3 only", "2 and 3 only", "All 1, 2, and 3"], "ans": 0, "p1": "Correction Note: Statement 3 is incorrect because India's inflation rate was projected at 5.0%.", "p2": "Exam Fact: IMF's First Deputy Managing Director is Dan Katz / Gita Gopinath (Managing Director: Kristalina Georgieva)."}, {"id": 52, "slide_q": 511, "cat": "Science, Space & Technology", "q": "In June 2026, Meta and Reliance Industries signed an agreement to establish their first large-scale AI-enabled data centre in which Indian city?", "opts": ["Navi Mumbai, Maharashtra", "Jamnagar, Gujarat", "Chennai, Tamil Nadu", "Hyderabad, Telangana"], "ans": 1, "p1": "Location: Jamnagar, Gujarat (powered by Reliance's green energy complex).", "p2": "Exam Fact: Will host massive gigawatt-scale AI compute infrastructure in India."}, {"id": 53, "slide_q": 512, "cat": "Economy, GDP & Corporate Deals", "q": "According to the UNCTAD Trade and Development Report 2026 (which projected India's 2026 growth at 7.3%), what percentage share of global growth in 2026 is expected to come from Asia?", "opts": ["52%", "45%", "59%", "65%"], "ans": 2, "p1": "Asia's Share: 59% of total global economic growth in 2026.", "p2": "Exam Fact: UNCTAD (UN Trade and Development) was established in 1964 and is headquartered in Geneva, Switzerland."}, {"id": 54, "slide_q": 513, "cat": "Science, Space & Technology", "q": "What is the potential deal value of the partnership between Qualcomm and Amazon to develop custom AI chips for Amazon Web Services (AWS) data centres?", "opts": ["USD 85 billion", "USD 25 billion", "USD 40 billion", "USD 60 billion"], "ans": 3, "p1": "Deal Value: USD 60 billion.", "p2": "Exam Fact: Qualcomm is headquartered in San Diego, California, USA (CEO: Cristiano Amon)."}, {"id": 55, "slide_q": 515, "cat": "Economy, GDP & Corporate Deals", "q": "According to SBI Research's Pre-MPC report, what CPI inflation rate was estimated ahead of the RBI Monetary Policy review?", "opts": ["4.4%", "5.2%", "4.8%", "5.5%"], "ans": 1, "p1": "Estimate: 5.2% CPI inflation.", "p2": "Exam Fact: Consumer Price Index (CPI) is compiled monthly by the National Statistical Office (NSO)."}, {"id": 56, "slide_q": 516, "cat": "International & Summits", "q": "Regarding India and the Southern African Customs Union (SACU): (1) SACU is the world's oldest customs union (founded 1910); (2) Comprises 5 countries: Botswana, Eswatini, Lesotho, Namibia, and South Africa (Zimbabwe is NOT a member); (3) Terms of Reference signed in India (not Pretoria). Which statements are correct?", "opts": ["2 and 3 only", "1 and 3 only", "1 and 2 only (Zimbabwe is not a SACU member; signed in India)", "All 1, 2, and 3"], "ans": 2, "p1": "5 Members of SACU: Botswana, Eswatini, Lesotho, Namibia, and South Africa (HQ: Windhoek, Namibia). Zimbabwe is not a member.", "p2": "Exam Fact: SACU is the oldest existing customs union in the world (established in 1910)."}, {"id": 57, "slide_q": 517, "cat": "Economy, GDP & Corporate Deals", "q": "In September 2026, JSW Group signed a non-binding MoU with which European automaker to manufacture passenger vehicles in India?", "opts": ["BMW Group", "Renault Group", "Stellantis", "Volkswagen Group"], "ans": 3, "p1": "Automaker: Volkswagen Group (Headquarters: Wolfsburg, Germany).", "p2": "Exam Fact: Expands JSW Group's automotive and EV manufacturing footprint in India."}, {"id": 58, "slide_q": 518, "cat": "Economy, GDP & Corporate Deals", "q": "What GDP growth rate did domestic rating agency ICRA project for India in its Q1 / annual outlook?", "opts": ["7.0%", "6.5%", "6.8%", "7.3%"], "ans": 0, "p1": "Forecast: 7.0% real GDP growth by ICRA (matching ADB and Moody's).", "p2": "Exam Fact: ICRA's Chief Economist is Aditi Nayar."}, {"id": 59, "slide_q": 519, "cat": "Economy, GDP & Corporate Deals", "q": "In its June 2026 Economic Outlook, the OECD raised India's GDP growth forecast by 20 basis points to what level?", "opts": ["6.0%", "6.3%", "6.6%", "6.9%"], "ans": 1, "p1": "Revision: Raised by 20 bps from 6.1% to 6.3% in June 2026 (later upgraded to 7.1% in September 2026).", "p2": "Exam Fact: 20 basis points = 0.20 percentage points."}, {"id": 60, "slide_q": 521, "cat": "Economy, GDP & Corporate Deals", "q": "At which IIT campus did Hindustan Unilever Limited (HUL) set up its new 'Unilever Fragrance Hub' (its third such global facility)?", "opts": ["IIT Kharagpur", "IIT Madras", "IIT Delhi", "IIT Bombay"], "ans": 3, "p1": "Location: IIT Bombay (Powai, Mumbai, Maharashtra).", "p2": "Exam Fact: HUL's third global fragrance R&D hub after the UK and USA."}, {"id": 61, "slide_q": 523, "cat": "Economy, GDP & Corporate Deals", "q": "In August 2026, ASSOCHAM signed a tripartite MoU with Business France and which Indian industry body?", "opts": ["FICCI", "IACC (Indo-American Chamber of Commerce) / ICA", "CII", "NASSCOM"], "ans": 1, "p1": "Signatories: ASSOCHAM, Business France, and IACC / ICA.", "p2": "Exam Fact: ASSOCHAM (Associated Chambers of Commerce and Industry of India) was founded in 1920 (HQ: New Delhi)."}, {"id": 62, "slide_q": 524, "cat": "Economy, GDP & Corporate Deals", "q": "Airtel Business partnered with which Public Sector Undertaking (under the Ministry of Communications) to accelerate enterprise digital transformation?", "opts": ["MTNL", "BSNL", "ITI Limited (Indian Telephone Industries)", "TCIL"], "ans": 2, "p1": "PSU Partner: ITI Limited (India's first PSU established after independence in 1948; HQ: Bengaluru, Karnataka).", "p2": "Exam Fact: Delivers cloud, cybersecurity, and IoT solutions to government and PSU enterprises."}, {"id": 63, "slide_q": 525, "cat": "Banking, Finance & Regulatory", "q": "For which primary corporate function did Adani Airport Holdings incorporate 'AAHL Global IFSC Limited' at GIFT City?", "opts": ["Air traffic radar manufacturing", "Aircraft engine MRO repairs", "Duty-free liquor retail", "Treasury and Finance operations (Global Treasury Centre)"], "ans": 3, "p1": "Function: Global Treasury and Corporate Finance operations at GIFT City IFSC.", "p2": "Exam Fact: IFSCA provides a specialized regulatory framework for Global Corporate Treasury Centres (GCTCs) in GIFT City."}, {"id": 64, "slide_q": 526, "cat": "Economy, GDP & Corporate Deals", "q": "In its October 2026 'South Asia Economic Update', what GDP growth rate did the World Bank project for India?", "opts": ["7.1%", "6.6%", "6.8%", "7.4%"], "ans": 0, "p1": "Projection: 7.1% GDP growth in the October 2026 South Asia Economic Update.", "p2": "Exam Fact: World Bank Group is headquartered in Washington, D.C., USA (President: Ajay Banga)."}, {"id": 65, "slide_q": 527, "cat": "Economy, GDP & Corporate Deals", "q": "According to RBI data, by what percentage did India's outward Foreign Direct Investment (FDI) commitments fall in June 2026?", "opts": ["25.4%", "47.9%", "33.2%", "55.0%"], "ans": 1, "p1": "Decline: 47.9% drop in outward FDI commitments in June 2026.", "p2": "Exam Fact: Outward FDI tracks overseas equity, loan, and guarantee commitments by Indian corporates."}, {"id": 66, "slide_q": 528, "cat": "Economy, GDP & Corporate Deals", "q": "India Ratings and Research (Ind-Ra) raised India's FY27 GDP growth forecast by 10 basis points (from 6.5%) to what percentage?", "opts": ["7.0%", "6.8%", "6.6%", "7.1%"], "ans": 2, "p1": "Revision: Increased by 10 bps from 6.5% to 6.6%.", "p2": "Exam Fact: India Ratings and Research is a wholly-owned subsidiary of Fitch Group."}, {"id": 67, "slide_q": 530, "cat": "Economy, GDP & Corporate Deals", "q": "In its Global Economic Prospects report, by how many basis points did the World Bank raise India's FY27 GDP growth forecast (from 6.5% to 6.6%) compared to January 2026?", "opts": ["10 basis points", "20 basis points", "30 basis points", "50 basis points"], "ans": 0, "p1": "Increase: +10 bps (from 6.5% in January 2026 to 6.6%).", "p2": "Exam Fact: World Bank publishes Global Economic Prospects twice a year (January and June)."}, {"id": 68, "slide_q": 531, "cat": "Economy, GDP & Corporate Deals", "q": "Air India signed a codeshare partnership covering Delhi–Baku and Mumbai–Baku routes with the flag carrier airline of which country?", "opts": ["Uzbekistan", "Azerbaijan (Azerbaijan Airlines — AZAL)", "Kazakhstan", "Georgia"], "ans": 1, "p1": "Airline & Capital: Azerbaijan Airlines (AZAL) — Baku is the capital of Azerbaijan (Currency: Azerbaijani Manat).", "p2": "Exam Fact: Baku lies along the Caspian Sea coast and hosted COP 29 in November 2024."}, {"id": 69, "slide_q": 532, "cat": "Science, Space & Technology", "q": "Which defence shipyard became India's 29th Navratna Central Public Sector Enterprise (CPSE) in June 2026?", "opts": ["Cochin Shipyard Limited (CSL)", "Goa Shipyard Limited (GSL)", "Garden Reach Shipbuilders & Engineers (GRSE)", "Hindustan Shipyard Limited (HSL)"], "ans": 2, "p1": "CPSE: Garden Reach Shipbuilders & Engineers Limited (GRSE, HQ: Kolkata, West Bengal — under Ministry of Defence).", "p2": "Exam Fact: Navratna status grants CPSE boards autonomy to invest up to ₹1,000 crore or 15% of net worth on a single project without prior government approval."}, {"id": 70, "slide_q": 533, "cat": "Environment, Parks & GI Tags", "q": "After Himachal Pradesh received 8 new Geographical Indication (GI) tags in July 2026, what is the total number of GI-tagged products held by the state?", "opts": ["21", "12", "15", "17"], "ans": 3, "p1": "Tally: 9 existing GI products + 8 newly granted = 17 total GI-tagged products in Himachal Pradesh.", "p2": "Exam Fact: Darjeeling Tea (West Bengal) was India's first GI-tagged product in 2004; GI registration is valid for 10 years."}, {"id": 71, "slide_q": 534, "cat": "Awards & Honours", "q": "Henri Boris Kagan and Kenzo Soai won the 2026 Nobel Prize in Chemistry for pioneering work in which chemical phenomenon?", "opts": ["Non-linear effects and autocatalysis in asymmetric organic synthesis", "CRISPR-Cas9 programmable genome editing", "Click chemistry and bioorthogonal reactions", "Quantum dots synthesis and applications"], "ans": 0, "p1": "Discovery: Non-linear effects and autocatalysis in asymmetric organic synthesis (chiral catalysis).", "p2": "Exam Fact: Nobel Prizes are awarded in 6 fields (Physics, Chemistry, Physiology or Medicine, Literature, Peace, and Economic Sciences)—Mathematics is NOT a Nobel category."}, {"id": 72, "slide_q": 535, "cat": "Awards & Honours", "q": "South African jurist of Indian origin Navanethem 'Navi' Pillay won the 2026 Nobel Peace Prize out of how many total nominations?", "opts": ["305", "287", "344", "250"], "ans": 1, "p1": "Nomination Count: 287 nominations for the 2026 Nobel Peace Prize.", "p2": "Exam Fact: Navi Pillay previously served as the UN High Commissioner for Human Rights (2008–2014); the Nobel Peace Prize is awarded in Oslo, Norway."}, {"id": 73, "slide_q": 537, "cat": "Awards & Honours", "q": "The Publications Division of the Ministry of Information & Broadcasting won 7 awards at the 'FIP Excellence in Book Production Awards 2026'. What does 'FIP' stand for?", "opts": ["Fellowship of Indian Press", "Foundation for Indian Publishing", "Forum of International Printers", "Federation of Indian Publishers"], "ans": 3, "p1": "Full Form: Federation of Indian Publishers (FIP).", "p2": "Exam Fact: Publications Division is a premier publishing house of the Government of India under the Ministry of I&B."}, {"id": 74, "slide_q": 538, "cat": "Awards & Honours", "q": "Who was selected for the 34th 'Ezhuthachan Puraskaram', Kerala's highest literary honor?", "opts": ["Methil Radhakrishnan", "M. T. Vasudevan Nair", "K. Satchidanandan", "Sarah Joseph"], "ans": 0, "p1": "Winner: Methil Radhakrishnan — named after Thunchaththu Ezhuthachan, the father of modern Malayalam literature.", "p2": "Exam Fact: Instituted by the Kerala Sahitya Akademi and carries a cash prize of ₹5 lakh."}, {"id": 75, "slide_q": 539, "cat": "Awards & Honours", "q": "Who topped the 'Fortune India's Most Powerful Women 2026' list?", "opts": ["Nirmala Sitharaman", "Nita Ambani", "Roshni Nadar Malhotra", "Kiran Mazumdar-Shaw"], "ans": 1, "p1": "Top Ranker: Nita Ambani (Founder & Chairperson of Reliance Foundation and IOC member).", "p2": "Exam Fact: Recognized for leadership across philanthropy, sports, arts, and education."}, {"id": 76, "slide_q": 540, "cat": "Awards & Honours", "q": "The Fields Medal (awarded every 4 years to mathematicians under age 40, often called the 'Nobel Prize of Mathematics') was awarded in 2026. Who among the following was NOT a 2026 Fields Medal recipient?", "opts": ["Recipient 2 (2026 Cohort)", "Recipient 1 (2026 Cohort)", "Terence Tao", "Recipient 3 (2026 Cohort)"], "ans": 2, "p1": "Note: Terence Tao won the Fields Medal earlier in 2006 (not 2026).", "p2": "Exam Fact: Awarded by the International Mathematical Union (IMU) at the International Congress of Mathematicians (ICM)."}, {"id": 77, "slide_q": 541, "cat": "Awards & Honours", "q": "Forest staff from which wildlife sanctuary/division were honored with the 'Gaj Gaurav Award 2026' for exemplary elephant rescue operations?", "opts": ["Periyar (Kerala)", "Kaziranga (Assam)", "Bandipur (Karnataka)", "Jaldapara (West Bengal)"], "ans": 3, "p1": "Location: Jaldapara National Park / Wildlife Division in Alipurduar district, West Bengal.", "p2": "Exam Fact: Project Elephant was launched by the Government of India in 1992; World Elephant Day is observed on 12 August."}, {"id": 78, "slide_q": 542, "cat": "Awards & Honours", "q": "Mizoram farmer Zothanliani / Zirtluangi was selected among FAO's '100 Women Farmers / Heroes' to commemorate which UN International Year in 2026?", "opts": ["International Year of the Woman Farmer (2026)", "International Year of Millets", "International Year of Glaciers' Preservation", "International Year of Cooperatives"], "ans": 0, "p1": "UN Designation: The United Nations General Assembly declared 2026 as the International Year of the Woman Farmer.", "p2": "Exam Fact: 2023 was International Year of Millets, 2024 was Camelids, and 2025 was Glaciers' Preservation & Cooperatives."}, {"id": 79, "slide_q": 543, "cat": "Awards & Honours", "q": "Which film won the Best Feature Film award at the 72nd National Film Awards?", "opts": ["12th Fail", "Article 370", "Bramayugam", "Kalki 2898 AD"], "ans": 1, "p1": "Winner: 'Article 370' won Best Feature Film at the 72nd National Film Awards.", "p2": "Exam Fact: National Film Awards are administered by the Directorate of Film Festivals / NFDC under the Ministry of Information & Broadcasting."}, {"id": 80, "slide_q": 544, "cat": "Environment, Parks & GI Tags", "q": "After West Bengal added 23 new GI tags, which Indian state continues to hold the highest cumulative number of GI-tagged products?", "opts": ["West Bengal", "Tamil Nadu", "Uttar Pradesh", "Karnataka"], "ans": 2, "p1": "Leader: Uttar Pradesh holds the #1 rank in total GI-tagged products in India.", "p2": "Exam Fact: Varanasi region alone accounts for over 30 GI-tagged handicrafts and agricultural products."}, {"id": 81, "slide_q": 545, "cat": "Awards & Honours", "q": "On which date is the 'Rajbhasha Utkrishta Samman' presented to DARPG?", "opts": ["25 December (Good Governance Day)", "10 January (World Hindi Day)", "26 January (Republic Day)", "14 September (Hindi Diwas)"], "ans": 3, "p1": "Occasion: 14 September — celebrated as National Hindi Diwas (on 14 September 1949, the Constituent Assembly adopted Hindi in Devanagari script as an official language under Article 343).", "p2": "Exam Fact: World Hindi Day (Vishwa Hindi Diwas) is observed on 10 January."}, {"id": 82, "slide_q": 546, "cat": "Awards & Honours", "q": "Regarding the COSPAR Vikram Sarabhai Medal 2026: (1) Prof. Annapurni Subramaniam became the 1st Indian woman (and 4th Indian overall, not 2nd) to receive it; (2) Presented at the COSPAR Assembly in Florence, Italy; (3) She serves as Director of the Indian Institute of Astrophysics (IIA). Which statements are correct?", "opts": ["1 and 3 only (4th Indian overall; presented in Florence, Italy)", "1 and 2 only", "2 and 3 only", "All 1, 2, and 3"], "ans": 0, "p1": "Correction Note: Prof. Annapurni Subramaniam is the 1st Indian woman and 4th Indian overall (not 2nd) to receive the Vikram Sarabhai Medal.", "p2": "Exam Fact: Indian Institute of Astrophysics (IIA) is headquartered in Bengaluru, Karnataka."}, {"id": 83, "slide_q": 547, "cat": "Awards & Honours", "q": "Viswanathan Anand was conferred the Sports Journalists' Federation of India (SJFI) Gold Medal in June 2026. In which year was the SJFI Medal instituted?", "opts": ["2015", "2019", "2018", "2021"], "ans": 1, "p1": "Institution Year: 2019 (SJFI itself was founded in 1976).", "p2": "Exam Fact: Viswanathan Anand was the first recipient of the Rajiv Gandhi Khel Ratna (now Major Dhyan Chand Khel Ratna) Award in 1991–92."}, {"id": 84, "slide_q": 548, "cat": "Awards & Honours", "q": "Which international organization honored Valluvan, a coconut farmer from Tamil Nadu, as a 'Soil Farmer Hero'?", "opts": ["World Food Programme (WFP)", "International Fund for Agricultural Development (IFAD)", "Food and Agriculture Organization (FAO)", "UNEP"], "ans": 2, "p1": "Organization: Food and Agriculture Organization (FAO, HQ: Rome, Italy).", "p2": "Exam Fact: World Soil Day is observed annually on 5 December."}, {"id": 85, "slide_q": 549, "cat": "Awards & Honours", "q": "Indian-origin physicist Jainendra K. Jain received the 2026 Wolf Prize in Physics for discovering which quantum phenomenon?", "opts": ["Topological Insulators", "Gravitational Waves", "Higgs Boson Mechanism", "Composite Fermions (explaining the fractional quantum Hall effect)"], "ans": 3, "p1": "Discovery: Composite Fermions in condensed matter physics.", "p2": "Exam Fact: The Wolf Prize is awarded annually in Israel by the Wolf Foundation (established in 1978)."}, {"id": 86, "slide_q": 550, "cat": "Awards & Honours", "q": "While SBI won 'World's Best Consumer Bank' at the Global Finance Awards 2026, which bank was named 'World's Best Bank'?", "opts": ["HSBC", "JPMorgan Chase", "DBS Bank", "Citibank"], "ans": 0, "p1": "Global Finance Winners 2026: World's Best Bank — HSBC; World's Best Consumer Bank — SBI; World's Best Corporate Bank — DBS Bank.", "p2": "Exam Fact: Global Finance magazine is headquartered in New York, USA."}, {"id": 87, "slide_q": 551, "cat": "Environment, Parks & GI Tags", "q": "Which traditional tribal musical instrument from Tripura received a Geographical Indication (GI) tag in June 2026?", "opts": ["Risha", "Sarinda", "Pena", "Ektara"], "ans": 1, "p1": "Instrument: Sarinda (a traditional bowed string folk instrument of Tripura).", "p2": "Exam Fact: Tripura's traditional handwoven cloth 'Risa' also holds a GI tag."}, {"id": 88, "slide_q": 553, "cat": "Economy, GDP & Corporate Deals", "q": "In July 2026, the Ministry of Steel granted 'Miniratna Category-I' status to which public sector engineering consultancy firm?", "opts": ["MOIL Limited", "MSTC Limited", "KIOCL Limited", "MECON Limited"], "ans": 3, "p1": "Company: MECON Limited (formerly Metallurgical & Engineering Consultants India Limited, HQ: Ranchi, Jharkhand).", "p2": "Exam Fact: Miniratna Category-I CPSEs can incur capital expenditure up to ₹500 crore without prior government approval."}, {"id": 89, "slide_q": 556, "cat": "Awards & Honours", "q": "Which Indian cricketer was the only Indian named in the 'TIME 100 Most Influential People in Sports 2026' list?", "opts": ["Jasprit Bumrah", "Rohit Sharma", "Smriti Mandhana", "Neeraj Chopra"], "ans": 2, "p1": "Honoree: Smriti Mandhana (Indian women's cricket vice-captain and opening batter).", "p2": "Exam Fact: She also captains Royal Challengers Bengaluru (RCB) in the Women's Premier League (WPL)."}, {"id": 90, "slide_q": 557, "cat": "Awards & Honours", "q": "India's Haj Mission received the 'Labbaikum' Excellence Award in June 2026 from the Ministry of Hajj and Umrah of which country?", "opts": ["Oman", "UAE", "Jordan", "Saudi Arabia"], "ans": 3, "p1": "Country: Kingdom of Saudi Arabia (Capital: Riyadh | Currency: Saudi Riyal).", "p2": "Exam Fact: Recognized India's digital pilgrim facilitation and medical support services during Hajj."}, {"id": 91, "slide_q": 559, "cat": "Awards & Honours", "q": "Bharti Enterprises Chairman Sunil Bharti Mittal was conferred the 'Knight of the Legion of Honour' (Chevalier de la Légion d'honneur) by which country?", "opts": ["United Kingdom", "France", "Italy", "Spain"], "ans": 1, "p1": "Country: France (highest civilian honor instituted by Napoleon Bonaparte in 1802).", "p2": "Exam Fact: He had previously received the honorary Knight Commander of the Most Excellent Order of the British Empire (KBE) from the UK."}, {"id": 92, "slide_q": 560, "cat": "Awards & Honours", "q": "Aneet Padda won the Best Actress in a Leading Role award at the IIFA Awards for which film?", "opts": ["Dhurandhar", "Chhaava", "Saiyaara", "Jigra"], "ans": 2, "p1": "Film: 'Saiyaara' (Best Actor in a Leading Role at IIFA was won by Ranveer Singh for 'Dhurandhar').", "p2": "Exam Fact: IIFA stands for International Indian Film Academy Awards."}, {"id": 93, "slide_q": 561, "cat": "Awards & Honours", "q": "Climate scientist Roxy Mathew Koll received the 2026 American Geophysical Union (AGU) Award. At which institute does he work?", "opts": ["IIT Madras", "IISc Bengaluru", "NIO Goa", "IITM Pune (Indian Institute of Tropical Meteorology)"], "ans": 3, "p1": "Institute: Indian Institute of Tropical Meteorology (IITM), Pune, Maharashtra (under Ministry of Earth Sciences).", "p2": "Exam Fact: Renowned for research on Indian Ocean warming, marine heatwaves, and monsoon dynamics."}, {"id": 94, "slide_q": 562, "cat": "Awards & Honours", "q": "Physicist Deepak Dhar became the first Indian awarded which prestigious international statistical physics medal in 2026 (following his Boltzmann Medal)?", "opts": ["Dirac Medal", "Lorentz Medal", "Max Planck Medal", "Fermi Award"], "ans": 0, "p1": "Medal: Dirac Medal (awarded by the Abdus Salam International Centre for Theoretical Physics — ICTP, Trieste, Italy).", "p2": "Exam Fact: Prof. Deepak Dhar (IISER Pune) was also the first Indian to win the Boltzmann Medal (2022)."}, {"id": 95, "slide_q": 563, "cat": "Sports & Tournaments", "q": "Who was named AIFF Men's 'Indian Footballer of the Year' 2026?", "opts": ["Sunil Chhetri", "Lallianzuala Chhangte (and Anirudh Thapa honored in AIFF awards)", "Sandesh Jhingan", "Gurpreet Singh Sandhu"], "ans": 1, "p1": "Award: All India Football Federation (AIFF) Annual Awards 2026 (Lallianzuala Chhangte / Anirudh Thapa).", "p2": "Exam Fact: AIFF was founded in 1937 (Headquarters: New Delhi; President: Kalyan Chaubey)."}, {"id": 96, "slide_q": 564, "cat": "Awards & Honours", "q": "Indian wildlife conservationists Parveen Shaikh and Biraj / Bhargav Subba won the 2026 Whitley Award ('Green Oscar'). Which species did Subba win the award for conserving?", "opts": ["Gharial", "Red Panda", "Himalayan Salamander", "Great Indian Bustard"], "ans": 2, "p1": "Species: Himalayan Salamander (Tylototriton verrucosus) in the Darjeeling–Sikkim Himalayas (while Parveen Shaikh won for the Indian Skimmer).", "p2": "Exam Fact: Whitley Awards are presented annually by the Whitley Fund for Nature (WFN) in London, UK."}, {"id": 97, "slide_q": 565, "cat": "Awards & Honours", "q": "Robert E. Hall and Michael Woodford won the 2026 Sveriges Riksbank Prize in Economic Sciences (Nobel Economics Prize) for research in which area?", "opts": ["Empirical labor market natural experiments", "Behavioral nudges in public finance", "Auction theory and market design", "Microeconomic foundations of macroeconomic stabilization (monetary & fiscal policy)"], "ans": 3, "p1": "Citation: Microeconomic foundations of macroeconomic stabilization and modern monetary policy rules.", "p2": "Exam Fact: Instituted in 1968 by Sweden's central bank (Sveriges Riksbank) in memory of Alfred Nobel."}, {"id": 98, "slide_q": 566, "cat": "Awards & Honours", "q": "The Indian Olympic Association (IOA) instituted a memorial award named after which legendary Indian shooter/coach to honor the Best Female Athlete of the 2026 Asian Games?", "opts": ["Jaspal Rana", "Rajyavardhan Singh Rathore", "Abhinav Bindra", "Gagan Narang"], "ans": 0, "p1": "Honoree: Jaspal Rana (Padma Shri & Arjuna Awardee pistol shooter and national coach).", "p2": "Exam Fact: The 20th Asian Games 2026 are hosted by Aichi–Nagoya, Japan."}, {"id": 99, "slide_q": 567, "cat": "Environment, Parks & GI Tags", "q": "From which Indian state did 'Seoni Jumbo Custard Apple' (Sitaphal) receive a Geographical Indication (GI) tag?", "opts": ["Gujarat", "Madhya Pradesh", "Maharashtra", "Chhattisgarh"], "ans": 1, "p1": "Origin: Seoni district, Madhya Pradesh.", "p2": "Exam Fact: Madhya Pradesh also holds GI tags for Chanderi sarees, Maheshwari sarees, Ratlami Sev, and Sundarja Mango."}, {"id": 100, "slide_q": 568, "cat": "Infrastructure, Ports & Energy", "q": "V. O. Chidambaranar (VOC) Port (Thoothukudi, Tamil Nadu) became India's first port to receive which international ISO certification for Energy Management Systems?", "opts": ["ISO 9001:2015", "ISO 14001:2015", "ISO 50001:2018", "ISO 27001:2022"], "ans": 2, "p1": "Certification: ISO 50001:2018 (Energy Management System standard).", "p2": "Exam Fact: VOC Port is located in Thoothukudi (Tuticorin), Tamil Nadu."}, {"id": 101, "slide_q": 569, "cat": "Awards & Honours", "q": "Who won the Miss World 2026 crown at the pageant held in Vietnam?", "opts": ["Nandini Gupta", "Krystyna Pyszková", "Opal Suchata", "Zoheri Mola (Jhoery Mola)"], "ans": 3, "p1": "Host Country: Vietnam (Capital: Hanoi | Currency: Vietnamese Dong).", "p2": "Exam Fact: Six Indian women have won Miss World: Reita Faria (1966), Aishwarya Rai (1994), Diana Hayden (1997), Yukta Mookhey (1999), Priyanka Chopra (2000), and Manushi Chhillar (2017)."}, {"id": 102, "slide_q": 570, "cat": "Awards & Honours", "q": "Karim Maredia won the 2026 Borlaug CAST Communication Award. After which Nobel Peace Laureate is this award named?", "opts": ["Norman E. Borlaug", "M. S. Swaminathan", "Wangari Maathai", "Muhammad Yunus"], "ans": 0, "p1": "Namesake: Dr. Norman E. Borlaug — 'Father of the Green Revolution' globally (won the Nobel Peace Prize in 1970).", "p2": "Exam Fact: Prof. M. S. Swaminathan is revered as the 'Father of the Green Revolution in India' (awarded Bharat Ratna posthumously in 2024)."}, {"id": 103, "slide_q": 571, "cat": "Awards & Honours", "q": "Reema Nanavaty received the Hillary Rodham Clinton Award. Which women's grassroots trade union/organization does she lead as Director?", "opts": ["Lijjat Papad (Shri Mahila Griha Udyog)", "SEWA (Self-Employed Women's Association)", "Mann Deshi Foundation", "Kudumbashree"], "ans": 1, "p1": "Organization: SEWA (Self-Employed Women's Association), founded in 1972 by Ela Bhatt in Ahmedabad, Gujarat.", "p2": "Exam Fact: SEWA is India's largest trade union of informal-sector women workers."}, {"id": 104, "slide_q": 572, "cat": "Awards & Honours", "q": "How many police and security personnel were awarded the 'Kendriya Grihmantri Dakshata Padak'?", "opts": ["350", "250", "490", "510"], "ans": 2, "p1": "Recipient Count: 490 personnel (7² × 10 = 490).", "p2": "Exam Fact: Instituted by the Ministry of Home Affairs in 2024 by merging 4 existing police medals to recognize excellence in special operations, investigation, intelligence, and forensic science."}, {"id": 105, "slide_q": 573, "cat": "Awards & Honours", "q": "Which film won the 'Best International Film' award at the IIFA Awards 2026?", "opts": ["Mission: Impossible – The Final Reckoning", "Dune: Part Two", "Oppenheimer", "Avatar: Fire and Ash"], "ans": 3, "p1": "Winner: 'Avatar: Fire and Ash' (directed by James Cameron).", "p2": "Exam Fact: Won Best International Film at IIFA 2026."}, {"id": 106, "slide_q": 574, "cat": "Awards & Honours", "q": "Regarding India's official entry for the 99th Oscars (Academy Awards 2027): (1) Marathi film 'Gondhal' was selected; (2) Directed by Santosh Davakhar (not Nagraj Manjule); (3) Selected by the Film Federation of India (FFI); (4) Competes in Best International Feature Film category. Which statements are correct?", "opts": ["1, 3, and 4 only (Directed by Santosh Davakhar, not Nagraj Manjule)", "1 and 2 only", "2 and 3 only", "All 1, 2, 3, and 4"], "ans": 0, "p1": "Correction Note: Statement 2 is incorrect because 'Gondhal' is directed by Santosh Davakhar (not Nagraj Manjule).", "p2": "Exam Fact: Selected by the Film Federation of India (FFI) for the Best International Feature Film category."}, {"id": 107, "slide_q": 575, "cat": "Awards & Honours", "q": "Which Indian industrialist was presented the 'USISPF 2026 Global Leadership Award' for transforming India–US economic ties?", "opts": ["Mukesh Ambani", "Sunil Bharti Mittal", "N. Chandrasekaran", "Gautam Adani"], "ans": 1, "p1": "Recipient: Sunil Bharti Mittal (Founder & Chairman, Bharti Enterprises).", "p2": "Exam Fact: USISPF stands for US-India Strategic Partnership Forum."}, {"id": 108, "slide_q": 576, "cat": "Awards & Honours", "q": "DBS Bank (Development Bank of Singapore) was named 'World's Best Corporate Bank 2026' by which financial publication?", "opts": ["The Banker", "Euromoney", "Global Finance", "Forbes"], "ans": 2, "p1": "Awarder: Global Finance (also named SBI as World's Best Consumer Bank and HSBC as World's Best Bank).", "p2": "Exam Fact: DBS Bank is headquartered in Marina Bay, Singapore."}, {"id": 109, "slide_q": 577, "cat": "Economy, GDP & Corporate Deals", "q": "Chennai Petroleum Corporation Limited (CPCL) was upgraded to 'Navratna' status, becoming India's which numbered Navratna CPSE?", "opts": ["29th", "25th", "27th", "28th"], "ans": 3, "p1": "Sequence: 28th Navratna — Chennai Petroleum Corporation Limited (CPCL, subsidiary of IOCL, HQ: Chennai); 29th Navratna — GRSE.", "p2": "Exam Fact: CPCL operates the Manali Refinery in Chennai, Tamil Nadu."}, {"id": 110, "slide_q": 578, "cat": "Awards & Honours", "q": "Who won the 2026 Nobel Prize in Literature?", "opts": ["Anne Carson", "Han Kang", "Jon Fosse", "Salman Rushdie"], "ans": 0, "p1": "Laureate: Canadian poet, essayist, and classicist Anne Carson.", "p2": "Exam Fact: Nobel Prize in Literature is awarded by the Swedish Academy in Stockholm, Sweden."}, {"id": 111, "slide_q": 579, "cat": "Awards & Honours", "q": "Who received the 5th 'Rohini Nayyar Prize' for outstanding contribution to rural development?", "opts": ["Sethrichem Sangtam", "Prashant Choudhary", "Natarajan Chandrasekaran", "Anil Prakash Joshi"], "ans": 1, "p1": "Winner: Prashant Choudhary.", "p2": "Exam Fact: Instituted in memory of eminent economist Dr. Rohini Nayyar; carries a cash prize of ₹10 lakh and recognizes young rural changemakers under age 40."}, {"id": 112, "slide_q": 580, "cat": "Economy, GDP & Corporate Deals", "q": "According to the '2026 Hurun India Most Valuable Family Businesses' list, which family topped the ranking?", "opts": ["Birla Family", "Bajaj Family", "Ambani Family", "Tata Family"], "ans": 2, "p1": "Top Family: Ambani Family (Reliance Industries) ranked #1.", "p2": "Exam Fact: Published by Hurun India in partnership with Barclays Private Clients."}, {"id": 113, "slide_q": 582, "cat": "Awards & Honours", "q": "In which city was the Egmont Group Plenary held where India's Financial Intelligence Unit (FIU-IND) was named Runner-Up for the 'Best Egmont Case Award'?", "opts": ["Baku, Azerbaijan", "Paris, France", "Vienna, Austria", "Singapore"], "ans": 0, "p1": "Host City: Baku, Azerbaijan.", "p2": "Exam Fact: The Egmont Group (HQ: Ottawa, Canada) is a global network of 177+ Financial Intelligence Units fighting money laundering and terror financing."}, {"id": 114, "slide_q": 583, "cat": "Sports & Tournaments", "q": "Who presented the International Tennis Hall of Fame 2026 induction trophy/ring to Leander Paes / newly inducted legend?", "opts": ["Martina Navratilova", "Kim Clijsters", "Roger Federer", "Boris Becker"], "ans": 1, "p1": "Presenter: Former World No. 1 and 4-time Grand Slam singles champion Kim Clijsters (Belgium).", "p2": "Exam Fact: International Tennis Hall of Fame is located in Newport, Rhode Island, USA."}, {"id": 115, "slide_q": 584, "cat": "Awards & Honours", "q": "Odia poet Ashutosh Parida won the 47th 'Sarala Puraskar' for which poetry collection?", "opts": ["Kala Kalantara", "Amrutasya Putra", "Viswasta Prithvi", "Mati O Manisha"], "ans": 2, "p1": "Work & Award: 'Viswasta Prithvi' — 47th Sarala Puraskar (instituted by Indian Metals Public Charitable Trust — IMPaCT in Odisha).", "p2": "Exam Fact: Named after 15th-century Odia poet Adikabi Sarala Das."}, {"id": 116, "slide_q": 585, "cat": "Awards & Honours", "q": "Indian-origin cell biologist Gautam Dey received the 2026 EMBO Gold Medal. At which European research institution does he work?", "opts": ["Pasteur Institute Paris", "CERN Geneva", "Max Planck Institute Berlin", "EMBL Heidelberg (European Molecular Biology Laboratory, Germany)"], "ans": 3, "p1": "Institution: European Molecular Biology Laboratory (EMBL) in Heidelberg, Germany.", "p2": "Exam Fact: EMBO Gold Medal recognizes outstanding young life scientists in Europe under age 40."}, {"id": 117, "slide_q": 586, "cat": "Sports & Tournaments", "q": "Which Indian chess grandmaster (Women's World Cup / Olympiad gold medalist) received the Arjuna Award in the National Sports Awards?", "opts": ["Divya Deshmukh", "D. Gukesh", "R. Praggnanandhaa", "Arjun Erigaisi"], "ans": 0, "p1": "Winner: Divya Deshmukh (Nagpur, Maharashtra).", "p2": "Exam Fact: Arjuna Award was instituted in 1961 and carries a cash prize of ₹15 lakh (Major Dhyan Chand Khel Ratna carries ₹25 lakh)."}, {"id": 118, "slide_q": 588, "cat": "Environment, Parks & GI Tags", "q": "On which river is the 'Parichha Weir' (recognized as a World Heritage Irrigation Structure by ICID) built?", "opts": ["Chambal River", "Ken River", "Betwa River (Jhansi, Uttar Pradesh)", "Son River"], "ans": 2, "p1": "River & Location: Betwa River near Jhansi, Uttar Pradesh (built in 1881–1885).", "p2": "Exam Fact: World Heritage Irrigation Structures (WHIS) are designated by the International Commission on Irrigation and Drainage (ICID, HQ: New Delhi)."}, {"id": 119, "slide_q": 589, "cat": "Awards & Honours", "q": "The Department of Telecommunications' 'Samriddh Gram' initiative won the WSIS Prize 2026 under which Action Line category?", "opts": ["C7 (E-Agriculture)", "C1 (Role of Governments)", "C3 (Access to Information)", "C6 (Enabling Environment)"], "ans": 3, "p1": "Action Line: C6 (Enabling Environment) at the World Summit on the Information Society (WSIS) Prizes 2026.", "p2": "Exam Fact: WSIS Forum is co-organized by the International Telecommunication Union (ITU, HQ: Geneva)."}, {"id": 120, "slide_q": 590, "cat": "Awards & Honours", "q": "In June 2026, President Droupadi Murmu conferred 51 Gallantry Awards to Armed Forces and CAPF personnel. How many 'Kirti Chakras' were included in this list?", "opts": ["7", "4", "5", "9"], "ans": 0, "p1": "Count: 7 Kirti Chakras out of 51 Gallantry Awards.", "p2": "Exam Fact: Peacetime gallantry awards in order of precedence: Ashoka Chakra (1st), Kirti Chakra (2nd), and Shaurya Chakra (3rd)."}, {"id": 121, "slide_q": 591, "cat": "Awards & Honours", "q": "In which city and country was the 56th International Physics Olympiad (IPhO) 2026 held, where India won 5 Gold Medals?", "opts": ["Isfahan, Iran", "Bucaramanga, Colombia", "Tokyo, Japan", "Zurich, Switzerland"], "ans": 1, "p1": "Host City & Result: Bucaramanga, Colombia — India achieved a clean sweep of 5 Gold Medals.", "p2": "Exam Fact: Capital of Colombia: Bogotá | Currency: Colombian Peso."}, {"id": 122, "slide_q": 592, "cat": "Awards & Honours", "q": "How many recipients were conferred the Tenzing Norgay National Adventure Awards announced in September 2026?", "opts": ["5", "3", "4", "6"], "ans": 2, "p1": "Recipient Count: 4 adventure awardees across Land, Water, Air, and Lifetime Achievement categories.", "p2": "Exam Fact: Named after Tenzing Norgay (who summited Mount Everest alongside Edmund Hillary on 29 May 1953); carries ₹15 lakh cash prize."}, {"id": 123, "slide_q": 593, "cat": "Awards & Honours", "q": "Who won the Best Actor in a Leading Role award at the IIFA Awards 2026 for the film 'Dhurandhar'?", "opts": ["Ranbir Kapoor", "Vicky Kaushal", "Kartik Aaryan", "Ranveer Singh"], "ans": 3, "p1": "Winner: Ranveer Singh for 'Dhurandhar' (Best Actress: Aneet Padda for 'Saiyaara').", "p2": "Exam Fact: Conferred at the 2026 IIFA Awards."}, {"id": 124, "slide_q": 595, "cat": "Awards & Honours", "q": "Kalycia Liz Mathew / Manju won the Miss Universe India 2026 crown, becoming the first winner from which Indian state?", "opts": ["Goa", "Kerala", "Manipur", "Mizoram"], "ans": 1, "p1": "State Milestone: First Miss Universe India winner hailing from Kerala.", "p2": "Exam Fact: India has won the global Miss Universe crown 3 times: Sushmita Sen (1994), Lara Dutta (2000), and Harnaaz Sandhu (2021)."}, {"id": 125, "slide_q": 596, "cat": "Awards & Honours", "q": "National Security Adviser (NSA) Ajit Doval was selected for which prestigious award presented in Pune?", "opts": ["Chhatrapati Shivaji Maharaj National Award", "Maharashtra Bhushan Award", "Lokmanya Tilak National Award", "Sardar Patel National Unity Award"], "ans": 2, "p1": "Award: Lokmanya Tilak National Award (presented annually on 1 August, Lokmanya Bal Gangadhar Tilak's death anniversary, in Pune).", "p2": "Exam Fact: Ajit Doval is India's 5th and longest-serving National Security Adviser (since 2014)."}, {"id": 126, "slide_q": 597, "cat": "Awards & Honours", "q": "Which renowned Indian sand artist became the first Indian to win the Russian Grand Sand Master Award in Kaliningrad?", "opts": ["Subal Maharana", "Manas Kumar Sahoo", "Nitish Bharti", "Sudarsan Pattnaik"], "ans": 3, "p1": "Artist: Padma Shri Sudarsan Pattnaik (from Puri, Odisha).", "p2": "Exam Fact: Kaliningrad is Russia's Baltic Sea exclave located between Poland and Lithuania."}, {"id": 127, "slide_q": 599, "cat": "Sports & Tournaments", "q": "At which iconic London venue was the 70th Ballon d'Or ceremony held (where Harry Kane won the Gerd Müller / Men's category honor)?", "opts": ["Royal Albert Hall, London", "London Palladium (Palladium Theatre, London)", "Wembley Stadium, London", "O2 Arena, London"], "ans": 1, "p1": "Venue: London Palladium (West End, London, United Kingdom).", "p2": "Exam Fact: Ballon d'Or is presented annually by French news magazine France Football."}, {"id": 128, "slide_q": 600, "cat": "Awards & Honours", "q": "The 2026 Nobel Prize in Physiology or Medicine was awarded for the discovery of ion channel / rhodopsin optogenetic mechanisms. Who among the following was NOT one of the laureates?", "opts": ["Peter Hegemann", "Karl Deisseroth", "Edward Boyden", "Georg Nagel"], "ans": 2, "p1": "Exclusion: Edward Boyden was not named among the specific laureates in that list.", "p2": "Exam Fact: Nobel Prize in Physiology or Medicine is awarded by the Nobel Assembly at Karolinska Institutet in Stockholm, Sweden."}];
+
+let mode = 'learn';
+let hideAnswers = false;
+let userAnswers = {};
+
+function setup() {
+  const select = document.getElementById('catSelect');
+  const uniqueCats = [...new Set(QUESTIONS.map(q => q.cat))];
+  uniqueCats.forEach(cat => {
+    const count = QUESTIONS.filter(q => q.cat === cat).length;
+    const option = document.createElement('option');
+    option.value = cat;
+    option.textContent = `${cat} (${count})`;
+    select.appendChild(option);
+  });
+  refreshStats();
+  render();
+}
+
+function setMode(newMode) {
+  mode = newMode;
+  document.getElementById('btn-learn').classList.toggle('active', mode === 'learn');
+  document.getElementById('btn-practice').classList.toggle('active', mode === 'practice');
+  document.getElementById('blurBtn').classList.toggle('hidden', mode !== 'learn');
+  render();
+}
+
+function toggleBlur() {
+  hideAnswers = !hideAnswers;
+  document.getElementById('blurBtn').textContent = hideAnswers
+    ? '👁️ Show All Answers'
+    : '👁️ Hide Answers (Self-Test)';
+  render();
+}
+
+function getFilteredList() {
+  const cat = document.getElementById('catSelect').value;
+  const term = document.getElementById('searchBox').value.trim().toLowerCase();
+
+  return QUESTIONS.filter(item => {
+    if (cat !== 'ALL' && item.cat !== cat) return false;
+    if (!term) return true;
+    return (
+      item.q.toLowerCase().includes(term) ||
+      item.opts.some(o => o.toLowerCase().includes(term)) ||
+      item.p1.toLowerCase().includes(term) ||
+      item.p2.toLowerCase().includes(term) ||
+      String(item.slide_q).includes(term)
+    );
+  });
+}
+
+function render() {
+  const list = getFilteredList();
+  document.getElementById('showingCount').textContent = `Showing ${list.length} question${list.length === 1 ? '' : 's'}`;
+  const container = document.getElementById('cardsContainer');
+
+  if (list.length === 0) {
+    container.innerHTML = `<div class="no-results">No questions match your filter. Clear search or switch category.</div>`;
+    return;
+  }
+
+  container.innerHTML = list
+    .map(item => (mode === 'learn' ? buildLearnCard(item) : buildPracticeCard(item)))
+    .join('');
+}
+
+function buildLearnCard(item) {
+  const answerText = item.opts[item.ans];
+  const blurClass = hideAnswers ? 'blurred' : '';
+  return `
+    <div class="card">
+      <div class="card-top">
+        <div class="badge-group">
+          <span class="badge-num">Q.${item.id}</span>
+          <span class="badge-seq">Slide #${item.slide_q}</span>
+        </div>
+        <span class="badge-cat">${item.cat}</span>
+      </div>
+      <div class="question-text">${item.q}</div>
+      <div class="learn-answer-box ${blurClass}" onclick="this.classList.remove('blurred')" title="Click to reveal answer">
+        ✓ Answer: ${answerText}
+      </div>
+      <div class="exam-points">
+        <div class="exam-points-heading">📌 2 Exam-Related Extra Points</div>
+        <ul>
+          <li>${item.p1}</li>
+          <li>${item.p2}</li>
+        </ul>
+      </div>
+    </div>
+  `;
+}
+
+function buildPracticeCard(item) {
+  const record = userAnswers[item.id];
+  const isAnswered = record !== undefined;
+  const letters = ['A', 'B', 'C', 'D'];
+
+  const optsMarkup = item.opts
+    .map((opt, idx) => {
+      let cls = '';
+      if (isAnswered) {
+        if (idx === item.ans) cls = 'correct';
+        else if (idx === record.picked && !record.correct) cls = 'wrong';
+      }
+      return `
+        <button class="option-btn ${cls}" ${isAnswered ? 'disabled' : ''} onclick="selectOption(${item.id}, ${idx})">
+          <span class="opt-circle">${letters[idx]}</span>
+          <span>${opt}</span>
+        </button>
+      `;
+    })
+    .join('');
+
+  const bannerMarkup = isAnswered
+    ? record.correct
+      ? `<span class="result-pill right">✓ Correct!</span>`
+      : `<span class="result-pill wrong">✕ Wrong Answer</span>`
+    : '';
+
+  return `
+    <div class="card" id="card-${item.id}">
+      <div class="card-top">
+        <div class="badge-group">
+          <span class="badge-num">Q.${item.id}</span>
+          <span class="badge-seq">Slide #${item.slide_q}</span>
+        </div>
+        <span class="badge-cat">${item.cat}</span>
+      </div>
+      <div class="question-text">${item.q}</div>
+      <div class="options-list">
+        ${optsMarkup}
+      </div>
+      <div class="answer-panel ${isAnswered ? 'visible' : ''}" id="panel-${item.id}">
+        <div class="result-banner">
+          ${bannerMarkup}
+          <div class="correct-label">Correct Answer: <span>${letters[item.ans]}. ${item.opts[item.ans]}</span></div>
+        </div>
+        <div class="exam-points">
+          <div class="exam-points-heading">📌 2 Exam-Related Extra Points</div>
+          <ul>
+            <li>${item.p1}</li>
+            <li>${item.p2}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+function selectOption(qId, pickedIdx) {
+  if (userAnswers[qId] !== undefined) return;
+  const item = QUESTIONS.find(q => q.id === qId);
+  if (!item) return;
+
+  userAnswers[qId] = {
+    picked: pickedIdx,
+    correct: pickedIdx === item.ans
+  };
+
+  refreshStats();
+  const cardEl = document.getElementById(`card-${qId}`);
+  if (cardEl) {
+    cardEl.outerHTML = buildPracticeCard(item);
+  }
+}
+
+function refreshStats() {
+  const keys = Object.keys(userAnswers);
+  const attempted = keys.length;
+  const correct = keys.filter(k => userAnswers[k].correct).length;
+  const wrong = attempted - correct;
+
+  document.getElementById('cnt-attempted').textContent = attempted;
+  document.getElementById('cnt-correct').textContent = correct;
+  document.getElementById('cnt-wrong').textContent = wrong;
+}
+
+function resetAll() {
+  userAnswers = {};
+  refreshStats();
+  render();
+}
+
+setup();
+</script>
+</body>
+</html>

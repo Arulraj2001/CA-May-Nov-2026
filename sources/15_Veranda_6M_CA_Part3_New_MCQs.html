@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>6-Month CA Rapid Revision (Part 3: Slides #330–#445) — New & Unique Questions — Learn & Practice (White Theme)</title>
+<style>
+  :root {
+    --bg-page: #ffffff;
+    --bg-panel: #f9fafb;
+    --bg-card: #ffffff;
+    --border-light: #e5e7eb;
+    --border-strong: #d1d5db;
+    --text-main: #111827;
+    --text-sub: #4b5563;
+    --text-muted: #6b7280;
+    --primary: #1d4ed8;
+    --primary-soft: #eff6ff;
+    --primary-border: #bfdbfe;
+    --green-bg: #f0fdf4;
+    --green-border: #22c55e;
+    --green-text: #15803d;
+    --red-bg: #fef2f2;
+    --red-border: #ef4444;
+    --red-text: #b91c1c;
+    --amber-bg: #fffbeb;
+    --amber-border: #f59e0b;
+    --amber-text: #92400e;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background-color: var(--bg-page);
+    color: var(--text-main);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Arial, sans-serif;
+    line-height: 1.6;
+  }
+
+  header {
+    background-color: #ffffff;
+    border-bottom: 1px solid var(--border-light);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 14px 20px;
+  }
+
+  .header-wrap {
+    max-width: 1060px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .title-block h1 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--text-main);
+  }
+
+  .title-block p {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+  }
+
+  .tabs {
+    display: inline-flex;
+    background-color: var(--bg-panel);
+    border: 1px solid var(--border-light);
+    border-radius: 8px;
+    padding: 4px;
+    gap: 4px;
+  }
+
+  .tab-btn {
+    border: none;
+    background: transparent;
+    color: var(--text-sub);
+    font-size: 0.88rem;
+    font-weight: 600;
+    padding: 7px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.15s ease;
+  }
+
+  .tab-btn.active {
+    background-color: #ffffff;
+    color: var(--primary);
+    border: 1px solid var(--border-light);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
+  }
+
+  .main-container {
+    max-width: 1060px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .controls-bar {
+    background-color: var(--bg-panel);
+    border: 1px solid var(--border-light);
+    border-radius: 10px;
+    padding: 12px 16px;
+    margin-bottom: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .filter-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    flex: 1;
+  }
+
+  select, input[type="text"] {
+    background-color: #ffffff;
+    color: var(--text-main);
+    border: 1px solid var(--border-strong);
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 0.875rem;
+    outline: none;
+  }
+
+  select:focus, input[type="text"]:focus {
+    border-color: var(--primary);
+  }
+
+  input[type="text"] {
+    min-width: 230px;
+  }
+
+  .score-group {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.84rem;
+    font-weight: 600;
+  }
+
+  .pill {
+    background-color: #ffffff;
+    border: 1px solid var(--border-light);
+    border-radius: 999px;
+    padding: 4px 11px;
+    color: var(--text-sub);
+  }
+
+  .pill.green {
+    background-color: var(--green-bg);
+    border-color: var(--green-border);
+    color: var(--green-text);
+  }
+
+  .pill.red {
+    background-color: var(--red-bg);
+    border-color: var(--red-border);
+    color: var(--red-text);
+  }
+
+  .action-btn {
+    background-color: #ffffff;
+    color: var(--text-main);
+    border: 1px solid var(--border-strong);
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .action-btn:hover {
+    background-color: #f3f4f6;
+  }
+
+  .learn-subbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 14px;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+  }
+
+  .card {
+    background-color: #ffffff;
+    border: 1px solid var(--border-light);
+    border-radius: 10px;
+    padding: 18px 20px;
+    margin-bottom: 14px;
+  }
+
+  .card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    gap: 8px;
+  }
+
+  .badge-group {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .badge-num {
+    background-color: var(--primary-soft);
+    color: var(--primary);
+    border: 1px solid var(--primary-border);
+    font-size: 0.78rem;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 5px;
+  }
+
+  .badge-seq {
+    background-color: var(--bg-panel);
+    color: var(--text-sub);
+    border: 1px solid var(--border-light);
+    font-size: 0.74rem;
+    font-weight: 600;
+    padding: 2px 7px;
+    border-radius: 5px;
+  }
+
+  .badge-cat {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+
+  .question-text {
+    font-size: 1.02rem;
+    font-weight: 600;
+    color: var(--text-main);
+    margin-bottom: 12px;
+  }
+
+  .learn-answer-box {
+    display: inline-block;
+    background-color: var(--green-bg);
+    border: 1px solid #bbf7d0;
+    color: var(--green-text);
+    font-weight: 700;
+    font-size: 0.94rem;
+    padding: 6px 12px;
+    border-radius: 6px;
+    margin-bottom: 12px;
+  }
+
+  .learn-answer-box.blurred {
+    filter: blur(5px);
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .exam-points {
+    background-color: var(--amber-bg);
+    border: 1px solid #fde68a;
+    border-left: 4px solid var(--amber-border);
+    border-radius: 6px;
+    padding: 10px 14px;
+  }
+
+  .exam-points-heading {
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--amber-text);
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    margin-bottom: 4px;
+  }
+
+  .exam-points ul {
+    margin-left: 18px;
+    font-size: 0.88rem;
+    color: #374151;
+  }
+
+  .exam-points li {
+    margin-bottom: 3px;
+  }
+
+  .options-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 10px;
+  }
+
+  .option-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    text-align: left;
+    background-color: #ffffff;
+    border: 1.5px solid var(--border-light);
+    border-radius: 8px;
+    padding: 11px 14px;
+    font-size: 0.92rem;
+    font-weight: 500;
+    color: var(--text-main);
+    cursor: pointer;
+    transition: all 0.15s ease;
+  }
+
+  .option-btn:hover:not(:disabled) {
+    border-color: var(--primary);
+    background-color: var(--primary-soft);
+  }
+
+  .option-btn:disabled {
+    cursor: default;
+  }
+
+  .opt-circle {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: var(--bg-panel);
+    border: 1px solid var(--border-strong);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--text-sub);
+    flex-shrink: 0;
+  }
+
+  .option-btn.correct {
+    background-color: var(--green-bg);
+    border-color: var(--green-border);
+    color: var(--green-text);
+    font-weight: 700;
+  }
+
+  .option-btn.correct .opt-circle {
+    background-color: var(--green-border);
+    border-color: var(--green-border);
+    color: #ffffff;
+  }
+
+  .option-btn.wrong {
+    background-color: var(--red-bg);
+    border-color: var(--red-border);
+    color: var(--red-text);
+    font-weight: 600;
+  }
+
+  .option-btn.wrong .opt-circle {
+    background-color: var(--red-border);
+    border-color: var(--red-border);
+    color: #ffffff;
+  }
+
+  .answer-panel {
+    display: none;
+    margin-top: 14px;
+    padding-top: 14px;
+    border-top: 1px solid var(--border-light);
+    animation: slideDown 0.18s ease-out;
+  }
+
+  .answer-panel.visible {
+    display: block;
+  }
+
+  .result-banner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+
+  .result-pill {
+    font-size: 0.84rem;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 6px;
+  }
+
+  .result-pill.right {
+    background-color: var(--green-bg);
+    color: var(--green-text);
+    border: 1px solid var(--green-border);
+  }
+
+  .result-pill.wrong {
+    background-color: var(--red-bg);
+    color: var(--red-text);
+    border: 1px solid var(--red-border);
+  }
+
+  .correct-label {
+    font-size: 0.92rem;
+    font-weight: 700;
+    color: var(--text-main);
+  }
+
+  .correct-label span {
+    color: var(--green-text);
+  }
+
+  .hidden {
+    display: none !important;
+  }
+
+  .no-results {
+    text-align: center;
+    padding: 40px 20px;
+    border: 1px dashed var(--border-strong);
+    border-radius: 10px;
+    color: var(--text-muted);
+  }
+
+  @keyframes slideDown {
+    from { opacity: 0; transform: translateY(-4px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @media (max-width: 640px) {
+    .header-wrap { flex-direction: column; align-items: flex-start; }
+    .options-list { grid-template-columns: 1fr; }
+    input[type="text"] { width: 100%; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-wrap">
+    <div class="title-block">
+      <h1>6-Month CA Rapid Revision (Part 3: Slides #330–#445) — New & Unique Questions (96 Questions)</h1>
+      <p>Pradeep Sir & Gokulraj Sir Session (English) | Exclusive Questions Not Covered in All 12 Previous Files</p>
+    </div>
+    <div class="tabs">
+      <button class="tab-btn active" id="btn-learn" onclick="setMode('learn')">📖 Learn Mode</button>
+      <button class="tab-btn" id="btn-practice" onclick="setMode('practice')">✍️ Practice MCQs</button>
+    </div>
+  </div>
+</header>
+
+<div class="main-container">
+  <div class="controls-bar">
+    <div class="filter-group">
+      <select id="catSelect" onchange="render()">
+        <option value="ALL">All Categories (96)</option>
+      </select>
+      <input type="text" id="searchBox" placeholder="Search question, answer, or extra points..." oninput="render()">
+    </div>
+    <div class="score-group">
+      <span class="pill">Attempted: <span id="cnt-attempted">0</span>/96</span>
+      <span class="pill green">Correct: <span id="cnt-correct">0</span></span>
+      <span class="pill red">Wrong: <span id="cnt-wrong">0</span></span>
+      <button class="action-btn" onclick="resetAll()">Reset Practice</button>
+    </div>
+  </div>
+
+  <div class="learn-subbar" id="learnSubbar">
+    <span id="showingCount">Showing 96 questions</span>
+    <button class="action-btn" id="blurBtn" onclick="toggleBlur()">👁️ Hide Answers (Self-Test)</button>
+  </div>
+
+  <div id="cardsContainer"></div>
+</div>
+
+<script>
+const QUESTIONS = [{"id": 1, "slide_q": 331, "cat": "Banking, Finance & Regulatory", "q": "Bombay Stock Exchange (BSE) launched a derivatives contract derived from which benchmark index?", "opts": ["BSE BANKEX", "NIFTY 50", "BSE SENSEX (S&P BSE Sensex)", "BSE MidCap Select"], "ans": 2, "p1": "Exchange Details: Bombay Stock Exchange (BSE) was established in 1875 (Asia's oldest stock exchange, HQ: Dalal Street, Mumbai).", "p2": "Exam Fact: BSE SENSEX comprises 30 well-established and financially sound companies listed on BSE."}, {"id": 2, "slide_q": 334, "cat": "Infrastructure, Ports & Energy", "q": "In June 2026, International Finance Corporation (IFC) and global investors committed USD 1.05 billion to Hygenco Green Energies to develop projects in which clean energy sector?", "opts": ["Offshore Wind Turbines", "Green Hydrogen (and Green Ammonia)", "Nuclear Small Modular Reactors", "Geothermal Power"], "ans": 1, "p1": "Investment & Sector: USD 1.05 billion committed by IFC and global investors to Hygenco Green Energies for Green Hydrogen & Green Ammonia projects.", "p2": "Exam Fact: India's National Green Hydrogen Mission targets 5 Million Metric Tonnes (MMT) annual green hydrogen production capacity by 2030."}, {"id": 3, "slide_q": 335, "cat": "Banking, Finance & Regulatory", "q": "What is the maximum annual remittance limit that a resident individual can make per financial year under the RBI's Liberalised Remittance Scheme (LRS)?", "opts": ["USD 5,00,000 ($500,000)", "USD 1,00,000 ($100,000)", "USD 2,50,000 ($250,000)", "USD 10,00,000 ($1,000,000)"], "ans": 2, "p1": "Annual Ceiling: USD 250,000 per financial year for permissible current or capital account transactions (or a combination of both).", "p2": "Exam Fact: LRS was introduced by the Reserve Bank of India on 4 February 2004 (initially with a USD 25,000 limit)."}, {"id": 4, "slide_q": 336, "cat": "Banking, Finance & Regulatory", "q": "Department of Land Resources (DoLR) and Reserve Bank Innovation Hub (RBIH) explored integrating digital land records with which RBI digital public infrastructure platform for seamless rural lending?", "opts": ["e-Kuber CBS", "Account Aggregator (AA) Network", "UDGAM Portal", "Unified Lending Interface (ULI)"], "ans": 3, "p1": "Platform: Unified Lending Interface (ULI) — developed by Reserve Bank Innovation Hub (RBIH, HQ: Bengaluru) to enable frictionless digital credit for farmers and MSMEs.", "p2": "Exam Fact: Integrates state land records, milk-pourer data, and e-KYC to speed up Kisan Credit Card (KCC) approvals."}, {"id": 5, "slide_q": 337, "cat": "Banking, Finance & Regulatory", "q": "Under RBI's revised bulk deposit norms (₹3 crore and above), differential interest rates on bulk term deposits are aligned with which liquidity metric?", "opts": ["LCR (Liquidity Coverage Ratio) run-off rates", "Statutory Liquidity Ratio (SLR) haircuts", "Cash Reserve Ratio (CRR) fortnightly averages", "Net Stable Funding Ratio (NSFR) weights"], "ans": 0, "p1": "Metric: Liquidity Coverage Ratio (LCR) run-off rates (bulk deposits are defined as single rupee term deposits of ₹3 crore and above for Scheduled Commercial Banks).", "p2": "Exam Fact: LCR requires banks to hold sufficient High-Quality Liquid Assets (HQLA) to survive a 30-day acute liquidity stress scenario."}, {"id": 6, "slide_q": 338, "cat": "Banking, Finance & Regulatory", "q": "When the RBI imposed 6-month business restrictions on Mahaveer Co-operative Bank under Section 35A of the Banking Regulation Act, what maximum withdrawal limit per depositor was fixed?", "opts": ["₹50,000", "₹1 lakh", "₹2 lakh", "₹5 lakh"], "ans": 1, "p1": "Withdrawal Cap: ₹1 lakh per depositor during the 6-month supervisory restriction period.", "p2": "Exam Fact: DICGC (Deposit Insurance and Credit Guarantee Corporation) insures bank deposits up to ₹5 lakh per depositor per bank."}, {"id": 7, "slide_q": 340, "cat": "Banking, Finance & Regulatory", "q": "According to RBI data in September 2026, total cumulative inflows under Special Non-Resident Rupee (SNRR) / Special Rupee Vostro Accounts reached what amount?", "opts": ["USD 175.25 billion", "USD 95.40 billion", "USD 112.80 billion", "USD 143.59 billion"], "ans": 3, "p1": "Cumulative Inflows: USD 143.59 billion.", "p2": "Exam Fact: SNRR accounts facilitate international trade settlement and NRI rupee-denominated business transactions."}, {"id": 8, "slide_q": 341, "cat": "Banking, Finance & Regulatory", "q": "RBI standardized the Kisan Credit Card (KCC) short-term crop loan repayment/validity period for long-duration crops up to how many months?", "opts": ["18 months", "12 months", "15 months", "24 months"], "ans": 0, "p1": "Tenure Standardization: 12 months for short-duration crops and 18 months for long-duration crops.", "p2": "Exam Fact: KCC scheme was introduced in 1998 on the recommendation of the R. V. Gupta Committee."}, {"id": 9, "slide_q": 342, "cat": "Banking, Finance & Regulatory", "q": "In which year was the RBI's Liberalised Remittance Scheme (LRS) originally introduced?", "opts": ["2007", "2004", "2000", "2010"], "ans": 1, "p1": "Introduction Year: 2004 (Payment and Settlement Systems Act was enacted later in 2007).", "p2": "Exam Fact: LRS applies only to resident individuals (including minors) and is not available to corporates, partnership firms, HUF, or Trusts."}, {"id": 10, "slide_q": 343, "cat": "Banking, Finance & Regulatory", "q": "Under RBI's revised capital adequacy norms for Emergency Credit Line Guarantee Scheme (ECLGS 5.0), what percentage of the guaranteed exposure carries a 0% risk weight?", "opts": ["85%", "50%", "75%", "100%"], "ans": 2, "p1": "Risk Weight Rule: 75% of the ECLGS 5.0 guaranteed credit exposure attracts 0% risk weight (managed via NCGTC).", "p2": "Exam Fact: Lower risk weights reduce the Tier-1/Tier-2 capital banks must set aside under Basel III CRAR norms."}, {"id": 11, "slide_q": 344, "cat": "Banking, Finance & Regulatory", "q": "According to RBI data in July 2026, India's Foreign Exchange Reserves stood at what level?", "opts": ["USD 615.50 billion", "USD 645.10 billion", "USD 704.88 billion", "USD 682.35 billion"], "ans": 3, "p1": "Forex Reserves: USD 682.35 billion.", "p2": "Exam Fact: India's Forex Reserves comprise 4 components: Foreign Currency Assets (FCA), Gold, Special Drawing Rights (SDRs), and Reserve Tranche Position (RTP) with IMF."}, {"id": 12, "slide_q": 345, "cat": "Economy & GDP", "q": "According to the RBI Monthly Bulletin (September 2026), what was India's projected/recorded real GDP growth rate?", "opts": ["7.8%", "6.6%", "7.2%", "8.1%"], "ans": 0, "p1": "Growth Rate: 7.8% real GDP growth cited in the September 2026 RBI Bulletin.", "p2": "Exam Fact: RBI Bulletin is a flagship monthly statistical and analytical publication of the Reserve Bank of India."}, {"id": 13, "slide_q": 346, "cat": "Banking, Finance & Regulatory", "q": "Regarding RBI's Liberalised Remittance Scheme (LRS) outflows: (1) Total outflows stood at USD 20.09 billion; (2) Outflows declined/changed by 5.26% (not 15.26%); (3) International travel accounted for USD 10.96 billion; (4) Foreign equity/debt investments rose by 86%. Which statements are correct?", "opts": ["1 and 2 only", "1, 3, and 4 only (Change was 5.26%, not 15.26%)", "2 and 3 only", "All 1, 2, 3, and 4"], "ans": 1, "p1": "Correction Note: Statement 2 is incorrect because the percentage change was 5.26% (not 15.26%).", "p2": "Exam Fact: International travel remains the largest single component of resident Indian LRS outflows."}, {"id": 14, "slide_q": 347, "cat": "Banking, Finance & Regulatory", "q": "In 2026, RBI imposed monetary penalties on several NBFCs. Which of the following entities was NOT among the penalized NBFCs in that specific RBI enforcement order?", "opts": ["Muthoot Finance", "IndusInd / Allied NBFC entity", "Bajaj Finance", "Shriram Finance"], "ans": 2, "p1": "Exclusion: Bajaj Finance was not among the penalized entities in that order.", "p2": "Exam Fact: RBI regulates NBFCs under Chapter III-B of the Reserve Bank of India Act, 1934."}, {"id": 15, "slide_q": 348, "cat": "Banking, Finance & Regulatory", "q": "The 'Bank-in-a-Box' cloud-based core banking platform launched by Union Home & Cooperation Minister Amit Shah in August 2026 is designed to modernize which category of banks?", "opts": ["Local Area Banks (LABs)", "Regional Rural Banks (RRBs)", "Payments Banks", "Urban Co-operative Banks (UCBs)"], "ans": 3, "p1": "Target Segment: Urban Co-operative Banks (UCBs) — implemented via the National Urban Co-operative Finance and Development Corporation (NUCFDC).", "p2": "Exam Fact: NUCFDC serves as the umbrella organization for Urban Co-operative Banks in India."}, {"id": 16, "slide_q": 349, "cat": "Banking, Finance & Regulatory", "q": "In June 2026, RBI imposed a monetary penalty of ₹41.80 lakh on which Public Sector Bank for non-compliance with KYC norms?", "opts": ["Canara Bank", "Bank of Baroda", "Punjab National Bank", "State Bank of India"], "ans": 0, "p1": "Penalized Bank: Canara Bank (₹41.80 lakh penalty) — Syndicate Bank merged into Canara Bank in April 2020.", "p2": "Exam Fact: Canara Bank is headquartered in Bengaluru, Karnataka."}, {"id": 17, "slide_q": 351, "cat": "Banking, Finance & Regulatory", "q": "RBI imposed a monetary penalty of ₹63.60 lakh on which Public Sector Bank for regulatory compliance deficiencies?", "opts": ["Indian Bank", "Canara Bank", "Bank of Baroda", "Union Bank of India"], "ans": 2, "p1": "Penalized Bank: Bank of Baroda (₹63.60 lakh penalty; HQ: Vadodara, Gujarat).", "p2": "Exam Fact: Dena Bank and Vijaya Bank were amalgamated into Bank of Baroda in April 2019."}, {"id": 18, "slide_q": 352, "cat": "Banking, Finance & Regulatory", "q": "Regarding RBI's Certificate of Authorisation (CoA) norms for Payment System Operators (PSOs): (1) Granted in perpetuity for compliant PSOs; (2) Non-compliant operators get 1-year validity (not 2 years); (3) Governed under Payment and Settlement Systems Act, 2007; (4) Non-compliant entities must keep voting power below 20% (not 26%). Which statements are correct?", "opts": ["All 1, 2, 3, and 4", "1 and 2 only", "2 and 4 only", "1 and 3 only (Non-compliant get 1-year validity; voting power below 20%)"], "ans": 3, "p1": "Corrections: Non-compliant PSOs receive a 1-year validity period, and promoter voting power cap is 20% (not 26%).", "p2": "Exam Fact: The Payment and Settlement Systems Act was enacted in 2007."}, {"id": 19, "slide_q": 354, "cat": "Banking, Finance & Regulatory", "q": "RBI revised the 'Flexi KCC' (Kisan Credit Card) credit limit range for marginal farmers to what band?", "opts": ["₹5,000 to ₹25,000", "₹10,000 to ₹50,000", "₹25,000 to ₹1,00,000", "₹50,000 to ₹2,00,000"], "ans": 1, "p1": "Limit Band: ₹10,000 to ₹50,000 under Flexi KCC (collateral-free agricultural loan limit raised to ₹2 lakh).", "p2": "Exam Fact: Helps marginal farmers, sharecroppers, and tenant farmers access flexible working capital."}, {"id": 20, "slide_q": 355, "cat": "Banking, Finance & Regulatory", "q": "By what percentage did the Reserve Bank of India's balance sheet expand during FY 2025–26?", "opts": ["15.4%", "11.1%", "20.6%", "25.0%"], "ans": 2, "p1": "Expansion Rate: 20.6% growth in RBI's balance sheet.", "p2": "Exam Fact: Driven by increases in foreign currency assets, gold valuation, and domestic liquidity operations."}, {"id": 21, "slide_q": 356, "cat": "Banking, Finance & Regulatory", "q": "Up to what maximum percentage aggregate stake did RBI approve an Asset Management Company / investor group to acquire in four private banks including CSB Bank?", "opts": ["14.99%", "4.99%", "7.50%", "9.95%"], "ans": 3, "p1": "Aggregate Cap: Up to 9.95% of paid-up share capital/voting rights (including CSB Bank, headquartered in Thrissur, Kerala).", "p2": "Exam Fact: Prior RBI approval is mandatory whenever an entity seeks to acquire 5% or more stake in a banking company."}, {"id": 22, "slide_q": 357, "cat": "Banking, Finance & Regulatory", "q": "What is the primary objective of the RBI's revised 'Credit Derivatives Directions'?", "opts": ["Deepening the corporate bond market in India", "Capping retail credit card interest rates", "Replacing sovereign gold bonds with treasury bills", "Regulating peer-to-peer crypto lending"], "ans": 0, "p1": "Objective: Deepening India's corporate bond market by enabling investors to hedge credit default risk via Credit Default Swaps (CDS).", "p2": "Exam Fact: Allows market makers and institutional investors to transfer credit risk efficiently."}, {"id": 23, "slide_q": 359, "cat": "Banking, Finance & Regulatory", "q": "Regarding RBI's TReDS (Trade Receivables Discounting System) revised directions: (1) TReDS was introduced under RBI's 2014 framework (with RXIL/M1xchange/Invoicemart operating); (2) New directions allow credit guarantee / insurance facility for financiers. Which statements are correct?", "opts": ["Both 1 and 2", "1 only", "2 only (New directions allow credit guarantee for TReDS financiers)", "Neither 1 nor 2"], "ans": 2, "p1": "Key Reform: Enables credit guarantee/insurance backing for TReDS financiers (such as CGTMSE), boosting MSME invoice discounting.", "p2": "Exam Fact: TReDS is an electronic platform facilitating financing/discounting of trade receivables of MSMEs from corporate buyers."}, {"id": 24, "slide_q": 360, "cat": "Appointments & Committees", "q": "Which department was assigned to Sudhakar Malli upon his appointment as Executive Director (ED) of the RBI effective 1 October 2026?", "opts": ["Department of Economic and Policy Research (DEPR)", "Department of Regulation (DoR)", "Department of Payment and Settlement Systems (DPSS)", "Department of Supervision (DoS)"], "ans": 3, "p1": "Portfolio: Department of Supervision (DoS) — oversees on-site and off-site supervision of commercial banks, UCBs, and NBFCs.", "p2": "Exam Fact: Executive Directors at RBI report to the Deputy Governors and Governor."}, {"id": 25, "slide_q": 362, "cat": "Banking, Finance & Regulatory", "q": "According to the RBI Monthly Bulletin, what was the RBI's net purchase in the spot forex market in August 2026?", "opts": ["USD 28.50 billion", "USD 43.26 billion", "USD 55.10 billion", "USD 19.80 billion"], "ans": 1, "p1": "Volume: USD 43.26 billion net spot forex purchase.", "p2": "Exam Fact: RBI intervenes in the spot and forward forex markets to contain excessive exchange rate volatility."}, {"id": 26, "slide_q": 363, "cat": "Banking, Finance & Regulatory", "q": "In June 2026, RBI introduced an INR swap facility for External Commercial Borrowings (ECBs) and Overseas Foreign Currency Borrowings (OFCBs) with a minimum tenor of how many years?", "opts": ["3 years", "1 year", "1.5 years (18 months)", "5 years"], "ans": 2, "p1": "Minimum Tenor: 1.5 years (18 months).", "p2": "Exam Fact: Helps Indian corporates and banks hedge currency risk on foreign currency borrowings."}, {"id": 27, "slide_q": 364, "cat": "Banking, Finance & Regulatory", "q": "Under which NBFC regulatory layer is Tata Sons classified by the RBI (whose plea for exemption/deregistration was rejected by RBI)?", "opts": ["Base Layer NBFC (NBFC-BL)", "Top Layer NBFC (NBFC-TL)", "Middle Layer NBFC (NBFC-ML)", "Upper Layer NBFC (NBFC-UL)"], "ans": 3, "p1": "Scale-Based Regulation (SBR): RBI's 4-tier NBFC pyramid comprises Base Layer (BL), Middle Layer (ML), Upper Layer (UL), and Top Layer (TL).", "p2": "Exam Fact: NBFC-UL entities are subject to bank-like prudential regulations and mandatory stock exchange listing within 3 years of identification."}, {"id": 28, "slide_q": 365, "cat": "Banking, Finance & Regulatory", "q": "According to RBI data, to what value did India's Financial Inclusion Index (FI-Index) rise for FY 2025–26?", "opts": ["70.0", "64.2", "67.0", "72.5"], "ans": 0, "p1": "FI-Index Score: Rose to 70.0 (on a scale of 0 to 100, with no base year).", "p2": "Exam Fact: RBI's FI-Index comprises 3 broad parameters: Access (35% weight), Usage (45% weight), and Quality (20% weight)."}, {"id": 29, "slide_q": 366, "cat": "Banking, Finance & Regulatory", "q": "Under RBI's revised valuation norms for REITs (Real Estate Investment Trusts) and InvITs (Infrastructure Investment Trusts), which valuation metric is NOT required to be disclosed?", "opts": ["Net Asset Value (NAV)", "Book-based historical cost value (At-book value)", "Market-linked / Fair value", "Discounted Cash Flow (DCF) valuation"], "ans": 1, "p1": "Disclosure Norm: Historical book-based value is excluded in favor of fair/market NAV disclosures.", "p2": "Exam Fact: REITs and InvITs are regulated by SEBI and distribute at least 90% of their net distributable cash flows to unitholders."}, {"id": 30, "slide_q": 367, "cat": "Banking, Finance & Regulatory", "q": "Regarding the amalgamation of Emirates NBD India branches with RBL Bank: (1) Statements 1, 3, and 4 on cross-border branch integration and regulatory compliance are correct; (2) Statement 2 contains an error. Which statements are correct?", "opts": ["2 and 3 only", "1 and 2 only", "1, 3, and 4 only", "All 1, 2, 3, and 4"], "ans": 2, "p1": "Key Fact: Emirates NBD is headquartered in Dubai, UAE, and RBL Bank is headquartered in Mumbai, Maharashtra.", "p2": "Exam Fact: Voluntary amalgamations of banking companies in India are governed by Section 44A of the Banking Regulation Act, 1949."}, {"id": 31, "slide_q": 368, "cat": "Banking, Finance & Regulatory", "q": "Which entity was granted RBI registration to operate as a Core Investment Company (CIC)?", "opts": ["L&T Finance Holdings", "Bajaj Holdings & Investment Ltd", "Tata Capital Limited", "ABHFL / Indiabulls Limited (Dhani / Yaari Corporate entity)"], "ans": 3, "p1": "Definition: A Core Investment Company (CIC) is a specialized NBFC with asset size of ₹100 crore and above that holds at least 90% of its net assets in group companies.", "p2": "Exam Fact: CICs cannot carry out any other financial activity except investment in group companies."}, {"id": 32, "slide_q": 369, "cat": "Banking, Finance & Regulatory", "q": "RBI issued a No Objection Certificate (NOC) for the merger of REC Limited into Power Finance Corporation (PFC) at what share swap ratio?", "opts": ["88 PFC shares for every 100 REC shares", "75 PFC shares for every 100 REC shares", "100 PFC shares for every 100 REC shares", "65 PFC shares for every 100 REC shares"], "ans": 0, "p1": "Swap Ratio: 88 shares of PFC for every 100 shares of REC Limited.", "p2": "Exam Fact: Both PFC and REC are Maharatna CPSEs under the Ministry of Power (HQ: New Delhi)."}, {"id": 33, "slide_q": 371, "cat": "Appointments & Committees", "q": "Who was appointed Executive Director (ED) of the RBI effective 3 August 2026 looking after Overseas Forex and Financial Markets Regulation?", "opts": ["Suman Ray", "Sudhakar Malli", "Monisha Chakraborty", "Charulatha S. Kar"], "ans": 2, "p1": "Appointee: Monisha Chakraborty (effective 3 August 2026).", "p2": "Exam Fact: Oversees foreign exchange and financial market regulation departments at RBI."}, {"id": 34, "slide_q": 373, "cat": "Appointments & Committees", "q": "Which RBI Deputy Governor heads the Monetary Policy Department and serves ex-officio on the 6-member Monetary Policy Committee (MPC)?", "opts": ["T. Rabi Sankar", "Swaminathan Janakiraman", "Poonam Gupta", "Shirish Chandra Murmu"], "ans": 0, "p1": "MPC Ex-Officio Deputy Governor: T. Rabi Sankar.", "p2": "Exam Fact: The RBI Governor chairs the MPC and holds a casting vote in case of a tie."}, {"id": 35, "slide_q": 374, "cat": "Banking, Finance & Regulatory", "q": "Regarding Coastal Local Area Bank: (1) Included in the Second Schedule of the RBI Act, 1934 in 2026; (2) Headquartered in Vijayawada, Andhra Pradesh; (3) Licensed in 1999 (not 2006); (4) Local Area Bank scheme was introduced in 1996 (not 2006). Which statements are correct?", "opts": ["1, 2, and 3 only", "1 and 2 only (Licensed in 1999; LAB scheme launched in 1996)", "2 and 4 only", "All 1, 2, 3, and 4"], "ans": 1, "p1": "Corrections: Coastal Local Area Bank was licensed in 1999, and the Local Area Bank (LAB) scheme was introduced in August 1996. Only 2 LABs remain operational in India: Coastal LAB (Vijayawada) and Krishna Bhima Samruddhi LAB (Mahabubnagar).", "p2": "Exam Fact: LABs operate across a contiguous area of 3 to 4 districts to bridge rural credit gaps."}, {"id": 36, "slide_q": 375, "cat": "Banking, Finance & Regulatory", "q": "How many NBFCs are classified in the 'Upper Layer' (NBFC-UL) category by the RBI?", "opts": ["25", "10", "4 (in the specific sub-tier) / 17 overall", "50"], "ans": 2, "p1": "Scale-Based Classification: RBI identifies top NBFCs by asset size and systemic scoring for the Upper Layer.", "p2": "Exam Fact: LIC Housing Finance, Bajaj Finance, Shriram Finance, and Tata Sons are prominent Upper Layer NBFCs."}, {"id": 37, "slide_q": 376, "cat": "Banking, Finance & Regulatory", "q": "What is the primary statutory mandate of the RBI's Monetary Policy Committee (MPC)?", "opts": ["Auditing state government budgets", "Fixing commercial bank employee salaries", "Approving foreign direct investment in defence", "Maintaining price stability (inflation target of 4% ± 2%) while keeping in mind the objective of growth"], "ans": 3, "p1": "Flexible Inflation Targeting (FIT): CPI inflation target of 4% with a tolerance band of ±2% (i.e., 2% to 6%).", "p2": "Exam Fact: If average CPI inflation stays outside 2%–6% for 3 consecutive quarters, RBI must submit a written report to the Central Government."}, {"id": 38, "slide_q": 377, "cat": "Banking, Finance & Regulatory", "q": "In September 2026, RBI announced an Open Market Operation (OMO) purchase auction worth ₹1,00,000 crore primarily to achieve which objective?", "opts": ["Managing durable systemic liquidity (absorbing/injecting liquidity)", "Raising equity capital for public sector banks", "Setting retail gold loan interest ceilings", "Privatizing regional rural banks"], "ans": 0, "p1": "Monetary Tool: Open Market Operations (OMOs) involve outright purchase or sale of Government Securities (G-Secs) by RBI to regulate durable money supply.", "p2": "Exam Fact: OMO purchases inject rupee liquidity into the banking system; OMO sales absorb surplus liquidity."}, {"id": 39, "slide_q": 378, "cat": "Banking, Finance & Regulatory", "q": "RBI relaxed weekly access rules under the FCNR(B) swap facility, permitting same-day settlement for bank transactions above what threshold?", "opts": ["USD 25 million", "USD 100 million", "USD 50 million", "USD 250 million"], "ans": 1, "p1": "Threshold: Transactions above USD 100 million qualify for same-day settlement access.", "p2": "Exam Fact: FCNR(B) deposits can be maintained in designated freely convertible foreign currencies (USD, GBP, EUR, JPY, CAD, AUD)."}, {"id": 40, "slide_q": 380, "cat": "Banking, Finance & Regulatory", "q": "Under RBI's revised lending norms for bank exposure to REITs and InvITs, what is the maximum aggregate bank lending cap as a percentage of the trust's asset value?", "opts": ["60%", "25%", "30%", "40% (and 49% under specific project criteria)"], "ans": 3, "p1": "Prudential Cap: 40% (with upper board-approved ceiling up to 49% subject to strict conditions).", "p2": "Exam Fact: Ensures prudent leverage limits when commercial banks lend to infrastructure and real estate trusts."}, {"id": 41, "slide_q": 381, "cat": "Banking, Finance & Regulatory", "q": "Regarding RBI's draft guidelines on On-Tap Licensing of Urban Co-operative Banks (UCBs): (1) Sets minimum capital & governance norms; (2) Fresh UCB licensing was kept paused rather than issued annually; (3) Aligns UCBs with tier-based regulatory framework. Which statements are correct?", "opts": ["1 and 3 only (Fresh UCB licensing was paused, not issued every year)", "1 and 2 only", "2 and 3 only", "All 1, 2, and 3"], "ans": 0, "p1": "Correction Note: Statement 2 is incorrect because fresh UCB licensing had been paused for over two decades prior to the new draft framework.", "p2": "Exam Fact: UCBs are categorized into 4 tiers (Tier 1 to Tier 4) based on deposit size."}, {"id": 42, "slide_q": 383, "cat": "Banking, Finance & Regulatory", "q": "According to RBI data, India's net Foreign Direct Investment (FDI) rose to a 5-year high in July 2026. What was its value?", "opts": ["USD 9.5 billion", "USD 4.8 billion", "USD 7.3 billion", "USD 11.2 billion"], "ans": 2, "p1": "Value: USD 7.3 billion net FDI in July 2026 (a 5-year monthly high).", "p2": "Exam Fact: Net FDI = Gross FDI inflows minus repatriations/disinvestments and outward FDI by Indian companies."}, {"id": 43, "slide_q": 384, "cat": "Banking, Finance & Regulatory", "q": "How many NBFCs are listed in the RBI's updated 'Upper Layer' (NBFC-UL) list for 2026?", "opts": ["20", "12", "15", "17"], "ans": 3, "p1": "Count: 17 NBFCs classified in the Upper Layer (NBFC-UL).", "p2": "Exam Fact: Upper Layer NBFCs are identified annually based on size, interconnectedness, complexity, and supervisory inputs."}, {"id": 44, "slide_q": 385, "cat": "Banking, Finance & Regulatory", "q": "Which three financial markets are covered under the RBI's Direction on Credit Derivatives / CCIL market framework?", "opts": ["Money Market, Government Securities (G-Sec) Market, and Forex Market", "Equity Spot, Commodity Futures, and Real Estate Markets", "Crypto Assets, Venture Capital, and Angel Networks", "Bullion Spot, Carbon Credits, and Art Markets"], "ans": 0, "p1": "Markets Covered: Money Market, Government Securities Market, and Foreign Exchange Market.", "p2": "Exam Fact: Clearing Corporation of India Limited (CCIL) acts as the central counterparty for G-Sec, money, and forex market settlements."}, {"id": 45, "slide_q": 386, "cat": "Banking, Finance & Regulatory", "q": "Which State / Union Territory recorded the highest rate of customer complaints per lakh accounts at RBI Ombudsman offices?", "opts": ["Delhi", "Chandigarh", "Maharashtra", "Karnataka"], "ans": 1, "p1": "Top UT: Chandigarh.", "p2": "Exam Fact: Under the Reserve Bank – Integrated Ombudsman Scheme (RB-IOS, 2021), the maximum compensation for consequential loss is ₹20 lakh (plus ₹1 lakh for harassment/mental agony)."}, {"id": 46, "slide_q": 387, "cat": "Banking, Finance & Regulatory", "q": "Which three public sector Oil Marketing Companies (OMCs) are covered under RBI's Special Forex Window to meet daily US dollar import requirements?", "opts": ["Reliance, Nayara, and Shell", "ONGC, GAIL, and Oil India", "IOCL, HPCL, and BPCL", "NTPC, NHPC, and Power Grid"], "ans": 2, "p1": "OMCs: Indian Oil Corporation Limited (IOCL), Hindustan Petroleum Corporation Limited (HPCL), and Bharat Petroleum Corporation Limited (BPCL).", "p2": "Exam Fact: Smooths dollar demand in the domestic spot forex market during crude oil price spikes."}, {"id": 47, "slide_q": 388, "cat": "Banking, Finance & Regulatory", "q": "By what percentage did overseas foreign equity and debt investments under the Liberalised Remittance Scheme (LRS) rise during January–August 2026?", "opts": ["110%", "42%", "64%", "86%"], "ans": 3, "p1": "Growth Rate: 86% surge in foreign equity and debt investments by resident Indians under LRS.", "p2": "Exam Fact: Reflects growing retail participation in global equities and overseas ETFs."}, {"id": 48, "slide_q": 389, "cat": "Banking, Finance & Regulatory", "q": "Regarding RBI's revised Leverage Ratio Framework: (1) Effective from 1 April 2027; (2) Minimum leverage ratio for Domestic Systemically Important Banks (D-SIBs) is 4%; (3) Minimum leverage ratio for other commercial banks is 3.5% (not 4.5%); (4) Issued as 11th Amendment Directions, 2026 (not 7th). Which statements are correct?", "opts": ["1 and 2 only (Other commercial banks: 3.5%; 11th Amendment Directions)", "1, 2, and 3 only", "2 and 4 only", "All 1, 2, 3, and 4"], "ans": 0, "p1": "Corrections: Other commercial banks must maintain a 3.5% minimum leverage ratio (4% for D-SIBs: SBI, HDFC Bank, ICICI Bank), and the norms were issued as the 11th Amendment Directions.", "p2": "Exam Fact: Leverage Ratio = Tier 1 Capital / Total Exposure Measure (non-risk-weighted backstop to Basel III)."}, {"id": 49, "slide_q": 390, "cat": "Banking, Finance & Regulatory", "q": "In September 2026, RBI imposed a monetary penalty of ₹59.20 lakh on which private sector bank?", "opts": ["YES Bank", "IndusInd Bank", "RBL Bank", "Bandhan Bank"], "ans": 1, "p1": "Penalized Bank: IndusInd Bank (₹59.20 lakh penalty; HQ: Mumbai, Maharashtra).", "p2": "Exam Fact: Monetary penalties imposed by RBI are credited to the Consolidated Fund of India."}, {"id": 50, "slide_q": 391, "cat": "Economy & GDP", "q": "According to the RBI Survey on Computer Software and Information Technology Enabled Services Exports, what was the total value of India's software services exports in FY 2025–26?", "opts": ["USD 250.0 billion", "USD 193.7 billion", "USD 221.4 billion", "USD 175.8 billion"], "ans": 2, "p1": "Export Value: USD 221.4 billion in FY 2025–26.", "p2": "Exam Fact: The USA and Europe remain the largest destinations for Indian IT/ITeS software exports."}, {"id": 51, "slide_q": 392, "cat": "Banking, Finance & Regulatory", "q": "As per Supreme Court directions to the RBI on 'Digital Arrest' frauds (29 October 2026), when are victims entitled to full compensation?", "opts": ["Only for current account corporate borrowers", "In every case regardless of whether the victim voluntarily shared OTP/credentials", "Only if the fraud exceeds ₹1 crore", "When there is a due-diligence or systemic security failure by the financial institution/bank"], "ans": 3, "p1": "Liability Principle: Full compensation applies when loss stems from a bank/institution's due-diligence, KYC, or mule-account monitoring failure.", "p2": "Exam Fact: Victims should immediately report cyber financial frauds on National Cybercrime Helpline 1930 or cybercrime.gov.in within the 'Golden Hour'."}, {"id": 52, "slide_q": 393, "cat": "Banking, Finance & Regulatory", "q": "In June 2026, RBI raised the limit for collateral-free agricultural loans (exempt from collateral security and margin requirements) per borrower to what amount?", "opts": ["₹2 lakh", "₹1.6 lakh", "₹3 lakh", "₹5 lakh"], "ans": 0, "p1": "Limit Revision: Increased from ₹1.6 lakh to ₹2 lakh per borrower.", "p2": "Exam Fact: Improves formal institutional credit access for small and marginal farmers."}, {"id": 53, "slide_q": 394, "cat": "Banking, Finance & Regulatory", "q": "In which Indian state did RBI launch the 'Relaunch / RILAN' rural financial literacy and inclusion campaign?", "opts": ["Tamil Nadu", "Kerala", "Karnataka", "Odisha"], "ans": 1, "p1": "State: Kerala (Capital: Thiruvananthapuram).", "p2": "Exam Fact: Promotes safe digital banking habits and awareness against mule accounts and cyber frauds."}, {"id": 54, "slide_q": 395, "cat": "Banking, Finance & Regulatory", "q": "Which purpose category accounted for the largest share of resident Indian outward remittances under RBI's Liberalised Remittance Scheme (LRS) during January–August 2026?", "opts": ["Studies Abroad", "Maintenance of Close Relatives", "Overseas Travel", "Gifts and Donations"], "ans": 2, "p1": "Top Category: Overseas Travel (followed by maintenance of close relatives and overseas education).", "p2": "Exam Fact: LRS tracks outward foreign exchange remittances by resident individuals."}, {"id": 55, "slide_q": 397, "cat": "Banking, Finance & Regulatory", "q": "Which regulatory approach did RBI adopt in its revised Board Governance Guidelines effective 1 October 2026?", "opts": ["Principle-based approach", "Rigid rule-based micro-prescriptive approach", "Voluntary self-certification without audit", "State-level cooperative registry model"], "ans": 0, "p1": "Governance Shift: Principle-based approach empowering bank boards with structured oversight accountability.", "p2": "Exam Fact: Effective from 1 October 2026."}, {"id": 56, "slide_q": 399, "cat": "Banking, Finance & Regulatory", "q": "What is the permitted Foreign Direct Investment (FDI) cap in Indian Insurance companies and Credit Information Companies (CICs) following the 100% liberalization?", "opts": ["49%", "74%", "100%", "51%"], "ans": 2, "p1": "FDI Limit: Raised from 74% to 100% in the insurance sector (and 100% in Credit Information Companies).", "p2": "Exam Fact: India has 4 RBI-licensed Credit Information Companies: TransUnion CIBIL, Equifax, Experian, and CRIF High Mark."}, {"id": 57, "slide_q": 400, "cat": "Banking, Finance & Regulatory", "q": "Under which section of the Reserve Bank of India Act, 1934 did the RBI cancel the Certificate of Registration (CoR) of non-compliant NBFCs in September 2026?", "opts": ["Section 42(1)", "Section 35A", "Section 22", "Section 45-IA (6)"], "ans": 3, "p1": "Statutory Section: Section 45-IA (6) of the RBI Act, 1934 empowers RBI to cancel an NBFC's Certificate of Registration.", "p2": "Exam Fact: Section 45-IA mandates compulsory registration and minimum Net Owned Fund (NOF) for NBFCs."}, {"id": 58, "slide_q": 401, "cat": "Banking, Finance & Regulatory", "q": "Under RBI's revised Scale-Based Regulation criteria, what minimum asset size threshold qualifies an NBFC for classification in the Upper Layer (NBFC-UL)?", "opts": ["₹1,00,000 crore (₹1 lakh crore)", "₹50,000 crore", "₹25,000 crore", "₹10,000 crore"], "ans": 0, "p1": "Threshold: ₹1,00,000 crore (₹1 lakh crore) asset size.", "p2": "Exam Fact: Middle Layer (NBFC-ML) covers non-deposit-taking NBFCs with asset size of ₹1,000 crore and above."}, {"id": 59, "slide_q": 402, "cat": "Banking, Finance & Regulatory", "q": "Which state led state government market borrowings at the 36th Conference of State Finance Secretaries hosted by the RBI in Mumbai?", "opts": ["Kerala", "Tamil Nadu (followed by Maharashtra / major borrowing states)", "Goa", "Sikkim"], "ans": 1, "p1": "Forum: 36th Conference of State Finance Secretaries held at RBI Headquarters, Mumbai.", "p2": "Exam Fact: State governments raise market loans via State Development Loans (SDLs) auctioned through RBI's e-Kuber platform."}, {"id": 60, "slide_q": 403, "cat": "Banking, Finance & Regulatory", "q": "Regarding the RBI Central Board of Directors: (1) Official Directors include the Governor and up to 4 Deputy Governors; (2) Non-Official Directors include 10 Government-nominated directors and 2 Government officials; (3) Includes 4 Directors representing the 4 Local Boards (Mumbai, Kolkata, Chennai, New Delhi). Which statements are correct?", "opts": ["2 and 3 only", "1 and 2 only", "1 and 3 only", "All 1, 2, and 3"], "ans": 2, "p1": "Board Composition: Governed under Section 8 of the RBI Act, 1934 — Official Directors (Governor + max 4 Deputy Governors) + Non-Official Directors (10 nominated + 2 govt officials + 4 Local Board directors = up to 21 members).", "p2": "Exam Fact: Local Boards are located in Mumbai, Kolkata, Chennai, and New Delhi."}, {"id": 61, "slide_q": 404, "cat": "Economy & GDP", "q": "According to the 101st round of the RBI Survey of Professional Forecasters (SPF), what is the median real GDP growth forecast for India?", "opts": ["6.2%", "7.8%", "7.0%", "6.6%"], "ans": 3, "p1": "Median Forecast: 6.6% real GDP growth in the 101st SPF round.", "p2": "Exam Fact: RBI conducts the Survey of Professional Forecasters bi-monthly since September 2007."}, {"id": 62, "slide_q": 405, "cat": "Appointments & Committees", "q": "Who was appointed Executive Director (ED) of the RBI effective 1 September 2026?", "opts": ["Suman Ray", "Monisha Chakraborty", "Sudhakar Malli", "Indranil Bhattacharyya"], "ans": 0, "p1": "Appointee: Suman Ray (effective 1 September 2026).", "p2": "Exam Fact: Three key RBI ED appointments in Aug–Oct 2026: Monisha Chakraborty (3 Aug), Suman Ray (1 Sept), and Sudhakar Malli (1 Oct)."}, {"id": 63, "slide_q": 406, "cat": "Economy & GDP", "q": "According to RBI data, what was India's total External Debt at end-March 2026?", "opts": ["USD 682.35 billion", "USD 736.5 billion", "USD 762.8 billion", "USD 648.0 billion"], "ans": 1, "p1": "External Debt: USD 736.5 billion at end-March 2026.", "p2": "Exam Fact: US dollar-denominated debt remains the largest component of India's external debt, followed by Indian rupee-denominated debt."}, {"id": 64, "slide_q": 407, "cat": "Banking, Finance & Regulatory", "q": "According to RBI weekly statistical supplement data in July 2026, India's Foreign Exchange Reserves stood at what value?", "opts": ["USD 701.20 billion", "USD 682.35 billion", "USD 675.16 billion", "USD 650.45 billion"], "ans": 2, "p1": "Figure: USD 675.16 billion.", "p2": "Exam Fact: RBI releases Foreign Exchange Reserves data every Friday in its Weekly Statistical Supplement (WSS)."}, {"id": 65, "slide_q": 408, "cat": "Banking, Finance & Regulatory", "q": "Under RBI's prudential norms on Non-Financial Assets acquired in satisfaction of claims (debt-asset swaps), what is the maximum holding period permitted for commercial banks?", "opts": ["7 years", "3 years", "5 years", "10 years (extendable by RBI up to 5 more years)"], "ans": 3, "p1": "Holding Period: Maximum 10 years from the date of acquisition under Section 9 of the Banking Regulation Act, 1949.", "p2": "Exam Fact: Section 9 of the Banking Regulation Act, 1949 prohibits banks from holding immovable property (except for own use) beyond the statutory period."}, {"id": 66, "slide_q": 409, "cat": "Banking, Finance & Regulatory", "q": "According to the RBI Financial Stability Report (FSR), to what multi-year low did the Gross Non-Performing Assets (GNPA) ratio of Scheduled Commercial Banks (SCBs) fall?", "opts": ["1.8%", "2.5%", "2.8%", "3.2%"], "ans": 0, "p1": "GNPA Ratio: 1.8% (lowest in over a decade).", "p2": "Exam Fact: An asset becomes an NPA when interest or principal installment remains overdue for more than 90 days; RBI publishes the Financial Stability Report twice a year (June & December)."}, {"id": 67, "slide_q": 410, "cat": "Banking, Finance & Regulatory", "q": "Regarding RBI's Financial Stability Report & Stress Test Findings: (1) Statement 1 on SCB capital adequacy/CRAR resilience is correct; (2) Statement 2 contains an incorrect figure; (3) Statements 3 and 4 on urban co-operative banks and NBFCs are correct. Which statements are correct?", "opts": ["1 and 2 only", "1, 3, and 4 only", "2 and 3 only", "All 1, 2, 3, and 4"], "ans": 1, "p1": "Key Fact: SCBs maintain CRAR well above the RBI's 11.5% minimum regulatory requirement (9% minimum Tier-1+Tier-2 + 2.5% Capital Conservation Buffer).", "p2": "Exam Fact: Financial Stability Report is prepared by the Sub-Committee of the Financial Stability and Development Council (FSDC)."}, {"id": 68, "slide_q": 411, "cat": "Banking, Finance & Regulatory", "q": "From which date does the RBI's revised Consolidated Prudential Framework for commercial banks come into effect?", "opts": ["1 January 2027", "1 October 2026", "1 April 2027", "1 April 2026"], "ans": 2, "p1": "Effective Date: 1 April 2027.", "p2": "Exam Fact: Consolidates group-wide capital, exposure, and risk management norms for banking groups."}, {"id": 69, "slide_q": 413, "cat": "Banking, Finance & Regulatory", "q": "With official gold reserves of 880.5 tonnes, what is India's global ranking among central bank gold holders?", "opts": ["8th", "5th", "6th", "10th"], "ans": 0, "p1": "Global Ranking: India ranks 8th globally with ~880.5 tonnes of gold reserves (USA ranks 1st with over 8,133 tonnes).", "p2": "Exam Fact: Compiled by the World Gold Council (HQ: London, UK)."}, {"id": 70, "slide_q": 414, "cat": "Banking, Finance & Regulatory", "q": "SEBI signed an MoU with which Digital India division to promote investor education and financial awareness in 22 regional Indian languages?", "opts": ["UIDAI Aadhaar Seva Division", "Digital India BHASHINI Division", "DigiLocker MeitY Division", "CSC e-Governance Services India"], "ans": 1, "p1": "Partner: Digital India BHASHINI Division (under MeitY).", "p2": "Exam Fact: Translates SEBI investor awareness content across all 22 scheduled Indian languages."}, {"id": 71, "slide_q": 415, "cat": "Banking, Finance & Regulatory", "q": "In September 2026, SEBI signed a renewed MoU with which European Union securities regulator (originally signed in 2017) regarding Central Counterparties (CCPs)?", "opts": ["European Banking Authority (EBA)", "European Central Bank (ECB)", "ESMA (European Securities and Markets Authority)", "EIOPA"], "ans": 2, "p1": "Regulator: ESMA (European Securities and Markets Authority, HQ: Paris, France).", "p2": "Exam Fact: Enables cooperation and information sharing for supervision of Indian Central Counterparties like CCIL."}, {"id": 72, "slide_q": 416, "cat": "Banking, Finance & Regulatory", "q": "What is the minimum ticket size (investment threshold) approved by SEBI in September 2026 for the new Portfolio Management Services (PMS) route?", "opts": ["₹1 crore", "₹50 lakh", "₹10 lakh", "₹25 lakh"], "ans": 3, "p1": "Ticket Size: ₹25 lakh (standard PMS minimum investment is ₹50 lakh).", "p2": "Exam Fact: Expands access to professionally managed discretionary and non-discretionary equity/debt portfolios."}, {"id": 73, "slide_q": 417, "cat": "Banking, Finance & Regulatory", "q": "From which date does SEBI's Common Advertisement Code (applicable to stock brokers, DPs, IAs, RAs, and AMCs) come into effect?", "opts": ["8 April 2027", "1 January 2027", "1 December 2026", "1 April 2026"], "ans": 0, "p1": "Effective Date: 8 April 2027.", "p2": "Exam Fact: Curbs misleading return claims and finfluencer-linked unregistered promotions across SEBI intermediaries."}, {"id": 74, "slide_q": 418, "cat": "Banking, Finance & Regulatory", "q": "Regarding SEBI's Revised Closing Price Methodology in Equity Cash Markets: (1) Statements 1 and 2 on VWAP-based closing session calculation are correct; (2) Statements 3 and 4 contain incorrect timings/formulas. Which statements are correct?", "opts": ["1 and 3 only", "1 and 2 only (Uses VWAP rather than closing bid price)", "2 and 4 only", "All 1, 2, 3, and 4"], "ans": 1, "p1": "Methodology: Closing price is determined using Volume Weighted Average Price (VWAP) during the closing session (3:30 PM – 3:45 PM) rather than closing bid price.", "p2": "Exam Fact: Prevents last-minute price manipulation at market close."}, {"id": 75, "slide_q": 420, "cat": "Banking, Finance & Regulatory", "q": "In July 2026, why did SEBI cancel the registration certificates of 18 Research Analysts (RAs) and Investment Advisers (IAs)?", "opts": ["Failure to maintain CRR balances", "Insider trading in sovereign bonds", "Unauthorized cryptocurrency brokerage", "Non-payment of mandatory renewal/registration fees"], "ans": 3, "p1": "Reason: Failure to pay statutory registration/renewal fees under SEBI (Research Analysts) Regulations, 2014.", "p2": "Exam Fact: Ensures only active, compliant entities remain on SEBI's registered intermediary database."}, {"id": 76, "slide_q": 421, "cat": "Appointments & Committees", "q": "Until which month and year was Kamlesh Chandra Varshney reappointed as a Whole-Time Member (WTM) of SEBI?", "opts": ["August 2029", "December 2027", "March 2028", "July 2030"], "ans": 0, "p1": "Tenure Extension: Reappointed up to August 2029.", "p2": "Exam Fact: SEBI Board consists of a Chairman, 2 members from Union Ministries, 1 member from RBI, and 5 other members (of whom at least 3 are Whole-Time Members)."}, {"id": 77, "slide_q": 424, "cat": "Banking, Finance & Regulatory", "q": "Along with launching the 'Incident Reporting and Cyber Suraksha Portal' in August 2026, which specialized lab/facility did SEBI launch at the same event?", "opts": ["NSE AI Surveillance Hub", "SEBI Quantum Sandbox", "CDSL Cyber Vault", "NISM RegTech Lab"], "ans": 3, "p1": "Facility: NISM RegTech Lab (National Institute of Securities Markets, Patalganga/Navi Mumbai).", "p2": "Exam Fact: NISM was established by SEBI in 2006 for capacity building and certification in securities markets."}, {"id": 78, "slide_q": 425, "cat": "Banking, Finance & Regulatory", "q": "Regarding SEBI's Working Group on Deep-Tech Startup Access to Capital Markets: (1) Reviews listing norms on Innovators Growth Platform; (2) Comprises 18 members (not 12); (3) Co-chaired by Srini Srinivasan and Prashanth Prakash. Which statements are correct?", "opts": ["1, 3, and 4 (It is an 18-member working group)", "1 and 2 only", "2 and 3 only", "All 1, 2, 3, and 4"], "ans": 0, "p1": "Correction Note: The working group comprises 18 members (not 12), co-chaired by Srini Srinivasan and Prashanth Prakash.", "p2": "Exam Fact: Facilitates domestic IPO listings for R&D-intensive deep-tech startups."}, {"id": 79, "slide_q": 426, "cat": "Appointments & Committees", "q": "Who are the two Co-Chairs of SEBI's Working Group on Startup Listing Rules?", "opts": ["Nandan Nilekani and Kris Gopalakrishnan", "Srini Srinivasan and Prashanth Prakash", "Rajnish Kumar and Ananth Narayan", "Uday Kotak and T. V. Mohandas Pai"], "ans": 1, "p1": "Co-Chairs: Srini Srinivasan (Kotak Alternate Asset Managers) and Prashanth Prakash (Accel India).", "p2": "Exam Fact: Recommends reforms to make Indian public markets attractive for domestic tech unicorns."}, {"id": 80, "slide_q": 427, "cat": "Banking, Finance & Regulatory", "q": "From which date does SEBI's revised intraday margin framework and Early Pay-In (EPI) index mechanism come into effect?", "opts": ["1 December 2026", "1 January 2027", "22 February 2027", "1 April 2027"], "ans": 2, "p1": "Effective Date: 22 February 2027.", "p2": "Exam Fact: Strengthens intraday risk monitoring and clearing corporation margin efficiency."}, {"id": 81, "slide_q": 428, "cat": "Banking, Finance & Regulatory", "q": "In September 2026, SEBI barred which brokerage/trading entity and impounded ₹28.12 crore over alleged cross-segment price manipulation?", "opts": ["IIFL Securities", "Jane Street India", "Axis Direct", "Prachaar Sampada"], "ans": 3, "p1": "Entity & Impoundment: Prachaar Sampada — ₹28.12 crore impounded for cross-segment price manipulation.", "p2": "Exam Fact: SEBI exercises powers under Section 11 and 11B of the SEBI Act, 1992 to impound unlawful gains."}, {"id": 82, "slide_q": 429, "cat": "Banking, Finance & Regulatory", "q": "SEBI's Innovators Growth Platform (IGP) listing route for startups is governed under which set of SEBI Regulations?", "opts": ["SEBI (ICDR) Regulations, 2018", "SEBI (LODR) Regulations, 2015", "SEBI (AIF) Regulations, 2012", "SEBI (SAST) Regulations, 2011"], "ans": 0, "p1": "Regulations: SEBI (Issue of Capital and Disclosure Requirements — ICDR) Regulations, 2018.", "p2": "Exam Fact: LODR governs post-listing disclosures, whereas ICDR governs IPOs, FPOs, and IGP startup listings."}, {"id": 83, "slide_q": 430, "cat": "Banking, Finance & Regulatory", "q": "Which fintech brokerage firm received a Category-I Merchant Banking license from SEBI on 1 September 2026?", "opts": ["Groww", "Zerodha", "Upstox", "Angel One"], "ans": 1, "p1": "Company: Zerodha (Headquarters: Bengaluru, Karnataka; Co-founders: Nithin Kamath and Nikhil Kamath).", "p2": "Exam Fact: A Category-I Merchant Banker can manage IPOs, rights issues, buybacks, and corporate takeovers."}, {"id": 84, "slide_q": 431, "cat": "Banking, Finance & Regulatory", "q": "Which asset manager received SEBI approval in July 2026 to launch a Mutual Fund business, expanding beyond its PMS and AIF operations?", "opts": ["True North Managers", "Marcellus Investment Managers", "Carnelian Asset Management", "WestBridge Capital"], "ans": 2, "p1": "Asset Manager: Carnelian Asset Management & Advisors (founded by Vikas Khemani, HQ: Mumbai).", "p2": "Exam Fact: Expands beyond Portfolio Management Services (PMS) and Alternative Investment Funds (AIFs) into retail mutual funds."}, {"id": 85, "slide_q": 432, "cat": "Banking, Finance & Regulatory", "q": "In June 2026, Nuvama Wealth Management received final SEBI approval to launch which entity?", "opts": ["Nuvama Housing Finance", "Nuvama Payments Bank", "Nuvama Sovereign Gold Exchange", "Nuvama Mutual Fund (Nuvama Trusteeship Services Limited)"], "ans": 3, "p1": "Entity: Nuvama Mutual Fund / Nuvama Trusteeship Services Limited.", "p2": "Exam Fact: Nuvama Wealth Management (formerly Edelweiss Wealth Management) is headquartered in Mumbai."}, {"id": 86, "slide_q": 433, "cat": "Banking, Finance & Regulatory", "q": "Regarding SEBI's Expert Working Group on Debenture Trusteeship Framework: (1) Chaired by SEBI Whole-Time Member Ananth Narayan G.; (2) Former SBI Chairman Rajnish Kumar serves as Co-Chair; (3) Reviews SEBI (Debenture Trustees) Regulations, 1993 (not 2003). Which statements are correct?", "opts": ["1 and 2 only (Reviews 1993 Debenture Trustees Regulations)", "1 and 3 only", "2 and 3 only", "All 1, 2, and 3"], "ans": 0, "p1": "Correction Note: Statement 3 is incorrect because the parent regulations are SEBI (Debenture Trustees) Regulations, 1993 (not 2003).", "p2": "Exam Fact: Debenture trustees protect the interests of corporate bond/debenture holders."}, {"id": 87, "slide_q": 434, "cat": "Banking, Finance & Regulatory", "q": "Under SEBI's IT Resilience Index for Market Infrastructure Institutions (MIIs), which two core operational parameters are evaluated?", "opts": ["Profitability and Dividend Yield", "Availability and Security", "Branch Count and Employee Attrition", "Brokerage Commission and Stamp Duty"], "ans": 1, "p1": "Parameters: System Availability and Cybersecurity/Information Security.", "p2": "Exam Fact: Market Infrastructure Institutions (MIIs) include Stock Exchanges (NSE, BSE), Clearing Corporations (NCL, ICCL), and Depositories (NSDL, CDSL)."}, {"id": 88, "slide_q": 435, "cat": "Banking, Finance & Regulatory", "q": "Which financial regulator partnered with Krea University to advance capital market research and policy education?", "opts": ["IRDAI", "RBI", "SEBI", "IFSCA"], "ans": 2, "p1": "Partner Regulator: SEBI (Securities and Exchange Board of India) with Krea University (Sri City, Andhra Pradesh).", "p2": "Exam Fact: IFSCA (International Financial Services Centres Authority) was established in 2020 (HQ: GIFT City, Gandhinagar)."}, {"id": 89, "slide_q": 437, "cat": "Banking, Finance & Regulatory", "q": "SEBI revised the trading framework for Exchange Traded Funds (ETFs) in June 2026 by introducing dynamic price bands to determine base price. From which date did the revised framework come into effect?", "opts": ["1 September 2026", "1 July 2026", "1 October 2026", "1 January 2027"], "ans": 0, "p1": "Effective Date: 1 September 2026.", "p2": "Exam Fact: Dynamic price bands prevent flash crashes and extreme NAV-to-market price deviations in ETFs."}, {"id": 90, "slide_q": 438, "cat": "Banking, Finance & Regulatory", "q": "What is the primary purpose of 'GARUDA', a portal/mechanism introduced by SEBI in July 2026?", "opts": ["Tracking insider trading on social media", "Fast-track launch and onboarding of Alternative Investment Fund (AIF) schemes", "Instant KYC verification for NRI demat accounts", "Auctioning defaulted corporate collateral"], "ans": 1, "p1": "Purpose: Fast-track launch and filing of Alternative Investment Fund (AIF) schemes.", "p2": "Exam Fact: AIFs are categorized into Category I (startups/SMEs/social ventures), Category II (private equity/debt funds), and Category III (hedge funds)."}, {"id": 91, "slide_q": 439, "cat": "Banking, Finance & Regulatory", "q": "Regarding SEBI's revised KYC Review Periodicity circular for Foreign Portfolio Investors (FPIs): (1) Introduces 8-year review periodicity (reduced from 10 years for specified FPIs); (2) Effective from 1 December 2026; (3) High-risk FPIs continue periodic review while standard categories move from 10 to 8 years. Which statements are correct?", "opts": ["2 and 3 only", "1 and 2 only", "1 and 3 only (Effective from 1 December 2026)", "All 1, 2, and 3"], "ans": 2, "p1": "Correction Note: Effective date is 1 December 2026; KYC review cycle adjusted from 10 years to 8 years.", "p2": "Exam Fact: FPIs are regulated under SEBI (Foreign Portfolio Investors) Regulations, 2019."}, {"id": 92, "slide_q": 440, "cat": "Banking, Finance & Regulatory", "q": "SEBI directed depositories to implement immediate ISIN-level freeze/reconciliation controls for which corporate action?", "opts": ["Stock Split", "Bonus Share Issuance", "Interim Dividend Payout", "Share Buybacks"], "ans": 3, "p1": "Corporate Action: Share Buybacks.", "p2": "Exam Fact: ISIN stands for International Securities Identification Number (a 12-character alphanumeric code uniquely identifying a security)."}, {"id": 93, "slide_q": 441, "cat": "Banking, Finance & Regulatory", "q": "In August 2026, SEBI approved the ₹37,700 crore Initial Public Offering (IPO)—India's largest-ever IPO—of which company?", "opts": ["Jio Platforms Limited", "National Stock Exchange (NSE)", "Tata Sons", "Flipkart India"], "ans": 0, "p1": "Record IPO: ₹37,700 crore IPO of Jio Platforms Limited (surpassing Hyundai Motor India's ₹27,870 crore IPO).", "p2": "Exam Fact: Jio Platforms is the digital services subsidiary of Reliance Industries Limited."}, {"id": 94, "slide_q": 443, "cat": "Banking, Finance & Regulatory", "q": "Under Schedule VII of the Companies Act, 2013 (amended May 2026 by Ministry of Corporate Affairs), CSR subscriptions to Zero Coupon Zero Principal (ZCZP) instruments are listed on which exchange platform?", "opts": ["Commodity Derivatives Segment", "SME Emerge Platform", "Social Stock Exchange (SSE)", "Negotiated Dealing System (NDS-OM)"], "ans": 2, "p1": "Platform: Social Stock Exchange (SSE) — operates as a separate segment on NSE and BSE for Not-for-Profit Organizations (NPOs).", "p2": "Exam Fact: Zero Coupon Zero Principal (ZCZP) instruments carry zero interest and no principal repayment, serving as transparent CSR donation instruments."}, {"id": 95, "slide_q": 444, "cat": "Banking, Finance & Regulatory", "q": "At which university in Chandigarh did SEBI launch 'Project Jagruk' under its 'Samajh Se Investing' investor awareness campaign?", "opts": ["Guru Nanak Dev University, Amritsar", "Chandigarh University", "Punjabi University, Patiala", "Panjab University, Chandigarh"], "ans": 3, "p1": "Venue: Panjab University, Chandigarh.", "p2": "Exam Fact: Educates college students and young first-time investors on safe, scam-free investing."}, {"id": 96, "slide_q": 445, "cat": "Banking, Finance & Regulatory", "q": "With which foreign central bank did SEBI sign an MoU for cross-border clearing corporation cooperation and supervisory information exchange?", "opts": ["Bank of England (United Kingdom)", "Federal Reserve (USA)", "European Central Bank (ECB)", "Bank of Japan (BoJ)"], "ans": 0, "p1": "Partner Central Bank: Bank of England (founded in 1694; Headquarters: Threadneedle Street, London, UK).", "p2": "Exam Fact: Facilitates cross-border recognition and clearing oversight between India and the UK."}];
+
+let mode = 'learn';
+let hideAnswers = false;
+let userAnswers = {};
+
+function setup() {
+  const select = document.getElementById('catSelect');
+  const uniqueCats = [...new Set(QUESTIONS.map(q => q.cat))];
+  uniqueCats.forEach(cat => {
+    const count = QUESTIONS.filter(q => q.cat === cat).length;
+    const option = document.createElement('option');
+    option.value = cat;
+    option.textContent = `${cat} (${count})`;
+    select.appendChild(option);
+  });
+  refreshStats();
+  render();
+}
+
+function setMode(newMode) {
+  mode = newMode;
+  document.getElementById('btn-learn').classList.toggle('active', mode === 'learn');
+  document.getElementById('btn-practice').classList.toggle('active', mode === 'practice');
+  document.getElementById('blurBtn').classList.toggle('hidden', mode !== 'learn');
+  render();
+}
+
+function toggleBlur() {
+  hideAnswers = !hideAnswers;
+  document.getElementById('blurBtn').textContent = hideAnswers
+    ? '👁️ Show All Answers'
+    : '👁️ Hide Answers (Self-Test)';
+  render();
+}
+
+function getFilteredList() {
+  const cat = document.getElementById('catSelect').value;
+  const term = document.getElementById('searchBox').value.trim().toLowerCase();
+
+  return QUESTIONS.filter(item => {
+    if (cat !== 'ALL' && item.cat !== cat) return false;
+    if (!term) return true;
+    return (
+      item.q.toLowerCase().includes(term) ||
+      item.opts.some(o => o.toLowerCase().includes(term)) ||
+      item.p1.toLowerCase().includes(term) ||
+      item.p2.toLowerCase().includes(term) ||
+      String(item.slide_q).includes(term)
+    );
+  });
+}
+
+function render() {
+  const list = getFilteredList();
+  document.getElementById('showingCount').textContent = `Showing ${list.length} question${list.length === 1 ? '' : 's'}`;
+  const container = document.getElementById('cardsContainer');
+
+  if (list.length === 0) {
+    container.innerHTML = `<div class="no-results">No questions match your filter. Clear search or switch category.</div>`;
+    return;
+  }
+
+  container.innerHTML = list
+    .map(item => (mode === 'learn' ? buildLearnCard(item) : buildPracticeCard(item)))
+    .join('');
+}
+
+function buildLearnCard(item) {
+  const answerText = item.opts[item.ans];
+  const blurClass = hideAnswers ? 'blurred' : '';
+  return `
+    <div class="card">
+      <div class="card-top">
+        <div class="badge-group">
+          <span class="badge-num">Q.${item.id}</span>
+          <span class="badge-seq">Slide #${item.slide_q}</span>
+        </div>
+        <span class="badge-cat">${item.cat}</span>
+      </div>
+      <div class="question-text">${item.q}</div>
+      <div class="learn-answer-box ${blurClass}" onclick="this.classList.remove('blurred')" title="Click to reveal answer">
+        ✓ Answer: ${answerText}
+      </div>
+      <div class="exam-points">
+        <div class="exam-points-heading">📌 2 Exam-Related Extra Points</div>
+        <ul>
+          <li>${item.p1}</li>
+          <li>${item.p2}</li>
+        </ul>
+      </div>
+    </div>
+  `;
+}
+
+function buildPracticeCard(item) {
+  const record = userAnswers[item.id];
+  const isAnswered = record !== undefined;
+  const letters = ['A', 'B', 'C', 'D'];
+
+  const optsMarkup = item.opts
+    .map((opt, idx) => {
+      let cls = '';
+      if (isAnswered) {
+        if (idx === item.ans) cls = 'correct';
+        else if (idx === record.picked && !record.correct) cls = 'wrong';
+      }
+      return `
+        <button class="option-btn ${cls}" ${isAnswered ? 'disabled' : ''} onclick="selectOption(${item.id}, ${idx})">
+          <span class="opt-circle">${letters[idx]}</span>
+          <span>${opt}</span>
+        </button>
+      `;
+    })
+    .join('');
+
+  const bannerMarkup = isAnswered
+    ? record.correct
+      ? `<span class="result-pill right">✓ Correct!</span>`
+      : `<span class="result-pill wrong">✕ Wrong Answer</span>`
+    : '';
+
+  return `
+    <div class="card" id="card-${item.id}">
+      <div class="card-top">
+        <div class="badge-group">
+          <span class="badge-num">Q.${item.id}</span>
+          <span class="badge-seq">Slide #${item.slide_q}</span>
+        </div>
+        <span class="badge-cat">${item.cat}</span>
+      </div>
+      <div class="question-text">${item.q}</div>
+      <div class="options-list">
+        ${optsMarkup}
+      </div>
+      <div class="answer-panel ${isAnswered ? 'visible' : ''}" id="panel-${item.id}">
+        <div class="result-banner">
+          ${bannerMarkup}
+          <div class="correct-label">Correct Answer: <span>${letters[item.ans]}. ${item.opts[item.ans]}</span></div>
+        </div>
+        <div class="exam-points">
+          <div class="exam-points-heading">📌 2 Exam-Related Extra Points</div>
+          <ul>
+            <li>${item.p1}</li>
+            <li>${item.p2}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+function selectOption(qId, pickedIdx) {
+  if (userAnswers[qId] !== undefined) return;
+  const item = QUESTIONS.find(q => q.id === qId);
+  if (!item) return;
+
+  userAnswers[qId] = {
+    picked: pickedIdx,
+    correct: pickedIdx === item.ans
+  };
+
+  refreshStats();
+  const cardEl = document.getElementById(`card-${qId}`);
+  if (cardEl) {
+    cardEl.outerHTML = buildPracticeCard(item);
+  }
+}
+
+function refreshStats() {
+  const keys = Object.keys(userAnswers);
+  const attempted = keys.length;
+  const correct = keys.filter(k => userAnswers[k].correct).length;
+  const wrong = attempted - correct;
+
+  document.getElementById('cnt-attempted').textContent = attempted;
+  document.getElementById('cnt-correct').textContent = correct;
+  document.getElementById('cnt-wrong').textContent = wrong;
+}
+
+function resetAll() {
+  userAnswers = {};
+  refreshStats();
+  render();
+}
+
+setup();
+</script>
+</body>
+</html>

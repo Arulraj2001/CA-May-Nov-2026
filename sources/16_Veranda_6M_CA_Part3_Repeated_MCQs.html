@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>6-Month CA Rapid Revision (Part 3: Slides #330–#445) — Repeated Revision Questions — Learn & Practice (White Theme)</title>
+<style>
+  :root {
+    --bg-page: #ffffff;
+    --bg-panel: #f9fafb;
+    --bg-card: #ffffff;
+    --border-light: #e5e7eb;
+    --border-strong: #d1d5db;
+    --text-main: #111827;
+    --text-sub: #4b5563;
+    --text-muted: #6b7280;
+    --primary: #1d4ed8;
+    --primary-soft: #eff6ff;
+    --primary-border: #bfdbfe;
+    --green-bg: #f0fdf4;
+    --green-border: #22c55e;
+    --green-text: #15803d;
+    --red-bg: #fef2f2;
+    --red-border: #ef4444;
+    --red-text: #b91c1c;
+    --amber-bg: #fffbeb;
+    --amber-border: #f59e0b;
+    --amber-text: #92400e;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background-color: var(--bg-page);
+    color: var(--text-main);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Arial, sans-serif;
+    line-height: 1.6;
+  }
+
+  header {
+    background-color: #ffffff;
+    border-bottom: 1px solid var(--border-light);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 14px 20px;
+  }
+
+  .header-wrap {
+    max-width: 1060px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .title-block h1 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--text-main);
+  }
+
+  .title-block p {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+  }
+
+  .tabs {
+    display: inline-flex;
+    background-color: var(--bg-panel);
+    border: 1px solid var(--border-light);
+    border-radius: 8px;
+    padding: 4px;
+    gap: 4px;
+  }
+
+  .tab-btn {
+    border: none;
+    background: transparent;
+    color: var(--text-sub);
+    font-size: 0.88rem;
+    font-weight: 600;
+    padding: 7px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.15s ease;
+  }
+
+  .tab-btn.active {
+    background-color: #ffffff;
+    color: var(--primary);
+    border: 1px solid var(--border-light);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
+  }
+
+  .main-container {
+    max-width: 1060px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .controls-bar {
+    background-color: var(--bg-panel);
+    border: 1px solid var(--border-light);
+    border-radius: 10px;
+    padding: 12px 16px;
+    margin-bottom: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .filter-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    flex: 1;
+  }
+
+  select, input[type="text"] {
+    background-color: #ffffff;
+    color: var(--text-main);
+    border: 1px solid var(--border-strong);
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 0.875rem;
+    outline: none;
+  }
+
+  select:focus, input[type="text"]:focus {
+    border-color: var(--primary);
+  }
+
+  input[type="text"] {
+    min-width: 230px;
+  }
+
+  .score-group {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.84rem;
+    font-weight: 600;
+  }
+
+  .pill {
+    background-color: #ffffff;
+    border: 1px solid var(--border-light);
+    border-radius: 999px;
+    padding: 4px 11px;
+    color: var(--text-sub);
+  }
+
+  .pill.green {
+    background-color: var(--green-bg);
+    border-color: var(--green-border);
+    color: var(--green-text);
+  }
+
+  .pill.red {
+    background-color: var(--red-bg);
+    border-color: var(--red-border);
+    color: var(--red-text);
+  }
+
+  .action-btn {
+    background-color: #ffffff;
+    color: var(--text-main);
+    border: 1px solid var(--border-strong);
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .action-btn:hover {
+    background-color: #f3f4f6;
+  }
+
+  .learn-subbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 14px;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+  }
+
+  .card {
+    background-color: #ffffff;
+    border: 1px solid var(--border-light);
+    border-radius: 10px;
+    padding: 18px 20px;
+    margin-bottom: 14px;
+  }
+
+  .card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    gap: 8px;
+  }
+
+  .badge-group {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .badge-num {
+    background-color: var(--primary-soft);
+    color: var(--primary);
+    border: 1px solid var(--primary-border);
+    font-size: 0.78rem;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 5px;
+  }
+
+  .badge-seq {
+    background-color: var(--bg-panel);
+    color: var(--text-sub);
+    border: 1px solid var(--border-light);
+    font-size: 0.74rem;
+    font-weight: 600;
+    padding: 2px 7px;
+    border-radius: 5px;
+  }
+
+  .badge-cat {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+
+  .question-text {
+    font-size: 1.02rem;
+    font-weight: 600;
+    color: var(--text-main);
+    margin-bottom: 12px;
+  }
+
+  .learn-answer-box {
+    display: inline-block;
+    background-color: var(--green-bg);
+    border: 1px solid #bbf7d0;
+    color: var(--green-text);
+    font-weight: 700;
+    font-size: 0.94rem;
+    padding: 6px 12px;
+    border-radius: 6px;
+    margin-bottom: 12px;
+  }
+
+  .learn-answer-box.blurred {
+    filter: blur(5px);
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .exam-points {
+    background-color: var(--amber-bg);
+    border: 1px solid #fde68a;
+    border-left: 4px solid var(--amber-border);
+    border-radius: 6px;
+    padding: 10px 14px;
+  }
+
+  .exam-points-heading {
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--amber-text);
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    margin-bottom: 4px;
+  }
+
+  .exam-points ul {
+    margin-left: 18px;
+    font-size: 0.88rem;
+    color: #374151;
+  }
+
+  .exam-points li {
+    margin-bottom: 3px;
+  }
+
+  .options-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 10px;
+  }
+
+  .option-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    text-align: left;
+    background-color: #ffffff;
+    border: 1.5px solid var(--border-light);
+    border-radius: 8px;
+    padding: 11px 14px;
+    font-size: 0.92rem;
+    font-weight: 500;
+    color: var(--text-main);
+    cursor: pointer;
+    transition: all 0.15s ease;
+  }
+
+  .option-btn:hover:not(:disabled) {
+    border-color: var(--primary);
+    background-color: var(--primary-soft);
+  }
+
+  .option-btn:disabled {
+    cursor: default;
+  }
+
+  .opt-circle {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: var(--bg-panel);
+    border: 1px solid var(--border-strong);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--text-sub);
+    flex-shrink: 0;
+  }
+
+  .option-btn.correct {
+    background-color: var(--green-bg);
+    border-color: var(--green-border);
+    color: var(--green-text);
+    font-weight: 700;
+  }
+
+  .option-btn.correct .opt-circle {
+    background-color: var(--green-border);
+    border-color: var(--green-border);
+    color: #ffffff;
+  }
+
+  .option-btn.wrong {
+    background-color: var(--red-bg);
+    border-color: var(--red-border);
+    color: var(--red-text);
+    font-weight: 600;
+  }
+
+  .option-btn.wrong .opt-circle {
+    background-color: var(--red-border);
+    border-color: var(--red-border);
+    color: #ffffff;
+  }
+
+  .answer-panel {
+    display: none;
+    margin-top: 14px;
+    padding-top: 14px;
+    border-top: 1px solid var(--border-light);
+    animation: slideDown 0.18s ease-out;
+  }
+
+  .answer-panel.visible {
+    display: block;
+  }
+
+  .result-banner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+
+  .result-pill {
+    font-size: 0.84rem;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 6px;
+  }
+
+  .result-pill.right {
+    background-color: var(--green-bg);
+    color: var(--green-text);
+    border: 1px solid var(--green-border);
+  }
+
+  .result-pill.wrong {
+    background-color: var(--red-bg);
+    color: var(--red-text);
+    border: 1px solid var(--red-border);
+  }
+
+  .correct-label {
+    font-size: 0.92rem;
+    font-weight: 700;
+    color: var(--text-main);
+  }
+
+  .correct-label span {
+    color: var(--green-text);
+  }
+
+  .hidden {
+    display: none !important;
+  }
+
+  .no-results {
+    text-align: center;
+    padding: 40px 20px;
+    border: 1px dashed var(--border-strong);
+    border-radius: 10px;
+    color: var(--text-muted);
+  }
+
+  @keyframes slideDown {
+    from { opacity: 0; transform: translateY(-4px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @media (max-width: 640px) {
+    .header-wrap { flex-direction: column; align-items: flex-start; }
+    .options-list { grid-template-columns: 1fr; }
+    input[type="text"] { width: 100%; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-wrap">
+    <div class="title-block">
+      <h1>6-Month CA Rapid Revision (Part 3: Slides #330–#445) — Repeated Revision Questions (20 Questions)</h1>
+      <p>Pradeep Sir & Gokulraj Sir Session (English) | Questions Overlapping with Previous 12 HTML Files</p>
+    </div>
+    <div class="tabs">
+      <button class="tab-btn active" id="btn-learn" onclick="setMode('learn')">📖 Learn Mode</button>
+      <button class="tab-btn" id="btn-practice" onclick="setMode('practice')">✍️ Practice MCQs</button>
+    </div>
+  </div>
+</header>
+
+<div class="main-container">
+  <div class="controls-bar">
+    <div class="filter-group">
+      <select id="catSelect" onchange="render()">
+        <option value="ALL">All Categories (20)</option>
+      </select>
+      <input type="text" id="searchBox" placeholder="Search question, answer, or extra points..." oninput="render()">
+    </div>
+    <div class="score-group">
+      <span class="pill">Attempted: <span id="cnt-attempted">0</span>/20</span>
+      <span class="pill green">Correct: <span id="cnt-correct">0</span></span>
+      <span class="pill red">Wrong: <span id="cnt-wrong">0</span></span>
+      <button class="action-btn" onclick="resetAll()">Reset Practice</button>
+    </div>
+  </div>
+
+  <div class="learn-subbar" id="learnSubbar">
+    <span id="showingCount">Showing 20 questions</span>
+    <button class="action-btn" id="blurBtn" onclick="toggleBlur()">👁️ Hide Answers (Self-Test)</button>
+  </div>
+
+  <div id="cardsContainer"></div>
+</div>
+
+<script>
+const QUESTIONS = [{"id": 1, "slide_q": 330, "cat": "Appointments & Committees", "q": "Whom did the Delhi High Court appoint as the Official Liquidator for the winding up of Paytm Payments Bank?", "opts": ["Suresh N. Patel", "Girikumar M. Nair", "Vikramjit Sen", "Rajesh Bindal"], "ans": 1, "p1": "Repeated From Previous Sources: Veranda Part 2 (New) Q.180 — Girikumar M. Nair appointed Official Liquidator for Paytm Payments Bank by Delhi High Court.", "p2": "Exam Fact: Paytm Payments Bank had previously been excluded by the RBI from the Second Schedule of the RBI Act, 1934."}, {"id": 2, "slide_q": 332, "cat": "Banking, Finance & Regulatory", "q": "Regarding RBI's field trials of polymer banknotes: (1) Proposed under Section 25 of the RBI Act, 1934; (2) Covers ₹10 and ₹20 denominations (not ₹50); (3) Trial batch involves 100 million pieces; (4) Governed under RBI Act, 1934 (Section 22 grants sole right to issue banknotes). Which statements are correct?", "opts": ["All 1, 2, 3, and 4", "1 and 2 only", "2 and 3 only", "1, 3, and 4 only (Covers ₹10 and ₹20 notes, not ₹50)"], "ans": 3, "p1": "Repeated From Previous Sources: Priya Ma'am 6M GA (New) Q.65 — Polymer banknotes field trials for ₹10 and ₹20 denominations.", "p2": "Exam Fact: India has 4 banknote printing presses—Nashik (Maharashtra) and Dewas (MP) owned by SPMCIL, and Mysuru (Karnataka) and Salboni (WB) owned by BRBNMPL."}, {"id": 3, "slide_q": 333, "cat": "Banking, Finance & Regulatory", "q": "With UPI completing 10 years (launched in 2016) as of August 2026, what percentage share of India's total digital payment volume does UPI hold?", "opts": ["84%", "75%", "80%", "90%"], "ans": 0, "p1": "Repeated From Previous Sources: Priya Ma'am 6M GA (New) Q.152 — UPI completing 10 years since its 2016 launch.", "p2": "Exam Fact: UPI was launched in 2016 by NPCI (Headquarters: Mumbai, Maharashtra)."}, {"id": 4, "slide_q": 339, "cat": "Banking, Finance & Regulatory", "q": "Regarding the RBI Bi-Monthly Monetary Policy review: (1) Policy Repo Rate maintained/adjusted by 25 bps; (2) Standing Deposit Facility (SDF) rate is 5.25% (not 5.75%); (3) Policy stance calibrated/neutral; (4) Marginal Standing Facility (MSF) and Bank Rate aligned accordingly. Which statements are correct?", "opts": ["2 and 3 only", "1 and 2 only", "1, 3, and 4 only (SDF rate is 5.25%, not 5.75%)", "All 1, 2, 3, and 4"], "ans": 2, "p1": "Repeated From Previous Sources: Veranda Part 2 (New) Q.29 — Policy Repo Rate at 5.25% & SDF at 5.00%/5.25% (25 bps below Repo).", "p2": "Exam Fact: 1 percentage point equals 100 basis points (bps); MPC meets at least 4 times a year (bi-monthly = 6 meetings per year)."}, {"id": 5, "slide_q": 350, "cat": "Banking, Finance & Regulatory", "q": "RBI reduced the single-window cap for Over-the-Counter (OTC) forex derivative transactions without underlying exposure from USD 100 million to what amount?", "opts": ["USD 50 million", "USD 5 million", "USD 20 million", "USD 10 million"], "ans": 1, "p1": "Repeated From Previous Sources: Veranda Part 2 (New) Q.19 — Reduction of OTC forex derivative window without underlying from USD 100M to USD 5M.", "p2": "Exam Fact: Forex derivatives are regulated by RBI under the Foreign Exchange Management Act (FEMA), 1999."}, {"id": 6, "slide_q": 353, "cat": "Appointments & Committees", "q": "Who was appointed Chairperson of the RBI committee constituted on financial markets / secondary market regulation?", "opts": ["Rohit Jain", "T. Rabi Sankar", "M. Rajeshwar Rao", "Poonam Gupta"], "ans": 0, "p1": "Repeated From Previous Sources: Veranda Part 2 (New) Q.22 — Rohit Jain appointed Chairperson of RBI committee on financial markets.", "p2": "Exam Fact: RBI's 4 Deputy Governors are T. Rabi Sankar, Swaminathan Janakiraman, Poonam Gupta, and Shirish Chandra Murmu (Governor: Sanjay Malhotra, 26th Governor)."}, {"id": 7, "slide_q": 358, "cat": "Appointments & Committees", "q": "Shirish Chandra Murmu (RBI Deputy Governor / former CAG) was appointed as a member of which committee constituted in November 2026?", "opts": ["Monetary Policy Committee (MPC)", "High-Level Committee on Banking for Viksit Bharat", "16th Finance Commission", "SEBI Debenture Trustee Working Group"], "ans": 1, "p1": "Repeated From Previous Sources: Veranda Part 2 (New) Q.164 — Shirish Chandra Murmu as member of High-Level Committee on Banking for Viksit Bharat.", "p2": "Exam Fact: Shapes India's banking sector architecture toward Viksit Bharat 2047."}, {"id": 8, "slide_q": 361, "cat": "Banking, Finance & Regulatory", "q": "At what level did the RBI Monetary Policy Committee (MPC) keep the Policy Repo Rate?", "opts": ["5.25%", "5.50%", "6.00%", "6.50%"], "ans": 0, "p1": "Repeated From Previous Sources: Veranda Part 2 (New) Q.29 — RBI Policy Repo Rate at 5.25%.", "p2": "Exam Fact: Policy Repo Rate is the rate at which RBI lends short-term funds to commercial banks against government securities under LAF."}, {"id": 9, "slide_q": 370, "cat": "Banking, Finance & Regulatory", "q": "To which date did RBI extend the implementation deadline for its revised Loan Recovery Norms?", "opts": ["1 October 2026", "1 January 2027", "1 April 2027", "31 March 2027"], "ans": 1, "p1": "Repeated From Previous Sources: Priya Ma'am 6M GA (New) Q.151 — RBI revised Loan Recovery Norms effective date.", "p2": "Exam Fact: Prohibits recovery agents from calling borrowers outside the 8:00 AM to 7:00 PM window or engaging in harassment."}, {"id": 10, "slide_q": 372, "cat": "Banking, Finance & Regulatory", "q": "Under the Reserve Bank of India Act, 1934 (Section 45ZB / 45ZI), what is the minimum number of times the Monetary Policy Committee (MPC) must meet in a year?", "opts": ["At least 12 times a year", "At least 2 times a year", "At least 6 times a year", "At least 4 times a year"], "ans": 3, "p1": "Repeated From Previous Sources: Veranda Part 2 (New) Q.41 — Monetary Policy Committee (MPC) statutory requirement of at least 4 meetings per year.", "p2": "Exam Fact: MPC consists of 6 members—3 from RBI (Governor, Deputy Governor in charge of MP, and one RBI officer) and 3 external members appointed by the Central Government."}, {"id": 11, "slide_q": 379, "cat": "Banking, Finance & Regulatory", "q": "Which of the following is NOT one of the three household/consumer surveys conducted by the RBI?", "opts": ["Rural Consumer Confidence Survey (RCCS)", "Inflation Expectations Survey of Households (IESH)", "ABACUS Survey", "Urban Consumer Confidence Survey (UCCS)"], "ans": 2, "p1": "Repeated From Previous Sources: Veranda Part 2 (New) Q.48 — Three RBI consumer/household surveys (IESH, RCCS, UCCS).", "p2": "Exam Fact: These surveys provide forward-looking inflation and consumption inputs for the Monetary Policy Committee."}, {"id": 12, "slide_q": 382, "cat": "Banking, Finance & Regulatory", "q": "From which date will RBI's final directions on Basel III Capital Requirements for Market Risk come into effect for commercial banks?", "opts": ["1 October 2026", "1 April 2027", "1 January 2027", "1 April 2028"], "ans": 1, "p1": "Repeated From Previous Sources: Veranda Part 2 (New) Q.51 — Basel III Capital Requirements for Market Risk effective 1 April 2027.", "p2": "Exam Fact: Basel Committee on Banking Supervision (BCBS) is headquartered at the Bank for International Settlements (BIS) in Basel, Switzerland."}, {"id": 13, "slide_q": 396, "cat": "Banking, Finance & Regulatory", "q": "Regarding RBI's Cash Reserve Ratio (CRR) norms: (1) Earlier minimum daily CRR maintenance requirement was 95% (before 90%/99% updates); (2) CRR rate is 3% of NDTL; (3) Effective from 16 October 2026 (not November). Which statements are correct?", "opts": ["All 1, 2, and 3", "1 and 2 only", "2 and 3 only", "1, 2, and 3 (Effective from 16 October 2026)"], "ans": 3, "p1": "Repeated From Previous Sources: Priya Ma'am 6M GA (New) Q.200 — CRR at 3% of NDTL & daily minimum maintenance.", "p2": "Exam Fact: Banks earn zero interest from RBI on CRR balances maintained with the central bank."}, {"id": 14, "slide_q": 398, "cat": "Banking, Finance & Regulatory", "q": "Under RBI's revised Loan Recovery Norms, during which hours are recovery agents permitted to call or visit borrowers?", "opts": ["9:00 AM to 6:00 PM", "8:00 AM to 7:00 PM", "7:00 AM to 9:00 PM", "10:00 AM to 5:00 PM"], "ans": 1, "p1": "Repeated From Previous Sources: Priya Ma'am 6M GA (New) Q.151 — RBI Loan Recovery Norms calling window strictly 8:00 AM to 7:00 PM.", "p2": "Exam Fact: Applies to all Commercial Banks, Co-operative Banks, NBFCs, and Housing Finance Companies."}, {"id": 15, "slide_q": 412, "cat": "Banking, Finance & Regulatory", "q": "Under RBI's draft amendments on Securitization of Stressed Assets (July 2026), securitization notes must be issued exclusively in which form, and how many Demat accounts can an individual hold in India?", "opts": ["Sovereign gold ledger form; Maximum 1 Demat account", "Physical paper certificate form; Maximum 2 Demat accounts", "Bearer bond form; Maximum 3 Demat accounts", "Demat (Dematerialized) form only; No limit on number of Demat accounts"], "ans": 3, "p1": "Repeated From Previous Sources: Veranda Part 2 (New) Q.81 — Securitization notes in Demat form & no limit on Demat accounts.", "p2": "Exam Fact: India has two SEBI-registered depositories: NSDL (founded 1996) and CDSL (founded 1999)."}, {"id": 16, "slide_q": 419, "cat": "Banking, Finance & Regulatory", "q": "How many risk levels are featured in SEBI's color-coded 'Credit Risk-o-Meter' for debt securities?", "opts": ["5 levels", "4 levels", "6 levels", "7 levels"], "ans": 2, "p1": "Repeated From Previous Sources: Priya Ma'am 6M GA (New) Q.201 — 6 risk levels on SEBI's Risk-o-Meter.", "p2": "Exam Fact: SEBI was established in 1988 and received statutory powers on 30 January 1992 under the SEBI Act, 1992 (HQ: Mumbai; Chairman: Tuhin Kanta Pandey)."}, {"id": 17, "slide_q": 422, "cat": "Banking, Finance & Regulatory", "q": "What minimum post-issue paid-up capital / net worth threshold (in ₹ crore) did SEBI propose for companies listing on the SME Exchange platform?", "opts": ["₹25 crore", "₹100 crore (revised eligibility/market-cap threshold)", "₹50 crore", "₹250 crore"], "ans": 1, "p1": "Repeated From Previous Sources: Veranda Part 2 (New) Q.91 — ₹100 crore threshold for SME Exchange listing.", "p2": "Exam Fact: BSE SME and NSE Emerge are India's two dedicated SME stock exchange platforms."}, {"id": 18, "slide_q": 423, "cat": "Banking, Finance & Regulatory", "q": "SEBI reduced the cooling-off period for Offer for Sale (OFS) / unit transactions in privately listed InvITs from 12 weeks to how many weeks?", "opts": ["6 weeks", "4 weeks", "8 weeks", "10 weeks"], "ans": 2, "p1": "Repeated From Previous Sources: Veranda Part 2 (New) Q.92 — Cooling-off period for privately listed InvITs reduced from 12 weeks to 8 weeks.", "p2": "Exam Fact: OFS stands for Offer for Sale, a transparent exchange mechanism for promoters to dilute shareholding."}, {"id": 19, "slide_q": 436, "cat": "Banking, Finance & Regulatory", "q": "How many risk levels are included in SEBI's color-coded Credit Risk-o-Meter for debt mutual fund / debt security evaluation?", "opts": ["8 levels", "4 levels", "5 levels", "6 levels"], "ans": 3, "p1": "Repeated From Previous Sources: Priya Ma'am 6M GA (New) Q.201 & Veranda Part 3 Q.419 — 6 color-coded risk levels on SEBI's Credit Risk-o-Meter.", "p2": "Exam Fact: Helps retail debt investors easily assess credit default risk alongside interest rate risk."}, {"id": 20, "slide_q": 442, "cat": "Banking, Finance & Regulatory", "q": "Which SEBI license did 'Bondbazaar / PB Fintech (Paisabazaar)' secure to offer retail investors direct digital access to corporate bonds?", "opts": ["Stock Broker Clearing License", "OBPP (Online Bond Platform Provider) license", "Credit Rating Agency License", "Custodian of Securities License"], "ans": 1, "p1": "Repeated From Previous Sources: Priya Ma'am 6M GA (New) Q.213 — Online Bond Platform Provider (OBPP) license from SEBI.", "p2": "Exam Fact: Enables retail investors to buy rated corporate bonds and NCDs online in smaller denominations."}];
+
+let mode = 'learn';
+let hideAnswers = false;
+let userAnswers = {};
+
+function setup() {
+  const select = document.getElementById('catSelect');
+  const uniqueCats = [...new Set(QUESTIONS.map(q => q.cat))];
+  uniqueCats.forEach(cat => {
+    const count = QUESTIONS.filter(q => q.cat === cat).length;
+    const option = document.createElement('option');
+    option.value = cat;
+    option.textContent = `${cat} (${count})`;
+    select.appendChild(option);
+  });
+  refreshStats();
+  render();
+}
+
+function setMode(newMode) {
+  mode = newMode;
+  document.getElementById('btn-learn').classList.toggle('active', mode === 'learn');
+  document.getElementById('btn-practice').classList.toggle('active', mode === 'practice');
+  document.getElementById('blurBtn').classList.toggle('hidden', mode !== 'learn');
+  render();
+}
+
+function toggleBlur() {
+  hideAnswers = !hideAnswers;
+  document.getElementById('blurBtn').textContent = hideAnswers
+    ? '👁️ Show All Answers'
+    : '👁️ Hide Answers (Self-Test)';
+  render();
+}
+
+function getFilteredList() {
+  const cat = document.getElementById('catSelect').value;
+  const term = document.getElementById('searchBox').value.trim().toLowerCase();
+
+  return QUESTIONS.filter(item => {
+    if (cat !== 'ALL' && item.cat !== cat) return false;
+    if (!term) return true;
+    return (
+      item.q.toLowerCase().includes(term) ||
+      item.opts.some(o => o.toLowerCase().includes(term)) ||
+      item.p1.toLowerCase().includes(term) ||
+      item.p2.toLowerCase().includes(term) ||
+      String(item.slide_q).includes(term)
+    );
+  });
+}
+
+function render() {
+  const list = getFilteredList();
+  document.getElementById('showingCount').textContent = `Showing ${list.length} question${list.length === 1 ? '' : 's'}`;
+  const container = document.getElementById('cardsContainer');
+
+  if (list.length === 0) {
+    container.innerHTML = `<div class="no-results">No questions match your filter. Clear search or switch category.</div>`;
+    return;
+  }
+
+  container.innerHTML = list
+    .map(item => (mode === 'learn' ? buildLearnCard(item) : buildPracticeCard(item)))
+    .join('');
+}
+
+function buildLearnCard(item) {
+  const answerText = item.opts[item.ans];
+  const blurClass = hideAnswers ? 'blurred' : '';
+  return `
+    <div class="card">
+      <div class="card-top">
+        <div class="badge-group">
+          <span class="badge-num">Q.${item.id}</span>
+          <span class="badge-seq">Slide #${item.slide_q}</span>
+        </div>
+        <span class="badge-cat">${item.cat}</span>
+      </div>
+      <div class="question-text">${item.q}</div>
+      <div class="learn-answer-box ${blurClass}" onclick="this.classList.remove('blurred')" title="Click to reveal answer">
+        ✓ Answer: ${answerText}
+      </div>
+      <div class="exam-points">
+        <div class="exam-points-heading">📌 2 Exam-Related Extra Points</div>
+        <ul>
+          <li>${item.p1}</li>
+          <li>${item.p2}</li>
+        </ul>
+      </div>
+    </div>
+  `;
+}
+
+function buildPracticeCard(item) {
+  const record = userAnswers[item.id];
+  const isAnswered = record !== undefined;
+  const letters = ['A', 'B', 'C', 'D'];
+
+  const optsMarkup = item.opts
+    .map((opt, idx) => {
+      let cls = '';
+      if (isAnswered) {
+        if (idx === item.ans) cls = 'correct';
+        else if (idx === record.picked && !record.correct) cls = 'wrong';
+      }
+      return `
+        <button class="option-btn ${cls}" ${isAnswered ? 'disabled' : ''} onclick="selectOption(${item.id}, ${idx})">
+          <span class="opt-circle">${letters[idx]}</span>
+          <span>${opt}</span>
+        </button>
+      `;
+    })
+    .join('');
+
+  const bannerMarkup = isAnswered
+    ? record.correct
+      ? `<span class="result-pill right">✓ Correct!</span>`
+      : `<span class="result-pill wrong">✕ Wrong Answer</span>`
+    : '';
+
+  return `
+    <div class="card" id="card-${item.id}">
+      <div class="card-top">
+        <div class="badge-group">
+          <span class="badge-num">Q.${item.id}</span>
+          <span class="badge-seq">Slide #${item.slide_q}</span>
+        </div>
+        <span class="badge-cat">${item.cat}</span>
+      </div>
+      <div class="question-text">${item.q}</div>
+      <div class="options-list">
+        ${optsMarkup}
+      </div>
+      <div class="answer-panel ${isAnswered ? 'visible' : ''}" id="panel-${item.id}">
+        <div class="result-banner">
+          ${bannerMarkup}
+          <div class="correct-label">Correct Answer: <span>${letters[item.ans]}. ${item.opts[item.ans]}</span></div>
+        </div>
+        <div class="exam-points">
+          <div class="exam-points-heading">📌 2 Exam-Related Extra Points</div>
+          <ul>
+            <li>${item.p1}</li>
+            <li>${item.p2}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+function selectOption(qId, pickedIdx) {
+  if (userAnswers[qId] !== undefined) return;
+  const item = QUESTIONS.find(q => q.id === qId);
+  if (!item) return;
+
+  userAnswers[qId] = {
+    picked: pickedIdx,
+    correct: pickedIdx === item.ans
+  };
+
+  refreshStats();
+  const cardEl = document.getElementById(`card-${qId}`);
+  if (cardEl) {
+    cardEl.outerHTML = buildPracticeCard(item);
+  }
+}
+
+function refreshStats() {
+  const keys = Object.keys(userAnswers);
+  const attempted = keys.length;
+  const correct = keys.filter(k => userAnswers[k].correct).length;
+  const wrong = attempted - correct;
+
+  document.getElementById('cnt-attempted').textContent = attempted;
+  document.getElementById('cnt-correct').textContent = correct;
+  document.getElementById('cnt-wrong').textContent = wrong;
+}
+
+function resetAll() {
+  userAnswers = {};
+  refreshStats();
+  render();
+}
+
+setup();
+</script>
+</body>
+</html>

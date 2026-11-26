@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>September Static GK — Learn & Practice (White Theme)</title>
+<style>
+  :root {
+    --bg-page: #ffffff;
+    --bg-panel: #f9fafb;
+    --bg-card: #ffffff;
+    --border-light: #e5e7eb;
+    --border-strong: #d1d5db;
+    --text-main: #111827;
+    --text-sub: #4b5563;
+    --text-muted: #6b7280;
+    --primary: #1d4ed8;
+    --primary-soft: #eff6ff;
+    --primary-border: #bfdbfe;
+    --green-bg: #f0fdf4;
+    --green-border: #22c55e;
+    --green-text: #15803d;
+    --red-bg: #fef2f2;
+    --red-border: #ef4444;
+    --red-text: #b91c1c;
+    --amber-bg: #fffbeb;
+    --amber-border: #f59e0b;
+    --amber-text: #92400e;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background-color: var(--bg-page);
+    color: var(--text-main);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Arial, sans-serif;
+    line-height: 1.6;
+  }
+
+  header {
+    background-color: #ffffff;
+    border-bottom: 1px solid var(--border-light);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 14px 20px;
+  }
+
+  .header-wrap {
+    max-width: 1060px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .title-block h1 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--text-main);
+  }
+
+  .title-block p {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+  }
+
+  .tabs {
+    display: inline-flex;
+    background-color: var(--bg-panel);
+    border: 1px solid var(--border-light);
+    border-radius: 8px;
+    padding: 4px;
+    gap: 4px;
+  }
+
+  .tab-btn {
+    border: none;
+    background: transparent;
+    color: var(--text-sub);
+    font-size: 0.88rem;
+    font-weight: 600;
+    padding: 7px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.15s ease;
+  }
+
+  .tab-btn.active {
+    background-color: #ffffff;
+    color: var(--primary);
+    border: 1px solid var(--border-light);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
+  }
+
+  .main-container {
+    max-width: 1060px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .controls-bar {
+    background-color: var(--bg-panel);
+    border: 1px solid var(--border-light);
+    border-radius: 10px;
+    padding: 12px 16px;
+    margin-bottom: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .filter-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    flex: 1;
+  }
+
+  select, input[type="text"] {
+    background-color: #ffffff;
+    color: var(--text-main);
+    border: 1px solid var(--border-strong);
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 0.875rem;
+    outline: none;
+  }
+
+  select:focus, input[type="text"]:focus {
+    border-color: var(--primary);
+  }
+
+  input[type="text"] {
+    min-width: 230px;
+  }
+
+  .score-group {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.84rem;
+    font-weight: 600;
+  }
+
+  .pill {
+    background-color: #ffffff;
+    border: 1px solid var(--border-light);
+    border-radius: 999px;
+    padding: 4px 11px;
+    color: var(--text-sub);
+  }
+
+  .pill.green {
+    background-color: var(--green-bg);
+    border-color: var(--green-border);
+    color: var(--green-text);
+  }
+
+  .pill.red {
+    background-color: var(--red-bg);
+    border-color: var(--red-border);
+    color: var(--red-text);
+  }
+
+  .action-btn {
+    background-color: #ffffff;
+    color: var(--text-main);
+    border: 1px solid var(--border-strong);
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .action-btn:hover {
+    background-color: #f3f4f6;
+  }
+
+  .learn-subbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 14px;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+  }
+
+  .card {
+    background-color: #ffffff;
+    border: 1px solid var(--border-light);
+    border-radius: 10px;
+    padding: 18px 20px;
+    margin-bottom: 14px;
+  }
+
+  .card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+  }
+
+  .badge-num {
+    background-color: var(--primary-soft);
+    color: var(--primary);
+    border: 1px solid var(--primary-border);
+    font-size: 0.78rem;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 5px;
+  }
+
+  .badge-cat {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+
+  .question-text {
+    font-size: 1.02rem;
+    font-weight: 600;
+    color: var(--text-main);
+    margin-bottom: 12px;
+  }
+
+  .learn-answer-box {
+    display: inline-block;
+    background-color: var(--green-bg);
+    border: 1px solid #bbf7d0;
+    color: var(--green-text);
+    font-weight: 700;
+    font-size: 0.94rem;
+    padding: 6px 12px;
+    border-radius: 6px;
+    margin-bottom: 12px;
+  }
+
+  .learn-answer-box.blurred {
+    filter: blur(5px);
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .exam-points {
+    background-color: var(--amber-bg);
+    border: 1px solid #fde68a;
+    border-left: 4px solid var(--amber-border);
+    border-radius: 6px;
+    padding: 10px 14px;
+  }
+
+  .exam-points-heading {
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--amber-text);
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    margin-bottom: 4px;
+  }
+
+  .exam-points ul {
+    margin-left: 18px;
+    font-size: 0.88rem;
+    color: #374151;
+  }
+
+  .exam-points li {
+    margin-bottom: 3px;
+  }
+
+  .options-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 10px;
+  }
+
+  .option-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    text-align: left;
+    background-color: #ffffff;
+    border: 1.5px solid var(--border-light);
+    border-radius: 8px;
+    padding: 11px 14px;
+    font-size: 0.92rem;
+    font-weight: 500;
+    color: var(--text-main);
+    cursor: pointer;
+    transition: all 0.15s ease;
+  }
+
+  .option-btn:hover:not(:disabled) {
+    border-color: var(--primary);
+    background-color: var(--primary-soft);
+  }
+
+  .option-btn:disabled {
+    cursor: default;
+  }
+
+  .opt-circle {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: var(--bg-panel);
+    border: 1px solid var(--border-strong);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--text-sub);
+    flex-shrink: 0;
+  }
+
+  .option-btn.correct {
+    background-color: var(--green-bg);
+    border-color: var(--green-border);
+    color: var(--green-text);
+    font-weight: 700;
+  }
+
+  .option-btn.correct .opt-circle {
+    background-color: var(--green-border);
+    border-color: var(--green-border);
+    color: #ffffff;
+  }
+
+  .option-btn.wrong {
+    background-color: var(--red-bg);
+    border-color: var(--red-border);
+    color: var(--red-text);
+    font-weight: 600;
+  }
+
+  .option-btn.wrong .opt-circle {
+    background-color: var(--red-border);
+    border-color: var(--red-border);
+    color: #ffffff;
+  }
+
+  .answer-panel {
+    display: none;
+    margin-top: 14px;
+    padding-top: 14px;
+    border-top: 1px solid var(--border-light);
+    animation: slideDown 0.18s ease-out;
+  }
+
+  .answer-panel.visible {
+    display: block;
+  }
+
+  .result-banner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+
+  .result-pill {
+    font-size: 0.84rem;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 6px;
+  }
+
+  .result-pill.right {
+    background-color: var(--green-bg);
+    color: var(--green-text);
+    border: 1px solid var(--green-border);
+  }
+
+  .result-pill.wrong {
+    background-color: var(--red-bg);
+    color: var(--red-text);
+    border: 1px solid var(--red-border);
+  }
+
+  .correct-label {
+    font-size: 0.92rem;
+    font-weight: 700;
+    color: var(--text-main);
+  }
+
+  .correct-label span {
+    color: var(--green-text);
+  }
+
+  .hidden {
+    display: none !important;
+  }
+
+  .no-results {
+    text-align: center;
+    padding: 40px 20px;
+    border: 1px dashed var(--border-strong);
+    border-radius: 10px;
+    color: var(--text-muted);
+  }
+
+  @keyframes slideDown {
+    from { opacity: 0; transform: translateY(-4px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @media (max-width: 640px) {
+    .header-wrap { flex-direction: column; align-items: flex-start; }
+    .options-list { grid-template-columns: 1fr; }
+    input[type="text"] { width: 100%; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-wrap">
+    <div class="title-block">
+      <h1>September Static GK — Learn & Practice (151 Questions)</h1>
+      <p>SBI Mains & IBPS Mains Static Awareness | English Medium</p>
+    </div>
+    <div class="tabs">
+      <button class="tab-btn active" id="btn-learn" onclick="setMode('learn')">📖 Learn Mode</button>
+      <button class="tab-btn" id="btn-practice" onclick="setMode('practice')">✍️ Practice MCQs</button>
+    </div>
+  </div>
+</header>
+
+<div class="main-container">
+  <div class="controls-bar">
+    <div class="filter-group">
+      <select id="catSelect" onchange="render()">
+        <option value="ALL">All Categories (151)</option>
+      </select>
+      <input type="text" id="searchBox" placeholder="Search question, answer, or extra points..." oninput="render()">
+    </div>
+    <div class="score-group">
+      <span class="pill">Attempted: <span id="cnt-attempted">0</span>/151</span>
+      <span class="pill green">Correct: <span id="cnt-correct">0</span></span>
+      <span class="pill red">Wrong: <span id="cnt-wrong">0</span></span>
+      <button class="action-btn" onclick="resetAll()">Reset Practice</button>
+    </div>
+  </div>
+
+  <div class="learn-subbar" id="learnSubbar">
+    <span id="showingCount">Showing 151 questions</span>
+    <button class="action-btn" id="blurBtn" onclick="toggleBlur()">👁️ Hide Answers (Self-Test)</button>
+  </div>
+
+  <div id="cardsContainer"></div>
+</div>
+
+<script>
+const QUESTIONS = [{"id": 1, "cat": "Banking & Financial Institutions", "q": "Who is the President and where is the headquarters of the Asian Development Bank (ADB)?", "opts": ["Masato Kanda — Manila, Philippines", "Ajay Banga — Washington, D.C., USA", "Sanjay Malhotra — Mumbai, India", "Viswesvaran — New Delhi, India"], "ans": 0, "p1": "Established: 19 December 1966 | Member Countries: 69.", "p2": "Exam Fact: ADB's President has historically always been from Japan, its largest shareholder alongside the USA."}, {"id": 2, "cat": "Banking & Financial Institutions", "q": "Who is the MD & CEO and where is the headquarters of India Post Payments Bank (IPPB)?", "opts": ["R. Viswesvaran — New Delhi", "Partha Pratim Sengupta — Kolkata", "Amitava Chatterjee — Srinagar", "Sanjay Malhotra — Mumbai"], "ans": 0, "p1": "Launched: 1 September 2018 by PM Narendra Modi | Ownership: 100% Government of India (Department of Posts).", "p2": "Exam Fact: Payments Banks can accept deposits up to ₹2 lakh per individual customer, issue ATM/debit cards, and cannot issue loans or credit cards."}, {"id": 3, "cat": "Banking & Financial Institutions", "q": "Who is the Governor and where is the headquarters of the Reserve Bank of India (RBI)?", "opts": ["Sanjay Malhotra — Mumbai, Maharashtra", "Shaktikanta Das — New Delhi", "Ajay Banga — Washington, D.C.", "Tuhin Kanta Pandey — Mumbai, Maharashtra"], "ans": 0, "p1": "Established: 1 April 1935 under the RBI Act, 1934 | Nationalized: 1 January 1949.", "p2": "Exam Fact: Sanjay Malhotra is the 26th Governor of the Reserve Bank of India."}, {"id": 4, "cat": "Banking & Financial Institutions", "q": "Who is the MD & CEO of Bandhan Bank?", "opts": ["Chandra Shekhar Ghosh", "Partha Pratim Sengupta", "Amitabh Chaudhry", "Amitava Chatterjee"], "ans": 1, "p1": "Headquarters: Kolkata, West Bengal | Commenced Universal Banking Operations: 23 August 2015.", "p2": "Exam Fact: Bandhan Bank was the first microfinance institution in India to transform into a universal commercial bank."}, {"id": 5, "cat": "Banking & Financial Institutions", "q": "Where is the headquarters of Bandhan Bank located?", "opts": ["Mumbai, Maharashtra", "Kolkata, West Bengal", "New Delhi", "Guwahati, Assam"], "ans": 1, "p1": "MD & CEO: Partha Pratim Sengupta | Tagline: 'Aapka Bhala, Sabki Bhalai'.", "p2": "Exam Fact: Partha Pratim Sengupta previously served as MD & CEO of Indian Overseas Bank (IOB)."}, {"id": 6, "cat": "Banking & Financial Institutions", "q": "Who is the MD & CEO of Jammu & Kashmir Bank (J&K Bank)?", "opts": ["Baldev Prakash", "Amitava Chatterjee", "R. Viswesvaran", "Partha Pratim Sengupta"], "ans": 1, "p1": "Headquarters: Srinagar, Jammu & Kashmir | Incorporated: 1 October 1938.", "p2": "Exam Fact: J&K Bank is the only state-government-owned scheduled commercial bank in India."}, {"id": 7, "cat": "Banking & Financial Institutions", "q": "Where is the headquarters of Jammu & Kashmir Bank located?", "opts": ["Jammu", "Srinagar, Jammu & Kashmir", "Leh, Ladakh", "New Delhi"], "ans": 1, "p1": "MD & CEO: Amitava Chatterjee | Tagline: 'Serving To Empower'.", "p2": "Exam Fact: J&K Bank acts as the RBI's designated agent for banking business in the Union Territories of J&K and Ladakh."}, {"id": 8, "cat": "Banking & Financial Abbreviations", "q": "What is the full form of AePS?", "opts": ["Aadhaar Enabled Payment System", "Automated Electronic Payment Service", "Aadhaar Electronic Processing Standard", "Authorized e-Payment System"], "ans": 0, "p1": "Operator: Developed and operated by the National Payments Corporation of India (NPCI).", "p2": "Exam Fact: AePS allows basic banking transactions (cash withdrawal, balance inquiry, mini statement, Aadhaar-to-Aadhaar transfer) at Micro-ATMs using Aadhaar authentication."}, {"id": 9, "cat": "Banking & Financial Abbreviations", "q": "What is the full form of BCBS?", "opts": ["Banking Council for Business Supervision", "Basel Committee on Banking Supervision", "Board of Central Banking Standards", "Bilateral Credit & Banking System"], "ans": 1, "p1": "Location: Hosted at the Bank for International Settlements (BIS) in Basel, Switzerland.", "p2": "Exam Fact: BCBS is the primary global standard-setter for the prudential regulation of banks (Basel I, II, and III accords)."}, {"id": 10, "cat": "Banking & Financial Abbreviations", "q": "What is the full form of CBDC?", "opts": ["Central Banking Deposit Certificate", "Central Bank Digital Currency", "Commercial Bank Digital Credit", "Centralized Bharat Digital Cash"], "ans": 1, "p1": "Definition: Sovereign digital currency issued by a central bank (e₹ / Digital Rupee in India).", "p2": "Exam Fact: CBDC is a direct liability on the central bank's balance sheet and is exchangeable at par with physical cash."}, {"id": 11, "cat": "Banking & Financial Abbreviations", "q": "What is the full form of CRAR in Basel capital adequacy norms?", "opts": ["Credit Risk Asset Reserve", "Capital to Risk-Weighted Assets Ratio", "Centralized Ratio of Asset Returns", "Current Reserve Adequacy Ratio"], "ans": 1, "p1": "Formula: CRAR = (Tier 1 Capital + Tier 2 Capital) ÷ Risk-Weighted Assets (RWA).", "p2": "Exam Fact: Global Basel III minimum CRAR is 8%, while RBI mandates a minimum of 9% for Indian Scheduled Commercial Banks."}, {"id": 12, "cat": "Banking & Financial Abbreviations", "q": "What is the full form of DBT?", "opts": ["Digital Banking Transfer", "Direct Benefit Transfer", "Domestic Business Transaction", "Direct Balance Terminal"], "ans": 1, "p1": "Launch: Launched by the Government of India on 1 January 2013 to transfer subsidies directly into beneficiaries' bank accounts.", "p2": "Exam Fact: DBT relies on the JAM Trinity (Jan Dhan, Aadhaar, Mobile) to eliminate middlemen and leakages."}, {"id": 13, "cat": "Banking & Financial Abbreviations", "q": "What is the full form of ECB in international finance?", "opts": ["European Central Bank", "External Commercial Borrowing", "Electronic Clearing Bureau", "Export Credit Banking"], "ans": 1, "p1": "Definition: Commercial loans raised by eligible Indian entities from non-resident foreign lenders.", "p2": "Exam Fact: ECBs in India are regulated by the RBI under the Foreign Exchange Management Act (FEMA), 1999."}, {"id": 14, "cat": "Banking & Financial Abbreviations", "q": "What is the full form of FDI?", "opts": ["Foreign Deposit Insurance", "Foreign Direct Investment", "Federal Development Index", "Fiscal Debt Instrument"], "ans": 1, "p1": "Definition: Cross-border investment where a foreign investor acquires lasting management/ownership interest in a domestic company.", "p2": "Exam Fact: FDI in the Indian insurance sector has been raised to 100% (as highlighted in the session)."}, {"id": 15, "cat": "Banking & Financial Abbreviations", "q": "What is the full form of FER in international trade and finance?", "opts": ["Fiscal Equity Reserve", "Foreign Exchange Risk", "Financial Exchange Ratio", "Federal Economic Regulation"], "ans": 1, "p1": "Definition: Financial risk that an investment's or transaction's value will change due to fluctuations in currency exchange rates.", "p2": "Exam Fact: Hedging tools like forwards, futures, options, and swaps are used to manage Foreign Exchange Risk."}, {"id": 16, "cat": "Banking & Financial Abbreviations", "q": "What is the full form of FSDC?", "opts": ["Federal Securities & Deposit Corporation", "Financial Stability and Development Council", "Foreign Sector Development Committee", "Fiscal Standards & Development Council"], "ans": 1, "p1": "Establishment: Set up in December 2010 on the recommendation of the Raghuram Rajan Committee.", "p2": "Exam Fact: FSDC is chaired by the Union Finance Minister, and its sub-committee is chaired by the RBI Governor."}, {"id": 17, "cat": "Banking & Financial Abbreviations", "q": "What is the full form of FCNR?", "opts": ["Federal Currency National Reserve", "Foreign Currency Non-Resident", "Fixed Capital Non-Repatriable", "Foreign Credit Network Ratio"], "ans": 1, "p1": "Function: Foreign-currency term deposit accounts opened by NRIs in India (minimum 1 year, maximum 5 years).", "p2": "Exam Fact: Unlike NRE/NRO accounts denominated in INR, FCNR(B) accounts are maintained in permitted foreign currencies."}, {"id": 18, "cat": "Banking & Financial Abbreviations", "q": "What is the full form of FPI?", "opts": ["Foreign Public Investment", "Foreign Portfolio Investment", "Federal Policy Index", "Fixed Principal Instrument"], "ans": 1, "p1": "Definition: Passive investment by non-residents in financial assets like stocks, bonds, and mutual funds without controlling management.", "p2": "Exam Fact: FPIs in India are registered with and regulated by SEBI."}, {"id": 19, "cat": "Banking & Financial Abbreviations", "q": "What is the full form of GDP?", "opts": ["Global Domestic Price", "Gross Domestic Product", "General Development Parameter", "Gross Debt Portfolio"], "ans": 1, "p1": "Definition: Total market value of all final goods and services produced within a country's geographic borders in a given period.", "p2": "Exam Fact: GDP can be computed via three methods—Production (GVA), Income, and Expenditure methods."}, {"id": 20, "cat": "Banking & Financial Abbreviations", "q": "What is the full form of IFSCA?", "opts": ["Indian Financial Services & Credit Authority", "International Financial Services Centres Authority", "Integrated Fiscal & Securities Control Agency", "International Foreign Settlement & Clearing Authority"], "ans": 1, "p1": "Headquarters: GIFT City, Gandhinagar, Gujarat | Established: April 2020.", "p2": "Exam Fact: IFSCA is a unified regulator combining powers of RBI, SEBI, IRDAI, and PFRDA inside India's IFSCs."}, {"id": 21, "cat": "Banking & Financial Abbreviations", "q": "What is the full form of IBC?", "opts": ["Indian Banking Council", "Insolvency and Bankruptcy Code", "International Business Charter", "Integrated Banking Compliance"], "ans": 1, "p1": "Enactment: Enacted in 2016 to consolidate and amend laws relating to reorganization and insolvency resolution.", "p2": "Exam Fact: The Insolvency and Bankruptcy Board of India (IBBI) is the statutory regulator overseeing IBC proceedings."}, {"id": 22, "cat": "Banking & Financial Abbreviations", "q": "What is the full form of IPO?", "opts": ["Internal Payment Order", "Initial Public Offering", "Institutional Portfolio Option", "Indian Public Offering"], "ans": 1, "p1": "Function: Process through which a private company offers shares to public investors for the first time.", "p2": "Exam Fact: ASBA (Application Supported by Blocked Amount) is mandatory for retail IPO applications in India."}, {"id": 23, "cat": "Banking & Financial Abbreviations", "q": "What is the full form of IRR in banking risk management?", "opts": ["Internal Revenue Ratio", "Interest Rate Risk", "Insurance Reserve Requirement", "International Remittance Rate"], "ans": 1, "p1": "Definition: Risk to a bank's earnings and capital arising from adverse movements in market interest rates.", "p2": "Exam Fact: In capital budgeting/project finance, IRR also stands for Internal Rate of Return."}, {"id": 24, "cat": "Banking & Financial Abbreviations", "q": "What is the full form of InvIT?", "opts": ["Investment & Venture Index Trust", "Infrastructure Investment Trust", "Institutional Value Investment Treaty", "Industrial Venture & Infrastructure Trust"], "ans": 1, "p1": "Function: Collective investment vehicle (similar to a mutual fund) that pools money to invest in income-generating infrastructure assets (roads, power grids).", "p2": "Exam Fact: InvITs in India are regulated by SEBI under the SEBI (Infrastructure Investment Trusts) Regulations, 2014."}, {"id": 25, "cat": "Banking & Financial Abbreviations", "q": "What is the full form of KYC?", "opts": ["Keep Your Capital", "Know Your Customer", "Key Yield Calculation", "Know Your Credit"], "ans": 1, "p1": "Introduction: RBI issued KYC guidelines in 2002 under Section 35A of the Banking Regulation Act, 1949.", "p2": "Exam Fact: Video-based Customer Identification Process (V-CIP) is permitted by RBI for remote digital KYC onboarding."}, {"id": 26, "cat": "Banking & Financial Abbreviations", "q": "What is the full form of LCR in Basel III liquidity standards?", "opts": ["Lending Coverage Ratio", "Liquidity Coverage Ratio", "Loan Capital Reserve", "Long-term Credit Ratio"], "ans": 1, "p1": "Definition: Requires banks to hold sufficient High-Quality Liquid Assets (HQLA) to survive a 30-day acute stress scenario.", "p2": "Exam Fact: Under Basel III and RBI norms, banks must maintain a minimum LCR of 100%."}, {"id": 27, "cat": "Banking & Financial Abbreviations", "q": "What is the full form of MDR in digital card/merchant payments?", "opts": ["Minimum Deposit Rate", "Merchant Discount Rate", "Monetary Distribution Ratio", "Market Debt Reserve"], "ans": 1, "p1": "Definition: Fee charged by a bank/payment processor to a merchant for processing debit or credit card transactions.", "p2": "Exam Fact: The Government of India mandates zero MDR on RuPay Debit Card and BHIM-UPI person-to-merchant (P2M) transactions."}, {"id": 28, "cat": "Banking & Financial Abbreviations", "q": "What is the full form of NPA?", "opts": ["Net Profit Assessment", "Non-Performing Asset", "National Payment Authority", "Nominal Principal Account"], "ans": 1, "p1": "Definition: A loan where interest or principal installment remains overdue for more than 90 days.", "p2": "Exam Fact: Prior to becoming an NPA at 90 days, overdue accounts are tracked as Special Mention Accounts: SMA-0 (1–30 days), SMA-1 (31–60 days), and SMA-2 (61–90 days)."}, {"id": 29, "cat": "Banking & Financial Abbreviations", "q": "What is the full form of NSFR in Basel III norms?", "opts": ["National Savings & Finance Ratio", "Net Stable Funding Ratio", "Nominal Systemic Funding Reserve", "Net Sovereign Fiscal Ratio"], "ans": 1, "p1": "Definition: Requires banks to maintain a stable funding profile in relation to their off-balance-sheet and on-balance-sheet assets over a 1-year horizon.", "p2": "Exam Fact: Like LCR, the minimum regulatory requirement for NSFR is 100%."}, {"id": 30, "cat": "Banking & Financial Abbreviations", "q": "What is the full form of OFCB?", "opts": ["Official Foreign Central Bank", "Offshore Foreign Currency Bond", "Overseas Fiscal Credit Bureau", "Open Financial Clearing Bank"], "ans": 1, "p1": "Definition: Debt securities issued in a foreign currency in international financial markets outside the issuer's home country.", "p2": "Exam Fact: Masala Bonds, by contrast, are rupee-denominated bonds issued outside India in offshore markets."}, {"id": 31, "cat": "Banking & Financial Abbreviations", "q": "What is the full form of PCR in banking asset quality?", "opts": ["Public Credit Registry", "Provisioning Coverage Ratio", "Primary Capital Reserve", "Payment Clearing Ratio"], "ans": 1, "p1": "Definition: Percentage of funds a bank sets aside from its profits to cover potential losses from Non-Performing Assets (NPAs).", "p2": "Exam Fact: A higher Provisioning Coverage Ratio indicates a stronger buffer against bad loan losses."}, {"id": 32, "cat": "Banking & Financial Abbreviations", "q": "What is the full form of PSP in digital payments?", "opts": ["Public Settlement Platform", "Payment Service Provider", "Primary Savings Portal", "Prepaid System Protocol"], "ans": 1, "p1": "Function: Banks or regulated entities that connect merchants and consumers to payment networks (such as UPI) to process electronic payments.", "p2": "Exam Fact: In the UPI ecosystem, PSP banks onboard customers and issue Virtual Payment Addresses (VPAs)."}, {"id": 33, "cat": "Banking & Financial Abbreviations", "q": "What is the full form of PPI?", "opts": ["Public Private Investment", "Prepaid Payment Instrument", "Primary Payment Interface", "Priority Portfolio Index"], "ans": 1, "p1": "Definition: Payment instruments (mobile wallets, gift cards, transit cards) that facilitate purchase of goods/services against stored value.", "p2": "Exam Fact: PPIs are regulated by the RBI under the Payment and Settlement Systems Act, 2007."}, {"id": 34, "cat": "Banking & Financial Abbreviations", "q": "What is the full form of PMS?", "opts": ["Public Management Service", "Portfolio Management Service", "Pension Management Scheme", "Payment Monitoring System"], "ans": 1, "p1": "Function: Professional investment management of segregated equity/debt portfolios tailored to individual client objectives.", "p2": "Exam Fact: SEBI mandates a minimum investment of ₹50 lakh per client for PMS."}, {"id": 35, "cat": "Banking & Financial Abbreviations", "q": "What is the full form of REITs?", "opts": ["Regional Economic Investment Treaties", "Real Estate Investment Trusts", "Reserve Equity & Income Trusts", "Rural Enterprise Investment Trusts"], "ans": 1, "p1": "Function: Companies/trusts that own, operate, or finance income-generating commercial real estate and distribute dividends to unit holders.", "p2": "Exam Fact: REITs in India are regulated by SEBI and must invest at least 80% of their assets in completed, rent-generating properties."}, {"id": 36, "cat": "Banking & Financial Abbreviations", "q": "What is the full form of SIF introduced by SEBI?", "opts": ["Strategic Infrastructure Fund", "Specialized Investment Fund", "Sovereign Investment Facility", "Scheduled Institutional Fund"], "ans": 1, "p1": "Definition: A SEBI-approved asset class bridging the gap between traditional Mutual Funds (low ticket size) and PMS (₹50 lakh minimum).", "p2": "Exam Fact: The minimum investment threshold for a Specialized Investment Fund (SIF) is ₹10 lakh."}, {"id": 37, "cat": "Banking & Financial Abbreviations", "q": "What is the full form of TReDS?", "opts": ["Treasury Reserve Electronic Deposit System", "Trade Receivables Discounting System", "Transfer & Remittance Electronic Data System", "Trade Regulatory & Electronic Settlement"], "ans": 1, "p1": "Function: Electronic platform facilitating the financing/discounting of trade receivables of MSMEs from corporate and government buyers.", "p2": "Exam Fact: TReDS platforms (such as RXIL, M1xchange, Invoicemart) are licensed by the RBI; turnover threshold for mandatory buyer onboarding was reduced to ₹250 crore."}, {"id": 38, "cat": "Banking & Financial Abbreviations", "q": "What is the full form of SAT in capital market disputes?", "opts": ["State Audit Tribunal", "Securities Appellate Tribunal", "Settlement & Arbitration Tribunal", "Systemic Asset Tribunal"], "ans": 1, "p1": "Location: Headquartered in Mumbai, Maharashtra | Established: Under Section 15K of the SEBI Act, 1992.", "p2": "Exam Fact: SAT hears appeals against orders passed by SEBI, IRDAI, and PFRDA."}, {"id": 39, "cat": "Banking & Financial Abbreviations", "q": "What is the full form of UIDAI?", "opts": ["Universal Identity Data Agency of India", "Unique Identification Authority of India", "Unified Identification Department of India", "User Identity & Data Authority of India"], "ans": 1, "p1": "Statutory Backing: Established under the Aadhaar (Targeted Delivery of Financial and Other Subsidies, Benefits and Services) Act, 2016.", "p2": "Exam Fact: UIDAI issues the 12-digit unique Aadhaar number and operates under MeitY."}, {"id": 40, "cat": "Banking & Financial Abbreviations", "q": "What is the full form of UMI?", "opts": ["Unified Monetary Index", "Unified Market Interface", "Universal Merchant Integration", "Unified Money Infrastructure"], "ans": 1, "p1": "Function: Standardized interoperable digital interface designed to connect buyers, sellers, and financial services across digital marketplaces.", "p2": "Exam Fact: Built on open digital public infrastructure principles similar to UPI and ONDC."}, {"id": 41, "cat": "Banking & Financial Abbreviations", "q": "What is the full form of UPI?", "opts": ["Universal Payment Integration", "Unified Payments Interface", "Unified Portal of India", "United Payment Infrastructure"], "ans": 1, "p1": "Launch: Launched in 2016 by the National Payments Corporation of India (NPCI, founded in 2008).", "p2": "Exam Fact: UPI powers real-time interbank peer-to-peer (P2P) and person-to-merchant (P2M) mobile payments."}, {"id": 42, "cat": "Banking & Financial Abbreviations", "q": "What is the full form of UTP in digital transit/ticketing systems?", "opts": ["Universal Transport Pass", "Unified Ticketing Platform", "Urban Transit Protocol", "Unified Travel Portal"], "ans": 1, "p1": "Function: Single integrated digital platform enabling seamless multi-modal ticketing across railways, metro, and public transport.", "p2": "Exam Fact: Complements National Common Mobility Card (NCMC) initiatives for seamless commuter payments."}, {"id": 43, "cat": "Indian States & UTs", "q": "What is the capital of Bihar?", "opts": ["Gaya", "Patna", "Nalanda", "Bhagalpur"], "ans": 1, "p1": "River Bank: Located along the southern bank of the Ganga River.", "p2": "Exam Fact: Valmiki National Park (West Champaran) is the sole National Park in Bihar."}, {"id": 44, "cat": "Indian States & UTs", "q": "In which state is the Kanwar Lake (Kabar Taal) Wetland Ramsar site located?", "opts": ["Uttar Pradesh", "Bihar", "West Bengal", "Odisha"], "ans": 1, "p1": "Location: Begusarai district, Bihar | Designated as Bihar's first Ramsar site in 2020.", "p2": "Exam Fact: Kabar Taal (Kanwar Jheel) is Asia's largest freshwater oxbow lake."}, {"id": 45, "cat": "Indian States & UTs", "q": "What is the capital of Chhattisgarh?", "opts": ["Bilaspur", "Raipur", "Durg", "Korba"], "ans": 1, "p1": "Formation: Carved out of Madhya Pradesh on 1 November 2000 as India's 26th state.", "p2": "Exam Fact: Nava Raipur (Atal Nagar) serves as the planned administrative capital city of Chhattisgarh."}, {"id": 46, "cat": "Indian States & UTs", "q": "In which state are Bhairamgarh Wildlife Sanctuary and Bhoramdeo Wildlife Sanctuary located?", "opts": ["Jharkhand", "Chhattisgarh", "Madhya Pradesh", "Odisha"], "ans": 1, "p1": "Location: Bhairamgarh WLS is in Bijapur district; Bhoramdeo WLS is in Kabirdham district of Chhattisgarh.", "p2": "Exam Fact: Indravati, Kanger Valley, and Guru Ghasidas (Sanjay) are the three National Parks in Chhattisgarh."}, {"id": 47, "cat": "Indian States & UTs", "q": "What is the capital of Gujarat?", "opts": ["Ahmedabad", "Gandhinagar", "Vadodara", "Surat"], "ans": 1, "p1": "Coastline: Gujarat has the longest coastline among all Indian states (approx. 1,600 km).", "p2": "Exam Fact: Kandla Port (renamed Deendayal Port) in Kutch is a major tidal port in Gujarat."}, {"id": 48, "cat": "Indian States & UTs", "q": "In which state are Gir National Park and Marine National Park located?", "opts": ["Maharashtra", "Gujarat", "Rajasthan", "Goa"], "ans": 1, "p1": "Other NPs in Gujarat: Blackbuck National Park (Velavadar) and Vansda National Park.", "p2": "Exam Fact: Gir Forest National Park is the only place in the world where the Asiatic Lion is found in the wild."}, {"id": 49, "cat": "Indian States & UTs", "q": "What is the capital of Haryana?", "opts": ["Gurugram", "Faridabad", "Chandigarh", "Panipat"], "ans": 2, "p1": "Shared Capital: Chandigarh serves as the joint capital of both Haryana and Punjab.", "p2": "Exam Fact: Sultanpur National Park (Gurugram) and Kalesar National Park (Yamunanagar) are the two National Parks in Haryana."}, {"id": 50, "cat": "Indian States & UTs", "q": "In which state are Chhilchhila Wildlife Sanctuary and Nahar Wildlife Sanctuary located?", "opts": ["Punjab", "Haryana", "Himachal Pradesh", "Rajasthan"], "ans": 1, "p1": "Location: Chhilchhila WLS is in Kurukshetra district; Nahar WLS is in Rewari district of Haryana.", "p2": "Exam Fact: Sultanpur National Park and Bhindawas Wildlife Sanctuary are the two Ramsar wetland sites in Haryana."}, {"id": 51, "cat": "Indian States & UTs", "q": "What are the seasonal capitals of Himachal Pradesh?", "opts": ["Shimla (Summer) and Dharamshala (Winter)", "Manali (Summer) and Shimla (Winter)", "Kullu (Summer) and Mandi (Winter)", "Shimla (Summer) and Solan (Winter)"], "ans": 0, "p1": "Declaration: Dharamshala (Kangra district) was declared the second/winter capital of Himachal Pradesh in 2017.", "p2": "Exam Fact: Great Himalayan National Park in Himachal Pradesh is a UNESCO World Heritage Site."}, {"id": 52, "cat": "Indian States & UTs", "q": "In which state are Khirganga National Park and Inderkilla National Park located?", "opts": ["Uttarakhand", "Himachal Pradesh", "Jammu & Kashmir", "Sikkim"], "ans": 1, "p1": "Location: Both Khirganga NP and Inderkilla NP are situated in Kullu district, Himachal Pradesh.", "p2": "Exam Fact: Pin Valley National Park and Simbalbara National Park are also located in Himachal Pradesh."}, {"id": 53, "cat": "Indian States & UTs", "q": "What are the seasonal capitals of Jammu & Kashmir?", "opts": ["Srinagar (Summer) and Jammu (Winter)", "Jammu (Summer) and Srinagar (Winter)", "Srinagar (Summer) and Leh (Winter)", "Anantnag (Summer) and Jammu (Winter)"], "ans": 0, "p1": "Status: Union Territory with a Legislative Assembly since 31 October 2019.", "p2": "Exam Fact: Wular Lake in J&K is one of Asia's largest freshwater lakes and a designated Ramsar site."}, {"id": 54, "cat": "Indian States & UTs", "q": "In which Union Territory/State is Dachigam National Park located?", "opts": ["Uttarakhand", "Jammu & Kashmir", "Himachal Pradesh", "Ladakh"], "ans": 1, "p1": "Location: Located 22 km from Srinagar, Jammu & Kashmir.", "p2": "Exam Fact: Dachigam National Park is famous as the last viable home of the critically endangered Hangul (Kashmir Stag)."}, {"id": 55, "cat": "Indian States & UTs", "q": "What is the capital of Karnataka?", "opts": ["Mysuru", "Bengaluru", "Hubballi", "Mangaluru"], "ans": 1, "p1": "Statehood Day: Karnataka Rajyotsava is celebrated on 1 November.", "p2": "Exam Fact: Bengaluru is the headquarters of ISRO, HAL, Infosys, Wipro, and PhonePe."}, {"id": 56, "cat": "Indian States & UTs", "q": "In which state are Anshi National Park (Kali Tiger Reserve) and Bandipur National Park located?", "opts": ["Tamil Nadu", "Kerala", "Karnataka", "Andhra Pradesh"], "ans": 2, "p1": "Other NPs in Karnataka: Nagarhole (Rajiv Gandhi) NP, Bannerghatta NP, and Kudremukh NP.", "p2": "Exam Fact: Bandipur National Park is part of the Nilgiri Biosphere Reserve (India's first biosphere reserve, established in 1986)."}, {"id": 57, "cat": "Indian States & UTs", "q": "What is the capital of Maharashtra?", "opts": ["Pune", "Nagpur", "Mumbai", "Nashik"], "ans": 2, "p1": "Winter Capital: Nagpur serves as the second/winter capital of Maharashtra.", "p2": "Exam Fact: Mumbai is the financial capital of India and hosts RBI, SEBI, NSE, BSE, LIC, and NABARD."}, {"id": 58, "cat": "Indian States & UTs", "q": "In which state are Aner Dam Wildlife Sanctuary and Chaprala Wildlife Sanctuary located?", "opts": ["Madhya Pradesh", "Maharashtra", "Gujarat", "Telangana"], "ans": 1, "p1": "Location: Aner Dam WLS is in Dhule district; Chaprala WLS is in Gadchiroli district of Maharashtra.", "p2": "Exam Fact: Tadoba-Andhari, Pench, Melghat, Navegaon-Nagzira, Sahyadri, and Bor are the 6 Tiger Reserves of Maharashtra."}, {"id": 59, "cat": "Indian States & UTs", "q": "What is the capital of Rajasthan?", "opts": ["Udaipur", "Jodhpur", "Jaipur", "Bikaner"], "ans": 2, "p1": "Nickname: Jaipur is famously known as the 'Pink City' of India.", "p2": "Exam Fact: Jaipur was inscribed as a UNESCO World Heritage City in 2019."}, {"id": 60, "cat": "Indian States & UTs", "q": "In which state are Ranthambore and Sariska Tiger Reserves located?", "opts": ["Madhya Pradesh", "Rajasthan", "Gujarat", "Uttar Pradesh"], "ans": 1, "p1": "Location: Ranthambore is in Sawai Madhopur district; Sariska is in Alwar district of Rajasthan.", "p2": "Exam Fact: Other Tiger Reserves in Rajasthan include Mukundra Hills, Ramgarh Vishdhari, and Dholpur-Karauli."}, {"id": 61, "cat": "Indian States & UTs", "q": "What is the capital of Uttarakhand?", "opts": ["Nainital", "Haridwar", "Dehradun (Winter) / Gairsain (Summer)", "Rishikesh"], "ans": 2, "p1": "Formation: Formed on 9 November 2000 as the 27th state of India.", "p2": "Exam Fact: Jim Corbett National Park in Uttarakhand (established 1936 as Hailey NP) is India's oldest national park."}, {"id": 62, "cat": "Indian States & UTs", "q": "In which state is the Asan Conservation Reserve (Ramsar site) located?", "opts": ["Himachal Pradesh", "Uttarakhand", "Uttar Pradesh", "Haryana"], "ans": 1, "p1": "Location: Situated at the confluence of the Asan and Yamuna rivers in Dehradun district, Uttarakhand.", "p2": "Exam Fact: Designated in 2020, Asan Conservation Reserve was Uttarakhand's first Ramsar Wetland site."}, {"id": 63, "cat": "Indian States & UTs", "q": "What is the capital of West Bengal?", "opts": ["Howrah", "Kolkata", "Siliguri", "Durgapur"], "ans": 1, "p1": "Chief Minister (per lecture): Suvendu Adhikari | Governor: R. N. Ravi.", "p2": "Exam Fact: Kolkata hosted India's first underground metro railway system (opened in 1984)."}, {"id": 64, "cat": "Indian States & UTs", "q": "In which state are East Kolkata Wetlands and Sundarbans Wetland Ramsar sites located?", "opts": ["Odisha", "West Bengal", "Assam", "Bihar"], "ans": 1, "p1": "Distinction: Sundarbans Wetland is the largest Ramsar site in India by area (over 4,230 sq. km).", "p2": "Exam Fact: East Kolkata Wetlands are renowned globally as a natural wastewater treatment and aquaculture ecosystem."}, {"id": 65, "cat": "Indian States & UTs", "q": "What is the renamed capital of the Andaman and Nicobar Islands (formerly Port Blair)?", "opts": ["Swaraj Dweep", "Sri Vijaya Puram", "Shaheed Dweep", "Netaji Subhas Puram"], "ans": 1, "p1": "Announcement: Port Blair was officially renamed 'Sri Vijaya Puram' in September 2024 to shed colonial imprints.", "p2": "Exam Fact: The name honors the ancient Chola naval expedition link with the Srivijaya Empire and India's freedom struggle."}, {"id": 66, "cat": "Countries, Capitals & Currencies", "q": "What are the capital and currency of Argentina?", "opts": ["Buenos Aires — Argentine Peso", "Santiago — Chilean Peso", "Lima — Peruvian Sol", "Brasília — Brazilian Real"], "ans": 0, "p1": "Continent: South America (second-largest country in South America after Brazil).", "p2": "Exam Fact: Argentina is famous for the fertile Pampas grasslands and is a member of G20 and Mercosur."}, {"id": 67, "cat": "Countries, Capitals & Currencies", "q": "What are the capital and currency of Belgium?", "opts": ["Amsterdam — Euro", "Brussels — Euro", "Vienna — Euro", "Bern — Swiss Franc"], "ans": 1, "p1": "International Hub: Brussels serves as the de facto capital of the European Union (EU) and headquarters of NATO.", "p2": "Exam Fact: SWIFT (Society for Worldwide Interbank Financial Telecommunication) is headquartered in La Hulpe, Belgium."}, {"id": 68, "cat": "Countries, Capitals & Currencies", "q": "What are the capital and currency of Bhutan?", "opts": ["Kathmandu — Nepalese Rupee", "Thimphu — Bhutanese Ngultrum", "Dhaka — Bangladeshi Taka", "Malé — Maldivian Rufiyaa"], "ans": 1, "p1": "Currency Peg: The Bhutanese Ngultrum (BTN) is pegged at par (1:1) with the Indian Rupee.", "p2": "Exam Fact: Bhutan measures national progress using the Gross National Happiness (GNH) index."}, {"id": 69, "cat": "Countries, Capitals & Currencies", "q": "What are the capital and currency of the Dominican Republic?", "opts": ["Santo Domingo — Dominican Peso", "San Juan — US Dollar", "Havana — Cuban Peso", "San José — Costa Rican Colón"], "ans": 0, "p1": "Location: Caribbean nation sharing the island of Hispaniola with Haiti.", "p2": "Exam Fact: Santo Domingo is the oldest continuously inhabited European-established settlement in the Americas."}, {"id": 70, "cat": "Countries, Capitals & Currencies", "q": "What are the capital and currency of Estonia?", "opts": ["Riga — Euro", "Tallinn — Euro", "Vilnius — Euro", "Helsinki — Euro"], "ans": 1, "p1": "Region: Northernmost of the three Baltic states (Estonia, Latvia, Lithuania).", "p2": "Exam Fact: Estonia is globally recognized as a pioneer in e-governance and digital public services (e-Residency)."}, {"id": 71, "cat": "Countries, Capitals & Currencies", "q": "What are the capital and currency of England / United Kingdom?", "opts": ["London — Pound Sterling", "London — Euro", "Edinburgh — Pound Sterling", "Dublin — Euro"], "ans": 0, "p1": "ISO Code: GBP | Symbol: £.", "p2": "Exam Fact: The Bank of England (headquartered on Threadneedle Street, London) is the central bank of the UK."}, {"id": 72, "cat": "Countries, Capitals & Currencies", "q": "What are the capital and currency of France?", "opts": ["Paris — French Franc", "Paris — Euro", "Lyon — Euro", "Geneva — Swiss Franc"], "ans": 1, "p1": "President: Emmanuel Macron | River: Paris is located on the banks of the River Seine.", "p2": "Exam Fact: The International Solar Alliance (ISA) was jointly launched by India and France at COP21 in Paris (2015)."}, {"id": 73, "cat": "Countries, Capitals & Currencies", "q": "What are the capital and currency of Kazakhstan?", "opts": ["Almaty — Kazakhstani Som", "Astana — Kazakhstani Tenge", "Tashkent — Uzbekistani Som", "Bishkek — Kyrgyzstani Som"], "ans": 1, "p1": "Geography: World's largest landlocked country by area.", "p2": "Exam Fact: India and Kazakhstan conduct the annual joint military exercise 'KAZIND'."}, {"id": 74, "cat": "Countries, Capitals & Currencies", "q": "What are the capital and currency of Kyrgyzstan?", "opts": ["Bishkek — Kyrgyzstani Som", "Dushanbe — Tajikistani Somoni", "Ashgabat — Turkmen Manat", "Astana — Tenge"], "ans": 0, "p1": "Region: Landlocked mountainous country in Central Asia.", "p2": "Exam Fact: India and Kyrgyzstan conduct the annual joint special forces exercise 'Khanjar'."}, {"id": 75, "cat": "Countries, Capitals & Currencies", "q": "What are the capital and currency of Malaysia?", "opts": ["Jakarta — Rupiah", "Kuala Lumpur — Malaysian Ringgit", "Singapore — Singapore Dollar", "Bangkok — Baht"], "ans": 1, "p1": "Administrative Capital: Putrajaya serves as the federal administrative centre, while Kuala Lumpur is the official/royal capital.", "p2": "Exam Fact: India and Malaysia conduct the bilateral military exercise 'Harimau Shakti'."}, {"id": 76, "cat": "Countries, Capitals & Currencies", "q": "What are the capital and currency of Mongolia?", "opts": ["Ulaanbaatar — Mongolian Tögrög", "Astana — Tenge", "Bishkek — Som", "Thimphu — Ngultrum"], "ans": 0, "p1": "Geography: Landlocked East Asian nation bordered by Russia and China.", "p2": "Exam Fact: India and Mongolia conduct the joint military exercise 'Nomadic Elephant'."}, {"id": 77, "cat": "Countries, Capitals & Currencies", "q": "What are the capital(s) and currency of Sri Lanka?", "opts": ["Sri Jayawardenepura Kotte (Legislative) & Colombo (Commercial) — Sri Lankan Rupee", "Kandy — Sri Lankan Rupee", "Colombo — Indian Rupee", "Jaffna — Sri Lankan Taka"], "ans": 0, "p1": "ISO Code: LKR.", "p2": "Exam Fact: India and Sri Lanka are separated by the Palk Strait and conduct exercises 'Mitra Shakti' (Army) and 'SLINEX' (Navy)."}, {"id": 78, "cat": "Countries, Capitals & Currencies", "q": "What are the capital and currency of Türkiye (Turkey)?", "opts": ["Istanbul — Turkish Lira", "Ankara — Turkish Lira", "Izmir — Euro", "Ankara — Turkish Dinar"], "ans": 1, "p1": "Name Update: Officially changed its international spelling from Turkey to Türkiye at the UN in 2022.", "p2": "Exam Fact: Türkiye straddles both Eastern Europe and Western Asia across the Bosphorus Strait."}, {"id": 79, "cat": "Countries, Capitals & Currencies", "q": "What are the capital and currency of the United States of America (USA)?", "opts": ["New York — US Dollar", "Washington, D.C. — United States Dollar", "Los Angeles — US Dollar", "Chicago — US Dollar"], "ans": 1, "p1": "ISO Code: USD | Symbol: $.", "p2": "Exam Fact: Washington, D.C. lies along the Potomac River and hosts the World Bank, IMF, and Federal Reserve Board."}, {"id": 80, "cat": "Countries, Capitals & Currencies", "q": "What are the capital and currency of Uzbekistan?", "opts": ["Tashkent — Uzbekistani Som", "Samarkand — Tenge", "Bishkek — Kyrgyzstani Som", "Dushanbe — Somoni"], "ans": 0, "p1": "Geography: One of only two doubly landlocked countries in the world (alongside Liechtenstein).", "p2": "Exam Fact: India and Uzbekistan conduct the annual joint military exercise 'DUSTLIK'."}, {"id": 81, "cat": "Union Ministers & Constituencies", "q": "Who is the Union Minister of Consumer Affairs, Food and Public Distribution?", "opts": ["Piyush Goyal", "Pralhad Joshi", "Shivraj Singh Chouhan", "G. Kishan Reddy"], "ans": 1, "p1": "Additional Portfolio: Union Minister of New and Renewable Energy.", "p2": "Exam Fact: Pralhad Joshi is elected to the Lok Sabha from Dharwad, Karnataka."}, {"id": 82, "cat": "Union Ministers & Constituencies", "q": "What is the Lok Sabha constituency of Union Defence Minister Rajnath Singh?", "opts": ["Varanasi, Uttar Pradesh", "Lucknow, Uttar Pradesh", "Ghaziabad, Uttar Pradesh", "Kanpur, Uttar Pradesh"], "ans": 1, "p1": "Portfolio: Union Minister of Defence.", "p2": "Exam Fact: Lucknow is situated on the banks of the Gomti River and hosts the headquarters of SIDBI."}, {"id": 83, "cat": "Union Ministers & Constituencies", "q": "Who is the Minister of State (MoS) in the Ministry of Youth Affairs and Sports?", "opts": ["Mansukh Mandaviya", "Raksha Nikhil Khadse", "Shobha Karandlaje", "Anupriya Patel"], "ans": 1, "p1": "Union Cabinet Minister: Mansukh Mandaviya | Constituency of Raksha Khadse: Raver, Maharashtra.", "p2": "Exam Fact: Raksha Khadse is a three-time Lok Sabha MP from Maharashtra."}, {"id": 84, "cat": "Union Ministers & Constituencies", "q": "Who is the Union Minister of Micro, Small and Medium Enterprises (MSME)?", "opts": ["Narayan Rane", "Jitan Ram Manjhi", "Giriraj Singh", "Piyush Goyal"], "ans": 1, "p1": "Constituency: Elected to the Lok Sabha from Gaya, Bihar.", "p2": "Exam Fact: Jitan Ram Manjhi is a former Chief Minister of Bihar; Shobha Karandlaje serves as MoS in MSME."}, {"id": 85, "cat": "Union Ministers & Constituencies", "q": "What is the Lok Sabha constituency of Rao Inderjit Singh (MoS Independent Charge for MoSPI)?", "opts": ["Karnal, Haryana", "Gurugram, Haryana", "Faridabad, Haryana", "Rohtak, Haryana"], "ans": 1, "p1": "Portfolios: MoS (Independent Charge) for Statistics & Programme Implementation and Planning; MoS in Ministry of Culture.", "p2": "Exam Fact: Gurugram hosts the headquarters of the International Solar Alliance (ISA)."}, {"id": 86, "cat": "Union Ministers & Constituencies", "q": "Who is the Minister of State (MoS) in the Ministry of Education?", "opts": ["Dharmendra Pradhan", "Sukanta Majumdar", "Jayant Chaudhary", "Pralhad Joshi"], "ans": 1, "p1": "Additional MoS Portfolio: Ministry of Development of North Eastern Region (DoNER) | Constituency: Balurghat, West Bengal.", "p2": "Exam Fact: Jayant Chaudhary also serves as a Minister of State in the Ministry of Education."}, {"id": 87, "cat": "Union Ministers & Constituencies", "q": "Who is the Union Minister of Fisheries, Animal Husbandry and Dairying?", "opts": ["Parshottam Rupala", "Rajiv Ranjan Singh (Lalan Singh)", "Giriraj Singh", "George Kurian"], "ans": 1, "p1": "Additional Portfolio: Union Minister of Panchayati Raj | Constituency: Munger, Bihar.", "p2": "Exam Fact: Rashtriya Gokul Mission and Pradhan Mantri Matsya Sampada Yojana (PMMSY) are flagship schemes of this ministry."}, {"id": 88, "cat": "Union Ministers & Constituencies", "q": "What is the Lok Sabha constituency of Union Minister of Women & Child Development Annpurna Devi?", "opts": ["Ranchi, Jharkhand", "Kodarma, Jharkhand", "Hazaribagh, Jharkhand", "Dhanbad, Jharkhand"], "ans": 1, "p1": "Portfolio: Union Minister of Women and Child Development.", "p2": "Exam Fact: Kodarma in Jharkhand is historically known as the 'Mica Capital of India'."}, {"id": 89, "cat": "Union Ministers & Constituencies", "q": "Who is the Minister of State (MoS) in the Ministry of Home Affairs?", "opts": ["Amit Shah", "Nityanand Rai", "Ajay Mishra Teni", "Sanjay Seth"], "ans": 1, "p1": "Union Cabinet Minister: Amit Shah | Constituency of Nityanand Rai: Ujiarpur, Bihar.", "p2": "Exam Fact: Bandi Sanjay Kumar also serves as a Minister of State in the Ministry of Home Affairs."}, {"id": 90, "cat": "Union Ministers & Constituencies", "q": "Who is the Minister of State (Independent Charge) for Law and Justice?", "opts": ["Kiren Rijiju", "Arjun Ram Meghwal", "Ravi Shankar Prasad", "S. P. Singh Baghel"], "ans": 1, "p1": "Additional Portfolio: MoS in the Ministry of Parliamentary Affairs | Constituency: Bikaner, Rajasthan.", "p2": "Exam Fact: Arjun Ram Meghwal is a former IAS officer from Rajasthan."}, {"id": 91, "cat": "Union Ministers & Constituencies", "q": "What is the Lok Sabha constituency of Union Commerce & Industry Minister Piyush Goyal?", "opts": ["Mumbai South, Maharashtra", "Mumbai North, Maharashtra", "Pune, Maharashtra", "Thane, Maharashtra"], "ans": 1, "p1": "Portfolio: Union Minister of Commerce and Industry.", "p2": "Exam Fact: Prior to 2024, Piyush Goyal served as a Rajya Sabha MP from Maharashtra and Leader of the House in Rajya Sabha."}, {"id": 92, "cat": "Union Ministers & Constituencies", "q": "Who is the Minister of State (MoS) in the Ministry of Railways?", "opts": ["Ashwini Vaishnaw", "V. Somanna", "Raosaheb Danve", "Darshana Jardosh"], "ans": 1, "p1": "Additional MoS Portfolio: Ministry of Jal Shakti | Union Minister of Railways: Ashwini Vaishnaw.", "p2": "Exam Fact: Ravneet Singh Bittu also serves as a Minister of State in the Ministry of Railways."}, {"id": 93, "cat": "Union Ministers & Constituencies", "q": "Who is the Union Minister of Rural Development?", "opts": ["Giriraj Singh", "Shivraj Singh Chouhan", "Narendra Singh Tomar", "Kamlesh Paswan"], "ans": 1, "p1": "Additional Portfolio: Union Minister of Agriculture and Farmers' Welfare | Constituency: Vidisha, Madhya Pradesh.", "p2": "Exam Fact: MGNREGA and Pradhan Mantri Awaas Yojana – Gramin (PMAY-G) are implemented by the Ministry of Rural Development."}, {"id": 94, "cat": "Union Ministers & Constituencies", "q": "Which state does Union Finance Minister Nirmala Sitharaman represent in the Rajya Sabha?", "opts": ["Tamil Nadu", "Karnataka", "Andhra Pradesh", "Gujarat"], "ans": 1, "p1": "Portfolios: Union Minister of Finance and Union Minister of Corporate Affairs.", "p2": "Exam Fact: Nirmala Sitharaman has been elected to the Rajya Sabha from Karnataka since 2016."}, {"id": 95, "cat": "Union Ministers & Constituencies", "q": "Who is the Minister of State (MoS) in the Ministry of Agriculture and Farmers' Welfare?", "opts": ["Ram Nath Thakur", "Shivraj Singh Chouhan", "Kailash Choudhary", "Shobha Karandlaje"], "ans": 0, "p1": "Co-MoS in Agriculture: Bhagirath Choudhary | Union Cabinet Minister: Shivraj Singh Chouhan.", "p2": "Exam Fact: Ram Nath Thakur is a Rajya Sabha MP from Bihar."}, {"id": 96, "cat": "Union Ministers & Constituencies", "q": "Who is the Minister of State (Independent Charge) for Science and Technology?", "opts": ["Dr. Jitendra Singh", "Ashwini Vaishnaw", "Harsh Vardhan", "Jitin Prasada"], "ans": 0, "p1": "Additional Portfolios: MoS (IC) for Earth Sciences; MoS in PMO, Personnel, Atomic Energy, and Space.", "p2": "Exam Fact: National Science Day is celebrated on 28 February to commemorate Sir C. V. Raman's discovery of the Raman Effect."}, {"id": 97, "cat": "Union Ministers & Constituencies", "q": "What is the Lok Sabha constituency of Union Environment Minister Bhupender Yadav?", "opts": ["Jaipur, Rajasthan", "Alwar, Rajasthan", "Jodhpur, Rajasthan", "Ajmer, Rajasthan"], "ans": 1, "p1": "Portfolio: Union Minister of Environment, Forest and Climate Change.", "p2": "Exam Fact: Sariska Tiger Reserve is located in Alwar district, Rajasthan."}, {"id": 98, "cat": "Union Ministers & Constituencies", "q": "Who is the Minister of State (MoS) in the Ministry of Petroleum and Natural Gas?", "opts": ["Hardeep Singh Puri", "Suresh Gopi", "Rameswar Teli", "V. Somanna"], "ans": 1, "p1": "Additional MoS Portfolio: Ministry of Tourism | Constituency: Thrissur, Kerala.", "p2": "Exam Fact: Suresh Gopi became the first BJP Lok Sabha MP elected from Kerala (Thrissur) in 2024."}, {"id": 99, "cat": "Union Ministers & Constituencies", "q": "Who is the Union Minister of Housing and Urban Affairs (MoHUA)?", "opts": ["Hardeep Singh Puri", "Manohar Lal Khattar", "Tokhan Sahu", "Nitin Gadkari"], "ans": 1, "p1": "Additional Portfolio: Union Minister of Power | Constituency: Karnal, Haryana.", "p2": "Exam Fact: Smart Cities Mission, AMRUT, and Swachh Bharat Mission (Urban) are implemented by MoHUA."}, {"id": 100, "cat": "Union Ministers & Constituencies", "q": "Which state does Union Minister Ashwini Vaishnaw represent in the Rajya Sabha?", "opts": ["Rajasthan", "Odisha", "Maharashtra", "Gujarat"], "ans": 1, "p1": "Portfolios: Railways, Information & Broadcasting, and Electronics & Information Technology (MeitY).", "p2": "Exam Fact: Ashwini Vaishnaw served as District Collector in Balasore and Cuttack (Odisha) during his IAS career."}, {"id": 101, "cat": "Union Ministers & Constituencies", "q": "Who is the Minister of State (MoS) in the Ministry of Mines?", "opts": ["G. Kishan Reddy", "Satish Chandra Dubey", "Pralhad Joshi", "Raosaheb Danve"], "ans": 1, "p1": "Additional MoS Portfolio: Ministry of Coal | Union Cabinet Minister for Coal & Mines: G. Kishan Reddy.", "p2": "Exam Fact: Satish Chandra Dubey is a Rajya Sabha MP from Bihar."}, {"id": 102, "cat": "Union Ministers & Constituencies", "q": "Who is the Union Minister of Power?", "opts": ["R. K. Singh", "Manohar Lal Khattar", "Shripad Yesso Naik", "Piyush Goyal"], "ans": 1, "p1": "Additional Portfolio: Union Minister of Housing and Urban Affairs (MoHUA).", "p2": "Exam Fact: Shripad Yesso Naik serves as Minister of State in the Ministry of Power."}, {"id": 103, "cat": "Union Ministers & Constituencies", "q": "What is the Lok Sabha constituency of Union Civil Aviation Minister Kinjarapu Rammohan Naidu?", "opts": ["Visakhapatnam, Andhra Pradesh", "Srikakulam, Andhra Pradesh", "Vijayawada, Andhra Pradesh", "Guntur, Andhra Pradesh"], "ans": 1, "p1": "Portfolio: Union Minister of Civil Aviation.", "p2": "Exam Fact: Rammohan Naidu became the youngest Cabinet Minister in the 2024 Union Council of Ministers at age 36."}, {"id": 104, "cat": "Union Ministers & Constituencies", "q": "Who is the Minister of State (MoS) in the Ministry of Health and Family Welfare?", "opts": ["Jagat Prakash Nadda", "Anupriya Patel", "Mansukh Mandaviya", "Bharati Pravin Pawar"], "ans": 1, "p1": "Additional MoS Portfolio: Ministry of Chemicals & Fertilizers | Union Cabinet Minister: J. P. Nadda.", "p2": "Exam Fact: Anupriya Patel represents the Mirzapur Lok Sabha constituency in Uttar Pradesh."}, {"id": 105, "cat": "Union Ministers & Constituencies", "q": "Who is the Minister of State (Independent Charge) for Skill Development and Entrepreneurship?", "opts": ["Dharmendra Pradhan", "Jayant Chaudhary", "Rajeev Chandrasekhar", "Sukanta Majumdar"], "ans": 1, "p1": "Additional Portfolio: MoS in the Ministry of Education.", "p2": "Exam Fact: Pradhan Mantri Kaushal Vikas Yojana (PMKVY) is the flagship skill training scheme of this ministry."}, {"id": 106, "cat": "Union Ministers & Constituencies", "q": "What is the Lok Sabha constituency of Union Ayush Minister Prataprao Ganpatrao Jadhav?", "opts": ["Nagpur, Maharashtra", "Buldhana, Maharashtra", "Pune, Maharashtra", "Nashik, Maharashtra"], "ans": 1, "p1": "Portfolios: MoS (Independent Charge) for Ayush and MoS in Ministry of Health & Family Welfare.", "p2": "Exam Fact: Lonar Crater Lake (a Ramsar site and meteoritic impact lake) is located in Buldhana district, Maharashtra."}, {"id": 107, "cat": "Union Ministers & Constituencies", "q": "Who is the Minister of State (MoS) in the Ministry of Ports, Shipping and Waterways?", "opts": ["Sarbananda Sonowal", "Shantanu Thakur", "Mansukh Mandaviya", "Nitin Gadkari"], "ans": 1, "p1": "Union Cabinet Minister: Sarbananda Sonowal | Constituency of Shantanu Thakur: Bangaon, West Bengal.", "p2": "Exam Fact: National Maritime Day in India is observed annually on 5 April."}, {"id": 108, "cat": "Union Ministers & Constituencies", "q": "Who is the Union Minister of Jal Shakti?", "opts": ["Gajendra Singh Shekhawat", "C. R. Patil", "V. Somanna", "Raj Bhushan Choudhary"], "ans": 1, "p1": "Constituency: Navsari, Gujarat.", "p2": "Exam Fact: Namami Gange Programme is implemented under the Ministry of Jal Shakti."}, {"id": 109, "cat": "Regulatory & International Organizations", "q": "Where is the headquarters of the Life Insurance Corporation of India (LIC) located?", "opts": ["New Delhi", "Mumbai, Maharashtra", "Kolkata, West Bengal", "Chennai, Tamil Nadu"], "ans": 1, "p1": "Established: 1956 | Nationalized life insurer of India.", "p2": "Exam Fact: LIC's head office is 'Yogakshema' in Mumbai."}, {"id": 110, "cat": "Regulatory & International Organizations", "q": "Who is the Chairman and Managing Director (CMD) of SIDBI?", "opts": ["S. Ramann", "Manoj Mittal", "Shaji K. V.", "Ajay Seth"], "ans": 1, "p1": "Full Form: Small Industries Development Bank of India | Headquarters: Lucknow, Uttar Pradesh | Established: 2 April 1990.", "p2": "Exam Fact: SIDBI is the principal financial institution for promotion, financing, and development of the MSME sector in India."}, {"id": 111, "cat": "Regulatory & International Organizations", "q": "In which year was the World Health Organization (WHO) established?", "opts": ["1945", "1948", "1950", "1958"], "ans": 1, "p1": "Date: 7 April 1948 | Headquarters: Geneva, Switzerland | Director-General: Tedros Adhanom Ghebreyesus.", "p2": "Exam Fact: 7 April is celebrated globally every year as World Health Day."}, {"id": 112, "cat": "Regulatory & International Organizations", "q": "Where is the headquarters of the World Food Programme (WFP) located?", "opts": ["Geneva, Switzerland", "Rome, Italy", "Paris, France", "New York, USA"], "ans": 1, "p1": "Established: 1961.", "p2": "Exam Fact: The UN World Food Programme was awarded the Nobel Peace Prize in 2020."}, {"id": 113, "cat": "Regulatory & International Organizations", "q": "Who is the Director-General of the Food and Agriculture Organization (FAO)?", "opts": ["Qu Dongyu", "Cindy McCain", "Tedros Adhanom Ghebreyesus", "Gilbert Houngbo"], "ans": 0, "p1": "Headquarters: Rome, Italy | Established: 16 October 1945.", "p2": "Exam Fact: World Food Day is celebrated every year on 16 October to commemorate FAO's founding."}, {"id": 114, "cat": "Regulatory & International Organizations", "q": "In which year was the World Economic Forum (WEF) established?", "opts": ["1945", "1967", "1971", "1995"], "ans": 2, "p1": "Headquarters: Cologny, Geneva, Switzerland | Founder: Klaus Schwab.", "p2": "Exam Fact: WEF publishes the Global Gender Gap Report, Global Risks Report, and Travel & Tourism Development Index."}, {"id": 115, "cat": "Regulatory & International Organizations", "q": "Where is the headquarters of the World Meteorological Organization (WMO) located?", "opts": ["Vienna, Austria", "Geneva, Switzerland", "Paris, France", "Bonn, Germany"], "ans": 1, "p1": "Established: 23 March 1950 | Secretary-General: Celeste Saulo (first female Secretary-General of WMO).", "p2": "Exam Fact: World Meteorological Day is observed annually on 23 March."}, {"id": 116, "cat": "Regulatory & International Organizations", "q": "Who is the Head/President of the World Federation of the Deaf (WFD)?", "opts": ["Joseph J. Murray", "Tedros Adhanom", "Daren Tang", "Jukka Kantola"], "ans": 0, "p1": "Headquarters: Helsinki, Finland | Established: 1951 in Rome, Italy.", "p2": "Exam Fact: International Day of Sign Languages is celebrated annually on 23 September."}, {"id": 117, "cat": "Regulatory & International Organizations", "q": "In which year was the World Heart Federation (WHF) established?", "opts": ["1948", "1967", "1978", "1991"], "ans": 2, "p1": "Headquarters: Geneva, Switzerland.", "p2": "Exam Fact: World Heart Day is observed every year on 29 September."}, {"id": 118, "cat": "Regulatory & International Organizations", "q": "Where is the headquarters of the World Duchenne Organization (WDO) located?", "opts": ["Geneva, Switzerland", "The Netherlands (Veenendaal)", "London, UK", "Brussels, Belgium"], "ans": 1, "p1": "Focus: Global umbrella organization dedicated to Duchenne and Becker muscular dystrophy (genetic neuromuscular disorders).", "p2": "Exam Fact: World Duchenne Awareness Day is observed annually on 7 September."}, {"id": 119, "cat": "Regulatory & International Organizations", "q": "Who is the Secretary-General of the United Nations (UN)?", "opts": ["Ban Ki-moon", "António Guterres", "Kofi Annan", "Volker Türk"], "ans": 1, "p1": "Headquarters: New York City, USA | Established: 24 October 1945.", "p2": "Exam Fact: António Guterres is a former Prime Minister of Portugal and former UN High Commissioner for Refugees (UNHCR)."}, {"id": 120, "cat": "Regulatory & International Organizations", "q": "In which year was UNICEF (United Nations Children's Fund) established?", "opts": ["1945", "1946", "1948", "1950"], "ans": 1, "p1": "Date: 11 December 1946 | Headquarters: New York City, USA.", "p2": "Exam Fact: UNICEF was awarded the Nobel Peace Prize in 1965."}, {"id": 121, "cat": "Regulatory & International Organizations", "q": "Where is the headquarters of UNESCO located?", "opts": ["Geneva, Switzerland", "Paris, France", "New York, USA", "Rome, Italy"], "ans": 1, "p1": "Established: 16 November 1945 | Director-General: Audrey Azoulay.", "p2": "Exam Fact: UNESCO's Kalinga Prize is awarded for exceptional contributions to the popularization of science."}, {"id": 122, "cat": "Regulatory & International Organizations", "q": "Who was listed as the Head/Leader in the UNGA-related question in the session?", "opts": ["Khalilur Rahman", "António Guterres", "Philemon Yang", "Dennis Francis"], "ans": 0, "p1": "UNGA Headquarters: New York City, USA.", "p2": "Exam Fact: The UN General Assembly is the main deliberative, policymaking, and representative organ of the United Nations."}, {"id": 123, "cat": "Regulatory & International Organizations", "q": "In which year was the United Nations Environment Programme (UNEP) established?", "opts": ["1948", "1965", "1972", "1992"], "ans": 2, "p1": "Date: 5 June 1972 (Stockholm Conference) | Headquarters: Nairobi, Kenya | Executive Director: Inger Andersen.", "p2": "Exam Fact: World Environment Day is celebrated every year on 5 June."}, {"id": 124, "cat": "Regulatory & International Organizations", "q": "Where is the headquarters of the UN Department of Economic and Social Affairs (UN DESA) located?", "opts": ["Geneva, Switzerland", "New York City, USA", "Vienna, Austria", "Nairobi, Kenya"], "ans": 1, "p1": "Function: Secretariat entity supporting global sustainable development, demographic data, and economic policy.", "p2": "Exam Fact: UN DESA publishes the biennial UN E-Government Development Index (EGDI)."}, {"id": 125, "cat": "Regulatory & International Organizations", "q": "Who is the Director of the United Nations Office for South-South Cooperation (UNOSSC)?", "opts": ["Dima Al-Khatib", "Inger Andersen", "Ngozi Okonjo-Iweala", "Qu Dongyu"], "ans": 0, "p1": "Headquarters: New York City, USA | Established: 1974 (hosted within UNDP).", "p2": "Exam Fact: UN Day for South-South Cooperation is observed annually on 12 September."}, {"id": 126, "cat": "Regulatory & International Organizations", "q": "In which year was the UN Convention to Combat Desertification (UNCCD) established/adopted?", "opts": ["1972", "1987", "1994", "2002"], "ans": 2, "p1": "Headquarters: Bonn, Germany | Adopted on 17 June 1994.", "p2": "Exam Fact: UNCCD is the sole legally binding international agreement linking environment and development to sustainable land management."}, {"id": 127, "cat": "Regulatory & International Organizations", "q": "Where is the headquarters of the United Nations Human Settlements Programme (UN-Habitat) located?", "opts": ["Geneva, Switzerland", "Nairobi, Kenya", "New York, USA", "Paris, France"], "ans": 1, "p1": "Established: 1978.", "p2": "Exam Fact: Nairobi (Kenya) is the only UN global headquarters city located in the Global South (hosting both UNEP and UN-Habitat)."}, {"id": 128, "cat": "Regulatory & International Organizations", "q": "Who was elected Secretary-General of UN Tourism (UNWTO) (2026–2029 term)?", "opts": ["Shaikha Nasser Al Nowais", "Zurab Pololikashvili", "Taleb Rifai", "Dima Al-Khatib"], "ans": 0, "p1": "Headquarters of UN Tourism: Madrid, Spain.", "p2": "Exam Fact: Shaikha Nasser Al Nowais (from UAE) became the first woman elected to lead UN Tourism."}, {"id": 129, "cat": "Regulatory & International Organizations", "q": "On which date did the International Maritime Organization (IMO) Convention enter into force?", "opts": ["17 March 1958", "24 October 1945", "7 April 1948", "1 January 1995"], "ans": 0, "p1": "Headquarters: London, United Kingdom | Secretary-General: Arsenio Dominguez.", "p2": "Exam Fact: IMO is the UN specialized agency responsible for the safety and security of shipping and prevention of marine pollution."}, {"id": 130, "cat": "Regulatory & International Organizations", "q": "Where is the headquarters of the International Energy Agency (IEA) located?", "opts": ["Vienna, Austria", "Paris, France", "Geneva, Switzerland", "Brussels, Belgium"], "ans": 1, "p1": "Established: 1974 (in the wake of the 1973 oil crisis) | Executive Director: Fatih Birol.", "p2": "Exam Fact: IEA publishes the annual flagship 'World Energy Outlook' report."}, {"id": 131, "cat": "Regulatory & International Organizations", "q": "Who is the Director-General of the International Labour Organization (ILO)?", "opts": ["Gilbert Houngbo", "Guy Ryder", "Tedros Adhanom", "António Guterres"], "ans": 0, "p1": "Headquarters: Geneva, Switzerland | Established: 1919 (Treaty of Versailles).", "p2": "Exam Fact: ILO is the oldest UN specialized agency and won the Nobel Peace Prize in 1969."}, {"id": 132, "cat": "Regulatory & International Organizations", "q": "In which year was the Inter-Parliamentary Union (IPU) founded?", "opts": ["1889", "1919", "1945", "1950"], "ans": 0, "p1": "Headquarters: Geneva, Switzerland | Founded in 1889 by Frédéric Passy and William Randal Cremer.", "p2": "Exam Fact: IPU is the global organization of national parliaments."}, {"id": 133, "cat": "Regulatory & International Organizations", "q": "Where is the headquarters of the International Centre for Integrated Mountain Development (ICIMOD) located?", "opts": ["Kathmandu / Lalitpur, Nepal", "Thimphu, Bhutan", "Dehradun, India", "Geneva, Switzerland"], "ans": 0, "p1": "Established: 1983 | Serves the 8 regional member countries of the Hindu Kush Himalaya (including India).", "p2": "Exam Fact: ICIMOD monitors glaciers, biodiversity, and climate resilience across the Hindu Kush Himalayan region."}, {"id": 134, "cat": "Regulatory & International Organizations", "q": "Who is the President/Head of the International Federation of Environmental Health (IFEH)?", "opts": ["David Musoke", "Gilbert Houngbo", "Jukka Kantola", "Daren Tang"], "ans": 0, "p1": "Headquarters: London, United Kingdom | Established: 1986.", "p2": "Exam Fact: World Environmental Health Day is celebrated annually on 26 September."}, {"id": 135, "cat": "Regulatory & International Organizations", "q": "In which year was INTERPOL (International Criminal Police Organization) established?", "opts": ["1919", "1923", "1945", "1958"], "ans": 1, "p1": "Headquarters: Lyon, France.", "p2": "Exam Fact: In India, the Central Bureau of Investigation (CBI) acts as the National Central Bureau (NCB) for INTERPOL."}, {"id": 136, "cat": "Regulatory & International Organizations", "q": "Where is the headquarters of the International Committee of the Red Cross (ICRC) located?", "opts": ["Vienna, Austria", "Geneva, Switzerland", "Paris, France", "The Hague, Netherlands"], "ans": 1, "p1": "Founded: 1863 by Henry Dunant.", "p2": "Exam Fact: World Red Cross and Red Crescent Day is observed every year on 8 May (birthday of Henry Dunant)."}, {"id": 137, "cat": "Regulatory & International Organizations", "q": "Who is the President/Head of the International Association for Suicide Prevention (IASP)?", "opts": ["Prof. Jo Robinson", "Dr. Tedros Adhanom", "Prof. David Musoke", "Dr. Soumya Swaminathan"], "ans": 0, "p1": "Headquarters: Washington, D.C., USA | Established: 1960.", "p2": "Exam Fact: World Suicide Prevention Day is observed annually on 10 September."}, {"id": 138, "cat": "Regulatory & International Organizations", "q": "In which year was Alzheimer's Disease International (ADI) established?", "opts": ["1972", "1984", "1994", "2001"], "ans": 1, "p1": "Headquarters: London, United Kingdom.", "p2": "Exam Fact: World Alzheimer's Day is observed every year on 21 September."}, {"id": 139, "cat": "Regulatory & International Organizations", "q": "Where is the headquarters of the International Pharmaceutical Federation (FIP) located?", "opts": ["Geneva, Switzerland", "The Hague, Netherlands", "Brussels, Belgium", "London, UK"], "ans": 1, "p1": "Established: 1912.", "p2": "Exam Fact: World Pharmacists Day is celebrated annually on 25 September."}, {"id": 140, "cat": "Regulatory & International Organizations", "q": "Who is the Executive Director/Head of the International Rhino Foundation (IRF)?", "opts": ["Nina Fascione", "Inger Andersen", "Jo Robinson", "Dima Al-Khatib"], "ans": 0, "p1": "Headquarters: Fort Worth, Texas, USA | Founded: 1991.", "p2": "Exam Fact: World Rhino Day is observed annually on 22 September; Kaziranga National Park in Assam holds the world's largest population of Indian one-horned rhinos."}, {"id": 141, "cat": "Regulatory & International Organizations", "q": "In which year was the International Tennis Hall of Fame established?", "opts": ["1948", "1954", "1968", "1972"], "ans": 1, "p1": "Location: Newport, Rhode Island, USA.", "p2": "Exam Fact: Indian tennis legends Leander Paes and Vijay Amritraj were inducted into the International Tennis Hall of Fame in 2024."}, {"id": 142, "cat": "Regulatory & International Organizations", "q": "Where is the headquarters of the Association of Tennis Professionals (ATP) located?", "opts": ["Paris, France", "London, United Kingdom", "New York, USA", "Melbourne, Australia"], "ans": 1, "p1": "Established: 1972.", "p2": "Exam Fact: The four Grand Slam tennis tournaments are Australian Open (hard), French Open (clay), Wimbledon (grass), and US Open (hard)."}, {"id": 143, "cat": "Regulatory & International Organizations", "q": "Who is the President of the International Hockey Federation (FIH)?", "opts": ["Tayyab Ikram", "Narinder Batra", "Dilip Tirkey", "Thomas Bach"], "ans": 0, "p1": "Headquarters: Lausanne, Switzerland | Established: 1924.", "p2": "Exam Fact: Lausanne (Switzerland) is known as the 'Olympic Capital', hosting the IOC, FIH, FIDE, and CAS."}, {"id": 144, "cat": "Regulatory & International Organizations", "q": "In which year was the Asian Hockey Federation (AHF) established?", "opts": ["1924", "1948", "1958", "1971"], "ans": 2, "p1": "Headquarters: Kuala Lumpur, Malaysia (same establishment year as DRDO in India: 1958).", "p2": "Exam Fact: AHF governs field hockey across Asia and organizes the Men's and Women's Hockey Asia Cup."}, {"id": 145, "cat": "Regulatory & International Organizations", "q": "Where is the headquarters of the Asian Cricket Council (ACC) located?", "opts": ["Mumbai, India", "Dubai, United Arab Emirates", "Colombo, Sri Lanka", "Lahore, Pakistan"], "ans": 1, "p1": "Established: 19 September 1983 (originally as Asian Cricket Conference).", "p2": "Exam Fact: Both the International Cricket Council (ICC) and the Asian Cricket Council (ACC) are headquartered in Dubai, UAE."}, {"id": 146, "cat": "Regulatory & International Organizations", "q": "Who is the President/Head of the World Pickleball Federation (WPF)?", "opts": ["Kim Joyce Wagner", "Tayyab Ikram", "Daren Tang", "Jukka Kantola"], "ans": 0, "p1": "Established: 2018.", "p2": "Exam Fact: Pickleball combines elements of tennis, badminton, and table tennis and is one of the fastest-growing racket sports globally."}, {"id": 147, "cat": "Regulatory & International Organizations", "q": "In which year was the International Chess Federation (FIDE) established?", "opts": ["1919", "1924", "1948", "1958"], "ans": 1, "p1": "Date: 20 July 1924 in Paris | Headquarters: Lausanne, Switzerland | Deputy President: Viswanathan Anand.", "p2": "Exam Fact: International Chess Day is celebrated every year on 20 July."}, {"id": 148, "cat": "Regulatory & International Organizations", "q": "Where is the headquarters of NASA (National Aeronautics and Space Administration) located?", "opts": ["Houston, Texas, USA", "Washington, D.C., USA", "Cape Canaveral, Florida, USA", "Pasadena, California, USA"], "ans": 1, "p1": "Established: 29 July 1958.", "p2": "Exam Fact: NASA and ISRO jointly developed the NISAR (NASA-ISRO Synthetic Aperture Radar) Earth-observation satellite."}, {"id": 149, "cat": "Regulatory & International Organizations", "q": "Who is the CEO/Head of Isar Aerospace?", "opts": ["Daniel Metzler", "Elon Musk", "Peter Beck", "S. Somanath"], "ans": 0, "p1": "Headquarters: Ottobrunn (near Munich), Germany | Founded: 2018.", "p2": "Exam Fact: Isar Aerospace is a prominent European private space launch vehicle company developing the 'Spectrum' rocket."}, {"id": 150, "cat": "Regulatory & International Organizations", "q": "In which year was Skytrax established?", "opts": ["1975", "1989", "1998", "2004"], "ans": 1, "p1": "Headquarters: London, United Kingdom.", "p2": "Exam Fact: Skytrax is a UK-based consultancy renowned for its annual World Airline Awards and World Airport Awards."}, {"id": 151, "cat": "Regulatory & International Organizations", "q": "Where is the headquarters of the Council for Agricultural Science and Technology (CAST) located? (Homework Question from Video)", "opts": ["Ames, Iowa, United States", "Rome, Italy", "New Delhi, India", "Manila, Philippines"], "ans": 0, "p1": "Established: 1972 in Ames, Iowa, USA.", "p2": "Exam Fact: CAST is a non-profit organization that assembles and communicates credible, science-based information on food and agriculture."}];
+
+let mode = 'learn';
+let hideAnswers = false;
+let userAnswers = {};
+
+function setup() {
+  const select = document.getElementById('catSelect');
+  const uniqueCats = [...new Set(QUESTIONS.map(q => q.cat))];
+  uniqueCats.forEach(cat => {
+    const count = QUESTIONS.filter(q => q.cat === cat).length;
+    const option = document.createElement('option');
+    option.value = cat;
+    option.textContent = `${cat} (${count})`;
+    select.appendChild(option);
+  });
+  refreshStats();
+  render();
+}
+
+function setMode(newMode) {
+  mode = newMode;
+  document.getElementById('btn-learn').classList.toggle('active', mode === 'learn');
+  document.getElementById('btn-practice').classList.toggle('active', mode === 'practice');
+  document.getElementById('blurBtn').classList.toggle('hidden', mode !== 'learn');
+  render();
+}
+
+function toggleBlur() {
+  hideAnswers = !hideAnswers;
+  document.getElementById('blurBtn').textContent = hideAnswers
+    ? '👁️ Show All Answers'
+    : '👁️ Hide Answers (Self-Test)';
+  render();
+}
+
+function getFilteredList() {
+  const cat = document.getElementById('catSelect').value;
+  const term = document.getElementById('searchBox').value.trim().toLowerCase();
+
+  return QUESTIONS.filter(item => {
+    if (cat !== 'ALL' && item.cat !== cat) return false;
+    if (!term) return true;
+    return (
+      item.q.toLowerCase().includes(term) ||
+      item.opts.some(o => o.toLowerCase().includes(term)) ||
+      item.p1.toLowerCase().includes(term) ||
+      item.p2.toLowerCase().includes(term)
+    );
+  });
+}
+
+function render() {
+  const list = getFilteredList();
+  document.getElementById('showingCount').textContent = `Showing ${list.length} question${list.length === 1 ? '' : 's'}`;
+  const container = document.getElementById('cardsContainer');
+
+  if (list.length === 0) {
+    container.innerHTML = `<div class="no-results">No questions match your filter. Clear search or switch category.</div>`;
+    return;
+  }
+
+  container.innerHTML = list
+    .map(item => (mode === 'learn' ? buildLearnCard(item) : buildPracticeCard(item)))
+    .join('');
+}
+
+function buildLearnCard(item) {
+  const answerText = item.opts[item.ans];
+  const blurClass = hideAnswers ? 'blurred' : '';
+  return `
+    <div class="card">
+      <div class="card-top">
+        <span class="badge-num">Q.${item.id}</span>
+        <span class="badge-cat">${item.cat}</span>
+      </div>
+      <div class="question-text">${item.q}</div>
+      <div class="learn-answer-box ${blurClass}" onclick="this.classList.remove('blurred')" title="Click to reveal answer">
+        ✓ Answer: ${answerText}
+      </div>
+      <div class="exam-points">
+        <div class="exam-points-heading">📌 2 Exam-Related Extra Points</div>
+        <ul>
+          <li>${item.p1}</li>
+          <li>${item.p2}</li>
+        </ul>
+      </div>
+    </div>
+  `;
+}
+
+function buildPracticeCard(item) {
+  const record = userAnswers[item.id];
+  const isAnswered = record !== undefined;
+  const letters = ['A', 'B', 'C', 'D'];
+
+  const optsMarkup = item.opts
+    .map((opt, idx) => {
+      let cls = '';
+      if (isAnswered) {
+        if (idx === item.ans) cls = 'correct';
+        else if (idx === record.picked && !record.correct) cls = 'wrong';
+      }
+      return `
+        <button class="option-btn ${cls}" ${isAnswered ? 'disabled' : ''} onclick="selectOption(${item.id}, ${idx})">
+          <span class="opt-circle">${letters[idx]}</span>
+          <span>${opt}</span>
+        </button>
+      `;
+    })
+    .join('');
+
+  const bannerMarkup = isAnswered
+    ? record.correct
+      ? `<span class="result-pill right">✓ Correct!</span>`
+      : `<span class="result-pill wrong">✕ Wrong Answer</span>`
+    : '';
+
+  return `
+    <div class="card" id="card-${item.id}">
+      <div class="card-top">
+        <span class="badge-num">Q.${item.id}</span>
+        <span class="badge-cat">${item.cat}</span>
+      </div>
+      <div class="question-text">${item.q}</div>
+      <div class="options-list">
+        ${optsMarkup}
+      </div>
+      <div class="answer-panel ${isAnswered ? 'visible' : ''}" id="panel-${item.id}">
+        <div class="result-banner">
+          ${bannerMarkup}
+          <div class="correct-label">Correct Answer: <span>${letters[item.ans]}. ${item.opts[item.ans]}</span></div>
+        </div>
+        <div class="exam-points">
+          <div class="exam-points-heading">📌 2 Exam-Related Extra Points</div>
+          <ul>
+            <li>${item.p1}</li>
+            <li>${item.p2}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+function selectOption(qId, pickedIdx) {
+  if (userAnswers[qId] !== undefined) return;
+  const item = QUESTIONS.find(q => q.id === qId);
+  if (!item) return;
+
+  userAnswers[qId] = {
+    picked: pickedIdx,
+    correct: pickedIdx === item.ans
+  };
+
+  refreshStats();
+  const cardEl = document.getElementById(`card-${qId}`);
+  if (cardEl) {
+    cardEl.outerHTML = buildPracticeCard(item);
+  }
+}
+
+function refreshStats() {
+  const keys = Object.keys(userAnswers);
+  const attempted = keys.length;
+  const correct = keys.filter(k => userAnswers[k].correct).length;
+  const wrong = attempted - correct;
+
+  document.getElementById('cnt-attempted').textContent = attempted;
+  document.getElementById('cnt-correct').textContent = correct;
+  document.getElementById('cnt-wrong').textContent = wrong;
+}
+
+function resetAll() {
+  userAnswers = {};
+  refreshStats();
+  render();
+}
+
+setup();
+</script>
+</body>
+</html>

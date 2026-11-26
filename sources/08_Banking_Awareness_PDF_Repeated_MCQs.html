@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Banking Awareness PDF — Repeated Revision Questions — Learn & Practice (White Theme)</title>
+<style>
+  :root {
+    --bg-page: #ffffff;
+    --bg-panel: #f9fafb;
+    --bg-card: #ffffff;
+    --border-light: #e5e7eb;
+    --border-strong: #d1d5db;
+    --text-main: #111827;
+    --text-sub: #4b5563;
+    --text-muted: #6b7280;
+    --primary: #1d4ed8;
+    --primary-soft: #eff6ff;
+    --primary-border: #bfdbfe;
+    --green-bg: #f0fdf4;
+    --green-border: #22c55e;
+    --green-text: #15803d;
+    --red-bg: #fef2f2;
+    --red-border: #ef4444;
+    --red-text: #b91c1c;
+    --amber-bg: #fffbeb;
+    --amber-border: #f59e0b;
+    --amber-text: #92400e;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background-color: var(--bg-page);
+    color: var(--text-main);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Arial, sans-serif;
+    line-height: 1.6;
+  }
+
+  header {
+    background-color: #ffffff;
+    border-bottom: 1px solid var(--border-light);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 14px 20px;
+  }
+
+  .header-wrap {
+    max-width: 1060px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .title-block h1 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--text-main);
+  }
+
+  .title-block p {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+  }
+
+  .tabs {
+    display: inline-flex;
+    background-color: var(--bg-panel);
+    border: 1px solid var(--border-light);
+    border-radius: 8px;
+    padding: 4px;
+    gap: 4px;
+  }
+
+  .tab-btn {
+    border: none;
+    background: transparent;
+    color: var(--text-sub);
+    font-size: 0.88rem;
+    font-weight: 600;
+    padding: 7px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.15s ease;
+  }
+
+  .tab-btn.active {
+    background-color: #ffffff;
+    color: var(--primary);
+    border: 1px solid var(--border-light);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
+  }
+
+  .main-container {
+    max-width: 1060px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .controls-bar {
+    background-color: var(--bg-panel);
+    border: 1px solid var(--border-light);
+    border-radius: 10px;
+    padding: 12px 16px;
+    margin-bottom: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .filter-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    flex: 1;
+  }
+
+  select, input[type="text"] {
+    background-color: #ffffff;
+    color: var(--text-main);
+    border: 1px solid var(--border-strong);
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 0.875rem;
+    outline: none;
+  }
+
+  select:focus, input[type="text"]:focus {
+    border-color: var(--primary);
+  }
+
+  input[type="text"] {
+    min-width: 230px;
+  }
+
+  .score-group {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.84rem;
+    font-weight: 600;
+  }
+
+  .pill {
+    background-color: #ffffff;
+    border: 1px solid var(--border-light);
+    border-radius: 999px;
+    padding: 4px 11px;
+    color: var(--text-sub);
+  }
+
+  .pill.green {
+    background-color: var(--green-bg);
+    border-color: var(--green-border);
+    color: var(--green-text);
+  }
+
+  .pill.red {
+    background-color: var(--red-bg);
+    border-color: var(--red-border);
+    color: var(--red-text);
+  }
+
+  .action-btn {
+    background-color: #ffffff;
+    color: var(--text-main);
+    border: 1px solid var(--border-strong);
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .action-btn:hover {
+    background-color: #f3f4f6;
+  }
+
+  .learn-subbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 14px;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+  }
+
+  .card {
+    background-color: #ffffff;
+    border: 1px solid var(--border-light);
+    border-radius: 10px;
+    padding: 18px 20px;
+    margin-bottom: 14px;
+  }
+
+  .card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    gap: 8px;
+  }
+
+  .badge-group {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .badge-num {
+    background-color: var(--primary-soft);
+    color: var(--primary);
+    border: 1px solid var(--primary-border);
+    font-size: 0.78rem;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 5px;
+  }
+
+  .badge-pdf {
+    background-color: var(--bg-panel);
+    color: var(--text-sub);
+    border: 1px solid var(--border-light);
+    font-size: 0.74rem;
+    font-weight: 600;
+    padding: 2px 7px;
+    border-radius: 5px;
+  }
+
+  .badge-cat {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+
+  .question-text {
+    font-size: 1.02rem;
+    font-weight: 600;
+    color: var(--text-main);
+    margin-bottom: 12px;
+  }
+
+  .learn-answer-box {
+    display: inline-block;
+    background-color: var(--green-bg);
+    border: 1px solid #bbf7d0;
+    color: var(--green-text);
+    font-weight: 700;
+    font-size: 0.94rem;
+    padding: 6px 12px;
+    border-radius: 6px;
+    margin-bottom: 12px;
+  }
+
+  .learn-answer-box.blurred {
+    filter: blur(5px);
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .exam-points {
+    background-color: var(--amber-bg);
+    border: 1px solid #fde68a;
+    border-left: 4px solid var(--amber-border);
+    border-radius: 6px;
+    padding: 10px 14px;
+  }
+
+  .exam-points-heading {
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--amber-text);
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    margin-bottom: 4px;
+  }
+
+  .exam-points ul {
+    margin-left: 18px;
+    font-size: 0.88rem;
+    color: #374151;
+  }
+
+  .exam-points li {
+    margin-bottom: 3px;
+  }
+
+  .options-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 10px;
+  }
+
+  .option-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    text-align: left;
+    background-color: #ffffff;
+    border: 1.5px solid var(--border-light);
+    border-radius: 8px;
+    padding: 11px 14px;
+    font-size: 0.92rem;
+    font-weight: 500;
+    color: var(--text-main);
+    cursor: pointer;
+    transition: all 0.15s ease;
+  }
+
+  .option-btn:hover:not(:disabled) {
+    border-color: var(--primary);
+    background-color: var(--primary-soft);
+  }
+
+  .option-btn:disabled {
+    cursor: default;
+  }
+
+  .opt-circle {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: var(--bg-panel);
+    border: 1px solid var(--border-strong);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--text-sub);
+    flex-shrink: 0;
+  }
+
+  .option-btn.correct {
+    background-color: var(--green-bg);
+    border-color: var(--green-border);
+    color: var(--green-text);
+    font-weight: 700;
+  }
+
+  .option-btn.correct .opt-circle {
+    background-color: var(--green-border);
+    border-color: var(--green-border);
+    color: #ffffff;
+  }
+
+  .option-btn.wrong {
+    background-color: var(--red-bg);
+    border-color: var(--red-border);
+    color: var(--red-text);
+    font-weight: 600;
+  }
+
+  .option-btn.wrong .opt-circle {
+    background-color: var(--red-border);
+    border-color: var(--red-border);
+    color: #ffffff;
+  }
+
+  .answer-panel {
+    display: none;
+    margin-top: 14px;
+    padding-top: 14px;
+    border-top: 1px solid var(--border-light);
+    animation: slideDown 0.18s ease-out;
+  }
+
+  .answer-panel.visible {
+    display: block;
+  }
+
+  .result-banner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+
+  .result-pill {
+    font-size: 0.84rem;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 6px;
+  }
+
+  .result-pill.right {
+    background-color: var(--green-bg);
+    color: var(--green-text);
+    border: 1px solid var(--green-border);
+  }
+
+  .result-pill.wrong {
+    background-color: var(--red-bg);
+    color: var(--red-text);
+    border: 1px solid var(--red-border);
+  }
+
+  .correct-label {
+    font-size: 0.92rem;
+    font-weight: 700;
+    color: var(--text-main);
+  }
+
+  .correct-label span {
+    color: var(--green-text);
+  }
+
+  .hidden {
+    display: none !important;
+  }
+
+  .no-results {
+    text-align: center;
+    padding: 40px 20px;
+    border: 1px dashed var(--border-strong);
+    border-radius: 10px;
+    color: var(--text-muted);
+  }
+
+  @keyframes slideDown {
+    from { opacity: 0; transform: translateY(-4px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @media (max-width: 640px) {
+    .header-wrap { flex-direction: column; align-items: flex-start; }
+    .options-list { grid-template-columns: 1fr; }
+    input[type="text"] { width: 100%; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-wrap">
+    <div class="title-block">
+      <h1>Banking Awareness PDF — Repeated Revision Questions (108 Questions)</h1>
+      <p>Learn & Practice Hub | Questions Repeated from July–Oct Static Videos & Internal Duplicates</p>
+    </div>
+    <div class="tabs">
+      <button class="tab-btn active" id="btn-learn" onclick="setMode('learn')">📖 Learn Mode</button>
+      <button class="tab-btn" id="btn-practice" onclick="setMode('practice')">✍️ Practice MCQs</button>
+    </div>
+  </div>
+</header>
+
+<div class="main-container">
+  <div class="controls-bar">
+    <div class="filter-group">
+      <select id="catSelect" onchange="render()">
+        <option value="ALL">All Categories (108)</option>
+      </select>
+      <input type="text" id="searchBox" placeholder="Search question, answer, or extra points..." oninput="render()">
+    </div>
+    <div class="score-group">
+      <span class="pill">Attempted: <span id="cnt-attempted">0</span>/108</span>
+      <span class="pill green">Correct: <span id="cnt-correct">0</span></span>
+      <span class="pill red">Wrong: <span id="cnt-wrong">0</span></span>
+      <button class="action-btn" onclick="resetAll()">Reset Practice</button>
+    </div>
+  </div>
+
+  <div class="learn-subbar" id="learnSubbar">
+    <span id="showingCount">Showing 108 questions</span>
+    <button class="action-btn" id="blurBtn" onclick="toggleBlur()">👁️ Hide Answers (Self-Test)</button>
+  </div>
+
+  <div id="cardsContainer"></div>
+</div>
+
+<script>
+const QUESTIONS = [{"id": 1, "pdf_num": 7, "cat": "Banking & Financial Awareness", "q": "Current RBI Governor?", "opts": ["2027", "2025", "2026", "Sanjay Malhotra (December 2024)"], "ans": 3, "p1": "Repeated From Previous Work: July Static Q.10 / Aug Q.9 / Oct Q.5 — Governor of the Reserve Bank of India (RBI): Sanjay Malhotra.", "p2": "Exam Fact: High-frequency static GK fact from the Aruvi Banking Awareness compendium—revise alongside current RBI/Government updates."}, {"id": 2, "pdf_num": 11, "cat": "Banking & Financial Awareness", "q": "SBI HQ?", "opts": ["Jamshedpur", "Udaipur", "Nagpur", "Mumbai"], "ans": 3, "p1": "Repeated From Previous Work: July Static Q.11 & Aug Q.25 — SBI Headquarters: Mumbai.", "p2": "Exam Fact: High-frequency static GK fact from the Aruvi Banking Awareness compendium—revise alongside current RBI/Government updates."}, {"id": 3, "pdf_num": 14, "cat": "Banking & Financial Awareness", "q": "NABARD founded?", "opts": ["2018", "2016", "12 July 1982", "2019"], "ans": 2, "p1": "Repeated From Previous Work: July Static Q.151 — NABARD Established: 12 July 1982.", "p2": "Exam Fact: High-frequency static GK fact from the Aruvi Banking Awareness compendium—revise alongside current RBI/Government updates."}, {"id": 4, "pdf_num": 15, "cat": "Banking & Financial Awareness", "q": "NABARD HQ?", "opts": ["Thiruvananthapuram", "Ahmedabad", "Chandigarh", "Mumbai"], "ans": 3, "p1": "Repeated From Previous Work: July Static Q.149 & Aug Q.137 — NABARD Headquarters: Mumbai.", "p2": "Exam Fact: High-frequency static GK fact from the Aruvi Banking Awareness compendium—revise alongside current RBI/Government updates."}, {"id": 5, "pdf_num": 16, "cat": "Banking & Financial Awareness", "q": "NABARD Chairman?", "opts": ["Shaji K. V.", "Rajesh Kumar Singh", "T.V. Somanathan", "Arvind Panagariya"], "ans": 0, "p1": "Repeated From Previous Work: July Static Q.150 — NABARD Chairman: Shaji K. V..", "p2": "Exam Fact: High-frequency static GK fact from the Aruvi Banking Awareness compendium—revise alongside current RBI/Government updates."}, {"id": 6, "pdf_num": 18, "cat": "Banking & Financial Awareness", "q": "SIDBI HQ?", "opts": ["Jamshedpur", "Nagpur", "Lucknow", "Mumbai"], "ans": 2, "p1": "Repeated From Previous Work: Sep Static Q.110 — SIDBI Headquarters: Lucknow, Uttar Pradesh.", "p2": "Exam Fact: High-frequency static GK fact from the Aruvi Banking Awareness compendium—revise alongside current RBI/Government updates."}, {"id": 7, "pdf_num": 19, "cat": "Banking & Financial Awareness", "q": "SIDBI CMD?", "opts": ["Govind Mohan", "Gyanesh Kumar", "Vikram Misri", "Manoj Mittal"], "ans": 3, "p1": "Repeated From Previous Work: Aug Static Q.171 & Sep Q.110 — SIDBI CMD: Manoj Mittal.", "p2": "Exam Fact: High-frequency static GK fact from the Aruvi Banking Awareness compendium—revise alongside current RBI/Government updates."}, {"id": 8, "pdf_num": 24, "cat": "Banking & Financial Awareness", "q": "SEBI founded?", "opts": ["12 April 1988 (Statutory status – 1992)", "1990", "1999", "2002"], "ans": 0, "p1": "Repeated From Previous Work: Oct Static Q.106 — SEBI Founded: 12 April 1988 (Statutory status: 1992).", "p2": "Exam Fact: High-frequency static GK fact from the Aruvi Banking Awareness compendium—revise alongside current RBI/Government updates."}, {"id": 9, "pdf_num": 25, "cat": "Banking & Financial Awareness", "q": "SEBI HQ?", "opts": ["Jamshedpur", "Mumbai", "New Delhi", "Bengaluru"], "ans": 1, "p1": "Repeated From Previous Work: Aug Static Q.135 & Oct Q.106 — SEBI Headquarters: Mumbai.", "p2": "Exam Fact: High-frequency static GK fact from the Aruvi Banking Awareness compendium—revise alongside current RBI/Government updates."}, {"id": 10, "pdf_num": 26, "cat": "Banking & Financial Awareness", "q": "SEBI Chairman?", "opts": ["Govind Mohan", "Vikram Misri", "Tuhin Kanta Pandey", "Rajesh Kumar Singh"], "ans": 2, "p1": "Repeated From Previous Work: Oct Static Q.106 — SEBI Chairperson: Tuhin Kanta Pandey.", "p2": "Exam Fact: High-frequency static GK fact from the Aruvi Banking Awareness compendium—revise alongside current RBI/Government updates."}, {"id": 11, "pdf_num": 27, "cat": "Banking & Financial Awareness", "q": "IRDAI founded?", "opts": ["1955", "1934", "1949", "1999"], "ans": 3, "p1": "Repeated From Previous Work: July Static Q.154 — IRDAI Established: 1999.", "p2": "Exam Fact: High-frequency static GK fact from the Aruvi Banking Awareness compendium—revise alongside current RBI/Government updates."}, {"id": 12, "pdf_num": 28, "cat": "Banking & Financial Awareness", "q": "IRDAI HQ?", "opts": ["Hyderabad", "Kolkata", "Lucknow", "Jaipur"], "ans": 0, "p1": "Repeated From Previous Work: July Static Q.152 — IRDAI Headquarters: Hyderabad.", "p2": "Exam Fact: High-frequency static GK fact from the Aruvi Banking Awareness compendium—revise alongside current RBI/Government updates."}, {"id": 13, "pdf_num": 30, "cat": "Banking & Financial Awareness", "q": "PFRDA HQ?", "opts": ["Chennai", "Bengaluru", "New Delhi", "Kolkata"], "ans": 2, "p1": "Repeated From Previous Work: Oct Static Q.35 — PFRDA Headquarters: New Delhi.", "p2": "Exam Fact: High-frequency static GK fact from the Aruvi Banking Awareness compendium—revise alongside current RBI/Government updates."}, {"id": 14, "pdf_num": 31, "cat": "Banking & Financial Awareness", "q": "DICGC covers up to?", "opts": ["Rs. 10 Lakh", "Rs. 2 Lakh", "Rs. 3 Lakh", "Rs. 5 Lakh per depositor per bank"], "ans": 3, "p1": "Repeated From Previous Work: Aug Static Q.28 — DICGC Insurance Coverage Limit: ₹5 Lakh per depositor per bank.", "p2": "Exam Fact: High-frequency static GK fact from the Aruvi Banking Awareness compendium—revise alongside current RBI/Government updates."}, {"id": 15, "pdf_num": 33, "cat": "Banking & Financial Awareness", "q": "CRR current?", "opts": ["7.5%", "4% (Check before exam; RBI may change)", "8.2%", "10%"], "ans": 1, "p1": "Repeated From Previous Work: Oct Static Q.23 — Cash Reserve Ratio (CRR).", "p2": "Exam Fact: CRR is maintained as cash balances with the RBI under Section 42(1) of the RBI Act, 1934 and earns zero interest."}, {"id": 16, "pdf_num": 34, "cat": "Banking & Financial Awareness", "q": "SLR current?", "opts": ["4%", "3.35%", "18%", "4.50%"], "ans": 2, "p1": "Repeated From Previous Work: Oct Static Q.41 — Statutory Liquidity Ratio (SLR): ~18%.", "p2": "Exam Fact: High-frequency static GK fact from the Aruvi Banking Awareness compendium—revise alongside current RBI/Government updates."}, {"id": 17, "pdf_num": 37, "cat": "Banking & Financial Awareness", "q": "MSF Rate?", "opts": ["7.5%", "Repo Rate + 0.25%", "8.2%", "10%"], "ans": 1, "p1": "Repeated From Previous Work: Aug Static Q.38 & Oct Q.33 — Marginal Standing Facility (MSF) Rate: Repo Rate + 0.25%.", "p2": "Exam Fact: High-frequency static GK fact from the Aruvi Banking Awareness compendium—revise alongside current RBI/Government updates."}, {"id": 18, "pdf_num": 43, "cat": "Banking & Financial Awareness", "q": "PSL target for Small Finance Banks?", "opts": ["10%", "7.5%", "8.2%", "75%"], "ans": 3, "p1": "Repeated From Previous Work: July Static Q.14 — Small Finance Banks PSL Target: 75% of ANBC.", "p2": "Exam Fact: Priority Sector Lending (PSL) targets are calculated as a percentage of Adjusted Net Bank Credit (ANBC) or Credit Equivalent of Off-Balance-Sheet Exposure (CEOBE), whichever is higher."}, {"id": 19, "pdf_num": 49, "cat": "Banking & Financial Awareness", "q": "What is NPA?", "opts": ["Om Birla", "Loan overdue for 90 days", "C.P. Radhakrishnan", "General Anil Chauhan"], "ans": 1, "p1": "Repeated From Previous Work: July Static Q.39, Aug Q.39 & Sep Q.28 — Non-Performing Asset (NPA): Loan overdue for >90 days.", "p2": "Exam Fact: Under RBI asset classification norms, an account becomes an NPA after 90 days overdue, Sub-standard for up to 12 months, and Doubtful thereafter."}, {"id": 20, "pdf_num": 53, "cat": "Banking & Financial Awareness", "q": "SARFAESI Act year?", "opts": ["2021", "2002", "2023", "2024"], "ans": 1, "p1": "Repeated From Previous Work: July Static Q.44 — SARFAESI Act Year: 2002.", "p2": "Exam Fact: Under RBI asset classification norms, an account becomes an NPA after 90 days overdue, Sub-standard for up to 12 months, and Doubtful thereafter."}, {"id": 21, "pdf_num": 54, "cat": "Banking & Financial Awareness", "q": "IBC Code year?", "opts": ["1949", "1934", "2016", "1955"], "ans": 2, "p1": "Repeated From Previous Work: Oct Static Q.21 — Insolvency and Bankruptcy Code (IBC) Year: 2016.", "p2": "Exam Fact: Under RBI asset classification norms, an account becomes an NPA after 90 days overdue, Sub-standard for up to 12 months, and Doubtful thereafter."}, {"id": 22, "pdf_num": 60, "cat": "Banking & Financial Awareness", "q": "RTGS minimum limit?", "opts": ["Rs. 2 Lakh (No maximum limit)", "Rs. 500", "Rs. 1,000", "Rs. 5,000"], "ans": 0, "p1": "Repeated From Previous Work: July Static Q.33 & Aug Q.36 — RTGS Minimum Limit: ₹2 Lakh (No maximum limit).", "p2": "Exam Fact: High-frequency static GK fact from the Aruvi Banking Awareness compendium—revise alongside current RBI/Government updates."}, {"id": 23, "pdf_num": 61, "cat": "Banking & Financial Awareness", "q": "IMPS limit?", "opts": ["Rs. 2 Lakh", "Rs. 5 Lakh (As provided)", "Rs. 3 Lakh", "Rs. 10 Lakh"], "ans": 1, "p1": "Repeated From Previous Work: July Static Q.32 — IMPS Transaction Limit: ₹5 Lakh.", "p2": "Exam Fact: High-frequency static GK fact from the Aruvi Banking Awareness compendium—revise alongside current RBI/Government updates."}, {"id": 24, "pdf_num": 62, "cat": "Banking & Financial Awareness", "q": "UPI launched?", "opts": ["1969", "1955", "2016 by NPCI", "1976"], "ans": 2, "p1": "Repeated From Previous Work: Aug Static Q.48 & Sep Q.41 — UPI Launched: 2016 by NPCI.", "p2": "Exam Fact: High-frequency static GK fact from the Aruvi Banking Awareness compendium—revise alongside current RBI/Government updates."}, {"id": 25, "pdf_num": 63, "cat": "Banking & Financial Awareness", "q": "NPCI founded?", "opts": ["2003", "1999", "2002", "2008 (HQ – Mumbai)"], "ans": 3, "p1": "Repeated From Previous Work: Aug Static Q.171 & Sep Q.41 — NPCI Founded: 2008 (HQ: Mumbai).", "p2": "Exam Fact: High-frequency static GK fact from the Aruvi Banking Awareness compendium—revise alongside current RBI/Government updates."}, {"id": 26, "pdf_num": 65, "cat": "Banking & Financial Awareness", "q": "BHIM App launched?", "opts": ["2025", "December 2016", "2026", "2027"], "ans": 1, "p1": "Repeated From Previous Work: Oct Static Q.15 — BHIM App Launched: December 2016.", "p2": "Exam Fact: High-frequency static GK fact from the Aruvi Banking Awareness compendium—revise alongside current RBI/Government updates."}, {"id": 27, "pdf_num": 74, "cat": "Banking & Financial Awareness", "q": "PAN 10 digits – 4th letter denotes?", "opts": ["Govind Mohan", "Vikram Misri", "Status of holder (P = Individual)", "Rajesh Kumar Singh"], "ans": 2, "p1": "Repeated From Previous Work: July Static Q.41 & Aug Q.42 — PAN 10-character format (4th character denotes status: P = Individual).", "p2": "Exam Fact: High-frequency static GK fact from the Aruvi Banking Awareness compendium—revise alongside current RBI/Government updates."}, {"id": 28, "pdf_num": 75, "cat": "Banking & Financial Awareness", "q": "Aadhaar issued by?", "opts": ["V. Narayanan", "R. Venkataramani", "K. Sanjay Murthy", "UIDAI (2009)"], "ans": 3, "p1": "Repeated From Previous Work: July Static Q.48 & Sep Q.39 — Aadhaar Issued by: UIDAI.", "p2": "Exam Fact: High-frequency static GK fact from the Aruvi Banking Awareness compendium—revise alongside current RBI/Government updates."}, {"id": 29, "pdf_num": 76, "cat": "Banking & Financial Awareness", "q": "UIDAI HQ?", "opts": ["New Delhi", "Kolkata", "Hyderabad", "Lucknow"], "ans": 0, "p1": "Repeated From Previous Work: July Static Q.48 & Sep Q.39 — UIDAI Headquarters: New Delhi.", "p2": "Exam Fact: High-frequency static GK fact from the Aruvi Banking Awareness compendium—revise alongside current RBI/Government updates."}, {"id": 30, "pdf_num": 77, "cat": "Banking & Financial Awareness", "q": "KYC full form?", "opts": ["Narendra Modi", "Know Your Customer", "Ajay Kumar", "Gyanesh Kumar"], "ans": 1, "p1": "Repeated From Previous Work: July Static Q.34, Sep Q.25 & Oct Q.31 — KYC Full Form: Know Your Customer.", "p2": "Exam Fact: High-frequency static GK fact from the Aruvi Banking Awareness compendium—revise alongside current RBI/Government updates."}, {"id": 31, "pdf_num": 83, "cat": "Banking & Financial Awareness", "q": "Small Finance Bank minimum capital?", "opts": ["Rs. 5 Lakh", "Rs. 2 Lakh", "Rs. 3 Lakh", "Rs. 200 Crore"], "ans": 3, "p1": "Repeated From Previous Work: July Static Q.15 — Small Finance Bank Minimum Capital: ₹200 Crore.", "p2": "Exam Fact: Indian city sobriquets and state capitals are frequently tested in static matching questions in banking and insurance exams."}, {"id": 32, "pdf_num": 84, "cat": "Banking & Financial Awareness", "q": "Payments Bank maximum deposit?", "opts": ["Rs. 2 Lakh per customer", "Rs. 500", "Rs. 1,000", "Rs. 5,000"], "ans": 0, "p1": "Repeated From Previous Work: Sep Static Q.2 — Payments Bank Maximum Deposit Limit: ₹2 Lakh per customer.", "p2": "Exam Fact: High-frequency static GK fact from the Aruvi Banking Awareness compendium—revise alongside current RBI/Government updates."}, {"id": 33, "pdf_num": 85, "cat": "Banking & Financial Awareness", "q": "Payments Bank can lend?", "opts": ["B.V.R. Subrahmanyam", "No", "Suman Bery", "R. Venkataramani"], "ans": 1, "p1": "Repeated From Previous Work: Sep Static Q.2 — Payments Bank Lending Restriction: Cannot issue loans/credit.", "p2": "Exam Fact: High-frequency static GK fact from the Aruvi Banking Awareness compendium—revise alongside current RBI/Government updates."}, {"id": 34, "pdf_num": 118, "cat": "Government Schemes & Social Security", "q": "PM Kisan amount?", "opts": ["Rs. 1,000", "Rs. 500", "Rs. 6,000 per year (3 installments)", "Rs. 5,000"], "ans": 2, "p1": "Repeated From Previous Work: Aug Static Q.109 — PM-KISAN Amount: ₹6,000 per year in 3 installments.", "p2": "Exam Fact: Flagship Central Sector / Centrally Sponsored schemes are high-yield topics in SBI & IBPS Mains General Awareness—memorize launch year, nodal ministry, and financial outlay/limit."}, {"id": 35, "pdf_num": 133, "cat": "Government Schemes & Social Security", "q": "NPS Tier 1 minimum annual contribution?", "opts": ["Rs. 2 Lakh", "Rs. 1,000", "Rs. 3 Lakh", "Rs. 5 Lakh"], "ans": 1, "p1": "Repeated From Previous Work: Duplicate inside this PDF (#385) — NPS Tier 1 Minimum Annual Contribution: ₹1,000.", "p2": "Exam Fact: Small Savings Scheme interest rates (PPF, SSY, SCSS, NSC, KVP) are reviewed and notified quarterly by the Ministry of Finance."}, {"id": 36, "pdf_num": 140, "cat": "Government Schemes & Social Security", "q": "PM Jan Dhan overdraft?", "opts": ["Rs. 10,000", "Rs. 500", "Rs. 1,000", "Rs. 5,000"], "ans": 0, "p1": "Repeated From Previous Work: Duplicate inside this PDF (#93) — PM Jan Dhan Overdraft Limit: ₹10,000.", "p2": "Exam Fact: Flagship Central Sector / Centrally Sponsored schemes are high-yield topics in SBI & IBPS Mains General Awareness—memorize launch year, nodal ministry, and financial outlay/limit."}, {"id": 37, "pdf_num": 147, "cat": "Government Schemes & Social Security", "q": "MGNREGA Act?", "opts": ["1982", "1969", "1976", "2005 (100 days of wage employment)"], "ans": 3, "p1": "Repeated From Previous Work: Sep Static Q.93 — MGNREGA Act: 2005 (100 days of guaranteed wage employment).", "p2": "Exam Fact: High-frequency static GK fact from the Aruvi Banking Awareness compendium—revise alongside current RBI/Government updates."}, {"id": 38, "pdf_num": 148, "cat": "Government Schemes & Social Security", "q": "MGNREGA renamed?", "opts": ["VB-G RAM G (2025) – Viksit Bharat Guarantee for Rozgar and Ajeevika Mission", "2002", "2003", "2005"], "ans": 0, "p1": "Repeated From Previous Work: Duplicate inside this PDF (#381) — MGNREGA Renamed: VB-G RAM G (2025).", "p2": "Exam Fact: High-frequency static GK fact from the Aruvi Banking Awareness compendium—revise alongside current RBI/Government updates."}, {"id": 39, "pdf_num": 261, "cat": "Geography, Rivers & National Parks", "q": "Financial Capital?", "opts": ["Chennai", "Mumbai", "Kolkata", "Hyderabad"], "ans": 1, "p1": "Repeated From Previous Work: Sep Static Q.57 — Financial Capital of India: Mumbai.", "p2": "Exam Fact: Indian city sobriquets and state capitals are frequently tested in static matching questions in banking and insurance exams."}, {"id": 40, "pdf_num": 262, "cat": "Geography, Rivers & National Parks", "q": "Political Capital?", "opts": ["Thiruvananthapuram", "Chandigarh", "New Delhi", "Jodhpur"], "ans": 2, "p1": "Repeated From Previous Work: July Static Q.54 — Political Capital of India: New Delhi.", "p2": "Exam Fact: Indian city sobriquets and state capitals are frequently tested in static matching questions in banking and insurance exams."}, {"id": 41, "pdf_num": 281, "cat": "Geography, Rivers & National Parks", "q": "Which state has the highest number of National Parks?", "opts": ["Uttarakhand", "Madhya Pradesh (11)", "Himachal Pradesh", "West Bengal"], "ans": 1, "p1": "Repeated From Previous Work: Duplicate inside this PDF (#395) — Highest Number of National Parks: Madhya Pradesh (11).", "p2": "Exam Fact: National Parks are notified by State Governments under the Wildlife (Protection) Act, 1972; Madhya Pradesh leads India with 11 National Parks."}, {"id": 42, "pdf_num": 282, "cat": "Geography, Rivers & National Parks", "q": "Jim Corbett National Park?", "opts": ["Telangana", "Andhra Pradesh", "Uttarakhand (First National Park, 1936)", "Goa"], "ans": 2, "p1": "Repeated From Previous Work: Sep Static Q.61 & Oct Q.54 — Jim Corbett National Park: Uttarakhand (1936).", "p2": "Exam Fact: National Parks are notified by State Governments under the Wildlife (Protection) Act, 1972; Madhya Pradesh leads India with 11 National Parks."}, {"id": 43, "pdf_num": 283, "cat": "Geography, Rivers & National Parks", "q": "Kaziranga National Park?", "opts": ["Uttar Pradesh", "Maharashtra", "Rajasthan", "Assam (One-horned Rhinoceros)"], "ans": 3, "p1": "Repeated From Previous Work: July Static Q.52 — Kaziranga National Park: Assam (One-horned Rhinoceros).", "p2": "Exam Fact: National Parks are notified by State Governments under the Wildlife (Protection) Act, 1972; Madhya Pradesh leads India with 11 National Parks."}, {"id": 44, "pdf_num": 284, "cat": "Geography, Rivers & National Parks", "q": "Gir National Park?", "opts": ["Gujarat (Asiatic Lion)", "Assam", "Uttarakhand", "Himachal Pradesh"], "ans": 0, "p1": "Repeated From Previous Work: Aug Static Q.58, Sep Q.48 & Oct Q.46 — Gir National Park: Gujarat (Asiatic Lion).", "p2": "Exam Fact: National Parks are notified by State Governments under the Wildlife (Protection) Act, 1972; Madhya Pradesh leads India with 11 National Parks."}, {"id": 45, "pdf_num": 287, "cat": "Geography, Rivers & National Parks", "q": "Ranthambore National Park?", "opts": ["Uttarakhand", "Gujarat", "Assam", "Rajasthan (Tiger)"], "ans": 3, "p1": "Repeated From Previous Work: Sep Static Q.60 — Ranthambore National Park: Rajasthan.", "p2": "Exam Fact: National Parks are notified by State Governments under the Wildlife (Protection) Act, 1972; Madhya Pradesh leads India with 11 National Parks."}, {"id": 46, "pdf_num": 288, "cat": "Geography, Rivers & National Parks", "q": "Sundarbans National Park?", "opts": ["West Bengal (Mangroves, Royal Bengal Tiger)", "Haryana", "Punjab", "Andhra Pradesh"], "ans": 0, "p1": "Repeated From Previous Work: July Static Q.82 & Sep Q.64 — Sundarbans National Park: West Bengal.", "p2": "Exam Fact: National Parks are notified by State Governments under the Wildlife (Protection) Act, 1972; Madhya Pradesh leads India with 11 National Parks."}, {"id": 47, "pdf_num": 291, "cat": "Geography, Rivers & National Parks", "q": "Hemis National Park?", "opts": ["Punjab", "Odisha", "Haryana", "Ladakh (Largest National Park in India)"], "ans": 3, "p1": "Repeated From Previous Work: Aug Static Q.72 & Oct Q.55 (also #421 in PDF) — Hemis National Park: Ladakh (Largest NP in India).", "p2": "Exam Fact: National Parks are notified by State Governments under the Wildlife (Protection) Act, 1972; Madhya Pradesh leads India with 11 National Parks."}, {"id": 48, "pdf_num": 293, "cat": "Geography, Rivers & National Parks", "q": "Periyar National Park?", "opts": ["Tamil Nadu", "Kerala", "Gujarat", "Assam"], "ans": 1, "p1": "Repeated From Previous Work: Aug Static Q.61 — Periyar National Park: Kerala.", "p2": "Exam Fact: National Parks are notified by State Governments under the Wildlife (Protection) Act, 1972; Madhya Pradesh leads India with 11 National Parks."}, {"id": 49, "pdf_num": 294, "cat": "Geography, Rivers & National Parks", "q": "Bandipur National Park?", "opts": ["Odisha", "Bihar", "Karnataka", "Haryana"], "ans": 2, "p1": "Repeated From Previous Work: Sep Static Q.56 & Oct Q.48 — Bandipur National Park: Karnataka.", "p2": "Exam Fact: National Parks are notified by State Governments under the Wildlife (Protection) Act, 1972; Madhya Pradesh leads India with 11 National Parks."}, {"id": 50, "pdf_num": 295, "cat": "Geography, Rivers & National Parks", "q": "Nagarhole National Park?", "opts": ["Ladakh", "Sikkim", "Arunachal Pradesh", "Karnataka"], "ans": 3, "p1": "Repeated From Previous Work: Oct Static Q.48 — Nagarhole National Park: Karnataka.", "p2": "Exam Fact: National Parks are notified by State Governments under the Wildlife (Protection) Act, 1972; Madhya Pradesh leads India with 11 National Parks."}, {"id": 51, "pdf_num": 296, "cat": "Geography, Rivers & National Parks", "q": "Mudumalai National Park?", "opts": ["Tamil Nadu", "Karnataka", "Kerala", "Gujarat"], "ans": 0, "p1": "Repeated From Previous Work: Aug Static Q.67 — Mudumalai National Park: Tamil Nadu.", "p2": "Exam Fact: National Parks are notified by State Governments under the Wildlife (Protection) Act, 1972; Madhya Pradesh leads India with 11 National Parks."}, {"id": 52, "pdf_num": 297, "cat": "Geography, Rivers & National Parks", "q": "Manas National Park?", "opts": ["West Bengal", "Assam", "Bihar", "Odisha"], "ans": 1, "p1": "Repeated From Previous Work: July Static Q.52 — Manas National Park: Assam.", "p2": "Exam Fact: National Parks are notified by State Governments under the Wildlife (Protection) Act, 1972; Madhya Pradesh leads India with 11 National Parks."}, {"id": 53, "pdf_num": 299, "cat": "Geography, Rivers & National Parks", "q": "Great Himalayan National Park?", "opts": ["Kerala", "Uttar Pradesh", "Karnataka", "Himachal Pradesh"], "ans": 3, "p1": "Repeated From Previous Work: Sep Static Q.51 — Great Himalayan National Park: Himachal Pradesh.", "p2": "Exam Fact: National Parks are notified by State Governments under the Wildlife (Protection) Act, 1972; Madhya Pradesh leads India with 11 National Parks."}, {"id": 54, "pdf_num": 300, "cat": "Geography, Rivers & National Parks", "q": "Silent Valley National Park?", "opts": ["Kerala", "Himachal Pradesh", "West Bengal", "Bihar"], "ans": 0, "p1": "Repeated From Previous Work: Aug Static Q.61 — Silent Valley National Park: Kerala.", "p2": "Exam Fact: National Parks are notified by State Governments under the Wildlife (Protection) Act, 1972; Madhya Pradesh leads India with 11 National Parks."}, {"id": 55, "pdf_num": 302, "cat": "Indian States, Polity & Defence", "q": "Haryana capital?", "opts": ["Chennai", "Bengaluru", "Chandigarh", "Kolkata"], "ans": 2, "p1": "Repeated From Previous Work: Sep Static Q.49 — Capital of Haryana: Chandigarh.", "p2": "Exam Fact: Indian city sobriquets and state capitals are frequently tested in static matching questions in banking and insurance exams."}, {"id": 56, "pdf_num": 311, "cat": "Indian States, Polity & Defence", "q": "Punjab capital?", "opts": ["Chennai", "New Delhi", "Bengaluru", "Chandigarh"], "ans": 3, "p1": "Repeated From Previous Work: July Static Q.69 — Capital of Punjab: Chandigarh.", "p2": "Exam Fact: Indian city sobriquets and state capitals are frequently tested in static matching questions in banking and insurance exams."}, {"id": 57, "pdf_num": 313, "cat": "Indian States, Polity & Defence", "q": "Tamil Nadu capital?", "opts": ["Jamshedpur", "Chennai", "Mumbai", "New Delhi"], "ans": 1, "p1": "Repeated From Previous Work: July Static Q.78, Aug Q.66 & Oct Q.52 — Capital of Tamil Nadu: Chennai.", "p2": "Exam Fact: Indian city sobriquets and state capitals are frequently tested in static matching questions in banking and insurance exams."}, {"id": 58, "pdf_num": 318, "cat": "Indian States, Polity & Defence", "q": "Kerala capital?", "opts": ["Chennai", "Bengaluru", "Thiruvananthapuram", "Kolkata"], "ans": 2, "p1": "Repeated From Previous Work: Aug Static Q.59 — Capital of Kerala: Thiruvananthapuram.", "p2": "Exam Fact: Indian city sobriquets and state capitals are frequently tested in static matching questions in banking and insurance exams."}, {"id": 59, "pdf_num": 320, "cat": "Indian States, Polity & Defence", "q": "Karnataka capital?", "opts": ["Bengaluru", "Mumbai", "New Delhi", "Chennai"], "ans": 0, "p1": "Repeated From Previous Work: Sep Static Q.55 & Oct Q.48 — Capital of Karnataka: Bengaluru.", "p2": "Exam Fact: Indian city sobriquets and state capitals are frequently tested in static matching questions in banking and insurance exams."}, {"id": 60, "pdf_num": 331, "cat": "Indian States, Polity & Defence", "q": "Largest State by Area?", "opts": ["Uttarakhand", "Gujarat", "Assam", "Rajasthan"], "ans": 3, "p1": "Repeated From Previous Work: July Static Q.72 (also #446 in PDF) — Largest State by Area: Rajasthan.", "p2": "Exam Fact: High-frequency static GK fact from the Aruvi Banking Awareness compendium—revise alongside current RBI/Government updates."}, {"id": 61, "pdf_num": 332, "cat": "Indian States, Polity & Defence", "q": "Smallest State by Area?", "opts": ["Goa", "Haryana", "Punjab", "Andhra Pradesh"], "ans": 0, "p1": "Repeated From Previous Work: Oct Static Q.45 (also #445 in PDF) — Smallest State by Area: Goa.", "p2": "Exam Fact: High-frequency static GK fact from the Aruvi Banking Awareness compendium—revise alongside current RBI/Government updates."}, {"id": 62, "pdf_num": 333, "cat": "Indian States, Polity & Defence", "q": "Largest Union Territory by Area?", "opts": ["Madhya Pradesh", "Ladakh", "Maharashtra", "Rajasthan"], "ans": 1, "p1": "Repeated From Previous Work: Aug Static Q.70 — Largest Union Territory by Area: Ladakh.", "p2": "Exam Fact: High-frequency static GK fact from the Aruvi Banking Awareness compendium—revise alongside current RBI/Government updates."}, {"id": 63, "pdf_num": 339, "cat": "Indian States, Polity & Defence", "q": "Lok Sabha Speaker?", "opts": ["V. Narayanan", "R. Venkataramani", "K. Sanjay Murthy", "Om Birla"], "ans": 3, "p1": "Repeated From Previous Work: Duplicate inside this PDF (#426) — Lok Sabha Speaker: Om Birla.", "p2": "Exam Fact: Key Constitutional bodies (Finance Commission – Art. 280, Election Commission – Art. 324, CAG – Art. 148, GST Council – Art. 279A) are core static polity staples."}, {"id": 64, "pdf_num": 341, "cat": "Indian States, Polity & Defence", "q": "First CDS?", "opts": ["Narendra Modi", "General Bipin Rawat", "Ajay Kumar", "Gyanesh Kumar"], "ans": 1, "p1": "Repeated From Previous Work: Duplicate inside this PDF (#404) — First CDS of India: General Bipin Rawat.", "p2": "Exam Fact: High-frequency static GK fact from the Aruvi Banking Awareness compendium—revise alongside current RBI/Government updates."}, {"id": 65, "pdf_num": 346, "cat": "Indian States, Polity & Defence", "q": "Current Prime Minister?", "opts": ["V. Narayanan", "K. Sanjay Murthy", "Narendra Modi (3rd term)", "Sanjay Malhotra"], "ans": 2, "p1": "Repeated From Previous Work: July Static Q.133 & Aug Q.129 — Current Prime Minister of India: Narendra Modi.", "p2": "Exam Fact: High-frequency static GK fact from the Aruvi Banking Awareness compendium—revise alongside current RBI/Government updates."}, {"id": 66, "pdf_num": 349, "cat": "Indian States, Polity & Defence", "q": "BRO functions under?", "opts": ["NCLT", "Ministry of Defence", "CVC", "Ministry of Finance"], "ans": 1, "p1": "Repeated From Previous Work: Oct Static Q.90 (also #401 in PDF) — BRO Functions Under: Ministry of Defence.", "p2": "Exam Fact: High-frequency static GK fact from the Aruvi Banking Awareness compendium—revise alongside current RBI/Government updates."}, {"id": 67, "pdf_num": 380, "cat": "Current Affairs, Economy & Schemes", "q": "PM Surya Ghar target was extended to which year?", "opts": ["2026", "2027", "2028", "2030"], "ans": 1, "p1": "Repeated From Previous Work: Duplicate inside this PDF (#107) — PM Surya Ghar Target Extended To: 2027 (1 Cr households).", "p2": "Exam Fact: Flagship Central Sector / Centrally Sponsored schemes are high-yield topics in SBI & IBPS Mains General Awareness—memorize launch year, nodal ministry, and financial outlay/limit."}, {"id": 68, "pdf_num": 381, "cat": "Current Affairs, Economy & Schemes", "q": "Which scheme was renamed as VB-G RAM G in 2025?", "opts": ["MGNREGA", "PM Awas", "PM Kisan", "Jal Jeevan"], "ans": 0, "p1": "Repeated From Previous Work: Duplicate inside this PDF (#148) — Scheme Renamed VB-G RAM G in 2025: MGNREGA.", "p2": "Exam Fact: High-frequency static GK fact from the Aruvi Banking Awareness compendium—revise alongside current RBI/Government updates."}, {"id": 69, "pdf_num": 382, "cat": "Current Affairs, Economy & Schemes", "q": "What is the full form of GOBARdhan?", "opts": ["Galvanizing Organic Bio-Agro Resources Dhan", "Green Organic Bio-Agro Resources Dhan", "Govt Organic Bio-Agro Resources Dhan", "None"], "ans": 0, "p1": "Repeated From Previous Work: Duplicate inside this PDF (#115) — Full Form of GOBARdhan: Galvanizing Organic Bio-Agro Resources Dhan.", "p2": "Exam Fact: High-frequency static GK fact from the Aruvi Banking Awareness compendium—revise alongside current RBI/Government updates."}, {"id": 70, "pdf_num": 385, "cat": "Current Affairs, Economy & Schemes", "q": "What is the minimum annual contribution for NPS Tier- I?", "opts": ["Rs.500", "Rs.1000", "Rs.2000", "Rs.5000"], "ans": 1, "p1": "Repeated From Previous Work: Duplicate inside this PDF (#133) — Minimum Annual Contribution for NPS Tier-I: ₹1,000.", "p2": "Exam Fact: Small Savings Scheme interest rates (PPF, SSY, SCSS, NSC, KVP) are reviewed and notified quarterly by the Ministry of Finance."}, {"id": 71, "pdf_num": 386, "cat": "Current Affairs, Economy & Schemes", "q": "SCSS interest is paid on what basis?", "opts": ["Monthly", "Quarterly", "Half-yearly", "Yearly"], "ans": 1, "p1": "Repeated From Previous Work: Duplicate inside this PDF (#131) — SCSS Interest Payment Basis: Quarterly (8.2%).", "p2": "Exam Fact: Small Savings Scheme interest rates (PPF, SSY, SCSS, NSC, KVP) are reviewed and notified quarterly by the Ministry of Finance."}, {"id": 72, "pdf_num": 388, "cat": "Current Affairs, Economy & Schemes", "q": "Who is the CMD of SIDBI?", "opts": ["Manoj Mittal", "S. Ramann", "Shaji K.V.", "Rajneesh Kumar"], "ans": 0, "p1": "Repeated From Previous Work: Sep Static Q.110 (also #19 in PDF) — CMD of SIDBI: Manoj Mittal.", "p2": "Exam Fact: High-frequency static GK fact from the Aruvi Banking Awareness compendium—revise alongside current RBI/Government updates."}, {"id": 73, "pdf_num": 389, "cat": "Current Affairs, Economy & Schemes", "q": "Who is the Director of FIU-India (July 2026)?", "opts": ["Satya Pal Kumar", "Pankaj Mishra", "Amit Govil", "Rajesh Kumar"], "ans": 0, "p1": "Repeated From Previous Work: Duplicate inside this PDF (#81) — Director of FIU-India: Satya Pal Kumar.", "p2": "Exam Fact: High-frequency static GK fact from the Aruvi Banking Awareness compendium—revise alongside current RBI/Government updates."}, {"id": 74, "pdf_num": 390, "cat": "Current Affairs, Economy & Schemes", "q": "Which entity regulates Credit Rating Agencies?", "opts": ["RBI", "SEBI", "IRDAI", "PFRDA"], "ans": 1, "p1": "Repeated From Previous Work: Aug Static Q.23 & Oct Q.22 — Entity Regulating Credit Rating Agencies: SEBI.", "p2": "Exam Fact: High-frequency static GK fact from the Aruvi Banking Awareness compendium—revise alongside current RBI/Government updates."}, {"id": 75, "pdf_num": 395, "cat": "Current Affairs, Economy & Schemes", "q": "Which state has highest number of National Parks?", "opts": ["MP", "Assam", "Rajasthan", "Karnataka"], "ans": 0, "p1": "Repeated From Previous Work: Duplicate inside this PDF (#281) — State with Highest Number of National Parks: Madhya Pradesh (11).", "p2": "Exam Fact: National Parks are notified by State Governments under the Wildlife (Protection) Act, 1972; Madhya Pradesh leads India with 11 National Parks."}, {"id": 76, "pdf_num": 396, "cat": "Current Affairs, Economy & Schemes", "q": "Teesta River originates from?", "opts": ["Tso Lhamo Lake, Sikkim", "Gangotri", "Mansarovar", "Amarkantak"], "ans": 0, "p1": "Repeated From Previous Work: Duplicate inside this PDF (#263) — Teesta River Origin: Tso Lhamo Lake, Sikkim.", "p2": "Exam Fact: Peninsular rivers like Narmada and Tapti flow westwards into the Arabian Sea through rift valleys, whereas Ganga, Godavari, Krishna, Kaveri, and Mahanadi flow eastwards into the Bay of Bengal."}, {"id": 77, "pdf_num": 397, "cat": "Current Affairs, Economy & Schemes", "q": "Garden City of India?", "opts": ["Bengaluru", "Mysuru", "Chennai", "Hyderabad"], "ans": 0, "p1": "Repeated From Previous Work: Duplicate inside this PDF (#251) — Garden City of India: Bengaluru.", "p2": "Exam Fact: Indian city sobriquets and state capitals are frequently tested in static matching questions in banking and insurance exams."}, {"id": 78, "pdf_num": 398, "cat": "Current Affairs, Economy & Schemes", "q": "PM-JAY Pre-hospitalization cover?", "opts": ["3 days", "5 days", "7 days", "15 days"], "ans": 0, "p1": "Repeated From Previous Work: Duplicate inside this PDF (#103) — PM-JAY Pre-hospitalization Cover: 3 days (Post: 15 days).", "p2": "Exam Fact: Flagship Central Sector / Centrally Sponsored schemes are high-yield topics in SBI & IBPS Mains General Awareness—memorize launch year, nodal ministry, and financial outlay/limit."}, {"id": 79, "pdf_num": 401, "cat": "Current Affairs, Economy & Schemes", "q": "BRO functions under which ministry?", "opts": ["Defence", "Home", "Road Transport", "Finance"], "ans": 0, "p1": "Repeated From Previous Work: Oct Static Q.90 (also #349 in PDF) — BRO Functions Under: Ministry of Defence.", "p2": "Exam Fact: High-frequency static GK fact from the Aruvi Banking Awareness compendium—revise alongside current RBI/Government updates."}, {"id": 80, "pdf_num": 402, "cat": "Current Affairs, Economy & Schemes", "q": "GST first 2 digits denote?", "opts": ["State Code", "PAN", "District Code", "Year Code"], "ans": 0, "p1": "Repeated From Previous Work: Duplicate inside this PDF (#73) — First 2 Digits of GSTIN: State Code.", "p2": "Exam Fact: High-frequency static GK fact from the Aruvi Banking Awareness compendium—revise alongside current RBI/Government updates."}, {"id": 81, "pdf_num": 403, "cat": "Current Affairs, Economy & Schemes", "q": "How many Lok Sabha sessions in a year?", "opts": ["2", "3", "4", "1"], "ans": 1, "p1": "Repeated From Previous Work: Duplicate inside this PDF (#338) — Lok Sabha Sessions in a Year: 3 (Budget, Monsoon, Winter).", "p2": "Exam Fact: Key Constitutional bodies (Finance Commission – Art. 280, Election Commission – Art. 324, CAG – Art. 148, GST Council – Art. 279A) are core static polity staples."}, {"id": 82, "pdf_num": 404, "cat": "Current Affairs, Economy & Schemes", "q": "First CDS of India?", "opts": ["Gen Bipin Rawat", "Gen Anil Chauhan", "Gen Manoj Mukund", "Gen Upendra Dwivedi"], "ans": 0, "p1": "Repeated From Previous Work: Duplicate inside this PDF (#341) — First CDS of India: General Bipin Rawat.", "p2": "Exam Fact: High-frequency static GK fact from the Aruvi Banking Awareness compendium—revise alongside current RBI/Government updates."}, {"id": 83, "pdf_num": 407, "cat": "Current Affairs, Economy & Schemes", "q": "What is NACM used for?", "opts": ["Bulk Payments - NACH", "Retail Payments", "Forex", "RTGS"], "ans": 0, "p1": "Repeated From Previous Work: Duplicate inside this PDF (#68) — NACH/NACM Used For: Bulk Payments (Salary, Pension, EMI).", "p2": "Exam Fact: High-frequency static GK fact from the Aruvi Banking Awareness compendium—revise alongside current RBI/Government updates."}, {"id": 84, "pdf_num": 421, "cat": "Current Affairs, Economy & Schemes", "q": "Which is the largest National Park in India?", "opts": ["Hemis, Ladakh", "Jim Corbett", "Kaziranga", "Gir"], "ans": 0, "p1": "Repeated From Previous Work: Aug Static Q.72 & Oct Q.55 (also #291 in PDF) — Largest National Park in India: Hemis, Ladakh.", "p2": "Exam Fact: National Parks are notified by State Governments under the Wildlife (Protection) Act, 1972; Madhya Pradesh leads India with 11 National Parks."}, {"id": 85, "pdf_num": 422, "cat": "Current Affairs, Economy & Schemes", "q": "Which river is called Dakshin Ganga?", "opts": ["Godavari", "Krishna", "Kaveri", "Narmada"], "ans": 0, "p1": "Repeated From Previous Work: Duplicate inside this PDF (#274) — River Called Dakshin Ganga: Godavari.", "p2": "Exam Fact: Peninsular rivers like Narmada and Tapti flow westwards into the Arabian Sea through rift valleys, whereas Ganga, Godavari, Krishna, Kaveri, and Mahanadi flow eastwards into the Bay of Bengal."}, {"id": 86, "pdf_num": 423, "cat": "Current Affairs, Economy & Schemes", "q": "Which city is called Detroit of India?", "opts": ["Chennai", "Pune", "Gurugram", "Ahmedabad"], "ans": 0, "p1": "Repeated From Previous Work: Duplicate inside this PDF (#259) — City Called Detroit of India: Chennai.", "p2": "Exam Fact: Indian city sobriquets and state capitals are frequently tested in static matching questions in banking and insurance exams."}, {"id": 87, "pdf_num": 425, "cat": "Current Affairs, Economy & Schemes", "q": "GST Council Article?", "opts": ["279A", "280", "281", "282"], "ans": 0, "p1": "Repeated From Previous Work: Oct Static Q.29 — GST Council Article: Article 279A.", "p2": "Exam Fact: Key Constitutional bodies (Finance Commission – Art. 280, Election Commission – Art. 324, CAG – Art. 148, GST Council – Art. 279A) are core static polity staples."}, {"id": 88, "pdf_num": 426, "cat": "Current Affairs, Economy & Schemes", "q": "Who is Lok Sabha Speaker?", "opts": ["Om Birla", "Rahul Gandhi", "Amit Shah", "Sumitra Mahajan"], "ans": 0, "p1": "Repeated From Previous Work: Duplicate inside this PDF (#339) — Lok Sabha Speaker: Om Birla.", "p2": "Exam Fact: Key Constitutional bodies (Finance Commission – Art. 280, Election Commission – Art. 324, CAG – Art. 148, GST Council – Art. 279A) are core static polity staples."}, {"id": 89, "pdf_num": 429, "cat": "Current Affairs, Economy & Schemes", "q": "Dadasaheb Phalke Award 2024 winner?", "opts": ["Mohanlal", "Amitabh Bachchan", "Rajinikanth", "Mithun Chakraborty"], "ans": 0, "p1": "Repeated From Previous Work: Duplicate inside this PDF (#472) — Dadasaheb Phalke Award 2024 Winner: Mohanlal.", "p2": "Exam Fact: Major national and international awards (winner name, category/field, and year) are guaranteed questions in SBI Clerk & IBPS Mains."}, {"id": 90, "pdf_num": 432, "cat": "Current Affairs, Economy & Schemes", "q": "What is CCEA - Who chairs?", "opts": ["PM", "FM", "President", "RBI Governor"], "ans": 0, "p1": "Repeated From Previous Work: Duplicate inside this PDF (#410) — CCEA Chaired By: Prime Minister (Narendra Modi).", "p2": "Exam Fact: High-frequency static GK fact from the Aruvi Banking Awareness compendium—revise alongside current RBI/Government updates."}, {"id": 91, "pdf_num": 433, "cat": "Current Affairs, Economy & Schemes", "q": "Which bank is called Banker's Bank?", "opts": ["RBI", "SBI", "PNB", "HDFC"], "ans": 0, "p1": "Repeated From Previous Work: July Static Q.10 — Bank Called Banker's Bank: RBI.", "p2": "Exam Fact: High-frequency static GK fact from the Aruvi Banking Awareness compendium—revise alongside current RBI/Government updates."}, {"id": 92, "pdf_num": 445, "cat": "Summits, Awards, Sports & Books", "q": "Which is the smallest state in India?", "opts": ["Goa", "Sikkim", "Tripura", "Manipur"], "ans": 0, "p1": "Repeated From Previous Work: Oct Static Q.45 (also #332 in PDF) — Smallest State in India: Goa.", "p2": "Exam Fact: High-frequency static GK fact from the Aruvi Banking Awareness compendium—revise alongside current RBI/Government updates."}, {"id": 93, "pdf_num": 446, "cat": "Summits, Awards, Sports & Books", "q": "Which is the largest state in India?", "opts": ["Rajasthan", "MP", "UP", "Maharashtra"], "ans": 0, "p1": "Repeated From Previous Work: July Static Q.72 (also #331 in PDF) — Largest State in India: Rajasthan.", "p2": "Exam Fact: High-frequency static GK fact from the Aruvi Banking Awareness compendium—revise alongside current RBI/Government updates."}, {"id": 94, "pdf_num": 448, "cat": "Summits, Awards, Sports & Books", "q": "What is India's rank in Global Innovation Index 2025?", "opts": ["38", "40", "42", "46"], "ans": 0, "p1": "Repeated From Previous Work: July Static Q.164 — India's Rank in Global Innovation Index 2025: 38.", "p2": "Exam Fact: High-frequency static GK fact from the Aruvi Banking Awareness compendium—revise alongside current RBI/Government updates."}, {"id": 95, "pdf_num": 450, "cat": "Summits, Awards, Sports & Books", "q": "Which day is celebrated as National Sports Day?", "opts": ["29 Aug - Major Dhyan Chand Birthday", "15 Aug", "26 Jan", "2 Oct"], "ans": 0, "p1": "Repeated From Previous Work: Aug Static Q.106 — National Sports Day: 29 August (Major Dhyan Chand Birthday).", "p2": "Exam Fact: High-frequency static GK fact from the Aruvi Banking Awareness compendium—revise alongside current RBI/Government updates."}, {"id": 96, "pdf_num": 462, "cat": "Summits, Awards, Sports & Books", "q": "Who won Wimbledon 2025 Men's Singles?", "opts": ["Jannik Sinner", "Carlos Alcaraz", "Novak Djokovic", "Daniil Medvedev"], "ans": 0, "p1": "Repeated From Previous Work: Sep Static Q.142 — Wimbledon 2025 Men's Singles Winner: Jannik Sinner.", "p2": "Exam Fact: High-frequency static GK fact from the Aruvi Banking Awareness compendium—revise alongside current RBI/Government updates."}, {"id": 97, "pdf_num": 463, "cat": "Summits, Awards, Sports & Books", "q": "Who won Wimbledon 2025 Women's Singles?", "opts": ["Iga Swiatek", "Amanda Anisimova", "Coco Gauff", "Aryna Sabalenka"], "ans": 0, "p1": "Repeated From Previous Work: Sep Static Q.142 — Wimbledon 2025 Women's Singles Winner: Iga Swiatek.", "p2": "Exam Fact: High-frequency static GK fact from the Aruvi Banking Awareness compendium—revise alongside current RBI/Government updates."}, {"id": 98, "pdf_num": 464, "cat": "Summits, Awards, Sports & Books", "q": "Who won US Open 2025 Men's Singles?", "opts": ["Carlos Alcaraz", "Jannik Sinner", "Djokovic", "Medvedev"], "ans": 0, "p1": "Repeated From Previous Work: Sep Static Q.142 — US Open 2025 Men's Singles Winner: Carlos Alcaraz.", "p2": "Exam Fact: High-frequency static GK fact from the Aruvi Banking Awareness compendium—revise alongside current RBI/Government updates."}, {"id": 99, "pdf_num": 468, "cat": "Summits, Awards, Sports & Books", "q": "Who is the World Chess Champion 2024-26?", "opts": ["D. Gukesh", "Ding Liren", "Magnus Carlsen", "Viswanathan Anand"], "ans": 0, "p1": "Repeated From Previous Work: Sep Static Q.147 — World Chess Champion 2024–26: D. Gukesh.", "p2": "Exam Fact: High-frequency static GK fact from the Aruvi Banking Awareness compendium—revise alongside current RBI/Government updates."}, {"id": 100, "pdf_num": 472, "cat": "Summits, Awards, Sports & Books", "q": "Who won Dadasaheb Phalke Award 2024 (Announced 2025)?", "opts": ["Mohanlal", "Mithun Chakraborty", "Rajinikanth", "Amitabh Bachchan"], "ans": 0, "p1": "Repeated From Previous Work: Duplicate inside this PDF (#429) — Dadasaheb Phalke Award 2024 Winner: Mohanlal.", "p2": "Exam Fact: Major national and international awards (winner name, category/field, and year) are guaranteed questions in SBI Clerk & IBPS Mains."}, {"id": 101, "pdf_num": 482, "cat": "Key Appointments & Leadership", "q": "Who is the new RBI Governor (Dec 2024)?", "opts": ["Sanjay Malhotra", "Shaktikanta Das", "Urjit Patel", "Raghuram Rajan"], "ans": 0, "p1": "Repeated From Previous Work: July Static Q.10 (also #7 in PDF) — RBI Governor: Sanjay Malhotra.", "p2": "Exam Fact: High-frequency static GK fact from the Aruvi Banking Awareness compendium—revise alongside current RBI/Government updates."}, {"id": 102, "pdf_num": 483, "cat": "Key Appointments & Leadership", "q": "Who is the new SEBI Chairman (2025)?", "opts": ["Tuhin Kanta Pandey", "Madhabi Puri Buch", "Ajay Tyagi", "U.K. Sinha"], "ans": 0, "p1": "Repeated From Previous Work: Aug Static Q.135 & Oct Q.106 (also #26 in PDF) — SEBI Chairman: Tuhin Kanta Pandey.", "p2": "Exam Fact: High-frequency static GK fact from the Aruvi Banking Awareness compendium—revise alongside current RBI/Government updates."}, {"id": 103, "pdf_num": 487, "cat": "Key Appointments & Leadership", "q": "Who is the new CEO of NITI Aayog?", "opts": ["B.V.R. Subrahmanyam", "Amitabh Kant", "Parameswaran Iyer", "Suman Bery"], "ans": 0, "p1": "Repeated From Previous Work: Aug Static Q.170 — CEO of NITI Aayog: B.V.R. Subrahmanyam.", "p2": "Exam Fact: High-frequency static GK fact from the Aruvi Banking Awareness compendium—revise alongside current RBI/Government updates."}, {"id": 104, "pdf_num": 488, "cat": "Key Appointments & Leadership", "q": "Who is the Vice Chairman of NITI Aayog?", "opts": ["Suman Bery", "Rajiv Kumar", "Arvind Panagariya", "Amitabh Kant"], "ans": 0, "p1": "Repeated From Previous Work: Aug Static Q.170 — Vice Chairman of NITI Aayog: Suman Bery.", "p2": "Exam Fact: High-frequency static GK fact from the Aruvi Banking Awareness compendium—revise alongside current RBI/Government updates."}, {"id": 105, "pdf_num": 492, "cat": "Key Appointments & Leadership", "q": "Who is the Chairman of SBI?", "opts": ["C.S. Setty", "Dinesh Khara", "Rajnish Kumar", "Arundhati Bhattacharya"], "ans": 0, "p1": "Repeated From Previous Work: Duplicate inside this PDF (#12) — Chairman of SBI: C.S. Setty.", "p2": "Exam Fact: High-frequency static GK fact from the Aruvi Banking Awareness compendium—revise alongside current RBI/Government updates."}, {"id": 106, "pdf_num": 493, "cat": "Key Appointments & Leadership", "q": "Who is the MD & CEO of HDFC Bank?", "opts": ["Sashidhar Jagdishan", "Aditya Puri", "Kaizad Bharucha", "Paresh Sukthankar"], "ans": 0, "p1": "Repeated From Previous Work: July Static Q.16 — MD & CEO of HDFC Bank: Sashidhar Jagdishan.", "p2": "Exam Fact: High-frequency static GK fact from the Aruvi Banking Awareness compendium—revise alongside current RBI/Government updates."}, {"id": 107, "pdf_num": 494, "cat": "Key Appointments & Leadership", "q": "Who is the MD & CEO of ICICI Bank?", "opts": ["Sandeep Bakhshi", "Chanda Kochhar", "Anup Bagchi", "Sandeep Batra"], "ans": 0, "p1": "Repeated From Previous Work: Oct Static Q.108 — MD & CEO of ICICI Bank: Sandeep Bakhshi.", "p2": "Exam Fact: High-frequency static GK fact from the Aruvi Banking Awareness compendium—revise alongside current RBI/Government updates."}, {"id": 108, "pdf_num": 495, "cat": "Key Appointments & Leadership", "q": "Who is the MD & CEO of Axis Bank?", "opts": ["Amitabh Chaudhry", "Shikha Sharma", "Sandeep Bakhshi", "Uday Kotak"], "ans": 0, "p1": "Repeated From Previous Work: Aug Static Q.12 — MD & CEO of Axis Bank: Amitabh Chaudhry.", "p2": "Exam Fact: High-frequency static GK fact from the Aruvi Banking Awareness compendium—revise alongside current RBI/Government updates."}];
+
+let mode = 'learn';
+let hideAnswers = false;
+let userAnswers = {};
+
+function setup() {
+  const select = document.getElementById('catSelect');
+  const uniqueCats = [...new Set(QUESTIONS.map(q => q.cat))];
+  uniqueCats.forEach(cat => {
+    const count = QUESTIONS.filter(q => q.cat === cat).length;
+    const option = document.createElement('option');
+    option.value = cat;
+    option.textContent = `${cat} (${count})`;
+    select.appendChild(option);
+  });
+  refreshStats();
+  render();
+}
+
+function setMode(newMode) {
+  mode = newMode;
+  document.getElementById('btn-learn').classList.toggle('active', mode === 'learn');
+  document.getElementById('btn-practice').classList.toggle('active', mode === 'practice');
+  document.getElementById('blurBtn').classList.toggle('hidden', mode !== 'learn');
+  render();
+}
+
+function toggleBlur() {
+  hideAnswers = !hideAnswers;
+  document.getElementById('blurBtn').textContent = hideAnswers
+    ? '👁️ Show All Answers'
+    : '👁️ Hide Answers (Self-Test)';
+  render();
+}
+
+function getFilteredList() {
+  const cat = document.getElementById('catSelect').value;
+  const term = document.getElementById('searchBox').value.trim().toLowerCase();
+
+  return QUESTIONS.filter(item => {
+    if (cat !== 'ALL' && item.cat !== cat) return false;
+    if (!term) return true;
+    return (
+      item.q.toLowerCase().includes(term) ||
+      item.opts.some(o => o.toLowerCase().includes(term)) ||
+      item.p1.toLowerCase().includes(term) ||
+      item.p2.toLowerCase().includes(term) ||
+      String(item.pdf_num).includes(term)
+    );
+  });
+}
+
+function render() {
+  const list = getFilteredList();
+  document.getElementById('showingCount').textContent = `Showing ${list.length} question${list.length === 1 ? '' : 's'}`;
+  const container = document.getElementById('cardsContainer');
+
+  if (list.length === 0) {
+    container.innerHTML = `<div class="no-results">No questions match your filter. Clear search or switch category.</div>`;
+    return;
+  }
+
+  container.innerHTML = list
+    .map(item => (mode === 'learn' ? buildLearnCard(item) : buildPracticeCard(item)))
+    .join('');
+}
+
+function buildLearnCard(item) {
+  const answerText = item.opts[item.ans];
+  const blurClass = hideAnswers ? 'blurred' : '';
+  return `
+    <div class="card">
+      <div class="card-top">
+        <div class="badge-group">
+          <span class="badge-num">Q.${item.id}</span>
+          <span class="badge-pdf">PDF #${item.pdf_num}</span>
+        </div>
+        <span class="badge-cat">${item.cat}</span>
+      </div>
+      <div class="question-text">${item.q}</div>
+      <div class="learn-answer-box ${blurClass}" onclick="this.classList.remove('blurred')" title="Click to reveal answer">
+        ✓ Answer: ${answerText}
+      </div>
+      <div class="exam-points">
+        <div class="exam-points-heading">📌 2 Exam-Related Extra Points</div>
+        <ul>
+          <li>${item.p1}</li>
+          <li>${item.p2}</li>
+        </ul>
+      </div>
+    </div>
+  `;
+}
+
+function buildPracticeCard(item) {
+  const record = userAnswers[item.id];
+  const isAnswered = record !== undefined;
+  const letters = ['A', 'B', 'C', 'D'];
+
+  const optsMarkup = item.opts
+    .map((opt, idx) => {
+      let cls = '';
+      if (isAnswered) {
+        if (idx === item.ans) cls = 'correct';
+        else if (idx === record.picked && !record.correct) cls = 'wrong';
+      }
+      return `
+        <button class="option-btn ${cls}" ${isAnswered ? 'disabled' : ''} onclick="selectOption(${item.id}, ${idx})">
+          <span class="opt-circle">${letters[idx]}</span>
+          <span>${opt}</span>
+        </button>
+      `;
+    })
+    .join('');
+
+  const bannerMarkup = isAnswered
+    ? record.correct
+      ? `<span class="result-pill right">✓ Correct!</span>`
+      : `<span class="result-pill wrong">✕ Wrong Answer</span>`
+    : '';
+
+  return `
+    <div class="card" id="card-${item.id}">
+      <div class="card-top">
+        <div class="badge-group">
+          <span class="badge-num">Q.${item.id}</span>
+          <span class="badge-pdf">PDF #${item.pdf_num}</span>
+        </div>
+        <span class="badge-cat">${item.cat}</span>
+      </div>
+      <div class="question-text">${item.q}</div>
+      <div class="options-list">
+        ${optsMarkup}
+      </div>
+      <div class="answer-panel ${isAnswered ? 'visible' : ''}" id="panel-${item.id}">
+        <div class="result-banner">
+          ${bannerMarkup}
+          <div class="correct-label">Correct Answer: <span>${letters[item.ans]}. ${item.opts[item.ans]}</span></div>
+        </div>
+        <div class="exam-points">
+          <div class="exam-points-heading">📌 2 Exam-Related Extra Points</div>
+          <ul>
+            <li>${item.p1}</li>
+            <li>${item.p2}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+function selectOption(qId, pickedIdx) {
+  if (userAnswers[qId] !== undefined) return;
+  const item = QUESTIONS.find(q => q.id === qId);
+  if (!item) return;
+
+  userAnswers[qId] = {
+    picked: pickedIdx,
+    correct: pickedIdx === item.ans
+  };
+
+  refreshStats();
+  const cardEl = document.getElementById(`card-${qId}`);
+  if (cardEl) {
+    cardEl.outerHTML = buildPracticeCard(item);
+  }
+}
+
+function refreshStats() {
+  const keys = Object.keys(userAnswers);
+  const attempted = keys.length;
+  const correct = keys.filter(k => userAnswers[k].correct).length;
+  const wrong = attempted - correct;
+
+  document.getElementById('cnt-attempted').textContent = attempted;
+  document.getElementById('cnt-correct').textContent = correct;
+  document.getElementById('cnt-wrong').textContent = wrong;
+}
+
+function resetAll() {
+  userAnswers = {};
+  refreshStats();
+  render();
+}
+
+setup();
+</script>
+</body>
+</html>

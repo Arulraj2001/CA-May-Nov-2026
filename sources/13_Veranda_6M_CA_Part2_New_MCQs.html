@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>6-Month CA Rapid Revision (Part 2: Slides #101–#330) — New & Unique Questions — Learn & Practice (White Theme)</title>
+<style>
+  :root {
+    --bg-page: #ffffff;
+    --bg-panel: #f9fafb;
+    --bg-card: #ffffff;
+    --border-light: #e5e7eb;
+    --border-strong: #d1d5db;
+    --text-main: #111827;
+    --text-sub: #4b5563;
+    --text-muted: #6b7280;
+    --primary: #1d4ed8;
+    --primary-soft: #eff6ff;
+    --primary-border: #bfdbfe;
+    --green-bg: #f0fdf4;
+    --green-border: #22c55e;
+    --green-text: #15803d;
+    --red-bg: #fef2f2;
+    --red-border: #ef4444;
+    --red-text: #b91c1c;
+    --amber-bg: #fffbeb;
+    --amber-border: #f59e0b;
+    --amber-text: #92400e;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background-color: var(--bg-page);
+    color: var(--text-main);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Arial, sans-serif;
+    line-height: 1.6;
+  }
+
+  header {
+    background-color: #ffffff;
+    border-bottom: 1px solid var(--border-light);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 14px 20px;
+  }
+
+  .header-wrap {
+    max-width: 1060px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .title-block h1 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--text-main);
+  }
+
+  .title-block p {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+  }
+
+  .tabs {
+    display: inline-flex;
+    background-color: var(--bg-panel);
+    border: 1px solid var(--border-light);
+    border-radius: 8px;
+    padding: 4px;
+    gap: 4px;
+  }
+
+  .tab-btn {
+    border: none;
+    background: transparent;
+    color: var(--text-sub);
+    font-size: 0.88rem;
+    font-weight: 600;
+    padding: 7px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.15s ease;
+  }
+
+  .tab-btn.active {
+    background-color: #ffffff;
+    color: var(--primary);
+    border: 1px solid var(--border-light);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
+  }
+
+  .main-container {
+    max-width: 1060px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .controls-bar {
+    background-color: var(--bg-panel);
+    border: 1px solid var(--border-light);
+    border-radius: 10px;
+    padding: 12px 16px;
+    margin-bottom: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .filter-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    flex: 1;
+  }
+
+  select, input[type="text"] {
+    background-color: #ffffff;
+    color: var(--text-main);
+    border: 1px solid var(--border-strong);
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 0.875rem;
+    outline: none;
+  }
+
+  select:focus, input[type="text"]:focus {
+    border-color: var(--primary);
+  }
+
+  input[type="text"] {
+    min-width: 230px;
+  }
+
+  .score-group {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.84rem;
+    font-weight: 600;
+  }
+
+  .pill {
+    background-color: #ffffff;
+    border: 1px solid var(--border-light);
+    border-radius: 999px;
+    padding: 4px 11px;
+    color: var(--text-sub);
+  }
+
+  .pill.green {
+    background-color: var(--green-bg);
+    border-color: var(--green-border);
+    color: var(--green-text);
+  }
+
+  .pill.red {
+    background-color: var(--red-bg);
+    border-color: var(--red-border);
+    color: var(--red-text);
+  }
+
+  .action-btn {
+    background-color: #ffffff;
+    color: var(--text-main);
+    border: 1px solid var(--border-strong);
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .action-btn:hover {
+    background-color: #f3f4f6;
+  }
+
+  .learn-subbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 14px;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+  }
+
+  .card {
+    background-color: #ffffff;
+    border: 1px solid var(--border-light);
+    border-radius: 10px;
+    padding: 18px 20px;
+    margin-bottom: 14px;
+  }
+
+  .card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    gap: 8px;
+  }
+
+  .badge-group {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .badge-num {
+    background-color: var(--primary-soft);
+    color: var(--primary);
+    border: 1px solid var(--primary-border);
+    font-size: 0.78rem;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 5px;
+  }
+
+  .badge-seq {
+    background-color: var(--bg-panel);
+    color: var(--text-sub);
+    border: 1px solid var(--border-light);
+    font-size: 0.74rem;
+    font-weight: 600;
+    padding: 2px 7px;
+    border-radius: 5px;
+  }
+
+  .badge-cat {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+
+  .question-text {
+    font-size: 1.02rem;
+    font-weight: 600;
+    color: var(--text-main);
+    margin-bottom: 12px;
+  }
+
+  .learn-answer-box {
+    display: inline-block;
+    background-color: var(--green-bg);
+    border: 1px solid #bbf7d0;
+    color: var(--green-text);
+    font-weight: 700;
+    font-size: 0.94rem;
+    padding: 6px 12px;
+    border-radius: 6px;
+    margin-bottom: 12px;
+  }
+
+  .learn-answer-box.blurred {
+    filter: blur(5px);
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .exam-points {
+    background-color: var(--amber-bg);
+    border: 1px solid #fde68a;
+    border-left: 4px solid var(--amber-border);
+    border-radius: 6px;
+    padding: 10px 14px;
+  }
+
+  .exam-points-heading {
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--amber-text);
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    margin-bottom: 4px;
+  }
+
+  .exam-points ul {
+    margin-left: 18px;
+    font-size: 0.88rem;
+    color: #374151;
+  }
+
+  .exam-points li {
+    margin-bottom: 3px;
+  }
+
+  .options-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 10px;
+  }
+
+  .option-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    text-align: left;
+    background-color: #ffffff;
+    border: 1.5px solid var(--border-light);
+    border-radius: 8px;
+    padding: 11px 14px;
+    font-size: 0.92rem;
+    font-weight: 500;
+    color: var(--text-main);
+    cursor: pointer;
+    transition: all 0.15s ease;
+  }
+
+  .option-btn:hover:not(:disabled) {
+    border-color: var(--primary);
+    background-color: var(--primary-soft);
+  }
+
+  .option-btn:disabled {
+    cursor: default;
+  }
+
+  .opt-circle {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: var(--bg-panel);
+    border: 1px solid var(--border-strong);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--text-sub);
+    flex-shrink: 0;
+  }
+
+  .option-btn.correct {
+    background-color: var(--green-bg);
+    border-color: var(--green-border);
+    color: var(--green-text);
+    font-weight: 700;
+  }
+
+  .option-btn.correct .opt-circle {
+    background-color: var(--green-border);
+    border-color: var(--green-border);
+    color: #ffffff;
+  }
+
+  .option-btn.wrong {
+    background-color: var(--red-bg);
+    border-color: var(--red-border);
+    color: var(--red-text);
+    font-weight: 600;
+  }
+
+  .option-btn.wrong .opt-circle {
+    background-color: var(--red-border);
+    border-color: var(--red-border);
+    color: #ffffff;
+  }
+
+  .answer-panel {
+    display: none;
+    margin-top: 14px;
+    padding-top: 14px;
+    border-top: 1px solid var(--border-light);
+    animation: slideDown 0.18s ease-out;
+  }
+
+  .answer-panel.visible {
+    display: block;
+  }
+
+  .result-banner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+
+  .result-pill {
+    font-size: 0.84rem;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 6px;
+  }
+
+  .result-pill.right {
+    background-color: var(--green-bg);
+    color: var(--green-text);
+    border: 1px solid var(--green-border);
+  }
+
+  .result-pill.wrong {
+    background-color: var(--red-bg);
+    color: var(--red-text);
+    border: 1px solid var(--red-border);
+  }
+
+  .correct-label {
+    font-size: 0.92rem;
+    font-weight: 700;
+    color: var(--text-main);
+  }
+
+  .correct-label span {
+    color: var(--green-text);
+  }
+
+  .hidden {
+    display: none !important;
+  }
+
+  .no-results {
+    text-align: center;
+    padding: 40px 20px;
+    border: 1px dashed var(--border-strong);
+    border-radius: 10px;
+    color: var(--text-muted);
+  }
+
+  @keyframes slideDown {
+    from { opacity: 0; transform: translateY(-4px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @media (max-width: 640px) {
+    .header-wrap { flex-direction: column; align-items: flex-start; }
+    .options-list { grid-template-columns: 1fr; }
+    input[type="text"] { width: 100%; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-wrap">
+    <div class="title-block">
+      <h1>6-Month CA Rapid Revision (Part 2: Slides #101–#330) — New & Unique Questions (180 Questions)</h1>
+      <p>Pradeep Sir & Jeevitha Ma'am Session (English) | Exclusive Questions Not Covered in All 10 Previous Files</p>
+    </div>
+    <div class="tabs">
+      <button class="tab-btn active" id="btn-learn" onclick="setMode('learn')">📖 Learn Mode</button>
+      <button class="tab-btn" id="btn-practice" onclick="setMode('practice')">✍️ Practice MCQs</button>
+    </div>
+  </div>
+</header>
+
+<div class="main-container">
+  <div class="controls-bar">
+    <div class="filter-group">
+      <select id="catSelect" onchange="render()">
+        <option value="ALL">All Categories (180)</option>
+      </select>
+      <input type="text" id="searchBox" placeholder="Search question, answer, or extra points..." oninput="render()">
+    </div>
+    <div class="score-group">
+      <span class="pill">Attempted: <span id="cnt-attempted">0</span>/180</span>
+      <span class="pill green">Correct: <span id="cnt-correct">0</span></span>
+      <span class="pill red">Wrong: <span id="cnt-wrong">0</span></span>
+      <button class="action-btn" onclick="resetAll()">Reset Practice</button>
+    </div>
+  </div>
+
+  <div class="learn-subbar" id="learnSubbar">
+    <span id="showingCount">Showing 180 questions</span>
+    <button class="action-btn" id="blurBtn" onclick="toggleBlur()">👁️ Hide Answers (Self-Test)</button>
+  </div>
+
+  <div id="cardsContainer"></div>
+</div>
+
+<script>
+const QUESTIONS = [{"id": 1, "slide_q": 101, "cat": "Health, Science & Technology", "q": "India's first dengue vaccine 'Qdenga', approved by DCGI in July 2026 for individuals aged 4 to 60 years, was developed by which company?", "opts": ["Serum Institute of India", "Takeda Pharmaceutical", "Bharat Biotech", "Sanofi Pasteur"], "ans": 1, "p1": "Regulatory Approval: Approved by the Drugs Controller General of India (DCGI) in July 2026 for ages 4–60 years.", "p2": "Exam Fact: Takeda is a leading Japanese multinational biopharmaceutical company."}, {"id": 2, "slide_q": 104, "cat": "Infrastructure, Ports & Energy", "q": "Which company holds the 40-year Build, Operate and Maintain (DBFOO/PPP) concession agreement for Vizhinjam International Seaport in Kerala?", "opts": ["Adani Ports and Special Economic Zone (APSEZ)", "DP World", "APM Terminals", "Larsen & Toubro"], "ans": 0, "p1": "Concession Model: Public-Private Partnership (PPP) model for 40 years between the Kerala Government and APSEZ.", "p2": "Exam Fact: Vizhinjam (Thiruvananthapuram) is India's first deep-water automated container transshipment port."}, {"id": 3, "slide_q": 105, "cat": "Government Schemes & Initiatives", "q": "Regarding the 9th Rashtriya Poshan Maah 2026: (1) Theme: 'Hamari Anganwadi, Hamari Zimmedari'; (2) Held in Varanasi, UP (not Lucknow); (3) Observed from 9 September to 8 October 2026; (4) Led by Ministry of Women & Child Development (not Health). Which statements are correct?", "opts": ["1, 2, and 3 only", "1 and 3 only (Held in Varanasi; led by Ministry of Women & Child Development)", "2 and 4 only", "All 1, 2, 3, and 4"], "ans": 1, "p1": "Corrections: Hosted in Varanasi, Uttar Pradesh, and led by the Ministry of Women and Child Development (Union Minister: Annpurna Devi, Kodarma MP).", "p2": "Exam Fact: POSHAN Abhiyaan was originally launched on 8 March 2018 in Jhunjhunu, Rajasthan."}, {"id": 4, "slide_q": 106, "cat": "Banking, Finance & Regulatory", "q": "On World Standards Day (14 October), BIS notified hallmarking purity grades for silver bullion and coins. Which purity grades are included?", "opts": ["916, 958, and 999", "925, 958, and 990", "999.9, 999.5, and 999.0", "900, 950, and 995"], "ans": 2, "p1": "BIS Silver Bullion Grades: 999.9, 999.5, and 999.0 fine silver purity standards.", "p2": "Exam Fact: Bureau of Indian Standards (BIS) operates under the Ministry of Consumer Affairs, Food and Public Distribution."}, {"id": 5, "slide_q": 107, "cat": "International & Summits", "q": "Regarding the Southern Indian Ocean Fisheries Agreement (SIOFA): (1) India upgraded its status from Cooperating Non-Contracting Party to full Contracting Party; (2) Signed in Rome on 7 July 2006; (3) Entered into force on 21 June 2012 (not June 2008); (4) Target species include squid, toothfish, and alfonsino. Which statements are correct?", "opts": ["All 1, 2, 3, and 4", "1 and 3 only", "2 and 3 only", "1, 2, and 4 only (Entered into force in June 2012)"], "ans": 3, "p1": "Correction Note: SIOFA entered into force on 21 June 2012 (not June 2008).", "p2": "Exam Fact: Becoming a full Contracting Party strengthens India's sustainable deep-sea fishing rights in the Southern Indian Ocean."}, {"id": 6, "slide_q": 110, "cat": "Polity, Bills & Governance", "q": "Which Union Ministry launched the portal/guidelines for repurposing closed and abandoned coal mines?", "opts": ["Ministry of Power", "Ministry of Environment, Forest and Climate Change", "Ministry of Coal", "Ministry of Mines"], "ans": 2, "p1": "Nodal Ministry: Ministry of Coal (Union Cabinet Minister: G. Kishan Reddy, Secunderabad MP).", "p2": "Exam Fact: Converts closed mine voids into eco-tourism parks, pumped hydro storage, and solar energy sites."}, {"id": 7, "slide_q": 111, "cat": "Infrastructure, Ports & Energy", "q": "In which valley of Ladakh were India's first two geothermal wells commissioned in July 2026?", "opts": ["Markha Valley", "Nubra Valley", "Zanskar Valley", "Puga Valley"], "ans": 3, "p1": "Location: Puga Valley (Changthang region), eastern Ladakh.", "p2": "Exam Fact: Developed by ONGC Energy Centre to tap clean 24x7 geothermal energy in high-altitude Ladakh."}, {"id": 8, "slide_q": 112, "cat": "Banking, Finance & Regulatory", "q": "Regarding EPFO's 'Vishwas Scheme 2026': (1) Reduces penal damages under Section 14B of the EPF & MP Act, 1952; (2) Valid for 6 months from 29 June 2026; (3) Applications filed online via the EPFO portal. Which statements are correct?", "opts": ["1 and 3 only (Valid for 6 months)", "1 and 2 only", "2 and 3 only", "All 1, 2, and 3"], "ans": 0, "p1": "Correction Note: The Vishwas Scheme 2026 has a 6-month validity window to settle pending EPF penal damage disputes.", "p2": "Exam Fact: Section 14B of the EPF & MP Act, 1952 governs recovery of damages from defaulting employers."}, {"id": 9, "slide_q": 113, "cat": "National & State Affairs", "q": "Whom does Kerala's 'NORKA Private Industrial Estate Scheme' primarily aim to attract for industrial investment in the state?", "opts": ["Foreign sovereign wealth funds only", "Non-Resident Keralites (NRKs) and expatriate entrepreneurs", "Central Public Sector Enterprises", "Agricultural cooperative societies"], "ans": 1, "p1": "Target Group: Non-Resident Keralites (NRKs) and returning expatriate entrepreneurs.", "p2": "Exam Fact: Provides up to ₹3 crore reimbursement per private industrial estate project."}, {"id": 10, "slide_q": 115, "cat": "Banking, Finance & Regulatory", "q": "How many Gram Panchayats and Urban Local Bodies (ULBs) were covered under the DFS nationwide Financial Inclusion Saturation Campaign?", "opts": ["3.5 lakh", "1.5 lakh", "2.0 lakh", "2.7 lakh"], "ans": 3, "p1": "Coverage: 2.7 lakh Gram Panchayats and ULBs across India.", "p2": "Exam Fact: Conducted by the Department of Financial Services (DFS) to saturate PMJDY, PMJJBY, PMSBY, and APY enrollment."}, {"id": 11, "slide_q": 117, "cat": "National & State Affairs", "q": "Regarding the Cluster-based initiative for Assam's Muga Silk sector: (1) Aims to revive Assam's Muga silk sector; (2) Muga silk was Assam's first GI-tagged product (2007); (3) Implemented by Ministry of DoNER (not Textiles); (4) Partnered with Government of Assam (not Meghalaya) to boost output. Which statements are correct?", "opts": ["1, 2, and 3 only", "1 and 2 only (Led by Ministry of DoNER with Govt of Assam)", "2 and 4 only", "All 1, 2, 3, and 4"], "ans": 1, "p1": "Corrections: Led by the Ministry of Development of North Eastern Region (DoNER) in partnership with the Government of Assam to increase Muga silk output.", "p2": "Exam Fact: Sualkuchi in Assam is famously known as the 'Manchester of Assam' for its Muga and Eri silk weaving."}, {"id": 12, "slide_q": 121, "cat": "Polity, Bills & Governance", "q": "Which state ranked first in implementing the 'Swamitva Adhikar Abhilekh Nishpadan Evam Panjiyan Yojana'?", "opts": ["Uttar Pradesh", "Madhya Pradesh", "Rajasthan", "Maharashtra"], "ans": 1, "p1": "Top State: Madhya Pradesh (Capital: Bhopal).", "p2": "Exam Fact: Facilitates seamless mutation and registration of rural property cards generated under the SVAMITVA drone survey scheme."}, {"id": 13, "slide_q": 123, "cat": "National & State Affairs", "q": "Which police force received the President's Police Colour on 1 November 2026 during its Diamond Jubilee celebrations?", "opts": ["Punjab Police", "Delhi Police", "Haryana Police", "Chandigarh Police"], "ans": 3, "p1": "Occasion: Diamond Jubilee (60th anniversary of Chandigarh UT formation on 1 November 1966).", "p2": "Exam Fact: Chandigarh serves as the joint capital of Punjab and Haryana."}, {"id": 14, "slide_q": 125, "cat": "Health, Science & Technology", "q": "Which AI company is leading 'Project Glasswing'?", "opts": ["OpenAI", "Anthropic", "Google DeepMind", "Mistral AI"], "ans": 1, "p1": "Company: Anthropic (developer of the Claude AI models, headquartered in San Francisco, USA).", "p2": "Exam Fact: Focuses on advanced AI cybersecurity defense and vulnerability discovery."}, {"id": 15, "slide_q": 126, "cat": "Polity, Bills & Governance", "q": "Regarding the Prevention of Unfair Means in Public Examinations Rules/Amendment (July 2026): (1) Up to ₹10 crore fine for organized paper leaks; (2) Imprisonment of 5 to 10 years for individual offences (not 1–3 years); (3) Parent Act enacted in 2024; (4) High-level reform committee was chaired by Dr. K. Radhakrishnan (not Raghuram Rajan/Nandan Nilekani). Which statements are correct?", "opts": ["2 and 4 only", "1, 2, and 3 only", "1 and 3 only (5–10 years jail; committee chaired by Dr. K. Radhakrishnan)", "All 1, 2, 3, and 4"], "ans": 2, "p1": "Corrections: Individual offences carry 3–5 / 5–10 years imprisonment and up to ₹10 lakh fine (up to ₹1 crore–₹10 crore for organized institutions), and the NTA exam reform panel was chaired by former ISRO Chairman Dr. K. Radhakrishnan.", "p2": "Exam Fact: The Public Examinations (Prevention of Unfair Means) Act was enacted in 2024."}, {"id": 16, "slide_q": 128, "cat": "Infrastructure, Ports & Energy", "q": "Which company is implementing the first-of-its-kind 250 MW solar power project at Sitapur Cantonment in Uttar Pradesh?", "opts": ["NTPC Limited", "NHPC Limited", "SECI", "Tata Power Solar"], "ans": 0, "p1": "Location & Developer: Sitapur Cantonment, Uttar Pradesh — implemented by NTPC Limited (Maharatna CPSE).", "p2": "Exam Fact: NTPC was established in 1975 (Headquarters: New Delhi)."}, {"id": 17, "slide_q": 129, "cat": "Infrastructure, Ports & Energy", "q": "Regarding the Delhi-NCR Old Commercial Vehicle Replacement Scheme (2026): (1) 8% discount on ex-showroom price for replacement vehicles; (2) Interest subvention is 5% for 5 years (not 3% for 3 years); (3) Targets BS-IV and below trucks & buses; (4) Funds routed through NCRPB (not DDA). Which statements are correct?", "opts": ["1, 2, and 3 only", "1 and 3 only (5% interest subvention for 5 years; routed via NCRPB)", "2 and 4 only", "All 1, 2, 3, and 4"], "ans": 1, "p1": "Corrections: Interest subvention is 5% for 5 years, and funds are routed through the National Capital Region Planning Board (NCRPB).", "p2": "Exam Fact: Aims to curb vehicular particulate pollution across Delhi-NCR."}, {"id": 18, "slide_q": 131, "cat": "Infrastructure, Ports & Energy", "q": "Regarding CAFE-III (Corporate Average Fuel Efficiency) Norms: (1) Target CO2 limit is 91.7 g/km (or 16.7% reduction); (2) Applies to M1 passenger vehicle category; (3) Reference weight increased from 1,082 kg to 1,229 kg; (4) Strong hybrids get 1.6x super-credit (while BEVs get 3x). Which statements are correct?", "opts": ["All 1, 2, 3, and 4", "1, 2, and 3 only", "2 and 4 only", "1 and 2 only (Weight increased from 1,082 to 1,229 kg; Strong hybrids get 1.6x)"], "ans": 3, "p1": "Corrections: Reference vehicle weight was increased from 1,082 kg to 1,229 kg, and Strong Hybrids receive 1.6x super-credits (3x is for Battery Electric Vehicles).", "p2": "Exam Fact: CAFE norms are enforced by the Bureau of Energy Efficiency (BEE) under the Ministry of Power."}, {"id": 19, "slide_q": 133, "cat": "Health, Science & Technology", "q": "Where is the new DRDO weapon and missile testing range (approved by the West Bengal government) located?", "opts": ["Balasore (Chandipur), Odisha", "Junput, West Bengal", "Pokhran, Rajasthan", "Sriharikota, Andhra Pradesh"], "ans": 1, "p1": "Location: Junput (Purba Medinipur district, coastal West Bengal), complementing DRDO's ITR Chandipur in Odisha.", "p2": "Exam Fact: DRDO was established in 1958 (HQ: New Delhi; Chairman: Dr. Samir V. Kamat)."}, {"id": 20, "slide_q": 134, "cat": "Government Schemes & Initiatives", "q": "Regarding the National Social Assistance Programme (NSAP): (1) Extended for FY 2027–31; (2) Outlay is ₹53,428 crore (not ₹35,428 crore); (3) Includes Indira Gandhi National Old Age Pension Scheme (IGNOAPS) and widow/disability pensions. Which statements are correct?", "opts": ["2 and 3 only", "1 and 2 only", "1, 3, and 4 (Outlay is ₹53,428 crore)", "All 1, 2, 3, and 4"], "ans": 2, "p1": "Correction Note: Total approved outlay for NSAP (FY 2027–31) is ₹53,428 crore (not ₹35,428 crore).", "p2": "Exam Fact: NSAP is a Centrally Sponsored Scheme administered by the Ministry of Rural Development."}, {"id": 21, "slide_q": 135, "cat": "Infrastructure, Ports & Energy", "q": "Between which two stations in Gujarat was India's first LNG-powered (Liquefied Natural Gas) train flagged off in September 2026?", "opts": ["Rajkot and Jamnagar", "Ahmedabad and Vadodara", "Surat and Valsad", "Sabarmati and Mahesana"], "ans": 3, "p1": "Route: Sabarmati to Mahesana (Mehsana) in Gujarat (Western Railway).", "p2": "Exam Fact: Dual-fuel DEMU train retrofitted to run on Liquefied Natural Gas (LNG), cutting diesel emissions."}, {"id": 22, "slide_q": 136, "cat": "Infrastructure, Ports & Energy", "q": "Regarding the 'Samudra Manthan' scheme: (1) Outlay is ₹84,084 crore; (2) Boosts offshore oil and gas exploration; (3) 100% Central Sector funding (not 60:40); (4) Targets 80 MMT domestic oil & gas production annually (not 50). Which statements are correct?", "opts": ["1 and 2 only (100% Central Sector; target 80 MMT)", "1, 2, and 3 only", "2 and 4 only", "All 1, 2, 3, and 4"], "ans": 0, "p1": "Corrections: Samudra Manthan is 100% Central Sector funded (not 60:40), and targets 80 MMT annual domestic oil & gas output.", "p2": "Exam Fact: Regional Rural Banks (RRBs) follow the 50:35:15 shareholding pattern (Centre 50%, Sponsor Bank 35%, State Govt 15%)."}, {"id": 23, "slide_q": 137, "cat": "National & State Affairs", "q": "Chhattisgarh became the first Indian state to adopt a Risk-Based Business Approval System under which law/framework?", "opts": ["Jan Vishwas Act, 2023", "Ease of Doing Business Rules / Act, 2026", "Chhattisgarh Industrial Policy, 2024", "MSME Facilitation Act, 2020"], "ans": 1, "p1": "Framework: Ease of Doing Business 2026 rules in Chhattisgarh.", "p2": "Exam Fact: Classifies industries by environmental/safety risk tiers to grant instant deemed approvals for low-risk enterprises."}, {"id": 24, "slide_q": 139, "cat": "Economy & Agriculture", "q": "Regarding the 'Bhavya Rasayan' (Bulk Drug & Chemical Parks) scheme: (1) Outlay is ₹3,030 crore (not ₹5,030 crore); (2) Establishes 3 Chemical Parks in 5 years; (3) Central grant up to ₹1,000 crore per park; (4) States must contribute at least ₹500 crore per park. Which statements are correct?", "opts": ["All 1, 2, 3, and 4", "1 and 2 only", "1, 3, and 4 only", "2, 3, and 4 only (Total outlay is ₹3,030 crore)"], "ans": 3, "p1": "Correction Note: Statement 1 is incorrect because the total outlay is ₹3,030 crore (not ₹5,030 crore).", "p2": "Exam Fact: Reduces India's import dependence on specialty chemicals and Active Pharmaceutical Ingredients (APIs)."}, {"id": 25, "slide_q": 140, "cat": "Environment, Parks & GI Tags", "q": "Which ancient temple in Telangana was declared a Monument of National Importance by the Archaeological Survey of India (ASI) in September 2026?", "opts": ["Gollathagudi Temple (Mahabubnagar)", "Ramappa Temple (Mulugu)", "Thousand Pillar Temple (Hanamkonda)", "Alampur Navabrahma Temple"], "ans": 0, "p1": "Location: Gollathagudi (Gollagudi) Temple in Mahabubnagar district, Telangana (an ancient 9th–10th century Jain/Hindu brick temple complex).", "p2": "Exam Fact: Ramappa (Kakatiya Rudreshwara) Temple in Telangana is already a UNESCO World Heritage Site (2021)."}, {"id": 26, "slide_q": 141, "cat": "Polity, Bills & Governance", "q": "Regarding the Mediation Council of India: (1) Set up under Section 31 of the Mediation Act, 2023; (2) Headquartered in New Delhi (not Mumbai); (3) Notified by Department of Legal Affairs; (4) Regulates mediators and mediation institutes. Which statements are correct?", "opts": ["1 and 2 only", "1, 3, and 4 only (Headquartered in New Delhi)", "2 and 3 only", "All 1, 2, 3, and 4"], "ans": 1, "p1": "Correction Note: The Mediation Council of India is headquartered in New Delhi (not Mumbai).", "p2": "Exam Fact: The Mediation Act, 2023 promotes institutional and online Alternative Dispute Resolution (ADR) to reduce court pendency."}, {"id": 27, "slide_q": 142, "cat": "Polity, Bills & Governance", "q": "Where was the 3rd permanent/circuit judicial seat of the High Court of Jammu & Kashmir and Ladakh established?", "opts": ["Anantnag, J&K", "Kargil, Ladakh", "Leh, Ladakh", "Udhampur, J&K"], "ans": 2, "p1": "Judicial Seats: 1st — Srinagar; 2nd — Jammu; 3rd — Leh (Ladakh).", "p2": "Exam Fact: Improves access to higher judiciary for residents of Ladakh."}, {"id": 28, "slide_q": 143, "cat": "Government Schemes & Initiatives", "q": "Regarding the 'MAHA Water Mission' (Jal Shakti): (1) Launched by Ministry of Jal Shakti with Anusandhan National Research Foundation (ANRF); (2) Total outlay is ₹200 crore over 5 years (not ₹500 crore); (3) Up to ₹20 crore per multi-disciplinary consortium; (4) MoU signed between ISRO and Department of Water Resources. Which statements are correct?", "opts": ["All 1, 2, 3, and 4", "1 and 3 only", "2 and 3 only", "1, 2, and 4 (Outlay is ₹200 crore over 5 years)"], "ans": 3, "p1": "Correction Note: Total outlay is ₹200 crore over 5 years (not ₹500 crore).", "p2": "Exam Fact: ANRF (Anusandhan National Research Foundation) was established under the ANRF Act, 2023 (chaired by PM Modi)."}, {"id": 29, "slide_q": 145, "cat": "Economy & Agriculture", "q": "With the base year revised to 2022–23, how many Core Industries are tracked in the updated Index of Core Industries (ICI) series?", "opts": ["8", "9", "10", "12"], "ans": 1, "p1": "Revision Update: Expanded from 8 Core Industries to 9 Core Industries in the new 2022–23 base series.", "p2": "Exam Fact: Traditional 8 core industries were Coal, Crude Oil, Natural Gas, Refinery Products, Fertilizers, Steel, Cement, and Electricity."}, {"id": 30, "slide_q": 146, "cat": "Government Schemes & Initiatives", "q": "Regarding PM Viksit Bharat Rozgar Yojana: (1) Total outlay is ₹99,446 crore; (2) Effective from 1 August 2025 to 31 July 2027 (not April 2025–March 2027); (3) Benefits 1.92 crore first-time employees; (4) Implemented by Ministry of Labour & Employment via EPFO. Which statements are correct?", "opts": ["2 and 3 only", "1 and 2 only", "1, 3, and 4 only (Effective 1 August 2025 to 31 July 2027)", "All 1, 2, 3, and 4"], "ans": 2, "p1": "Correction Note: The implementation window is 1 August 2025 to 31 July 2027 (not April 2025–March 2027).", "p2": "Exam Fact: Employment Linked Incentive (ELI) scheme incentivizing formal job creation through EPFO."}, {"id": 31, "slide_q": 148, "cat": "Banking, Finance & Regulatory", "q": "Regarding PFRDA's 'NPS Swasthya' guidelines: (1) Maximum health coverage is ₹30 lakh; (2) Entry age is 18 to 70 years (not 21–60); (3) Subscribers can withdraw up to 25% of contributions; (4) Transferable to spouse/children. Which statements are correct?", "opts": ["1, 3, and 4 only (Entry age is 18 to 70 years)", "1 and 2 only", "2 and 3 only", "All 1, 2, 3, and 4"], "ans": 0, "p1": "Correction Note: Entry age under NPS Swasthya is 18 to 70 years (not 21 to 60).", "p2": "Exam Fact: Integrates long-term medical expense coverage within the National Pension System."}, {"id": 32, "slide_q": 149, "cat": "Infrastructure, Ports & Energy", "q": "In the 3rd round of PPAC (Project Appraisal Committee), how many greenfield airport proposals were granted 'In-Principle' approval?", "opts": ["6", "11", "8", "15"], "ans": 1, "p1": "Approval Count: 11 greenfield airports granted In-Principle approval.", "p2": "Exam Fact: Greenfield airports are built from scratch on undeveloped land (e.g., Jewar, Bhogapuram, Mopa)."}, {"id": 33, "slide_q": 150, "cat": "National & State Affairs", "q": "Which Indian city was declared the 'World's First Drug-Free City' by Union Home Minister Amit Shah?", "opts": ["Panaji", "Indore", "Chandigarh", "Gangtok"], "ans": 2, "p1": "City: Chandigarh (Union Territory).", "p2": "Exam Fact: Achieved through zero-tolerance enforcement, rehabilitation centres, and community vigilance under Nasha Mukt Bharat Abhiyaan."}, {"id": 34, "slide_q": 152, "cat": "International & Summits", "q": "Which four countries joined the 'Bay of Bengal Network on Ocean Research & Fisheries' (BOB-NORF)?", "opts": ["India, Sri Lanka, Bangladesh, and Maldives", "India, Thailand, Myanmar, and Indonesia", "India, Bangladesh, Myanmar, and Thailand", "India, Sri Lanka, Mauritius, and Seychelles"], "ans": 0, "p1": "Member Nations: India, Sri Lanka, Bangladesh, and Maldives.", "p2": "Exam Fact: Enhances marine biodiversity research, blue economy cooperation, and sustainable fisheries in the Bay of Bengal."}, {"id": 35, "slide_q": 153, "cat": "Environment, Parks & GI Tags", "q": "In which Union Territory is the 'Krest Mud Volcano' complex (recently added to India's UNESCO Tentative List) located?", "opts": ["Lakshadweep", "Andaman and Nicobar Islands", "Puducherry", "Daman & Diu"], "ans": 1, "p1": "Location: Andaman and Nicobar Islands (Baratang Island is also famous for India's active mud volcanoes).", "p2": "Exam Fact: Mud volcanoes are formed by subterranean pressurized gases and mud eruptions rather than molten lava."}, {"id": 36, "slide_q": 154, "cat": "International & Summits", "q": "The 49th Session of the Codex Alimentarius Commission (CAC) is a joint food standards body of which two UN organizations?", "opts": ["WTO and UNCTAD", "UNEP and UNDP", "FAO and WHO", "UNICEF and WFP"], "ans": 2, "p1": "Parent Bodies: Food and Agriculture Organization (FAO, founded 1945, HQ: Rome) and World Health Organization (WHO, founded 1948, HQ: Geneva).", "p2": "Exam Fact: Codex Alimentarius ('Food Code', established 1963) sets international food safety and quality standards."}, {"id": 37, "slide_q": 155, "cat": "International & Summits", "q": "In which capital city did the Ministry of External Affairs (MEA) open a new Indian Resident Mission (Embassy) in Costa Rica?", "opts": ["Managua", "Panama City", "San Salvador", "San José"], "ans": 3, "p1": "Capital & Currency: San José is the capital of Costa Rica (Currency: Costa Rican Colón).", "p2": "Exam Fact: Costa Rica is a Central American nation renowned for abolishing its standing army in 1948 and leading in eco-tourism."}, {"id": 38, "slide_q": 156, "cat": "International & Summits", "q": "Regarding the AI Global Impact / Coalition launched in July 2026: (1) Comprises 44 founding members; (2) Co-chaired by Paul Kagame (President of Rwanda) and Marc Benioff (Salesforce CEO); (3) Indian founding members include Mukesh Ambani, Lakshmi N. Mittal, and Sunil Bharti Mittal (not Gautam Adani). Which statements are correct?", "opts": ["1 and 2 only (Indian members: Mukesh Ambani, Lakshmi Mittal & Sunil Bharti Mittal)", "1 and 3 only", "2 and 3 only", "All 1, 2, and 3"], "ans": 0, "p1": "Correction Note: Statement 3 is incorrect because Gautam Adani is not the sole Indian member; Mukesh Ambani, Lakshmi N. Mittal, and Sunil Bharti Mittal represent India.", "p2": "Exam Fact: Paul Kagame is the President of Rwanda (Capital: Kigali)."}, {"id": 39, "slide_q": 157, "cat": "Science, Space & Environment", "q": "The US Defense Security Cooperation Agency (DSCA) notified a USD 482.2 million defence sale to India covering M777A2 howitzers and support for which attack helicopter?", "opts": ["CH-47F Chinook", "AH-64E Apache", "MH-60R Seahawk", "HAL Prachand"], "ans": 1, "p1": "Platform: Boeing AH-64E Apache multi-role attack helicopter (operated by both the Indian Air Force and Indian Army).", "p2": "Exam Fact: M777A2 is an ultra-lightweight 155 mm towed howitzer deployed in high-altitude Himalayan sectors."}, {"id": 40, "slide_q": 159, "cat": "Banking, Finance & Regulatory", "q": "Regarding the Financial Action Task Force (FATF): (1) Global money laundering & terrorist financing watchdog; (3) Headquartered in Paris, France (at OECD); (4) India became a full member in 2010. Which statements are correct?", "opts": ["All 1, 2, 3, and 4", "1 and 2 only", "2 and 4 only", "1 and 3 only"], "ans": 3, "p1": "Key Facts: FATF was founded in 1989 by the G7 (HQ: Paris, France); India joined as the 34th member in 2010.", "p2": "Exam Fact: FATF maintains the 'Grey List' (Jurisdictions under Increased Monitoring) and 'Black List' (High-Risk Jurisdictions)."}, {"id": 41, "slide_q": 160, "cat": "Environment, Parks & GI Tags", "q": "Which of the following sites in Madhya Pradesh is NOT among the 5 newly added sites on India's UNESCO Tentative List?", "opts": ["Namdapha National Park", "Bhojeshwar Mahadev Temple (Bhojpur)", "Rock Art Sites of Chambal Valley", "Khooni Bhandara (Burhanpur) & Gond Monuments of Ramnagar"], "ans": 0, "p1": "Location Distinction: Namdapha National Park is located in Arunachal Pradesh (not Madhya Pradesh).", "p2": "Exam Fact: Madhya Pradesh's UNESCO World Heritage Sites are Khajuraho, Sanchi Stupa, and Rock Shelters of Bhimbetka."}, {"id": 42, "slide_q": 161, "cat": "International & Summits", "q": "Which city hosted the 45th CCAMLR (Commission for the Conservation of Antarctic Marine Living Resources) meeting where India reiterated its stand on Southern Ocean conservation?", "opts": ["Christchurch, New Zealand", "Hobart, Australia", "Cape Town, South Africa", "Ushuaia, Argentina"], "ans": 1, "p1": "Host City: Hobart (Tasmania), Australia — permanent headquarters of CCAMLR.", "p2": "Exam Fact: India operates two active research stations in Antarctica—Maitri and Bharati (Dakshin Gangotri was the first, now decommissioned)."}, {"id": 43, "slide_q": 162, "cat": "International & Summits", "q": "Which country chaired/hosted the 16th BRICS National Security Advisers (NSAs) Meeting?", "opts": ["Russia", "Brazil", "India", "South Africa"], "ans": 2, "p1": "Chair: India (National Security Adviser: Ajit Doval).", "p2": "Exam Fact: India holds the BRICS Chairmanship in 2026."}, {"id": 44, "slide_q": 163, "cat": "International & Summits", "q": "Regarding the Red Sea / Islamic Defence Alliance formed in August 2026: (1) Comprises 14 founding members led by Saudi Arabia; (2) Secures the Red Sea, Bab-el-Mandeb Strait, and Gulf of Aden; (3) India is NOT a founding member (includes Egypt, Pakistan, Bangladesh); (4) Permanent HQ is in Saudi Arabia (not Egypt). Which statements are correct?", "opts": ["All 1, 2, 3, and 4", "1, 2, and 3 only", "2 and 4 only", "1 and 2 only (India is not a member; HQ is in Saudi Arabia)"], "ans": 3, "p1": "Corrections: India is not among the founding members, and the permanent headquarters is in Saudi Arabia (not Egypt).", "p2": "Exam Fact: The Bab-el-Mandeb Strait connects the Red Sea to the Gulf of Aden and Indian Ocean."}, {"id": 45, "slide_q": 164, "cat": "Banking, Finance & Regulatory", "q": "Which Central Asian country became the 10th member (and first Central Asian member) of the BRICS New Development Bank (NDB)?", "opts": ["Uzbekistan", "Kazakhstan", "Kyrgyzstan", "Tajikistan"], "ans": 0, "p1": "Milestone: Uzbekistan became the 10th member of NDB (Capital: Tashkent | Currency: Uzbekistani Som).", "p2": "Exam Fact: New Development Bank (NDB) was founded in 2014 by BRICS nations (HQ: Shanghai, China; President: Dilma Rousseff)."}, {"id": 46, "slide_q": 167, "cat": "Environment, Parks & GI Tags", "q": "At FAO's COFO 28 (Committee on Forestry), what is India's global ranking for average annual net forest area gain under the Global Forest Resources Assessment 2025?", "opts": ["5th", "1st", "2nd", "3rd"], "ans": 3, "p1": "Global Ranking: India ranked 3rd globally in net annual forest area gain (after China and Australia).", "p2": "Exam Fact: FAO (Food and Agriculture Organization) is headquartered in Rome, Italy."}, {"id": 47, "slide_q": 168, "cat": "International & Summits", "q": "Which country became the 116th member to ratify/join the International Solar Alliance (ISA)?", "opts": ["The Bahamas", "Spain", "Paraguay", "Armenia"], "ans": 0, "p1": "Country: The Bahamas (Capital: Nassau | Currency: Bahamian Dollar).", "p2": "Exam Fact: ISA was co-founded by India and France in 2015 and is headquartered in Gurugram, Haryana (Director General: Ashish Khanna)."}, {"id": 48, "slide_q": 169, "cat": "International & Summits", "q": "Regarding the Coalition of Finance Ministers for Climate Action: (1) Drives climate-aligned fiscal policy; (2) Launched in 2019 (or Helsinki Principles) — not announced in Washington D.C. in 2020 (launched at Spring/Bangkok/Helsinki meetings); (3) India is a member. Which statements are correct?", "opts": ["1 and 2 only", "1, 3, and 4 (Announced in Bangkok/Helsinki rather than Washington D.C. in 2020)", "2 only", "All 1, 2, 3, and 4"], "ans": 1, "p1": "Correction Note: Statement 2 is incorrect (announced in Bangkok rather than Washington D.C. in 2020).", "p2": "Exam Fact: Brings together fiscal and economic policymakers from over 90 countries to mainstream climate action into economic policy."}, {"id": 49, "slide_q": 170, "cat": "Awards & Festivals", "q": "What rank did India achieve at the WorldSkills Competition 2026 held in Shanghai, China?", "opts": ["8th", "5th", "10th", "13th"], "ans": 2, "p1": "Rank & Host: India finished 10th overall at WorldSkills Shanghai 2026.", "p2": "Exam Fact: WorldSkills is the world's premier vocational education and skills excellence competition."}, {"id": 50, "slide_q": 173, "cat": "Science, Space & Environment", "q": "Regarding the Critical Minerals & Recycling Innovation Centre: (1) Launched at IIT Bombay (not IIT Delhi); (2) Inaugurated by Union Coal & Mines Minister G. Kishan Reddy in New Delhi (not UK PM in London); (3) Supports India's National Critical Mineral Mission. Which statements are correct?", "opts": ["1 and 2 only", "1 and 3 only (Inaugurated by Union Minister G. Kishan Reddy)", "2 and 3 only", "All 1, 2, and 3"], "ans": 1, "p1": "Correction Note: Statement 2 is incorrect because it was launched by Union Minister G. Kishan Reddy in New Delhi (not by the UK PM in London).", "p2": "Exam Fact: Critical minerals like lithium, cobalt, nickel, and rare earth elements are vital for EV batteries and semiconductors."}, {"id": 51, "slide_q": 174, "cat": "International & Summits", "q": "In which city did India sign the Host Country Agreement for the regional office of the International Organization for Migration / partner international body?", "opts": ["Geneva, Switzerland", "New Delhi, India", "Vienna, Austria", "Bangkok, Thailand"], "ans": 2, "p1": "City: Vienna, Austria (major UN headquarters hub alongside New York, Geneva, and Nairobi).", "p2": "Exam Fact: Vienna hosts IAEA, UNIDO, UNODC, UNOOSA, and OPEC."}, {"id": 52, "slide_q": 175, "cat": "Science, Space & Environment", "q": "Türkiye joined the Artemis Accords in September 2026. How many countries in total had joined the Artemis Accords up to that point?", "opts": ["72", "65", "68", "71"], "ans": 3, "p1": "Sequence: Türkiye became the 71st signatory (followed later by Djibouti as the 72nd signatory).", "p2": "Exam Fact: Initiated by NASA and the US State Department in 2020."}, {"id": 53, "slide_q": 177, "cat": "International & Summits", "q": "PM Narendra Modi hosted the Prime Minister of which country in Jodhpur, Rajasthan on 4 July 2026 (launching a modified bilateral scheme)?", "opts": ["Australia", "New Zealand", "Mauritius", "Singapore"], "ans": 1, "p1": "Venue: Jodhpur ('Blue City'), Rajasthan.", "p2": "Exam Fact: Prime Minister of New Zealand: Christopher Luxon."}, {"id": 54, "slide_q": 178, "cat": "International & Summits", "q": "Regarding Venezuela's withdrawal from the Rome Statute (ICC) in August 2026: (1) Under Article 127, withdrawal takes effect 1 year after notification; (2) Venezuela ratified the Rome Statute in 2000 (not 2012); (3) ICC is headquartered in The Hague, Netherlands; (4) Rome Statute was adopted in 1998. Which statements are correct?", "opts": ["2 and 3 only", "1 and 2 only", "1, 3, and 4 only (Venezuela joined in 2000, not 2012)", "All 1, 2, 3, and 4"], "ans": 2, "p1": "Correction Note: Venezuela ratified the Rome Statute in June 2000 (not 2012); under Article 127, withdrawal takes effect 12 months after written notification to the UN Secretary-General.", "p2": "Exam Fact: The Rome Statute was adopted on 17 July 1998 and entered into force on 1 July 2002."}, {"id": 55, "slide_q": 179, "cat": "International & Summits", "q": "For which Caribbean nation did India announce a USD 500 million Line of Credit (LoC) during bilateral summit talks?", "opts": ["Barbados", "Trinidad and Tobago", "Guyana", "Antigua and Barbuda"], "ans": 3, "p1": "Country: Antigua and Barbuda (Capital: St. John's | Currency: East Caribbean Dollar).", "p2": "Exam Fact: Supports resilient infrastructure, renewable energy, and healthcare projects in CARICOM nations."}, {"id": 56, "slide_q": 180, "cat": "International & Summits", "q": "At which summit in Paris did European nations and Ukraine announce a joint anti-ballistic missile coalition in 2026?", "opts": ["Coalition of the Willing Summit, Paris", "G7 Summit, Évian", "NATO Summit, Ankara", "Munich Security Conference"], "ans": 0, "p1": "Venue: Paris, France.", "p2": "Exam Fact: Strengthens integrated European air and ballistic missile defense."}, {"id": 57, "slide_q": 181, "cat": "Science, Space & Environment", "q": "Regarding the International AI Safety & Governance Coalition (September 2026): (1) India joined 25 other countries; (2) Led by the United States / NIST (not European Union); (3) Signed/represented by MoS Jitin Prasada. Which statements are correct?", "opts": ["1 and 2 only", "1 and 3 only (Led by the United States, not EU)", "2 and 3 only", "All 1, 2, and 3"], "ans": 1, "p1": "Correction Note: Statement 2 is incorrect because the coalition is led by the United States (not the European Union).", "p2": "Exam Fact: Jitin Prasada is Minister of State in MeitY and Commerce & Industry."}, {"id": 58, "slide_q": 182, "cat": "International & Summits", "q": "What is the total value of the 8 High-Impact Community Development Projects (HICDPs) signed between India and Nepal?", "opts": ["NPR 1.2 billion", "NPR 500 million", "NPR 803 million", "NPR 650 million"], "ans": 2, "p1": "Value: NPR 803 million (Nepalese Rupees).", "p2": "Exam Fact: Funds education, healthcare, and drinking water community projects across Nepal."}, {"id": 59, "slide_q": 183, "cat": "International & Summits", "q": "Which of the following countries is NOT a dialogue partner in the Global Compact Programme (GCP)?", "opts": ["Australia", "India", "Japan", "France"], "ans": 3, "p1": "Exclusion: France is not listed among the dialogue partners.", "p2": "Exam Fact: Focuses on Indo-Pacific maritime and development cooperation."}, {"id": 60, "slide_q": 184, "cat": "International & Summits", "q": "Regarding the Global Health & Space Announcements: (1) Held in Berlin, Germany (World Health Summit); (2) Commitments worth ~USD 20 billion; (3) ISRO signed a space cooperation partnership. Which statements are correct?", "opts": ["2 and 3 only", "1 and 2 only", "1 and 3 only", "All 1, 2, and 3"], "ans": 0, "p1": "Key Details: Commitments totaled USD 20 billion alongside ISRO's bilateral space cooperation agreement.", "p2": "Exam Fact: World Health Summit is held annually in Berlin, Germany."}, {"id": 61, "slide_q": 185, "cat": "International & Summits", "q": "In which Saudi Arabian city did India and Saudi Arabia sign an MoU on Water Resources Cooperation during the inaugural Saudi Water Week?", "opts": ["Riyadh", "Jeddah", "Dammam", "Mecca"], "ans": 1, "p1": "Host City: Jeddah, Saudi Arabia (located on the Red Sea coast).", "p2": "Exam Fact: Covers desalination, wastewater recycling, and smart water management technologies."}, {"id": 62, "slide_q": 187, "cat": "International & Summits", "q": "Regarding the India–EU / Bilateral Summit Statements: (1) First two statements on strategic & trade roadmap are accurate; (2) Statements 3 and 4 contain factual errors. Which statements are correct?", "opts": ["All 1, 2, 3, and 4", "1 and 3 only", "2 and 4 only", "1 and 2 only"], "ans": 3, "p1": "Summary: Statements 1 and 2 are correct while Statements 3 and 4 are incorrect.", "p2": "Exam Fact: The European Union is headquartered in Brussels, Belgium."}, {"id": 63, "slide_q": 188, "cat": "International & Summits", "q": "Under what label did Iran designate the UK Royal Navy and Royal Air Force in retaliation for Western sanctions?", "opts": ["Hostile Group / Terrorist Entity Label", "Axis of Aggression", "Non-State Combatant Force", "Sanctioned Maritime Bloc"], "ans": 0, "p1": "Designation: Hostile Group / Terrorist Organization designation by Iran.", "p2": "Exam Fact: Capital of Iran: Tehran | Currency: Iranian Rial."}, {"id": 64, "slide_q": 189, "cat": "Sports & Tournaments", "q": "Which country is hosting the postponed AFC Asian Cup (rescheduled to December 2027 – January 2028)?", "opts": ["Qatar", "Saudi Arabia", "UAE", "Japan"], "ans": 1, "p1": "Host Country: Saudi Arabia (AFC = Asian Football Confederation, HQ: Kuala Lumpur, Malaysia).", "p2": "Exam Fact: Qatar hosted and won the 2023 AFC Asian Cup."}, {"id": 65, "slide_q": 190, "cat": "International & Summits", "q": "Regarding India–Singapore Bilateral Relations: (1) 3rd India–Singapore Ministerial Roundtable (ISMR) held in 2026; (2) Elevated to Comprehensive Strategic Partnership in September 2024; (3) MoU signed between FSSAI and Singapore Food Agency (SFA). Which statements are correct?", "opts": ["2 and 3 only", "1 and 2 only", "All 1, 2, and 3", "1 and 3 only"], "ans": 2, "p1": "Key Milestones: Elevated to Comprehensive Strategic Partnership during PM Modi's visit in September 2024; FSSAI and SFA signed food safety cooperation.", "p2": "Exam Fact: Singapore is among the top sources of FDI equity inflows into India."}, {"id": 66, "slide_q": 191, "cat": "International & Summits", "q": "Which area-accurate world map projection was adopted under a global resolution in September 2026 to replace distorted Mercator maps?", "opts": ["Winkel tripel projection", "Peters projection", "Robinson projection", "Equal Earth projection"], "ans": 3, "p1": "Projection Name: Equal Earth map projection (created in 2018 by Bojan Šavrič, Tom Patterson, and Bernhard Jenny).", "p2": "Exam Fact: Accurately represents the true relative land sizes of Africa, South America, and Asia compared to high-latitude regions."}, {"id": 67, "slide_q": 193, "cat": "Health, Science & Technology", "q": "The World Health Organization (WHO) announced the closure of two circulating vaccine-derived poliovirus (cVDPV) outbreaks. Which country was NOT part of this specific closure announcement?", "opts": ["Madagascar", "Nigeria", "Mozambique", "DR Congo"], "ans": 1, "p1": "Exclusion: Nigeria was not among the countries in that specific outbreak closure notice.", "p2": "Exam Fact: India was officially certified polio-free by WHO in March 2014."}, {"id": 68, "slide_q": 194, "cat": "International & Summits", "q": "Regarding WTO Ministerial Conferences: (1) Statement 1 is correct; (2) MC12 was held in Geneva, Switzerland (not MC13 in Abu Dhabi in that statement); (3) Statement 3 is correct. Which statements are correct?", "opts": ["2 and 3 only", "1 and 2 only", "1 and 3 only (MC12 was held in Geneva)", "All 1, 2, and 3"], "ans": 2, "p1": "Correction Note: The 12th WTO Ministerial Conference (MC12) was held in Geneva, Switzerland (MC13 was held in Abu Dhabi in Feb 2024).", "p2": "Exam Fact: WTO is headquartered in Geneva, Switzerland (Director-General: Ngozi Okonjo-Iweala)."}, {"id": 69, "slide_q": 195, "cat": "International & Summits", "q": "Under Myanmar's leader Min Aung Hlaing, which Myanmar business chamber co-organized the India–Myanmar Business Conclave?", "opts": ["Mekong Business Chamber", "ASEAN Business Advisory Council", "Myanmar Trade Promotion Organization", "UMFCCI (Union of Myanmar Federation of Chambers of Commerce and Industry)"], "ans": 3, "p1": "Partner Body: Union of Myanmar Federation of Chambers of Commerce and Industry (UMFCCI).", "p2": "Exam Fact: Capital of Myanmar: Naypyidaw | Currency: Myanmar Kyat."}, {"id": 70, "slide_q": 196, "cat": "International & Summits", "q": "The Pacific Island nation of Nauru was renamed as which official title?", "opts": ["Pacific Republic of Nauru (Naurio)", "Commonwealth of Nauru", "Federated States of Nauru", "Sovereign Atoll of Nauru"], "ans": 0, "p1": "Country Profile: Nauru is the world's smallest island nation and third-smallest country by area (after Vatican City and Monaco).", "p2": "Exam Fact: Nauru has no official capital city (Yaren serves as the de facto seat of government) and uses the Australian Dollar."}, {"id": 71, "slide_q": 197, "cat": "International & Summits", "q": "Regarding India–Japan Joint Crediting Mechanism (JCM) & bilateral cooperation: (1) JCM operates under Article 6.2 of the Paris Agreement; (2) Signed/operationalized in 2026; (3) Statement 4 is incorrect (historical date was 2010 rather than the stated year). Which statements are correct?", "opts": ["1 and 4 only", "1, 2, and 3 only", "2 and 4 only", "All 1, 2, 3, and 4"], "ans": 1, "p1": "Mechanism: Joint Crediting Mechanism (JCM) facilitates diffusion of low-carbon technologies between Japan and partner countries under Article 6.2 of the Paris Agreement.", "p2": "Exam Fact: Capital of Japan: Tokyo | PM: Sanae Takaichi | Currency: Japanese Yen."}, {"id": 72, "slide_q": 198, "cat": "Economy & Agriculture", "q": "Which research institute in Kochi, Kerala hosted the meeting launching the 'BOB-FO' (Bay of Bengal Fisheries) initiative?", "opts": ["MPEDA, Kochi", "ICAR-CIFT, Kochi", "ICAR-CMFRI (Central Marine Fisheries Research Institute), Kochi", "NIO, Goa"], "ans": 2, "p1": "Host Institute: ICAR-Central Marine Fisheries Research Institute (CMFRI), Kochi, Kerala.", "p2": "Exam Fact: CMFRI is India's premier marine fisheries research institute under ICAR."}, {"id": 73, "slide_q": 199, "cat": "Science, Space & Environment", "q": "In June 2026, Russian President Vladimir Putin offered India joint production of which Russian 5th-generation stealth fighter aircraft?", "opts": ["Tupolev Tu-160", "Mikoyan MiG-35", "Sukhoi Su-35", "Sukhoi Su-57"], "ans": 3, "p1": "Aircraft: Sukhoi Su-57 (NATO reporting name: Felon) — Russia's twin-engine stealth multirole fighter.", "p2": "Exam Fact: India and Russia jointly manufacture BrahMos supersonic cruise missiles and AK-203 assault rifles (at Korwa, Amethi, UP)."}, {"id": 74, "slide_q": 201, "cat": "Infrastructure, Ports & Energy", "q": "During his visit to Dadra & Nagar Haveli and Daman & Diu on World Environment Day (5 June 2026), PM Narendra Modi inaugurated development projects worth what amount?", "opts": ["₹15,000 crore", "₹21,700 crore", "₹18,500 crore", "₹25,000 crore"], "ans": 1, "p1": "Project Value: ₹21,700 crore (inaugurated on 5 June 2026).", "p2": "Exam Fact: Dadra & Nagar Haveli and Daman & Diu were merged into a single Union Territory on 26 January 2020 (Capital: Daman)."}, {"id": 75, "slide_q": 202, "cat": "Banking, Finance & Regulatory", "q": "In which two currencies are transactions settled under the Asian Development Bank's Supply Chain Finance Program arrangement?", "opts": ["INR and JPY", "USD and EUR", "USD and INR", "USD and SGD"], "ans": 2, "p1": "Currencies: United States Dollar (USD) and Indian Rupee (INR).", "p2": "Exam Fact: ADB's Supply Chain Finance Program (SCFP) bridges trade finance gaps for SMEs across Asia-Pacific."}, {"id": 76, "slide_q": 203, "cat": "Banking, Finance & Regulatory", "q": "Which two credentials are required for OTP-based citizen login on the PFRDA / NPS digital portal?", "opts": ["PRAN and Passport Number", "PAN Number and Bank Account Number", "Email ID and Mother's Maiden Name", "Registered Mobile Number and Date of Birth"], "ans": 3, "p1": "Authentication: Registered Mobile Number + Date of Birth + OTP.", "p2": "Exam Fact: Enables instant e-PRAN download and statement access for NPS subscribers."}, {"id": 77, "slide_q": 204, "cat": "Banking, Finance & Regulatory", "q": "For which Government of India programme did the Asian Development Bank (ADB) approve a USD 1 billion loan in August 2026?", "opts": ["Urban Challenge Fund", "AMRUT 2.0", "Smart Cities Mission", "Swachh Bharat Mission 2.0"], "ans": 0, "p1": "Programme: Urban Challenge Fund (announced in Union Budget to finance 'Cities as Growth Hubs', creative redevelopment, and water/sanitation).", "p2": "Exam Fact: Finances up to 25% of bankable urban infrastructure project costs."}, {"id": 78, "slide_q": 205, "cat": "Banking, Finance & Regulatory", "q": "Regarding RBI's revised Small Finance Bank (SFB) transition/licensing norms: (1) Statements 1 and 2 on eligibility/governance are correct; (2) Statements 3 and 4 are incorrect. Which statements are correct?", "opts": ["1 and 3 only", "1 and 2 only", "2 and 4 only", "All 1, 2, 3, and 4"], "ans": 1, "p1": "Note: Minimum paid-up voting equity capital for setting up a Small Finance Bank is ₹200 crore (and ₹1,000 crore net worth required for voluntary transition from SFB to Universal Bank).", "p2": "Exam Fact: AU Small Finance Bank was the first SFB to apply for transition to a Universal Bank."}, {"id": 79, "slide_q": 206, "cat": "Banking, Finance & Regulatory", "q": "Which Public Sector Bank raised capital through Additional Tier-1 (AT-1) bonds in September 2026?", "opts": ["Punjab National Bank", "State Bank of India", "Canara Bank", "Bank of Baroda"], "ans": 2, "p1": "Issuer: Canara Bank (Headquarters: Bengaluru, Karnataka; founded 1906; Tagline: 'Together We Can').", "p2": "Exam Fact: Additional Tier-1 (AT-1) bonds are perpetual Basel III compliant debt instruments issued by banks to bolster Tier-1 capital."}, {"id": 80, "slide_q": 207, "cat": "Banking, Finance & Regulatory", "q": "International Finance Corporation (IFC) extended a USD 150 million social loan (its first credit line to an Indian PSB) to SBI specifically to support which borrower segment?", "opts": ["Affordable housing developers", "Urban MSME exporters", "Electric vehicle manufacturers", "Rural women borrowers"], "ans": 3, "p1": "Target Segment: Rural women entrepreneurs and Self-Help Group (SHG) borrowers via SBI.", "p2": "Exam Fact: IFC is the private-sector arm of the World Bank Group (HQ: Washington, D.C.; MD: Makhtar Diop)."}, {"id": 81, "slide_q": 211, "cat": "Banking, Finance & Regulatory", "q": "In June 2026, Veena Fintech received NPCI certification to operate as a Biller Operating Unit (BOU) under which payment system (managed by NBBL)?", "opts": ["Bharat Bill Payment System (BBPS / Bharat Connect)", "Unified Payments Interface (UPI)", "National Automated Clearing House (NACH)", "Aadhaar Enabled Payment System (AePS)"], "ans": 0, "p1": "Operator: NPCI Bharat BillPay Limited (NBBL), a wholly-owned subsidiary of NPCI.", "p2": "Exam Fact: Bharat BillPay (rebranded Bharat Connect) is an interoperable platform for recurring utility, telecom, DTH, and loan EMI bill payments."}, {"id": 82, "slide_q": 212, "cat": "Banking, Finance & Regulatory", "q": "NSE launched India's first domestic benchmark-based Natural Gas Futures contract linked to which physical gas hub?", "opts": ["KG Basin Hub (Kakinada)", "IGX Gujarat Hub (Dahej/Hazira)", "Mumbai High Offshore Hub", "Barmer Gas Hub (Rajasthan)"], "ans": 1, "p1": "Benchmark Hub: Indian Gas Exchange (IGX) Gujarat Hub.", "p2": "Exam Fact: IGX is India's first automated national-level gas exchange regulated by PNGRB."}, {"id": 83, "slide_q": 213, "cat": "Banking, Finance & Regulatory", "q": "Regarding Nabkisan Finance's water-focused Social Bond: (1) Listed on NSE; (2) Raised ₹180 crore (not ₹500 crore); (3) Coupon rate is 8.10% for 5-year maturity; (4) Assigned AAA rating. Which statements are correct?", "opts": ["2 and 3 only", "1 and 2 only", "1, 3, and 4 only (Raised ₹180 crore)", "All 1, 2, 3, and 4"], "ans": 2, "p1": "Correction Note: Nabkisan Finance (a subsidiary of NABARD) raised ₹180 crore (not ₹500 crore) via its water-focused social bond.", "p2": "Exam Fact: Coupon rate is 8.10% p.a. with a 5-year tenure and AAA credit rating."}, {"id": 84, "slide_q": 214, "cat": "Banking, Finance & Regulatory", "q": "Karur Vysya Bank (HQ: Karur, Tamil Nadu; founded 1916) signed a bancassurance partnership with which insurer to distribute general insurance products?", "opts": ["HDFC ERGO General Insurance", "ICICI Lombard General Insurance", "Bajaj Allianz General Insurance", "Zurich Kotak General Insurance"], "ans": 3, "p1": "Partner Insurer: Zurich Kotak General Insurance (formed after Zurich Insurance Group acquired a 70% stake in Kotak Mahindra General Insurance).", "p2": "Exam Fact: Bancassurance refers to an arrangement where a bank sells insurance products of an insurance company through its branch network."}, {"id": 85, "slide_q": 215, "cat": "Banking, Finance & Regulatory", "q": "At which campus will BITS Pilani and Axis Bank establish an Industry Research, Technology and Innovation Park under their ₹100 crore agreement?", "opts": ["Hyderabad Campus", "Pilani Campus", "Goa Campus", "Mumbai Campus"], "ans": 0, "p1": "Location & Outlay: BITS Pilani Hyderabad Campus — ₹100 crore commitment from Axis Bank.", "p2": "Exam Fact: Axis Bank is headquartered in Mumbai, Maharashtra (MD & CEO: Amitabh Chaudhry)."}, {"id": 86, "slide_q": 216, "cat": "Banking, Finance & Regulatory", "q": "Which Indian bank completely removed forex markup charges across its entire credit card portfolio?", "opts": ["HDFC Bank", "IDFC FIRST Bank", "Axis Bank", "ICICI Bank"], "ans": 1, "p1": "Bank: IDFC FIRST Bank (Headquarters: Mumbai, Maharashtra; MD & CEO: V. Vaidyanathan).", "p2": "Exam Fact: Zero forex markup saves cardholders the standard 1.5%–3.5% foreign currency conversion fee on international transactions."}, {"id": 87, "slide_q": 217, "cat": "Banking, Finance & Regulatory", "q": "In which European country did Paytm Europe secure a Payment Institution (PI) license?", "opts": ["Netherlands", "Ireland", "Luxembourg", "Germany"], "ans": 2, "p1": "Country: Luxembourg (Capital: Luxembourg City | Currency: Euro).", "p2": "Exam Fact: A Luxembourg Payment Institution license enables passporting of payment services across the European Economic Area (EEA)."}, {"id": 88, "slide_q": 218, "cat": "Banking, Finance & Regulatory", "q": "After how many years did Japan Credit Rating Agency (JCR) upgrade India's sovereign credit rating?", "opts": ["40 years", "20 years", "25 years", "35 years"], "ans": 3, "p1": "Milestone: Upgraded after 35 years, reflecting strong macroeconomic fundamentals and fiscal discipline.", "p2": "Exam Fact: Sovereign credit ratings assess a country's creditworthiness and ability to meet external debt obligations."}, {"id": 89, "slide_q": 222, "cat": "Banking, Finance & Regulatory", "q": "Through which payment network did WhatsApp launch native in-app utility bill payments in India in September 2026?", "opts": ["NEFT", "RTGS", "SWIFT", "Bharat Connect (Bharat BillPay)"], "ans": 3, "p1": "Network: Bharat Connect (operated by NPCI Bharat BillPay Limited).", "p2": "Exam Fact: Allows users to view and pay electricity, water, gas, and broadband bills directly inside WhatsApp."}, {"id": 90, "slide_q": 223, "cat": "Banking, Finance & Regulatory", "q": "With which development finance institution did NABARD sign an MoU in August 2026 to boost rural infrastructure financing?", "opts": ["NaBFID (National Bank for Financing Infrastructure and Development)", "SIDBI", "EXIM Bank", "NHB"], "ans": 0, "p1": "Partner: NaBFID (established under the NaBFID Act, 2021; HQ: Mumbai; MD: Rajkiran Rai G.).", "p2": "Exam Fact: Combines NABARD's rural reach with NaBFID's long-term infrastructure financing expertise."}, {"id": 91, "slide_q": 225, "cat": "Banking, Finance & Regulatory", "q": "Regarding Ministry of Finance reforms in the G-Sec (Government Securities) market: (1) FPI interest income/capital gains tax rules streamlined; (2) Effective from 1 April 2026 (not 2027); (3) 15-, 30-, and 40-year G-Secs opened in Sovereign Green Bonds; (4) Short-term investment and concentration limits for FPIs removed. Which statements are correct?", "opts": ["2 and 3 only", "1 and 2 only", "1, 3, and 4 only (Effective from 1 April 2026)", "All 1, 2, 3, and 4"], "ans": 2, "p1": "Correction Note: Statement 2 is incorrect because the changes took effect from 1 April 2026 (not 2027).", "p2": "Exam Fact: Enhances foreign liquidity in Indian Government Securities following India's inclusion in global bond indices."}, {"id": 92, "slide_q": 227, "cat": "Banking, Finance & Regulatory", "q": "AU Small Finance Bank partnered with which fintech company to launch India's first RuPay credit card with 'Family Lounge Access'?", "opts": ["Paytm", "PhonePe", "CRED", "Groww"], "ans": 0, "p1": "Partners: AU Small Finance Bank (HQ: Jaipur, Rajasthan) and Paytm.", "p2": "Exam Fact: Extends complimentary airport lounge access to family add-on cardholders."}, {"id": 93, "slide_q": 228, "cat": "Banking, Finance & Regulatory", "q": "PFRDA's new pension grievance redressal portal 'Pension Sahayak' replaced which legacy grievance system?", "opts": ["CPGRAMS", "CGMS (Central Grievance Management System)", "RBI CMS", "SEBI SCORES"], "ans": 1, "p1": "Replacement: Replaced CGMS (Central Grievance Management System) with an AI-assisted 'Pension Sahayak' portal.", "p2": "Exam Fact: Simplifies complaint tracking and resolution for NPS and Atal Pension Yojana subscribers."}, {"id": 94, "slide_q": 229, "cat": "Banking, Finance & Regulatory", "q": "Bank of India signed an MoU with which premier R&D organization to innovate and deploy Quantum Technology in banking?", "opts": ["ISRO", "DRDO", "C-DAC (Centre for Development of Advanced Computing)", "NPCI"], "ans": 2, "p1": "Partner: C-DAC (Headquarters: Pune, Maharashtra — autonomous scientific society under MeitY).", "p2": "Exam Fact: Focuses on post-quantum cryptography, quantum-safe encryption, and fraud risk modeling."}, {"id": 95, "slide_q": 230, "cat": "Banking, Finance & Regulatory", "q": "Regarding SBI's Cyber Security Centre of Excellence 'CYRUS': (1) Inaugurated in Mumbai; (2) Inaugurated by DFS Secretary Sanjay Malhotra / Nagaraju / Sanjay Lohia (not RBI Governor); (3) Built on 3 pillars: Think, Innovate, Defend. Which statements are correct?", "opts": ["All 1, 2, and 3", "1 and 2 only", "2 and 3 only", "1 and 3 only (Inaugurated by DFS official, not RBI Governor)"], "ans": 3, "p1": "Details: Inaugurated in Mumbai (not by the RBI Governor); anchored on the 3 pillars—Think, Innovate, and Defend.", "p2": "Exam Fact: Strengthens real-time cyber threat intelligence across SBI's digital banking channels."}, {"id": 96, "slide_q": 231, "cat": "Banking, Finance & Regulatory", "q": "Who was appointed Chairman of the 7-member expert panel constituted by IRDAI to guide the responsible adoption of Artificial Intelligence (AI) in the insurance sector?", "opts": ["Prof. Sandeep K. Shukla", "Ajay Seth", "Debasish Panda", "Nandan Nilekani"], "ans": 0, "p1": "Panel Head: Prof. Sandeep K. Shukla (Cybersecurity & Computer Science professor, IIT Kanpur / IIIT Hyderabad).", "p2": "Exam Fact: 7-member panel tasked with framing AI governance, underwriting fairness, and data privacy guidelines for insurers."}, {"id": 97, "slide_q": 232, "cat": "Banking, Finance & Regulatory", "q": "In July 2026, IRDAI approved the acquisition of Magma General Insurance by Patanjali Ayurved and DS Group from which seller entity?", "opts": ["Poonawalla Fincorp", "Sanoti Properties LLP", "HDI Global SE", "KKR India"], "ans": 1, "p1": "Seller: Sanoti Properties LLP (backed by Adar Poonawalla).", "p2": "Exam Fact: Under Section 6A of the Insurance Act, 1938, any share transfer exceeding 5% in an insurance company requires prior IRDAI approval."}, {"id": 98, "slide_q": 233, "cat": "Banking, Finance & Regulatory", "q": "Punjab National Bank (PNB) signed an MoU with the Andhra Pradesh Government to establish which specialized hub in the state?", "opts": ["Blue Economy Maritime Hub", "Agri-Export FinTech Hub", "Quantum Finance Hub", "Green Hydrogen Treasury Hub"], "ans": 2, "p1": "Hub: Quantum Finance Hub in Amaravati, Andhra Pradesh.", "p2": "Exam Fact: Aligns with Andhra Pradesh's Amaravati Quantum Valley initiative."}, {"id": 99, "slide_q": 234, "cat": "Banking, Finance & Regulatory", "q": "IRDAI released a consultation paper in September 2026 for setting up which national registry?", "opts": ["Motor Third-Party Pool Registry", "National Health Claims Exchange Registry", "Actuarial Valuation Registry", "Public Insurance Registry"], "ans": 3, "p1": "Objective: Creates a centralized repository of insurance policies, claims history, and fraud prevention data.", "p2": "Exam Fact: Supports IRDAI's 'Insurance for All by 2047' mission."}, {"id": 100, "slide_q": 236, "cat": "Banking, Finance & Regulatory", "q": "Regarding the Bank of America–Jio Credit Limited deal: (1) Bank of America to acquire up to 49.9% stake; (2) Jio Credit Limited is a subsidiary of Jio Financial Services; (3) Bank of America is headquartered in Charlotte, North Carolina (not New York); (4) Initial tranche is 26.5% stake (not 30.6%). Which statements are correct?", "opts": ["1, 2, and 3 only", "1 and 2 only (HQ in Charlotte; initial stake 26.5%)", "2 and 4 only", "All 1, 2, 3, and 4"], "ans": 1, "p1": "Corrections: Bank of America is headquartered in Charlotte, North Carolina (not New York), and the initial deal tranche is 26.5% stake (scaling up to 49.9% for ₹18,268 crore).", "p2": "Exam Fact: Jio Financial Services Limited (JFSL) is demerged from Reliance Industries Limited."}, {"id": 101, "slide_q": 237, "cat": "Banking, Finance & Regulatory", "q": "Under India's relaxed FDI rules for e-commerce, foreign-funded e-commerce platforms are permitted to hold inventory/stock of Indian goods strictly for which purpose?", "opts": ["Government GeM procurement", "Domestic B2C retail sales in metro cities", "Exports (cross-border e-commerce exports)", "Agricultural MSP procurement"], "ans": 2, "p1": "Rule Change: Allows foreign-funded e-commerce entities to hold inventory of Indian-manufactured goods exclusively for international exports.", "p2": "Exam Fact: Boosts E-Commerce Export Hubs (ECEHs) and MSME global market access while preserving domestic FDI marketplace restrictions."}, {"id": 102, "slide_q": 238, "cat": "Banking, Finance & Regulatory", "q": "EbixCash became India's first Authorised Dealer Category-II (AD Cat-II) entity approved by RBI to facilitate cross-border trade remittances up to what per-transaction limit?", "opts": ["₹5 lakh", "₹10 lakh", "₹50 lakh", "₹25 lakh"], "ans": 3, "p1": "Limit: Up to ₹25 lakh per transaction for cross-border trade-related remittances.", "p2": "Exam Fact: Authorised Dealer Category-II entities are licensed by RBI under FEMA, 1999 to handle non-trade and specified small-value trade forex transactions."}, {"id": 103, "slide_q": 239, "cat": "Banking, Finance & Regulatory", "q": "What is the unique feature of Bajaj Allianz General Insurance's newly launched 'My Family Complete' health policy?", "opts": ["Covers household pets as family members under a single policy", "Provides unlimited international air ambulance cover", "Covers 100% OPD dental and cosmetic procedures", "Includes unemployment EMI protection"], "ans": 0, "p1": "Key Feature: Treats household pets (dogs/cats) as integral family members within a comprehensive family floater policy.", "p2": "Exam Fact: Bajaj Allianz General Insurance is headquartered in Pune, Maharashtra."}, {"id": 104, "slide_q": 240, "cat": "Banking, Finance & Regulatory", "q": "What is the primary purpose of the Common Landing Portal launched by the Department of Financial Services (DFS)?", "opts": ["Filing online income tax returns for senior citizens", "Providing unified citizen access to information on unclaimed financial assets (bank deposits, shares, insurance, PF)", "Applying for Mudra and Stand-Up India loans", "Tracking sovereign gold bond redemptions"], "ans": 1, "p1": "Function: Single unified gateway linking RBI's UDGAM portal, SEBI's MITRA/IEPF, IRDAI's Bima Bharosa, and EPFO unclaimed accounts.", "p2": "Exam Fact: UDGAM (Unclaimed Deposits – Gateway to Access inforMation) is RBI's centralized portal for unclaimed bank deposits (inactive for 10+ years)."}, {"id": 105, "slide_q": 241, "cat": "Banking, Finance & Regulatory", "q": "Under which facility did ADB and Japan provide a USD 100 million loan to support ReNew's green ammonia plant in Kakinada, Andhra Pradesh?", "opts": ["Green Climate Fund (GCF)", "Climate Investment Funds (CIF)", "LEAP 2 (Leading Asia's Private Infrastructure Fund 2)", "Clean Technology Fund (CTF)"], "ans": 2, "p1": "Facility: LEAP 2 (administered by ADB in partnership with Japan International Cooperation Agency – JICA).", "p2": "Exam Fact: Kakinada is a major deep-water port city in Andhra Pradesh."}, {"id": 106, "slide_q": 242, "cat": "Banking, Finance & Regulatory", "q": "Regarding NPCI's revised UPI MDR framework: (1) P2M transactions above ₹2,000 attract 0.4% MDR; (2) MDR is capped at ₹300 per transaction; (3) Essential sectors (railways, fuel, insurance) have ₹5 cap (not ₹10); (4) Capital market payments attract 0.02% (not 0.2%). Which statements are correct?", "opts": ["All 1, 2, 3, and 4", "1, 2, and 3 only", "2 and 4 only", "1 and 2 only (Essential sector cap ₹5; Capital markets 0.02%)"], "ans": 3, "p1": "Corrections: Essential categories (fuel, railways, insurance) have a ₹5 cap (not ₹10), and capital market payments attract 0.02% (not 0.2%).", "p2": "Exam Fact: Person-to-Person (P2P) UPI transfers remain completely free of charge."}, {"id": 107, "slide_q": 243, "cat": "Banking, Finance & Regulatory", "q": "How much funding did HSBC India commit towards strengthening financial literacy across India by 2030?", "opts": ["₹200 crore", "₹100 crore", "₹500 crore", "₹250 crore"], "ans": 0, "p1": "Commitment: ₹200 crore by 2030.", "p2": "Exam Fact: HSBC (Hongkong and Shanghai Banking Corporation) is headquartered in London, UK."}, {"id": 108, "slide_q": 244, "cat": "Banking, Finance & Regulatory", "q": "Through which overseas branch did SBI issue its USD 500 million 5-year dollar-denominated bonds in August 2026?", "opts": ["GIFT City IFSC Branch", "London Branch", "Singapore Branch", "New York Branch"], "ans": 1, "p1": "Issuing Branch: SBI's London Branch (United Kingdom).", "p2": "Exam Fact: Senior unsecured fixed-rate notes raised to fund SBI's international lending book."}, {"id": 109, "slide_q": 245, "cat": "Banking, Finance & Regulatory", "q": "Under IRDAI's new 4-tier motor insurance structure, which two covers remain legally mandatory for vehicle owners?", "opts": ["Engine Protection and Roadside Assistance", "Own Damage and Zero Depreciation Cover", "Third-Party Liability and Owner-Driver Personal Accident Cover", "Passenger Medical Cover and Tyre Protection"], "ans": 2, "p1": "Mandatory Covers: (1) Third-Party (TP) Liability (mandatory under the Motor Vehicles Act, 1988) and (2) Compulsory Personal Accident (CPA) cover for Owner-Driver.", "p2": "Exam Fact: Own Damage (OD) cover remains optional."}, {"id": 110, "slide_q": 246, "cat": "Banking, Finance & Regulatory", "q": "Bandhan Bank partnered with which card payment network to launch its new credit card suite in September 2026?", "opts": ["American Express", "Visa", "RuPay", "Mastercard"], "ans": 3, "p1": "Partner Network: Mastercard (Headquarters: Purchase, New York, USA).", "p2": "Exam Fact: Bandhan Bank is headquartered in Kolkata, West Bengal (MD & CEO: Partha Pratim Sengupta)."}, {"id": 111, "slide_q": 247, "cat": "Banking, Finance & Regulatory", "q": "Regarding Paul Merchants Finance's exclusive silver loan branches: (1) India's first NBFC branches exclusively for loans against silver; (2) Based in Chandigarh; (3) Loan range is ₹2,000 to ₹15 lakh (not ₹10,000 to ₹15 lakh). Which statements are correct?", "opts": ["1 and 2 only (Loan range is ₹2,000 to ₹15 lakh)", "1 and 3 only", "2 and 3 only", "All 1, 2, and 3"], "ans": 0, "p1": "Correction Note: Statement 3 is incorrect because the loan ticket size ranges from ₹2,000 to ₹15 lakh (not ₹10,000).", "p2": "Exam Fact: Enables households to pledge silver ornaments/articles for instant micro-credit."}, {"id": 112, "slide_q": 248, "cat": "Banking, Finance & Regulatory", "q": "In June 2026, International Finance Corporation (IFC) pledged USD 371 million to a data centre subsidiary of which company?", "opts": ["Bharti Airtel (Nxtra)", "Sify Technologies", "Tata Communications", "AdaniConneX"], "ans": 1, "p1": "Recipient: Sify Technologies (Chennai-based ICT and data centre provider).", "p2": "Exam Fact: Supports green, renewable-powered hyperscale data centre expansion in India."}, {"id": 113, "slide_q": 249, "cat": "Banking, Finance & Regulatory", "q": "Which RBI registration category did Delhivery Financial Services receive to operate as a non-deposit-taking NBFC?", "opts": ["NBFC-Account Aggregator", "NBFC-P2P (Peer-to-Peer)", "Type-II NBFC-ND (Non-Deposit Taking)", "Core Investment Company (CIC)"], "ans": 2, "p1": "Registration: Type-II NBFC-ND (Non-Banking Financial Company – Non-Deposit Taking).", "p2": "Exam Fact: Enables Delhivery to offer supply-chain and working capital financing to its logistics partners and SME merchants."}, {"id": 114, "slide_q": 251, "cat": "Banking, Finance & Regulatory", "q": "NPCI partnered with HSBC and J.P. Morgan in July 2026 primarily to enable which capability?", "opts": ["Real-time FX settlement and cross-border UPI transactions", "Issuing sovereign gold bonds to NRIs", "Domestic RTGS clearing in GIFT City", "Cryptocurrency custody services"], "ans": 0, "p1": "Objective: Real-time foreign exchange (FX) settlement for cross-border UPI merchant and remittance payments.", "p2": "Exam Fact: Reduces cross-border settlement latency and FX conversion spreads."}, {"id": 115, "slide_q": 252, "cat": "Banking, Finance & Regulatory", "q": "Citigroup partnered with which Indian private sector bank to finance NRI investments in FCNR(B) deposits?", "opts": ["HDFC Bank", "Axis Bank", "ICICI Bank", "Kotak Mahindra Bank"], "ans": 1, "p1": "Partners: Citigroup and Axis Bank.", "p2": "Exam Fact: FCNR(B) stands for Foreign Currency Non-Resident (Bank) deposit accounts."}, {"id": 116, "slide_q": 253, "cat": "Banking, Finance & Regulatory", "q": "Regarding JNPA's Blue Financing for Shore Power Infrastructure: (1) India's first Blue Financing framework for ports; (2) Financed by IFC; (3) Lets berthed ships switch off diesel engines and use shore electricity; (4) Financing size is USD 70 million (not USD 170 million). Which statements are correct?", "opts": ["2 and 4 only", "1 and 4 only", "1, 2, and 3 only (Financing amount is USD 70 million)", "All 1, 2, 3, and 4"], "ans": 2, "p1": "Correction Note: Statement 4 is incorrect because the IFC financing amount is USD 70 million (not USD 170 million).", "p2": "Exam Fact: Shore-to-ship power ('cold ironing') significantly cuts port carbon and sulphur emissions."}, {"id": 117, "slide_q": 254, "cat": "Banking, Finance & Regulatory", "q": "What is the name of the AI-powered next-generation mobile banking app launched by Bank of Baroda?", "opts": ["BoB One", "BoB DigiNext", "Baroda SmartAI", "bob World 2.0"], "ans": 3, "p1": "App Name: bob World 2.0.", "p2": "Exam Fact: Bank of Baroda is headquartered in Vadodara, Gujarat (Tagline: 'India's International Bank')."}, {"id": 118, "slide_q": 255, "cat": "Banking, Finance & Regulatory", "q": "IRDAI imposed a 6-month restriction barring which health insurer from opening new branches/offices for breaching Expenses of Management (EoM) limits?", "opts": ["Niva Bupa Health Insurance", "Star Health and Allied Insurance", "Care Health Insurance", "ManipalCigna Health Insurance"], "ans": 0, "p1": "Insurer: Niva Bupa Health Insurance (Headquarters: New Delhi).", "p2": "Exam Fact: IRDAI (Expenses of Management of Insurers Transacting General or Health Insurance Business) Regulations cap operating expenses to protect policyholders."}, {"id": 119, "slide_q": 256, "cat": "Banking, Finance & Regulatory", "q": "Bajaj Finserv Asset Management became the first AMC to receive SEBI's in-principle approval under which simplified mutual fund regulatory framework?", "opts": ["Specialized Investment Fund (SIF)", "Mutual Fund Lite (MF Lite)", "Social Stock Exchange (SSE)", "Boutique AMC Sandbox"], "ans": 1, "p1": "Framework: Mutual Fund Lite (MF Lite) — introduced by SEBI for passively managed mutual fund schemes (index funds and ETFs) with relaxed net worth and compliance norms.", "p2": "Exam Fact: Lowers entry barriers and promotes low-cost passive investing in India."}, {"id": 120, "slide_q": 257, "cat": "Banking, Finance & Regulatory", "q": "What is the primary purpose of Karnataka Bank's 'Trade Connect' digital platform?", "opts": ["Kisan Credit Card digital renewal", "Domestic UPI QR merchant onboarding", "Forex transactions and cross-border remittance requests", "Gold loan doorstep valuation"], "ans": 2, "p1": "Function: End-to-end digital portal for exporters/importers to execute forex transactions and cross-border remittances.", "p2": "Exam Fact: Karnataka Bank is headquartered in Mangaluru, Karnataka."}, {"id": 121, "slide_q": 258, "cat": "Banking, Finance & Regulatory", "q": "The World Bank approved a ₹4,000 crore loan for the 'Jal Sanrakshit' water management and conservation project in which Indian state?", "opts": ["Gujarat", "Rajasthan", "Punjab", "Haryana"], "ans": 3, "p1": "State & Outlay: Haryana — ₹4,000 crore World Bank loan.", "p2": "Exam Fact: Focuses on groundwater recharge, micro-irrigation, and wastewater reuse in Haryana."}, {"id": 122, "slide_q": 259, "cat": "Banking, Finance & Regulatory", "q": "Regarding the 'ARIFACT' industry platform: (1) Built for AML/CFT compliance; (2) Supervised/observed by FIU-IND (not RBI); (3) Members include banks, NBFCs, and insurers; (4) FIU-IND works under Department of Revenue (not DFS). Which statements are correct?", "opts": ["1 and 3 only (Observed by FIU-IND under Department of Revenue)", "1 and 2 only", "2 and 4 only", "All 1, 2, 3, and 4"], "ans": 0, "p1": "Corrections: Observed by Financial Intelligence Unit – India (FIU-IND), which functions under the Department of Revenue, Ministry of Finance (not DFS).", "p2": "Exam Fact: AML/CFT stands for Anti-Money Laundering and Combating the Financing of Terrorism."}, {"id": 123, "slide_q": 260, "cat": "Banking, Finance & Regulatory", "q": "For which customer group did Canara HSBC Life Insurance launch its USD-denominated 'Global Wealth Plan' at GIFT City?", "opts": ["Domestic retail pensioners", "Non-Resident Indians (NRIs)", "Rural micro-entrepreneurs", "Central government employees"], "ans": 1, "p1": "Target Segment: Non-Resident Indians (NRIs) and global Indians seeking USD-denominated life cover and wealth accumulation.", "p2": "Exam Fact: Regulated by IFSCA at GIFT City IFSC, Gandhinagar."}, {"id": 124, "slide_q": 261, "cat": "Banking, Finance & Regulatory", "q": "What is the annual joining/renewal fee (alongside annual rewards worth up to ₹18,000) for the co-branded 'Google Pay Flex SBI Card'?", "opts": ["₹1,499", "₹999", "₹499", "Zero (Lifetime Free)"], "ans": 2, "p1": "Card Details: ₹499 fee; available on RuPay and Visa networks; offers up to ₹18,000 in annual rewards/cashback.", "p2": "Exam Fact: Jointly launched by SBI Card and Google Pay."}, {"id": 125, "slide_q": 262, "cat": "Banking, Finance & Regulatory", "q": "How many members comprise the High-Level Committee on Banking for Viksit Bharat (chaired by Suresh N. Patel)?", "opts": ["9 members", "5 members", "7 members", "6 members"], "ans": 3, "p1": "Composition: 6 members — chaired by former CVC Suresh N. Patel, with DFS Joint Secretary Sanjay Lohia as Member Secretary.", "p2": "Exam Fact: Formulates a long-term roadmap for Indian banking scale, governance, and global competitiveness toward 2047."}, {"id": 126, "slide_q": 263, "cat": "Banking, Finance & Regulatory", "q": "What was the primary demand behind the United Forum of Bank Unions (UFBU) nationwide bank strike call?", "opts": ["Implementation of a 5-day banking work week (declaring all Saturdays as holidays)", "Complete privatization of regional rural banks", "Abolition of digital banking channels", "Merger of all public sector banks into two entities"], "ans": 0, "p1": "Core Demand: 5-day work week (declaring all Saturdays as bank holidays, matching RBI and LIC).", "p2": "Exam Fact: Currently, banks in India observe holidays on the 2nd and 4th Saturdays of every month."}, {"id": 127, "slide_q": 264, "cat": "Banking, Finance & Regulatory", "q": "Regarding IRDAI's 4-tier motor insurance rules: (1) Effective from 15 December 2026; (2) Follows Supreme Court directions; (3) Third-Party & Owner-Driver PA are mandatory (not optional); (4) Own Damage cover is optional (not mandatory). Which statements are correct?", "opts": ["1, 2, and 3 only", "1 and 2 only (TP & Owner-Driver PA are mandatory; Own Damage is optional)", "2 and 4 only", "All 1, 2, 3, and 4"], "ans": 1, "p1": "Corrections: Statements 3 and 4 reversed the rules—Third-Party Liability & Owner-Driver PA are mandatory, whereas Own Damage (OD) cover is optional.", "p2": "Exam Fact: Effective from 15 December 2026."}, {"id": 128, "slide_q": 265, "cat": "Banking, Finance & Regulatory", "q": "Under the UPI-powered postal remittance service launched between Qatar Post and India Post in Doha, what is the maximum remittance limit per transaction?", "opts": ["QAR 2,500", "QAR 1,000", "QAR 4,000 (4,000 Qatari Riyals)", "QAR 10,000"], "ans": 2, "p1": "Limit & Currency: Up to QAR 4,000 (Qatari Riyals) per transaction.", "p2": "Exam Fact: Enables instant cross-border UPI remittances from Qatar to Indian bank accounts."}, {"id": 129, "slide_q": 266, "cat": "Banking, Finance & Regulatory", "q": "What annual coupon rate did IDFC FIRST Bank set on its maiden USD 500 million bond issuance?", "opts": ["5.250%", "4.850%", "6.125%", "5.625%"], "ans": 3, "p1": "Issue & Coupon: USD 500 million maiden international bond at a 5.625% coupon rate.", "p2": "Exam Fact: Diversifies IDFC FIRST Bank's long-term foreign currency funding sources."}, {"id": 130, "slide_q": 267, "cat": "Banking, Finance & Regulatory", "q": "What type of financial derivative product is 'Rain Chennai', launched by NCDEX in September 2026?", "opts": ["Weather derivative contract (rainfall index-based)", "Interest rate swap contract", "Sovereign gold futures contract", "Currency forward contract"], "ans": 0, "p1": "Product Type: Rainfall-indexed weather derivative contract launched by National Commodity & Derivatives Exchange (NCDEX, HQ: Mumbai).", "p2": "Exam Fact: Helps businesses, insurers, and municipalities hedge financial losses caused by excess or deficient rainfall in Chennai."}, {"id": 131, "slide_q": 268, "cat": "International & Summits", "q": "Paraguay President Santiago Peña was in the news over the collapse of which bank affecting over 3 million depositors?", "opts": ["Banco Nacional de Fomento", "Ueno Bank", "Itaú Paraguay", "Banco Continental"], "ans": 1, "p1": "Details: Ueno Bank (Paraguay) — over 3 million depositors affected.", "p2": "Exam Fact: Capital of Paraguay: Asunción | President: Santiago Peña | Currency: Paraguayan Guaraní."}, {"id": 132, "slide_q": 269, "cat": "Banking, Finance & Regulatory", "q": "From which regulatory authority did Punjab & Sind Bank receive final approval in June 2026 to open its first IFSC Banking Unit (IBU) at GIFT City?", "opts": ["SEBI", "RBI", "IFSCA (International Financial Services Centres Authority)", "Ministry of Commerce"], "ans": 2, "p1": "Regulator: IFSCA (Headquarters: GIFT City, Gandhinagar, Gujarat).", "p2": "Exam Fact: Punjab & Sind Bank is headquartered in New Delhi (MD & CEO: Swarup Kumar Saha)."}, {"id": 133, "slide_q": 270, "cat": "Banking, Finance & Regulatory", "q": "Regarding India's first Blue Bond (September 2026): (1) Launched by Sagarmala Finance Corporation; (2) Issue size ₹600 crore with ₹500 crore green-shoe option; (3) Arranged by SBI Capital Markets; (4) Tenure is 10 years (not 5 years). Which statements are correct?", "opts": ["All 1, 2, 3, and 4", "1 and 4 only", "2 and 4 only", "1, 2, and 3 only (Bond tenure is 10 years)"], "ans": 3, "p1": "Correction Note: Statement 4 is incorrect because the Blue Bond has a 10-year tenure (not 5 years).", "p2": "Exam Fact: Funds sustainable port modernization, green shipping, and coastal marine infrastructure."}, {"id": 134, "slide_q": 271, "cat": "Banking, Finance & Regulatory", "q": "After NSE Indices Limited added 11 new sectoral indices (up from 23), what is the total number of sectoral indices on NSE?", "opts": ["34", "30", "32", "36"], "ans": 0, "p1": "Calculation: 23 existing sectoral indices + 11 newly added = 34 total sectoral indices.", "p2": "Exam Fact: NSE (National Stock Exchange of India) was established in 1992 on the recommendation of the Pherwani Committee (HQ: Mumbai)."}, {"id": 135, "slide_q": 272, "cat": "Banking, Finance & Regulatory", "q": "What is the special tenure (in days) of Bank of Baroda's 'bob Golden Gold Deposit Scheme' retail term deposit?", "opts": ["999 days", "1,055 days", "1,111 days", "777 days"], "ans": 1, "p1": "Tenure: 1,055 days.", "p2": "Exam Fact: Offers higher preferential interest rates for retail and senior citizen depositors."}, {"id": 136, "slide_q": 273, "cat": "Banking, Finance & Regulatory", "q": "What is 'NIDHI', a platform launched by NCDEX?", "opts": ["An algorithmic commodity trading terminal", "A national digital warehouse receipt system", "A mutual fund transaction platform tailored for rural areas", "A crop insurance claim settlement portal"], "ans": 2, "p1": "Purpose: Expands mutual fund distribution and SIP penetration across rural and semi-urban India.", "p2": "Exam Fact: NCDEX is headquartered in Mumbai, Maharashtra."}, {"id": 137, "slide_q": 275, "cat": "Banking, Finance & Regulatory", "q": "Which bank partnered with the Indian Army to offer co-branded 'Rakshak Metal' and 'Parakram' credit cards?", "opts": ["Punjab National Bank (PNB)", "State Bank of India (SBI)", "Bank of Baroda (BoB)", "ICICI Bank"], "ans": 0, "p1": "Cards: PNB Rakshak Metal and PNB Parakram credit cards for Indian Army personnel.", "p2": "Exam Fact: Punjab National Bank is headquartered in New Delhi (MD & CEO: Ashok Chandra / Atul Kumar Goel)."}, {"id": 138, "slide_q": 277, "cat": "Banking, Finance & Regulatory", "q": "The Ministry of Finance secured a USD 1 billion financing package from the International Finance Corporation (IFC) to boost credit flow to which sector?", "opts": ["Deep-sea Shipping", "Aviation & Airports", "MSMEs (Micro, Small and Medium Enterprises)", "Urban Metro Rail"], "ans": 2, "p1": "Target Sector: Micro, Small and Medium Enterprises (MSMEs).", "p2": "Exam Fact: Enhances green and inclusive MSME financing across India."}, {"id": 139, "slide_q": 279, "cat": "Banking, Finance & Regulatory", "q": "Under Bank of Baroda's festive campaign 'BoB Ke Sang Tyohaar Ki Umang', what starting interest rate was offered on home loans?", "opts": ["7.40% p.a.", "8.15% p.a.", "6.90% p.a.", "8.50% p.a."], "ans": 0, "p1": "Starting Rate: 7.40% per annum with processing fee waivers.", "p2": "Exam Fact: Retail loan rates in India are linked to External Benchmark Lending Rates (EBLR, typically the RBI Policy Repo Rate)."}, {"id": 140, "slide_q": 280, "cat": "Banking, Finance & Regulatory", "q": "For which customer segment did YES Bank launch its 'YES Essence' credit card?", "opts": ["Senior Citizens", "Women", "Students", "NRIs"], "ans": 1, "p1": "Target Segment: Women cardholders (offering tailored wellness, lifestyle, and grocery rewards).", "p2": "Exam Fact: YES Bank is headquartered in Mumbai, Maharashtra."}, {"id": 141, "slide_q": 281, "cat": "Banking, Finance & Regulatory", "q": "Regarding Federal Bank's 'FCNR Max Deposit Scheme': (1) Offers 6.25% p.a. on USD deposits for 3–5 years; (2) Minimum deposit is USD 500 (not USD 5,000); (3) Lock-in period is 1 year; (4) Open till 30 September. Which statements are correct?", "opts": ["2 and 3 only", "1 and 2 only", "1, 3, and 4 only (Minimum deposit is USD 500)", "All 1, 2, 3, and 4"], "ans": 2, "p1": "Correction Note: Statement 2 is incorrect because the minimum deposit requirement is USD 500 (not USD 5,000).", "p2": "Exam Fact: FCNR(B) deposits must be held for a minimum tenure of 1 year to earn interest."}, {"id": 142, "slide_q": 282, "cat": "Banking, Finance & Regulatory", "q": "Punjab National Bank partnered with which company to launch biodegradable co-branded twin credit cards offering both Visa and RuPay networks?", "opts": ["Perfios", "Thales", "Giesecke+Devrient", "IDEMIA"], "ans": 3, "p1": "Partner & Feature: IDEMIA — eco-friendly biodegradable PVC twin cards supporting both Visa and RuPay networks.", "p2": "Exam Fact: Allows cardholders to enjoy dual-network acceptance across domestic UPI-RuPay and global Visa terminals."}, {"id": 143, "slide_q": 283, "cat": "Banking, Finance & Regulatory", "q": "For how many months can borrowers lock in their interest rate under Kotak Mahindra Bank's 'Hybrid Home Loan'?", "opts": ["39 months", "24 months", "36 months", "48 months"], "ans": 0, "p1": "Lock-in Period: 39 months (3.25 years) fixed rate before transitioning to a floating EBLR-linked rate.", "p2": "Exam Fact: Protects homebuyers against interest rate volatility during the initial years of repayment."}, {"id": 144, "slide_q": 284, "cat": "Appointments & Committees", "q": "Who was appointed Chairperson of Airtel Payments Bank (succeeding Sunil Bharti Mittal, with RBI approval)?", "opts": ["Anubrata Biswas", "Shabnam Sinha", "Rishi Gupta", "Surinder Chawla"], "ans": 1, "p1": "Succession: Shabnam Sinha succeeded Bharti Enterprises Chairman Sunil Bharti Mittal.", "p2": "Exam Fact: Airtel Payments Bank (launched 2016) was India's first operational Payments Bank (HQ: New Delhi; MD & CEO: Anubrata Biswas)."}, {"id": 145, "slide_q": 286, "cat": "Banking, Finance & Regulatory", "q": "NSE enabled India's first tokenized corporate bond issuance worth ₹1,000 crore with which two issuers?", "opts": ["NABARD and SIDBI", "NTPC and Power Grid", "HDFC Bank and ICICI Bank", "REC Limited and Larsen & Toubro (L&T)"], "ans": 3, "p1": "Issuers: Rural Electrification Corporation (REC Limited) and Larsen & Toubro (L&T).", "p2": "Exam Fact: Tokenization represents bond ownership on a programmable digital ledger, enabling fractional ownership and faster settlement."}, {"id": 146, "slide_q": 287, "cat": "Banking, Finance & Regulatory", "q": "Regarding India's first Life Cycle Mutual Fund launched by Zerodha Fund House: (1) Minimum investment is ₹100; (2) Approved by SEBI; (3) Automatically shifts asset allocation from equity to debt over time; (4) Has NO lock-in period (not 3 years). Which statements are correct?", "opts": ["1, 2, and 3 only (There is NO lock-in period)", "1 and 4 only", "2 and 4 only", "All 1, 2, 3, and 4"], "ans": 0, "p1": "Correction Note: Statement 4 is incorrect because Zerodha's Life Cycle Mutual Fund has NO lock-in period (3-year lock-in applies to ELSS tax-saver funds).", "p2": "Exam Fact: Target-date / life-cycle funds automatically de-risk portfolios as the investor approaches retirement or goal maturity."}, {"id": 147, "slide_q": 288, "cat": "Banking, Finance & Regulatory", "q": "What is the minimum Fixed Deposit (FD) required for the 'Paisa Plus' secured credit card launched by Paisabazaar and SBM Bank India?", "opts": ["₹5,000", "₹2,000", "₹10,000", "₹1,000"], "ans": 1, "p1": "Minimum FD: ₹2,000 with SBM Bank India (State Bank of Mauritius India).", "p2": "Exam Fact: SBM Bank India was the first foreign bank to receive a universal banking license from RBI to operate as a Wholly Owned Subsidiary (WOS)."}, {"id": 148, "slide_q": 289, "cat": "Banking, Finance & Regulatory", "q": "What cyber fraud insurance cover is included in HDFC Bank's 'Max for Seniors' senior citizen savings account?", "opts": ["₹50,000", "₹10,000", "₹25,000", "₹1,00,000"], "ans": 2, "p1": "Coverage: ₹25,000 cyber fraud protection cover (launched alongside 'Max for Her' women's savings account).", "p2": "Exam Fact: Protects senior citizens against unauthorized digital/phishing payment losses."}, {"id": 149, "slide_q": 292, "cat": "Banking, Finance & Regulatory", "q": "With which Indian state did the Asian Development Bank (ADB) sign its first Transaction Advisory Services (TAS) mandate?", "opts": ["Uttar Pradesh", "Madhya Pradesh", "Gujarat", "Odisha"], "ans": 1, "p1": "State: Madhya Pradesh (Capital: Bhopal).", "p2": "Exam Fact: ADB's Transaction Advisory Services help state governments structure bankable Public-Private Partnership (PPP) infrastructure projects."}, {"id": 150, "slide_q": 293, "cat": "Banking, Finance & Regulatory", "q": "Regarding Punjab & Sind Bank (PSB): (1) Founded in 1908 (with Bhai Vir Singh among founders); (2) Headquartered in New Delhi (not Amritsar); (3) Launched CBDC (Digital Rupee) services on its 119th Foundation Day. Which statements are correct?", "opts": ["2 and 3 only", "1 and 2 only", "1, 3, and 4 (Headquartered in New Delhi, not Amritsar)", "All 1, 2, 3, and 4"], "ans": 2, "p1": "Correction Note: Statement 2 is incorrect because Punjab & Sind Bank is headquartered in New Delhi (not Amritsar).", "p2": "Exam Fact: Founded on 24 June 1908 by Bhai Vir Singh, Sir Sunder Singh Majithia, and Sardar Tarlochan Singh."}, {"id": 151, "slide_q": 294, "cat": "Banking, Finance & Regulatory", "q": "In June 2026, RBI recognized Sahamati Foundation as a Self-Regulatory Organization (SRO) for which digital financial ecosystem?", "opts": ["Prepaid Payment Instrument (PPI) issuers", "Peer-to-Peer (P2P) Lending ecosystem", "White Label ATM operators", "Account Aggregator (AA) ecosystem"], "ans": 3, "p1": "Role: Sahamati is the industry alliance and RBI-recognized SRO for the Account Aggregator (AA) consent-based financial data sharing framework.", "p2": "Exam Fact: Account Aggregators are NBFC-AAs regulated by the RBI."}, {"id": 152, "slide_q": 295, "cat": "Banking, Finance & Regulatory", "q": "Which Public Sector Bank raised USD 700 million via 3-year and 5-year senior unsecured bonds in August 2026?", "opts": ["Bank of Baroda", "State Bank of India", "Canara Bank", "Union Bank of India"], "ans": 0, "p1": "Issuer: Bank of Baroda (Headquarters: Vadodara, Gujarat).", "p2": "Exam Fact: Senior unsecured bonds are debt securities not backed by specific collateral, ranking ahead of subordinated Tier-2 debt."}, {"id": 153, "slide_q": 296, "cat": "Banking, Finance & Regulatory", "q": "In August 2026, Standard Chartered received in-principle approval from IFSCA (GIFT City) to offer which services?", "opts": ["Retail agricultural micro-lending", "Wealth management and capital market product distribution", "Domestic cheque clearing", "Sovereign coin minting"], "ans": 1, "p1": "Services: Global wealth management and capital market product distribution from GIFT City IFSC.", "p2": "Exam Fact: Standard Chartered is headquartered in London, United Kingdom."}, {"id": 154, "slide_q": 297, "cat": "Appointments & Committees", "q": "Who serves as the Member Secretary of the 6-member High-Level Committee on Banking for Viksit Bharat?", "opts": ["Girish Chandra Murmu", "Suresh N. Patel", "Sanjay Lohia (Joint Secretary, DFS)", "Padmaja Chunduru"], "ans": 2, "p1": "Roles: Chaired by Suresh N. Patel; Member Secretary is DFS Joint Secretary Sanjay Lohia.", "p2": "Exam Fact: DFS (Department of Financial Services) operates under the Ministry of Finance."}, {"id": 155, "slide_q": 299, "cat": "Banking, Finance & Regulatory", "q": "Which month was designated by IRDAI as 'Grievance Resolution Month' to clear pending policyholder complaints across insurers?", "opts": ["November 2026", "October 2026", "December 2026", "September 2026"], "ans": 0, "p1": "Month: November 2026.", "p2": "Exam Fact: IRDAI operates the 'Bima Bharosa' integrated grievance management system."}, {"id": 156, "slide_q": 300, "cat": "Banking, Finance & Regulatory", "q": "Asian Development Bank (ADB) approved a USD 42.2 million loan for sustainable value-chain development of which resource in North-East India?", "opts": ["Tea", "Bamboo", "Rubber", "Natural Silk"], "ans": 1, "p1": "Sector & Amount: Bamboo sector development in North-East India — USD 42.2 million ADB financing.", "p2": "Exam Fact: National Bamboo Mission (NBM) operates under the Ministry of Agriculture & Farmers' Welfare."}, {"id": 157, "slide_q": 301, "cat": "Banking, Finance & Regulatory", "q": "Indian Bank approved ₹500 crore in MSME loans while celebrating which Foundation Day in August 2026?", "opts": ["115th Foundation Day", "100th Foundation Day", "120th Foundation Day", "125th Foundation Day"], "ans": 2, "p1": "Foundation Date: Founded on 15 August 1907 in Chennai, Tamil Nadu (Tagline: 'Your Own Bank').", "p2": "Exam Fact: Allahabad Bank was amalgamated into Indian Bank effective 1 April 2020."}, {"id": 158, "slide_q": 302, "cat": "Banking, Finance & Regulatory", "q": "In July 2026, IRDAI granted registration to Prudential HCL Health Insurance, making it India's which numbered Standalone Health Insurance Company (SAHI)?", "opts": ["10th", "6th", "7th", "8th"], "ans": 3, "p1": "Milestone: 8th Standalone Health Insurance (SAHI) company in India.", "p2": "Exam Fact: Joint venture between UK-based Prudential plc and HCL Group."}, {"id": 159, "slide_q": 304, "cat": "Banking, Finance & Regulatory", "q": "Regarding the Credit Guarantee Scheme for Microfinance Institutions (CGSMFI): (1) Implemented by NCGTC (not SIDBI); (2) Guarantee pool/loan amount ₹3,000 crore / ₹1,000 crore; (3) Annual guarantee fee is 0.50% p.a.; (4) Valid up to August 2026 (not March 2027). Which statements are correct?", "opts": ["1 and 2 only", "2 and 3 only (Implemented by NCGTC; valid till August 2026)", "1, 3, and 4 only", "All 1, 2, 3, and 4"], "ans": 1, "p1": "Corrections: Implemented by National Credit Guarantee Trustee Company Limited (NCGTC), not SIDBI, and valid up to August 2026.", "p2": "Exam Fact: NCGTC is a wholly-owned company of the Department of Financial Services, Ministry of Finance."}, {"id": 160, "slide_q": 305, "cat": "Banking, Finance & Regulatory", "q": "Which Public Sector Bank signed a 3-year deal with GYFTI / GyFTR in August 2026 to launch a dedicated rewards channel for credit card customers?", "opts": ["Bank of India (BoI)", "State Bank of India (SBI)", "Punjab National Bank (PNB)", "Union Bank of India (UBI)"], "ans": 2, "p1": "Bank: Punjab National Bank (Headquarters: New Delhi).", "p2": "Exam Fact: Enhances digital voucher redemption and loyalty rewards for PNB credit cardholders."}, {"id": 161, "slide_q": 307, "cat": "Banking, Finance & Regulatory", "q": "NPCI International (NIPL) partnered with ACLEDA Bank to enable UPI QR payments via the 'KHQR' national QR network of which country?", "opts": ["Cambodia", "Laos", "Vietnam", "Thailand"], "ans": 0, "p1": "Country & QR Network: Cambodia (KHQR) — Capital: Phnom Penh | Currency: Cambodian Riel.", "p2": "Exam Fact: ACLEDA Bank is one of Cambodia's largest commercial banks."}, {"id": 162, "slide_q": 308, "cat": "Banking, Finance & Regulatory", "q": "Which two new user features did NPCI launch on the UPI platform in September 2026?", "opts": ["UPI Lite X and Hello! UPI", "UPI Tap & Pay and MyUPI", "UPI AutoPay Max and UPI Credit", "UPI Global and UPI Split"], "ans": 1, "p1": "Features: 'UPI Tap & Pay' (NFC contactless tap-and-pay) and 'MyUPI' (personalized UPI handle/dashboard management).", "p2": "Exam Fact: Expands contactless NFC merchant acceptance on smartphones."}, {"id": 163, "slide_q": 309, "cat": "Banking, Finance & Regulatory", "q": "Which fintech company developed the user-level programmable CBDC (Digital Rupee) application with auto-issuance for Bank of India?", "opts": ["Paytm", "Razorpay", "Mindtrain India", "Perfios"], "ans": 2, "p1": "Technology Partner: Mindtrain India.", "p2": "Exam Fact: Enables purpose-bound programmable e-Rupee disbursements."}, {"id": 164, "slide_q": 310, "cat": "Appointments & Committees", "q": "Regarding the High-Level Committee on Banking for Viksit Bharat: (1) Chaired by Suresh N. Patel; (2) Comprises 6 members (not 9); (3) Includes former CAG Girish Chandra Murmu; (4) DFS Joint Secretary Sanjay Lohia is Member Secretary. Which statements are correct?", "opts": ["All 1, 2, 3, and 4", "1 and 2 only", "2 and 3 only", "1, 3, and 4 only (It is a 6-member committee)"], "ans": 3, "p1": "Correction Note: Statement 2 is incorrect because the panel has 6 members (not 9).", "p2": "Exam Fact: Girish Chandra Murmu previously served as the 14th Comptroller and Auditor General (CAG) of India and 1st Lt. Governor of J&K."}, {"id": 165, "slide_q": 311, "cat": "Banking, Finance & Regulatory", "q": "Bank of Baroda partnered with which Japanese bank to boost bilateral corporate and MSME financing?", "opts": ["Mizuho Bank", "MUFG Bank", "Sumitomo Mitsui Banking Corporation (SMBC)", "Resona Bank"], "ans": 0, "p1": "Partner Bank: Mizuho Bank (Headquarters: Tokyo, Japan).", "p2": "Exam Fact: Facilitates Indo-Japanese cross-border trade, corporate banking, and yen/rupee financing."}, {"id": 166, "slide_q": 312, "cat": "Banking, Finance & Regulatory", "q": "What type of insurance product is LIC's 'New Jeevan Dhara-II' launched in October 2026?", "opts": ["Pure Term Life Insurance Plan", "Deferred Annuity / Retirement Pension Plan", "Critical Illness & Cancer Cover", "Child Education Endowment Plan"], "ans": 1, "p1": "Product Category: Individual, Savings, Deferred Annuity (Retirement Pension) Plan.", "p2": "Exam Fact: Allows policyholders to lock in guaranteed annuity rates during the deferment period for post-retirement income."}, {"id": 167, "slide_q": 313, "cat": "Banking, Finance & Regulatory", "q": "Where is UCO Bank establishing its IFSC Banking Unit (IBU)?", "opts": ["Dubai, UAE", "Mumbai, Maharashtra", "GIFT City, Gandhinagar, Gujarat", "Singapore"], "ans": 2, "p1": "Location: GIFT City (Gujarat International Finance Tec-City), Gandhinagar.", "p2": "Exam Fact: UCO Bank is headquartered in Kolkata, West Bengal (founded 1943; Tagline: 'Honours Your Trust')."}, {"id": 168, "slide_q": 314, "cat": "Banking, Finance & Regulatory", "q": "NPCI International enabled UPI payments for online ticket bookings at which iconic global landmark?", "opts": ["Tokyo Skytree (Tokyo, Japan)", "Eiffel Tower (Paris, France)", "Statue of Liberty (New York, USA)", "Burj Khalifa (Dubai, UAE)"], "ans": 3, "p1": "Landmark: Burj Khalifa in Dubai, UAE (world's tallest building at 828 meters).", "p2": "Exam Fact: Allows Indian tourists to pay in INR via UPI when booking Burj Khalifa tickets online."}, {"id": 169, "slide_q": 315, "cat": "Banking, Finance & Regulatory", "q": "Regarding 'Favara' cross-border payment linkage: (1) Enables instant P2P transfers between Maldives and India; (2) Built/regulated by Maldives Monetary Authority (MMA); (3) Favara is Maldives' instant payment system (not Sri Lanka); (4) Currency of Maldives is Maldivian Rufiyaa (not Rupee). Which statements are correct?", "opts": ["1 and 2 only (Favara is Maldives' system; currency is Rufiyaa)", "1, 2, and 3 only", "2 and 4 only", "All 1, 2, 3, and 4"], "ans": 0, "p1": "Corrections: Favara is the instant payment system of Maldives (not Sri Lanka), and Maldives' currency is Maldivian Rufiyaa (MVR).", "p2": "Exam Fact: Links India's UPI with Maldives' Favara for seamless cross-border remittances."}, {"id": 170, "slide_q": 316, "cat": "Banking, Finance & Regulatory", "q": "Indel Money's forex arm received a perpetual license from the RBI to operate under which category?", "opts": ["Full-Fledged Money Changer (FFMC)", "Authorised Dealer Category-II (AD Cat-II)", "Payments Bank", "Small Finance Bank"], "ans": 1, "p1": "License: Perpetual Authorised Dealer Category-II (AD Cat-II) license from RBI.", "p2": "Exam Fact: Indel Money is a prominent Kerala-based NBFC specializing in gold loans and forex services."}, {"id": 171, "slide_q": 317, "cat": "Banking, Finance & Regulatory", "q": "LIC launched two new plans—'Bima Platinum' and 'Jeevan Raksha'—on which anniversary of the corporation?", "opts": ["75th Anniversary", "65th Anniversary", "70th Anniversary", "60th Anniversary"], "ans": 2, "p1": "Milestone: 70th Anniversary (LIC was established on 1 September 1956).", "p2": "Exam Fact: LIC is headquartered in Mumbai, Maharashtra."}, {"id": 172, "slide_q": 318, "cat": "Appointments & Committees", "q": "Suresh N. Patel (Chairman of the High-Level Committee on Banking for Viksit Bharat) previously served as the MD & CEO of which bank?", "opts": ["Oriental Bank of Commerce", "Corporation Bank", "Syndicate Bank", "Andhra Bank"], "ans": 3, "p1": "Former Role: Former MD & CEO of Andhra Bank (which merged with Union Bank of India in April 2020) and former Central Vigilance Commissioner (CVC).", "p2": "Exam Fact: Heads the 6-member banking reform committee."}, {"id": 173, "slide_q": 322, "cat": "Banking, Finance & Regulatory", "q": "India Post Payments Bank (IPPB) celebrated its 9th Foundation Day by launching which payment acceptance device for merchants?", "opts": ["PostPay Mini", "IPPB SmartPOS", "BharatQR Tap", "DakPay SoundBox"], "ans": 3, "p1": "Device: DakPay SoundBox (provides instant audio confirmation of UPI/QR payments in regional languages).", "p2": "Exam Fact: IPPB was launched on 1 September 2018 (HQ: New Delhi; MD & CEO: R. Viswesvaran)."}, {"id": 174, "slide_q": 323, "cat": "Banking, Finance & Regulatory", "q": "State Bank of India (SBI) is developing a lighter mobile banking app called 'YONO Bharat' primarily tailored for which customer base?", "opts": ["PMJDY (Jan Dhan) and rural/basic account holders", "High-Net-Worth Private Wealth clients", "Corporate treasury exporters", "NRI FCNR depositors"], "ans": 0, "p1": "Target Segment: PM Jan Dhan Yojana (PMJDY) and basic/rural banking customers on entry-level smartphones and low-bandwidth networks.", "p2": "Exam Fact: Supports multiple Indian regional languages with simplified UI."}, {"id": 175, "slide_q": 324, "cat": "Banking, Finance & Regulatory", "q": "Which bank acts as the Payment Service Provider (PSP) bank for fintech platform 'Zype / Jump' after it received NPCI approval as a Third-Party Application Provider (TPAP)?", "opts": ["Axis Bank", "YES Bank", "ICICI Bank", "HDFC Bank"], "ans": 1, "p1": "PSP Bank: YES Bank.", "p2": "Exam Fact: Under NPCI's multi-bank TPAP model, non-bank UPI apps must partner with regulated PSP sponsor banks."}, {"id": 176, "slide_q": 325, "cat": "Appointments & Committees", "q": "Padmaja Chunduru (member of the High-Level Committee on Banking for Viksit Bharat) previously served as MD & CEO of which bank?", "opts": ["Central Bank of India", "Bank of India", "Indian Bank", "Union Bank of India"], "ans": 2, "p1": "Former Roles: Former MD & CEO of Indian Bank (2018–2021) and former MD & CEO of NSDL.", "p2": "Exam Fact: Indian Bank is headquartered in Chennai, Tamil Nadu."}, {"id": 177, "slide_q": 327, "cat": "Banking, Finance & Regulatory", "q": "Regarding Razorpay's 'VULCAN': (1) AI payments foundation model; (2) Detects 8x more international card fraud; (3) Built using NVIDIA AI & AWS cloud infrastructure (not purely in-house without NVIDIA/AWS); (4) Razorpay also launched multi-currency EEFC account with RBL Bank. Which statements are correct?", "opts": ["3 and 4 (Built on NVIDIA & AWS; EEFC account with RBL Bank)", "1 and 2 only", "1, 2, and 3 only", "All 1, 2, 3, and 4"], "ans": 0, "p1": "Key Details: Built on NVIDIA and AWS infrastructure; detects 8x more international card fraud; Razorpay also launched a multi-currency EEFC account with RBL Bank.", "p2": "Exam Fact: EEFC stands for Exchange Earners' Foreign Currency Account."}, {"id": 178, "slide_q": 328, "cat": "Banking, Finance & Regulatory", "q": "NSE International Exchange (NSE IX at GIFT City) signed an MoU with which global stock exchange to explore cross-listing and trade connectivity?", "opts": ["New York Stock Exchange (NYSE)", "London Stock Exchange (LSE)", "Singapore Exchange (SGX)", "Tokyo Stock Exchange (TSE)"], "ans": 1, "p1": "Partner Exchange: London Stock Exchange (United Kingdom).", "p2": "Exam Fact: NSE IX operates at GIFT City IFSC, Gandhinagar under IFSCA regulation."}, {"id": 179, "slide_q": 329, "cat": "Banking, Finance & Regulatory", "q": "Nova Fusion Capital received RBI registration as an NBFC to focus primarily on financing which segment?", "opts": ["Solar rooftop residential housing", "Rural cold-storage warehouses", "Used commercial Electric Vehicle (EV) operators", "Export textile machinery"], "ans": 2, "p1": "Focus Segment: Financing used commercial Electric Vehicle (EV) operators.", "p2": "Exam Fact: Addresses secondary-market financing gaps in India's commercial EV transition."}, {"id": 180, "slide_q": 330, "cat": "Appointments & Committees", "q": "Whom did the Delhi High Court appoint as the Official Liquidator for the winding up of Paytm Payments Bank?", "opts": ["Rajesh Bindal", "Suresh N. Patel", "Vikramjit Sen", "Girikumar M. Nair"], "ans": 3, "p1": "Appointee: Girikumar M. Nair (appointed by the Delhi High Court).", "p2": "Exam Fact: Paytm Payments Bank had previously been excluded by the RBI from the Second Schedule of the RBI Act, 1934."}];
+
+let mode = 'learn';
+let hideAnswers = false;
+let userAnswers = {};
+
+function setup() {
+  const select = document.getElementById('catSelect');
+  const uniqueCats = [...new Set(QUESTIONS.map(q => q.cat))];
+  uniqueCats.forEach(cat => {
+    const count = QUESTIONS.filter(q => q.cat === cat).length;
+    const option = document.createElement('option');
+    option.value = cat;
+    option.textContent = `${cat} (${count})`;
+    select.appendChild(option);
+  });
+  refreshStats();
+  render();
+}
+
+function setMode(newMode) {
+  mode = newMode;
+  document.getElementById('btn-learn').classList.toggle('active', mode === 'learn');
+  document.getElementById('btn-practice').classList.toggle('active', mode === 'practice');
+  document.getElementById('blurBtn').classList.toggle('hidden', mode !== 'learn');
+  render();
+}
+
+function toggleBlur() {
+  hideAnswers = !hideAnswers;
+  document.getElementById('blurBtn').textContent = hideAnswers
+    ? '👁️ Show All Answers'
+    : '👁️ Hide Answers (Self-Test)';
+  render();
+}
+
+function getFilteredList() {
+  const cat = document.getElementById('catSelect').value;
+  const term = document.getElementById('searchBox').value.trim().toLowerCase();
+
+  return QUESTIONS.filter(item => {
+    if (cat !== 'ALL' && item.cat !== cat) return false;
+    if (!term) return true;
+    return (
+      item.q.toLowerCase().includes(term) ||
+      item.opts.some(o => o.toLowerCase().includes(term)) ||
+      item.p1.toLowerCase().includes(term) ||
+      item.p2.toLowerCase().includes(term) ||
+      String(item.slide_q).includes(term)
+    );
+  });
+}
+
+function render() {
+  const list = getFilteredList();
+  document.getElementById('showingCount').textContent = `Showing ${list.length} question${list.length === 1 ? '' : 's'}`;
+  const container = document.getElementById('cardsContainer');
+
+  if (list.length === 0) {
+    container.innerHTML = `<div class="no-results">No questions match your filter. Clear search or switch category.</div>`;
+    return;
+  }
+
+  container.innerHTML = list
+    .map(item => (mode === 'learn' ? buildLearnCard(item) : buildPracticeCard(item)))
+    .join('');
+}
+
+function buildLearnCard(item) {
+  const answerText = item.opts[item.ans];
+  const blurClass = hideAnswers ? 'blurred' : '';
+  return `
+    <div class="card">
+      <div class="card-top">
+        <div class="badge-group">
+          <span class="badge-num">Q.${item.id}</span>
+          <span class="badge-seq">Slide #${item.slide_q}</span>
+        </div>
+        <span class="badge-cat">${item.cat}</span>
+      </div>
+      <div class="question-text">${item.q}</div>
+      <div class="learn-answer-box ${blurClass}" onclick="this.classList.remove('blurred')" title="Click to reveal answer">
+        ✓ Answer: ${answerText}
+      </div>
+      <div class="exam-points">
+        <div class="exam-points-heading">📌 2 Exam-Related Extra Points</div>
+        <ul>
+          <li>${item.p1}</li>
+          <li>${item.p2}</li>
+        </ul>
+      </div>
+    </div>
+  `;
+}
+
+function buildPracticeCard(item) {
+  const record = userAnswers[item.id];
+  const isAnswered = record !== undefined;
+  const letters = ['A', 'B', 'C', 'D'];
+
+  const optsMarkup = item.opts
+    .map((opt, idx) => {
+      let cls = '';
+      if (isAnswered) {
+        if (idx === item.ans) cls = 'correct';
+        else if (idx === record.picked && !record.correct) cls = 'wrong';
+      }
+      return `
+        <button class="option-btn ${cls}" ${isAnswered ? 'disabled' : ''} onclick="selectOption(${item.id}, ${idx})">
+          <span class="opt-circle">${letters[idx]}</span>
+          <span>${opt}</span>
+        </button>
+      `;
+    })
+    .join('');
+
+  const bannerMarkup = isAnswered
+    ? record.correct
+      ? `<span class="result-pill right">✓ Correct!</span>`
+      : `<span class="result-pill wrong">✕ Wrong Answer</span>`
+    : '';
+
+  return `
+    <div class="card" id="card-${item.id}">
+      <div class="card-top">
+        <div class="badge-group">
+          <span class="badge-num">Q.${item.id}</span>
+          <span class="badge-seq">Slide #${item.slide_q}</span>
+        </div>
+        <span class="badge-cat">${item.cat}</span>
+      </div>
+      <div class="question-text">${item.q}</div>
+      <div class="options-list">
+        ${optsMarkup}
+      </div>
+      <div class="answer-panel ${isAnswered ? 'visible' : ''}" id="panel-${item.id}">
+        <div class="result-banner">
+          ${bannerMarkup}
+          <div class="correct-label">Correct Answer: <span>${letters[item.ans]}. ${item.opts[item.ans]}</span></div>
+        </div>
+        <div class="exam-points">
+          <div class="exam-points-heading">📌 2 Exam-Related Extra Points</div>
+          <ul>
+            <li>${item.p1}</li>
+            <li>${item.p2}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+function selectOption(qId, pickedIdx) {
+  if (userAnswers[qId] !== undefined) return;
+  const item = QUESTIONS.find(q => q.id === qId);
+  if (!item) return;
+
+  userAnswers[qId] = {
+    picked: pickedIdx,
+    correct: pickedIdx === item.ans
+  };
+
+  refreshStats();
+  const cardEl = document.getElementById(`card-${qId}`);
+  if (cardEl) {
+    cardEl.outerHTML = buildPracticeCard(item);
+  }
+}
+
+function refreshStats() {
+  const keys = Object.keys(userAnswers);
+  const attempted = keys.length;
+  const correct = keys.filter(k => userAnswers[k].correct).length;
+  const wrong = attempted - correct;
+
+  document.getElementById('cnt-attempted').textContent = attempted;
+  document.getElementById('cnt-correct').textContent = correct;
+  document.getElementById('cnt-wrong').textContent = wrong;
+}
+
+function resetAll() {
+  userAnswers = {};
+  refreshStats();
+  render();
+}
+
+setup();
+</script>
+</body>
+</html>

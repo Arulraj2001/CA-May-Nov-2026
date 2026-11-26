@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>6-Month CA Rapid Revision (Part 1) — New & Unique Questions — Learn & Practice (White Theme)</title>
+<style>
+  :root {
+    --bg-page: #ffffff;
+    --bg-panel: #f9fafb;
+    --bg-card: #ffffff;
+    --border-light: #e5e7eb;
+    --border-strong: #d1d5db;
+    --text-main: #111827;
+    --text-sub: #4b5563;
+    --text-muted: #6b7280;
+    --primary: #1d4ed8;
+    --primary-soft: #eff6ff;
+    --primary-border: #bfdbfe;
+    --green-bg: #f0fdf4;
+    --green-border: #22c55e;
+    --green-text: #15803d;
+    --red-bg: #fef2f2;
+    --red-border: #ef4444;
+    --red-text: #b91c1c;
+    --amber-bg: #fffbeb;
+    --amber-border: #f59e0b;
+    --amber-text: #92400e;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background-color: var(--bg-page);
+    color: var(--text-main);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Arial, sans-serif;
+    line-height: 1.6;
+  }
+
+  header {
+    background-color: #ffffff;
+    border-bottom: 1px solid var(--border-light);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 14px 20px;
+  }
+
+  .header-wrap {
+    max-width: 1060px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .title-block h1 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--text-main);
+  }
+
+  .title-block p {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+  }
+
+  .tabs {
+    display: inline-flex;
+    background-color: var(--bg-panel);
+    border: 1px solid var(--border-light);
+    border-radius: 8px;
+    padding: 4px;
+    gap: 4px;
+  }
+
+  .tab-btn {
+    border: none;
+    background: transparent;
+    color: var(--text-sub);
+    font-size: 0.88rem;
+    font-weight: 600;
+    padding: 7px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.15s ease;
+  }
+
+  .tab-btn.active {
+    background-color: #ffffff;
+    color: var(--primary);
+    border: 1px solid var(--border-light);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
+  }
+
+  .main-container {
+    max-width: 1060px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .controls-bar {
+    background-color: var(--bg-panel);
+    border: 1px solid var(--border-light);
+    border-radius: 10px;
+    padding: 12px 16px;
+    margin-bottom: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .filter-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    flex: 1;
+  }
+
+  select, input[type="text"] {
+    background-color: #ffffff;
+    color: var(--text-main);
+    border: 1px solid var(--border-strong);
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 0.875rem;
+    outline: none;
+  }
+
+  select:focus, input[type="text"]:focus {
+    border-color: var(--primary);
+  }
+
+  input[type="text"] {
+    min-width: 230px;
+  }
+
+  .score-group {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.84rem;
+    font-weight: 600;
+  }
+
+  .pill {
+    background-color: #ffffff;
+    border: 1px solid var(--border-light);
+    border-radius: 999px;
+    padding: 4px 11px;
+    color: var(--text-sub);
+  }
+
+  .pill.green {
+    background-color: var(--green-bg);
+    border-color: var(--green-border);
+    color: var(--green-text);
+  }
+
+  .pill.red {
+    background-color: var(--red-bg);
+    border-color: var(--red-border);
+    color: var(--red-text);
+  }
+
+  .action-btn {
+    background-color: #ffffff;
+    color: var(--text-main);
+    border: 1px solid var(--border-strong);
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .action-btn:hover {
+    background-color: #f3f4f6;
+  }
+
+  .learn-subbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 14px;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+  }
+
+  .card {
+    background-color: #ffffff;
+    border: 1px solid var(--border-light);
+    border-radius: 10px;
+    padding: 18px 20px;
+    margin-bottom: 14px;
+  }
+
+  .card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    gap: 8px;
+  }
+
+  .badge-group {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .badge-num {
+    background-color: var(--primary-soft);
+    color: var(--primary);
+    border: 1px solid var(--primary-border);
+    font-size: 0.78rem;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 5px;
+  }
+
+  .badge-seq {
+    background-color: var(--bg-panel);
+    color: var(--text-sub);
+    border: 1px solid var(--border-light);
+    font-size: 0.74rem;
+    font-weight: 600;
+    padding: 2px 7px;
+    border-radius: 5px;
+  }
+
+  .badge-cat {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+
+  .question-text {
+    font-size: 1.02rem;
+    font-weight: 600;
+    color: var(--text-main);
+    margin-bottom: 12px;
+  }
+
+  .learn-answer-box {
+    display: inline-block;
+    background-color: var(--green-bg);
+    border: 1px solid #bbf7d0;
+    color: var(--green-text);
+    font-weight: 700;
+    font-size: 0.94rem;
+    padding: 6px 12px;
+    border-radius: 6px;
+    margin-bottom: 12px;
+  }
+
+  .learn-answer-box.blurred {
+    filter: blur(5px);
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .exam-points {
+    background-color: var(--amber-bg);
+    border: 1px solid #fde68a;
+    border-left: 4px solid var(--amber-border);
+    border-radius: 6px;
+    padding: 10px 14px;
+  }
+
+  .exam-points-heading {
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--amber-text);
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    margin-bottom: 4px;
+  }
+
+  .exam-points ul {
+    margin-left: 18px;
+    font-size: 0.88rem;
+    color: #374151;
+  }
+
+  .exam-points li {
+    margin-bottom: 3px;
+  }
+
+  .options-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 10px;
+  }
+
+  .option-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    text-align: left;
+    background-color: #ffffff;
+    border: 1.5px solid var(--border-light);
+    border-radius: 8px;
+    padding: 11px 14px;
+    font-size: 0.92rem;
+    font-weight: 500;
+    color: var(--text-main);
+    cursor: pointer;
+    transition: all 0.15s ease;
+  }
+
+  .option-btn:hover:not(:disabled) {
+    border-color: var(--primary);
+    background-color: var(--primary-soft);
+  }
+
+  .option-btn:disabled {
+    cursor: default;
+  }
+
+  .opt-circle {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: var(--bg-panel);
+    border: 1px solid var(--border-strong);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--text-sub);
+    flex-shrink: 0;
+  }
+
+  .option-btn.correct {
+    background-color: var(--green-bg);
+    border-color: var(--green-border);
+    color: var(--green-text);
+    font-weight: 700;
+  }
+
+  .option-btn.correct .opt-circle {
+    background-color: var(--green-border);
+    border-color: var(--green-border);
+    color: #ffffff;
+  }
+
+  .option-btn.wrong {
+    background-color: var(--red-bg);
+    border-color: var(--red-border);
+    color: var(--red-text);
+    font-weight: 600;
+  }
+
+  .option-btn.wrong .opt-circle {
+    background-color: var(--red-border);
+    border-color: var(--red-border);
+    color: #ffffff;
+  }
+
+  .answer-panel {
+    display: none;
+    margin-top: 14px;
+    padding-top: 14px;
+    border-top: 1px solid var(--border-light);
+    animation: slideDown 0.18s ease-out;
+  }
+
+  .answer-panel.visible {
+    display: block;
+  }
+
+  .result-banner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+
+  .result-pill {
+    font-size: 0.84rem;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 6px;
+  }
+
+  .result-pill.right {
+    background-color: var(--green-bg);
+    color: var(--green-text);
+    border: 1px solid var(--green-border);
+  }
+
+  .result-pill.wrong {
+    background-color: var(--red-bg);
+    color: var(--red-text);
+    border: 1px solid var(--red-border);
+  }
+
+  .correct-label {
+    font-size: 0.92rem;
+    font-weight: 700;
+    color: var(--text-main);
+  }
+
+  .correct-label span {
+    color: var(--green-text);
+  }
+
+  .hidden {
+    display: none !important;
+  }
+
+  .no-results {
+    text-align: center;
+    padding: 40px 20px;
+    border: 1px dashed var(--border-strong);
+    border-radius: 10px;
+    color: var(--text-muted);
+  }
+
+  @keyframes slideDown {
+    from { opacity: 0; transform: translateY(-4px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @media (max-width: 640px) {
+    .header-wrap { flex-direction: column; align-items: flex-start; }
+    .options-list { grid-template-columns: 1fr; }
+    input[type="text"] { width: 100%; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-wrap">
+    <div class="title-block">
+      <h1>6-Month CA Rapid Revision (Part 1) — New & Unique Questions (64 Questions)</h1>
+      <p>Pradeep Sir Session (English) | Exclusive Questions Not Covered in All 8 Previous Files</p>
+    </div>
+    <div class="tabs">
+      <button class="tab-btn active" id="btn-learn" onclick="setMode('learn')">📖 Learn Mode</button>
+      <button class="tab-btn" id="btn-practice" onclick="setMode('practice')">✍️ Practice MCQs</button>
+    </div>
+  </div>
+</header>
+
+<div class="main-container">
+  <div class="controls-bar">
+    <div class="filter-group">
+      <select id="catSelect" onchange="render()">
+        <option value="ALL">All Categories (64)</option>
+      </select>
+      <input type="text" id="searchBox" placeholder="Search question, answer, or extra points..." oninput="render()">
+    </div>
+    <div class="score-group">
+      <span class="pill">Attempted: <span id="cnt-attempted">0</span>/64</span>
+      <span class="pill green">Correct: <span id="cnt-correct">0</span></span>
+      <span class="pill red">Wrong: <span id="cnt-wrong">0</span></span>
+      <button class="action-btn" onclick="resetAll()">Reset Practice</button>
+    </div>
+  </div>
+
+  <div class="learn-subbar" id="learnSubbar">
+    <span id="showingCount">Showing 64 questions</span>
+    <button class="action-btn" id="blurBtn" onclick="toggleBlur()">👁️ Hide Answers (Self-Test)</button>
+  </div>
+
+  <div id="cardsContainer"></div>
+</div>
+
+<script>
+const QUESTIONS = [{"id": 1, "video_q": 1, "cat": "Government Schemes & Initiatives", "q": "Jal Jeevan Mission completed 7 years. What is the new deadline set for completing the Jal Jeevan Mission?", "opts": ["March 2027", "December 2028", "December 2027", "March 2030"], "ans": 1, "p1": "Launch & Progress: Originally launched on 15 August 2019; rural tap water coverage rose from ~16.7% to ~82% (deadline extended to December 2028).", "p2": "Exam Fact: Implemented by the Department of Drinking Water and Sanitation under the Ministry of Jal Shakti (Har Ghar Jal)."}, {"id": 2, "video_q": 3, "cat": "Infrastructure, Ports & Energy", "q": "At what altitude (height) is India planning to build the world's highest railway station at Taglang La (Tanglang La) in Ladakh?", "opts": ["5,540 meters", "5,068 meters", "4,850 meters", "5,256 meters"], "ans": 3, "p1": "Record Surpassed: Beats China's Tanggula Railway Station (5,068 meters) on the Qinghai–Tibet Railway.", "p2": "Exam Fact: Located along the strategic Bhanupali–Bilaspur–Manali–Leh railway line in Ladakh."}, {"id": 3, "video_q": 4, "cat": "Infrastructure, Ports & Energy", "q": "At which Indian port will India's first port-based green e-Methanol plant (worth ₹2,300 crore) be established?", "opts": ["Deendayal Port (Kandla), Gujarat", "Paradip Port, Odisha", "Jawaharlal Nehru Port (JNPA), Maharashtra", "Visakhapatnam Port, Andhra Pradesh"], "ans": 0, "p1": "Project Shareholding: Total cost ₹2,300 crore; Deendayal Port Authority (DPA) holds a 76% stake in the green shipping fuel project.", "p2": "Exam Fact: Deendayal Port (Kandla) is a major tidal port located in the Gulf of Kutch, Gujarat."}, {"id": 4, "video_q": 5, "cat": "Government Schemes & Initiatives", "q": "Regarding Government e-Marketplace (GeM): (1) Launched on 9 August 2016; (2) Uses a 5-digit PIN code structure (14550) rather than 4 digits; (3) Celebrated its 10th Foundation Day; (4) Operates under the Ministry of Commerce and Industry. Which statements are correct?", "opts": ["1 and 2 only", "1, 3, and 4 only (PIN is 5 digits: 14550)", "2 and 3 only", "All 1, 2, 3, and 4"], "ans": 1, "p1": "Correction Note: Statement 2 is incorrect because the code is 5 digits (14550), not 4 digits.", "p2": "Exam Fact: GeM is India's national public procurement portal operating under the Ministry of Commerce and Industry."}, {"id": 5, "video_q": 6, "cat": "Science, Space & Environment", "q": "The Ministry of Earth Sciences (MoES) celebrated its 20th Foundation Day on 27 July 2026. In which year was its predecessor, the Department of Ocean Development (DOD), established?", "opts": ["1988", "1972", "1981", "2006"], "ans": 2, "p1": "Evolution: Department of Ocean Development was created in July 1981 and reorganized into the Ministry of Earth Sciences (MoES) in 2006.", "p2": "Exam Fact: IMD, NCMRWF, IITM, and NIOT function under the Ministry of Earth Sciences."}, {"id": 6, "video_q": 10, "cat": "Science, Space & Environment", "q": "Regarding Squadron Leader Bhawana Kanth: (1) Became the first woman to complete the Fighter Combat Leader (FCL) course; (2) Completed it at TACDE, Gwalior (not AFA Dundigal); (3) Commissioned in June 2016; (4) Hails from Darbhanga, Bihar (not Muzaffarpur). Which statements are correct?", "opts": ["2 and 4 only", "1, 2, and 3 only", "1 and 3 only (Course at TACDE Gwalior; native of Darbhanga, Bihar)", "All 1, 2, 3, and 4"], "ans": 2, "p1": "Corrections: She completed the FCL course at Tactics and Air Combat Development Establishment (TACDE), Gwalior, and hails from Darbhanga, Bihar.", "p2": "Exam Fact: Bhawana Kanth, Avani Chaturvedi, and Mohana Singh were India's first batch of women fighter pilots commissioned in June 2016."}, {"id": 7, "video_q": 13, "cat": "Banking, Finance & Regulatory", "q": "On which date did the Principal Purpose Test (PPT) under the amended India–Mauritius Double Taxation Avoidance Agreement (DTAA) come into effect?", "opts": ["1 April 2026", "10 August 2026", "1 July 2026", "1 October 2026"], "ans": 1, "p1": "Tax Treaty Rule: Effective 10 August 2026; denies treaty tax benefits if obtaining a tax advantage was one of the principal purposes of an arrangement.", "p2": "Exam Fact: Aligns the India–Mauritius DTAA with the OECD BEPS (Base Erosion and Profit Shifting) Multilateral Instrument (MLI) standards."}, {"id": 8, "video_q": 14, "cat": "Infrastructure, Ports & Energy", "q": "Regarding Tamil Nadu's Battery Energy Storage System (BESS) Policy: (1) Targets 2.5 GW to 10 GW of BESS over 3 years; (2) New solar projects of 1 MW or more must install BESS of at least 10% capacity; (3) Storage must have a 4-hour discharge duration (not 2-hour). Which statements are correct?", "opts": ["2 and 3 only", "1 and 3 only", "1 and 2 only (Discharge duration must be 4 hours)", "All 1, 2, and 3"], "ans": 2, "p1": "Correction Note: Statement 3 is incorrect because the policy mandates a 4-hour discharge duration (not 2 hours).", "p2": "Exam Fact: Supports grid stability and peak-hour renewable energy dispatch in Tamil Nadu."}, {"id": 9, "video_q": 16, "cat": "Polity, Bills & Governance", "q": "Under which Union Ministry does the Indian Cyber Crime Coordination Centre (I4C)—which launched two new portals for grievance redressal and money restoration—function?", "opts": ["Ministry of Home Affairs (MHA)", "Ministry of Electronics and Information Technology (MeitY)", "Ministry of Finance", "Ministry of Communications"], "ans": 0, "p1": "Parent Ministry: Ministry of Home Affairs (headed by Union Minister Amit Shah, Lok Sabha MP from Gandhinagar, Gujarat).", "p2": "Exam Fact: I4C operates the National Cyber Crime Reporting Portal (cybercrime.gov.in) and the 1930 financial cyber fraud helpline."}, {"id": 10, "video_q": 18, "cat": "Infrastructure, Ports & Energy", "q": "Where did Hindalco commission India's first superfine Precipitated Hydrate (PHT) plant with a capacity of 30,000 tonnes per annum in August 2026?", "opts": ["Hirakud, Odisha", "Renukoot, Uttar Pradesh", "Belagavi, Karnataka", "Muri, Jharkhand"], "ans": 2, "p1": "Location & Capacity: Belagavi (Belgaum), Karnataka — capacity of 30,000 tonnes per annum.", "p2": "Exam Fact: Hindalco Industries is the metals flagship company of the Aditya Birla Group."}, {"id": 11, "video_q": 22, "cat": "Sports & Tournaments", "q": "Regarding the Khelo India & ASMITA restructuring: (1) Combined outlay for FY 2027–31 is ₹36,441 crore; (2) Khelo India component accounts for ₹29,054 crore (while ASMITA/allied accounts for ₹7,387 crore); (3) Originally launched in 2017–18 by merging 3 older schemes; (4) Created a new 'Emerging Khelo India Athletes' category. Which statements are correct?", "opts": ["2 and 3 only", "1 and 2 only", "1, 3, and 4 only (Khelo India share is ₹29,054 crore)", "All 1, 2, 3, and 4"], "ans": 2, "p1": "Correction Note: Out of ₹36,441 crore, the Khelo India component is ₹29,054 crore and the remaining ₹7,387 crore is for the allied/ASMITA component.", "p2": "Exam Fact: ASMITA stands for Achieving Sports Milestone by Inspiring Women Through Action."}, {"id": 12, "video_q": 24, "cat": "Polity, Bills & Governance", "q": "Regarding Legal Metrology (Indian Standard Time) Rules, 2026: (1) IST is UTC + 5 hours 30 minutes; (2) Framed under Section 52 of Legal Metrology Act, 2009; (3) Based on 82.5° E longitude (not 75°); (4) Comes into effect after 180 days (not 30 days). Which statements are correct?", "opts": ["1 and 2 only (82.5° E longitude; effective in 180 days)", "1, 2, and 3 only", "2 and 4 only", "All 1, 2, 3, and 4"], "ans": 0, "p1": "Corrections: IST is anchored at 82.5° East longitude (passing through Mirzapur, UP), and the new rules take effect after 180 days (not 30 days).", "p2": "Exam Fact: CSIR-National Physical Laboratory (NPL, New Delhi) is the official timekeeper of India."}, {"id": 13, "video_q": 25, "cat": "Science, Space & Environment", "q": "What is the name of India's first nuclear training programme (a 3-month residential course) launched jointly by IIT Hyderabad and Crimson Energy in August 2026?", "opts": ["ATOM-X", "ANUYAN", "NUCLEAR-NEXT", "PARMANU-SHIKSHA"], "ans": 1, "p1": "Programme Details: 3-month residential nuclear engineering & safety training programme launched by IIT Hyderabad and Crimson Energy.", "p2": "Exam Fact: Prepares skilled manpower for India's Small Modular Reactor (SMR) and clean nuclear expansion."}, {"id": 14, "video_q": 27, "cat": "Banking, Finance & Regulatory", "q": "Regarding the National Investment and Infrastructure Fund (NIIF): (1) Total central commitment reached ₹60,000 crore after July 2026 approval; (2) Fresh funds flow into NIIF Infrastructure Fund II; (3) Founded in 2015 (not 2019); (4) Headquartered in Mumbai (not New Delhi). Which statements are correct?", "opts": ["All 1, 2, 3, and 4", "1, 2, and 3 only", "2 and 4 only", "1 and 2 only (Founded in 2015; HQ in Mumbai)"], "ans": 3, "p1": "Corrections: NIIF was established in 2015 as India's first sovereign-linked alternative asset manager and is headquartered in Mumbai.", "p2": "Exam Fact: The Government of India holds a 49% stake in NIIF, with the remainder held by domestic and international institutional investors."}, {"id": 15, "video_q": 28, "cat": "Science, Space & Environment", "q": "For which client is Larsen & Toubro's Vyoma AI building India's largest NVIDIA B300 AI factory (250 MW Phase-1 capacity, 10,000 GPUs) in Chennai?", "opts": ["Together AI", "OpenAI", "Anthropic", "Perplexity AI"], "ans": 0, "p1": "Location & Scale: Chennai, Tamil Nadu — 10,000 NVIDIA B300 GPUs with 250 MW Phase-1 capacity.", "p2": "Exam Fact: Positions Chennai as a major sovereign and hyperscale AI data center hub in South Asia."}, {"id": 16, "video_q": 29, "cat": "Banking, Finance & Regulatory", "q": "Regarding India's first sovereign-backed Protection & Indemnity (P&I) marine insurance product launched in August 2026: (1) Designed by New India Assurance (NIACL); (2) Coverage is USD 1.5 billion (not USD 5 billion); (3) Operates under Bharat Maritime Insurance Pool (BMIP); (4) Covers crew, cargo, pollution, and wreck removal. Which statements are correct?", "opts": ["1 and 2 only", "1, 3, and 4 only (Coverage limit is USD 1.5 billion)", "2 and 3 only", "All 1, 2, 3, and 4"], "ans": 1, "p1": "Correction Note: Coverage is up to USD 1.5 billion (not USD 5 billion), breaking foreign P&I club monopolies for Indian shipping.", "p2": "Exam Fact: New India Assurance Company Limited (NIACL) is headquartered in Mumbai, Maharashtra."}, {"id": 17, "video_q": 30, "cat": "Infrastructure, Ports & Energy", "q": "Under Tamil Nadu's Battery Energy Storage System (BESS) policy, what minimum percentage of capacity must new solar projects of 1 MW or more install as standalone/co-located storage?", "opts": ["15%", "5%", "10%", "20%"], "ans": 2, "p1": "Mandate: At least 10% of project capacity with a 4-hour discharge duration.", "p2": "Exam Fact: Helps absorb midday solar surplus and supply power during evening peak demand."}, {"id": 18, "video_q": 32, "cat": "Economy & Agriculture", "q": "In July 2026, NITI Aayog launched a 10-year Bioeconomy Roadmap aiming to grow India's bioeconomy to what size?", "opts": ["USD 691 billion", "USD 300 billion", "USD 500 billion", "USD 1 trillion"], "ans": 0, "p1": "Target: USD 691 billion over a 10-year roadmap.", "p2": "Exam Fact: Complements the Union Cabinet's BioE3 (Biotechnology for Economy, Environment and Employment) Policy."}, {"id": 19, "video_q": 33, "cat": "Economy & Agriculture", "q": "Which of the following is one of the three core pillars/components of the 'VISTAR' scheme approved by the Union Cabinet?", "opts": ["National Agricultural Census", "8th Economic Census (alongside Ecosystem & Operations and Sub-national Support)", " decennial Population Census", "Livestock & Fisheries Census"], "ans": 1, "p1": "Three Pillars of VISTAR: (1) Ecosystem & Operations, (2) Sub-national Support, and (3) 8th Economic Census.", "p2": "Exam Fact: Implemented by the Ministry of Statistics and Programme Implementation (MoSPI)."}, {"id": 20, "video_q": 34, "cat": "Science, Space & Environment", "q": "Regarding Centre for Development of Telematics (C-DOT): (1) Unveiled 14 indigenous quantum products on its 43rd Foundation Day; (2) Founded in 1984 (not 1994); (3) Functions under the Department of Telecommunications (DoT). Which statements are correct?", "opts": ["2 and 3 only", "1 and 2 only", "1 and 3 only (C-DOT was founded in 1984)", "All 1, 2, and 3"], "ans": 2, "p1": "Correction Note: C-DOT was established in August 1984 (not 1994) under Sam Pitroda's leadership to modernize Indian telecom.", "p2": "Exam Fact: C-DOT is headquartered in New Delhi and operates under the Ministry of Communications."}, {"id": 21, "video_q": 35, "cat": "Infrastructure, Ports & Energy", "q": "Which state received ₹150 crore financial assistance from the Ministry of Petroleum & Natural Gas in June 2026 for India's first private-sector hybrid 2G ethanol biorefinery?", "opts": ["Gujarat", "Punjab", "Maharashtra", "Uttar Pradesh"], "ans": 3, "p1": "State: Uttar Pradesh (India's largest sugarcane and ethanol-producing state).", "p2": "Exam Fact: Second-generation (2G) ethanol uses agricultural crop residues (parali/bagasse) rather than food grains."}, {"id": 22, "video_q": 37, "cat": "National & State Affairs", "q": "Regarding India's 80th Independence Day Celebrations (2026): (1) Theme celebrated 150 years of Vande Mataram; (2) PM Modi delivered his 13th consecutive Red Fort address; (3) Coordinated by Indian Army (not Indian Navy); (4) Har Ghar Tiranga campaign started in 2022 (not 2024). Which statements are correct?", "opts": ["1, 2, and 3 only", "1 and 2 only (Coordinated by Indian Army; Har Ghar Tiranga began in 2022)", "2 and 4 only", "All 1, 2, 3, and 4"], "ans": 1, "p1": "Corrections: Coordinating service was the Indian Army (not Navy), and the Har Ghar Tiranga campaign was launched in 2022 under Azadi Ka Amrit Mahotsav.", "p2": "Exam Fact: 2026 marked India's 80th Independence Day (79 completed years since 15 August 1947)."}, {"id": 23, "video_q": 38, "cat": "Banking, Finance & Regulatory", "q": "In June 2026, the Gujarat Government signed an MoU with which financial institution for ₹1 lakh crore long-term financing of metro, expressway, and Dholera projects?", "opts": ["SIDBI", "NABARD", "HUDCO (Housing and Urban Development Corporation)", "NaBFID"], "ans": 2, "p1": "Institution Details: HUDCO was founded in 1970 (Headquarters: New Delhi) and is a Navratna CPSE under MoHUA.", "p2": "Exam Fact: Dholera Special Investment Region (DSIR) is India's first greenfield smart industrial city under the Delhi–Mumbai Industrial Corridor."}, {"id": 24, "video_q": 40, "cat": "Government Schemes & Initiatives", "q": "Union Home Minister Amit Shah launched the 'PM Family Caretaker' pilot project in Gandhinagar, Gujarat. Up to what age of a child (from pregnancy) are welfare benefits tracked and provided?", "opts": ["18 years", "6 years", "14 years", "21 years"], "ans": 0, "p1": "Coverage Window: Tracks maternal and child health, nutrition, immunization, and education from pregnancy up to 18 years of age.", "p2": "Exam Fact: Launched in Gandhinagar, Gujarat (Amit Shah's Lok Sabha constituency)."}, {"id": 25, "video_q": 41, "cat": "Environment, Parks & GI Tags", "q": "Regarding Borjuli Biodiversity Heritage Site (notified July 2026): (1) Located in Sonitpur district, Assam; (2) Protects Oryza rufipogon (wild ancestor of cultivated rice); (3) Notified under Section 37 of Biological Diversity Act, 2002 (not Section 21); (4) Supported by ICAR-NBPGR and Assam State Biodiversity Board. Which statements are correct?", "opts": ["1 and 3 only", "1, 2, and 4 only (Notified under Section 37 of Biodiversity Act, 2002)", "2 and 3 only", "All 1, 2, 3, and 4"], "ans": 1, "p1": "Correction Note: Biodiversity Heritage Sites (BHS) are notified by State Governments under Section 37 of the Biological Diversity Act, 2002.", "p2": "Exam Fact: Nallur Tamarind Grove in Bengaluru, Karnataka was India's first Biodiversity Heritage Site (2007)."}, {"id": 26, "video_q": 42, "cat": "Science, Space & Environment", "q": "Which material did IIT Kanpur researchers use to build eco-friendly underground wave barriers to mitigate seismic/ground vibrations?", "opts": ["Recycled rubber", "Coir fiber", "Bamboo", "Fly ash"], "ans": 2, "p1": "Innovation: Bamboo-based underground wave barriers developed by IIT Kanpur (established 1959).", "p2": "Exam Fact: Bamboo offers high tensile strength, sustainability, and cost-effectiveness as a natural vibration-damping barrier."}, {"id": 27, "video_q": 43, "cat": "Infrastructure, Ports & Energy", "q": "In September 2026, the Ministry of Ports, Shipping and Waterways notified four ports as India's first 'Mega Ports'. Which of the following is NOT one of those four Mega Ports?", "opts": ["Paradip Port & Mundra Port", "Jawaharlal Nehru Port Authority (Nhava Sheva)", "Deendayal Port (Kandla)", "Visakhapatnam Port"], "ans": 3, "p1": "Four Notified Mega Ports: JNPA (Nhava Sheva), Deendayal Port (Kandla), Paradip Port, and Mundra Port.", "p2": "Exam Fact: Mega Ports are defined by cargo handling capacity exceeding 300 million metric tonnes per annum (MMTPA)."}, {"id": 28, "video_q": 45, "cat": "Science, Space & Environment", "q": "Where did Defence Minister Rajnath Singh lay the foundation stone for a ₹472 crore T-72 and T-90 tank overhaul facility?", "opts": ["Avadi, Tamil Nadu", "Jabalpur, Madhya Pradesh", "Medak, Telangana", "Dehradun, Uttarakhand"], "ans": 1, "p1": "Location: Jabalpur, Madhya Pradesh (home to Vehicle Factory Jabalpur and Gun Carriage Factory under Armoured Vehicles Nigam Limited).", "p2": "Exam Fact: Enhances indigenous MRO (Maintenance, Repair, and Overhaul) readiness for the Indian Army's main battle tank fleet."}, {"id": 29, "video_q": 46, "cat": "Infrastructure, Ports & Energy", "q": "Regarding the Taglang La railway station project: (1) Lies on the Bhanupali–Bilaspur–Manali–Leh railway line; (2) Line length is 489 km (not 289 km); (3) Station elevation is 5,256 meters; (4) Surpasses China's Tanggula station (5,068 m). Which statements are correct?", "opts": ["2 and 3 only", "1 and 2 only", "1, 3, and 4 only (Railway line length is 489 km)", "All 1, 2, 3, and 4"], "ans": 2, "p1": "Correction Note: The Bhanupali–Bilaspur–Manali–Leh strategic railway line is 489 km long (not 289 km).", "p2": "Exam Fact: Provides all-weather high-speed rail connectivity to Ladakh."}, {"id": 30, "video_q": 47, "cat": "Environment, Parks & GI Tags", "q": "Where did Cyclonic Storm 'Murasu'—the first North Indian Ocean cyclone given a Tamil name—make landfall?", "opts": ["Digha, West Bengal", "Nagapattinam, Tamil Nadu", "Gopalpur, Odisha", "Ongole, Andhra Pradesh"], "ans": 3, "p1": "Name & Landfall: 'Murasu' (a traditional Tamil percussion drum) made landfall near Ongole in Prakasam district, Andhra Pradesh.", "p2": "Exam Fact: Tropical cyclones in the North Indian Ocean are named sequentially by 13 WMO/ESCAP member countries."}, {"id": 31, "video_q": 53, "cat": "Science, Space & Environment", "q": "Which two mobile apps did TRAI (established under the TRAI Act, 1997) integrate into its unified 'Network Anubhav' crowdsourced drive-test platform?", "opts": ["DND 3.0 and Sanchar Saathi", "MySpeed and MyCall", "Tarang Sanchar and KYM", "UMANG and DigiLocker"], "ans": 1, "p1": "Apps Integrated: TRAI MySpeed (data speed testing) and TRAI MyCall (voice call quality rating).", "p2": "Exam Fact: TRAI was established in 1997 (Headquarters: New Delhi)."}, {"id": 32, "video_q": 54, "cat": "Economy & Agriculture", "q": "Jupiter Wagons partnered with Lucchini RS and Sidenor/Simes to build a railway wheelset manufacturing plant in India. Lucchini RS belongs to which country?", "opts": ["Spain", "Germany", "Italy", "France"], "ans": 2, "p1": "Country: Italy (Lucchini RS is a leading Italian manufacturer of high-speed railway wheels and axles).", "p2": "Exam Fact: Supports 'Make in India' self-reliance for Vande Bharat and Indian Railways rolling stock."}, {"id": 33, "video_q": 55, "cat": "National & State Affairs", "q": "Regarding MoRTH's Local Toll Pass rules: (1) Covers non-commercial vehicles within 20 km of a fee plaza; (2) Annual fee outside municipal limits is ₹1,500; (3) Annual fee within municipal limits is ₹3,000; (4) Commercial vehicles are NOT eligible. Which statements are correct?", "opts": ["All 1, 2, 3, and 4", "1 and 4 only", "2 and 4 only", "1, 2, and 3 only (Commercial vehicles are excluded)"], "ans": 3, "p1": "Correction Note: Only private (non-commercial) vehicles registered locally within 20 km are eligible; commercial vehicles are excluded.", "p2": "Exam Fact: Annual pass fee is ₹1,500 outside municipal limits and ₹3,000 within municipal limits."}, {"id": 34, "video_q": 58, "cat": "Infrastructure, Ports & Energy", "q": "Vizhinjam International Seaport (Kerala) received its first direct import container vessel from which international port?", "opts": ["Port of Singapore", "Shanghai Port (China)", "Ningbo Port (China)", "Jebel Ali Port (UAE)"], "ans": 2, "p1": "Port Details: Ningbo-Zhoushan Port (China) to Vizhinjam International Seaport (Thiruvananthapuram, Kerala).", "p2": "Exam Fact: Vizhinjam is India's first automated deep-water container transshipment port."}, {"id": 35, "video_q": 59, "cat": "Economy & Agriculture", "q": "Union Minister Shivraj Singh Chouhan launched the 'Makhana Gaon Bachao Abhiyan' in June 2026 at Ramsiya village in which district of Madhya Pradesh?", "opts": ["Hoshangabad (Narmadapuram)", "Vidisha", "Sehore", "Raisen"], "ans": 3, "p1": "Location: Ramsiya village, Raisen district, Madhya Pradesh.", "p2": "Exam Fact: Shivraj Singh Chouhan is the Union Minister of Agriculture & Farmers' Welfare and Rural Development."}, {"id": 36, "video_q": 61, "cat": "Banking, Finance & Regulatory", "q": "In October 2026, the Union Cabinet approved a ₹5,000 crore commitment for which fund to support direct equity investment in MSMEs?", "opts": ["Self-Reliant India (SRI) Fund", "SME Growth Fund (SGF)", "Fund of Funds for Startups (FFS)", "Credit Guarantee Fund Trust (CGTMSE)"], "ans": 1, "p1": "Commitment: ₹5,000 crore equity infusion support via the SME Growth Fund (SGF).", "p2": "Exam Fact: Helps high-potential MSMEs scale up and list on SME stock exchange platforms."}, {"id": 37, "video_q": 62, "cat": "Infrastructure, Ports & Energy", "q": "Regarding the National Capital Region Planning Board (NCRPB): (1) Greenfield Namo Bharat transit-oriented cities planned; (2) Regional Plan 2041 framework; (3) Estimated cost is ₹5,000 crore (not ₹50,000 crore); (4) Chaired by Union Minister Manohar Lal Khattar covering Delhi, Haryana, UP, and Rajasthan. Which statements are correct?", "opts": ["2 and 3 only", "1 and 3 only", "1, 2, and 4 only (Estimated cost is ₹5,000 crore)", "All 1, 2, 3, and 4"], "ans": 2, "p1": "Correction Note: Estimated cost is ₹5,000 crore (not ₹50,000 crore).", "p2": "Exam Fact: NCRPB is chaired by the Union Minister of Housing and Urban Affairs (Manohar Lal Khattar)."}, {"id": 38, "video_q": 63, "cat": "Economy & Agriculture", "q": "Under the VISTAR statistical modernization scheme, the number of major national surveys has been expanded from 43 to how many?", "opts": ["60", "48", "55", "51"], "ans": 3, "p1": "Expansion: Increased from 43 surveys to 51 major surveys (including Periodic Labour Force Survey).", "p2": "Exam Fact: Enhances high-frequency district- and state-level economic data."}, {"id": 39, "video_q": 65, "cat": "Polity, Bills & Governance", "q": "Regarding Central Motor Vehicles Rules (CMVR), 1989 amendments (October 2026): (1) Certifies E20/E85 flex-fuel vehicles; (2) Covers B100 biodiesel, hydrogen, and CNG vehicles; (3) Gross vehicle weight limit is 3,000–3,500 kg (not 3,500–4,000 kg). Which statements are correct?", "opts": ["1 and 3 only", "1 and 2 only (Weight category limit is 3,000–3,500 kg)", "2 and 3 only", "All 1, 2, and 3"], "ans": 1, "p1": "Correction Note: The specified vehicle weight threshold is 3,000 kg to 3,500 kg (not 3,500–4,000 kg).", "p2": "Exam Fact: Promotes clean alternative fuels and flex-fuel adoption across India."}, {"id": 40, "video_q": 68, "cat": "Government Schemes & Initiatives", "q": "On which date was the PM Vishwakarma Yojana (which completed 3 years in 2026 with over 30 lakh registered artisans) launched?", "opts": ["17 September 2023", "15 August 2023", "2 October 2023", "1 January 2024"], "ans": 0, "p1": "Launch Date: 17 September 2023 (Vishwakarma Jayanti) | Nodal Ministry: Ministry of MSME.", "p2": "Exam Fact: Covers 18 traditional trades and offers collateral-free enterprise loans up to ₹3 lakh at 5% concessional interest."}, {"id": 41, "video_q": 70, "cat": "Science, Space & Environment", "q": "Where is the AI-powered supercomputing facility 'PARAM Pragya' (inaugurated by PM Modi during IIT Delhi's 57th Convocation) located?", "opts": ["Jhajjar Campus, Haryana", "Hauz Khas Campus, New Delhi", "Sonipat Campus, Haryana", "Noida Campus, Uttar Pradesh"], "ans": 2, "p1": "Location: IIT Delhi's Sonipat Campus in Haryana.", "p2": "Exam Fact: Deployed under the National Supercomputing Mission (NSM) jointly steered by MeitY and DST."}, {"id": 42, "video_q": 71, "cat": "Economy & Agriculture", "q": "APEDA flagged off a trial export of 1.5 tonnes of fresh organic kiwis from Ziro Valley (Arunachal Pradesh) to which international city?", "opts": ["Doha, Qatar", "London, UK", "Singapore", "Dubai, UAE"], "ans": 3, "p1": "Origin & Destination: Ziro Valley (Lower Subansiri district, Arunachal Pradesh) to Dubai, UAE.", "p2": "Exam Fact: Arunachal Pradesh was the first Indian state to obtain organic certification for kiwis under Mission Organic Value Chain Development."}, {"id": 43, "video_q": 74, "cat": "National & State Affairs", "q": "Regarding Centres of Excellence for Classical Languages (Ministry of Education): (1) Approved for Assamese, Bengali, Marathi, Pali, and Prakrit; (2) Assamese Centre is at Tezpur University (not Gauhati University); (3) Bengali Centre is at Visva-Bharati University. Which statements are correct?", "opts": ["2 and 3 only", "1 and 2 only", "1 and 3 only (Assamese Centre is at Tezpur University)", "All 1, 2, and 3"], "ans": 2, "p1": "Correction Note: The Centre of Excellence for Assamese is established at Tezpur University (Sonitpur, Assam), while Bengali is at Visva-Bharati University (Santiniketan, WB).", "p2": "Exam Fact: Visva-Bharati was founded by Rabindranath Tagore in 1921."}, {"id": 44, "video_q": 75, "cat": "National & State Affairs", "q": "What is the maximum reimbursement per project under Kerala's 'NORKA Private Industrial Estate Scheme 2026'?", "opts": ["₹10 crore", "₹1 crore", "₹5 crore", "₹3 crore"], "ans": 3, "p1": "Limit: ₹3 crore maximum reimbursement per project.", "p2": "Exam Fact: NORKA (Non-Resident Keralites Affairs) promotes NRI entrepreneurship and industrial investment in Kerala."}, {"id": 45, "video_q": 76, "cat": "Economy & Agriculture", "q": "What is the total financial outlay of the 'VISTAR' scheme approved by the Union Cabinet to modernize India's statistical system?", "opts": ["₹4,371.10 crore", "₹3,150.00 crore", "₹5,070.00 crore", "₹2,884.00 crore"], "ans": 0, "p1": "Outlay: ₹4,371.10 crore.", "p2": "Exam Fact: Strengthens real-time digital data collection, AI analytics, and the 8th Economic Census."}, {"id": 46, "video_q": 77, "cat": "Science, Space & Environment", "q": "Regarding India's first telomere-to-telomere (T2T) genome assembly of pigeonpea (Cajanus cajan / Arhar): (1) Developed by ICAR; (2) Based on the 'Asha' variety; (3) Pigeonpea is also known as Arhar/Tur; (4) Global/regional production figure is 3.5 million tonnes (not 5.0 million tonnes). Which statements are correct?", "opts": ["1 and 4 only", "1, 2, and 3 only (Production figure is 3.5 million tonnes)", "2 and 4 only", "All 1, 2, 3, and 4"], "ans": 1, "p1": "Correction Note: Statement 4 is incorrect because the figure is 3.5 million tonnes (not 5.0 million tonnes).", "p2": "Exam Fact: T2T gapless genome sequencing accelerates breeding of climate-resilient, high-yield pulse varieties."}, {"id": 47, "video_q": 79, "cat": "Government Schemes & Initiatives", "q": "Regarding 'Mission Rangeen Machhli 2031': (1) Strategic Action Plan for Ornamental Fisheries; (2) Launched by Vice President C. P. Radhakrishnan at Agatti, Lakshadweep (not PM at Port Blair); (3) Implemented under PM Matsya Sampada Yojana (PMMSY). Which statements are correct?", "opts": ["All 1, 2, and 3", "1 and 2 only", "2 and 3 only", "1 and 3 only (Launched by VP C. P. Radhakrishnan at Agatti, Lakshadweep)"], "ans": 3, "p1": "Correction Note: Launched by Vice President C. P. Radhakrishnan at Agatti Island, Lakshadweep (not by PM Modi at Port Blair).", "p2": "Exam Fact: PMMSY is implemented by the Department of Fisheries under the Ministry of Fisheries, Animal Husbandry and Dairying."}, {"id": 48, "video_q": 81, "cat": "Polity, Bills & Governance", "q": "Under the extended Fast Track Special Courts (FTSC) scheme (originally launched in 2019), functional courts are expanded from 779 to how many?", "opts": ["800", "850", "900", "1,023"], "ans": 1, "p1": "Target Count: Expanded from 779 to 850 functional Fast Track Special Courts.", "p2": "Exam Fact: Original FTSC scheme was launched in October 2019."}, {"id": 49, "video_q": 82, "cat": "Infrastructure, Ports & Energy", "q": "Regarding the 'PM E-DRIVE' scheme: (1) E-2W incentive is ₹2,500/kWh; (2) E-4W/fleet incentive & outlay valid till 31 March 2028; (3) Eligible ex-factory vehicle price cap is ₹1.5 lakh for e-2W (not ₹1.5 lakh crore); (4) Replaces FAME-II (not PLI). Which statements are correct?", "opts": ["2 and 4 only", "1, 2, and 3 only", "1 and 2 only (Replaces FAME-II; vehicle price cap is ₹1.5 lakh)", "All 1, 2, 3, and 4"], "ans": 2, "p1": "Corrections: PM E-DRIVE (PM Electric Drive Revolution in Innovative Vehicle Enhancement) replaces FAME-II (Faster Adoption and Manufacturing of Electric Vehicles Phase II), not PLI.", "p2": "Exam Fact: Implemented by the Ministry of Heavy Industries (Union Minister: H. D. Kumaraswamy)."}, {"id": 50, "video_q": 83, "cat": "Science, Space & Environment", "q": "Where was India's 51st Doppler Weather Radar (DWR) inaugurated in September 2026?", "opts": ["Raipur, Chhattisgarh", "Bhubaneswar, Odisha", "Ranchi, Jharkhand", "Sambalpur, Odisha"], "ans": 3, "p1": "Location: Sambalpur, Odisha (installed by IMD under Mission Mausam).", "p2": "Exam Fact: Doppler Weather Radars provide advance warnings for severe thunderstorms, lightning, heavy rainfall, and cyclones."}, {"id": 51, "video_q": 84, "cat": "Banking, Finance & Regulatory", "q": "Regarding EPFO's revised wage ceiling (September 2026): (1) Mandatory wage ceiling raised from ₹15,000 to ₹25,000/month; (2) Effective from 17 September 2026 (not April 2027); (3) Max monthly EPS pension contribution rises to ₹2,080; (4) Last revised in 2014 (not 2004). Which statements are correct?", "opts": ["1 and 3 only (Effective 17 Sept 2026; last revised in 2014)", "1, 2, and 3 only", "2 and 4 only", "All 1, 2, 3, and 4"], "ans": 0, "p1": "Corrections: The revised ceiling took effect from 17 September 2026, and the previous revision from ₹6,500 to ₹15,000 occurred in September 2014.", "p2": "Exam Fact: EPFO (headquartered in New Delhi) operates under the Ministry of Labour and Employment."}, {"id": 52, "video_q": 85, "cat": "International & Summits", "q": "Regarding the 19th India–Vietnam Joint Commission Meeting (September 2026): (1) 2027 declared as 'Year of India–Vietnam Friendship'; (2) Bilateral trade target set at USD 25 billion by 2030 (not USD 50 billion). Which statements are correct?", "opts": ["1 and 2 only", "1, 3, and 4 (Trade target is USD 25 billion by 2030)", "2 only", "None of the above"], "ans": 1, "p1": "Correction Note: The bilateral trade target between India and Vietnam is USD 25 billion by 2030 (not USD 50 billion).", "p2": "Exam Fact: Capital of Vietnam: Hanoi | Currency: Vietnamese Dong."}, {"id": 53, "video_q": 86, "cat": "Government Schemes & Initiatives", "q": "Pradhan Mantri Kisan Maandhan Yojana (PM-KMY) completed 7 years in September 2026. What monthly assured pension does it provide to eligible small & marginal farmers after age 60?", "opts": ["₹2,000 per month", "₹1,000 per month", "₹3,000 per month", "₹5,000 per month"], "ans": 2, "p1": "Scheme Details: Launched on 12 September 2019; entry age 18–40 years; provides ₹3,000/month assured pension upon attaining age 60.", "p2": "Exam Fact: Life Insurance Corporation of India (LIC) acts as the Pension Fund Manager for PM-KMY."}, {"id": 54, "video_q": 87, "cat": "National & State Affairs", "q": "Which became the first Indian state to introduce a comprehensive 'Silt Management Policy'?", "opts": ["West Bengal", "Uttar Pradesh", "Assam", "Bihar"], "ans": 3, "p1": "State: Government of Bihar (Capital: Patna).", "p2": "Exam Fact: Addresses recurring flood sedimentation in the Kosi, Gandak, and Ganga river basins."}, {"id": 55, "video_q": 88, "cat": "Awards & Festivals", "q": "Regarding the 21st International Tipitaka Chanting Ceremony (2026): (1) Hosted by India for the first time; (2) Venue: Mahabodhi Mahavihara Complex, Bodh Gaya; (3) Theme: 'Different Languages, One Meaning'; (4) Held from 2 to 12 December 2026 (not November). Which statements are correct?", "opts": ["1, 2, and 3 only (Held from 2–12 December 2026)", "1 and 4 only", "2 and 4 only", "All 1, 2, 3, and 4"], "ans": 0, "p1": "Correction Note: Statement 4 is incorrect because the ceremony is scheduled for 2–12 December 2026 (not November).", "p2": "Exam Fact: Mahabodhi Temple Complex at Bodh Gaya (Bihar) is a UNESCO World Heritage Site."}, {"id": 56, "video_q": 90, "cat": "Science, Space & Environment", "q": "Regarding TRAI's recommendations on Satellite Communication Authorization: (1) Framed under the Telecommunications Act, 2023; (2) TRAI recommendations are non-binding initially (not immediately binding); (3) Entry fee proposed is ₹37.5 lakh; (4) Spectrum/authorization fee proposed is 8% of AGR. Which statements are correct?", "opts": ["2 and 3 only", "1 and 2 only", "1, 3, and 4 only (TRAI recommendations are non-binding)", "All 1, 2, 3, and 4"], "ans": 2, "p1": "Correction Note: TRAI recommendations are advisory/non-binding on the Central Government (Department of Telecommunications).", "p2": "Exam Fact: The Telecommunications Act, 2023 replaced the Indian Telegraph Act, 1885 and Indian Wireless Telegraphy Act, 1933."}, {"id": 57, "video_q": 91, "cat": "National & State Affairs", "q": "Which state ranked first in 'Jal Sanchay Jan Bhagidari 3.0' under the Catch the Rain campaign?", "opts": ["Gujarat", "Madhya Pradesh", "Rajasthan", "Chhattisgarh"], "ans": 3, "p1": "Top State: Chhattisgarh (Capital: Raipur).", "p2": "Exam Fact: Jal Shakti Abhiyan: Catch the Rain is implemented by the Ministry of Jal Shakti (Union Minister: C. R. Patil)."}, {"id": 58, "video_q": 92, "cat": "National & State Affairs", "q": "Which state became the 16th in India to receive the President's Police Colour during its Silver Jubilee year?", "opts": ["Uttarakhand", "Chhattisgarh", "Jharkhand", "Telangana"], "ans": 0, "p1": "Sequence: 15th state was Sikkim; 16th state was Uttarakhand (formed on 9 November 2000).", "p2": "Exam Fact: Presented by the President of India in recognition of exemplary policing and disaster response."}, {"id": 59, "video_q": 93, "cat": "Sports & Tournaments", "q": "Regarding the 'Khelo India Sports Goods Manufacturing Scheme' (October 2026): (1) Outlay is ₹1,856.67 crore; (2) Implemented by Ministry of Youth Affairs & Sports (not Commerce & Industry); (3) Creates 4 Sports Goods Manufacturing Zones (≥300 acres each); (4) Tenure is FY 2027–34 (not 2027–31). Which statements are correct?", "opts": ["1, 2, and 3 only", "1 and 3 only (Implemented by MYAS; tenure is FY 2027–34)", "2 and 4 only", "All 1, 2, 3, and 4"], "ans": 1, "p1": "Corrections: Implemented by the Ministry of Youth Affairs and Sports (MYAS), and runs for 7 years from FY 2027–28 to FY 2033–34.", "p2": "Exam Fact: Aims to make India a global hub for high-grade sports equipment manufacturing (currently centered in Meerut and Jalandhar)."}, {"id": 60, "video_q": 94, "cat": "National & State Affairs", "q": "In which city did UIDAI organize 'Aadhaar Samvaad' on the 17th Aadhaar Day to launch new citizen-centric digital identity initiatives?", "opts": ["Bengaluru, Karnataka", "New Delhi", "Kolkata, West Bengal", "Hyderabad, Telangana"], "ans": 2, "p1": "Host City: Kolkata, West Bengal.", "p2": "Exam Fact: Aadhaar Day marks the issuance of the first Aadhaar number on 29 September 2010 in Nandurbar, Maharashtra."}, {"id": 61, "video_q": 95, "cat": "Infrastructure, Ports & Energy", "q": "Regarding MoRTH's BS-VII (Bharat Stage VII) Emission Standards notification: (1) Introduces BS-VII standards; (2) Phase-1 begins in April 2029; (3) Final Phase-3 takes effect in April 2035 (not 2033); (4) BS-VI was implemented nationwide in April 2020 (not 2018). Which statements are correct?", "opts": ["All 1, 2, 3, and 4", "1, 2, and 3 only", "2 and 4 only", "1 and 2 only (Final phase in April 2035; BS-VI implemented in April 2020)"], "ans": 3, "p1": "Corrections: BS-VII rollout spans Phase-1 (April 2029), Phase-2 (April 2031), and Phase-3 (April 2035); BS-VI took effect nationwide on 1 April 2020.", "p2": "Exam Fact: India leapfrogged directly from BS-IV to BS-VI in April 2020."}, {"id": 62, "video_q": 96, "cat": "Infrastructure, Ports & Energy", "q": "Which company was authorized by PNGRB in August 2026 to develop an 800-km LPG pipeline network worth ₹7,000 crore?", "opts": ["GAIL (India) Limited", "Indian Oil Corporation Limited (IOCL)", "Bharat Petroleum Corporation Limited (BPCL)", "Hindustan Petroleum Corporation Limited (HPCL)"], "ans": 0, "p1": "Company & Regulator: GAIL (India) Limited (Maharatna CPSE) authorized by Petroleum and Natural Gas Regulatory Board (PNGRB).", "p2": "Exam Fact: GAIL is India's largest state-owned natural gas processing and distribution company (HQ: New Delhi)."}, {"id": 63, "video_q": 97, "cat": "Science, Space & Environment", "q": "Under 'Semicon India 2.0', applications were invited primarily for establishing which type of manufacturing facilities?", "opts": ["Lithium-ion EV battery gigafactories", "Semiconductor Fabrication Plants (Fabs)", "Solar polysilicon ingot plants", "Submarine optical fiber cables"], "ans": 1, "p1": "Focus: Semiconductor Fabrication Plants (Fabs) alongside display fabs, compound semiconductors, and ATMP/OSAT units.", "p2": "Exam Fact: India's first commercial semiconductor fab is being set up in Dholera, Gujarat (Tata Electronics–PSMC)."}, {"id": 64, "video_q": 98, "cat": "Polity, Bills & Governance", "q": "Regarding India's first Victim Rights Centre: (1) Inaugurated by Chief Justice of India Justice Surya Kant; (2) Set up in Patna, Bihar (not Lucknow); (3) Provides legal, medical, and psychological counseling services under a single window. Which statements are correct?", "opts": ["2 and 3 only", "1 and 2 only", "1 and 3 only (Set up in Patna, Bihar)", "All 1, 2, and 3"], "ans": 2, "p1": "Correction Note: India's first Victim Rights Centre was inaugurated by CJI Justice Surya Kant in Patna, Bihar (not Lucknow).", "p2": "Exam Fact: Offers holistic single-window legal aid, medical assistance, and trauma counseling to crime victims."}];
+
+let mode = 'learn';
+let hideAnswers = false;
+let userAnswers = {};
+
+function setup() {
+  const select = document.getElementById('catSelect');
+  const uniqueCats = [...new Set(QUESTIONS.map(q => q.cat))];
+  uniqueCats.forEach(cat => {
+    const count = QUESTIONS.filter(q => q.cat === cat).length;
+    const option = document.createElement('option');
+    option.value = cat;
+    option.textContent = `${cat} (${count})`;
+    select.appendChild(option);
+  });
+  refreshStats();
+  render();
+}
+
+function setMode(newMode) {
+  mode = newMode;
+  document.getElementById('btn-learn').classList.toggle('active', mode === 'learn');
+  document.getElementById('btn-practice').classList.toggle('active', mode === 'practice');
+  document.getElementById('blurBtn').classList.toggle('hidden', mode !== 'learn');
+  render();
+}
+
+function toggleBlur() {
+  hideAnswers = !hideAnswers;
+  document.getElementById('blurBtn').textContent = hideAnswers
+    ? '👁️ Show All Answers'
+    : '👁️ Hide Answers (Self-Test)';
+  render();
+}
+
+function getFilteredList() {
+  const cat = document.getElementById('catSelect').value;
+  const term = document.getElementById('searchBox').value.trim().toLowerCase();
+
+  return QUESTIONS.filter(item => {
+    if (cat !== 'ALL' && item.cat !== cat) return false;
+    if (!term) return true;
+    return (
+      item.q.toLowerCase().includes(term) ||
+      item.opts.some(o => o.toLowerCase().includes(term)) ||
+      item.p1.toLowerCase().includes(term) ||
+      item.p2.toLowerCase().includes(term) ||
+      String(item.video_q).includes(term)
+    );
+  });
+}
+
+function render() {
+  const list = getFilteredList();
+  document.getElementById('showingCount').textContent = `Showing ${list.length} question${list.length === 1 ? '' : 's'}`;
+  const container = document.getElementById('cardsContainer');
+
+  if (list.length === 0) {
+    container.innerHTML = `<div class="no-results">No questions match your filter. Clear search or switch category.</div>`;
+    return;
+  }
+
+  container.innerHTML = list
+    .map(item => (mode === 'learn' ? buildLearnCard(item) : buildPracticeCard(item)))
+    .join('');
+}
+
+function buildLearnCard(item) {
+  const answerText = item.opts[item.ans];
+  const blurClass = hideAnswers ? 'blurred' : '';
+  return `
+    <div class="card">
+      <div class="card-top">
+        <div class="badge-group">
+          <span class="badge-num">Q.${item.id}</span>
+          <span class="badge-seq">Video #${item.video_q}</span>
+        </div>
+        <span class="badge-cat">${item.cat}</span>
+      </div>
+      <div class="question-text">${item.q}</div>
+      <div class="learn-answer-box ${blurClass}" onclick="this.classList.remove('blurred')" title="Click to reveal answer">
+        ✓ Answer: ${answerText}
+      </div>
+      <div class="exam-points">
+        <div class="exam-points-heading">📌 2 Exam-Related Extra Points</div>
+        <ul>
+          <li>${item.p1}</li>
+          <li>${item.p2}</li>
+        </ul>
+      </div>
+    </div>
+  `;
+}
+
+function buildPracticeCard(item) {
+  const record = userAnswers[item.id];
+  const isAnswered = record !== undefined;
+  const letters = ['A', 'B', 'C', 'D'];
+
+  const optsMarkup = item.opts
+    .map((opt, idx) => {
+      let cls = '';
+      if (isAnswered) {
+        if (idx === item.ans) cls = 'correct';
+        else if (idx === record.picked && !record.correct) cls = 'wrong';
+      }
+      return `
+        <button class="option-btn ${cls}" ${isAnswered ? 'disabled' : ''} onclick="selectOption(${item.id}, ${idx})">
+          <span class="opt-circle">${letters[idx]}</span>
+          <span>${opt}</span>
+        </button>
+      `;
+    })
+    .join('');
+
+  const bannerMarkup = isAnswered
+    ? record.correct
+      ? `<span class="result-pill right">✓ Correct!</span>`
+      : `<span class="result-pill wrong">✕ Wrong Answer</span>`
+    : '';
+
+  return `
+    <div class="card" id="card-${item.id}">
+      <div class="card-top">
+        <div class="badge-group">
+          <span class="badge-num">Q.${item.id}</span>
+          <span class="badge-seq">Video #${item.video_q}</span>
+        </div>
+        <span class="badge-cat">${item.cat}</span>
+      </div>
+      <div class="question-text">${item.q}</div>
+      <div class="options-list">
+        ${optsMarkup}
+      </div>
+      <div class="answer-panel ${isAnswered ? 'visible' : ''}" id="panel-${item.id}">
+        <div class="result-banner">
+          ${bannerMarkup}
+          <div class="correct-label">Correct Answer: <span>${letters[item.ans]}. ${item.opts[item.ans]}</span></div>
+        </div>
+        <div class="exam-points">
+          <div class="exam-points-heading">📌 2 Exam-Related Extra Points</div>
+          <ul>
+            <li>${item.p1}</li>
+            <li>${item.p2}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+function selectOption(qId, pickedIdx) {
+  if (userAnswers[qId] !== undefined) return;
+  const item = QUESTIONS.find(q => q.id === qId);
+  if (!item) return;
+
+  userAnswers[qId] = {
+    picked: pickedIdx,
+    correct: pickedIdx === item.ans
+  };
+
+  refreshStats();
+  const cardEl = document.getElementById(`card-${qId}`);
+  if (cardEl) {
+    cardEl.outerHTML = buildPracticeCard(item);
+  }
+}
+
+function refreshStats() {
+  const keys = Object.keys(userAnswers);
+  const attempted = keys.length;
+  const correct = keys.filter(k => userAnswers[k].correct).length;
+  const wrong = attempted - correct;
+
+  document.getElementById('cnt-attempted').textContent = attempted;
+  document.getElementById('cnt-correct').textContent = correct;
+  document.getElementById('cnt-wrong').textContent = wrong;
+}
+
+function resetAll() {
+  userAnswers = {};
+  refreshStats();
+  render();
+}
+
+setup();
+</script>
+</body>
+</html>

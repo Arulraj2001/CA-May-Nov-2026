@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>6-Month CA Rapid Revision (Part 6: Slides #801–#1000) — New & Unique Questions — Learn & Practice (White Theme)</title>
+<style>
+  :root {
+    --bg-page: #ffffff;
+    --bg-panel: #f9fafb;
+    --bg-card: #ffffff;
+    --border-light: #e5e7eb;
+    --border-strong: #d1d5db;
+    --text-main: #111827;
+    --text-sub: #4b5563;
+    --text-muted: #6b7280;
+    --primary: #1d4ed8;
+    --primary-soft: #eff6ff;
+    --primary-border: #bfdbfe;
+    --green-bg: #f0fdf4;
+    --green-border: #22c55e;
+    --green-text: #15803d;
+    --red-bg: #fef2f2;
+    --red-border: #ef4444;
+    --red-text: #b91c1c;
+    --amber-bg: #fffbeb;
+    --amber-border: #f59e0b;
+    --amber-text: #92400e;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background-color: var(--bg-page);
+    color: var(--text-main);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Arial, sans-serif;
+    line-height: 1.6;
+  }
+
+  header {
+    background-color: #ffffff;
+    border-bottom: 1px solid var(--border-light);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 14px 20px;
+  }
+
+  .header-wrap {
+    max-width: 1060px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .title-block h1 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--text-main);
+  }
+
+  .title-block p {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+  }
+
+  .tabs {
+    display: inline-flex;
+    background-color: var(--bg-panel);
+    border: 1px solid var(--border-light);
+    border-radius: 8px;
+    padding: 4px;
+    gap: 4px;
+  }
+
+  .tab-btn {
+    border: none;
+    background: transparent;
+    color: var(--text-sub);
+    font-size: 0.88rem;
+    font-weight: 600;
+    padding: 7px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.15s ease;
+  }
+
+  .tab-btn.active {
+    background-color: #ffffff;
+    color: var(--primary);
+    border: 1px solid var(--border-light);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
+  }
+
+  .main-container {
+    max-width: 1060px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .controls-bar {
+    background-color: var(--bg-panel);
+    border: 1px solid var(--border-light);
+    border-radius: 10px;
+    padding: 12px 16px;
+    margin-bottom: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .filter-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    flex: 1;
+  }
+
+  select, input[type="text"] {
+    background-color: #ffffff;
+    color: var(--text-main);
+    border: 1px solid var(--border-strong);
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 0.875rem;
+    outline: none;
+  }
+
+  select:focus, input[type="text"]:focus {
+    border-color: var(--primary);
+  }
+
+  input[type="text"] {
+    min-width: 230px;
+  }
+
+  .score-group {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.84rem;
+    font-weight: 600;
+  }
+
+  .pill {
+    background-color: #ffffff;
+    border: 1px solid var(--border-light);
+    border-radius: 999px;
+    padding: 4px 11px;
+    color: var(--text-sub);
+  }
+
+  .pill.green {
+    background-color: var(--green-bg);
+    border-color: var(--green-border);
+    color: var(--green-text);
+  }
+
+  .pill.red {
+    background-color: var(--red-bg);
+    border-color: var(--red-border);
+    color: var(--red-text);
+  }
+
+  .action-btn {
+    background-color: #ffffff;
+    color: var(--text-main);
+    border: 1px solid var(--border-strong);
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .action-btn:hover {
+    background-color: #f3f4f6;
+  }
+
+  .learn-subbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 14px;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+  }
+
+  .card {
+    background-color: #ffffff;
+    border: 1px solid var(--border-light);
+    border-radius: 10px;
+    padding: 18px 20px;
+    margin-bottom: 14px;
+  }
+
+  .card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    gap: 8px;
+  }
+
+  .badge-group {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .badge-num {
+    background-color: var(--primary-soft);
+    color: var(--primary);
+    border: 1px solid var(--primary-border);
+    font-size: 0.78rem;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 5px;
+  }
+
+  .badge-seq {
+    background-color: var(--bg-panel);
+    color: var(--text-sub);
+    border: 1px solid var(--border-light);
+    font-size: 0.74rem;
+    font-weight: 600;
+    padding: 2px 7px;
+    border-radius: 5px;
+  }
+
+  .badge-cat {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+
+  .question-text {
+    font-size: 1.02rem;
+    font-weight: 600;
+    color: var(--text-main);
+    margin-bottom: 12px;
+  }
+
+  .learn-answer-box {
+    display: inline-block;
+    background-color: var(--green-bg);
+    border: 1px solid #bbf7d0;
+    color: var(--green-text);
+    font-weight: 700;
+    font-size: 0.94rem;
+    padding: 6px 12px;
+    border-radius: 6px;
+    margin-bottom: 12px;
+  }
+
+  .learn-answer-box.blurred {
+    filter: blur(5px);
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .exam-points {
+    background-color: var(--amber-bg);
+    border: 1px solid #fde68a;
+    border-left: 4px solid var(--amber-border);
+    border-radius: 6px;
+    padding: 10px 14px;
+  }
+
+  .exam-points-heading {
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--amber-text);
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    margin-bottom: 4px;
+  }
+
+  .exam-points ul {
+    margin-left: 18px;
+    font-size: 0.88rem;
+    color: #374151;
+  }
+
+  .exam-points li {
+    margin-bottom: 3px;
+  }
+
+  .options-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 10px;
+  }
+
+  .option-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    text-align: left;
+    background-color: #ffffff;
+    border: 1.5px solid var(--border-light);
+    border-radius: 8px;
+    padding: 11px 14px;
+    font-size: 0.92rem;
+    font-weight: 500;
+    color: var(--text-main);
+    cursor: pointer;
+    transition: all 0.15s ease;
+  }
+
+  .option-btn:hover:not(:disabled) {
+    border-color: var(--primary);
+    background-color: var(--primary-soft);
+  }
+
+  .option-btn:disabled {
+    cursor: default;
+  }
+
+  .opt-circle {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: var(--bg-panel);
+    border: 1px solid var(--border-strong);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--text-sub);
+    flex-shrink: 0;
+  }
+
+  .option-btn.correct {
+    background-color: var(--green-bg);
+    border-color: var(--green-border);
+    color: var(--green-text);
+    font-weight: 700;
+  }
+
+  .option-btn.correct .opt-circle {
+    background-color: var(--green-border);
+    border-color: var(--green-border);
+    color: #ffffff;
+  }
+
+  .option-btn.wrong {
+    background-color: var(--red-bg);
+    border-color: var(--red-border);
+    color: var(--red-text);
+    font-weight: 600;
+  }
+
+  .option-btn.wrong .opt-circle {
+    background-color: var(--red-border);
+    border-color: var(--red-border);
+    color: #ffffff;
+  }
+
+  .answer-panel {
+    display: none;
+    margin-top: 14px;
+    padding-top: 14px;
+    border-top: 1px solid var(--border-light);
+    animation: slideDown 0.18s ease-out;
+  }
+
+  .answer-panel.visible {
+    display: block;
+  }
+
+  .result-banner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+
+  .result-pill {
+    font-size: 0.84rem;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 6px;
+  }
+
+  .result-pill.right {
+    background-color: var(--green-bg);
+    color: var(--green-text);
+    border: 1px solid var(--green-border);
+  }
+
+  .result-pill.wrong {
+    background-color: var(--red-bg);
+    color: var(--red-text);
+    border: 1px solid var(--red-border);
+  }
+
+  .correct-label {
+    font-size: 0.92rem;
+    font-weight: 700;
+    color: var(--text-main);
+  }
+
+  .correct-label span {
+    color: var(--green-text);
+  }
+
+  .hidden {
+    display: none !important;
+  }
+
+  .no-results {
+    text-align: center;
+    padding: 40px 20px;
+    border: 1px dashed var(--border-strong);
+    border-radius: 10px;
+    color: var(--text-muted);
+  }
+
+  @keyframes slideDown {
+    from { opacity: 0; transform: translateY(-4px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @media (max-width: 640px) {
+    .header-wrap { flex-direction: column; align-items: flex-start; }
+    .options-list { grid-template-columns: 1fr; }
+    input[type="text"] { width: 100%; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-wrap">
+    <div class="title-block">
+      <h1>6-Month CA Rapid Revision (Part 6: Slides #801–#1000) — New & Unique Questions (148 Questions)</h1>
+      <p>Jeevitha Ma'am Session (English) | Exclusive Questions Not Covered in All 18 Previous Files</p>
+    </div>
+    <div class="tabs">
+      <button class="tab-btn active" id="btn-learn" onclick="setMode('learn')">📖 Learn Mode</button>
+      <button class="tab-btn" id="btn-practice" onclick="setMode('practice')">✍️ Practice MCQs</button>
+    </div>
+  </div>
+</header>
+
+<div class="main-container">
+  <div class="controls-bar">
+    <div class="filter-group">
+      <select id="catSelect" onchange="render()">
+        <option value="ALL">All Categories (148)</option>
+      </select>
+      <input type="text" id="searchBox" placeholder="Search question, answer, or extra points..." oninput="render()">
+    </div>
+    <div class="score-group">
+      <span class="pill">Attempted: <span id="cnt-attempted">0</span>/148</span>
+      <span class="pill green">Correct: <span id="cnt-correct">0</span></span>
+      <span class="pill red">Wrong: <span id="cnt-wrong">0</span></span>
+      <button class="action-btn" onclick="resetAll()">Reset Practice</button>
+    </div>
+  </div>
+
+  <div class="learn-subbar" id="learnSubbar">
+    <span id="showingCount">Showing 148 questions</span>
+    <button class="action-btn" id="blurBtn" onclick="toggleBlur()">👁️ Hide Answers (Self-Test)</button>
+  </div>
+
+  <div id="cardsContainer"></div>
+</div>
+
+<script>
+const QUESTIONS = [{"id": 1, "slide_q": 802, "cat": "International & Summits", "q": "In which city was the 16th BRICS Health Ministers' Meeting held in July 2026 under India's BRICS Chairmanship?", "opts": ["Bengaluru", "New Delhi", "Chandigarh", "Goa"], "ans": 2, "p1": "Host City: Chandigarh (under India's 2026 BRICS Chairmanship).", "p2": "Exam Fact: Union Minister of Health and Family Welfare is J. P. Nadda."}, {"id": 2, "slide_q": 803, "cat": "International & Summits", "q": "The 9th ASEAN–India Ministerial Meeting on Agriculture and Forestry held in New Delhi adopted a Plan of Action for which period?", "opts": ["2026–2035", "2025–2029", "2027–2031", "2026–2030"], "ans": 3, "p1": "Action Plan Horizon: 2026–2030.", "p2": "Exam Fact: ASEAN (Association of Southeast Asian Nations, HQ: Jakarta, Indonesia) comprises 10 Southeast Asian nations (with Timor-Leste as observer/acceding)."}, {"id": 3, "slide_q": 804, "cat": "International & Summits", "q": "In which city was the 7th edition of the Global Fintech Fest (GFF) hosted?", "opts": ["Mumbai, Maharashtra", "Bengaluru, Karnataka", "New Delhi", "GIFT City, Gandhinagar"], "ans": 0, "p1": "Host City: Mumbai, Maharashtra (Jio World Convention Centre).", "p2": "Exam Fact: Organized annually by the Payments Council of India (PCI), NPCI, and Fintech Convergence Council (FCC)."}, {"id": 4, "slide_q": 805, "cat": "International & Summits", "q": "In which city was the 52nd G7 Summit held from 15 to 17 June 2026?", "opts": ["Kananaskis, Canada", "Évian-les-Bains, France", "Apulia, Italy", "Hiroshima, Japan"], "ans": 1, "p1": "Host City: Évian-les-Bains, France (52nd G7 Summit).", "p2": "Exam Fact: G7 members are Canada, France, Germany, Italy, Japan, the United Kingdom, and the United States (plus the European Union)."}, {"id": 5, "slide_q": 806, "cat": "International & Summits", "q": "The 7th Agrivoltaics World Conference was held at Bharat Mandapam, New Delhi. Which country will host the next edition of the conference?", "opts": ["Germany", "Brazil", "France", "Japan"], "ans": 2, "p1": "Next Host Country: France.", "p2": "Exam Fact: Agrivoltaics combines solar photovoltaic power generation with agricultural crop cultivation on the same land."}, {"id": 6, "slide_q": 807, "cat": "National & State Affairs", "q": "Regarding the 29th National Conference on e-Governance: (1) Held in Jaipur, Rajasthan; (2) Conferred 17 National e-Governance Awards (not 25); (3) Jointly organized by DARPG, MeitY, and the Government of Rajasthan; (4) DARPG works under the Ministry of Personnel, Public Grievances and Pensions (not MHA). Which statements are correct?", "opts": ["All 1, 2, 3, and 4", "1 and 2 only", "2 and 4 only", "1 and 3 only (Conferred 17 awards; DARPG is under Ministry of Personnel)"], "ans": 3, "p1": "Corrections: Conferred 17 National e-Governance Awards (not 25), and DARPG operates under the Ministry of Personnel, Public Grievances and Pensions (headed by PM Modi / MoS Dr. Jitendra Singh).", "p2": "Exam Fact: DARPG stands for Department of Administrative Reforms and Public Grievances."}, {"id": 7, "slide_q": 808, "cat": "International & Summits", "q": "Where was UNCCD COP 17 (17th Conference of the Parties to the UN Convention to Combat Desertification) held (with theme 'Restoring Land, Restoring Hope')?", "opts": ["Ulaanbaatar, Mongolia", "Riyadh, Saudi Arabia", "Abidjan, Côte d'Ivoire", "New Delhi, India"], "ans": 0, "p1": "Venue & Theme: Ulaanbaatar, Mongolia — Theme: 'Restoring Land, Restoring Hope'.", "p2": "Exam Fact: UNCCD COP 16 (2024) was held in Riyadh, Saudi Arabia; UNCCD Secretariat is headquartered in Bonn, Germany."}, {"id": 8, "slide_q": 809, "cat": "Science, Space & Technology", "q": "At the Goa AI Tech Conclave, a specialized BHASHINI Large Language Model (LLM) was launched for which Indian language?", "opts": ["Marathi", "Konkani", "Tulu", "Kannada"], "ans": 1, "p1": "Language & Venue: Konkani (official language of Goa) — launched at the Goa AI Tech Conclave.", "p2": "Exam Fact: Konkani was added to the Eighth Schedule of the Indian Constitution via the 71st Amendment Act, 1992 (alongside Manipuri and Nepali)."}, {"id": 9, "slide_q": 810, "cat": "Infrastructure, Ports & Energy", "q": "What was the official theme of the 'Bharat Renewable Energy Summit & Expo 2026' inaugurated by PM Narendra Modi?", "opts": ["Solarizing India's Future", "Clean Energy for Viksit Bharat", "Invest, Innovate and Inspire", "Powering Green Growth"], "ans": 2, "p1": "Theme: 'Invest, Innovate and Inspire' (the 3 I's).", "p2": "Exam Fact: India targets 500 GW of non-fossil fuel installed electricity capacity by 2030."}, {"id": 10, "slide_q": 812, "cat": "International & Summits", "q": "The 16th BRICS Agriculture Ministers' Meeting held in June 2026 concluded with the adoption of a joint declaration named after which Indian city?", "opts": ["Indore", "Bhopal", "Varanasi", "Lucknow"], "ans": 0, "p1": "Declaration Name: Indore Declaration (adopted in Indore, Madhya Pradesh).", "p2": "Exam Fact: India holds the BRICS Chairmanship in 2026."}, {"id": 11, "slide_q": 813, "cat": "International & Summits", "q": "In which city was the BRICS Meeting of Heads of National Statistical Offices (NSOs) hosted in 2026?", "opts": ["New Delhi", "Lucknow, Uttar Pradesh", "Kolkata, West Bengal", "Jaipur, Rajasthan"], "ans": 1, "p1": "Host City: Lucknow, Uttar Pradesh (MoS Independent Charge for MoSPI: Rao Inderjit Singh).", "p2": "Exam Fact: BRICS publishes the annual BRICS Joint Statistical Publication."}, {"id": 12, "slide_q": 815, "cat": "International & Summits", "q": "In which Indian city was the 14th BRICS Science, Technology and Innovation (STI) Ministerial Meeting hosted?", "opts": ["Pune, Maharashtra", "Bengaluru, Karnataka", "Hyderabad, Telangana", "Chennai, Tamil Nadu"], "ans": 3, "p1": "Host City: Chennai, Tamil Nadu.", "p2": "Exam Fact: Union Minister of State (Independent Charge) for Science & Technology is Dr. Jitendra Singh."}, {"id": 13, "slide_q": 816, "cat": "International & Summits", "q": "In which city did the Competition Commission of India (CCI) host the BRICS Competition Authorities Meeting in August 2026?", "opts": ["Udaipur, Rajasthan", "Jaipur, Rajasthan", "New Delhi", "Mumbai, Maharashtra"], "ans": 0, "p1": "Host City: Udaipur ('City of Lakes'), Rajasthan.", "p2": "Exam Fact: Addresses digital market competition, AI algorithms, and cross-border merger enforcement."}, {"id": 14, "slide_q": 817, "cat": "International & Summits", "q": "Which Indian city hosted the 12th BRICS Labour and Employment Ministers' Meeting in 2026?", "opts": ["New Delhi", "Hyderabad, Telangana", "Bengaluru, Karnataka", "Ahmedabad, Gujarat"], "ans": 1, "p1": "Host City: Hyderabad, Telangana.", "p2": "Exam Fact: Union Minister of Labour and Employment is Dr. Mansukh Mandaviya."}, {"id": 15, "slide_q": 819, "cat": "Ranks, Indices & Reports", "q": "According to the World Intellectual Property Organization (WIPO) World Intangible Investment Highlights report, by what percentage did India's intangible investment grow?", "opts": ["11.5%", "5.4%", "9.2%", "7.9%"], "ans": 3, "p1": "Growth Rate: 7.9% growth in intangible asset investment (software, R&D, patents, brands, organizational capital).", "p2": "Exam Fact: WIPO is headquartered in Geneva, Switzerland (Director General: Daren Tang)."}, {"id": 16, "slide_q": 820, "cat": "Ranks, Indices & Reports", "q": "According to the BIMCO / ICS Seafarer Workforce Report, what is India's global rank as a supplier of trained seafarers to the global maritime industry?", "opts": ["2nd (after the Philippines)", "1st", "3rd", "4th"], "ans": 0, "p1": "Global Ranking: 1st — Philippines; 2nd — India.", "p2": "Exam Fact: National Maritime Day in India is celebrated annually on 5 April."}, {"id": 17, "slide_q": 821, "cat": "Ranks, Indices & Reports", "q": "What was India's rank in the February 2026 edition of the Henley Passport Index?", "opts": ["80th", "75th", "84th", "85th"], "ans": 1, "p1": "Rank: 75th in the February 2026 Henley Passport Index (84th in the subsequent quarterly update).", "p2": "Exam Fact: Henley Passport Index ranks passports based on data from the International Air Transport Association (IATA)."}, {"id": 18, "slide_q": 822, "cat": "Ranks, Indices & Reports", "q": "Who topped the 'Wealth Multiplier' category in the Candere Hurun India Women Leaders List?", "opts": ["Falguni Nayar", "Kiran Mazumdar-Shaw", "Roshni Nadar Malhotra", "Radha Vembu"], "ans": 2, "p1": "Top Ranker: Roshni Nadar Malhotra (Chairperson of HCLTech).", "p2": "Exam Fact: Recognized for outstanding wealth creation and corporate leadership."}, {"id": 19, "slide_q": 823, "cat": "Ranks, Indices & Reports", "q": "What is India's rank in the 2026 Global Peace Index released by the Institute for Economics and Peace (IEP)?", "opts": ["132nd", "116th", "121st", "127th"], "ans": 3, "p1": "Rank & Publisher: 127th — compiled by the Institute for Economics and Peace (IEP, HQ: Sydney, Australia; Iceland ranks 1st).", "p2": "Exam Fact: Measures societal safety & security, ongoing domestic/international conflict, and militarization."}, {"id": 20, "slide_q": 824, "cat": "Ranks, Indices & Reports", "q": "What rank did Bengaluru secure in the Global Startup Ecosystem Report (GSER)?", "opts": ["15th", "10th", "18th", "21st"], "ans": 0, "p1": "Rank: 15th globally (compiled by Startup Genome).", "p2": "Exam Fact: Bengaluru is widely known as the 'Silicon Valley of India' and India's startup capital."}, {"id": 21, "slide_q": 825, "cat": "Ranks, Indices & Reports", "q": "Which country ranked 1st in the Environmental Performance Index (EPI)?", "opts": ["Denmark", "Estonia", "Finland", "Sweden"], "ans": 1, "p1": "Top Country: Estonia (Capital: Tallinn | Currency: Euro).", "p2": "Exam Fact: EPI is compiled biennially by Yale University and Columbia University."}, {"id": 22, "slide_q": 826, "cat": "Ranks, Indices & Reports", "q": "According to Ministry of Commerce and Industry data, what was the total value of India's exports (merchandise + services) in July 2026?", "opts": ["USD 92.30 billion", "USD 68.50 billion", "USD 80.14 billion", "USD 74.10 billion"], "ans": 2, "p1": "Export Figure: USD 80.14 billion in July 2026.", "p2": "Exam Fact: Directorate General of Foreign Trade (DGFT) operates under the Ministry of Commerce and Industry."}, {"id": 23, "slide_q": 827, "cat": "Ranks, Indices & Reports", "q": "According to a NITI Aayog report, how many Indian youth aged 15 to 29 are classified as NEET (Not in Education, Employment, or Training)?", "opts": ["68 million", "54 million", "105 million", "87 million"], "ans": 3, "p1": "Figure: 87 million youth aged 15–29 years.", "p2": "Exam Fact: Highlights the urgency of vocational skilling and formal job creation."}, {"id": 24, "slide_q": 828, "cat": "Ranks, Indices & Reports", "q": "According to the Periodic Labour Force Survey (PLFS) Quarterly Bulletin for April–June 2026, what was India's urban unemployment rate?", "opts": ["5.4%", "6.6%", "4.9%", "6.1%"], "ans": 0, "p1": "Urban Unemployment Rate: 5.4% in April–June 2026.", "p2": "Exam Fact: PLFS is conducted by the National Statistical Office (NSO) under MoSPI."}, {"id": 25, "slide_q": 829, "cat": "Ranks, Indices & Reports", "q": "Who topped the 'M3M Hurun India Rich List'?", "opts": ["Mukesh Ambani", "Gautam Adani (and family)", "Shiv Nadar", "Cyrus S. Poonawalla"], "ans": 1, "p1": "Top Ranker: Gautam Adani & family ranked #1 on the M3M Hurun India Rich List.", "p2": "Exam Fact: Hurun Report is headquartered in Shanghai/Mumbai."}, {"id": 26, "slide_q": 830, "cat": "Ranks, Indices & Reports", "q": "In June 2026, India slipped to which position in the Global Stock Market Capitalization ranking after being overtaken by South Korea?", "opts": ["6th", "5th", "7th", "8th"], "ans": 2, "p1": "Global Position: 7th largest stock market globally (USA ranks 1st).", "p2": "Exam Fact: Market capitalization = Current share price × Total number of outstanding shares."}, {"id": 27, "slide_q": 833, "cat": "Ranks, Indices & Reports", "q": "According to NITI Aayog's first 'Investment Friendliness Index', which Indian state ranked 1st?", "opts": ["Maharashtra", "Gujarat", "Tamil Nadu", "Karnataka"], "ans": 1, "p1": "Top 3 States: 1st — Gujarat; 2nd — Maharashtra; 3rd — Tamil Nadu.", "p2": "Exam Fact: Benchmarks states on regulatory ease, industrial land availability, and infrastructure readiness."}, {"id": 28, "slide_q": 834, "cat": "Ranks, Indices & Reports", "q": "According to government data on the PLI Scheme for Automobile and Auto Components, which state leads with the highest number of approved manufacturing units (66 units)?", "opts": ["Gujarat", "Tamil Nadu", "Maharashtra", "Haryana"], "ans": 2, "p1": "Top State: Maharashtra (66 manufacturing units).", "p2": "Exam Fact: Pune–Chakan–Aurangabad in Maharashtra and Chennai–Sriperumbudur in Tamil Nadu are India's largest auto manufacturing clusters."}, {"id": 29, "slide_q": 836, "cat": "Ranks, Indices & Reports", "q": "NITI Aayog's third thematic report on the Services Sector focused primarily on which policy area?", "opts": ["Professional Services Regulation (legal, accounting, architectural, and engineering services)", "Maritime Container Freight Tariffs", "Rural Dairy Cooperatives", "Coal Mining Royalties"], "ans": 0, "p1": "Focus Area: Professional Services Regulation to boost global export competitiveness of Indian legal, accounting, and consulting firms.", "p2": "Exam Fact: The Services Sector contributes over 54% of India's Gross Value Added (GVA)."}, {"id": 30, "slide_q": 838, "cat": "Ranks, Indices & Reports", "q": "What rank and score did India achieve in the 'World Future Skills Index'?", "opts": ["18th rank (score 84.0)", "8th rank (score 92.1)", "13th rank (with a score of 89.4)", "22nd rank (score 79.5)"], "ans": 2, "p1": "Rank & Score: 13th rank globally with a score of 89.4.", "p2": "Exam Fact: Evaluates workforce readiness in AI, digital engineering, and green skills."}, {"id": 31, "slide_q": 839, "cat": "Ranks, Indices & Reports", "q": "NITI Aayog identified four high-potential sectors to position India as a global manufacturing hub (Chemicals, Telecom, Textiles, and Solar). Which of the following was NOT among those four sectors?", "opts": ["Textiles & Solar", "Chemicals", "Telecom", "Automobiles"], "ans": 3, "p1": "4 Identified Sectors: Chemicals, Telecom, Textiles, and Solar PV manufacturing (Automobiles was not in this specific 4-sector list).", "p2": "Exam Fact: Focuses on capturing global 'China+1' supply chain shifts."}, {"id": 32, "slide_q": 840, "cat": "Ranks, Indices & Reports", "q": "Which country ranked 1st in the 'Global Passport Index' compiled by Global Citizen Solutions?", "opts": ["Sweden", "Singapore", "Switzerland", "Germany"], "ans": 0, "p1": "Distinction: Global Citizen Solutions' Global Passport Index ranked Sweden #1 (evaluating visa-free mobility, quality of life, and investment index), whereas Singapore tops the Henley Passport Index.", "p2": "Exam Fact: Capital of Sweden: Stockholm | Currency: Swedish Krona."}, {"id": 33, "slide_q": 841, "cat": "Ranks, Indices & Reports", "q": "According to the 'State of India's Digital Economy Report' (by ICRIER), where does India rank among the world's most digitalized economies?", "opts": ["3rd", "5th", "7th", "10th"], "ans": 1, "p1": "Rank: 5th globally at the economy-wide aggregate level (and 1st/among top 3 in Digital Public Infrastructure — DPI).", "p2": "Exam Fact: Driven by India Stack (Aadhaar, UPI, DigiLocker, ONDC, Account Aggregator)."}, {"id": 34, "slide_q": 842, "cat": "Ranks, Indices & Reports", "q": "Which country topped the World Economic Forum's (WEF) Energy Transition Index?", "opts": ["Norway", "Denmark", "Sweden", "Switzerland"], "ans": 2, "p1": "Top Country: Sweden (followed by Denmark and Finland).", "p2": "Exam Fact: Benchmarks countries on energy security, equity, and environmental sustainability."}, {"id": 35, "slide_q": 843, "cat": "Ranks, Indices & Reports", "q": "What is India's rank in the Sustainable Development Report (SDG Index)?", "opts": ["88th", "109th", "112th", "94th"], "ans": 3, "p1": "Rank: 94th globally (published by the UN Sustainable Development Solutions Network — SDSN, led by Jeffrey Sachs).", "p2": "Exam Fact: Nordic countries (Finland, Sweden, Denmark) consistently top the SDG Index."}, {"id": 36, "slide_q": 844, "cat": "Ranks, Indices & Reports", "q": "Which city topped the Economist Intelligence Unit's (EIU) 'Global Liveability Index'?", "opts": ["Copenhagen, Denmark", "Vienna, Austria", "Zurich, Switzerland", "Melbourne, Australia"], "ans": 0, "p1": "Top City: Copenhagen, Denmark (surpassing Vienna).", "p2": "Exam Fact: EIU evaluates 173 cities across Stability, Healthcare, Culture & Environment, Education, and Infrastructure."}, {"id": 37, "slide_q": 847, "cat": "Science, Space & Technology", "q": "Which supercomputer topped the 67th TOP500 list of the world's fastest supercomputers?", "opts": ["Fugaku", "Frontier", "Aurora", "El Capitan"], "ans": 3, "p1": "Top Supercomputer: El Capitan (located at Lawrence Livermore National Laboratory, California, USA — exascale system).", "p2": "Exam Fact: India's fastest AI supercomputer 'AIRAWAT' is installed at C-DAC Pune."}, {"id": 38, "slide_q": 848, "cat": "Ranks, Indices & Reports", "q": "According to the UNCTAD World Investment Report, where does India rank globally in Foreign Direct Investment (FDI) inflows?", "opts": ["11th", "8th", "15th", "16th"], "ans": 0, "p1": "Global Rank: 11th globally in FDI inflows (USA ranks 1st).", "p2": "Exam Fact: Published annually by UNCTAD (HQ: Geneva, Switzerland)."}, {"id": 39, "slide_q": 849, "cat": "Ranks, Indices & Reports", "q": "What rank did GIFT City (Gujarat International Finance Tec-City) achieve in the Global Financial Centres Index (GFCI)?", "opts": ["45th", "37th", "52nd", "29th"], "ans": 1, "p1": "Rank: 37th globally in the Global Financial Centres Index (New York and London rank 1st and 2nd).", "p2": "Exam Fact: GFCI is compiled by Z/Yen Group (London) and China Development Institute."}, {"id": 40, "slide_q": 850, "cat": "Ranks, Indices & Reports", "q": "According to the 'Brand Finance India 100 Report 2026', which is India's most valuable brand?", "opts": ["HDFC Group", "Infosys", "Tata Group", "Reliance"], "ans": 2, "p1": "Leader: Tata Group retained its #1 spot as India's most valuable brand.", "p2": "Exam Fact: Brand Finance is a leading brand valuation consultancy headquartered in London, UK."}, {"id": 41, "slide_q": 851, "cat": "Ranks, Indices & Reports", "q": "Which country topped the 'Global Business Climate Survey 2026' conducted by Business Sweden across 41 markets?", "opts": ["UAE", "Singapore", "United States", "India"], "ans": 3, "p1": "Top Market: India ranked #1 in Business Sweden's Global Business Climate Survey 2026.", "p2": "Exam Fact: Reflects high confidence among Swedish multinational companies expanding in India."}, {"id": 42, "slide_q": 852, "cat": "Ranks, Indices & Reports", "q": "Which country ranked 1st in the World Justice Project (WJP) Rule of Law Index?", "opts": ["Denmark", "Norway", "Finland", "Sweden"], "ans": 0, "p1": "Top Country: Denmark ranked #1 globally in the WJP Rule of Law Index.", "p2": "Exam Fact: World Justice Project (WJP) is headquartered in Washington, D.C., USA."}, {"id": 43, "slide_q": 853, "cat": "Government Schemes & Initiatives", "q": "NITI Aayog's report on Caregivers (released in August 2026) recommended the creation of which national regulatory/advisory body?", "opts": ["National Elderly Pension Authority", "National Caregivers Council", "Central Domestic Workers Board", "National Palliative Care Commission"], "ans": 1, "p1": "Recommendation: Establishment of a 'National Caregivers Council' to formalize training, certification, and social security for professional and family caregivers.", "p2": "Exam Fact: Addresses India's rapidly growing elder-care and chronic healthcare support needs."}, {"id": 44, "slide_q": 854, "cat": "Ranks, Indices & Reports", "q": "Which university topped the Times Higher Education (THE) World University Rankings?", "opts": ["Harvard University", "Massachusetts Institute of Technology (MIT)", "University of Oxford", "Stanford University"], "ans": 2, "p1": "Top University: University of Oxford (United Kingdom).", "p2": "Exam Fact: IISc Bengaluru is consistently the top-ranked Indian university in THE World University Rankings."}, {"id": 45, "slide_q": 855, "cat": "Ranks, Indices & Reports", "q": "According to the PLFS Monthly Bulletin for July 2026, what was India's overall unemployment rate?", "opts": ["5.8%", "5.4%", "4.8%", "5.1%"], "ans": 3, "p1": "Overall Unemployment Rate: 5.1% in July 2026.", "p2": "Exam Fact: Covers individuals aged 15 years and above under Current Weekly Status (CWS)."}, {"id": 46, "slide_q": 858, "cat": "Ranks, Indices & Reports", "q": "According to the OAG Megahubs 2026 report, what is Delhi's Indira Gandhi International Airport (IGIA) global connectivity rank?", "opts": ["35th", "24th", "28th", "19th"], "ans": 2, "p1": "Rank: 28th globally in OAG Megahubs 2026 (London Heathrow ranks 1st).", "p2": "Exam Fact: OAG (Official Airline Guide) is a UK-based global aviation data provider."}, {"id": 47, "slide_q": 859, "cat": "Economy, GDP & Corporate Deals", "q": "India is the world's 3rd largest startup ecosystem. How many startups have been officially recognized by DPIIT?", "opts": ["3.20 lakh", "1.40 lakh", "1.95 lakh", "2.62 lakh (262,000+)"], "ans": 3, "p1": "Recognized Startups: 2.62 lakh DPIIT-recognized startups across India.", "p2": "Exam Fact: Over 45% of DPIIT-recognized startups have at least one woman director."}, {"id": 48, "slide_q": 860, "cat": "Ranks, Indices & Reports", "q": "According to the UDISE+ 2025–26 report released by the Ministry of Education, what percentage share of India's school teachers are women?", "opts": ["54.9%", "48.2%", "51.5%", "58.0%"], "ans": 0, "p1": "Share: 54.9% of school teachers in India are women.", "p2": "Exam Fact: UDISE+ stands for Unified District Information System for Education Plus."}, {"id": 49, "slide_q": 861, "cat": "Environment, Parks & GI Tags", "q": "India's first subterranean fish species in the Indo-Gangetic basin, 'Gangeticichthys indogangeticus', was discovered in which Indian state?", "opts": ["Uttar Pradesh", "Bihar", "West Bengal", "Assam"], "ans": 1, "p1": "Discovery: Discovered in subterranean aquifer waters in Bihar.", "p2": "Exam Fact: Subterranean (hypogean) fish live in underground cave or aquifer water systems and often lack eyes/pigmentation."}, {"id": 50, "slide_q": 862, "cat": "Science, Space & Technology", "q": "According to MeitY data, which state leads India in 'ChipIN Centre' usage with 73 chip tape-outs under the Chips to Startup (C2S) programme?", "opts": ["Telangana", "Tamil Nadu", "Karnataka", "Maharashtra"], "ans": 2, "p1": "Top State: Karnataka (73 tape-outs).", "p2": "Exam Fact: ChipIN Centre at C-DAC Bengaluru provides centralized EDA (Electronic Design Automation) tools and fabrication support to academic/startup chip designers."}, {"id": 51, "slide_q": 863, "cat": "Ranks, Indices & Reports", "q": "NITI Aayog's 9th edition of 'Trade Watch Quarterly' focused specifically on India's trade performance in which product category?", "opts": ["Marine and Seafood Products", "Textiles and Apparel", "Pharmaceuticals and Vaccines", "Metals and Ores"], "ans": 3, "p1": "Focus Category: Metals and Ores.", "p2": "Exam Fact: Evaluates export competitiveness, import dependence, and tariff structures."}, {"id": 52, "slide_q": 865, "cat": "Infrastructure, Ports & Energy", "q": "Regarding India becoming the world's top ship recycling nation: (1) India holds a 35.4% global share; (2) Alang-Sosiya yard in Gujarat handles 97% of India's ship recycling; (3) Governed by the Recycling of Ships Act, 2019; (4) Achieved its target 10 years ahead of schedule (not 5 years). Which statements are correct?", "opts": ["1 and 2 only", "1, 2, and 3 only (Achieved 10 years ahead of target)", "2 and 4 only", "All 1, 2, 3, and 4"], "ans": 1, "p1": "Correction Note: India achieved its green ship recycling compliance milestone 10 years ahead of the target timeline (not 5 years).", "p2": "Exam Fact: Alang-Sosiya Ship Breaking Yard is located in Bhavnagar district, Gujarat, and complies with the IMO Hong Kong International Convention."}, {"id": 53, "slide_q": 866, "cat": "Environment, Parks & GI Tags", "q": "What is the title of the United Nations Environment Programme's (UNEP) 17th Emissions Gap Report 2026?", "opts": ["No More Hot Air… Please!", "Broken Record: Temperatures Hit New Highs", "The Point of Return", "Closing the Window"], "ans": 2, "p1": "Title: 'The Point of Return' (17th Emissions Gap Report 2026).", "p2": "Exam Fact: UNEP was established on 5 June 1972 (World Environment Day) and is headquartered in Nairobi, Kenya."}, {"id": 54, "slide_q": 868, "cat": "Science, Space & Technology", "q": "What is the title of the white paper released by IIT Ropar on Artificial Intelligence and human cognition?", "opts": ["Beyond Intelligence: Defining and Measuring Wisdom for AI", "Responsible AI for Bharat", "Foundational Models and Quantum Computing", "Ethical Guardrails in Generative Systems"], "ans": 0, "p1": "Title: 'Beyond Intelligence: Defining and Measuring Wisdom for AI'.", "p2": "Exam Fact: IIT Ropar is located in Rupnagar, Punjab."}, {"id": 55, "slide_q": 869, "cat": "Ranks, Indices & Reports", "q": "Which State / Union Territory topped NITI Aayog's 'India Electric Mobility Index'?", "opts": ["Maharashtra", "Delhi", "Karnataka", "Tamil Nadu"], "ans": 1, "p1": "Top Ranker: NCT of Delhi topped NITI Aayog's India Electric Mobility Index.", "p2": "Exam Fact: Evaluates EV penetration, public charging infrastructure density, and state EV policy incentives."}, {"id": 56, "slide_q": 870, "cat": "Ranks, Indices & Reports", "q": "According to Ministry of Commerce and Industry data, what was the total value of India's exports in Q1 (April–June)?", "opts": ["USD 255.10 billion", "USD 198.40 billion", "USD 232.73 billion", "USD 210.00 billion"], "ans": 2, "p1": "Q1 Export Value: USD 232.73 billion.", "p2": "Exam Fact: Combines merchandise exports and services exports."}, {"id": 57, "slide_q": 872, "cat": "Science, Space & Technology", "q": "Under which Union Ministry does CMLRE (Centre for Marine Living Resources and Ecology), which released the National Report on Deep-Sea and Distant-Water Fishery Resources, function?", "opts": ["Ministry of Earth Sciences (MoES)", "Ministry of Fisheries, Animal Husbandry and Dairying", "Ministry of Ports, Shipping and Waterways", "Ministry of Environment, Forest and Climate Change"], "ans": 0, "p1": "Parent Ministry: Ministry of Earth Sciences (MoES) — CMLRE is headquartered in Kochi, Kerala.", "p2": "Exam Fact: Supports India's Deep Ocean Mission ('Samudrayaan')."}, {"id": 58, "slide_q": 873, "cat": "Economy, GDP & Corporate Deals", "q": "What base year has been adopted by MoSPI for the new trial Index of Service Production (ISP)?", "opts": ["2011–12", "2022–23", "2017–18", "2020–21"], "ans": 1, "p1": "Base Year: 2022–23 (aligned with the revised base years of IIP, WPI, and CPI).", "p2": "Exam Fact: Tracks high-frequency output volume across India's services sector."}, {"id": 59, "slide_q": 874, "cat": "Infrastructure, Ports & Energy", "q": "Regarding V. O. Chidambaranar (VOC) Port Authority's Sustainability Report 2026: (1) Achieved 45% reduction in carbon emissions; (2) Renewable energy meets 94% of port power demand; (3) Located at Thoothukudi, Tamil Nadu; (4) Declared a Major Port in 1974 (not 1994). Which statements are correct?", "opts": ["2 and 4 only", "1 and 4 only", "1, 2, and 3 only (Declared a Major Port in 1974, not 1994)", "All 1, 2, 3, and 4"], "ans": 2, "p1": "Correction Note: Statement 4 is incorrect because Tuticorin (VOC) Port was declared a Major Port of India in July 1974 (not 1994).", "p2": "Exam Fact: Named after freedom fighter V. O. Chidambaram Pillai ('Kappalottiya Thamizhan')."}, {"id": 60, "slide_q": 875, "cat": "Ranks, Indices & Reports", "q": "What is the title of the World Bank Group's World Development Report 2026 launched by Union Minister Ashwini Vaishnaw?", "opts": ["Finance for an Equitable Recovery", "The Middle-Income Trap", "Migrants, Refugees, and Societies", "The Promise of Artificial Intelligence"], "ans": 3, "p1": "Title: 'The Promise of Artificial Intelligence'.", "p2": "Exam Fact: World Development Report (WDR) is the World Bank's flagship annual analytical publication."}, {"id": 61, "slide_q": 876, "cat": "Ranks, Indices & Reports", "q": "According to the UN SOFI (State of Food Security and Nutrition in the World) Report 2026, how many people globally faced hunger in 2026?", "opts": ["645 million", "733 million", "520 million", "810 million"], "ans": 0, "p1": "Figure: 645 million people globally faced chronic hunger/undernourishment.", "p2": "Exam Fact: SOFI is published jointly by FAO, IFAD, UNICEF, WFP, and WHO."}, {"id": 62, "slide_q": 877, "cat": "Health & Traditional Medicine", "q": "Which institute serves as the nodal agency for conducting the National Family Health Survey (NFHS) under the Ministry of Health and Family Welfare?", "opts": ["ICMR New Delhi", "IIPS Mumbai (International Institute for Population Sciences)", "AIIMS New Delhi", "NITI Aayog"], "ans": 1, "p1": "Nodal Agency: International Institute for Population Sciences (IIPS), Mumbai, Maharashtra.", "p2": "Exam Fact: NFHS provides district- and state-level data on fertility, infant/child mortality, nutrition, and maternal health."}, {"id": 63, "slide_q": 878, "cat": "Ranks, Indices & Reports", "q": "How many districts were covered in the district-level Annual Survey of Unincorporated Sector Enterprises (ASUSE) for non-agricultural enterprises?", "opts": ["712 districts", "640 districts", "757 districts", "800 districts"], "ans": 2, "p1": "Coverage: 757 districts across India.", "p2": "Exam Fact: ASUSE is conducted by NSO (MoSPI) covering unincorporated manufacturing, trade, and other services enterprises."}, {"id": 64, "slide_q": 879, "cat": "Science, Space & Technology", "q": "MeitY (via CERT-In / CSIRT-Fin) released the second edition of the 'Digital Threat Report' specifically for which sector?", "opts": ["Textiles & Handlooms", "Civil Aviation & Airports", "Coal & Thermal Power", "BFSI (Banking, Financial Services, and Insurance) & Payments sector"], "ans": 3, "p1": "Target Sector: BFSI (Banking, Financial Services, and Insurance) and Digital Payments ecosystem.", "p2": "Exam Fact: CERT-In stands for Indian Computer Emergency Response Team (under MeitY)."}, {"id": 65, "slide_q": 881, "cat": "Science, Space & Technology", "q": "In May 2026, NITI Aayog's Frontier Tech Hub released India's 10-year strategic roadmap focused on which critical high-tech industry?", "opts": ["Deep-Sea Mining", "Semiconductor Industry", "Commercial Space Tourism", "Synthetic Textiles"], "ans": 1, "p1": "Industry: Semiconductor Industry.", "p2": "Exam Fact: Aligns with the India Semiconductor Mission and Semicon 2.0."}, {"id": 66, "slide_q": 882, "cat": "Environment, Parks & GI Tags", "q": "The Zoological Survey of India (ZSI) completed India's first comprehensive catalog of Lepidoptera (butterflies and moths) in August 2026. How many species were documented?", "opts": ["10,200 species", "8,450 species", "13,703 species", "15,500 species"], "ans": 2, "p1": "Species Count: 13,703 species of butterflies and moths across India.", "p2": "Exam Fact: ZSI was established on 1 July 1916 and is headquartered in Kolkata, West Bengal."}, {"id": 67, "slide_q": 883, "cat": "Science, Space & Technology", "q": "According to the SIPRI Yearbook 2026, how many nuclear warheads does India possess?", "opts": ["210", "172", "180", "190"], "ans": 3, "p1": "Warhead Count: 190 nuclear warheads reported in SIPRI Yearbook 2026.", "p2": "Exam Fact: SIPRI is headquartered in Stockholm, Sweden."}, {"id": 68, "slide_q": 886, "cat": "Environment, Parks & GI Tags", "q": "A new catfish species 'Pseudolaguvia khairi', discovered in Odisha, was named after whom?", "opts": ["A tribal freedom fighter", "A river in Mayurbhanj", "Khairi — the legendary tigress of Similipal Tiger Reserve", "An Indian ichthyologist"], "ans": 2, "p1": "Namesake: Named after 'Khairi', the famous domesticated tigress of Similipal Tiger Reserve in Mayurbhanj district, Odisha.", "p2": "Exam Fact: Similipal is both a Tiger Reserve and a UNESCO Biosphere Reserve in Odisha."}, {"id": 69, "slide_q": 887, "cat": "Environment, Parks & GI Tags", "q": "According to the WMO 'State of Global Water Resources 2025' report, global glacier mass loss continued for how many consecutive years?", "opts": ["5 consecutive years", "2 consecutive years", "3 consecutive years", "4 consecutive years"], "ans": 3, "p1": "Streak: 4 consecutive years of widespread global glacier mass loss.", "p2": "Exam Fact: World Meteorological Organization (WMO) was established in 1950 (World Meteorological Day: 23 March) and is headquartered in Geneva, Switzerland."}, {"id": 70, "slide_q": 888, "cat": "Ranks, Indices & Reports", "q": "Which quarter did the 8th edition of NITI Aayog's 'Trade Watch Quarterly' cover?", "opts": ["Q4 FY 2025–26", "Q1 FY 2026–27", "Q2 FY 2026–27", "Q3 FY 2025–26"], "ans": 0, "p1": "Quarter Covered: Q4 FY 2025–26.", "p2": "Exam Fact: Tracks India's quarterly merchandise and services trade trends."}, {"id": 71, "slide_q": 889, "cat": "Health & Traditional Medicine", "q": "Which global consultancy firm prepared NITI Aayog's report 'Strategic Roadmap for Making Ayurveda Global'?", "opts": ["Deloitte", "PwC (PricewaterhouseCoopers)", "EY (Ernst & Young)", "McKinsey & Company"], "ans": 1, "p1": "Firm: PwC (PricewaterhouseCoopers).", "p2": "Exam Fact: Outlines regulatory harmonization, clinical evidence standards, and global export promotion for Ayurveda."}, {"id": 72, "slide_q": 890, "cat": "Environment, Parks & GI Tags", "q": "Researchers at Kerala University of Fisheries and Ocean Studies (KUFOS) identified a new seahorse species named after marine biologist Amanda Vincent. What is its scientific name?", "opts": ["Hippocampus indicus", "Hippocampus keralensis", "Hippocampus amandavincentae", "Hippocampus malabaricus"], "ans": 2, "p1": "Scientific Name: Hippocampus amandavincentae (discovered off the Kerala coast by KUFOS, Kochi).", "p2": "Exam Fact: Seahorses belong to the genus Hippocampus and are protected under Schedule I of India's Wildlife (Protection) Act, 1972."}, {"id": 73, "slide_q": 891, "cat": "Infrastructure, Ports & Energy", "q": "According to the International Energy Agency (IEA), India's electrification rate in final energy consumption could rise from 19% to what percentage by 2050?", "opts": ["50%", "25%", "40%", "32%"], "ans": 3, "p1": "Projection: Rise from 19% to 32% by 2050 (driven by EVs, electric cooking, and industrial electrification).", "p2": "Exam Fact: IEA (International Energy Agency) was founded in 1974 and is headquartered in Paris, France (Executive Director: Fatih Birol)."}, {"id": 74, "slide_q": 892, "cat": "Ranks, Indices & Reports", "q": "According to UNESCO's GEM (Global Education Monitoring) Gender Report, how many men are enrolled in higher education in India for every 100 women?", "opts": ["88 men per 100 women", "95 men per 100 women", "102 men per 100 women", "80 men per 100 women"], "ans": 0, "p1": "Ratio: 88 men enrolled per 100 women in higher education (reflecting a Gender Parity Index above 1.0 in favor of women).", "p2": "Exam Fact: International Day of Education is observed on 24 January."}, {"id": 75, "slide_q": 894, "cat": "Ranks, Indices & Reports", "q": "According to the UN Secretary-General's 2026 Report on Women, Peace and Security, what percentage of civilians killed in armed conflicts were women and girls?", "opts": ["35%", "15%", "25%", "40%"], "ans": 2, "p1": "Share: 25% of conflict-related civilian fatalities were women and girls.", "p2": "Exam Fact: UN Security Council Resolution 1325 (adopted in 2000) is the landmark resolution on Women, Peace and Security."}, {"id": 76, "slide_q": 895, "cat": "Ranks, Indices & Reports", "q": "According to the PLFS Monthly Bulletin for June 2026, what was India's overall unemployment rate?", "opts": ["6.0%", "5.0%", "5.1%", "5.5%"], "ans": 3, "p1": "Trend: 5.5% (June 2026) → 5.1% (July 2026) → 5.0% (August 2026).", "p2": "Exam Fact: Tracks monthly labor market indicators across rural and urban India."}, {"id": 77, "slide_q": 896, "cat": "Economy & Agriculture", "q": "ICAR-NBSS&LUP (National Bureau of Soil Survey and Land Use Planning) developed India's first hectare-level (100m × 100m) digital map for which soil property?", "opts": ["Soil Texture", "Soil Salinity Only", "Soil Uranium Concentration", "Subsurface Coal Seams"], "ans": 0, "p1": "Property Mapped: Soil Texture (sand, silt, clay proportions at 1-hectare resolution).", "p2": "Exam Fact: ICAR-NBSS&LUP is headquartered in Nagpur, Maharashtra."}, {"id": 78, "slide_q": 897, "cat": "Ranks, Indices & Reports", "q": "According to the UN Women 'Gender Snapshot' report, at the current pace of progress, by which year will global gender equality in parliamentary representation / leadership be achieved?", "opts": ["2050", "2197", "2100", "2150"], "ans": 1, "p1": "Projected Year: 2197 (nearly 170 years away at current rates).", "p2": "Exam Fact: UN Women is headquartered in New York City, USA."}, {"id": 79, "slide_q": 900, "cat": "Economy & Agriculture", "q": "As per the Second Advance Estimates of Horticultural Crops, what was India's total horticulture production?", "opts": ["352.20 million tonnes", "320.50 million tonnes", "370.76 million tonnes (3,707.6 lakh tonnes)", "395.00 million tonnes"], "ans": 2, "p1": "Production: 370.76 million tonnes (3,707.6 lakh tonnes) — surpassing total foodgrain production.", "p2": "Exam Fact: India is the world's second-largest producer of fruits and vegetables (after China)."}, {"id": 80, "slide_q": 901, "cat": "Ranks, Indices & Reports", "q": "According to the WHO/UNICEF Joint Monitoring Programme (JMP) report, how many school children in India lack basic sanitation services at school?", "opts": ["100 million", "25 million", "75 million", "50 million"], "ans": 3, "p1": "Figure: 50 million school children.", "p2": "Exam Fact: Swachh Vidyalaya Abhiyan focuses on functional separate toilets and handwashing facilities in all government schools."}, {"id": 81, "slide_q": 902, "cat": "Economy, GDP & Corporate Deals", "q": "According to National Statistical Office (NSO) Q1 FY 2026–27 estimates, what was India's real GDP growth rate in Q1 FY27?", "opts": ["7.8%", "6.7%", "7.1%", "8.2%"], "ans": 0, "p1": "Q1 FY27 Real GDP Growth: 7.8%.", "p2": "Exam Fact: NSO releases quarterly GDP estimates with a two-month lag."}, {"id": 82, "slide_q": 903, "cat": "Environment, Parks & GI Tags", "q": "In which city was the first Global Coral Reef Assessment under the IUCN Red List of Ecosystems released during UNCCD COP 17?", "opts": ["Geneva, Switzerland", "Ulaanbaatar / Yerevan", "Nairobi, Kenya", "Townsville, Australia"], "ans": 1, "p1": "Context: Released during COP 17 proceedings (IUCN is headquartered in Gland, Switzerland).", "p2": "Exam Fact: Australia's Great Barrier Reef is the world's largest coral reef system."}, {"id": 83, "slide_q": 906, "cat": "Ranks, Indices & Reports", "q": "According to India's first National Household Travel Survey, what percentage of students aged 6 and above travel more than 1 km to reach their educational institution?", "opts": ["66.4%", "52.0%", "74.5%", "45.8%"], "ans": 0, "p1": "Share: 66.4% of students aged 6+ travel over 1 km to school/college.", "p2": "Exam Fact: Helps urban and rural transport planners design safe school transit corridors."}, {"id": 84, "slide_q": 907, "cat": "Science, Space & Technology", "q": "The first International Scientific Report on Advanced AI Safety was prepared by a 40-member international expert panel co-chaired by Turing Award laureate Yoshua Bengio and which Nobel Peace Laureate?", "opts": ["Demis Hassabis", "Maria Ressa", "Geoffrey Hinton", "Narges Mohammadi"], "ans": 1, "p1": "Co-Chairs: Prof. Yoshua Bengio (Canadian computer scientist) and Maria Ressa (Filipino-American journalist & 2021 Nobel Peace Prize laureate).", "p2": "Exam Fact: Synthesizes global scientific consensus on frontier AI risks and governance."}, {"id": 85, "slide_q": 910, "cat": "Defence & Exercises", "q": "Which country hosted the 45th edition of the multilateral air combat Exercise 'Pitch Black 2026' in which the Indian Air Force participated?", "opts": ["Australia", "United States", "United Kingdom", "Singapore"], "ans": 0, "p1": "Host: Royal Australian Air Force (RAAF) at Darwin/Tindal, Northern Territory, Australia.", "p2": "Exam Fact: Pitch Black is a biennial multinational large-force employment air warfare exercise."}, {"id": 86, "slide_q": 911, "cat": "Defence & Exercises", "q": "Where was the 11th edition of the India–Indonesia Joint Special Forces Exercise 'Garuda Shakti' held?", "opts": ["Bakloh, Himachal Pradesh", "Banyuwangi, Indonesia", "Belagavi, Karnataka", "Jakarta, Indonesia"], "ans": 1, "p1": "Location: Banyuwangi, East Java, Indonesia.", "p2": "Exam Fact: 'Garuda Shakti' is the Army/Special Forces exercise with Indonesia, while 'Samudra Shakti' is the bilateral Naval exercise."}, {"id": 87, "slide_q": 912, "cat": "Defence & Exercises", "q": "Which Sri Lankan Naval Ship participated in the first BIMSTEC Maritime Security Exercise?", "opts": ["SLNS Sindurala", "SLNS Sayurala", "SLNS Gajabahu", "SLNS Samudura"], "ans": 2, "p1": "Vessel: SLNS Gajabahu (Sri Lanka Navy).", "p2": "Exam Fact: BIMSTEC (founded 1997, HQ: Dhaka, Bangladesh) comprises 7 member states: Bangladesh, Bhutan, India, Myanmar, Nepal, Sri Lanka, and Thailand."}, {"id": 88, "slide_q": 913, "cat": "Defence & Exercises", "q": "At which military station in Uttarakhand was the India–UAE joint military Exercise 'Mountain Guardian' held?", "opts": ["Pithoragarh, Uttarakhand", "Auli, Uttarakhand", "Dehradun, Uttarakhand", "Chaubattia (Ranikhet), Uttarakhand"], "ans": 3, "p1": "Location: Chaubattia (near Ranikhet, Almora district), Uttarakhand.", "p2": "Exam Fact: 'Desert Cyclone' is another bilateral Army exercise between India and the UAE."}, {"id": 89, "slide_q": 915, "cat": "Defence & Exercises", "q": "In which province of Thailand was the 15th edition of the India–Thailand joint military Exercise 'Maitree' held?", "opts": ["Chiang Mai, Thailand", "Surat Thani, Thailand", "Krabi, Thailand", "Chonburi, Thailand"], "ans": 1, "p1": "Location: Surat Thani, southern Thailand.", "p2": "Exam Fact: 'Maitree' is the bilateral Army exercise between India and Thailand (while 'CORPAT' and 'Ex-Ayutthaya' are naval exercises)."}, {"id": 90, "slide_q": 916, "cat": "Defence & Exercises", "q": "In which two Indian states was the September 2026 edition of the India–US joint military Exercise 'Yudh Abhyas' conducted?", "opts": ["Punjab and Haryana", "Himachal Pradesh and Ladakh", "Rajasthan and Uttarakhand", "Assam and Arunachal Pradesh"], "ans": 2, "p1": "Locations: Rajasthan (Mahajan Field Firing Ranges) and Uttarakhand (Chaubattia/Auli).", "p2": "Exam Fact: 'Vajra Prahar' is the India–US Special Forces exercise, and 'Cope India' is the bilateral Air Force exercise."}, {"id": 91, "slide_q": 918, "cat": "Defence & Exercises", "q": "Which Indian city hosted the 2nd India–Vietnam Coast Guard Exercise 'Sahyog HOP TAC'?", "opts": ["Chennai, Tamil Nadu", "Visakhapatnam, Andhra Pradesh", "Kochi, Kerala", "Kolkata, West Bengal"], "ans": 0, "p1": "Host City: Chennai, Tamil Nadu (off the Chennai coast).", "p2": "Exam Fact: 'VINBAX' is the bilateral Army exercise between India and Vietnam."}, {"id": 92, "slide_q": 919, "cat": "Defence & Exercises", "q": "In which country was the 23rd edition of the multinational peacekeeping Exercise 'Khaan Quest' held with Indian Army participation?", "opts": ["Kazakhstan", "Mongolia", "Kyrgyzstan", "Japan"], "ans": 1, "p1": "Host Country: Mongolia (Five Hills Training Area near Ulaanbaatar).", "p2": "Exam Fact: Co-sponsored by the Mongolian Armed Forces and US Indo-Pacific Command."}, {"id": 93, "slide_q": 920, "cat": "Defence & Exercises", "q": "Where was the biennial multinational naval Exercise 'RIMPAC' (Rim of the Pacific), in which the Indian Navy participated, hosted?", "opts": ["San Diego, USA", "Guam, USA", "Hawaii (Pearl Harbor), USA", "Darwin, Australia"], "ans": 2, "p1": "Location: In and around the Hawaiian Islands (Pearl Harbor), USA — world's largest international maritime warfare exercise.", "p2": "Exam Fact: Hosted by the US Navy's Indo-Pacific Command."}, {"id": 94, "slide_q": 921, "cat": "Defence & Exercises", "q": "'SLINEX' is a bilateral maritime naval exercise conducted between India and which neighboring country?", "opts": ["Maldives", "Singapore", "Seychelles", "Sri Lanka"], "ans": 3, "p1": "Partner Country: Sri Lanka (SLINEX = Sri Lanka India Naval Exercise).", "p2": "Exam Fact: 'Mitra Shakti' is the bilateral Army exercise between India and Sri Lanka."}, {"id": 95, "slide_q": 922, "cat": "Defence & Exercises", "q": "Which Russian port city hosted the 'INDRA 2026' naval exercise between India and Russia?", "opts": ["Vladivostok", "St. Petersburg", "Murmansk", "Severomorsk"], "ans": 0, "p1": "Port City: Vladivostok (Russia's Pacific Fleet headquarters on the Sea of Japan).", "p2": "Exam Fact: INDRA is the bilateral military/naval exercise series between India and Russia."}, {"id": 96, "slide_q": 924, "cat": "Defence & Exercises", "q": "In which year was the India–US tri-service amphibious Exercise 'Tiger Triumph' series initiated?", "opts": ["2017", "2015", "2019", "2021"], "ans": 2, "p1": "Launch Year: November 2019 (held off Visakhapatnam and Kakinada).", "p2": "Exam Fact: First tri-service (Army, Navy, Air Force) amphibious HADR exercise between India and the USA."}, {"id": 97, "slide_q": 925, "cat": "Defence & Exercises", "q": "Off the coast of which Indian state was the Indian Coast Guard's 12th National Maritime Search and Rescue Exercise 'SAREX' conducted?", "opts": ["Maharashtra", "Gujarat", "Kerala", "Odisha (Paradip coast)"], "ans": 3, "p1": "Location: Off Paradip coast, Odisha.", "p2": "Exam Fact: Indian Coast Guard (ICG) was established on 1 February 1977 (Director General: Paramesh Sivamani)."}, {"id": 98, "slide_q": 926, "cat": "Defence & Exercises", "q": "Where was the 5th edition of the India–US tri-service Exercise 'Tiger Triumph 2026' conducted?", "opts": ["Visakhapatnam, Andhra Pradesh", "Chennai, Tamil Nadu", "Kochi, Kerala", "Karwar, Karnataka"], "ans": 0, "p1": "Venue: Visakhapatnam (Eastern Naval Command), Andhra Pradesh.", "p2": "Exam Fact: Enhances interoperability for amphibious humanitarian and disaster relief operations."}, {"id": 99, "slide_q": 927, "cat": "Defence & Exercises", "q": "In which French naval port city was the 24th edition of the India–France bilateral naval Exercise 'Varuna' held?", "opts": ["Brest, France", "Toulon, France", "Marseille, France", "Cherbourg, France"], "ans": 1, "p1": "Venue: Toulon (French Mediterranean naval base), France.", "p2": "Exam Fact: India–France bilateral exercises: Varuna (Navy), Garuda (Air Force), and Shakti (Army)."}, {"id": 100, "slide_q": 928, "cat": "Defence & Exercises", "q": "Which Indian Naval Ship participated in 'IBSAMAR VIII / XI' (India–Brazil–South Africa Maritime exercise) in South Africa?", "opts": ["INS Kolkata", "INS Sahyadri", "INS Tarkash", "INS Shivalik"], "ans": 2, "p1": "Vessel: INS Tarkash (Talwar-class stealth frigate of the Indian Navy).", "p2": "Exam Fact: IBSAMAR is a trilateral naval exercise among India, Brazil, and South Africa (held off Simon's Town, South Africa)."}, {"id": 101, "slide_q": 929, "cat": "Defence & Exercises", "q": "In which UK naval port city was the India–UK bilateral naval Exercise 'Konkan' held?", "opts": ["Liverpool, United Kingdom", "Portsmouth, United Kingdom", "Glasgow, Scotland", "Plymouth, United Kingdom"], "ans": 3, "p1": "Venue: Plymouth (HMNB Devonport), United Kingdom.", "p2": "Exam Fact: India–UK exercises: Konkan (Navy), Ajeya Warrior (Army), and Indradhanush (Air Force)."}, {"id": 102, "slide_q": 930, "cat": "Defence & Exercises", "q": "Where was the 4th edition of the India–Malaysia bilateral maritime Exercise 'Samudra Laksamana' held?", "opts": ["Lumut, Malaysia", "Langkawi, Malaysia", "Penang, Malaysia", "Port Klang, Malaysia"], "ans": 0, "p1": "Venue: Lumut (Royal Malaysian Navy base in Perak), Malaysia.", "p2": "Exam Fact: 'Harimau Shakti' is the bilateral Army exercise between India and Malaysia."}, {"id": 103, "slide_q": 931, "cat": "Defence & Exercises", "q": "At which military station in Uttarakhand was the India–Mongolia joint military Exercise 'Nomadic Elephant' held?", "opts": ["Umroi, Meghalaya", "Pithoragarh, Uttarakhand", "Bakloh, Himachal Pradesh", "Auli, Uttarakhand"], "ans": 1, "p1": "Venue: Pithoragarh, Uttarakhand.", "p2": "Exam Fact: Nomadic Elephant focuses on counter-insurgency and counter-terrorism operations in mountainous terrain."}, {"id": 104, "slide_q": 932, "cat": "Defence & Exercises", "q": "With which country does the Indian Air Force conduct the bilateral air combat Exercise 'Udara Shakti'?", "opts": ["Singapore", "Indonesia", "Malaysia", "Thailand"], "ans": 2, "p1": "Partner Country: Malaysia (Royal Malaysian Air Force — RMAF).", "p2": "Exam Fact: Capital of Malaysia: Kuala Lumpur | Currency: Malaysian Ringgit."}, {"id": 105, "slide_q": 933, "cat": "Defence & Exercises", "q": "In which city was the 5th edition of the Australia–India joint military Exercise 'AUSTRAHIND 2026' held?", "opts": ["Jodhpur, Rajasthan", "Pune, Maharashtra", "Perth, Australia", "Thiruvananthapuram (Pangode Military Station), Kerala"], "ans": 3, "p1": "Venue: Pangode Military Station, Thiruvananthapuram, Kerala.", "p2": "Exam Fact: 'AUSINDEX' is the bilateral Naval exercise between India and Australia."}, {"id": 106, "slide_q": 934, "cat": "Defence & Exercises", "q": "Regarding the 1st BIMSTEC Maritime Security Exercise: (1) Held at Sri Vijaya Puram (Port Blair), Andaman & Nicobar Islands; (2) Announced by PM Modi at the 6th BIMSTEC Summit in Thailand; (3) Featured a 3-day harbour/tabletop phase and 2-day sea phase (not 5-day tabletop); (4) Landlocked Nepal and Bhutan participated without sending naval ships. Which statements are correct?", "opts": ["1 and 2 only (3-day tabletop + 2-day sea phase; Nepal & Bhutan sent no ships)", "1, 2, and 3 only", "2 and 4 only", "All 1, 2, 3, and 4"], "ans": 0, "p1": "Corrections: The exercise comprised a 3-day tabletop/harbour phase and a 2-day sea phase, and landlocked Nepal & Bhutan participated without naval vessels.", "p2": "Exam Fact: Sri Vijaya Puram is the renamed capital of Andaman & Nicobar Islands."}, {"id": 107, "slide_q": 935, "cat": "Defence & Exercises", "q": "In which city of Kazakhstan was the 9th edition of the India–Kazakhstan joint military Exercise 'KAZIND 2026' held?", "opts": ["Astana, Kazakhstan", "Oskemen (Ust-Kamenogorsk), Kazakhstan", "Almaty, Kazakhstan", "Shymkent, Kazakhstan"], "ans": 1, "p1": "Venue: Oskemen, Kazakhstan.", "p2": "Exam Fact: Kazakhstan is the world's largest landlocked country (Capital: Astana | Currency: Kazakhstani Tenge)."}, {"id": 108, "slide_q": 937, "cat": "Defence & Exercises", "q": "In which port city of Bangladesh was the US–Bangladesh bilateral naval Exercise 'CARAT' (Cooperation Afloat Readiness and Training) held?", "opts": ["Payra, Bangladesh", "Mongla, Bangladesh", "Cox's Bazar, Bangladesh", "Chattogram (Chittagong), Bangladesh"], "ans": 3, "p1": "Venue: Chattogram (Chittagong), Bangladesh's largest seaport.", "p2": "Exam Fact: 'Bongosagar' is the bilateral naval exercise between India and Bangladesh."}, {"id": 109, "slide_q": 938, "cat": "Defence & Exercises", "q": "In which Indian port city was the 8th edition of the India–US Navy Explosive Ordnance Disposal (EOD) Exercise 'Salvex' held?", "opts": ["Kochi, Kerala", "Mumbai, Maharashtra", "Visakhapatnam, Andhra Pradesh", "Karwar, Karnataka"], "ans": 0, "p1": "Venue: Kochi (Southern Naval Command), Kerala.", "p2": "Exam Fact: Focuses on underwater mine countermeasures, salvage, and explosive ordnance disposal."}, {"id": 110, "slide_q": 940, "cat": "Defence & Exercises", "q": "Where was the 2nd edition of the ASEAN–India Maritime Exercise (AIME) held?", "opts": ["Lumut, Malaysia", "Changi Naval Base, Singapore", "Subic Bay, Philippines", "Da Nang, Vietnam"], "ans": 2, "p1": "Venue: Subic Bay, Philippines (1st edition in 2023 was hosted off Singapore / South China Sea).", "p2": "Exam Fact: Strengthens maritime security cooperation between the Indian Navy and ASEAN navies."}, {"id": 111, "slide_q": 943, "cat": "Science, Space & Technology", "q": "The Ministry of Defence signed a lease contract with US-based General Atomics for two units of which High-Altitude Long-Endurance (HALE) naval surveillance drone?", "opts": ["RQ-4 Global Hawk", "MQ-9B SeaGuardian", "Heron TP", "TAPAS-BH-201"], "ans": 1, "p1": "Drone: MQ-9B SeaGuardian (manufactured by General Atomics Aeronautical Systems, USA).", "p2": "Exam Fact: Provides 35+ hours of persistent maritime intelligence, surveillance, and reconnaissance (ISR) over the Indian Ocean Region."}, {"id": 112, "slide_q": 944, "cat": "Science, Space & Technology", "q": "During high-altitude flight tests in Russia, what peak dry thrust did DRDO's indigenous 'Kaveri' dry aero-engine achieve?", "opts": ["52.0 kN", "35.5 kN", "48.9 kN", "60.4 kN"], "ans": 2, "p1": "Performance: 48.9 kN peak dry thrust.", "p2": "Exam Fact: Developed by DRDO's Gas Turbine Research Establishment (GTRE), Bengaluru, to power indigenous stealth UCAVs (Ghatak)."}, {"id": 113, "slide_q": 947, "cat": "Science, Space & Technology", "q": "What is the name of India's first military-grade Unmanned Surface Vessel (USV) delivered by Sagar Defence / EyeROV to the Indian Navy?", "opts": ["Matangi", "Raudra", "Varuna", "Vajra"], "ans": 1, "p1": "Platform: 'Raudra' — autonomous military-grade Unmanned Surface Vessel (USV).", "p2": "Exam Fact: Performs autonomous harbour patrol, mine countermeasures, and coastal surveillance."}, {"id": 114, "slide_q": 948, "cat": "Science, Space & Technology", "q": "What is the maximum operational strike range of Solar Defence and Aerospace Limited's (SDAL) indigenous 'Nagastra-2' loitering munition in fire-and-forget mode?", "opts": ["30 km", "15 km", "50 km", "100 km"], "ans": 2, "p1": "Range: 50 km (upgraded from Nagastra-1's 15–30 km range).", "p2": "Exam Fact: Manufactured by Economics Explosives Limited (EEL) / Solar Industries in Nagpur, Maharashtra."}, {"id": 115, "slide_q": 949, "cat": "Science, Space & Technology", "q": "Which Indian defence company developed 'Garudastra', an indigenous 120 mm vehicle-mounted mortar system?", "opts": ["Tata Advanced Systems", "Bharat Forge (Kalyani Group)", "Larsen & Toubro", "Nibe Limited"], "ans": 3, "p1": "Developer: Nibe Limited (Pune-based defence manufacturing company).", "p2": "Exam Fact: Enhances shoot-and-scoot artillery mobility in high-altitude and desert terrains."}, {"id": 116, "slide_q": 950, "cat": "Science, Space & Technology", "q": "The Ministry of Defence signed a ₹770 crore contract with Bharat Electronics Limited (BEL) for the improved 'LLTR-1' radar, which is an upgraded version of which indigenous radar?", "opts": ["Aslesha Radar", "Swathi Weapon Locating Radar", "Rohini Radar", "Arudhra Radar"], "ans": 0, "p1": "Base Radar: Aslesha Low-Level Transportable Radar (LLTR) developed by DRDO's LRDE and manufactured by BEL.", "p2": "Exam Fact: Bharat Electronics Limited (BEL) is a Navratna CPSE headquartered in Bengaluru, Karnataka."}, {"id": 117, "slide_q": 951, "cat": "Science, Space & Technology", "q": "Deep Propulsion / IIT-incubated startup successfully demonstrated India's first indigenous 5 kN air-breathing engine of which propulsion type?", "opts": ["Solid Rocket Booster", "Rotating Detonation Engine (RDE)", "Nuclear Thermal Thruster", "Hall-Effect Ion Thruster"], "ans": 1, "p1": "Propulsion Type: Rotating Detonation Engine (RDE) — offers up to 20% higher thermodynamic fuel efficiency than conventional constant-pressure combustion engines.", "p2": "Exam Fact: Used for next-generation hypersonic missiles and aerospace propulsion."}, {"id": 118, "slide_q": 952, "cat": "Science, Space & Technology", "q": "INS Malvan, commissioned into the Indian Navy in July 2026, belongs to which class of Anti-Submarine Warfare Shallow Water Crafts?", "opts": ["Kamorta class", "Arnala class", "Mahe class", "Kora class"], "ans": 2, "p1": "Class: Mahe class (built by Cochin Shipyard Limited — includes INS Mahe, INS Malvan, INS Mangrol).", "p2": "Exam Fact: Named after historic coastal port towns of India."}, {"id": 119, "slide_q": 953, "cat": "Science, Space & Technology", "q": "Which US aerospace manufacturer built the 24 MH-60R 'Seahawk' multi-role maritime helicopters delivered to the Indian Navy?", "opts": ["Northrop Grumman", "Boeing", "Bell Textron", "Lockheed Martin (Sikorsky)"], "ans": 3, "p1": "Manufacturer: Lockheed Martin (Sikorsky Aircraft division, USA).", "p2": "Exam Fact: MH-60R Seahawk is known as the 'Romeo' helicopter, equipped for anti-submarine and anti-surface warfare."}, {"id": 120, "slide_q": 954, "cat": "Science, Space & Technology", "q": "What is the primary purpose of ISRO's first ground test 'SALVE'?", "opts": ["Validating the Gaganyaan Crew Module parachute deceleration system", "Testing reusable booster landing legs on sea barges", "Simulating Venusian atmospheric entry heatshields", "Calibrating NavIC atomic rubidium clocks"], "ans": 0, "p1": "Objective: Validates the Gaganyaan Crew Module's 10-parachute deceleration system for safe ocean splashdown.", "p2": "Exam Fact: Conducted in collaboration with DRDO's Aerial Delivery Research and Development Establishment (ADRDE), Agra."}, {"id": 121, "slide_q": 955, "cat": "Science, Space & Technology", "q": "INS Sarayu / INS Srishti, launched at GRSE Kolkata as the second Next-Generation Offshore Patrol Vessel (NGOPV), is which numbered vessel in the series?", "opts": ["1st NGOPV", "2nd NGOPV", "4th NGOPV", "6th NGOPV"], "ans": 1, "p1": "Sequence: 2nd Next-Generation Offshore Patrol Vessel (built by Garden Reach Shipbuilders & Engineers — GRSE, Kolkata).", "p2": "Exam Fact: GRSE and Goa Shipyard Limited (GSL) are jointly constructing 11 NGOPVs for the Indian Navy."}, {"id": 122, "slide_q": 956, "cat": "Science, Space & Technology", "q": "How many defence items are included in the Ministry of Defence's 6th Positive Indigenisation List notified in August 2026?", "opts": ["310 items", "101 items", "405 items", "501 items"], "ans": 2, "p1": "Item Count: 405 defence items (sub-systems, assemblies, and components) earmarked exclusively for domestic procurement.", "p2": "Exam Fact: Promotes Aatmanirbhar Bharat in defence manufacturing via the Srijan portal."}, {"id": 123, "slide_q": 957, "cat": "Science, Space & Technology", "q": "Which shipyard constructed Fleet Support Ship-1 'INS Surya', launched by Defence Minister Rajnath Singh?", "opts": ["Larsen & Toubro Shipyard, Kattupalli", "Mazagon Dock Shipbuilders Limited (MDL)", "Cochin Shipyard Limited (CSL)", "Hindustan Shipyard Limited (HSL), Visakhapatnam"], "ans": 3, "p1": "Shipyard: Hindustan Shipyard Limited (HSL), Visakhapatnam (building 5 Fleet Support Ships of 44,000+ tonnes displacement).", "p2": "Exam Fact: Fleet Support Ships replenish warships at sea with fuel, water, ammunition, and provisions."}, {"id": 124, "slide_q": 959, "cat": "Science, Space & Technology", "q": "What is the maximum strike range of 'Kaal', India's first indigenous long-range one-way attack (kamikaze) drone tested at Pokhran?", "opts": ["300 km", "1,000 km", "500 km", "1,500 km"], "ans": 1, "p1": "Range & Test Site: 1,000 km range — successfully flight-tested at Pokhran Field Firing Ranges, Rajasthan.", "p2": "Exam Fact: Capable of deep-strike precision loitering attacks against high-value enemy targets."}, {"id": 125, "slide_q": 961, "cat": "Science, Space & Technology", "q": "In August 2026, the Indian Army signed a USD 93 million deal with the United States to procure which man-portable anti-tank guided missile (ATGM) system?", "opts": ["Carl Gustaf M4", "Spike LR2", "Nag Mk-2", "FGM-148 Javelin"], "ans": 3, "p1": "Missile System: FGM-148 Javelin (fire-and-forget top-attack anti-tank guided missile manufactured by Raytheon & Lockheed Martin).", "p2": "Exam Fact: Capable of defeating modern reactive-armour main battle tanks."}, {"id": 126, "slide_q": 965, "cat": "Science, Space & Technology", "q": "The Indian Air Force received Final Operational Clearance (FOC) for which indigenous Airborne Early Warning and Control (AEW&C) system?", "opts": ["Bharani", "Phalcon AWACS", "Rohini", "Netra (Netra AEW&C)"], "ans": 3, "p1": "System: Netra AEW&C — developed by DRDO's Centre for Airborne Systems (CABS), Bengaluru, mounted on Embraer ERJ-145 aircraft.", "p2": "Exam Fact: Provides 240-degree simultaneous radar surveillance and battle management."}, {"id": 127, "slide_q": 966, "cat": "Science, Space & Technology", "q": "ICGS Akshar / ICGS Akshay, commissioned as the fourth Fast Patrol Vessel (FPV) built by Goa Shipyard Limited, belongs to which class?", "opts": ["Adamya class", "Samarth class", "Sankalp class", "Rajshree class"], "ans": 0, "p1": "Class: Adamya class Fast Patrol Vessel (built by Goa Shipyard Limited — GSL, Vasco da Gama, Goa).", "p2": "Exam Fact: Designed for coastal patrol, anti-smuggling, and search & rescue in India's Exclusive Economic Zone (EEZ)."}, {"id": 128, "slide_q": 967, "cat": "Science, Space & Technology", "q": "India successfully test-fired the 'Agni-4' intermediate-range ballistic missile from Chandipur / APJ Abdul Kalam Island, Odisha. What is its strike range?", "opts": ["2,000 km", "4,000 km", "3,000 km", "5,000+ km"], "ans": 1, "p1": "Range: 4,000 km (two-stage, solid-propelled, road-mobile ballistic missile developed by DRDO).", "p2": "Exam Fact: Agni-5 has a range exceeding 5,000 km and features MIRV (Multiple Independently Targetable Re-entry Vehicle) technology."}, {"id": 129, "slide_q": 969, "cat": "Science, Space & Technology", "q": "ISRO completed the flight acceptance hot test of the CE20 cryogenic engine for which launch vehicle mission?", "opts": ["SSLV-D5", "PSLV-C63", "GSLV-F19", "LVM3-M7"], "ans": 3, "p1": "Mission: LVM3-M7 (Launch Vehicle Mark-3, ISRO's heaviest operational rocket).", "p2": "Exam Fact: CE20 is India's largest indigenous cryogenic rocket engine (using Liquid Hydrogen and Liquid Oxygen at cryogenic temperatures), tested at IPRC Mahendragiri, Tamil Nadu."}, {"id": 130, "slide_q": 970, "cat": "Science, Space & Technology", "q": "Where is Adani Defence investing ₹2,500 crore to set up an integrated missile manufacturing complex?", "opts": ["Shivpuri, Madhya Pradesh", "Kanpur, Uttar Pradesh", "Hyderabad, Telangana", "Nagpur, Maharashtra"], "ans": 0, "p1": "Location & Investment: Shivpuri, Madhya Pradesh — ₹2,500 crore investment.", "p2": "Exam Fact: Expands private-sector missile propulsion and warhead manufacturing in India."}, {"id": 131, "slide_q": 971, "cat": "Science, Space & Technology", "q": "PM Narendra Modi commissioned three frontline naval combatants—INS Dunagiri, INS Sanshodhak, and INS Agni/Arnala. To which class does 'INS Dunagiri' belong?", "opts": ["Kolkata class (Project 15A)", "Nilgiri class (Project 17A stealth frigates)", "Visakhapatnam class (Project 15B)", "Shivalik class (Project 17)"], "ans": 1, "p1": "Class: Nilgiri class (Project 17A stealth guided-missile frigates — named after mountain ranges: INS Nilgiri, Himgiri, Udaygiri, Dunagiri, Taragiri, Vindhyagiri, Mahendragiri).", "p2": "Exam Fact: Built by Mazagon Dock Shipbuilders (MDL) and Garden Reach Shipbuilders & Engineers (GRSE)."}, {"id": 132, "slide_q": 972, "cat": "Science, Space & Technology", "q": "What is the primary purpose of the Indian Army's 'ASHWATH' laboratory established in New Delhi?", "opts": ["Breeding high-altitude military horses and mules", "Developing nuclear-powered submarine reactors", "Testing drones and UAV hardware/firmware to detect foreign (Chinese) malicious components or backdoors", "Testing ballistic missile heatshields"], "ans": 2, "p1": "Purpose: Cyber-physical forensic testing of military drones to eliminate foreign/Chinese electronic components and firmware vulnerabilities.", "p2": "Exam Fact: Ensures supply-chain security for indigenous UAV procurement."}, {"id": 133, "slide_q": 974, "cat": "Science, Space & Technology", "q": "DRDO successfully flight-tested the 'Pinaka' Long-Range Guided Rocket in July 2026. What is its user-specified minimum strike range?", "opts": ["60 km", "25 km", "40 km", "75 km"], "ans": 0, "p1": "Range: 60 km minimum strike range (with extended guided variants reaching 75–120+ km).", "p2": "Exam Fact: Pinaka Multi-Barrel Rocket Launcher (MBRL) is named after Lord Shiva's bow and fires a salvo of 12 rockets in 44 seconds."}, {"id": 134, "slide_q": 975, "cat": "Science, Space & Technology", "q": "Kalyani Strategic Systems Limited partnered with US-based AM General for a mobile mounted artillery gun system unveiled at the 'Eurosatory' defence exhibition in which city?", "opts": ["London, United Kingdom", "Paris, France", "Berlin, Germany", "Abu Dhabi, UAE"], "ans": 1, "p1": "Exhibition & City: Eurosatory — the world's largest international land and air-land defence exhibition held biennially in Paris, France.", "p2": "Exam Fact: Kalyani Strategic Systems is the defence subsidiary of Bharat Forge Limited (led by Baba Kalyani, HQ: Pune)."}, {"id": 135, "slide_q": 976, "cat": "Science, Space & Technology", "q": "How many women cadets from the first-ever batch of NDA-trained (National Defence Academy) women cadets were commissioned as officers in June 2026?", "opts": ["25 women cadets", "10 women cadets", "17 women cadets", "32 women cadets"], "ans": 2, "p1": "Batch Size: 17 women cadets commissioned from the National Defence Academy (NDA), Khadakwasla, Pune.", "p2": "Exam Fact: Following the 2021 Supreme Court directive, women cadets were inducted into NDA starting in 2022."}, {"id": 136, "slide_q": 977, "cat": "Science, Space & Technology", "q": "INS Mahendragiri, commissioned in 2026, is which numbered frigate of the Project 17A Nilgiri-class stealth frigates?", "opts": ["4th frigate", "2nd frigate", "3rd frigate", "7th (final) / 6th frigate in sequence"], "ans": 3, "p1": "Series: Project 17A comprises 7 stealth frigates (4 built by MDL and 3 built by GRSE; INS Mahendragiri was built by MDL Mumbai).", "p2": "Exam Fact: Named after Mahendragiri peak in the Eastern Ghats of Odisha."}, {"id": 137, "slide_q": 978, "cat": "Science, Space & Technology", "q": "In July 2026, the Defence Acquisition Council (DAC) granted Acceptance of Necessity (AoN) for defence procurement proposals worth what amount?", "opts": ["₹52,000 crore", "₹84,560 crore", "₹1,45,000 crore", "₹2,12,000 crore"], "ans": 0, "p1": "AoN Value: ₹52,000 crore in July 2026 (followed by ₹2.12 lakh crore in October 2026).", "p2": "Exam Fact: DAC is chaired by the Union Minister of Defence (Rajnath Singh)."}, {"id": 138, "slide_q": 981, "cat": "Science, Space & Technology", "q": "Kalyani Strategic Systems Limited (KSSL) signed a strategic alliance with French defence major Thales Group to manufacture which weapon system in India?", "opts": ["Air-to-Air Beyond Visual Range Missiles", "155 mm Howitzer Shells", "Torpedo Decoy Systems", "70 mm Rocket System"], "ans": 3, "p1": "System: 70 mm Rocket System (for attack helicopters like HAL Prachand and Rudra).", "p2": "Exam Fact: Thales Group is headquartered in La Défense (Paris), France."}, {"id": 139, "slide_q": 982, "cat": "Science, Space & Technology", "q": "The Ministry of Defence signed an ₹810.79 crore contract with Bharat Dynamics Limited (BDL) to procure 160 units of which weapon system for the Indian Air Force?", "opts": ["SAAW (Smart Anti-Airfield Weapon)", "Astra Mk-2", "Rudram-1", "Nag Missile"], "ans": 0, "p1": "Weapon: SAAW (Smart Anti-Airfield Weapon) — indigenously designed by DRDO's Research Centre Imarat (RCI), Hyderabad, and manufactured by BDL.", "p2": "Exam Fact: Precision-guided glide bomb capable of destroying enemy runways, bunkers, and radar installations up to 100 km away."}, {"id": 140, "slide_q": 984, "cat": "Science, Space & Technology", "q": "DRDO successfully flight-tested an indigenous Military Combat Parachute System (MCPS) in Ladakh up to what maximum jump altitude?", "opts": ["10,000 feet", "15,000 feet", "22,000 feet (32,000 ft max ceiling)", "18,000 feet"], "ans": 2, "p1": "Altitude: 22,000 feet in Ladakh (developed by ADRDE Agra and DEBEL Bengaluru).", "p2": "Exam Fact: Enables High-Altitude High-Opening (HAHO) and High-Altitude Low-Opening (HALO) paratrooper insertions."}, {"id": 141, "slide_q": 988, "cat": "Science, Space & Technology", "q": "After how many years of distinguished service did the Indian Navy decommission its Sea King Mk 42B helicopters in June 2026?", "opts": ["40 years", "30 years", "36 years", "25 years"], "ans": 2, "p1": "Service Tenure: 36 years of service (inducted in the late 1980s/1990; replaced by MH-60R Seahawk helicopters).", "p2": "Exam Fact: Operated primarily by INAS 330 ('Harpoons') and INAS 336 ('Flaming Arrows')."}, {"id": 142, "slide_q": 990, "cat": "Science, Space & Technology", "q": "The Ministry of Defence signed a ₹583 crore contract with AVNL (Armoured Vehicles Nigam Limited) for Auxiliary Power Units (APUs) for which main battle tank?", "opts": ["T-90 Bhishma Tank", "Arjun Mk-1A Tank", "T-72 Ajeya Tank", "Zorawar Light Tank"], "ans": 0, "p1": "Tank: T-90 Bhishma Main Battle Tank (manufactured at Heavy Vehicles Factory — HVF, Avadi, Chennai).", "p2": "Exam Fact: AVNL is a DPSU headquartered in Avadi, Chennai, Tamil Nadu."}, {"id": 143, "slide_q": 991, "cat": "Science, Space & Technology", "q": "What is the expected strike range of DRDO's Indigenous Long-Range Land Attack Cruise Missile (LRLACM)?", "opts": ["500 km", "1,500 km", "800 km", "2,500 km"], "ans": 1, "p1": "Range: 1,500 km (developed by DRDO's Aeronautical Development Establishment — ADE, Bengaluru).", "p2": "Exam Fact: Powered by the indigenous Manik small turbofan engine and launchable from both mobile ground launchers and naval ships via Universal Vertical Launch Module."}, {"id": 144, "slide_q": 993, "cat": "Science, Space & Technology", "q": "The Indian Army completed operational trials of 'Divyastra Mk-1'. What type of weapon system is Divyastra Mk-1?", "opts": ["Laser-Guided Naval CIWS", "Submarine-Launched Torpedo", "Anti-Satellite Kinetic Interceptor", "AI-powered Loitering Munition (Kamikaze Drone)"], "ans": 3, "p1": "System Type: AI-powered autonomous loitering munition ('kamikaze' precision drone).", "p2": "Exam Fact: Capable of autonomous target recognition and precision terminal strike."}, {"id": 145, "slide_q": 994, "cat": "Science, Space & Technology", "q": "Which DRDO laboratory developed India's High-Altitude Pseudo-Satellite (HAPS) unmanned aerial platform?", "opts": ["ADRDE, Agra (Aerial Delivery Research and Development Establishment) & NAL Bengaluru", "LRDE, Bengaluru", "RCI, Hyderabad", "HEMRL, Pune"], "ans": 0, "p1": "Lab: ADRDE (Agra, Uttar Pradesh) alongside CSIR-NAL (Bengaluru).", "p2": "Exam Fact: Solar-powered HAPS flies in the stratosphere (~18–20 km altitude) for weeks/months for persistent surveillance and telecom relay."}, {"id": 146, "slide_q": 995, "cat": "Science, Space & Technology", "q": "In August 2026, the Ministry of Defence signed contracts worth ₹1,577 crore with TASL (Tata Advanced Systems) and Nibe Limited to procure which weapon systems?", "opts": ["Nuclear Submarines", "Loitering Munition Systems", "Airborne Warning Radars", "Supersonic Fighter Engines"], "ans": 1, "p1": "Procurement: Loitering Munition Systems worth ₹1,577 crore.", "p2": "Exam Fact: Strengthens tactical drone-strike capabilities across Indian Army infantry and artillery units."}, {"id": 147, "slide_q": 996, "cat": "Science, Space & Technology", "q": "In July 2026, DRDO signed a contract for the 'AEW&C Mk-II' (Airborne Early Warning & Control Mark-II) programme. Which aircraft serves as the flying platform for AEW&C Mk-II?", "opts": ["Embraer ERJ-145", "Boeing 737", "Airbus A321", "Ilyushin Il-76"], "ans": 2, "p1": "Aircraft Platform: Airbus A321 (modified by DRDO's CABS with an indigenous AESA radar system; AEW&C Mk-I Netra used Embraer ERJ-145).", "p2": "Exam Fact: Provides 300-degree long-range aerial surveillance."}, {"id": 148, "slide_q": 997, "cat": "Science, Space & Technology", "q": "At which premier institute did the Ministry of Defence grant in-principle approval in June 2026 for a ₹500 crore National Military Drone Technology Hub?", "opts": ["IISc Bengaluru", "IIT Madras", "IIT Bombay", "IIT Kanpur"], "ans": 3, "p1": "Institute & Outlay: IIT Kanpur (Uttar Pradesh) — ₹500 crore National Military Drone Technology Hub.", "p2": "Exam Fact: Hub for swarm drones, anti-drone warfare, and indigenous UAV propulsion R&D."}];
+
+let mode = 'learn';
+let hideAnswers = false;
+let userAnswers = {};
+
+function setup() {
+  const select = document.getElementById('catSelect');
+  const uniqueCats = [...new Set(QUESTIONS.map(q => q.cat))];
+  uniqueCats.forEach(cat => {
+    const count = QUESTIONS.filter(q => q.cat === cat).length;
+    const option = document.createElement('option');
+    option.value = cat;
+    option.textContent = `${cat} (${count})`;
+    select.appendChild(option);
+  });
+  refreshStats();
+  render();
+}
+
+function setMode(newMode) {
+  mode = newMode;
+  document.getElementById('btn-learn').classList.toggle('active', mode === 'learn');
+  document.getElementById('btn-practice').classList.toggle('active', mode === 'practice');
+  document.getElementById('blurBtn').classList.toggle('hidden', mode !== 'learn');
+  render();
+}
+
+function toggleBlur() {
+  hideAnswers = !hideAnswers;
+  document.getElementById('blurBtn').textContent = hideAnswers
+    ? '👁️ Show All Answers'
+    : '👁️ Hide Answers (Self-Test)';
+  render();
+}
+
+function getFilteredList() {
+  const cat = document.getElementById('catSelect').value;
+  const term = document.getElementById('searchBox').value.trim().toLowerCase();
+
+  return QUESTIONS.filter(item => {
+    if (cat !== 'ALL' && item.cat !== cat) return false;
+    if (!term) return true;
+    return (
+      item.q.toLowerCase().includes(term) ||
+      item.opts.some(o => o.toLowerCase().includes(term)) ||
+      item.p1.toLowerCase().includes(term) ||
+      item.p2.toLowerCase().includes(term) ||
+      String(item.slide_q).includes(term)
+    );
+  });
+}
+
+function render() {
+  const list = getFilteredList();
+  document.getElementById('showingCount').textContent = `Showing ${list.length} question${list.length === 1 ? '' : 's'}`;
+  const container = document.getElementById('cardsContainer');
+
+  if (list.length === 0) {
+    container.innerHTML = `<div class="no-results">No questions match your filter. Clear search or switch category.</div>`;
+    return;
+  }
+
+  container.innerHTML = list
+    .map(item => (mode === 'learn' ? buildLearnCard(item) : buildPracticeCard(item)))
+    .join('');
+}
+
+function buildLearnCard(item) {
+  const answerText = item.opts[item.ans];
+  const blurClass = hideAnswers ? 'blurred' : '';
+  return `
+    <div class="card">
+      <div class="card-top">
+        <div class="badge-group">
+          <span class="badge-num">Q.${item.id}</span>
+          <span class="badge-seq">Slide #${item.slide_q}</span>
+        </div>
+        <span class="badge-cat">${item.cat}</span>
+      </div>
+      <div class="question-text">${item.q}</div>
+      <div class="learn-answer-box ${blurClass}" onclick="this.classList.remove('blurred')" title="Click to reveal answer">
+        ✓ Answer: ${answerText}
+      </div>
+      <div class="exam-points">
+        <div class="exam-points-heading">📌 2 Exam-Related Extra Points</div>
+        <ul>
+          <li>${item.p1}</li>
+          <li>${item.p2}</li>
+        </ul>
+      </div>
+    </div>
+  `;
+}
+
+function buildPracticeCard(item) {
+  const record = userAnswers[item.id];
+  const isAnswered = record !== undefined;
+  const letters = ['A', 'B', 'C', 'D'];
+
+  const optsMarkup = item.opts
+    .map((opt, idx) => {
+      let cls = '';
+      if (isAnswered) {
+        if (idx === item.ans) cls = 'correct';
+        else if (idx === record.picked && !record.correct) cls = 'wrong';
+      }
+      return `
+        <button class="option-btn ${cls}" ${isAnswered ? 'disabled' : ''} onclick="selectOption(${item.id}, ${idx})">
+          <span class="opt-circle">${letters[idx]}</span>
+          <span>${opt}</span>
+        </button>
+      `;
+    })
+    .join('');
+
+  const bannerMarkup = isAnswered
+    ? record.correct
+      ? `<span class="result-pill right">✓ Correct!</span>`
+      : `<span class="result-pill wrong">✕ Wrong Answer</span>`
+    : '';
+
+  return `
+    <div class="card" id="card-${item.id}">
+      <div class="card-top">
+        <div class="badge-group">
+          <span class="badge-num">Q.${item.id}</span>
+          <span class="badge-seq">Slide #${item.slide_q}</span>
+        </div>
+        <span class="badge-cat">${item.cat}</span>
+      </div>
+      <div class="question-text">${item.q}</div>
+      <div class="options-list">
+        ${optsMarkup}
+      </div>
+      <div class="answer-panel ${isAnswered ? 'visible' : ''}" id="panel-${item.id}">
+        <div class="result-banner">
+          ${bannerMarkup}
+          <div class="correct-label">Correct Answer: <span>${letters[item.ans]}. ${item.opts[item.ans]}</span></div>
+        </div>
+        <div class="exam-points">
+          <div class="exam-points-heading">📌 2 Exam-Related Extra Points</div>
+          <ul>
+            <li>${item.p1}</li>
+            <li>${item.p2}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+function selectOption(qId, pickedIdx) {
+  if (userAnswers[qId] !== undefined) return;
+  const item = QUESTIONS.find(q => q.id === qId);
+  if (!item) return;
+
+  userAnswers[qId] = {
+    picked: pickedIdx,
+    correct: pickedIdx === item.ans
+  };
+
+  refreshStats();
+  const cardEl = document.getElementById(`card-${qId}`);
+  if (cardEl) {
+    cardEl.outerHTML = buildPracticeCard(item);
+  }
+}
+
+function refreshStats() {
+  const keys = Object.keys(userAnswers);
+  const attempted = keys.length;
+  const correct = keys.filter(k => userAnswers[k].correct).length;
+  const wrong = attempted - correct;
+
+  document.getElementById('cnt-attempted').textContent = attempted;
+  document.getElementById('cnt-correct').textContent = correct;
+  document.getElementById('cnt-wrong').textContent = wrong;
+}
+
+function resetAll() {
+  userAnswers = {};
+  refreshStats();
+  render();
+}
+
+setup();
+</script>
+</body>
+</html>

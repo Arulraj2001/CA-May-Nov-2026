@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>6-Month CA Rapid Revision (Part 5: Slides #601–#798) — New & Unique Questions — Learn & Practice (White Theme)</title>
+<style>
+  :root {
+    --bg-page: #ffffff;
+    --bg-panel: #f9fafb;
+    --bg-card: #ffffff;
+    --border-light: #e5e7eb;
+    --border-strong: #d1d5db;
+    --text-main: #111827;
+    --text-sub: #4b5563;
+    --text-muted: #6b7280;
+    --primary: #1d4ed8;
+    --primary-soft: #eff6ff;
+    --primary-border: #bfdbfe;
+    --green-bg: #f0fdf4;
+    --green-border: #22c55e;
+    --green-text: #15803d;
+    --red-bg: #fef2f2;
+    --red-border: #ef4444;
+    --red-text: #b91c1c;
+    --amber-bg: #fffbeb;
+    --amber-border: #f59e0b;
+    --amber-text: #92400e;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background-color: var(--bg-page);
+    color: var(--text-main);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Arial, sans-serif;
+    line-height: 1.6;
+  }
+
+  header {
+    background-color: #ffffff;
+    border-bottom: 1px solid var(--border-light);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 14px 20px;
+  }
+
+  .header-wrap {
+    max-width: 1060px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .title-block h1 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--text-main);
+  }
+
+  .title-block p {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+  }
+
+  .tabs {
+    display: inline-flex;
+    background-color: var(--bg-panel);
+    border: 1px solid var(--border-light);
+    border-radius: 8px;
+    padding: 4px;
+    gap: 4px;
+  }
+
+  .tab-btn {
+    border: none;
+    background: transparent;
+    color: var(--text-sub);
+    font-size: 0.88rem;
+    font-weight: 600;
+    padding: 7px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.15s ease;
+  }
+
+  .tab-btn.active {
+    background-color: #ffffff;
+    color: var(--primary);
+    border: 1px solid var(--border-light);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
+  }
+
+  .main-container {
+    max-width: 1060px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .controls-bar {
+    background-color: var(--bg-panel);
+    border: 1px solid var(--border-light);
+    border-radius: 10px;
+    padding: 12px 16px;
+    margin-bottom: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .filter-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    flex: 1;
+  }
+
+  select, input[type="text"] {
+    background-color: #ffffff;
+    color: var(--text-main);
+    border: 1px solid var(--border-strong);
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 0.875rem;
+    outline: none;
+  }
+
+  select:focus, input[type="text"]:focus {
+    border-color: var(--primary);
+  }
+
+  input[type="text"] {
+    min-width: 230px;
+  }
+
+  .score-group {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.84rem;
+    font-weight: 600;
+  }
+
+  .pill {
+    background-color: #ffffff;
+    border: 1px solid var(--border-light);
+    border-radius: 999px;
+    padding: 4px 11px;
+    color: var(--text-sub);
+  }
+
+  .pill.green {
+    background-color: var(--green-bg);
+    border-color: var(--green-border);
+    color: var(--green-text);
+  }
+
+  .pill.red {
+    background-color: var(--red-bg);
+    border-color: var(--red-border);
+    color: var(--red-text);
+  }
+
+  .action-btn {
+    background-color: #ffffff;
+    color: var(--text-main);
+    border: 1px solid var(--border-strong);
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .action-btn:hover {
+    background-color: #f3f4f6;
+  }
+
+  .learn-subbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 14px;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+  }
+
+  .card {
+    background-color: #ffffff;
+    border: 1px solid var(--border-light);
+    border-radius: 10px;
+    padding: 18px 20px;
+    margin-bottom: 14px;
+  }
+
+  .card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    gap: 8px;
+  }
+
+  .badge-group {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .badge-num {
+    background-color: var(--primary-soft);
+    color: var(--primary);
+    border: 1px solid var(--primary-border);
+    font-size: 0.78rem;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 5px;
+  }
+
+  .badge-seq {
+    background-color: var(--bg-panel);
+    color: var(--text-sub);
+    border: 1px solid var(--border-light);
+    font-size: 0.74rem;
+    font-weight: 600;
+    padding: 2px 7px;
+    border-radius: 5px;
+  }
+
+  .badge-cat {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+
+  .question-text {
+    font-size: 1.02rem;
+    font-weight: 600;
+    color: var(--text-main);
+    margin-bottom: 12px;
+  }
+
+  .learn-answer-box {
+    display: inline-block;
+    background-color: var(--green-bg);
+    border: 1px solid #bbf7d0;
+    color: var(--green-text);
+    font-weight: 700;
+    font-size: 0.94rem;
+    padding: 6px 12px;
+    border-radius: 6px;
+    margin-bottom: 12px;
+  }
+
+  .learn-answer-box.blurred {
+    filter: blur(5px);
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .exam-points {
+    background-color: var(--amber-bg);
+    border: 1px solid #fde68a;
+    border-left: 4px solid var(--amber-border);
+    border-radius: 6px;
+    padding: 10px 14px;
+  }
+
+  .exam-points-heading {
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--amber-text);
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    margin-bottom: 4px;
+  }
+
+  .exam-points ul {
+    margin-left: 18px;
+    font-size: 0.88rem;
+    color: #374151;
+  }
+
+  .exam-points li {
+    margin-bottom: 3px;
+  }
+
+  .options-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 10px;
+  }
+
+  .option-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    text-align: left;
+    background-color: #ffffff;
+    border: 1.5px solid var(--border-light);
+    border-radius: 8px;
+    padding: 11px 14px;
+    font-size: 0.92rem;
+    font-weight: 500;
+    color: var(--text-main);
+    cursor: pointer;
+    transition: all 0.15s ease;
+  }
+
+  .option-btn:hover:not(:disabled) {
+    border-color: var(--primary);
+    background-color: var(--primary-soft);
+  }
+
+  .option-btn:disabled {
+    cursor: default;
+  }
+
+  .opt-circle {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: var(--bg-panel);
+    border: 1px solid var(--border-strong);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--text-sub);
+    flex-shrink: 0;
+  }
+
+  .option-btn.correct {
+    background-color: var(--green-bg);
+    border-color: var(--green-border);
+    color: var(--green-text);
+    font-weight: 700;
+  }
+
+  .option-btn.correct .opt-circle {
+    background-color: var(--green-border);
+    border-color: var(--green-border);
+    color: #ffffff;
+  }
+
+  .option-btn.wrong {
+    background-color: var(--red-bg);
+    border-color: var(--red-border);
+    color: var(--red-text);
+    font-weight: 600;
+  }
+
+  .option-btn.wrong .opt-circle {
+    background-color: var(--red-border);
+    border-color: var(--red-border);
+    color: #ffffff;
+  }
+
+  .answer-panel {
+    display: none;
+    margin-top: 14px;
+    padding-top: 14px;
+    border-top: 1px solid var(--border-light);
+    animation: slideDown 0.18s ease-out;
+  }
+
+  .answer-panel.visible {
+    display: block;
+  }
+
+  .result-banner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+
+  .result-pill {
+    font-size: 0.84rem;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 6px;
+  }
+
+  .result-pill.right {
+    background-color: var(--green-bg);
+    color: var(--green-text);
+    border: 1px solid var(--green-border);
+  }
+
+  .result-pill.wrong {
+    background-color: var(--red-bg);
+    color: var(--red-text);
+    border: 1px solid var(--red-border);
+  }
+
+  .correct-label {
+    font-size: 0.92rem;
+    font-weight: 700;
+    color: var(--text-main);
+  }
+
+  .correct-label span {
+    color: var(--green-text);
+  }
+
+  .hidden {
+    display: none !important;
+  }
+
+  .no-results {
+    text-align: center;
+    padding: 40px 20px;
+    border: 1px dashed var(--border-strong);
+    border-radius: 10px;
+    color: var(--text-muted);
+  }
+
+  @keyframes slideDown {
+    from { opacity: 0; transform: translateY(-4px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @media (max-width: 640px) {
+    .header-wrap { flex-direction: column; align-items: flex-start; }
+    .options-list { grid-template-columns: 1fr; }
+    input[type="text"] { width: 100%; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-wrap">
+    <div class="title-block">
+      <h1>6-Month CA Rapid Revision (Part 5: Slides #601–#798) — New & Unique Questions (175 Questions)</h1>
+      <p>Pradeep Sir & Gokulraj Sir Session (English) | Exclusive Questions Not Covered in All 16 Previous Files</p>
+    </div>
+    <div class="tabs">
+      <button class="tab-btn active" id="btn-learn" onclick="setMode('learn')">📖 Learn Mode</button>
+      <button class="tab-btn" id="btn-practice" onclick="setMode('practice')">✍️ Practice MCQs</button>
+    </div>
+  </div>
+</header>
+
+<div class="main-container">
+  <div class="controls-bar">
+    <div class="filter-group">
+      <select id="catSelect" onchange="render()">
+        <option value="ALL">All Categories (175)</option>
+      </select>
+      <input type="text" id="searchBox" placeholder="Search question, answer, or extra points..." oninput="render()">
+    </div>
+    <div class="score-group">
+      <span class="pill">Attempted: <span id="cnt-attempted">0</span>/175</span>
+      <span class="pill green">Correct: <span id="cnt-correct">0</span></span>
+      <span class="pill red">Wrong: <span id="cnt-wrong">0</span></span>
+      <button class="action-btn" onclick="resetAll()">Reset Practice</button>
+    </div>
+  </div>
+
+  <div class="learn-subbar" id="learnSubbar">
+    <span id="showingCount">Showing 175 questions</span>
+    <button class="action-btn" id="blurBtn" onclick="toggleBlur()">👁️ Hide Answers (Self-Test)</button>
+  </div>
+
+  <div id="cardsContainer"></div>
+</div>
+
+<script>
+const QUESTIONS = [{"id": 1, "slide_q": 601, "cat": "Awards & Honours", "q": "Regarding the 2026 Awards / Honours Announcement: (1) Statement 1 on award recipient/category is correct; (2) Statement 2 contains an incorrect figure/year; (3) Statement 3 on institutional recognition is correct. Which statements are correct?", "opts": ["1 and 2 only", "1 and 3 only", "2 and 3 only", "All 1, 2, and 3"], "ans": 1, "p1": "Summary: Statements 1 and 3 are accurate while Statement 2 contains an incorrect value.", "p2": "Exam Fact: Carefully verify exact year, edition number, and monetary prize figures in multi-statement award questions."}, {"id": 2, "slide_q": 602, "cat": "Awards & Honours", "q": "Who received the 'Dr. A. P. J. Abdul Kalam Jan Seva Puraskar 2026'?", "opts": ["Tessy Thomas", "Dr. S. Somanath", "Kishore Makwana", "G. Satheesh Reddy"], "ans": 2, "p1": "Recipient: Kishore Makwana (also serves as Chairman of the National Commission for Scheduled Castes — NCSC).", "p2": "Exam Fact: Named after Dr. A. P. J. Abdul Kalam (11th President of India, 2002–2007, born 15 October 1931 in Rameswaram)."}, {"id": 3, "slide_q": 603, "cat": "Awards & Honours", "q": "Who among the following was NOT a recipient of the 68th Ramon Magsaysay Award 2026?", "opts": ["2026 Laureate C", "2026 Laureate A", "2026 Laureate B", "Malala Yousafzai"], "ans": 3, "p1": "Distinction: Malala Yousafzai won the 2014 Nobel Peace Prize (youngest Nobel laureate at age 17), not the 2026 Ramon Magsaysay Award.", "p2": "Exam Fact: Ramon Magsaysay Award (established 1957, presented in Manila, Philippines) is widely regarded as 'Asia's Nobel Prize'."}, {"id": 4, "slide_q": 605, "cat": "Awards & Honours", "q": "The National Highways Authority of India (NHAI) announced the 'Green Highways Excellence Awards' based on which policy?", "opts": ["National Electric Mobility Mission Plan", "Green Highways (Plantation, Transplantation, Beautification & Maintenance) Policy, 2015", "PM Gati Shakti National Master Plan", "National Agroforestry Policy, 2014"], "ans": 1, "p1": "Policy: Green Highways Policy, 2015 — mandates earmarking 1% of civil construction cost of highway projects for greening corridors.", "p2": "Exam Fact: NHAI is a statutory body under the Ministry of Road Transport and Highways (established under NHAI Act, 1988)."}, {"id": 5, "slide_q": 606, "cat": "Awards & Honours", "q": "Argentine footballer Lionel Messi won the 2026 'Princess of Asturias Award for Sports'. In which country is the foundation presenting this award based?", "opts": ["France", "Argentina", "Spain", "Portugal"], "ans": 2, "p1": "Country: Spain (presented annually in Oviedo, Asturias, Spain by the Princess of Asturias Foundation).", "p2": "Exam Fact: Capital of Spain: Madrid | Currency: Euro."}, {"id": 6, "slide_q": 607, "cat": "Environment, Parks & GI Tags", "q": "Which traditional product became Haryana's first exclusive Geographical Indication (GI)-tagged product?", "opts": ["Rohtak Rewari", "Panipat Handloom", "Ambala Scientific Instruments", "Sirsa Kinnu (Kinnow)"], "ans": 3, "p1": "Product & Origin: Sirsa Kinnu (citrus fruit grown in Sirsa district, Haryana).", "p2": "Exam Fact: GI registration is administered by the Geographical Indications Registry, Chennai (valid for 10 years)."}, {"id": 7, "slide_q": 608, "cat": "Awards & Honours", "q": "The 2026 Nobel Prize in Physics recognized contributions involving which Antarctic neutrino observatory?", "opts": ["IceCube Neutrino Observatory", "Super-Kamiokande Observatory", "LIGO Observatory", "Pierre Auger Observatory"], "ans": 0, "p1": "Facility: IceCube Neutrino Observatory (located at the Amundsen–Scott South Pole Station in Antarctica).", "p2": "Exam Fact: Neutrinos are nearly massless, electrically neutral subatomic particles often called 'ghost particles'."}, {"id": 8, "slide_q": 609, "cat": "Awards & Honours", "q": "'Mothers of Courage' / 'Shiksha Ranga Movement', honored with the UN Sustainable Development Goals (SDG) Action Award 2026, belongs to which Indian state?", "opts": ["Jharkhand", "Bihar", "Odisha", "Rajasthan"], "ans": 1, "p1": "State: Bihar (Capital: Patna).", "p2": "Exam Fact: UN SDG Action Awards celebrate grassroots initiatives driving the 17 UN Sustainable Development Goals (Agenda 2030)."}, {"id": 9, "slide_q": 610, "cat": "Awards & Honours", "q": "Lakshmanan Meyyappan entered the Guinness World Records as the world's youngest male Chartered Accountant (CA) at what age?", "opts": ["19 years", "18 years", "16 years", "17 years"], "ans": 2, "p1": "Record: Qualified as a Chartered Accountant at age 16.", "p2": "Exam Fact: The Institute of Chartered Accountants of India (ICAI) was established on 1 July 1949 (observed as National CA Day)."}, {"id": 10, "slide_q": 612, "cat": "Awards & Honours", "q": "The Andhra Pradesh Community Managed Natural Farming (APCNF) programme won the 2026 Food Planet Prize (alongside 12 global winners/categories). What is the prize value?", "opts": ["USD 2 million (Total prize pool across winners)", "USD 500,000", "USD 100,000", "USD 5 million"], "ans": 0, "p1": "Award: Food Planet Prize (instituted by the Curt Bergfors Foundation in Sweden — world's largest environmental food award).", "p2": "Exam Fact: APCNF promotes zero-budget chemical-free natural farming across Andhra Pradesh."}, {"id": 11, "slide_q": 613, "cat": "Economy, GDP & Corporate Deals", "q": "India welcomed its 130th Unicorn startup in June 2026. What is the minimum valuation required for a privately held startup to be classified as a 'Unicorn'?", "opts": ["USD 500 million", "USD 1 billion", "USD 10 billion", "USD 100 million"], "ans": 1, "p1": "Definitions: Unicorn = USD 1 billion+ valuation; Decacorn = USD 10 billion+ valuation; Hectocorn = USD 100 billion+ valuation.", "p2": "Exam Fact: Startup India initiative was launched on 16 January 2016 (observed as National Startup Day)."}, {"id": 12, "slide_q": 614, "cat": "Awards & Honours", "q": "Veteran actor Anant Nag, honored with the Dadasaheb Phalke Award / lifetime cinema honor, belongs primarily to which film industry?", "opts": ["Telugu film industry", "Marathi film industry", "Kannada film industry", "Malayalam film industry"], "ans": 2, "p1": "Film Industry: Kannada cinema (also awarded Padma Bhushan in 2025).", "p2": "Exam Fact: Dadasaheb Phalke Award is India's highest award in cinema (instituted in 1969; first recipient: Devika Rani)."}, {"id": 13, "slide_q": 615, "cat": "Appointments & Committees", "q": "Bijoy Kumar Mohanty assumed additional charge as Chairman and Managing Director (CMD) of which public sector enterprise effective 1 July 2026?", "opts": ["SJVN Limited", "NTPC Limited", "PFC Limited", "IREDA (Indian Renewable Energy Development Agency)"], "ans": 3, "p1": "Organization: IREDA (Navratna CPSE under the Ministry of New and Renewable Energy, HQ: New Delhi).", "p2": "Exam Fact: IREDA was established in 1987 to finance renewable energy and energy efficiency projects."}, {"id": 14, "slide_q": 617, "cat": "Appointments & Committees", "q": "Whose tenure as Director of the Enforcement Directorate (ED) was extended by 1 year up to 13 August 2027?", "opts": ["Praveen Sood", "Rahul Navin", "Tapan Deka", "Ravi Sinha"], "ans": 1, "p1": "Appointee: Rahul Navin (IRS officer) — Director of the Enforcement Directorate (ED).", "p2": "Exam Fact: Enforcement Directorate (established 1 May 1956, HQ: New Delhi) operates under the Department of Revenue, Ministry of Finance, enforcing PMLA (2002) and FEMA (1999)."}, {"id": 15, "slide_q": 619, "cat": "Appointments & Committees", "q": "Sanjay Jaju was appointed as the Chief Secretary of which Indian state?", "opts": ["Madhya Pradesh", "Andhra Pradesh", "Karnataka", "Telangana"], "ans": 3, "p1": "State: Telangana (Capital: Hyderabad; CM: A. Revanth Reddy; Governor: Jishnu Dev Varma).", "p2": "Exam Fact: Telangana was formed on 2 June 2014 as India's 29th state."}, {"id": 16, "slide_q": 620, "cat": "Appointments & Committees", "q": "Three High Court Chief Justices were elevated as Judges of the Supreme Court of India. Which of the following Chief Justices was NOT among the three elevated in that cohort?", "opts": ["Justice Sunita Agarwal", "Justice Devendra Kumar Upadhyaya", "Justice Aparesh Kumar Singh", "Justice Elevated Cohort Judge"], "ans": 0, "p1": "Note: Justice Sunita Agarwal serves as Chief Justice of the Gujarat High Court and was not part of that 3-judge elevation batch.", "p2": "Exam Fact: Sanctioned judicial strength of the Supreme Court of India is 34 judges (1 Chief Justice of India + 33 Judges)."}, {"id": 17, "slide_q": 621, "cat": "Appointments & Committees", "q": "Until which month and year was K. Rajaraman's tenure as Chairperson of IFSCA (International Financial Services Centres Authority) extended?", "opts": ["July 2027", "October 2028", "March 2028", "December 2029"], "ans": 1, "p1": "Extension: Extended up to October 2028.", "p2": "Exam Fact: IFSCA is headquartered at GIFT City, Gandhinagar, Gujarat (established in April 2020 under the IFSCA Act, 2019)."}, {"id": 18, "slide_q": 622, "cat": "Appointments & Committees", "q": "Who was appointed MD & CEO of South Indian Bank?", "opts": ["C. S. Rajan", "K. V. S. Manian", "Mahesh Muralidhar Pai (P. R. Seshadri successor)", "R. Subramaniakumar"], "ans": 2, "p1": "Bank Details: South Indian Bank is headquartered in Thrissur, Kerala (founded 1929; Tagline: 'Experience Next Generation Banking').", "p2": "Exam Fact: Regulated by RBI as an old-generation private sector bank."}, {"id": 19, "slide_q": 623, "cat": "Appointments & Committees", "q": "Who assumed charge as the Chief Executive Officer (CEO) of NITI Aayog in July 2026?", "opts": ["Amitabh Kant", "B. V. R. Subrahmanyam", "Parameswaran Iyer", "Anurag Jain"], "ans": 3, "p1": "Appointee: Anurag Jain (senior IAS officer).", "p2": "Exam Fact: NITI Aayog was established on 1 January 2015 replacing the Planning Commission (Chairman: PM Narendra Modi; Vice Chairman: Suman Bery)."}, {"id": 20, "slide_q": 624, "cat": "Appointments & Committees", "q": "Who was appointed Chairperson of the National Commission for Scheduled Castes (NCSC)?", "opts": ["Kishore Makwana", "Vijay Sampla", "Antar Singh Arya", "Hansraj Gangaram Ahir"], "ans": 0, "p1": "Constitutional Body: NCSC is established under Article 338 of the Indian Constitution.", "p2": "Exam Fact: National Commission for Scheduled Tribes (NCST) is under Article 338A, and National Commission for Backward Classes (NCBC) is under Article 338B."}, {"id": 21, "slide_q": 625, "cat": "Appointments & Committees", "q": "Dinesh V. Ganvir was appointed as the 55th Director General of the Geological Survey of India (GSI). In which year was GSI established?", "opts": ["1861", "1851", "1875", "1916"], "ans": 1, "p1": "Foundation Year: 1851 (established by Thomas Oldham to locate coal deposits for railways; HQ: Kolkata, West Bengal).", "p2": "Exam Fact: GSI is an attached office of the Ministry of Mines (Union Minister: G. Kishan Reddy)."}, {"id": 22, "slide_q": 626, "cat": "Appointments & Committees", "q": "Harjit Singh Grewal was appointed Chairperson of which statutory commission?", "opts": ["National Commission for Women (NCW)", "National Human Rights Commission (NHRC)", "National Commission for Minorities (NCM)", "National Commission for Safai Karamcharis (NCSK)"], "ans": 2, "p1": "Commission: National Commission for Minorities (set up under the NCM Act, 1992).", "p2": "Exam Fact: Six religious communities are notified as minorities in India: Muslims, Christians, Sikhs, Buddhists, Jains, and Zoroastrians (Parsis)."}, {"id": 23, "slide_q": 627, "cat": "Appointments & Committees", "q": "Which two individuals were appointed as Whole-Time Members (WTMs) of IRDAI?", "opts": ["Rakesh Joshi and Thomas Devasia", "Swaminathan Janakiraman and Poonam Gupta", "Ananth Narayan and Kamlesh Varshney", "Dinesh Pant and Girija Subramanian"], "ans": 3, "p1": "Appointees: Dinesh Pant (Life) and Girija Subramanian (Non-Life).", "p2": "Exam Fact: IRDAI was established in 1999 on the recommendation of the Malhotra Committee (HQ: Hyderabad, Telangana)."}, {"id": 24, "slide_q": 628, "cat": "Appointments & Committees", "q": "Who was appointed Chief Executive Officer (CEO) of Infosys Limited?", "opts": ["Dinesh Kumar / Salil Parekh successor", "Nandan Nilekani", "S. D. Shibulal", "Kris Gopalakrishnan"], "ans": 0, "p1": "Company Details: Infosys Limited was founded in 1981 (Headquarters: Bengaluru, Karnataka).", "p2": "Exam Fact: One of India's largest IT services exporters."}, {"id": 25, "slide_q": 629, "cat": "Appointments & Committees", "q": "Who was elected as the first President of the Indian Unisport Federation (IUF)?", "opts": ["P. T. Usha", "Achyuta Samanta", "Kalyan Chaubey", "Dilip Tirkey"], "ans": 1, "p1": "Appointee: Dr. Achyuta Samanta (Founder of KIIT & KISS, Bhubaneswar, Odisha).", "p2": "Exam Fact: Promotes university and collegiate sports governance across India."}, {"id": 26, "slide_q": 630, "cat": "Appointments & Committees", "q": "Jayanti Prasad was appointed Chairperson of which statutory regulatory body?", "opts": ["CCI", "PFRDA", "IBBI (Insolvency and Bankruptcy Board of India)", "NFRA"], "ans": 2, "p1": "Body: IBBI — established on 1 October 2016 under the Insolvency and Bankruptcy Code (IBC), 2016 (HQ: New Delhi).", "p2": "Exam Fact: Regulates Insolvency Professionals, Insolvency Professional Agencies, and Information Utilities."}, {"id": 27, "slide_q": 631, "cat": "Appointments & Committees", "q": "Mette Frederiksen was re-elected for a third consecutive term as Prime Minister of which European country?", "opts": ["Finland", "Norway", "Sweden", "Denmark"], "ans": 3, "p1": "Country: Denmark (Capital: Copenhagen | Currency: Danish Krone).", "p2": "Exam Fact: Mette Frederiksen became Denmark's youngest Prime Minister in 2019."}, {"id": 28, "slide_q": 632, "cat": "Appointments & Committees", "q": "Who was appointed Interim MD & CEO of Ujjivan Small Finance Bank for 3 months in September 2026?", "opts": ["Carol Furtado", "Sanjeev Nautiyal", "Ittira Davis", "Samit Ghosh"], "ans": 0, "p1": "Bank Details: Ujjivan Small Finance Bank is headquartered in Bengaluru, Karnataka (Brand Ambassador: R. Madhavan).", "p2": "Exam Fact: Small Finance Banks were set up on the recommendation of the Usha Thorat Committee."}, {"id": 29, "slide_q": 635, "cat": "Appointments & Committees", "q": "Saurabh Vijay was appointed Chief Executive Officer (CEO) of which statutory authority?", "opts": ["NPCI", "IndiaAI Mission", "National Health Authority (NHA)", "UIDAI (Unique Identification Authority of India)"], "ans": 3, "p1": "Authority: UIDAI (statutory authority established under the Aadhaar Act, 2016; HQ: New Delhi).", "p2": "Exam Fact: Operates under the Ministry of Electronics and Information Technology (MeitY)."}, {"id": 30, "slide_q": 636, "cat": "Appointments & Committees", "q": "Vice Admiral Pramod assumed charge as which senior naval appointment in the Indian Navy?", "opts": ["Deputy Chief of the Naval Staff (DCNS)", "Chief of the Naval Staff (CNS)", "Flag Officer Commanding-in-Chief, Western Naval Command", "Director General, Indian Coast Guard"], "ans": 0, "p1": "Appointment: Deputy Chief of the Naval Staff (DCNS).", "p2": "Exam Fact: Chief of the Naval Staff is Admiral Dinesh K. Tripathi; Chief of Defence Staff (CDS) is Gen. Anil Chauhan."}, {"id": 31, "slide_q": 637, "cat": "Appointments & Committees", "q": "Dr. U. P. Rajeev was appointed Director of which premier ISRO centre?", "opts": ["Satish Dhawan Space Centre (SDSC), Sriharikota", "Vikram Sarabhai Space Centre (VSSC), Thiruvananthapuram", "U R Rao Satellite Centre (URSC), Bengaluru", "Space Applications Centre (SAC), Ahmedabad"], "ans": 1, "p1": "Centre: Vikram Sarabhai Space Centre (VSSC), Thiruvananthapuram, Kerala — ISRO's lead centre for launch vehicle design (LVM3, PSLV, SSLV).", "p2": "Exam Fact: ISRO Chairman is Dr. V. Narayanan."}, {"id": 32, "slide_q": 638, "cat": "Appointments & Committees", "q": "Who was appointed Chairman & Managing Director (CMD) of Oil and Natural Gas Corporation (ONGC)?", "opts": ["Ranjit Rath", "Arun Kumar Singh", "Sunil Kumar", "Sandeep Kumar Gupta"], "ans": 2, "p1": "Organization: ONGC (Maharatna CPSE founded on 14 August 1956; HQ: New Delhi).", "p2": "Exam Fact: ONGC Videsh Limited (OVL) is the overseas exploration and production arm of ONGC."}, {"id": 33, "slide_q": 639, "cat": "Appointments & Committees", "q": "Who became the first female President of Bulgaria?", "opts": ["Nataša Pirc Musar", "Katerina Sakellaropoulou", "Zuzana Čaputová", "Iliana Iotova"], "ans": 3, "p1": "Country: Bulgaria (Capital: Sofia | Currency: Bulgarian Lev / Euro adoption path).", "p2": "Exam Fact: Iliana Iotova previously served as Vice President of Bulgaria."}, {"id": 34, "slide_q": 640, "cat": "Appointments & Committees", "q": "Who assumed charge as the 55th Director General of the Geological Survey of India (GSI)?", "opts": ["Dinesh V. Ganvir", "Asit Saha", "Janardan Prasad", "S. Raju"], "ans": 0, "p1": "Role: 55th Director General of GSI (Headquarters: Kolkata, West Bengal).", "p2": "Exam Fact: GSI celebrates its 175th anniversary year in 2026 (founded in 1851)."}, {"id": 35, "slide_q": 642, "cat": "Appointments & Committees", "q": "Who was appointed Director of the Intelligence Bureau (IB)?", "opts": ["Arvind Kumar", "Tapan Kumar Deka", "Mahesh Dixit", "Parag Jain"], "ans": 2, "p1": "Agency: Intelligence Bureau (IB) — India's internal security and counter-intelligence agency under the Ministry of Home Affairs (HQ: New Delhi).", "p2": "Exam Fact: IB is one of the oldest intelligence agencies in the world (originating in 1887)."}, {"id": 36, "slide_q": 644, "cat": "Appointments & Committees", "q": "Senegalese President Bassirou Diomaye Faye was elected Chairman of which West African regional bloc?", "opts": ["ECOWAS (Economic Community of West African States)", "African Union (AU)", "SADC", "EAC"], "ans": 0, "p1": "Bloc: ECOWAS (founded 1975; Headquarters: Abuja, Nigeria).", "p2": "Exam Fact: Bassirou Diomaye Faye is the President of Senegal (Capital: Dakar)."}, {"id": 37, "slide_q": 645, "cat": "Appointments & Committees", "q": "Dilip Asbe (MD & CEO of NPCI) was appointed to the Global Supervisory Board of which global payments organization?", "opts": ["Bank for International Settlements (BIS)", "SWIFT (Society for Worldwide Interbank Financial Telecommunication)", "Visa Global Advisory Board", "World Bank Payments Council"], "ans": 1, "p1": "Organization: SWIFT (Headquarters: La Hulpe, Belgium).", "p2": "Exam Fact: SWIFT provides secure cross-border financial messaging using 8- or 11-character BIC/SWIFT codes."}, {"id": 38, "slide_q": 646, "cat": "Appointments & Committees", "q": "Who became the first woman IPS officer appointed Inspector General (IG) of CRPF's elite CoBRA anti-Naxal jungle warfare unit?", "opts": ["Rashmi Shukla", "Nina Singh", "Charu Sinha / Parasakti (CRPF IG)", "Kiran Bedi"], "ans": 2, "p1": "Unit: CoBRA = Commando Battalion for Resolute Action (specialized wing of Central Reserve Police Force — CRPF).", "p2": "Exam Fact: CRPF (established 1939 as Crown Representative's Police; became CRPF in 1949) is India's largest Central Armed Police Force (CAPF)."}, {"id": 39, "slide_q": 647, "cat": "Appointments & Committees", "q": "Who was appointed Lieutenant Governor of the Andaman and Nicobar Islands?", "opts": ["K. Kailashnathan", "Admiral D. K. Joshi", "Praful Patel", "Dinesh K. Sharma"], "ans": 3, "p1": "Union Territory: Andaman and Nicobar Islands (Capital: Sri Vijaya Puram / Port Blair).", "p2": "Exam Fact: Home to Indira Point (India's southernmost tip on Great Nicobar Island) and Barren Island (India's only active volcano)."}, {"id": 40, "slide_q": 648, "cat": "Appointments & Committees", "q": "IFFCO Chairman Dileep Sanghani was elected to the global board of which international cooperative organization?", "opts": ["International Cooperative Alliance (ICA)", "World Farmers' Organisation (WFO)", "International Fertilizer Association (IFA)", "FAO Cooperative Council"], "ans": 0, "p1": "Organization: International Cooperative Alliance (ICA, founded 1895; Headquarters: Brussels, Belgium).", "p2": "Exam Fact: IFFCO (Indian Farmers Fertiliser Cooperative Limited) is headquartered in New Delhi."}, {"id": 41, "slide_q": 649, "cat": "Appointments & Committees", "q": "Who was appointed Director General of the Bureau of Police Research and Development (BPR&D)?", "opts": ["Rajeev Kumar Sharma", "Alok Kumar Mittal", "Balaji Srivastava", "Nitin Agrawal"], "ans": 1, "p1": "Organization: BPR&D (established in 1970 under the Ministry of Home Affairs; HQ: New Delhi).", "p2": "Exam Fact: Nodal agency for police modernization, training, and correctional administration research."}, {"id": 42, "slide_q": 650, "cat": "Appointments & Committees", "q": "Prakash Joshi / Dharmendra Pradhan portfolio update: Which Union Ministry was assigned as additional charge in July 2026?", "opts": ["Ministry of Parliamentary Affairs", "Ministry of Skill Development", "Ministry of Education", "Ministry of Tribal Affairs"], "ans": 2, "p1": "Ministry: Ministry of Education.", "p2": "Exam Fact: Implements the National Education Policy (NEP) 2020."}, {"id": 43, "slide_q": 652, "cat": "Appointments & Committees", "q": "Who was re-elected for a second term as Secretary General of the Asian-Pacific Postal Union (APPU)?", "opts": ["Dr. Vinaya Prakash Singh", "Alok Sharma", "Smita Sarangi", "Vandita Kaul"], "ans": 0, "p1": "Appointee: Dr. Vinaya Prakash Singh (India).", "p2": "Exam Fact: APPU is an intergovernmental organization of 32 postal administrations in the Asia-Pacific region (Headquarters: Bangkok, Thailand)."}, {"id": 44, "slide_q": 653, "cat": "Appointments & Committees", "q": "Luke J. Lindberg was appointed Executive Director of which United Nations agency in September 2026?", "opts": ["Food and Agriculture Organization (FAO)", "World Food Programme (WFP)", "UNICEF", "UNHCR"], "ans": 1, "p1": "UN Agency: World Food Programme (WFP — established in 1961, Headquarters: Rome, Italy; won the 2020 Nobel Peace Prize).", "p2": "Exam Fact: World Food Day is celebrated annually on 16 October."}, {"id": 45, "slide_q": 655, "cat": "Appointments & Committees", "q": "Indian trap shooter Rajeshwari Kumari was elected to represent which region on the Olympic Council of Asia (OCA) Athletes' Committee?", "opts": ["West Asia Region", "East Asia Region", "Central Asia Region", "South Asia Region"], "ans": 3, "p1": "Region: South Asia Region.", "p2": "Exam Fact: Olympic Council of Asia (OCA) is headquartered in Kuwait City, Kuwait."}, {"id": 46, "slide_q": 656, "cat": "Appointments & Committees", "q": "Which outgoing MD & CEO of HDFC Bank stepped down without seeking reappointment (succeeded by Anup Bagchi)?", "opts": ["Sashidhar Jagdishan", "Aditya Puri", "Kaizad Bharucha", "Paresh Sukthankar"], "ans": 0, "p1": "Succession: Sashidhar Jagdishan led HDFC Bank from October 2020 to October 2026 before Anup Bagchi took over.", "p2": "Exam Fact: HDFC Bank is headquartered in Mumbai, Maharashtra."}, {"id": 47, "slide_q": 657, "cat": "Appointments & Committees", "q": "Subhash Chandra Lal Das was appointed Part-Time Chairman of which Payments Bank?", "opts": ["Airtel Payments Bank", "India Post Payments Bank (IPPB)", "Fino Payments Bank", "Jio Payments Bank"], "ans": 1, "p1": "Bank: India Post Payments Bank (IPPB — 100% Government of India owned under Department of Posts; HQ: New Delhi).", "p2": "Exam Fact: IPPB was launched on 1 September 2018."}, {"id": 48, "slide_q": 658, "cat": "Appointments & Committees", "q": "Who became the first woman Prime Minister of Morocco?", "opts": ["Victoire Tomegah Dogbé", "Najla Bouden", "Fatima / Nouzha Bouchareb", "Judith Suminwa"], "ans": 2, "p1": "Country: Morocco (Capital: Rabat | Currency: Moroccan Dirham).", "p2": "Exam Fact: Morocco is located in North Africa along the Atlantic Ocean and Mediterranean Sea."}, {"id": 49, "slide_q": 659, "cat": "Appointments & Committees", "q": "Saibal Chattopadhyay was appointed Chairperson of which national statistical body?", "opts": ["Central Statistical Advisory Board", "Indian Statistical Institute (ISI)", "NITI Aayog Governing Council", "National Statistical Commission (NSC)"], "ans": 3, "p1": "Body: National Statistical Commission (NSC — established in 2005 on the recommendation of the C. Rangarajan Commission; HQ: New Delhi).", "p2": "Exam Fact: National Statistics Day in India is observed on 29 June (birth anniversary of Prof. P. C. Mahalanobis)."}, {"id": 50, "slide_q": 660, "cat": "Appointments & Committees", "q": "Nobel Laureate Michael Kremer was appointed Chief Economist of which international multilateral institution?", "opts": ["World Bank Group", "International Monetary Fund (IMF)", "Asian Development Bank (ADB)", "World Trade Organization (WTO)"], "ans": 0, "p1": "Institution: World Bank Group (HQ: Washington, D.C., USA).", "p2": "Exam Fact: Michael Kremer won the 2019 Nobel Memorial Prize in Economic Sciences alongside Abhijit Banerjee and Esther Duflo."}, {"id": 51, "slide_q": 661, "cat": "Appointments & Committees", "q": "Who was appointed as the first full-time Chief Executive Officer (CEO) of the Shri Ram Janmabhoomi Teerth Kshetra Trust?", "opts": ["Nripendra Misra", "Jitendra Mishra (retd. IAS officer)", "Champat Rai", "Govind Dev Giri"], "ans": 1, "p1": "Appointee: Jitendra Mishra (retired IAS officer).", "p2": "Exam Fact: Nripendra Misra chairs the Temple Construction Committee in Ayodhya, Uttar Pradesh."}, {"id": 52, "slide_q": 662, "cat": "Appointments & Committees", "q": "Who was appointed Director of the Financial Intelligence Unit – India (FIU-IND) for a 5-year tenure?", "opts": ["Sanjay Malhotra", "Vivek Aggarwal", "Satyapal Kumar", "Tuhin Kanta Pandey"], "ans": 2, "p1": "Agency: FIU-IND (established in November 2004 under the Department of Revenue, Ministry of Finance; HQ: New Delhi).", "p2": "Exam Fact: Central national agency responsible for receiving, processing, analyzing, and disseminating Suspicious Transaction Reports (STRs)."}, {"id": 53, "slide_q": 663, "cat": "Appointments & Committees", "q": "Air Vice Marshal Shakti Sharma became the first non-medical woman two-star officer in the Indian Armed Forces belonging to which branch of the IAF?", "opts": ["Accounts Branch", "Flying (Fighter) Branch", "Aeronautical Engineering Branch", "Education Branch"], "ans": 3, "p1": "Branch: Education Branch of the Indian Air Force.", "p2": "Exam Fact: Air Vice Marshal is a two-star rank equivalent to Major General in the Army and Rear Admiral in the Navy."}, {"id": 54, "slide_q": 664, "cat": "Appointments & Committees", "q": "Who is the President of Hungary?", "opts": ["András Baka / Tamás Sulyok", "Viktor Orbán", "Katalin Novák", "János Áder"], "ans": 0, "p1": "Country: Hungary (Capital: Budapest | Currency: Hungarian Forint).", "p2": "Exam Fact: Prime Minister of Hungary is Viktor Orbán."}, {"id": 55, "slide_q": 665, "cat": "Appointments & Committees", "q": "Whose tenure as Cabinet Secretary of India was extended by 1 year?", "opts": ["Rajiv Gauba", "T. V. Somanathan", "Pradeep Kumar Sinha", "Ajay Kumar Bhalla"], "ans": 1, "p1": "Role: T. V. Somanathan (former Finance Secretary) is the Cabinet Secretary of India—the top-most executive official and senior-most civil servant of the Government of India.", "p2": "Exam Fact: Cabinet Secretary serves as ex-officio Chairman of the Civil Services Board."}, {"id": 56, "slide_q": 666, "cat": "Appointments & Committees", "q": "DFS Secretary Sanjay Lohia was nominated as a Non-Executive Director on the Central Boards of which two institutions up to June 2027?", "opts": ["IRDAI and LIC", "SEBI and NABARD", "RBI and State Bank of India (SBI)", "PFRDA and SIDBI"], "ans": 2, "p1": "Institutions: Reserve Bank of India (RBI) and State Bank of India (SBI).", "p2": "Exam Fact: Under Section 8 of the RBI Act, 1934, two Central Government officials are nominated on the RBI Central Board."}, {"id": 57, "slide_q": 667, "cat": "Appointments & Committees", "q": "In August 2026, the Central Government appointed three Part-Time Non-Official Directors on the RBI Central Board. Who among the following was NOT among those three appointees?", "opts": ["Venu Srinivasan / Pankaj Patel", "Revathy Iyer", "Sachin Chaturvedi", "Anand Mahindra"], "ans": 3, "p1": "Exclusion: Anand Mahindra was not among the appointees.", "p2": "Exam Fact: Non-official directors on the RBI Central Board hold office for a term of 4 years."}, {"id": 58, "slide_q": 669, "cat": "Appointments & Committees", "q": "Who was appointed Chairperson of the Central Board of Secondary Education (CBSE)?", "opts": ["Rahul Singh", "Mandeep K. Bhandari", "Nidhi Chhibber", "Manoj Ahuja"], "ans": 1, "p1": "Organization: CBSE (established in 1929; reconstituted in 1962; HQ: New Delhi).", "p2": "Exam Fact: Autonomous body under the Ministry of Education."}, {"id": 59, "slide_q": 670, "cat": "Appointments & Committees", "q": "Who became the 23rd President of Bangladesh?", "opts": ["Muhammad Yunus", "Mohammed Shahabuddin", "Mirza Fakhrul Islam Alamgir", "Tarique Rahman"], "ans": 2, "p1": "Country: Bangladesh (Capital: Dhaka | Currency: Bangladeshi Taka).", "p2": "Exam Fact: India shares its longest international land border (4,096.7 km) with Bangladesh."}, {"id": 60, "slide_q": 671, "cat": "Appointments & Committees", "q": "Which Bollywood actor was appointed Brand Ambassador of Policybazaar for its 'Parivaar Sabse Pehle' campaign?", "opts": ["Ayushmann Khurrana", "Akshay Kumar", "Shah Rukh Khan", "Amitabh Bachchan"], "ans": 3, "p1": "Brand Ambassador: Amitabh Bachchan.", "p2": "Exam Fact: Policybazaar (PB Fintech) is headquartered in Gurugram, Haryana."}, {"id": 61, "slide_q": 672, "cat": "Appointments & Committees", "q": "Who was appointed President and CEO of Adobe Inc. (succeeding Shantanu Narayen)?", "opts": ["Anil Chakravarthy", "Satya Nadella", "Sundar Pichai", "Arvind Krishna"], "ans": 0, "p1": "Appointee: Anil Chakravarthy (succeeded long-serving CEO Shantanu Narayen).", "p2": "Exam Fact: Adobe Inc. is headquartered in San Jose, California, USA."}, {"id": 62, "slide_q": 673, "cat": "Appointments & Committees", "q": "Hakainde Hichilema was re-elected as President of which African nation?", "opts": ["Malawi", "Zambia", "Namibia", "Botswana"], "ans": 1, "p1": "Country: Zambia (Capital: Lusaka | Currency: Zambian Kwacha).", "p2": "Exam Fact: Zambia is a major copper-producing landlocked country in Southern Africa."}, {"id": 63, "slide_q": 674, "cat": "Appointments & Committees", "q": "Prashant Mahapatra was appointed Whole-Time Member / Executive Director of which financial market regulator?", "opts": ["IRDAI", "RBI", "SEBI (Securities and Exchange Board of India)", "PFRDA"], "ans": 2, "p1": "Regulator: SEBI (Headquarters: Mumbai, Maharashtra).", "p2": "Exam Fact: Regulates capital markets, stock exchanges, mutual funds, and depositories in India."}, {"id": 64, "slide_q": 675, "cat": "Appointments & Committees", "q": "Indian jurist Prof. Bimal N. Patel was elected as a Judge of which international judicial body?", "opts": ["Permanent Court of Arbitration (PCA)", "International Court of Justice (ICJ)", "International Criminal Court (ICC)", "International Tribunal for the Law of the Sea (ITLOS)"], "ans": 3, "p1": "Tribunal: International Tribunal for the Law of the Sea (ITLOS — established under UNCLOS, Headquarters: Hamburg, Germany).", "p2": "Exam Fact: Prof. Bimal N. Patel is Vice-Chancellor of Rashtriya Raksha University (RRU), Gandhinagar."}, {"id": 65, "slide_q": 676, "cat": "Appointments & Committees", "q": "Luiz Inácio Lula da Silva was re-elected as President of Brazil for which numbered term?", "opts": ["4th term", "2nd term", "3rd term", "5th term"], "ans": 0, "p1": "Term: 4th non-consecutive presidential term in Brazil (Capital: Brasília | Currency: Brazilian Real).", "p2": "Exam Fact: Brazil hosted the G20 Summit in 2024, BRICS Summit in 2025, and COP 30 in 2025."}, {"id": 66, "slide_q": 677, "cat": "Appointments & Committees", "q": "Who was reappointed as the Solicitor General of India for another 3-year term?", "opts": ["R. Venkataramani", "Tushar Mehta", "K. K. Venugopal", "Mukul Rohatgi"], "ans": 1, "p1": "Role: Tushar Mehta (Solicitor General of India is the second-highest law officer of the country after the Attorney General for India, R. Venkataramani).", "p2": "Exam Fact: Attorney General for India is a constitutional post under Article 76, whereas Solicitor General is a statutory post."}, {"id": 67, "slide_q": 678, "cat": "Appointments & Committees", "q": "Which Indian-origin economist was included on the US Federal Reserve's monetary policy review panel alongside Fed Chair Kevin Warsh?", "opts": ["Arvind Subramanian", "Viral Acharya", "Raghuram Rajan", "Kaushik Basu"], "ans": 2, "p1": "Economist: Prof. Raghuram Rajan (former 23rd Governor of the RBI and former IMF Chief Economist).", "p2": "Exam Fact: Kevin Warsh succeeded Jerome Powell as Chair of the US Federal Reserve."}, {"id": 68, "slide_q": 681, "cat": "Appointments & Committees", "q": "Who was appointed CEO & Director of TVS Motor Company effective January 2027?", "opts": ["Sudarshan Venu", "Peyman Kargar", "K. N. Radhakrishnan", "Venu Srinivasan"], "ans": 1, "p1": "Appointee: Peyman Kargar.", "p2": "Exam Fact: TVS Motor Company is headquartered in Chennai, Tamil Nadu."}, {"id": 69, "slide_q": 682, "cat": "Appointments & Committees", "q": "Crown Prince Haakon ascended the throne as King of which Nordic country in August 2026?", "opts": ["Denmark", "Sweden", "Norway", "Netherlands"], "ans": 2, "p1": "Country: Norway (Capital: Oslo | Currency: Norwegian Krone).", "p2": "Exam Fact: Succeeded King Harald V of Norway."}, {"id": 70, "slide_q": 683, "cat": "Appointments & Committees", "q": "Tewolde GebreMariam was appointed CEO & MD of Air India in August 2026. Which airline did he previously lead as CEO?", "opts": ["Singapore Airlines", "Qatar Airways", "Emirates", "Ethiopian Airlines"], "ans": 3, "p1": "Previous Role: Former Group CEO of Ethiopian Airlines (Africa's largest airline, HQ: Addis Ababa, Ethiopia).", "p2": "Exam Fact: Succeeded Campbell Wilson at Air India."}, {"id": 71, "slide_q": 684, "cat": "Appointments & Committees", "q": "Indian economist Neelkanth Mishra was appointed Executive Director (representing India, Bangladesh, Bhutan, and Sri Lanka) for a 3-year term at which international institution?", "opts": ["World Bank Group", "International Monetary Fund (IMF)", "Asian Development Bank (ADB)", "New Development Bank (NDB)"], "ans": 0, "p1": "Institution: World Bank Group (HQ: Washington, D.C., USA).", "p2": "Exam Fact: Neelkanth Mishra has also served as Part-Time Chairperson of UIDAI and Chief Economist at Axis Bank."}, {"id": 72, "slide_q": 685, "cat": "Appointments & Committees", "q": "Who became the new Prime Minister of the United Kingdom (succeeding Keir Starmer)?", "opts": ["Angela Rayner", "Andy Burnham", "Rachel Reeves", "Wes Streeting"], "ans": 1, "p1": "Role: Prime Minister of the United Kingdom (Capital: London | Currency: Pound Sterling).", "p2": "Exam Fact: Andy Burnham previously served as Mayor of Greater Manchester."}, {"id": 73, "slide_q": 686, "cat": "Appointments & Committees", "q": "Air Marshal Ashutosh Dixit assumed charge as which numbered Vice Chief of the Air Staff (VCAS) in July 2026?", "opts": ["50th", "48th", "51st", "52nd"], "ans": 2, "p1": "Sequence: 51st Vice Chief of the Air Staff (VCAS) of the Indian Air Force.", "p2": "Exam Fact: Air Chief Marshal Amar Preet Singh is the 28th Chief of the Air Staff."}, {"id": 74, "slide_q": 687, "cat": "Appointments & Committees", "q": "Varsha Ashok Agalwe became the first woman Director General in the 176-year history of which scientific organization?", "opts": ["Survey of India", "Zoological Survey of India (ZSI)", "Botanical Survey of India (BSI)", "Geological Survey of India (GSI)"], "ans": 3, "p1": "Milestone: First woman DG in GSI's history (founded in 1851; HQ: Kolkata).", "p2": "Exam Fact: Survey of India (founded 1767, HQ: Dehradun) is India's oldest scientific department."}, {"id": 75, "slide_q": 688, "cat": "Appointments & Committees", "q": "Pedro Alliana was elected President of which South American country?", "opts": ["Paraguay", "Uruguay", "Bolivia", "Ecuador"], "ans": 0, "p1": "Country: Paraguay (Capital: Asunción | Currency: Paraguayan Guaraní).", "p2": "Exam Fact: Paraguay is one of two landlocked countries in South America (alongside Bolivia)."}, {"id": 76, "slide_q": 689, "cat": "Appointments & Committees", "q": "Ravi Agrawal's tenure as Chairman of which apex tax body was extended by 6 months?", "opts": ["CBIC (Central Board of Indirect Taxes and Customs)", "CBDT (Central Board of Direct Taxes)", "GST Council Secretariat", "Income Tax Appellate Tribunal (ITAT)"], "ans": 1, "p1": "Body: Central Board of Direct Taxes (CBDT — statutory body under the Central Board of Revenue Act, 1963; HQ: New Delhi).", "p2": "Exam Fact: Administers direct taxes (Income Tax, Corporate Tax) under the Department of Revenue, Ministry of Finance."}, {"id": 77, "slide_q": 691, "cat": "Appointments & Committees", "q": "Who won the Peru presidential runoff election?", "opts": ["Rafael López Aliaga", "Dina Boluarte", "Pedro Castillo", "Keiko Fujimori"], "ans": 3, "p1": "Country: Peru (Capital: Lima | Currency: Peruvian Sol).", "p2": "Exam Fact: Peru is home to Machu Picchu (a UNESCO World Heritage Site and one of the New Seven Wonders of the World)."}, {"id": 78, "slide_q": 692, "cat": "Appointments & Committees", "q": "Who was appointed Vice President and Auditor General of the World Bank Group?", "opts": ["Yuko Keicho", "Anshula Kant", "Indermit Gill", "Ajay Banga"], "ans": 0, "p1": "Appointee: Yuko Keicho.", "p2": "Exam Fact: Anshula Kant serves as Managing Director and Chief Financial Officer (CFO) of the World Bank Group."}, {"id": 79, "slide_q": 693, "cat": "Appointments & Committees", "q": "INCOIS Director T. M. Balakrishnan Nair was elected Chair of which UNESCO Intergovernmental Oceanographic Commission (IOC) regional body?", "opts": ["IOCARIBE", "IOCINDIO (IOC Regional Committee for the Central Indian Ocean)", "WESTPAC", "IOCAFRICA"], "ans": 1, "p1": "Body: IOCINDIO (IOC Regional Committee for the Central Indian Ocean).", "p2": "Exam Fact: INCOIS (Indian National Centre for Ocean Information Services) is headquartered in Hyderabad, Telangana."}, {"id": 80, "slide_q": 694, "cat": "Appointments & Committees", "q": "Who was appointed Part-Time Chairman of HDFC Bank for a 3-year term?", "opts": ["T. N. Manoharan", "C. S. Rajan", "Rajiv Kumar (Atanu Chakraborty successor)", "Uday Kotak"], "ans": 2, "p1": "Role: Part-Time Chairman of HDFC Bank for 3 years.", "p2": "Exam Fact: Succeeded Atanu Chakraborty."}, {"id": 81, "slide_q": 695, "cat": "Appointments & Committees", "q": "Rajendra Kumar Saboo was given additional charge as MD & CEO of which Public Sector Bank?", "opts": ["Indian Overseas Bank", "Bank of Maharashtra", "Central Bank of India", "UCO Bank"], "ans": 3, "p1": "Bank: UCO Bank (Headquarters: Kolkata, West Bengal; founded 1943).", "p2": "Exam Fact: UCO Bank was originally founded as United Commercial Bank by G. D. Birla."}, {"id": 82, "slide_q": 696, "cat": "Appointments & Committees", "q": "Natarajan Chandrasekaran is scheduled to step down as Executive Chairman of Tata Sons in which month and year?", "opts": ["February 2027", "December 2026", "April 2027", "July 2027"], "ans": 0, "p1": "Date: February 2027 (completing two 5-year terms since taking over in February 2017).", "p2": "Exam Fact: Tata Sons is the principal investment holding company of the Tata Group (HQ: Bombay House, Mumbai)."}, {"id": 83, "slide_q": 697, "cat": "Appointments & Committees", "q": "Who assumed charge as the 29th Chief of the Air Staff (CAS) of the Indian Air Force?", "opts": ["Air Chief Marshal Amar Preet Singh", "Air Chief Marshal Ashutosh Dixit", "Air Chief Marshal Vivek Ram Chaudhari", "Air Chief Marshal R. K. S. Bhadauria"], "ans": 1, "p1": "Sequence: 29th Chief of the Air Staff (succeeded 28th CAS Air Chief Marshal Amar Preet Singh).", "p2": "Exam Fact: Rank of Chief of the Air Staff is a 4-star Air Chief Marshal."}, {"id": 84, "slide_q": 698, "cat": "Appointments & Committees", "q": "Whom did Viswanathan Anand succeed upon being appointed Interim President of FIDE (International Chess Federation)?", "opts": ["Garry Kasparov", "Kirsan Ilyumzhinov", "Arkady Dvorkovich", "Anatoly Karpov"], "ans": 2, "p1": "Succession: Succeeded Arkady Dvorkovich as Interim President of FIDE.", "p2": "Exam Fact: FIDE was founded on 20 July 1924 (International Chess Day) and is headquartered in Lausanne, Switzerland."}, {"id": 85, "slide_q": 701, "cat": "Mergers & Acquisitions", "q": "RBI approved the ₹936 crore acquisition by Aion / Piramal / Ares group in which housing finance company?", "opts": ["Home First Finance", "Aavas Financiers", "Aptus Value Housing Finance", "Vastu Housing Finance"], "ans": 3, "p1": "Deal Value: ₹936 crore.", "p2": "Exam Fact: Housing Finance Companies (HFCs) are regulated by the RBI (with supervisory oversight by National Housing Bank — NHB)."}, {"id": 86, "slide_q": 702, "cat": "Mergers & Acquisitions", "q": "State Bank of India (SBI) sold a 1.42% stake via Initial Public Offering (IPO) in which of its subsidiaries?", "opts": ["SBI Funds Management Limited (SBI Mutual Fund)", "SBI Cards and Payment Services", "SBI Life Insurance", "SBI General Insurance"], "ans": 0, "p1": "Subsidiary: SBI Funds Management Limited (India's largest Asset Management Company by AUM).", "p2": "Exam Fact: Joint venture between SBI and French asset manager Amundi."}, {"id": 87, "slide_q": 703, "cat": "Mergers & Acquisitions", "q": "Oman India Joint Investment Fund II (OIJIF II) sold a 3.65% stake in which Small Finance Bank?", "opts": ["AU Small Finance Bank", "Capital Small Finance Bank", "Equitas Small Finance Bank", "Ujjivan Small Finance Bank"], "ans": 1, "p1": "Bank: Capital Small Finance Bank (India's first Small Finance Bank to start operations in April 2016; HQ: Jalandhar, Punjab).", "p2": "Exam Fact: OIJIF is a joint venture private equity fund backed by SBI and State General Reserve Fund of Oman."}, {"id": 88, "slide_q": 704, "cat": "Mergers & Acquisitions", "q": "In the Baroda BNP Paribas Asset Management joint venture where BNP Paribas Cardif holds 26% stake, what percentage stake is held by Bank of Baroda?", "opts": ["50%", "74%", "51%", "49%"], "ans": 2, "p1": "Shareholding: Bank of Baroda holds 51% majority stake.", "p2": "Exam Fact: BNP Paribas is headquartered in Paris, France."}, {"id": 89, "slide_q": 705, "cat": "Mergers & Acquisitions", "q": "CCI approved the merger of Go Digit Infoworks Services into Go Digit General Insurance. What makes this merger historically significant?", "opts": ["First merger approved by PFRDA", "First merger of a public sector bank with a life insurer", "First cross-border merger with a US reinsurance carrier", "First merger approved under the Sabka Bima Sabki Raksha (Amendment of Insurance Laws) Act, 2025"], "ans": 3, "p1": "Legislative Milestone: First insurance corporate merger under the Sabka Bima Sabki Raksha Act, 2025.", "p2": "Exam Fact: Go Digit General Insurance is headquartered in Pune, Maharashtra (backed by Fairfax Group)."}, {"id": 90, "slide_q": 706, "cat": "Mergers & Acquisitions", "q": "The Ministry of Corporate Affairs approved the restructuring of Mahindra Manulife Investment Management. In which country is its foreign partner Manulife Financial Corporation based?", "opts": ["Canada", "United States", "United Kingdom", "Singapore"], "ans": 0, "p1": "Country: Canada (Manulife Financial Corporation is headquartered in Toronto, Ontario, Canada).", "p2": "Exam Fact: Joint venture between Mahindra & Mahindra Financial Services and Manulife."}, {"id": 91, "slide_q": 707, "cat": "Mergers & Acquisitions", "q": "The Competition Commission of India (CCI) approved Honda Motor's proposal to acquire a 21% stake in a joint venture from which Japanese company?", "opts": ["Panasonic", "Hitachi (Hitachi Astemo)", "Sony", "Toshiba"], "ans": 1, "p1": "Seller: Hitachi (Headquarters: Tokyo, Japan).", "p2": "Exam Fact: CCI was established under the Competition Act, 2002 (HQ: New Delhi; Chairperson: Ravneet Kaur)."}, {"id": 92, "slide_q": 708, "cat": "Mergers & Acquisitions", "q": "GQG Partners sold a 1.85% stake in GMR Airports Infrastructure to which global institutional buyer?", "opts": ["Vanguard Group", "BlackRock", "Fidelity International", "Temasek Holdings"], "ans": 2, "p1": "Buyer: Fidelity International.", "p2": "Exam Fact: GMR Airports operates Delhi (IGIA), Hyderabad (RGIA), and Mopa (Goa) international airports."}, {"id": 93, "slide_q": 709, "cat": "Mergers & Acquisitions", "q": "For what amount did Kotak Mahindra Bank acquire Standard Chartered Bank India's retail wealth / personal loan book?", "opts": ["₹4,100 crore", "₹1,500 crore", "₹750 crore", "₹282 crore"], "ans": 3, "p1": "Deal Value: ₹282 crore.", "p2": "Exam Fact: Consolidates Kotak Mahindra Bank's affluent wealth management franchise."}, {"id": 94, "slide_q": 710, "cat": "Mergers & Acquisitions", "q": "Tata Consultancy Services (TCS) acquired MHP (Management- und IT-Beratung) for €320 million from which luxury German automaker?", "opts": ["Porsche", "Mercedes-Benz", "BMW", "Audi"], "ans": 0, "p1": "Deal Value & Seller: €320 million from Porsche AG (Stuttgart, Germany).", "p2": "Exam Fact: TCS was founded in 1968 (Headquarters: Mumbai, Maharashtra; CEO: K. Krithivasan)."}, {"id": 95, "slide_q": 711, "cat": "Mergers & Acquisitions", "q": "After ICICI Bank acquired an additional 2% stake in ICICI Lombard General Insurance for ₹1,470 crore, what did ICICI Bank's total shareholding in the insurer rise to?", "opts": ["51.0%", "52.8%", "54.5%", "49.9%"], "ans": 1, "p1": "Total Stake: 52.8% (₹1,470 crore for 2% additional shares).", "p2": "Exam Fact: ICICI Bank is headquartered in Mumbai, Maharashtra."}, {"id": 96, "slide_q": 712, "cat": "Mergers & Acquisitions", "q": "Who serves as the Chairperson of the Competition Commission of India (CCI)?", "opts": ["Sangeeta Verma", "Ashok Kumar Gupta", "Ravneet Kaur", "Dhanendra Kumar"], "ans": 2, "p1": "Chairperson: Ravneet Kaur (first woman Chairperson of CCI).", "p2": "Exam Fact: CCI enforces anti-trust rules and reviews mergers/acquisitions exceeding statutory asset/turnover thresholds."}, {"id": 97, "slide_q": 713, "cat": "Mergers & Acquisitions", "q": "UK insurer Aviva became the first foreign insurer to establish a 100% wholly-owned Indian life insurance subsidiary after buying the remaining 26% stake from which Indian partner?", "opts": ["Bharti Enterprises", "Piramal Enterprises", "Max Financial Services", "Dabur Invest Corp"], "ans": 3, "p1": "Seller: Dabur Invest Corp (Burman family investment arm).", "p2": "Exam Fact: Enabled by India's liberalization allowing 100% FDI in the insurance sector."}, {"id": 98, "slide_q": 715, "cat": "Mergers & Acquisitions", "q": "Google acquired software engineering assets and talent from which US low-cost airline to accelerate AI travel software development?", "opts": ["JetBlue Airways", "Spirit Airlines", "Southwest Airlines", "Frontier Airlines"], "ans": 1, "p1": "Airline: Spirit Airlines (Headquarters: Dania Beach, Florida, USA).", "p2": "Exam Fact: Google CEO is Sundar Pichai (Parent: Alphabet Inc.)."}, {"id": 99, "slide_q": 717, "cat": "Mergers & Acquisitions", "q": "Jammu & Kashmir Bank divested a 0.5% stake in which life insurance joint venture?", "opts": ["Star Union Dai-ichi Life Insurance", "Canara HSBC Life Insurance", "IndiaFirst Life Insurance", "PNB MetLife India Insurance"], "ans": 3, "p1": "Insurer: PNB MetLife India Insurance (joint venture between Punjab National Bank and US-based MetLife).", "p2": "Exam Fact: Jammu & Kashmir Bank is headquartered in Srinagar, J&K."}, {"id": 100, "slide_q": 718, "cat": "Banking, Finance & Regulatory", "q": "Under IRDAI's revised Shareholding & Transfer Regulations, 2026, prior IRDAI approval is mandatory whenever shareholding crosses which threshold slabs?", "opts": ["5%, 10%, 25%, 50%, and 75%", "2%, 5%, 15%, 30%, and 60%", "10%, 20%, 30%, 40%, and 50%", "5%, 15%, 26%, 51%, and 74%"], "ans": 0, "p1": "Threshold Slabs: 5%, 10%, 25%, 50%, and 75% (note: RRB shareholding pattern is 50% Centre : 35% Sponsor Bank : 15% State Govt).", "p2": "Exam Fact: Ensures fit-and-proper governance oversight over significant insurance shareholders."}, {"id": 101, "slide_q": 719, "cat": "Mergers & Acquisitions", "q": "CCI approved Aditya Birla Group's acquisition of a stake in Royal Challengers Sports Private Limited (RCSPL) from which parent beverage company?", "opts": ["United Breweries Limited", "United Spirits Limited (Diageo India)", "Pernod Ricard India", "Varun Beverages Limited"], "ans": 1, "p1": "Seller: United Spirits Limited (subsidiary of Diageo plc, HQ: Bengaluru).", "p2": "Exam Fact: RCSPL owns the Royal Challengers Bengaluru (RCB) IPL and WPL cricket franchises."}, {"id": 102, "slide_q": 720, "cat": "Mergers & Acquisitions", "q": "In the 51:49 joint venture between HAL and private/foreign partner for the Medium Transport Aircraft (MTA) programme, who holds the 51% majority stake?", "opts": ["Airbus Defence", "Embraer", "Hindustan Aeronautics Limited (HAL)", "Lockheed Martin"], "ans": 2, "p1": "Majority Partner: Hindustan Aeronautics Limited (HAL — Maharatna CPSE under Ministry of Defence, HQ: Bengaluru).", "p2": "Exam Fact: Replaces the Indian Air Force's legacy Antonov An-32 transport fleet."}, {"id": 103, "slide_q": 721, "cat": "Mergers & Acquisitions", "q": "Hindustan Aeronautics Limited (HAL) signed a 50% stake transfer/joint venture agreement in flight simulation training with which Canadian aerospace company?", "opts": ["Pratt & Whitney Canada", "Bombardier Aviation", "De Havilland Canada", "CAE Inc. (Canada)"], "ans": 3, "p1": "Partner: CAE Inc. (Canadian simulation and flight training leader, HQ: Montreal, Quebec, Canada).", "p2": "Exam Fact: Operates the HAL-CAE Helicopter Training Academy in Bengaluru."}, {"id": 104, "slide_q": 722, "cat": "Mergers & Acquisitions", "q": "TPG, GIC, and ICICI Bank acquired a controlling stake in Aseem Infrastructure Finance from which seller entity?", "opts": ["NIIF (National Investment and Infrastructure Fund)", "SIDBI", "EXIM Bank", "NHB"], "ans": 0, "p1": "Seller: NIIF (National Investment and Infrastructure Fund — India's sovereign-linked infrastructure fund, HQ: Mumbai).", "p2": "Exam Fact: Aseem Infrastructure Finance is an RBI-registered NBFC-Infrastructure Finance Company (NBFC-IFC)."}, {"id": 105, "slide_q": 724, "cat": "Mergers & Acquisitions", "q": "CCI approved Prudential's acquisition of a 75% majority stake in which Indian life insurance joint venture?", "opts": ["Ageas Federal Life Insurance", "Pramerica Life Insurance", "Bharti AXA Life Insurance", "Edelweiss Life Insurance"], "ans": 2, "p1": "Insurer: Bharti AXA Life Insurance (headquartered in Mumbai, Maharashtra).", "p2": "Exam Fact: Prudential plc is headquartered in London, United Kingdom."}, {"id": 106, "slide_q": 725, "cat": "Mergers & Acquisitions", "q": "CARE Ratings acquired a 19.8% stake in Carriage Global / allied analytics entity alongside which two institutional buyers?", "opts": ["HDFC Bank and Axis Bank", "LIC and GIC Re", "NABARD and SIDBI", "SBI and NSIC (or NSE Indices)"], "ans": 3, "p1": "Rating Agency: CARE Ratings Limited (Credit Analysis and Research Limited, founded 1993; HQ: Mumbai).", "p2": "Exam Fact: Second-largest credit rating agency in India by rating volume."}, {"id": 107, "slide_q": 726, "cat": "Mergers & Acquisitions", "q": "BPCL (Bharat Petroleum Corporation Limited) acquired a stake in its Brazilian upstream oil exploration arm from which entity in July 2026?", "opts": ["BPRL Ventures BV", "Petrobras", "Equinor", "TotalEnergies"], "ans": 0, "p1": "Entity: BPRL Ventures BV (subsidiary of Bharat PetroResources Limited — BPRL).", "p2": "Exam Fact: BPCL is a Maharatna CPSE headquartered in Mumbai, Maharashtra."}, {"id": 108, "slide_q": 727, "cat": "Mergers & Acquisitions", "q": "SoftBank sold a 3.25% stake in which Indian eyewear omnichannel company for ₹2,873 crore via open market transactions?", "opts": ["Titan Eyeplus", "Lenskart Solutions", "Nykaa", "FirstCry"], "ans": 1, "p1": "Company: Lenskart Solutions (founded by Peyush Bansal; HQ: Gurugram/Faridabad).", "p2": "Exam Fact: SoftBank Vision Fund is led by Masayoshi Son (HQ: Tokyo, Japan)."}, {"id": 109, "slide_q": 728, "cat": "Mergers & Acquisitions", "q": "RBI permitted Mastercard to acquire up to what percentage stake in Five-Star Business Finance?", "opts": ["5.00%", "2.50%", "4.31%", "9.99%"], "ans": 2, "p1": "Stake Cap: Up to 4.31% in Five-Star Business Finance (Chennai-based NBFC specializing in small business loans).", "p2": "Exam Fact: Mastercard is headquartered in Purchase, New York, USA."}, {"id": 110, "slide_q": 729, "cat": "Science, Space & Technology", "q": "DRDO and CSIR-CGCRI (Central Glass & Ceramic Research Institute) developed lightweight bulletproof glass for armoured vehicles using which advanced material?", "opts": ["Polycarbonate Graphene Sheet", "Borosilicate Pyrex Glass", "Laminated Quartz Crystal", "Transparent Nanocrystalline Glass-Ceramic"], "ans": 3, "p1": "Material: Transparent Nanocrystalline Glass-Ceramic (lighter and stronger than conventional multi-layer bulletproof glass).", "p2": "Exam Fact: CSIR-CGCRI is headquartered in Kolkata, West Bengal."}, {"id": 111, "slide_q": 730, "cat": "Science, Space & Technology", "q": "Headquarters Integrated Defence Staff (HQ IDS) signed a 5-year MoU with which Indian AI startup to develop sovereign AI capabilities for the Indian Armed Forces?", "opts": ["Sarvam AI", "Krutrim AI", "BharatGPT (CoRover)", "Soket AI"], "ans": 0, "p1": "AI Partner: Sarvam AI (Bengaluru-based sovereign foundational AI startup, became a unicorn in June 2026).", "p2": "Exam Fact: Builds air-gapped, multilingual sovereign AI models for military intelligence and operations."}, {"id": 112, "slide_q": 731, "cat": "Economy, GDP & Corporate Deals", "q": "What is the total investment outlay of the MoU signed by the Odisha Government with HCLTech and Sarvam AI to establish an AI Data Centre in Odisha?", "opts": ["₹8,500 crore", "₹14,257 crore", "₹21,000 crore", "₹5,400 crore"], "ans": 1, "p1": "Outlay: ₹14,257 crore in Odisha (CM: Mohan Charan Majhi; Governor: Hari Babu Kambhampati).", "p2": "Exam Fact: Positions Bhubaneswar as an emerging Eastern India AI and data center hub."}, {"id": 113, "slide_q": 733, "cat": "Government Schemes & Initiatives", "q": "Ministry of MSME and DPIIT signed an MoU to commercialize and list GI-tagged products on ONDC and GeM under which unified brand banner?", "opts": ["Viksit Shilp", "One District One Product (ODOP)", "Swadeshi Mart", "Bharat GI"], "ans": 3, "p1": "Brand Banner: 'Bharat GI' — onboarded onto ONDC (Open Network for Digital Commerce) and Government e-Marketplace (GeM).", "p2": "Exam Fact: Empowers GI artisans and farmer producer organizations (FPOs) with direct B2C and B2G market access."}, {"id": 114, "slide_q": 734, "cat": "Government Schemes & Initiatives", "q": "The Ministry of Corporate Affairs (MCA) signed an MoU with IIM / IIT Madras to train professionals under which MSME compliance support scheme?", "opts": ["Corporate Mitra Scheme", "Udyam Sakhi Scheme", "RAMP Scheme", "SAMARTH Scheme"], "ans": 0, "p1": "Scheme: Corporate Mitra Scheme — builds a cadre of trained compliance professionals to assist MSMEs with corporate filings and governance.", "p2": "Exam Fact: Ministry of Corporate Affairs is headed by Union Minister Nirmala Sitharaman."}, {"id": 115, "slide_q": 735, "cat": "Infrastructure, Ports & Energy", "q": "Regarding Himachal Pradesh's Hydro Power Projects Agreement: (1) Combined capacity of the allotted projects is 278 MW; (2) 12% free power royalty to the state; (3) Himachal Pradesh's total estimated hydro potential is ~24,000 MW (not 10,000 MW). Which statements are correct?", "opts": ["1 and 2 only", "2 and 3 only (Total hydro potential of HP is ~24,000 MW)", "1 and 3 only", "All 1, 2, 3, and 4"], "ans": 1, "p1": "Correction Note: Himachal Pradesh's estimated total hydropower potential is ~24,000 MW (not 10,000 MW).", "p2": "Exam Fact: Major hydro projects in HP include Nathpa Jhakri, Bhakra, and Chamera."}, {"id": 116, "slide_q": 736, "cat": "Infrastructure, Ports & Energy", "q": "The Department of Telecommunications (DoT) signed an MoU with Chhattisgarh under the Amended BharatNet Programme providing what financial support?", "opts": ["₹5,200 crore", "₹10,520 crore", "₹3,942 crore", "₹2,150 crore"], "ans": 2, "p1": "Allocation: ₹3,942 crore for Chhattisgarh (and ₹10,520 crore for Maharashtra) under the Amended BharatNet Programme.", "p2": "Exam Fact: BharatNet aims to connect all 2.5+ lakh Gram Panchayats with high-speed optical fiber broadband."}, {"id": 117, "slide_q": 737, "cat": "Infrastructure, Ports & Energy", "q": "What financial support did the Department of Telecommunications (DoT) approve for Maharashtra under the Amended BharatNet Programme MoU?", "opts": ["₹12,400 crore", "₹3,942 crore", "₹7,800 crore", "₹10,520 crore"], "ans": 3, "p1": "Allocation: ₹10,520 crore for Maharashtra (compared to ₹3,942 crore for Chhattisgarh).", "p2": "Exam Fact: Executed by Bharat Broadband Network Limited (BBNL) / BSNL."}, {"id": 118, "slide_q": 738, "cat": "Government Schemes & Initiatives", "q": "Rapido partnered with the Ministry of Road Transport and Highways (MoRTH) to facilitate rapid assistance for road accident victims under which scheme?", "opts": ["Rah-Veer Scheme (Good Samaritan Scheme)", "PM Suraksha Bima Yojana", "Sadak Suraksha Mitra", "Golden Hour Rescue Mission"], "ans": 0, "p1": "Scheme: Rah-Veer Scheme (Good Samaritan reward scheme providing ₹25,000 cash reward and certificate to citizens who rescue road accident victims within the Golden Hour).", "p2": "Exam Fact: Motor Vehicles (Amendment) Act, 2019 protects Good Samaritans from civil or criminal liability."}, {"id": 119, "slide_q": 739, "cat": "Economy, GDP & Corporate Deals", "q": "At which international event did the Odisha Government sign MoUs worth ₹2.1 lakh crore with International Resources Holding (IRH) and Adani Group?", "opts": ["Vibrant Gujarat Global Summit", "Odisha Investors' Meet in UAE 2026", "Bengal Global Business Summit", "Invest Karnataka Summit"], "ans": 1, "p1": "Event: Odisha Investors' Meet in UAE 2026 (MoUs worth ₹2.1 lakh crore).", "p2": "Exam Fact: Focuses on green energy, ports, metals, and petrochemical investments in Odisha."}, {"id": 120, "slide_q": 740, "cat": "Government Schemes & Initiatives", "q": "NSDC (National Skill Development Corporation) partnered with drone firm ideaForge / ABPL to establish how many advanced skill centres in drone technology across India?", "opts": ["200", "100", "350", "500"], "ans": 2, "p1": "Target: 350 advanced drone skill centres across India.", "p2": "Exam Fact: Supports the Namo Drone Didi scheme and DGCA-certified drone pilot training."}, {"id": 121, "slide_q": 741, "cat": "Infrastructure, Ports & Energy", "q": "Akasa Air signed an MoU with which public sector oil company to promote Sustainable Aviation Fuel (SAF) adoption in India?", "opts": ["Mangalore Refinery and Petrochemicals Limited (MRPL)", "Indian Oil Corporation Limited (IOCL)", "Hindustan Petroleum Corporation Limited (HPCL)", "Bharat Petroleum Corporation Limited (BPCL)"], "ans": 3, "p1": "Partner: Bharat Petroleum Corporation Limited (BPCL, HQ: Mumbai).", "p2": "Exam Fact: Sustainable Aviation Fuel (SAF) reduces lifecycle aviation carbon emissions by up to 80%."}, {"id": 122, "slide_q": 742, "cat": "International & Summits", "q": "In June 2026, ASSOCHAM signed an MoU with the Chamber of Commerce of which country to boost bilateral trade in mining, pharmaceuticals, and food processing?", "opts": ["Afghanistan", "Uzbekistan", "Iran", "Oman"], "ans": 0, "p1": "Country: Afghanistan (Capital: Kabul | Currency: Afghan Afghani).", "p2": "Exam Fact: Focuses on dry fruits, pharmaceuticals, and mineral trade corridors."}, {"id": 123, "slide_q": 743, "cat": "Science, Space & Technology", "q": "AIESL / AI Engineering Services Limited signed an MoU with which Singapore-based aviation MRO major to develop India's Maintenance, Repair, and Overhaul (MRO) ecosystem?", "opts": ["ST Engineering", "SIA Engineering Company (Singapore Airlines Engineering)", "Lufthansa Technik", "AAR Corp"], "ans": 1, "p1": "Partner: SIA Engineering Company (subsidiary of Singapore Airlines, HQ: Singapore).", "p2": "Exam Fact: Boosts domestic aircraft airframe and engine MRO capacity in India."}, {"id": 124, "slide_q": 744, "cat": "Government Schemes & Initiatives", "q": "Under the MoU signed by the Ministry of Rural Development with the National Academy of RUDSETI for FY 2025–26/27, how many rural youth are targeted to be trained?", "opts": ["4.00 lakh rural youth", "2.50 lakh rural youth", "6.35 lakh rural youth", "10.00 lakh rural youth"], "ans": 2, "p1": "Training Target: 6.35 lakh rural youth.", "p2": "Exam Fact: RUDSETI stands for Rural Development and Self Employment Training Institute (jointly promoted by Sri Dharmasthala Manjunatheshwara Educational Trust, Canara Bank, and Union Ministry of Rural Development)."}, {"id": 125, "slide_q": 745, "cat": "National & State Affairs", "q": "Under the 'Gyan Bharatam Mission', the Ministry of Culture signed an MoU with which French institution for manuscript conservation and digitization?", "opts": ["Sorbonne University", "Louvre Museum", "UNESCO Archives", "BnF (Bibliothèque nationale de France — National Library of France)"], "ans": 3, "p1": "Partner: Bibliothèque nationale de France (BnF, Paris, France).", "p2": "Exam Fact: Gyan Bharatam Mission aims to survey, conserve, and digitize over 1 crore ancient Indian manuscripts."}, {"id": 126, "slide_q": 746, "cat": "Government Schemes & Initiatives", "q": "NIRDPR and IIM Calcutta / IIT are conducting a 4-year impact assessment of PMGSY along with which tribal welfare mission?", "opts": ["PM-JANMAN (Pradhan Mantri Janjati Adivasi Nyaya Maha Abhiyan)", "PM-DAKSH", "PM-SVANidhi", "PM-KUSUM"], "ans": 0, "p1": "Scheme: PM-JANMAN (launched on 15 November 2023 for the holistic development of 75 Particularly Vulnerable Tribal Groups — PVTGs).", "p2": "Exam Fact: PMGSY stands for Pradhan Mantri Gram Sadak Yojana (launched in December 2000)."}, {"id": 127, "slide_q": 747, "cat": "National & State Affairs", "q": "In which city of Madhya Pradesh did the Department of Telecommunications (DoT) and the Madhya Pradesh Government sign an MoU to establish a Telecom Manufacturing / Innovation Zone?", "opts": ["Indore", "Gwalior", "Bhopal", "Jabalpur"], "ans": 1, "p1": "City: Gwalior, Madhya Pradesh.", "p2": "Exam Fact: Promotes 5G/6G telecom equipment manufacturing and R&D."}, {"id": 128, "slide_q": 748, "cat": "Banking, Finance & Regulatory", "q": "India Post signed an MoU with which mutual fund house to expand doorstep KYC verification services across rural India?", "opts": ["HDFC Mutual Fund", "SBI Mutual Fund", "UTI Mutual Fund", "LIC Mutual Fund"], "ans": 2, "p1": "Partner AMC: UTI Mutual Fund (India's oldest mutual fund institution, originally established as Unit Trust of India in 1963; HQ: Mumbai).", "p2": "Exam Fact: Leverages India Post's 1.65+ lakh post offices for last-mile investor onboarding."}, {"id": 129, "slide_q": 749, "cat": "Science, Space & Technology", "q": "Regarding DRDO's ADITI / TDF defence innovation collaboration: (1) Statements 1 and 2 on indigenous defence R&D and startup grants are correct; (2) Corpus size is ₹500 crore (not ₹1,000 crore). Which statements are correct?", "opts": ["All 1, 2, and 3", "1 and 3 only", "2 and 3 only", "1 and 2 only (Corpus is ₹500 crore, not ₹1,000 crore)"], "ans": 3, "p1": "Correction Note: Corpus is ₹500 crore (not ₹1,000 crore).", "p2": "Exam Fact: ADITI stands for Acing Development of Innovative Technologies with iDEX."}, {"id": 130, "slide_q": 751, "cat": "Banking, Finance & Regulatory", "q": "The Government of Tripura signed three MoUs with which stock exchange to boost financial literacy, youth skilling, and MSME investment in the state?", "opts": ["Bombay Stock Exchange (BSE)", "National Stock Exchange (NSE)", "MCX", "NCDEX"], "ans": 1, "p1": "Exchange: National Stock Exchange of India (NSE, HQ: Mumbai; MD & CEO: Ashishkumar Chauhan).", "p2": "Exam Fact: Capital of Tripura: Agartala | CM: Manik Saha | Governor: Indrasena Reddy Nallu."}, {"id": 131, "slide_q": 752, "cat": "Science, Space & Technology", "q": "C-DAC signed an MoU with which scientific organization to deploy AI-based mineral exploration and disaster management tools?", "opts": ["IMD", "ISRO", "Geological Survey of India (GSI)", "Survey of India"], "ans": 2, "p1": "Partner: Geological Survey of India (GSI, HQ: Kolkata).", "p2": "Exam Fact: Combines C-DAC's high-performance AI computing with GSI's geoscientific datasets."}, {"id": 132, "slide_q": 753, "cat": "Infrastructure, Ports & Energy", "q": "NHAI signed an MoU with which premier economic policy think tank to establish a Research Centre on Transportation, Mobility, and Logistics?", "opts": ["NIPFP", "NITI Aayog", "ICRIER", "NCAER (National Council of Applied Economic Research)"], "ans": 3, "p1": "Think Tank: NCAER (established in 1956, India's oldest independent non-profit economic policy research institute; HQ: New Delhi).", "p2": "Exam Fact: Evaluates highway freight corridors and PM Gati Shakti logistics efficiency."}, {"id": 133, "slide_q": 754, "cat": "Infrastructure, Ports & Energy", "q": "Arunachal Pradesh signed an MoU with Norway's Tidal Sails to launch India's first project of which clean energy type?", "opts": ["River Kinetic Energy Demonstration Project (in-stream hydrokinetic turbines)", "Offshore Wave Desalination Plant", "Hydrogen Fuel-Cell Ferry", "Geothermal District Heating"], "ans": 0, "p1": "Technology: River Kinetic Energy Demonstration Project (harnesses flowing river currents without building large dams).", "p2": "Exam Fact: Ideal for fast-flowing Himalayan rivers in Arunachal Pradesh."}, {"id": 134, "slide_q": 755, "cat": "National & State Affairs", "q": "The Department of Posts and TRAI signed an MoU to conduct India's largest village-level telecom network quality survey covering how many lakh villages?", "opts": ["2.50 lakh villages", "5.68 lakh villages", "4.10 lakh villages", "6.40 lakh villages"], "ans": 1, "p1": "Scale: 5.68 lakh villages surveyed nationwide using postmen/Gramin Dak Sevaks.", "p2": "Exam Fact: Maps rural 4G/5G signal strength and broadband coverage gaps."}, {"id": 135, "slide_q": 756, "cat": "Infrastructure, Ports & Energy", "q": "Cochin Shipyard Limited (CSL) and Drydocks World (a DP World company) formed a 50:50 joint venture to expand which maritime facility?", "opts": ["Mumbai Cruise Terminal", "Vizhinjam Container Terminal", "International Ship Repair Facility (ISRF) at Kochi", "Paradip Dry Dock"], "ans": 2, "p1": "Facility: International Ship Repair Facility (ISRF) in Kochi, Kerala.", "p2": "Exam Fact: Positions Kochi as a premier global ship repair hub along East–West shipping lanes."}, {"id": 136, "slide_q": 757, "cat": "Economy, GDP & Corporate Deals", "q": "Himachal Pradesh signed an MoU with ISB (Indian School of Business) to unlock its forest economy, whose potential is estimated at what value?", "opts": ["₹35,000 crore", "₹10,000 crore", "₹15,400 crore", "₹22,600 crore"], "ans": 3, "p1": "Estimated Potential: ₹22,600 crore sustainable forest bio-economy.", "p2": "Exam Fact: Indian School of Business (ISB) has campuses in Hyderabad and Mohali."}, {"id": 137, "slide_q": 758, "cat": "Science, Space & Technology", "q": "In May 2026, India signed a BrahMos supersonic cruise missile export deal worth USD 629 million with which Southeast Asian country?", "opts": ["Vietnam", "Philippines", "Indonesia", "Malaysia"], "ans": 0, "p1": "Buyer & Value: Vietnam — USD 629 million (Philippines was the first foreign buyer of BrahMos in 2022 for USD 375 million).", "p2": "Exam Fact: BrahMos is named after the Brahmaputra and Moskva rivers (joint venture between DRDO and Russia's NPO Mashinostroyenia)."}, {"id": 138, "slide_q": 759, "cat": "Economy, GDP & Corporate Deals", "q": "NIT Rourkela, ISRO's NRSC, and the Tea Board of India signed an MoU for which AI-and-satellite-based tea plantation monitoring project?", "opts": ["Chai-Setu", "Chanakya (Chanakya AI Tea Project)", "Assam-Sat", "Nilgiri-Eye"], "ans": 1, "p1": "Project: Chanakya — uses satellite remote sensing and AI to monitor tea garden health, yield, and pest outbreaks.", "p2": "Exam Fact: Tea Board of India is headquartered in Kolkata, West Bengal."}, {"id": 139, "slide_q": 761, "cat": "Infrastructure, Ports & Energy", "q": "Regarding the Yamuna Water Project Agreement: (1) Statements 1, 2, and 3 on interstate water sharing and storage are correct; (2) Storage capacity figure is 580 MCM (not 158 MCM). Which statements are correct?", "opts": ["All 1, 2, 3, and 4", "1 and 4 only", "2 and 4 only", "1, 2, and 3 only (Capacity is 580 MCM, not 158 MCM)"], "ans": 3, "p1": "Correction Note: Live storage capacity is 580 Million Cubic Meters (MCM), not 158 MCM.", "p2": "Exam Fact: Yamuna is the largest tributary of the Ganga River (originating at Yamunotri Glacier, Uttarakhand)."}, {"id": 140, "slide_q": 762, "cat": "Science, Space & Technology", "q": "Paras Semiconductors and MPIDC signed an MoU to set up a greenfield OSAT (Outsourced Semiconductor Assembly and Test) facility in the Indore region with what investment?", "opts": ["₹6,200 crore", "₹2,500 crore", "₹10,000 crore", "₹4,000 crore"], "ans": 0, "p1": "Investment & Location: ₹6,200 crore in the Indore region, Madhya Pradesh.", "p2": "Exam Fact: Strengthens central India's semiconductor packaging and testing ecosystem."}, {"id": 141, "slide_q": 763, "cat": "Health & Traditional Medicine", "q": "In August 2026, the Ministry of Ayush signed an MoU with which national AI mission/body to drive AI-led innovation in traditional medicine?", "opts": ["NITI Aayog", "IndiaAI Mission (MeitY)", "ICMR", "CSIR"], "ans": 1, "p1": "Partner: IndiaAI Mission (implemented under MeitY with a ₹10,371.92 crore outlay).", "p2": "Exam Fact: Applies AI to Ayurvedic genomics, drug discovery, and Ayush Grid digital health records."}, {"id": 142, "slide_q": 764, "cat": "International & Summits", "q": "India and Canada signed a USD 300 million bilateral commercial agreement with its implementation target set up to which month and year?", "opts": ["June 2027", "March 2027", "December 2026", "December 2028"], "ans": 2, "p1": "Target Timeline: December 2026 | Deal Size: USD 300 million.", "p2": "Exam Fact: Capital of Canada: Ottawa | Currency: Canadian Dollar."}, {"id": 143, "slide_q": 765, "cat": "National & State Affairs", "q": "In June 2026, IIT Bombay signed a Letter of Intent (LoI) with Sunway / international partner. What is the key significance of this agreement?", "opts": ["Transfers IIT Bombay management to a private trust", "Launches India's first quantum satellite", "Sets up a nuclear fusion reactor in Mumbai", "Establishes IIT Bombay's first overseas campus"], "ans": 3, "p1": "Significance: Marks IIT Bombay's first overseas campus.", "p2": "Exam Fact: Follows IIT Madras (Zanzibar, Tanzania) and IIT Delhi (Abu Dhabi, UAE)."}, {"id": 144, "slide_q": 766, "cat": "Science, Space & Technology", "q": "In which city did Lohia Aerospace Systems sign an MoU with Israel's Mass / aerospace partner to set up India's first large-format additive manufacturing (3D printing) facility?", "opts": ["Kanpur, Uttar Pradesh", "Bengaluru, Karnataka", "Hyderabad, Telangana", "Pune, Maharashtra"], "ans": 0, "p1": "Location: Kanpur, Uttar Pradesh (part of the Uttar Pradesh Defence Industrial Corridor).", "p2": "Exam Fact: UP Defence Industrial Corridor spans 6 nodes: Agra, Aligarh, Chitrakoot, Jhansi, Kanpur, and Lucknow."}, {"id": 145, "slide_q": 767, "cat": "Infrastructure, Ports & Energy", "q": "At which coastal location in Andhra Pradesh did Mazagon Dock Shipbuilders Limited (MDL) sign an MoU to develop a greenfield shipyard?", "opts": ["Visakhapatnam", "Dugarajapatnam (Tirupati district)", "Kakinada", "Krishnapatnam"], "ans": 1, "p1": "Location: Dugarajapatnam (Tirupati district, southern coastal Andhra Pradesh).", "p2": "Exam Fact: Mazagon Dock Shipbuilders Limited (MDL) is a Navratna CPSE headquartered in Mumbai, Maharashtra."}, {"id": 146, "slide_q": 768, "cat": "Government Schemes & Initiatives", "q": "In June 2026, Government e-Marketplace (GeM) signed an MoU with CSC e-Governance Services India (CSC SPV) to set up how many 'GeM Suvidha Kendras'?", "opts": ["100", "25", "50", "250"], "ans": 2, "p1": "Count: 50 GeM Suvidha Kendras across India.", "p2": "Exam Fact: Helps rural MSMEs, artisans, and SHGs register and sell on GeM via Common Service Centres."}, {"id": 147, "slide_q": 769, "cat": "Science, Space & Technology", "q": "Which French naval shipbuilding major signed an MoU with an Indian defence firm for naval defence technology collaboration?", "opts": ["Safran", "Dassault Aviation", "Thales Group", "Naval Group (France)"], "ans": 3, "p1": "Partner: Naval Group (Headquarters: Paris, France — builder of the Scorpène / Kalvari-class submarines for the Indian Navy).", "p2": "Exam Fact: Six Kalvari-class submarines (INS Kalvari, Khanderi, Karanj, Vela, Vagir, Vagsheer) were built at MDL Mumbai with Naval Group technology."}, {"id": 148, "slide_q": 770, "cat": "Infrastructure, Ports & Energy", "q": "State-owned helicopter operator Pawan Hans signed an MoU with Norway's Noemy Aerospace to explore which emerging aviation technology in India?", "opts": ["Electric Seaplanes", "Supersonic Business Jets", "Hydrogen Airships", "Solar Stratospheric Drones"], "ans": 0, "p1": "Technology: Zero-emission Electric Seaplanes for coastal, island, and riverine regional connectivity.", "p2": "Exam Fact: Pawan Hans Limited is a Mini Ratna CPSE under the Ministry of Civil Aviation (HQ: Noida)."}, {"id": 149, "slide_q": 771, "cat": "National & State Affairs", "q": "In September 2026, Bihar and Jharkhand signed an MoU resolving a 25-year water-sharing dispute over which river?", "opts": ["Damodar River", "Sone River (Son River)", "Subarnarekha River", "Kosi River"], "ans": 1, "p1": "River: Sone (Son) River — originates near Amarkantak in Madhya Pradesh and joins the Ganga near Patna, Bihar.", "p2": "Exam Fact: Resolves long-standing irrigation water allocation (Indrapuri Barrage / Bansagar) between Bihar and Jharkhand."}, {"id": 150, "slide_q": 772, "cat": "Science, Space & Technology", "q": "The Telangana Government partnered with which global technology giant to establish a 'Green Skilling / AI Skilling Centre' in the state?", "opts": ["Amazon", "Google", "Microsoft", "Meta"], "ans": 2, "p1": "Tech Partner: Microsoft (CEO: Satya Nadella; HQ: Redmond, Washington, USA).", "p2": "Exam Fact: Equips youth in Telangana with AI, cloud, and green technology skills."}, {"id": 151, "slide_q": 773, "cat": "Science, Space & Technology", "q": "Under an agreement between TDB (Technology Development Board) and BigEndian Semiconductors, what is the 'VEERA' chip being developed for?", "opts": ["EV Battery Management Controller", "5G Satellite Modem", "Quantum Encryption Hardware", "AI-Vision System-on-Chip (SoC) for edge surveillance and smart cameras"], "ans": 3, "p1": "Product: 'VEERA' — indigenous AI-Vision System-on-Chip (SoC) designed by Bengaluru-based fabless startup BigEndian Semiconductors.", "p2": "Exam Fact: Technology Development Board (TDB) is a statutory body under the Department of Science and Technology (DST)."}, {"id": 152, "slide_q": 774, "cat": "National & State Affairs", "q": "What is the validity period of the MoU signed between the Ministry of Tourism and Air India in July 2026 to promote inbound international tourism to India?", "opts": ["2 years", "1 year", "3 years", "5 years"], "ans": 0, "p1": "Duration: 2 years.", "p2": "Exam Fact: Promotes 'Incredible India' destinations across Air India's global route network."}, {"id": 153, "slide_q": 775, "cat": "Economy, GDP & Corporate Deals", "q": "Regarding Tamil Nadu's ₹18,600 crore MoU with L&T / industrial partners: (1) Statement 1 on aerospace/defence & clean-tech manufacturing is correct; (2) Located in Coimbatore (not Madurai); (3) Statement 3 on job creation is correct. Which statements are correct?", "opts": ["1 and 2 only", "1 and 3 only (Located in Coimbatore, not Madurai)", "2 and 3 only", "All 1, 2, and 3"], "ans": 1, "p1": "Correction Note: Statement 2 is incorrect because the project hub is in Coimbatore (not Madurai).", "p2": "Exam Fact: Coimbatore is a key node of the Tamil Nadu Defence Industrial Corridor (alongside Chennai, Hosur, Salem, and Tiruchirappalli)."}, {"id": 154, "slide_q": 776, "cat": "Infrastructure, Ports & Energy", "q": "Six northern states signed an MoU in June 2026 for the 'Kishau Multipurpose Dam Project' on the Tons River. What is the planned height of the Kishau Dam?", "opts": ["260.5 meters", "182 meters", "236 meters", "205 meters"], "ans": 2, "p1": "Height & Location: 236 meters high concrete gravity dam on the Tons River (a tributary of Yamuna) on the Himachal Pradesh–Uttarakhand border.", "p2": "Exam Fact: Tehri Dam (Uttarakhand, 260.5 m) is India's tallest dam; Kishau Dam (236 m) will be among the tallest in Asia."}, {"id": 155, "slide_q": 777, "cat": "Science, Space & Technology", "q": "Where did the Indian Institute of Tropical Meteorology (IITM) and ARIES establish a specialized atmospheric and climate research observatory in June 2026?", "opts": ["Kodaikanal, Tamil Nadu", "Hanle, Ladakh", "Mount Abu, Rajasthan", "Devasthal, Nainital (Uttarakhand)"], "ans": 3, "p1": "Location: Devasthal (near Nainital, Uttarakhand) — campus of Aryabhatta Research Institute of Observational Sciences (ARIES).", "p2": "Exam Fact: Devasthal also hosts Asia's largest optical telescope (3.6-meter Devasthal Optical Telescope) and the International Liquid Mirror Telescope."}, {"id": 156, "slide_q": 778, "cat": "Economy, GDP & Corporate Deals", "q": "NALCO (National Aluminium Company Limited) signed an agreement with which global aluminium producer for a 0.5 MTPA aluminium smelter expansion in Odisha?", "opts": ["Emirates Global Aluminium (EGA)", "Rio Tinto", "Alcoa", "Norsk Hydro"], "ans": 0, "p1": "Partner: Emirates Global Aluminium (EGA — headquartered in Abu Dhabi/Dubai, UAE).", "p2": "Exam Fact: NALCO is a Navratna CPSE under the Ministry of Mines (HQ: Bhubaneswar, Odisha)."}, {"id": 157, "slide_q": 779, "cat": "Science, Space & Technology", "q": "ISRO's Human Space Flight Centre (HSFC) signed an agreement with DST / academic partners to launch India's first postdoctoral fellowship in which emerging scientific field?", "opts": ["Exoplanet Mining", "Bioastronautics (Space Biology & Human Spaceflight Medicine)", "Dark Matter Propulsion", "Underwater Robotics"], "ans": 1, "p1": "Field: Bioastronautics — studies biological, physiological, and medical effects of microgravity and spaceflight on humans.", "p2": "Exam Fact: Supports India's Gaganyaan human spaceflight programme and Bharatiya Antariksh Station (BAS)."}, {"id": 158, "slide_q": 780, "cat": "Science, Space & Technology", "q": "In June 2026, the Ministry of Defence signed a ₹449 crore contract for software and combat systems to enhance the capabilities of which Indian Navy platform?", "opts": ["Submarine nuclear reactors", "Aircraft Carrier INS Vikrant hull", "GIS / Shipborne Combat & Navigation Systems (Jammers / EW Systems)", "Naval dockyard dry cranes"], "ans": 2, "p1": "Contract Value: ₹449 crore (signed by Ministry of Defence in June 2026).", "p2": "Exam Fact: Enhances indigenous electronic warfare and combat management capabilities of the Indian Navy."}, {"id": 159, "slide_q": 781, "cat": "Environment, Parks & GI Tags", "q": "UNDP partnered with Hindustan Unilever / partner organization in August 2026 to advance plastic waste circular economy initiatives across how many Indian cities?", "opts": ["100 cities", "25 cities", "75 cities", "50 cities"], "ans": 3, "p1": "Scale: 50 cities across India.", "p2": "Exam Fact: UNDP (United Nations Development Programme) is headquartered in New York City, USA."}, {"id": 160, "slide_q": 782, "cat": "Government Schemes & Initiatives", "q": "DoPPW (Department of Pension & Pensioners' Welfare) signed an MoU with Punjab National Bank to expand pensioner outreach and Digital Life Certificate awareness in rural India through which cadre?", "opts": ["Pension Sakhis", "Bank Sakhis", "Bima Sakhis", "Krishi Sakhis"], "ans": 0, "p1": "Cadre: 'Pension Sakhis' — trained women banking correspondents assisting rural pensioners with Jeevan Pramaan (Digital Life Certificates).", "p2": "Exam Fact: Jeevan Pramaan uses Aadhaar-based biometric/face authentication."}, {"id": 161, "slide_q": 783, "cat": "International & Summits", "q": "In August 2026, Defence Secretary Rajesh Kumar Singh co-chaired bilateral defence cooperation talks with Armenia in which capital city?", "opts": ["Tbilisi", "Yerevan", "Baku", "Minsk"], "ans": 1, "p1": "Capital & Currency: Yerevan is the capital of Armenia (Currency: Armenian Dram).", "p2": "Exam Fact: Armenia is a major importer of Indian defence systems including Akash missiles, Pinaka rockets, and Swathi radars."}, {"id": 162, "slide_q": 784, "cat": "Economy, GDP & Corporate Deals", "q": "Indian Oil Corporation Limited (IOCL) signed a 5-year petroleum supply agreement with the State Trading Corporation of which island nation?", "opts": ["Maldives", "Seychelles", "Mauritius", "Sri Lanka"], "ans": 2, "p1": "Country: Mauritius (Capital: Port Louis | Currency: Mauritian Rupee; PM: Navinchandra Ramgoolam).", "p2": "Exam Fact: IOCL has supplied Mauritius's fuel requirements for over two decades."}, {"id": 163, "slide_q": 785, "cat": "Economy, Agriculture & Research", "q": "ICAR and Food Corporation of India (FCI) partnered to develop safe chemical-free fumigation alternatives for foodgrain storage, implemented by which institute in Ludhiana?", "opts": ["ICAR-IIVR, Varanasi", "ICAR-IARI, New Delhi", "ICAR-NDRI, Karnal", "ICAR-CIPHET (Central Institute of Post-Harvest Engineering and Technology), Ludhiana"], "ans": 3, "p1": "Institute: ICAR-CIPHET in Ludhiana, Punjab.", "p2": "Exam Fact: FCI (Food Corporation of India) was established on 14 January 1965 under the Food Corporations Act, 1964 (HQ: New Delhi)."}, {"id": 164, "slide_q": 786, "cat": "Infrastructure, Ports & Energy", "q": "ReNew signed an MoU with the Maharashtra Government for a ₹70,000 crore Integrated Green Data Centre Park with what planned power capacity?", "opts": ["750 MW", "500 MW", "1,000 MW", "250 MW"], "ans": 0, "p1": "Outlay & Capacity: ₹70,000 crore investment — 750 MW green-powered data centre park in Maharashtra.", "p2": "Exam Fact: Maharashtra Chief Minister is Devendra Fadnavis."}, {"id": 165, "slide_q": 787, "cat": "International & Summits", "q": "Regarding the India–MERCOSUR Preferential Trade Agreement (PTA): (1) First PTA signed by India with a Latin American bloc; (2) Signed in 2004 and operationalized in 2009 (not signed 2009 / operational 2014); (3) Covers Brazil, Argentina, Uruguay, and Paraguay; (4) Initially covered 450 tariff lines (not 1,450). Which statements are correct?", "opts": ["1 and 2 only", "1 and 3 only (Signed in 2004, effective 2009; 450 tariff lines)", "2 and 4 only", "All 1, 2, 3, and 4"], "ans": 1, "p1": "Corrections: India–MERCOSUR PTA was signed in January 2004 and entered into force in June 2009, covering 450 tariff lines (not 1,450).", "p2": "Exam Fact: MERCOSUR full members are Argentina, Brazil, Paraguay, Uruguay, and Bolivia."}, {"id": 166, "slide_q": 788, "cat": "Science, Space & Technology", "q": "Hindustan Aeronautics Limited (HAL) signed a contract with SkyPlus / defence partner for a 30-helicopter programme worth what amount?", "opts": ["₹3,800 crore", "₹1,500 crore", "₹2,491 crore", "₹5,100 crore"], "ans": 2, "p1": "Deal Value: ₹2,491 crore.", "p2": "Exam Fact: Strengthens indigenous rotary-wing manufacturing and support."}, {"id": 167, "slide_q": 789, "cat": "Science, Space & Technology", "q": "With which IIT did a telecom leader sign an MoU in June 2026 to set up a Centre of Excellence in 5G-Advanced and 6G wireless technologies?", "opts": ["IIT Roorkee", "IIT Madras", "IIT Kanpur", "IIT Hyderabad"], "ans": 3, "p1": "Institute: IIT Hyderabad (Sangareddy, Telangana).", "p2": "Exam Fact: Aligns with India's Bharat 6G Vision (targeting 6G rollout by 2030)."}, {"id": 168, "slide_q": 790, "cat": "Science, Space & Technology", "q": "In May 2026, the Odisha Government signed an MoU with Intel and 3D Glass Solutions to set up an advanced semiconductor glass-core substrate manufacturing facility with what investment size?", "opts": ["USD 3.3 billion", "USD 1.5 billion", "USD 5.0 billion", "USD 8.2 billion"], "ans": 0, "p1": "Investment: USD 3.3 billion in Odisha.", "p2": "Exam Fact: Glass-core substrates enable next-generation high-density AI chiplet packaging."}, {"id": 169, "slide_q": 791, "cat": "Infrastructure, Ports & Energy", "q": "NLC India Limited signed an MoU with IPICOL for green energy and thermal/mining investments worth ₹37,000 crore in which state?", "opts": ["Tamil Nadu", "Odisha", "Jharkhand", "Rajasthan"], "ans": 1, "p1": "State: Odisha (IPICOL = Industrial Promotion and Investment Corporation of Odisha Limited).", "p2": "Exam Fact: NLC India Limited is a Navratna CPSE headquartered in Neyveli, Tamil Nadu."}, {"id": 170, "slide_q": 792, "cat": "Science, Space & Technology", "q": "In September 2026, CISF (Central Industrial Security Force) signed two MoUs with which IIT to enhance cybersecurity and anti-drone defence capabilities at critical installations?", "opts": ["IIT Delhi", "IIT Bombay", "IIT Kanpur", "IIT Guwahati"], "ans": 2, "p1": "Institute: IIT Kanpur (Uttar Pradesh).", "p2": "Exam Fact: CISF (established in 1969) protects airports, seaports, nuclear plants, and Delhi Metro."}, {"id": 171, "slide_q": 793, "cat": "National & State Affairs", "q": "Under the Letter of Intent signed between the Maharashtra Government and 'Google for Education' in June 2026, how many teachers will be trained in AI and digital classroom tools?", "opts": ["10 lakh teachers", "1 lakh teachers", "2.5 lakh teachers", "4 lakh teachers"], "ans": 3, "p1": "Target: 4 lakh (400,000) teachers across Maharashtra.", "p2": "Exam Fact: Integrates Google Workspace and generative AI teaching aids into state schools."}, {"id": 172, "slide_q": 794, "cat": "International & Summits", "q": "In which city was the 2nd 'Pax Silica' Summit held, where India joined 34 other nations in signing a critical semiconductor & AI supply chain opportunity statement?", "opts": ["Washington, D.C., USA", "Tokyo, Japan", "Seoul, South Korea", "Brussels, Belgium"], "ans": 0, "p1": "Venue: Washington, D.C., United States (35 participating nations including India).", "p2": "Exam Fact: Secures resilient global silicon, semiconductor, and AI hardware supply chains."}, {"id": 173, "slide_q": 796, "cat": "National & State Affairs", "q": "In which Indian city was the 'First International Maize Conference' hosted?", "opts": ["Ludhiana, Punjab", "New Delhi", "Hyderabad, Telangana", "Bengaluru, Karnataka"], "ans": 2, "p1": "Host City: Hyderabad, Telangana.", "p2": "Exam Fact: Maize (corn) is a key Kharif and Rabi crop used for food, poultry feed, and bio-ethanol production."}, {"id": 174, "slide_q": 797, "cat": "National & State Affairs", "q": "Which edition of 'Bharat Tex 2026' (India's flagship global textile expo) was held at Bharat Mandapam, New Delhi from 14 to 17 July 2026?", "opts": ["4th edition", "1st edition", "2nd edition", "3rd edition"], "ans": 3, "p1": "Edition & Venue: 3rd edition held at Bharat Mandapam, Pragati Maidan, New Delhi.", "p2": "Exam Fact: Union Minister of Textiles is Giriraj Singh."}, {"id": 175, "slide_q": 798, "cat": "Polity, Bills & Governance", "q": "Union Home Minister Amit Shah chaired the 10th apex-level meeting of 'NCORD' in June 2026. Which domain does NCORD oversee?", "opts": ["Narcotics Control (Narco Coordination Centre)", "Coastal Radar Defence", "Cyber Crime Forensics", "Disaster Relief Logistics"], "ans": 0, "p1": "Full Form: NCORD = Narco Coordination Centre (established in 2016 under the Ministry of Home Affairs).", "p2": "Exam Fact: Narcotics Control Bureau (NCB) was established in 1986 under the NDPS Act, 1985."}];
+
+let mode = 'learn';
+let hideAnswers = false;
+let userAnswers = {};
+
+function setup() {
+  const select = document.getElementById('catSelect');
+  const uniqueCats = [...new Set(QUESTIONS.map(q => q.cat))];
+  uniqueCats.forEach(cat => {
+    const count = QUESTIONS.filter(q => q.cat === cat).length;
+    const option = document.createElement('option');
+    option.value = cat;
+    option.textContent = `${cat} (${count})`;
+    select.appendChild(option);
+  });
+  refreshStats();
+  render();
+}
+
+function setMode(newMode) {
+  mode = newMode;
+  document.getElementById('btn-learn').classList.toggle('active', mode === 'learn');
+  document.getElementById('btn-practice').classList.toggle('active', mode === 'practice');
+  document.getElementById('blurBtn').classList.toggle('hidden', mode !== 'learn');
+  render();
+}
+
+function toggleBlur() {
+  hideAnswers = !hideAnswers;
+  document.getElementById('blurBtn').textContent = hideAnswers
+    ? '👁️ Show All Answers'
+    : '👁️ Hide Answers (Self-Test)';
+  render();
+}
+
+function getFilteredList() {
+  const cat = document.getElementById('catSelect').value;
+  const term = document.getElementById('searchBox').value.trim().toLowerCase();
+
+  return QUESTIONS.filter(item => {
+    if (cat !== 'ALL' && item.cat !== cat) return false;
+    if (!term) return true;
+    return (
+      item.q.toLowerCase().includes(term) ||
+      item.opts.some(o => o.toLowerCase().includes(term)) ||
+      item.p1.toLowerCase().includes(term) ||
+      item.p2.toLowerCase().includes(term) ||
+      String(item.slide_q).includes(term)
+    );
+  });
+}
+
+function render() {
+  const list = getFilteredList();
+  document.getElementById('showingCount').textContent = `Showing ${list.length} question${list.length === 1 ? '' : 's'}`;
+  const container = document.getElementById('cardsContainer');
+
+  if (list.length === 0) {
+    container.innerHTML = `<div class="no-results">No questions match your filter. Clear search or switch category.</div>`;
+    return;
+  }
+
+  container.innerHTML = list
+    .map(item => (mode === 'learn' ? buildLearnCard(item) : buildPracticeCard(item)))
+    .join('');
+}
+
+function buildLearnCard(item) {
+  const answerText = item.opts[item.ans];
+  const blurClass = hideAnswers ? 'blurred' : '';
+  return `
+    <div class="card">
+      <div class="card-top">
+        <div class="badge-group">
+          <span class="badge-num">Q.${item.id}</span>
+          <span class="badge-seq">Slide #${item.slide_q}</span>
+        </div>
+        <span class="badge-cat">${item.cat}</span>
+      </div>
+      <div class="question-text">${item.q}</div>
+      <div class="learn-answer-box ${blurClass}" onclick="this.classList.remove('blurred')" title="Click to reveal answer">
+        ✓ Answer: ${answerText}
+      </div>
+      <div class="exam-points">
+        <div class="exam-points-heading">📌 2 Exam-Related Extra Points</div>
+        <ul>
+          <li>${item.p1}</li>
+          <li>${item.p2}</li>
+        </ul>
+      </div>
+    </div>
+  `;
+}
+
+function buildPracticeCard(item) {
+  const record = userAnswers[item.id];
+  const isAnswered = record !== undefined;
+  const letters = ['A', 'B', 'C', 'D'];
+
+  const optsMarkup = item.opts
+    .map((opt, idx) => {
+      let cls = '';
+      if (isAnswered) {
+        if (idx === item.ans) cls = 'correct';
+        else if (idx === record.picked && !record.correct) cls = 'wrong';
+      }
+      return `
+        <button class="option-btn ${cls}" ${isAnswered ? 'disabled' : ''} onclick="selectOption(${item.id}, ${idx})">
+          <span class="opt-circle">${letters[idx]}</span>
+          <span>${opt}</span>
+        </button>
+      `;
+    })
+    .join('');
+
+  const bannerMarkup = isAnswered
+    ? record.correct
+      ? `<span class="result-pill right">✓ Correct!</span>`
+      : `<span class="result-pill wrong">✕ Wrong Answer</span>`
+    : '';
+
+  return `
+    <div class="card" id="card-${item.id}">
+      <div class="card-top">
+        <div class="badge-group">
+          <span class="badge-num">Q.${item.id}</span>
+          <span class="badge-seq">Slide #${item.slide_q}</span>
+        </div>
+        <span class="badge-cat">${item.cat}</span>
+      </div>
+      <div class="question-text">${item.q}</div>
+      <div class="options-list">
+        ${optsMarkup}
+      </div>
+      <div class="answer-panel ${isAnswered ? 'visible' : ''}" id="panel-${item.id}">
+        <div class="result-banner">
+          ${bannerMarkup}
+          <div class="correct-label">Correct Answer: <span>${letters[item.ans]}. ${item.opts[item.ans]}</span></div>
+        </div>
+        <div class="exam-points">
+          <div class="exam-points-heading">📌 2 Exam-Related Extra Points</div>
+          <ul>
+            <li>${item.p1}</li>
+            <li>${item.p2}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+function selectOption(qId, pickedIdx) {
+  if (userAnswers[qId] !== undefined) return;
+  const item = QUESTIONS.find(q => q.id === qId);
+  if (!item) return;
+
+  userAnswers[qId] = {
+    picked: pickedIdx,
+    correct: pickedIdx === item.ans
+  };
+
+  refreshStats();
+  const cardEl = document.getElementById(`card-${qId}`);
+  if (cardEl) {
+    cardEl.outerHTML = buildPracticeCard(item);
+  }
+}
+
+function refreshStats() {
+  const keys = Object.keys(userAnswers);
+  const attempted = keys.length;
+  const correct = keys.filter(k => userAnswers[k].correct).length;
+  const wrong = attempted - correct;
+
+  document.getElementById('cnt-attempted').textContent = attempted;
+  document.getElementById('cnt-correct').textContent = correct;
+  document.getElementById('cnt-wrong').textContent = wrong;
+}
+
+function resetAll() {
+  userAnswers = {};
+  refreshStats();
+  render();
+}
+
+setup();
+</script>
+</body>
+</html>

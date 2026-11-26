@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>6-Month CA Rapid Revision (Part 5: Slides #601–#798) — Repeated Revision Questions — Learn & Practice (White Theme)</title>
+<style>
+  :root {
+    --bg-page: #ffffff;
+    --bg-panel: #f9fafb;
+    --bg-card: #ffffff;
+    --border-light: #e5e7eb;
+    --border-strong: #d1d5db;
+    --text-main: #111827;
+    --text-sub: #4b5563;
+    --text-muted: #6b7280;
+    --primary: #1d4ed8;
+    --primary-soft: #eff6ff;
+    --primary-border: #bfdbfe;
+    --green-bg: #f0fdf4;
+    --green-border: #22c55e;
+    --green-text: #15803d;
+    --red-bg: #fef2f2;
+    --red-border: #ef4444;
+    --red-text: #b91c1c;
+    --amber-bg: #fffbeb;
+    --amber-border: #f59e0b;
+    --amber-text: #92400e;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background-color: var(--bg-page);
+    color: var(--text-main);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Arial, sans-serif;
+    line-height: 1.6;
+  }
+
+  header {
+    background-color: #ffffff;
+    border-bottom: 1px solid var(--border-light);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 14px 20px;
+  }
+
+  .header-wrap {
+    max-width: 1060px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .title-block h1 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--text-main);
+  }
+
+  .title-block p {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+  }
+
+  .tabs {
+    display: inline-flex;
+    background-color: var(--bg-panel);
+    border: 1px solid var(--border-light);
+    border-radius: 8px;
+    padding: 4px;
+    gap: 4px;
+  }
+
+  .tab-btn {
+    border: none;
+    background: transparent;
+    color: var(--text-sub);
+    font-size: 0.88rem;
+    font-weight: 600;
+    padding: 7px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.15s ease;
+  }
+
+  .tab-btn.active {
+    background-color: #ffffff;
+    color: var(--primary);
+    border: 1px solid var(--border-light);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
+  }
+
+  .main-container {
+    max-width: 1060px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .controls-bar {
+    background-color: var(--bg-panel);
+    border: 1px solid var(--border-light);
+    border-radius: 10px;
+    padding: 12px 16px;
+    margin-bottom: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .filter-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    flex: 1;
+  }
+
+  select, input[type="text"] {
+    background-color: #ffffff;
+    color: var(--text-main);
+    border: 1px solid var(--border-strong);
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 0.875rem;
+    outline: none;
+  }
+
+  select:focus, input[type="text"]:focus {
+    border-color: var(--primary);
+  }
+
+  input[type="text"] {
+    min-width: 230px;
+  }
+
+  .score-group {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.84rem;
+    font-weight: 600;
+  }
+
+  .pill {
+    background-color: #ffffff;
+    border: 1px solid var(--border-light);
+    border-radius: 999px;
+    padding: 4px 11px;
+    color: var(--text-sub);
+  }
+
+  .pill.green {
+    background-color: var(--green-bg);
+    border-color: var(--green-border);
+    color: var(--green-text);
+  }
+
+  .pill.red {
+    background-color: var(--red-bg);
+    border-color: var(--red-border);
+    color: var(--red-text);
+  }
+
+  .action-btn {
+    background-color: #ffffff;
+    color: var(--text-main);
+    border: 1px solid var(--border-strong);
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .action-btn:hover {
+    background-color: #f3f4f6;
+  }
+
+  .learn-subbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 14px;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+  }
+
+  .card {
+    background-color: #ffffff;
+    border: 1px solid var(--border-light);
+    border-radius: 10px;
+    padding: 18px 20px;
+    margin-bottom: 14px;
+  }
+
+  .card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    gap: 8px;
+  }
+
+  .badge-group {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .badge-num {
+    background-color: var(--primary-soft);
+    color: var(--primary);
+    border: 1px solid var(--primary-border);
+    font-size: 0.78rem;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 5px;
+  }
+
+  .badge-seq {
+    background-color: var(--bg-panel);
+    color: var(--text-sub);
+    border: 1px solid var(--border-light);
+    font-size: 0.74rem;
+    font-weight: 600;
+    padding: 2px 7px;
+    border-radius: 5px;
+  }
+
+  .badge-cat {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+
+  .question-text {
+    font-size: 1.02rem;
+    font-weight: 600;
+    color: var(--text-main);
+    margin-bottom: 12px;
+  }
+
+  .learn-answer-box {
+    display: inline-block;
+    background-color: var(--green-bg);
+    border: 1px solid #bbf7d0;
+    color: var(--green-text);
+    font-weight: 700;
+    font-size: 0.94rem;
+    padding: 6px 12px;
+    border-radius: 6px;
+    margin-bottom: 12px;
+  }
+
+  .learn-answer-box.blurred {
+    filter: blur(5px);
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .exam-points {
+    background-color: var(--amber-bg);
+    border: 1px solid #fde68a;
+    border-left: 4px solid var(--amber-border);
+    border-radius: 6px;
+    padding: 10px 14px;
+  }
+
+  .exam-points-heading {
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--amber-text);
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    margin-bottom: 4px;
+  }
+
+  .exam-points ul {
+    margin-left: 18px;
+    font-size: 0.88rem;
+    color: #374151;
+  }
+
+  .exam-points li {
+    margin-bottom: 3px;
+  }
+
+  .options-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 10px;
+  }
+
+  .option-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    text-align: left;
+    background-color: #ffffff;
+    border: 1.5px solid var(--border-light);
+    border-radius: 8px;
+    padding: 11px 14px;
+    font-size: 0.92rem;
+    font-weight: 500;
+    color: var(--text-main);
+    cursor: pointer;
+    transition: all 0.15s ease;
+  }
+
+  .option-btn:hover:not(:disabled) {
+    border-color: var(--primary);
+    background-color: var(--primary-soft);
+  }
+
+  .option-btn:disabled {
+    cursor: default;
+  }
+
+  .opt-circle {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: var(--bg-panel);
+    border: 1px solid var(--border-strong);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--text-sub);
+    flex-shrink: 0;
+  }
+
+  .option-btn.correct {
+    background-color: var(--green-bg);
+    border-color: var(--green-border);
+    color: var(--green-text);
+    font-weight: 700;
+  }
+
+  .option-btn.correct .opt-circle {
+    background-color: var(--green-border);
+    border-color: var(--green-border);
+    color: #ffffff;
+  }
+
+  .option-btn.wrong {
+    background-color: var(--red-bg);
+    border-color: var(--red-border);
+    color: var(--red-text);
+    font-weight: 600;
+  }
+
+  .option-btn.wrong .opt-circle {
+    background-color: var(--red-border);
+    border-color: var(--red-border);
+    color: #ffffff;
+  }
+
+  .answer-panel {
+    display: none;
+    margin-top: 14px;
+    padding-top: 14px;
+    border-top: 1px solid var(--border-light);
+    animation: slideDown 0.18s ease-out;
+  }
+
+  .answer-panel.visible {
+    display: block;
+  }
+
+  .result-banner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+
+  .result-pill {
+    font-size: 0.84rem;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 6px;
+  }
+
+  .result-pill.right {
+    background-color: var(--green-bg);
+    color: var(--green-text);
+    border: 1px solid var(--green-border);
+  }
+
+  .result-pill.wrong {
+    background-color: var(--red-bg);
+    color: var(--red-text);
+    border: 1px solid var(--red-border);
+  }
+
+  .correct-label {
+    font-size: 0.92rem;
+    font-weight: 700;
+    color: var(--text-main);
+  }
+
+  .correct-label span {
+    color: var(--green-text);
+  }
+
+  .hidden {
+    display: none !important;
+  }
+
+  .no-results {
+    text-align: center;
+    padding: 40px 20px;
+    border: 1px dashed var(--border-strong);
+    border-radius: 10px;
+    color: var(--text-muted);
+  }
+
+  @keyframes slideDown {
+    from { opacity: 0; transform: translateY(-4px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @media (max-width: 640px) {
+    .header-wrap { flex-direction: column; align-items: flex-start; }
+    .options-list { grid-template-columns: 1fr; }
+    input[type="text"] { width: 100%; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-wrap">
+    <div class="title-block">
+      <h1>6-Month CA Rapid Revision (Part 5: Slides #601–#798) — Repeated Revision Questions (21 Questions)</h1>
+      <p>Pradeep Sir & Gokulraj Sir Session (English) | Questions Overlapping with Previous 16 HTML Files</p>
+    </div>
+    <div class="tabs">
+      <button class="tab-btn active" id="btn-learn" onclick="setMode('learn')">📖 Learn Mode</button>
+      <button class="tab-btn" id="btn-practice" onclick="setMode('practice')">✍️ Practice MCQs</button>
+    </div>
+  </div>
+</header>
+
+<div class="main-container">
+  <div class="controls-bar">
+    <div class="filter-group">
+      <select id="catSelect" onchange="render()">
+        <option value="ALL">All Categories (21)</option>
+      </select>
+      <input type="text" id="searchBox" placeholder="Search question, answer, or extra points..." oninput="render()">
+    </div>
+    <div class="score-group">
+      <span class="pill">Attempted: <span id="cnt-attempted">0</span>/21</span>
+      <span class="pill green">Correct: <span id="cnt-correct">0</span></span>
+      <span class="pill red">Wrong: <span id="cnt-wrong">0</span></span>
+      <button class="action-btn" onclick="resetAll()">Reset Practice</button>
+    </div>
+  </div>
+
+  <div class="learn-subbar" id="learnSubbar">
+    <span id="showingCount">Showing 21 questions</span>
+    <button class="action-btn" id="blurBtn" onclick="toggleBlur()">👁️ Hide Answers (Self-Test)</button>
+  </div>
+
+  <div id="cardsContainer"></div>
+</div>
+
+<script>
+const QUESTIONS = [{"id": 1, "slide_q": 604, "cat": "Awards & Honours", "q": "Which film won the 'Best Film' award at the 26th IIFA Awards 2026?", "opts": ["Dhurandhar", "Saiyaara", "Chhaava", "Article 370"], "ans": 0, "p1": "Repeated From Previous Sources: Veranda Part 4 (New) Q.123 — 'Dhurandhar' & Ranveer Singh winning at the 26th IIFA Awards 2026.", "p2": "Exam Fact: Best Actress at IIFA 2026 was won by Aneet Padda for 'Saiyaara'."}, {"id": 2, "slide_q": 611, "cat": "Awards & Honours", "q": "Who won the Best Performance in a Negative Role award at the 26th IIFA Awards for 'Dhurandhar'?", "opts": ["R. Madhavan", "Bobby Deol", "Arjun Rampal", "Akshaye Khanna"], "ans": 3, "p1": "Repeated From Previous Sources: Veranda Part 4 (New) Q.123 — IIFA Awards 2026 winners for 'Dhurandhar'.", "p2": "Exam Fact: 'Dhurandhar' also won Best Film and Best Actor (Ranveer Singh) at IIFA 2026."}, {"id": 3, "slide_q": 616, "cat": "Appointments & Committees", "q": "RBI approved the appointment of Anup Bagchi as MD & CEO of HDFC Bank. What makes his appointment historically notable for HDFC Bank?", "opts": ["He is the first external candidate to lead HDFC Bank as MD & CEO", "He is the youngest bank CEO in India under age 35", "He is the first foreign national to head an Indian private bank", "He simultaneously serves as RBI Deputy Governor"], "ans": 0, "p1": "Repeated From Previous Sources: Priya Ma'am 6M GA (New) Q.198 — Anup Bagchi appointed MD & CEO of HDFC Bank.", "p2": "Exam Fact: Anup Bagchi previously served as MD & CEO of ICICI Prudential Life Insurance and Executive Director at ICICI Bank."}, {"id": 4, "slide_q": 618, "cat": "Appointments & Committees", "q": "Who was elected President of the 81st Session of the United Nations General Assembly (UNGA) in June 2026?", "opts": ["Philemon Yang", "Annalena Baerbock", "Khalilur Rahman", "Dennis Francis"], "ans": 2, "p1": "Repeated From Previous Sources: Priya Ma'am 6M GA (Repeated) Q.3 & September Static Q.122 — Khalilur Rahman elected President of 81st UNGA Session.", "p2": "Exam Fact: UNGA comprises all 193 UN Member States."}, {"id": 5, "slide_q": 633, "cat": "Appointments & Committees", "q": "In the gubernatorial reshuffle, who was appointed as the Governor of Tamil Nadu (succeeding R. N. Ravi, who moved to West Bengal)?", "opts": ["C. P. Radhakrishnan", "Rajendra Vishwanath Arlekar", "Om Prakash Mathur", "Arif Mohammad Khan"], "ans": 1, "p1": "Repeated From Previous Sources: Priya Ma'am 6M GA (New) Q.232 — Gubernatorial reshuffle (R. N. Ravi moved to West Bengal; Rajendra Vishwanath Arlekar to Tamil Nadu).", "p2": "Exam Fact: Governors of states are appointed by the President of India under Article 155."}, {"id": 6, "slide_q": 634, "cat": "Appointments & Committees", "q": "RBI approved the appointment of Mahesh Muralidhar Pai as MD & CEO of which private sector bank?", "opts": ["Karur Vysya Bank", "Federal Bank", "South Indian Bank", "City Union Bank"], "ans": 2, "p1": "Repeated From Previous Sources: Veranda Part 5 Q.622 — Mahesh Muralidhar Pai appointed MD & CEO of South Indian Bank.", "p2": "Exam Fact: Prior RBI approval is required for appointment of MD & CEO of banking companies under Section 35B of the Banking Regulation Act, 1949."}, {"id": 7, "slide_q": 641, "cat": "Appointments & Committees", "q": "Who assumed charge as the Chief of the Army Staff (COAS) of the Indian Army on 30 June 2026?", "opts": ["General Upendra Dwivedi", "General Dhiraj Seth", "General Manoj Pande", "Lieutenant General N. S. Raja Subramani"], "ans": 1, "p1": "Repeated From Previous Sources: Banking Awareness PDF (New) Q.276 — Chief of the Army Staff appointment.", "p2": "Exam Fact: Indian Army Day is celebrated annually on 15 January."}, {"id": 8, "slide_q": 643, "cat": "Appointments & Committees", "q": "Who was appointed Acting Central Vigilance Commissioner (CVC)?", "opts": ["Sharad Kumar", "Praveen Kumar Srivastava", "Arvinda Kumar", "Suresh N. Patel"], "ans": 3, "p1": "Repeated From Previous Sources: Veranda Part 2 (New) Q.172 — Suresh N. Patel & Central Vigilance Commission.", "p2": "Exam Fact: CVC tenure is 4 years or until attaining age 65, whichever is earlier."}, {"id": 9, "slide_q": 651, "cat": "Science, Space & Technology", "q": "IAF Chief Air Chief Marshal Ashutosh Dixit outlined the Indian Air Force's modernization vision under the 'VAYU' framework. What does the 'Y' in VAYU stand for?", "opts": ["Yuva", "Yoddha", "Yantra", "Yukti"], "ans": 3, "p1": "Repeated From Previous Sources: Veranda Part 5 Q.690 — IAF Chief Air Chief Marshal Ashutosh Dixit's VAYU vision framework.", "p2": "Exam Fact: Indian Air Force Day is observed annually on 8 October."}, {"id": 10, "slide_q": 654, "cat": "Appointments & Committees", "q": "Who was elected President of FICCI (Federation of Indian Chambers of Commerce & Industry) for the 2026–27 term?", "opts": ["Anish Shah", "Harsha Vardhan Agarwal", "Vijay Sankar", "Subhrakant Panda"], "ans": 2, "p1": "Repeated From Previous Sources: Priya Ma'am 6M GA (New) Q.207 — Vijay Sankar elected President of FICCI for 2026–27.", "p2": "Exam Fact: Vijay Sankar is Chairman of The Sanmar Group (Chennai)."}, {"id": 11, "slide_q": 668, "cat": "Appointments & Committees", "q": "Whom will Anup Kumar Saha succeed as the MD & CEO of Kotak Mahindra Bank?", "opts": ["Ashok Vaswani", "Uday Kotak", "Dipak Gupta", "Shanti Ekambaram"], "ans": 0, "p1": "Repeated From Previous Sources: Priya Ma'am 6M GA (New) Q.156 — Anup Kumar Saha succeeding Ashok Vaswani as MD & CEO of Kotak Mahindra Bank.", "p2": "Exam Fact: Kotak Mahindra Bank is headquartered in Mumbai, Maharashtra."}, {"id": 12, "slide_q": 679, "cat": "Appointments & Committees", "q": "Hitesh Rameshchandra Joshi was appointed CMD of GIC Re (General Insurance Corporation of India). What is GIC Re's specialized role in India?", "opts": ["Export credit guarantee agency", "India's largest life insurer", "Agricultural crop insurance regulator", "India's sole domestic National Reinsurer"], "ans": 3, "p1": "Repeated From Previous Sources: Banking Awareness PDF (New) Q.218 — General Insurance Corporation of India (GIC Re) as India's National Reinsurer.", "p2": "Exam Fact: Reinsurance allows primary insurers to transfer a portion of their risk portfolios to reduce catastrophic loss exposure."}, {"id": 13, "slide_q": 680, "cat": "Appointments & Committees", "q": "Vinai Kumar Saxena (Lt. Governor of Ladakh) was given additional charge as Lieutenant Governor of which Union Territory?", "opts": ["Jammu & Kashmir", "Delhi", "Puducherry", "Chandigarh"], "ans": 0, "p1": "Repeated From Previous Sources: Veranda Part 2 (Repeated) Q.9 — Vinai Kumar Saxena (Lt. Governor of Ladakh) given additional charge of Jammu & Kashmir.", "p2": "Exam Fact: J&K and Ladakh were reorganized into two separate Union Territories on 31 October 2019."}, {"id": 14, "slide_q": 690, "cat": "Appointments & Committees", "q": "IAF Chief Air Chief Marshal Ashutosh Dixit outlined the Air Force's transformation roadmap under which acronym?", "opts": ["TEJAS", "GAGAN", "VAYU (Vision for Agile, Yukti-driven, Unified Air Force)", "SHAKTI"], "ans": 2, "p1": "Repeated From Previous Sources: Veranda Part 5 Q.651 — IAF Chief Air Chief Marshal Ashutosh Dixit's VAYU framework.", "p2": "Exam Fact: Focuses on network-centric warfare, indigenous combat aircraft, and space-air integration."}, {"id": 15, "slide_q": 714, "cat": "Mergers & Acquisitions", "q": "Sumitomo Mitsui Trust Bank acquired a minority stake in OnePlanet Partners alongside launching its maiden India-focused private equity fund with what target corpus size?", "opts": ["₹3,000 crore", "₹5,000 crore", "₹1,500 crore", "₹10,000 crore"], "ans": 0, "p1": "Repeated From Previous Sources: Priya Ma'am 6M GA (New) Q.204 — Sumitomo Mitsui Trust Bank partnering with OnePlanet Partners for maiden PE fund.", "p2": "Exam Fact: Sumitomo Mitsui Trust Bank is Japan's largest trust bank (HQ: Tokyo)."}, {"id": 16, "slide_q": 716, "cat": "Mergers & Acquisitions", "q": "Regarding the IDBI Bank Strategic Disinvestment Approval: (1) Statements 1 and 3 on Fairfax India's 60.72% acquisition and regulatory clearances are correct; (2) Statements 2 and 4 contain incorrect figures. Which statements are correct?", "opts": ["2 and 4 only", "1 and 2 only", "1 and 3 only", "All 1, 2, 3, and 4"], "ans": 2, "p1": "Repeated From Previous Sources: Priya Ma'am 6M GA (New) Q.203 — IDBI Bank 60.72% strategic stake sale.", "p2": "Exam Fact: Managed by the Department of Investment and Public Asset Management (DIPAM), Ministry of Finance."}, {"id": 17, "slide_q": 723, "cat": "Mergers & Acquisitions", "q": "In June 2026, President Droupadi Murmu / Union Cabinet approved the merger of Rural Electrification Corporation Limited (REC) into which Maharatna CPSE?", "opts": ["NTPC Limited", "Power Finance Corporation Limited (PFC)", "Power Grid Corporation of India", "NHPC Limited"], "ans": 1, "p1": "Repeated From Previous Sources: Veranda Part 3 (New) Q.32 — Merger of REC Limited into Power Finance Corporation (PFC).", "p2": "Exam Fact: Share swap ratio approved at 88 PFC shares for every 100 REC shares."}, {"id": 18, "slide_q": 732, "cat": "International & Summits", "q": "What status did India hold at 'Gulfood 2026' (organized in Dubai, UAE with APEDA participation)?", "opts": ["Host Nation", "Observer Delegation", "Official Partner Country", "Guest Sponsor"], "ans": 2, "p1": "Repeated From Previous Sources: Veranda Part 2 (New) Q.42 — APEDA export promotion initiatives in Dubai, UAE.", "p2": "Exam Fact: APEDA stands for Agricultural and Processed Food Products Export Development Authority (HQ: New Delhi)."}, {"id": 19, "slide_q": 750, "cat": "Science, Space & Technology", "q": "C-DOT (Centre for Development of Telematics) signed an agreement with which premier institute in June 2026 to set up a Centre of Excellence in quantum/telecom technologies?", "opts": ["IISc Bengaluru", "IIT Madras", "IIT Delhi", "TIFR Mumbai"], "ans": 0, "p1": "Repeated From Previous Sources: Veranda Part 1 (New) Q.20 — C-DOT (Centre for Development of Telematics, founded 1984) R&D initiatives.", "p2": "Exam Fact: C-DOT was founded in 1984 (HQ: New Delhi)."}, {"id": 20, "slide_q": 760, "cat": "Health & Traditional Medicine", "q": "CCRAS (Central Council for Research in Ayurvedic Sciences) signed an MoU with BIS / international partners to develop international quality standards for AYUSH. What milestone did this MoU mark?", "opts": ["It established the first Ayurveda university in Europe", "It was India's first WHO treaty on Yoga", "It was the 100th MoU signed by CCRAS", "It banned all herbal exports"], "ans": 2, "p1": "Repeated From Previous Sources: Banking Awareness PDF (New) Q.135 — Ministry of Ayush & CCRAS initiatives.", "p2": "Exam Fact: National Ayurveda Day is observed on Dhanvantari Jayanti (Dhanteras)."}, {"id": 21, "slide_q": 795, "cat": "International & Summits", "q": "What was the official theme of the World Health Summit 2026 held in Berlin, Germany?", "opts": ["One Health for a Sustainable Future", "From Crisis to Resilience: Innovating for Health", "Global Health Equity in the AI Era", "Building Trust for Healthier Societies"], "ans": 1, "p1": "Repeated From Previous Sources: Priya Ma'am 6M GA (New) Q.249 — World Health Summit 2026 held in Berlin, Germany.", "p2": "Exam Fact: World Health Summit has been hosted annually in Berlin since 2009."}];
+
+let mode = 'learn';
+let hideAnswers = false;
+let userAnswers = {};
+
+function setup() {
+  const select = document.getElementById('catSelect');
+  const uniqueCats = [...new Set(QUESTIONS.map(q => q.cat))];
+  uniqueCats.forEach(cat => {
+    const count = QUESTIONS.filter(q => q.cat === cat).length;
+    const option = document.createElement('option');
+    option.value = cat;
+    option.textContent = `${cat} (${count})`;
+    select.appendChild(option);
+  });
+  refreshStats();
+  render();
+}
+
+function setMode(newMode) {
+  mode = newMode;
+  document.getElementById('btn-learn').classList.toggle('active', mode === 'learn');
+  document.getElementById('btn-practice').classList.toggle('active', mode === 'practice');
+  document.getElementById('blurBtn').classList.toggle('hidden', mode !== 'learn');
+  render();
+}
+
+function toggleBlur() {
+  hideAnswers = !hideAnswers;
+  document.getElementById('blurBtn').textContent = hideAnswers
+    ? '👁️ Show All Answers'
+    : '👁️ Hide Answers (Self-Test)';
+  render();
+}
+
+function getFilteredList() {
+  const cat = document.getElementById('catSelect').value;
+  const term = document.getElementById('searchBox').value.trim().toLowerCase();
+
+  return QUESTIONS.filter(item => {
+    if (cat !== 'ALL' && item.cat !== cat) return false;
+    if (!term) return true;
+    return (
+      item.q.toLowerCase().includes(term) ||
+      item.opts.some(o => o.toLowerCase().includes(term)) ||
+      item.p1.toLowerCase().includes(term) ||
+      item.p2.toLowerCase().includes(term) ||
+      String(item.slide_q).includes(term)
+    );
+  });
+}
+
+function render() {
+  const list = getFilteredList();
+  document.getElementById('showingCount').textContent = `Showing ${list.length} question${list.length === 1 ? '' : 's'}`;
+  const container = document.getElementById('cardsContainer');
+
+  if (list.length === 0) {
+    container.innerHTML = `<div class="no-results">No questions match your filter. Clear search or switch category.</div>`;
+    return;
+  }
+
+  container.innerHTML = list
+    .map(item => (mode === 'learn' ? buildLearnCard(item) : buildPracticeCard(item)))
+    .join('');
+}
+
+function buildLearnCard(item) {
+  const answerText = item.opts[item.ans];
+  const blurClass = hideAnswers ? 'blurred' : '';
+  return `
+    <div class="card">
+      <div class="card-top">
+        <div class="badge-group">
+          <span class="badge-num">Q.${item.id}</span>
+          <span class="badge-seq">Slide #${item.slide_q}</span>
+        </div>
+        <span class="badge-cat">${item.cat}</span>
+      </div>
+      <div class="question-text">${item.q}</div>
+      <div class="learn-answer-box ${blurClass}" onclick="this.classList.remove('blurred')" title="Click to reveal answer">
+        ✓ Answer: ${answerText}
+      </div>
+      <div class="exam-points">
+        <div class="exam-points-heading">📌 2 Exam-Related Extra Points</div>
+        <ul>
+          <li>${item.p1}</li>
+          <li>${item.p2}</li>
+        </ul>
+      </div>
+    </div>
+  `;
+}
+
+function buildPracticeCard(item) {
+  const record = userAnswers[item.id];
+  const isAnswered = record !== undefined;
+  const letters = ['A', 'B', 'C', 'D'];
+
+  const optsMarkup = item.opts
+    .map((opt, idx) => {
+      let cls = '';
+      if (isAnswered) {
+        if (idx === item.ans) cls = 'correct';
+        else if (idx === record.picked && !record.correct) cls = 'wrong';
+      }
+      return `
+        <button class="option-btn ${cls}" ${isAnswered ? 'disabled' : ''} onclick="selectOption(${item.id}, ${idx})">
+          <span class="opt-circle">${letters[idx]}</span>
+          <span>${opt}</span>
+        </button>
+      `;
+    })
+    .join('');
+
+  const bannerMarkup = isAnswered
+    ? record.correct
+      ? `<span class="result-pill right">✓ Correct!</span>`
+      : `<span class="result-pill wrong">✕ Wrong Answer</span>`
+    : '';
+
+  return `
+    <div class="card" id="card-${item.id}">
+      <div class="card-top">
+        <div class="badge-group">
+          <span class="badge-num">Q.${item.id}</span>
+          <span class="badge-seq">Slide #${item.slide_q}</span>
+        </div>
+        <span class="badge-cat">${item.cat}</span>
+      </div>
+      <div class="question-text">${item.q}</div>
+      <div class="options-list">
+        ${optsMarkup}
+      </div>
+      <div class="answer-panel ${isAnswered ? 'visible' : ''}" id="panel-${item.id}">
+        <div class="result-banner">
+          ${bannerMarkup}
+          <div class="correct-label">Correct Answer: <span>${letters[item.ans]}. ${item.opts[item.ans]}</span></div>
+        </div>
+        <div class="exam-points">
+          <div class="exam-points-heading">📌 2 Exam-Related Extra Points</div>
+          <ul>
+            <li>${item.p1}</li>
+            <li>${item.p2}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+function selectOption(qId, pickedIdx) {
+  if (userAnswers[qId] !== undefined) return;
+  const item = QUESTIONS.find(q => q.id === qId);
+  if (!item) return;
+
+  userAnswers[qId] = {
+    picked: pickedIdx,
+    correct: pickedIdx === item.ans
+  };
+
+  refreshStats();
+  const cardEl = document.getElementById(`card-${qId}`);
+  if (cardEl) {
+    cardEl.outerHTML = buildPracticeCard(item);
+  }
+}
+
+function refreshStats() {
+  const keys = Object.keys(userAnswers);
+  const attempted = keys.length;
+  const correct = keys.filter(k => userAnswers[k].correct).length;
+  const wrong = attempted - correct;
+
+  document.getElementById('cnt-attempted').textContent = attempted;
+  document.getElementById('cnt-correct').textContent = correct;
+  document.getElementById('cnt-wrong').textContent = wrong;
+}
+
+function resetAll() {
+  userAnswers = {};
+  refreshStats();
+  render();
+}
+
+setup();
+</script>
+</body>
+</html>

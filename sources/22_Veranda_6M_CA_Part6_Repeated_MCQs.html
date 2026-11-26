@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>6-Month CA Rapid Revision (Part 6: Slides #801–#1000) — Repeated Revision Questions — Learn & Practice (White Theme)</title>
+<style>
+  :root {
+    --bg-page: #ffffff;
+    --bg-panel: #f9fafb;
+    --bg-card: #ffffff;
+    --border-light: #e5e7eb;
+    --border-strong: #d1d5db;
+    --text-main: #111827;
+    --text-sub: #4b5563;
+    --text-muted: #6b7280;
+    --primary: #1d4ed8;
+    --primary-soft: #eff6ff;
+    --primary-border: #bfdbfe;
+    --green-bg: #f0fdf4;
+    --green-border: #22c55e;
+    --green-text: #15803d;
+    --red-bg: #fef2f2;
+    --red-border: #ef4444;
+    --red-text: #b91c1c;
+    --amber-bg: #fffbeb;
+    --amber-border: #f59e0b;
+    --amber-text: #92400e;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background-color: var(--bg-page);
+    color: var(--text-main);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Arial, sans-serif;
+    line-height: 1.6;
+  }
+
+  header {
+    background-color: #ffffff;
+    border-bottom: 1px solid var(--border-light);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 14px 20px;
+  }
+
+  .header-wrap {
+    max-width: 1060px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .title-block h1 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--text-main);
+  }
+
+  .title-block p {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+  }
+
+  .tabs {
+    display: inline-flex;
+    background-color: var(--bg-panel);
+    border: 1px solid var(--border-light);
+    border-radius: 8px;
+    padding: 4px;
+    gap: 4px;
+  }
+
+  .tab-btn {
+    border: none;
+    background: transparent;
+    color: var(--text-sub);
+    font-size: 0.88rem;
+    font-weight: 600;
+    padding: 7px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.15s ease;
+  }
+
+  .tab-btn.active {
+    background-color: #ffffff;
+    color: var(--primary);
+    border: 1px solid var(--border-light);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
+  }
+
+  .main-container {
+    max-width: 1060px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .controls-bar {
+    background-color: var(--bg-panel);
+    border: 1px solid var(--border-light);
+    border-radius: 10px;
+    padding: 12px 16px;
+    margin-bottom: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .filter-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    flex: 1;
+  }
+
+  select, input[type="text"] {
+    background-color: #ffffff;
+    color: var(--text-main);
+    border: 1px solid var(--border-strong);
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 0.875rem;
+    outline: none;
+  }
+
+  select:focus, input[type="text"]:focus {
+    border-color: var(--primary);
+  }
+
+  input[type="text"] {
+    min-width: 230px;
+  }
+
+  .score-group {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.84rem;
+    font-weight: 600;
+  }
+
+  .pill {
+    background-color: #ffffff;
+    border: 1px solid var(--border-light);
+    border-radius: 999px;
+    padding: 4px 11px;
+    color: var(--text-sub);
+  }
+
+  .pill.green {
+    background-color: var(--green-bg);
+    border-color: var(--green-border);
+    color: var(--green-text);
+  }
+
+  .pill.red {
+    background-color: var(--red-bg);
+    border-color: var(--red-border);
+    color: var(--red-text);
+  }
+
+  .action-btn {
+    background-color: #ffffff;
+    color: var(--text-main);
+    border: 1px solid var(--border-strong);
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .action-btn:hover {
+    background-color: #f3f4f6;
+  }
+
+  .learn-subbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 14px;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+  }
+
+  .card {
+    background-color: #ffffff;
+    border: 1px solid var(--border-light);
+    border-radius: 10px;
+    padding: 18px 20px;
+    margin-bottom: 14px;
+  }
+
+  .card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    gap: 8px;
+  }
+
+  .badge-group {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .badge-num {
+    background-color: var(--primary-soft);
+    color: var(--primary);
+    border: 1px solid var(--primary-border);
+    font-size: 0.78rem;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 5px;
+  }
+
+  .badge-seq {
+    background-color: var(--bg-panel);
+    color: var(--text-sub);
+    border: 1px solid var(--border-light);
+    font-size: 0.74rem;
+    font-weight: 600;
+    padding: 2px 7px;
+    border-radius: 5px;
+  }
+
+  .badge-cat {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+
+  .question-text {
+    font-size: 1.02rem;
+    font-weight: 600;
+    color: var(--text-main);
+    margin-bottom: 12px;
+  }
+
+  .learn-answer-box {
+    display: inline-block;
+    background-color: var(--green-bg);
+    border: 1px solid #bbf7d0;
+    color: var(--green-text);
+    font-weight: 700;
+    font-size: 0.94rem;
+    padding: 6px 12px;
+    border-radius: 6px;
+    margin-bottom: 12px;
+  }
+
+  .learn-answer-box.blurred {
+    filter: blur(5px);
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .exam-points {
+    background-color: var(--amber-bg);
+    border: 1px solid #fde68a;
+    border-left: 4px solid var(--amber-border);
+    border-radius: 6px;
+    padding: 10px 14px;
+  }
+
+  .exam-points-heading {
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--amber-text);
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    margin-bottom: 4px;
+  }
+
+  .exam-points ul {
+    margin-left: 18px;
+    font-size: 0.88rem;
+    color: #374151;
+  }
+
+  .exam-points li {
+    margin-bottom: 3px;
+  }
+
+  .options-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 10px;
+  }
+
+  .option-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    text-align: left;
+    background-color: #ffffff;
+    border: 1.5px solid var(--border-light);
+    border-radius: 8px;
+    padding: 11px 14px;
+    font-size: 0.92rem;
+    font-weight: 500;
+    color: var(--text-main);
+    cursor: pointer;
+    transition: all 0.15s ease;
+  }
+
+  .option-btn:hover:not(:disabled) {
+    border-color: var(--primary);
+    background-color: var(--primary-soft);
+  }
+
+  .option-btn:disabled {
+    cursor: default;
+  }
+
+  .opt-circle {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: var(--bg-panel);
+    border: 1px solid var(--border-strong);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--text-sub);
+    flex-shrink: 0;
+  }
+
+  .option-btn.correct {
+    background-color: var(--green-bg);
+    border-color: var(--green-border);
+    color: var(--green-text);
+    font-weight: 700;
+  }
+
+  .option-btn.correct .opt-circle {
+    background-color: var(--green-border);
+    border-color: var(--green-border);
+    color: #ffffff;
+  }
+
+  .option-btn.wrong {
+    background-color: var(--red-bg);
+    border-color: var(--red-border);
+    color: var(--red-text);
+    font-weight: 600;
+  }
+
+  .option-btn.wrong .opt-circle {
+    background-color: var(--red-border);
+    border-color: var(--red-border);
+    color: #ffffff;
+  }
+
+  .answer-panel {
+    display: none;
+    margin-top: 14px;
+    padding-top: 14px;
+    border-top: 1px solid var(--border-light);
+    animation: slideDown 0.18s ease-out;
+  }
+
+  .answer-panel.visible {
+    display: block;
+  }
+
+  .result-banner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+
+  .result-pill {
+    font-size: 0.84rem;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 6px;
+  }
+
+  .result-pill.right {
+    background-color: var(--green-bg);
+    color: var(--green-text);
+    border: 1px solid var(--green-border);
+  }
+
+  .result-pill.wrong {
+    background-color: var(--red-bg);
+    color: var(--red-text);
+    border: 1px solid var(--red-border);
+  }
+
+  .correct-label {
+    font-size: 0.92rem;
+    font-weight: 700;
+    color: var(--text-main);
+  }
+
+  .correct-label span {
+    color: var(--green-text);
+  }
+
+  .hidden {
+    display: none !important;
+  }
+
+  .no-results {
+    text-align: center;
+    padding: 40px 20px;
+    border: 1px dashed var(--border-strong);
+    border-radius: 10px;
+    color: var(--text-muted);
+  }
+
+  @keyframes slideDown {
+    from { opacity: 0; transform: translateY(-4px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @media (max-width: 640px) {
+    .header-wrap { flex-direction: column; align-items: flex-start; }
+    .options-list { grid-template-columns: 1fr; }
+    input[type="text"] { width: 100%; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-wrap">
+    <div class="title-block">
+      <h1>6-Month CA Rapid Revision (Part 6: Slides #801–#1000) — Repeated Revision Questions (49 Questions)</h1>
+      <p>Jeevitha Ma'am Session (English) | Questions Overlapping with Previous 18 HTML Files</p>
+    </div>
+    <div class="tabs">
+      <button class="tab-btn active" id="btn-learn" onclick="setMode('learn')">📖 Learn Mode</button>
+      <button class="tab-btn" id="btn-practice" onclick="setMode('practice')">✍️ Practice MCQs</button>
+    </div>
+  </div>
+</header>
+
+<div class="main-container">
+  <div class="controls-bar">
+    <div class="filter-group">
+      <select id="catSelect" onchange="render()">
+        <option value="ALL">All Categories (49)</option>
+      </select>
+      <input type="text" id="searchBox" placeholder="Search question, answer, or extra points..." oninput="render()">
+    </div>
+    <div class="score-group">
+      <span class="pill">Attempted: <span id="cnt-attempted">0</span>/49</span>
+      <span class="pill green">Correct: <span id="cnt-correct">0</span></span>
+      <span class="pill red">Wrong: <span id="cnt-wrong">0</span></span>
+      <button class="action-btn" onclick="resetAll()">Reset Practice</button>
+    </div>
+  </div>
+
+  <div class="learn-subbar" id="learnSubbar">
+    <span id="showingCount">Showing 49 questions</span>
+    <button class="action-btn" id="blurBtn" onclick="toggleBlur()">👁️ Hide Answers (Self-Test)</button>
+  </div>
+
+  <div id="cardsContainer"></div>
+</div>
+
+<script>
+const QUESTIONS = [{"id": 1, "slide_q": 801, "cat": "International & Summits", "q": "At which session of the International Solar Alliance (ISA) Assembly did The Bahamas join as the 116th member country?", "opts": ["6th Session", "9th Session", "7th Session", "8th Session"], "ans": 1, "p1": "Repeated From Previous Sources: Veranda Part 4 (New) Q.47 & Priya Ma'am 6M GA (New) Q.168 — The Bahamas joining International Solar Alliance (ISA) as 116th member.", "p2": "Exam Fact: ISA was co-founded by India and France in 2015 and is headquartered in Gurugram, Haryana."}, {"id": 2, "slide_q": 811, "cat": "Economy & Agriculture", "q": "According to announcements at the International Maize Conference, India aims to raise its annual maize production to what target over the next decade?", "opts": ["100 million tonnes", "50 million tonnes", "60 million tonnes", "75 million tonnes"], "ans": 3, "p1": "Repeated From Previous Sources: Veranda Part 5 (New) Q.173 — First International Maize Conference in Hyderabad.", "p2": "Exam Fact: Maize is a primary feedstock for grain-based ethanol blending (E20) and poultry feed in India."}, {"id": 3, "slide_q": 814, "cat": "International & Summits", "q": "In which city was the 10th Taiwan–India Industrial Collaboration Summit held?", "opts": ["New Delhi", "Chennai, Tamil Nadu", "Bengaluru, Karnataka", "Taipei, Taiwan"], "ans": 2, "p1": "Repeated From Previous Sources: Veranda Part 4 (New) Q.26 & Q.59 — OECD 7.1% & 6.3% GDP projections (and bilateral industrial collaborations).", "p2": "Exam Fact: Focuses on semiconductor manufacturing, electronics supply chains, and green technology."}, {"id": 4, "slide_q": 818, "cat": "Ranks, Indices & Reports", "q": "What is India's rank in the World Economic Forum's (WEF) Global Gender Gap Index?", "opts": ["129th", "127th", "131st", "135th"], "ans": 2, "p1": "Repeated From Previous Sources: September Static HTML Q.139 — World Economic Forum (WEF) Headquarters: Cologny/Geneva, Switzerland.", "p2": "Exam Fact: Evaluates gender parity across 4 dimensions: Economic Participation & Opportunity, Educational Attainment, Health & Survival, and Political Empowerment."}, {"id": 5, "slide_q": 831, "cat": "Ranks, Indices & Reports", "q": "Which Indian institution ranked highest among Indian universities in the QS World University Rankings?", "opts": ["IIT Madras", "IIT Bombay", "IISc Bengaluru", "IIT Delhi"], "ans": 3, "p1": "Repeated From Previous Sources: Veranda Part 4 (New) Q.60 & Veranda Part 5 (New) Q.143 — IIT Delhi & IIT Bombay global rankings/campuses.", "p2": "Exam Fact: QS (Quacquarelli Symonds) World University Rankings are published annually in London, UK."}, {"id": 6, "slide_q": 832, "cat": "Ranks, Indices & Reports", "q": "India ranked 100th out of 122 countries in the Global Hunger Index (GHI). What was India's GHI score?", "opts": ["24.1", "27.3", "28.7", "21.5"], "ans": 0, "p1": "Repeated From Previous Sources: October Static HTML Q.151 — Global Hunger Index (GHI) 4 core indicators & compilers.", "p2": "Exam Fact: GHI is published jointly by Concern Worldwide (Ireland) and Welthungerhilfe (Germany) using 4 indicators: Undernourishment, Child Stunting, Child Wasting, and Child Mortality."}, {"id": 7, "slide_q": 835, "cat": "Ranks, Indices & Reports", "q": "What is India's rank in the World Economic Forum's (WEF) Travel & Tourism Development Index (TTDI)?", "opts": ["54th", "39th", "46th", "31st"], "ans": 3, "p1": "Repeated From Previous Sources: Priya Ma'am 6M GA (New) Q.230 — International Tourism Mart & tourism rankings.", "p2": "Exam Fact: World Tourism Day is observed annually on 27 September (UN Tourism HQ: Madrid, Spain)."}, {"id": 8, "slide_q": 837, "cat": "Ranks, Indices & Reports", "q": "According to the Kroll Celebrity Brand Valuation Report 2025, who topped India's most valuable celebrity brand ranking?", "opts": ["Ranveer Singh", "Shah Rukh Khan", "Sachin Tendulkar", "Virat Kohli"], "ans": 1, "p1": "Repeated From Previous Sources: Veranda Part 4 (New) Q.30 — Shah Rukh Khan #1 in celebrity brand valuation (followed by Ranveer Singh, Sachin, Virat, MS Dhoni).", "p2": "Exam Fact: Compiled annually by global valuation consultancy Kroll."}, {"id": 9, "slide_q": 845, "cat": "Ranks, Indices & Reports", "q": "What is India's rank in the updated quarterly Henley Passport Index?", "opts": ["75th", "84th", "80th", "82nd"], "ans": 1, "p1": "Repeated From Previous Sources: Veranda Part 6 Q.821 — Henley Passport Index India ranking.", "p2": "Exam Fact: Henley & Partners is headquartered in London, UK."}, {"id": 10, "slide_q": 846, "cat": "Ranks, Indices & Reports", "q": "Jio Platforms entered the Global Top 20 in WIPO's PCT Patent Ranking for 2025. In which year was the WIPO Convention signed?", "opts": ["1970", "1945", "1967", "1995"], "ans": 2, "p1": "Repeated From Previous Sources: Veranda Part 6 Q.819 — World Intellectual Property Organization (WIPO) established in 1967 (HQ: Geneva).", "p2": "Exam Fact: PCT stands for Patent Cooperation Treaty; World Intellectual Property Day is observed on 26 April."}, {"id": 11, "slide_q": 856, "cat": "Awards & Honours", "q": "Which airline was named the 'World's Best Airline' at the Skytrax World Airline Awards 2026?", "opts": ["Singapore Airlines", "Qatar Airways", "Emirates", "Cathay Pacific"], "ans": 0, "p1": "Repeated From Previous Sources: Priya Ma'am 6M GA (New) Q.94 — Singapore Airlines named World's Best Airline at Skytrax World Airline Awards 2026.", "p2": "Exam Fact: Singapore Airlines has won the Skytrax World's Best Airline title multiple times."}, {"id": 12, "slide_q": 857, "cat": "Ranks, Indices & Reports", "q": "Which country retained the #1 top position in the Henley Passport Index?", "opts": ["Japan", "Singapore", "France", "Germany"], "ans": 1, "p1": "Repeated From Previous Sources: Veranda Part 6 Q.840 — Singapore #1 in Henley Passport Index.", "p2": "Exam Fact: Henley Passport Index covers 199 passports and 227 travel destinations."}, {"id": 13, "slide_q": 864, "cat": "Ranks, Indices & Reports", "q": "According to the PLFS Monthly Bulletin for August 2026, to what percentage did India's overall unemployment rate decline?", "opts": ["5.0%", "5.4%", "4.6%", "5.2%"], "ans": 0, "p1": "Repeated From Previous Sources: Veranda Part 6 Q.867 — PLFS overall unemployment rate at 5.0%.", "p2": "Exam Fact: Reflects steady rural and urban employment recovery."}, {"id": 14, "slide_q": 867, "cat": "Ranks, Indices & Reports", "q": "According to the National Statistical Office (NSO) monthly PLFS report, what is India's overall unemployment rate for individuals aged 15 and above?", "opts": ["6.0%", "5.5%", "4.5%", "5.0%"], "ans": 3, "p1": "Repeated From Previous Sources: Veranda Part 6 Q.864 — NSO monthly PLFS overall unemployment rate at 5.0%.", "p2": "Exam Fact: NSO releases monthly and quarterly PLFS bulletins."}, {"id": 15, "slide_q": 871, "cat": "Environment, Parks & GI Tags", "q": "According to the State of the Cryosphere Report, how many times faster than the global average has the Arctic warmed over recent decades?", "opts": ["5 times faster", "2 times faster", "3 times faster", "4 times faster"], "ans": 3, "p1": "Repeated From Previous Sources: Veranda Part 6 Q.893 — Arctic warming 4 times faster than global average (State of the Cryosphere Report).", "p2": "Exam Fact: Compiled by the International Cryosphere Climate Initiative (ICCI)."}, {"id": 16, "slide_q": 880, "cat": "Environment, Parks & GI Tags", "q": "According to the State of the Cryosphere Report, approximately how much carbon is stored in the Northern Hemisphere permafrost?", "opts": ["1,700 billion tonnes", "700 billion tonnes", "1,000 billion tonnes", "2,500 billion tonnes"], "ans": 0, "p1": "Repeated From Previous Sources: Veranda Part 6 Q.893 — 1,700 billion tonnes of carbon stored in Northern Hemisphere permafrost.", "p2": "Exam Fact: Thawing permafrost releases carbon dioxide and methane, accelerating global warming."}, {"id": 17, "slide_q": 884, "cat": "Ranks, Indices & Reports", "q": "Regarding the World Bank's International Debt Report: (1) External debt of low- and middle-income countries reached USD 9.4 trillion; (2) Pakistan's external debt nearly doubled to USD 131.1 billion; (3) China (not Pakistan) is the World Bank/developing nations' largest bilateral creditor. Which statements are correct?", "opts": ["1 and 2 only (China is the largest bilateral creditor)", "1 and 3 only", "2 and 3 only", "All 1, 2, and 3"], "ans": 0, "p1": "Repeated From Previous Sources: Veranda Part 6 Q.905 — World Bank International Debt Report ($9.4 trillion LMIC external debt).", "p2": "Exam Fact: Published annually by the World Bank Group."}, {"id": 18, "slide_q": 885, "cat": "Ranks, Indices & Reports", "q": "According to the World Bank's International Debt Report, which country is Pakistan's largest individual bilateral creditor?", "opts": ["Saudi Arabia", "China", "United States", "United Arab Emirates"], "ans": 1, "p1": "Repeated From Previous Sources: Veranda Part 6 Q.884 — China as Pakistan's largest individual bilateral creditor.", "p2": "Exam Fact: Accounts for the largest share of Pakistan's bilateral external debt obligations."}, {"id": 19, "slide_q": 893, "cat": "Environment, Parks & GI Tags", "q": "Regarding the State of the Cryosphere Report ahead of COP 31: (1) Released by ICCI; (2) Arctic is warming 4 times faster than the global average; (3) Permafrost stores 1,700 billion tonnes of carbon (not 700 billion tonnes). Which statements are correct?", "opts": ["1 and 3 only", "1 and 2 only (Permafrost stores 1,700 billion tonnes of carbon)", "2 and 3 only", "All 1, 2, and 3"], "ans": 1, "p1": "Repeated From Previous Sources: Veranda Part 6 Q.871 & Q.880 — State of the Cryosphere Report (Arctic 4x warming & 1,700B tonnes permafrost carbon).", "p2": "Exam Fact: Cryosphere encompasses all frozen water on Earth—glaciers, ice sheets, sea ice, snow cover, and permafrost."}, {"id": 20, "slide_q": 904, "cat": "Environment, Parks & GI Tags", "q": "Regarding WWF's Living Planet Report 2026: (1) Monitored wildlife populations declined sharply; (2) Freshwater populations suffered the steepest decline (not marine); (3) Latin America & the Caribbean recorded a 95% average decline; (4) Compiled with Zoological Society of London (ZSL). Which statements are correct?", "opts": ["2 and 3 only", "1 and 2 only", "1, 3, and 4 only (Freshwater populations suffered the steepest decline)", "All 1, 2, 3, and 4"], "ans": 2, "p1": "Repeated From Previous Sources: Priya Ma'am 6M GA (New) Q.109 — WWF Living Planet Report compiled with Zoological Society of London (ZSL).", "p2": "Exam Fact: WWF (World Wide Fund for Nature) was founded in 1961 and is headquartered in Gland, Switzerland."}, {"id": 21, "slide_q": 905, "cat": "Ranks, Indices & Reports", "q": "According to the World Bank's International Debt Report, what did the total external debt of low- and middle-income countries reach?", "opts": ["USD 7.9 trillion", "USD 6.8 trillion", "USD 11.2 trillion", "USD 9.4 trillion"], "ans": 3, "p1": "Repeated From Previous Sources: Veranda Part 6 Q.884 — USD 9.4 trillion external debt of low- and middle-income countries.", "p2": "Exam Fact: Rising global interest rates increased debt-servicing burdens for developing nations."}, {"id": 22, "slide_q": 908, "cat": "Important Days & Themes", "q": "MoSPI released its Sustainable Development Goals (SDG) National Indicator Framework publication on 29 June 2026. Which national day is observed on 29 June?", "opts": ["National Science Day", "National Mathematics Day", "National Statistics Day", "National Technology Day"], "ans": 2, "p1": "Repeated From Previous Sources: Veranda Part 5 (New) Q.49 — National Statistics Day observed on 29 June (P. C. Mahalanobis).", "p2": "Exam Fact: National Mathematics Day is 22 December, National Science Day is 28 February, and National Technology Day is 11 May."}, {"id": 23, "slide_q": 909, "cat": "Defence & Exercises", "q": "What was the official theme of the inaugural India–Myanmar tri-service HADR Exercise 'Rahat Mitra 2026'?", "opts": ["Partners in Peace and Security", "One Ocean, One Future", "Bridging Borders Through Relief", "Together for Humanity, Strengthened Partnership"], "ans": 3, "p1": "Repeated From Previous Sources: Priya Ma'am 6M GA (New) Q.138 & Q.147 — India–Myanmar Exercise Rahat Mitra 2026 in Chennai.", "p2": "Exam Fact: Over 300 personnel participated in the inaugural bilateral HADR exercise."}, {"id": 24, "slide_q": 914, "cat": "Defence & Exercises", "q": "What is the name of the inaugural tri-service Humanitarian Assistance and Disaster Relief (HADR) exercise conducted between India and Myanmar?", "opts": ["Exercise Rahat Mitra", "Exercise IMBEX", "Exercise Sampriti", "Exercise Surya Kiran"], "ans": 0, "p1": "Repeated From Previous Sources: Priya Ma'am 6M GA (New) Q.138 — India–Myanmar tri-service HADR Exercise Rahat Mitra.", "p2": "Exam Fact: IMBEX is the India–Myanmar bilateral Army exercise; Sampriti is with Bangladesh; Surya Kiran is with Nepal."}, {"id": 25, "slide_q": 917, "cat": "Defence & Exercises", "q": "Regarding Exercise Malabar 2026: (1) INS Sahyadri visited Yokosuka Naval Base, Japan; (2) Originally began in 1992 between India and the USA (not India and Japan); (3) Japan became a permanent participant in 2015; (4) Australia became a permanent participant in 2020. Which statements are correct?", "opts": ["All 1, 2, 3, and 4", "1 and 2 only", "2 and 3 only", "1, 3, and 4 only (Began in 1992 between India and the USA)"], "ans": 3, "p1": "Repeated From Previous Sources: Priya Ma'am 6M GA (New) Q.118 & Q.132 — Exercise Malabar 2026 (INS Sahyadri at Yokosuka, Japan; QUAD nations).", "p2": "Exam Fact: Brings together all four QUAD navies."}, {"id": 26, "slide_q": 923, "cat": "Defence & Exercises", "q": "Approximately how many armed forces personnel participated in the maiden India–Myanmar tri-service Exercise 'Rahat Mitra'?", "opts": ["Around 100 personnel", "More than 300 personnel", "Around 50 personnel", "More than 1,500 personnel"], "ans": 1, "p1": "Repeated From Previous Sources: Veranda Part 6 Q.909 — Over 300 personnel participating in India–Myanmar Exercise Rahat Mitra.", "p2": "Exam Fact: Focuses on joint flood/cyclone rescue, medical evacuation, and relief drops."}, {"id": 27, "slide_q": 936, "cat": "Defence & Exercises", "q": "In which year did Australia join Exercise Malabar as a permanent participant?", "opts": ["2018", "2015", "2020", "2022"], "ans": 2, "p1": "Repeated From Previous Sources: Veranda Part 6 Q.917 — Australia joining Exercise Malabar as permanent member in 2020.", "p2": "Exam Fact: Completes the 4-nation QUAD naval participation."}, {"id": 28, "slide_q": 939, "cat": "International & Summits", "q": "In which country was the 6th BIMSTEC Summit held (where PM Modi announced the BIMSTEC Maritime Security Exercise)?", "opts": ["Bangladesh (Dhaka)", "Thailand (Bangkok)", "Sri Lanka (Colombo)", "Nepal (Kathmandu)"], "ans": 1, "p1": "Repeated From Previous Sources: Veranda Part 6 Q.934 — 6th BIMSTEC Summit hosted by Thailand.", "p2": "Exam Fact: BIMSTEC stands for Bay of Bengal Initiative for Multi-Sectoral Technical and Economic Cooperation."}, {"id": 29, "slide_q": 941, "cat": "Defence & Exercises", "q": "With which country's Navy does Bangladesh conduct the bilateral naval Exercise 'CARAT'?", "opts": ["Japan Maritime Self-Defense Force", "Indian Navy", "Royal Navy (UK)", "United States Navy (USA)"], "ans": 3, "p1": "Repeated From Previous Sources: Veranda Part 6 Q.937 — US–Bangladesh naval Exercise CARAT.", "p2": "Exam Fact: CARAT stands for Cooperation Afloat Readiness and Training."}, {"id": 30, "slide_q": 942, "cat": "Science, Space & Technology", "q": "What is India's annual defence export target set by the Ministry of Defence for the year 2029?", "opts": ["₹50,000 crore", "₹25,000 crore", "₹75,000 crore", "₹1,00,000 crore"], "ans": 0, "p1": "Repeated From Previous Sources: Veranda Part 6 Q.989 — India's ₹50,000 crore defence export target by 2029.", "p2": "Exam Fact: Union Minister of Defence is Rajnath Singh (Lucknow Lok Sabha constituency)."}, {"id": 31, "slide_q": 945, "cat": "Science, Space & Technology", "q": "Which shipyard constructed 'INS Nistar / INS Nipun', the Indian Navy's indigenously built Diving Support Vessel (DSV)?", "opts": ["Garden Reach Shipbuilders & Engineers (GRSE)", "Mazagon Dock Shipbuilders Limited (MDL)", "Cochin Shipyard Limited (CSL)", "Hindustan Shipyard Limited (HSL), Visakhapatnam"], "ans": 3, "p1": "Repeated From Previous Sources: Veranda Part 6 Q.968 — Indian Navy Diving Support Vessel INS Nipun built by HSL Visakhapatnam.", "p2": "Exam Fact: Diving Support Vessels carry Deep Submergence Rescue Vehicles (DSRVs) for submarine rescue operations."}, {"id": 32, "slide_q": 946, "cat": "Science, Space & Technology", "q": "What is the name of the third Anti-Submarine Warfare Shallow Water Craft (ASW-SWC) delivered by Cochin Shipyard Limited to the Indian Navy?", "opts": ["INS Mangrol", "INS Mahe", "INS Malvan", "INS Arnala"], "ans": 0, "p1": "Repeated From Previous Sources: Priya Ma'am 6M GA (New) Q.232 — INS Mangrol (3rd ASW-SWC built by Cochin Shipyard Limited).", "p2": "Exam Fact: Designed for coastal anti-submarine warfare and low-intensity maritime operations."}, {"id": 33, "slide_q": 958, "cat": "Science, Space & Technology", "q": "Regarding the Indian Navy's 'Project 18' Next-Generation Destroyers: (1) Next-generation stealth guided-missile destroyer programme; (2) Estimated project cost is ₹80,000 crore; (3) Succeeds the Visakhapatnam-class (Project 15B) destroyers (not Kolkata-class directly); (4) Designed by Warship Design Bureau with MDL and GRSE. Which statements are correct?", "opts": ["1, 2, and 4 only (Succeeds Visakhapatnam-class Project 15B destroyers)", "1 and 3 only", "2 and 3 only", "All 1, 2, 3, and 4"], "ans": 0, "p1": "Repeated From Previous Sources: Veranda Part 6 Q.962 & Q.973 — Indian Navy Project 18 Next-Generation Destroyers (₹80,000 crore; MDL & GRSE).", "p2": "Exam Fact: Project 18 destroyers will be the largest surface combatants ever built in India (~13,000 tonnes displacement)."}, {"id": 34, "slide_q": 960, "cat": "Science, Space & Technology", "q": "Adani Defence & Aerospace signed a 5-year ammunition supply pact for which Indian Army assault rifle programme?", "opts": ["INSAS 1B1", "SIG 716", "AK-203", "Tavor X95"], "ans": 2, "p1": "Repeated From Previous Sources: Veranda Part 6 Q.999 — AK-203 assault rifle programme (Korwa, Amethi).", "p2": "Exam Fact: Replaces the legacy 5.56 mm INSAS rifle as the standard infantry rifle of the Indian Army."}, {"id": 35, "slide_q": 962, "cat": "Science, Space & Technology", "q": "What is the estimated total cost of the Indian Navy's Project 18 Next-Generation Destroyer programme?", "opts": ["₹80,000 crore", "₹45,000 crore", "₹60,000 crore", "₹1,20,000 crore"], "ans": 0, "p1": "Repeated From Previous Sources: Veranda Part 6 Q.958 — ₹80,000 crore estimated cost of Project 18 destroyers.", "p2": "Exam Fact: Equipped with hypersonic cruise missiles, long-range surface-to-air missiles, and directed energy weapons."}, {"id": 36, "slide_q": 963, "cat": "Science, Space & Technology", "q": "To what all-time record value did India's annual indigenous defence production rise in FY 2025–26?", "opts": ["₹1.27 lakh crore", "₹1.78 lakh crore", "₹1.50 lakh crore", "₹2.18 lakh crore"], "ans": 1, "p1": "Repeated From Previous Sources: Veranda Part 6 Q.989 — ₹1.78 lakh crore record indigenous defence production in FY 2025–26.", "p2": "Exam Fact: Defence Public Sector Undertakings (DPSUs) contribute ~77% and the private sector ~23% of total defence output."}, {"id": 37, "slide_q": 964, "cat": "Science, Space & Technology", "q": "What was the total Union Budget allocation for the Ministry of Defence in FY 2026–27?", "opts": ["₹6.81 lakh crore", "₹6.21 lakh crore", "₹7.85 lakh crore", "₹8.50 lakh crore"], "ans": 2, "p1": "Repeated From Previous Sources: Veranda Part 6 Q.986 — ₹7.85 lakh crore Ministry of Defence budget allocation (including ₹2.19 lakh crore capital outlay).", "p2": "Exam Fact: Defence Capital Outlay funds new aircraft, warships, submarines, tanks, and missiles."}, {"id": 38, "slide_q": 968, "cat": "Science, Space & Technology", "q": "At which naval dockyard was the Indian Navy's Diving Support Vessel 'INS Nipun' commissioned?", "opts": ["Naval Base, Karwar", "Naval Dockyard, Visakhapatnam", "Naval Dockyard, Mumbai", "Southern Naval Command, Kochi"], "ans": 2, "p1": "Repeated From Previous Sources: Veranda Part 6 Q.945 — INS Nipun commissioned at Naval Dockyard, Mumbai.", "p2": "Exam Fact: Built by Hindustan Shipyard Limited (HSL), Visakhapatnam."}, {"id": 39, "slide_q": 973, "cat": "Science, Space & Technology", "q": "Which two defence shipyards are collaborating with the Indian Navy's Warship Design Bureau on the Project 18 Next-Generation Destroyer programme?", "opts": ["ABG Shipyard and Pipavav Shipyard", "CSL (Cochin Shipyard) and HSL (Hindustan Shipyard)", "GSL (Goa Shipyard) and L&T Shipyard", "MDL (Mazagon Dock Shipbuilders) and GRSE (Garden Reach Shipbuilders)"], "ans": 3, "p1": "Repeated From Previous Sources: Veranda Part 6 Q.958 — MDL and GRSE collaborating with Warship Design Bureau on Project 18.", "p2": "Exam Fact: Warship Design Bureau (WDB) is the Indian Navy's in-house warship design organization (HQ: New Delhi)."}, {"id": 40, "slide_q": 979, "cat": "Science, Space & Technology", "q": "At which location in Rajasthan was the Ministry of Defence Consultative Committee meeting held where India's indigenous defence production and export targets were announced?", "opts": ["Bikaner, Rajasthan", "Jaisalmer, Rajasthan", "Jodhpur, Rajasthan", "Jaipur, Rajasthan"], "ans": 1, "p1": "Repeated From Previous Sources: Veranda Part 6 Q.989 — MoD Consultative Committee meeting in Jaisalmer announcing 2029 targets.", "p2": "Exam Fact: Announced targets of ₹3 lakh crore defence production and ₹50,000 crore defence exports by 2029."}, {"id": 41, "slide_q": 980, "cat": "Science, Space & Technology", "q": "Who commissioned 'INS Samarthak', India's first indigenously built Multi-Purpose Vessel (MPV), at Naval Base Karwar?", "opts": ["Prime Minister Narendra Modi", "President Droupadi Murmu", "Vice President C. P. Radhakrishnan", "Defence Minister Rajnath Singh"], "ans": 2, "p1": "Repeated From Previous Sources: Veranda Part 6 Q.987 — INS Samarthak Multi-Purpose Vessel (MPV).", "p2": "Exam Fact: INS Samarthak was built by L&T Shipyard at Kattupalli (near Chennai) and performs trials, towing, and unmanned vehicle launch/recovery."}, {"id": 42, "slide_q": 983, "cat": "Science, Space & Technology", "q": "Who unveiled the 'VIJAY' transformative roadmap upon assuming charge as Chief of the Army Staff?", "opts": ["General Upendra Dwivedi", "General Dhiraj Seth", "General Manoj Pande", "General Bipin Rawat"], "ans": 1, "p1": "Repeated From Previous Sources: Veranda Part 5 (New) Q.34 & Veranda Part 6 Q.641 — General Dhiraj Seth as Chief of the Army Staff.", "p2": "Exam Fact: General Dhiraj Seth assumed office on 30 June 2026."}, {"id": 43, "slide_q": 985, "cat": "Science, Space & Technology", "q": "From which sea did Russia successfully test-fire its 'Bulava' Submarine-Launched Ballistic Missile (SLBM)?", "opts": ["Caspian Sea", "Black Sea", "Baltic Sea", "Sea of Okhotsk (and White Sea)"], "ans": 3, "p1": "Repeated From Previous Sources: Veranda Part 6 Q.1000 — Russia's Bulava Submarine-Launched Ballistic Missile (SLBM).", "p2": "Exam Fact: RSM-56 Bulava is a solid-fueled intercontinental SLBM deployed on Borei-class nuclear submarines."}, {"id": 44, "slide_q": 986, "cat": "Science, Space & Technology", "q": "What was the Defence Capital Outlay allocated in the Union Budget 2026–27?", "opts": ["₹2.19 lakh crore", "₹1.72 lakh crore", "₹3.00 lakh crore", "₹4.50 lakh crore"], "ans": 0, "p1": "Repeated From Previous Sources: Veranda Part 6 Q.964 — ₹2.19 lakh crore Defence Capital Outlay in Union Budget.", "p2": "Exam Fact: A dedicated share (~75%) of the capital procurement budget is earmarked for domestic Indian defence industries."}, {"id": 45, "slide_q": 987, "cat": "Science, Space & Technology", "q": "What type of naval vessel is 'INS Samarthak', delivered by L&T Shipyard to the Indian Navy?", "opts": ["Nuclear Ballistic Missile Submarine (SSBN)", "Multi-Purpose Vessel (MPV)", "Aircraft Carrier", "Hydrographic Survey Ship"], "ans": 1, "p1": "Repeated From Previous Sources: Veranda Part 6 Q.980 — INS Samarthak Multi-Purpose Vessel (MPV).", "p2": "Exam Fact: Performs multiple roles including target towing, maritime surveillance, and humanitarian relief."}, {"id": 46, "slide_q": 989, "cat": "Science, Space & Technology", "q": "Regarding India's Defence Production & Export Targets (November 2026): (1) Aims for ₹3 lakh crore defence production by 2029; (2) Targets ₹50,000 crore defence exports by 2029; (3) Current defence production reached ₹1.78 lakh crore (not ₹2.18 lakh crore); (4) Announced at Jaisalmer (not Bikaner). Which statements are correct?", "opts": ["All 1, 2, 3, and 4", "1, 2, and 3 only", "2 and 4 only", "1 and 2 only (Current production ₹1.78 lakh crore; announced at Jaisalmer)"], "ans": 3, "p1": "Repeated From Previous Sources: Veranda Part 6 Q.942, Q.963 & Q.979 — India's 2029 defence production (₹3 lakh cr) & export (₹50,000 cr) targets.", "p2": "Exam Fact: India exports defence equipment to over 100 countries."}, {"id": 47, "slide_q": 992, "cat": "Science, Space & Technology", "q": "In June 2026, India issued a Letter of Request (LoR) to France for procuring how many Rafale multi-role fighter aircraft?", "opts": ["26 Rafale jets", "36 Rafale jets", "114 Rafale jets", "90 Rafale jets"], "ans": 2, "p1": "Repeated From Previous Sources: Priya Ma'am 6M GA (New) Q.12 — India's Letter of Request to France for Rafale fighter jets.", "p2": "Exam Fact: Built by French aerospace manufacturer Dassault Aviation."}, {"id": 48, "slide_q": 999, "cat": "Science, Space & Technology", "q": "At which manufacturing facility was India's first 100% indigenous AK-203 'Sher' assault rifle test-fired?", "opts": ["Korwa, Amethi (Uttar Pradesh)", "Tiruchirappalli, Tamil Nadu", "Ishapore, West Bengal", "Jabalpur, Madhya Pradesh"], "ans": 0, "p1": "Repeated From Previous Sources: Veranda Part 6 Q.960 — AK-203 'Sher' assault rifle at Korwa, Amethi (UP).", "p2": "Exam Fact: Joint venture between India (AWEIL and Munitions India Limited) and Russia (Rosoboronexport and Kalashnikov Concern)."}, {"id": 49, "slide_q": 1000, "cat": "Science, Space & Technology", "q": "Russia's 'Bulava' Submarine-Launched Ballistic Missile (SLBM) is designed for deployment on which class of Russian nuclear-powered submarines?", "opts": ["Akula class", "Borei class", "Kilo class", "Yasen class"], "ans": 1, "p1": "Repeated From Previous Sources: Veranda Part 6 Q.985 — Russia's Bulava SLBM deployed on Borei-class nuclear submarines.", "p2": "Exam Fact: India's indigenous nuclear ballistic missile submarines belong to the Arihant class (INS Arihant, INS Arighaat)."}];
+
+let mode = 'learn';
+let hideAnswers = false;
+let userAnswers = {};
+
+function setup() {
+  const select = document.getElementById('catSelect');
+  const uniqueCats = [...new Set(QUESTIONS.map(q => q.cat))];
+  uniqueCats.forEach(cat => {
+    const count = QUESTIONS.filter(q => q.cat === cat).length;
+    const option = document.createElement('option');
+    option.value = cat;
+    option.textContent = `${cat} (${count})`;
+    select.appendChild(option);
+  });
+  refreshStats();
+  render();
+}
+
+function setMode(newMode) {
+  mode = newMode;
+  document.getElementById('btn-learn').classList.toggle('active', mode === 'learn');
+  document.getElementById('btn-practice').classList.toggle('active', mode === 'practice');
+  document.getElementById('blurBtn').classList.toggle('hidden', mode !== 'learn');
+  render();
+}
+
+function toggleBlur() {
+  hideAnswers = !hideAnswers;
+  document.getElementById('blurBtn').textContent = hideAnswers
+    ? '👁️ Show All Answers'
+    : '👁️ Hide Answers (Self-Test)';
+  render();
+}
+
+function getFilteredList() {
+  const cat = document.getElementById('catSelect').value;
+  const term = document.getElementById('searchBox').value.trim().toLowerCase();
+
+  return QUESTIONS.filter(item => {
+    if (cat !== 'ALL' && item.cat !== cat) return false;
+    if (!term) return true;
+    return (
+      item.q.toLowerCase().includes(term) ||
+      item.opts.some(o => o.toLowerCase().includes(term)) ||
+      item.p1.toLowerCase().includes(term) ||
+      item.p2.toLowerCase().includes(term) ||
+      String(item.slide_q).includes(term)
+    );
+  });
+}
+
+function render() {
+  const list = getFilteredList();
+  document.getElementById('showingCount').textContent = `Showing ${list.length} question${list.length === 1 ? '' : 's'}`;
+  const container = document.getElementById('cardsContainer');
+
+  if (list.length === 0) {
+    container.innerHTML = `<div class="no-results">No questions match your filter. Clear search or switch category.</div>`;
+    return;
+  }
+
+  container.innerHTML = list
+    .map(item => (mode === 'learn' ? buildLearnCard(item) : buildPracticeCard(item)))
+    .join('');
+}
+
+function buildLearnCard(item) {
+  const answerText = item.opts[item.ans];
+  const blurClass = hideAnswers ? 'blurred' : '';
+  return `
+    <div class="card">
+      <div class="card-top">
+        <div class="badge-group">
+          <span class="badge-num">Q.${item.id}</span>
+          <span class="badge-seq">Slide #${item.slide_q}</span>
+        </div>
+        <span class="badge-cat">${item.cat}</span>
+      </div>
+      <div class="question-text">${item.q}</div>
+      <div class="learn-answer-box ${blurClass}" onclick="this.classList.remove('blurred')" title="Click to reveal answer">
+        ✓ Answer: ${answerText}
+      </div>
+      <div class="exam-points">
+        <div class="exam-points-heading">📌 2 Exam-Related Extra Points</div>
+        <ul>
+          <li>${item.p1}</li>
+          <li>${item.p2}</li>
+        </ul>
+      </div>
+    </div>
+  `;
+}
+
+function buildPracticeCard(item) {
+  const record = userAnswers[item.id];
+  const isAnswered = record !== undefined;
+  const letters = ['A', 'B', 'C', 'D'];
+
+  const optsMarkup = item.opts
+    .map((opt, idx) => {
+      let cls = '';
+      if (isAnswered) {
+        if (idx === item.ans) cls = 'correct';
+        else if (idx === record.picked && !record.correct) cls = 'wrong';
+      }
+      return `
+        <button class="option-btn ${cls}" ${isAnswered ? 'disabled' : ''} onclick="selectOption(${item.id}, ${idx})">
+          <span class="opt-circle">${letters[idx]}</span>
+          <span>${opt}</span>
+        </button>
+      `;
+    })
+    .join('');
+
+  const bannerMarkup = isAnswered
+    ? record.correct
+      ? `<span class="result-pill right">✓ Correct!</span>`
+      : `<span class="result-pill wrong">✕ Wrong Answer</span>`
+    : '';
+
+  return `
+    <div class="card" id="card-${item.id}">
+      <div class="card-top">
+        <div class="badge-group">
+          <span class="badge-num">Q.${item.id}</span>
+          <span class="badge-seq">Slide #${item.slide_q}</span>
+        </div>
+        <span class="badge-cat">${item.cat}</span>
+      </div>
+      <div class="question-text">${item.q}</div>
+      <div class="options-list">
+        ${optsMarkup}
+      </div>
+      <div class="answer-panel ${isAnswered ? 'visible' : ''}" id="panel-${item.id}">
+        <div class="result-banner">
+          ${bannerMarkup}
+          <div class="correct-label">Correct Answer: <span>${letters[item.ans]}. ${item.opts[item.ans]}</span></div>
+        </div>
+        <div class="exam-points">
+          <div class="exam-points-heading">📌 2 Exam-Related Extra Points</div>
+          <ul>
+            <li>${item.p1}</li>
+            <li>${item.p2}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+function selectOption(qId, pickedIdx) {
+  if (userAnswers[qId] !== undefined) return;
+  const item = QUESTIONS.find(q => q.id === qId);
+  if (!item) return;
+
+  userAnswers[qId] = {
+    picked: pickedIdx,
+    correct: pickedIdx === item.ans
+  };
+
+  refreshStats();
+  const cardEl = document.getElementById(`card-${qId}`);
+  if (cardEl) {
+    cardEl.outerHTML = buildPracticeCard(item);
+  }
+}
+
+function refreshStats() {
+  const keys = Object.keys(userAnswers);
+  const attempted = keys.length;
+  const correct = keys.filter(k => userAnswers[k].correct).length;
+  const wrong = attempted - correct;
+
+  document.getElementById('cnt-attempted').textContent = attempted;
+  document.getElementById('cnt-correct').textContent = correct;
+  document.getElementById('cnt-wrong').textContent = wrong;
+}
+
+function resetAll() {
+  userAnswers = {};
+  refreshStats();
+  render();
+}
+
+setup();
+</script>
+</body>
+</html>

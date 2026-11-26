@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>6-Month CA Rapid Revision (Part 4: Slides #451–#600) — Repeated Revision Questions — Learn & Practice (White Theme)</title>
+<style>
+  :root {
+    --bg-page: #ffffff;
+    --bg-panel: #f9fafb;
+    --bg-card: #ffffff;
+    --border-light: #e5e7eb;
+    --border-strong: #d1d5db;
+    --text-main: #111827;
+    --text-sub: #4b5563;
+    --text-muted: #6b7280;
+    --primary: #1d4ed8;
+    --primary-soft: #eff6ff;
+    --primary-border: #bfdbfe;
+    --green-bg: #f0fdf4;
+    --green-border: #22c55e;
+    --green-text: #15803d;
+    --red-bg: #fef2f2;
+    --red-border: #ef4444;
+    --red-text: #b91c1c;
+    --amber-bg: #fffbeb;
+    --amber-border: #f59e0b;
+    --amber-text: #92400e;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background-color: var(--bg-page);
+    color: var(--text-main);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Arial, sans-serif;
+    line-height: 1.6;
+  }
+
+  header {
+    background-color: #ffffff;
+    border-bottom: 1px solid var(--border-light);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 14px 20px;
+  }
+
+  .header-wrap {
+    max-width: 1060px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .title-block h1 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--text-main);
+  }
+
+  .title-block p {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+  }
+
+  .tabs {
+    display: inline-flex;
+    background-color: var(--bg-panel);
+    border: 1px solid var(--border-light);
+    border-radius: 8px;
+    padding: 4px;
+    gap: 4px;
+  }
+
+  .tab-btn {
+    border: none;
+    background: transparent;
+    color: var(--text-sub);
+    font-size: 0.88rem;
+    font-weight: 600;
+    padding: 7px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.15s ease;
+  }
+
+  .tab-btn.active {
+    background-color: #ffffff;
+    color: var(--primary);
+    border: 1px solid var(--border-light);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
+  }
+
+  .main-container {
+    max-width: 1060px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .controls-bar {
+    background-color: var(--bg-panel);
+    border: 1px solid var(--border-light);
+    border-radius: 10px;
+    padding: 12px 16px;
+    margin-bottom: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .filter-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    flex: 1;
+  }
+
+  select, input[type="text"] {
+    background-color: #ffffff;
+    color: var(--text-main);
+    border: 1px solid var(--border-strong);
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 0.875rem;
+    outline: none;
+  }
+
+  select:focus, input[type="text"]:focus {
+    border-color: var(--primary);
+  }
+
+  input[type="text"] {
+    min-width: 230px;
+  }
+
+  .score-group {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.84rem;
+    font-weight: 600;
+  }
+
+  .pill {
+    background-color: #ffffff;
+    border: 1px solid var(--border-light);
+    border-radius: 999px;
+    padding: 4px 11px;
+    color: var(--text-sub);
+  }
+
+  .pill.green {
+    background-color: var(--green-bg);
+    border-color: var(--green-border);
+    color: var(--green-text);
+  }
+
+  .pill.red {
+    background-color: var(--red-bg);
+    border-color: var(--red-border);
+    color: var(--red-text);
+  }
+
+  .action-btn {
+    background-color: #ffffff;
+    color: var(--text-main);
+    border: 1px solid var(--border-strong);
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .action-btn:hover {
+    background-color: #f3f4f6;
+  }
+
+  .learn-subbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 14px;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+  }
+
+  .card {
+    background-color: #ffffff;
+    border: 1px solid var(--border-light);
+    border-radius: 10px;
+    padding: 18px 20px;
+    margin-bottom: 14px;
+  }
+
+  .card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    gap: 8px;
+  }
+
+  .badge-group {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .badge-num {
+    background-color: var(--primary-soft);
+    color: var(--primary);
+    border: 1px solid var(--primary-border);
+    font-size: 0.78rem;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 5px;
+  }
+
+  .badge-seq {
+    background-color: var(--bg-panel);
+    color: var(--text-sub);
+    border: 1px solid var(--border-light);
+    font-size: 0.74rem;
+    font-weight: 600;
+    padding: 2px 7px;
+    border-radius: 5px;
+  }
+
+  .badge-cat {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+
+  .question-text {
+    font-size: 1.02rem;
+    font-weight: 600;
+    color: var(--text-main);
+    margin-bottom: 12px;
+  }
+
+  .learn-answer-box {
+    display: inline-block;
+    background-color: var(--green-bg);
+    border: 1px solid #bbf7d0;
+    color: var(--green-text);
+    font-weight: 700;
+    font-size: 0.94rem;
+    padding: 6px 12px;
+    border-radius: 6px;
+    margin-bottom: 12px;
+  }
+
+  .learn-answer-box.blurred {
+    filter: blur(5px);
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .exam-points {
+    background-color: var(--amber-bg);
+    border: 1px solid #fde68a;
+    border-left: 4px solid var(--amber-border);
+    border-radius: 6px;
+    padding: 10px 14px;
+  }
+
+  .exam-points-heading {
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--amber-text);
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    margin-bottom: 4px;
+  }
+
+  .exam-points ul {
+    margin-left: 18px;
+    font-size: 0.88rem;
+    color: #374151;
+  }
+
+  .exam-points li {
+    margin-bottom: 3px;
+  }
+
+  .options-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 10px;
+  }
+
+  .option-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    text-align: left;
+    background-color: #ffffff;
+    border: 1.5px solid var(--border-light);
+    border-radius: 8px;
+    padding: 11px 14px;
+    font-size: 0.92rem;
+    font-weight: 500;
+    color: var(--text-main);
+    cursor: pointer;
+    transition: all 0.15s ease;
+  }
+
+  .option-btn:hover:not(:disabled) {
+    border-color: var(--primary);
+    background-color: var(--primary-soft);
+  }
+
+  .option-btn:disabled {
+    cursor: default;
+  }
+
+  .opt-circle {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: var(--bg-panel);
+    border: 1px solid var(--border-strong);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--text-sub);
+    flex-shrink: 0;
+  }
+
+  .option-btn.correct {
+    background-color: var(--green-bg);
+    border-color: var(--green-border);
+    color: var(--green-text);
+    font-weight: 700;
+  }
+
+  .option-btn.correct .opt-circle {
+    background-color: var(--green-border);
+    border-color: var(--green-border);
+    color: #ffffff;
+  }
+
+  .option-btn.wrong {
+    background-color: var(--red-bg);
+    border-color: var(--red-border);
+    color: var(--red-text);
+    font-weight: 600;
+  }
+
+  .option-btn.wrong .opt-circle {
+    background-color: var(--red-border);
+    border-color: var(--red-border);
+    color: #ffffff;
+  }
+
+  .answer-panel {
+    display: none;
+    margin-top: 14px;
+    padding-top: 14px;
+    border-top: 1px solid var(--border-light);
+    animation: slideDown 0.18s ease-out;
+  }
+
+  .answer-panel.visible {
+    display: block;
+  }
+
+  .result-banner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+
+  .result-pill {
+    font-size: 0.84rem;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 6px;
+  }
+
+  .result-pill.right {
+    background-color: var(--green-bg);
+    color: var(--green-text);
+    border: 1px solid var(--green-border);
+  }
+
+  .result-pill.wrong {
+    background-color: var(--red-bg);
+    color: var(--red-text);
+    border: 1px solid var(--red-border);
+  }
+
+  .correct-label {
+    font-size: 0.92rem;
+    font-weight: 700;
+    color: var(--text-main);
+  }
+
+  .correct-label span {
+    color: var(--green-text);
+  }
+
+  .hidden {
+    display: none !important;
+  }
+
+  .no-results {
+    text-align: center;
+    padding: 40px 20px;
+    border: 1px dashed var(--border-strong);
+    border-radius: 10px;
+    color: var(--text-muted);
+  }
+
+  @keyframes slideDown {
+    from { opacity: 0; transform: translateY(-4px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @media (max-width: 640px) {
+    .header-wrap { flex-direction: column; align-items: flex-start; }
+    .options-list { grid-template-columns: 1fr; }
+    input[type="text"] { width: 100%; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-wrap">
+    <div class="title-block">
+      <h1>6-Month CA Rapid Revision (Part 4: Slides #451–#600) — Repeated Revision Questions (22 Questions)</h1>
+      <p>Jeevitha Ma'am Session (English) | Questions Overlapping with Previous 14 HTML Files</p>
+    </div>
+    <div class="tabs">
+      <button class="tab-btn active" id="btn-learn" onclick="setMode('learn')">📖 Learn Mode</button>
+      <button class="tab-btn" id="btn-practice" onclick="setMode('practice')">✍️ Practice MCQs</button>
+    </div>
+  </div>
+</header>
+
+<div class="main-container">
+  <div class="controls-bar">
+    <div class="filter-group">
+      <select id="catSelect" onchange="render()">
+        <option value="ALL">All Categories (22)</option>
+      </select>
+      <input type="text" id="searchBox" placeholder="Search question, answer, or extra points..." oninput="render()">
+    </div>
+    <div class="score-group">
+      <span class="pill">Attempted: <span id="cnt-attempted">0</span>/22</span>
+      <span class="pill green">Correct: <span id="cnt-correct">0</span></span>
+      <span class="pill red">Wrong: <span id="cnt-wrong">0</span></span>
+      <button class="action-btn" onclick="resetAll()">Reset Practice</button>
+    </div>
+  </div>
+
+  <div class="learn-subbar" id="learnSubbar">
+    <span id="showingCount">Showing 22 questions</span>
+    <button class="action-btn" id="blurBtn" onclick="toggleBlur()">👁️ Hide Answers (Self-Test)</button>
+  </div>
+
+  <div id="cardsContainer"></div>
+</div>
+
+<script>
+const QUESTIONS = [{"id": 1, "slide_q": 451, "cat": "Banking, Finance & Regulatory", "q": "From which date do SEBI's revised Foreign Portfolio Investor (FPI) KYC review periodicity rules come into effect?", "opts": ["1 October 2026", "1 December 2026", "1 January 2027", "1 April 2027"], "ans": 1, "p1": "Repeated From Previous Sources: Veranda Part 3 (New) Q.91 — SEBI's revised FPI KYC review periodicity circular effective 1 December 2026.", "p2": "Exam Fact: Revises periodic KYC review timelines for eligible FPIs registered under SEBI (FPI) Regulations, 2019."}, {"id": 2, "slide_q": 453, "cat": "Banking, Finance & Regulatory", "q": "Under SEBI's revised FPI KYC rules, what is the KYC review cycle (in years) for SWAGAT-FI (Single Window Automatic & Generalised Access for Trusted Foreign Investors)?", "opts": ["3 years", "5 years", "8 years", "10 years"], "ans": 3, "p1": "Repeated From Previous Sources: Veranda Part 3 (New) Q.91 — 10-year KYC review cycle for SWAGAT-FI under SEBI's FPI KYC rules.", "p2": "Exam Fact: SWAGAT-FI streamlines market access and compliance for sovereign wealth funds, central banks, and regulated public retail funds."}, {"id": 3, "slide_q": 456, "cat": "Economy, GDP & Corporate Deals", "q": "In June 2026, the Department for Promotion of Industry and Internal Trade (DPIIT) released a new series of Wholesale Price Index (WPI) and Producer Price Index (PPI) with which base year?", "opts": ["2017–18", "2011–12", "2022–23", "2020–21"], "ans": 2, "p1": "Repeated From Previous Sources: Priya Ma'am 6M GA (New) Q.40 — WPI & PPI revised base year 2022–23.", "p2": "Exam Fact: DPIIT operates under the Ministry of Commerce and Industry (Union Minister: Piyush Goyal)."}, {"id": 4, "slide_q": 459, "cat": "Government Schemes & Initiatives", "q": "Regarding the Union Cabinet's Capex Support Scheme to promote Critical Mineral Processing: (1) Total outlay is ₹2,814 crore; (2) Capital subsidy offered is 30% (not 50%); (3) Focuses on Lithium and Nickel processing; (4) Maximum support per Nickel beneficiary is ₹900 crore. Which statements are correct?", "opts": ["1 and 2 only", "1, 3, and 4 only (Capital subsidy offered is 30%)", "2 and 3 only", "All 1, 2, 3, and 4"], "ans": 1, "p1": "Repeated From Previous Sources: Veranda Part 4 Q.463 — ₹2,814 crore Capex Support Scheme for Critical Mineral Processing (Lithium & Nickel, ₹900 cr cap).", "p2": "Exam Fact: Targets domestic processing of Lithium and Nickel with up to ₹900 crore cap per Nickel beneficiary."}, {"id": 5, "slide_q": 463, "cat": "Government Schemes & Initiatives", "q": "Which two critical minerals are specifically targeted under the ₹2,814 crore Critical Mineral Processing Capex Support Scheme?", "opts": ["Cobalt and Graphite", "Lithium and Nickel", "Copper and Rare Earth Elements", "Titanium and Vanadium"], "ans": 1, "p1": "Repeated From Previous Sources: Veranda Part 4 Q.459 — Lithium and Nickel targeted under ₹2,814 crore Critical Mineral Processing scheme.", "p2": "Exam Fact: Total scheme outlay is ₹2,814 crore."}, {"id": 6, "slide_q": 469, "cat": "Government Schemes & Initiatives", "q": "Under the ₹2,814 crore Critical Mineral Processing Capex Support Scheme, what is the maximum capital support per Nickel beneficiary?", "opts": ["₹1,200 crore", "₹500 crore", "₹750 crore", "₹900 crore"], "ans": 3, "p1": "Repeated From Previous Sources: Veranda Part 4 Q.459 — ₹900 crore maximum capex support per Nickel beneficiary.", "p2": "Exam Fact: Accelerates domestic battery-grade nickel sulphate refining capacity."}, {"id": 7, "slide_q": 475, "cat": "Government Schemes & Initiatives", "q": "After the latest cabinet/ministerial approval, how many total projects have been approved under the Electronics Component Manufacturing Scheme (ECMS)?", "opts": ["85", "118", "150", "218"], "ans": 1, "p1": "Repeated From Previous Sources: Veranda Part 4 Q.529 — 118 total approved projects under Electronics Component Manufacturing Scheme (ECMS).", "p2": "Exam Fact: Strengthens domestic value addition in passive and active electronic components (PCBs, camera modules, lithium cells)."}, {"id": 8, "slide_q": 489, "cat": "Infrastructure, Ports & Energy", "q": "Under the ₹14,500 crore Viability Gap Funding (VGF) scheme, what capacity of Hydro Pumped Storage Plants (PSPs) is targeted to be developed?", "opts": ["92 GW", "30 GW", "45 GW", "60 GW"], "ans": 3, "p1": "Repeated From Previous Sources: Veranda Part 4 Q.522 — 60 GW Hydro Pumped Storage capacity under ₹14,500 crore VGF scheme.", "p2": "Exam Fact: Hydro pumped storage acts as a giant water battery to balance intermittent solar and wind power."}, {"id": 9, "slide_q": 501, "cat": "Infrastructure, Ports & Energy", "q": "What is NTPC Limited's long-term total installed power generation capacity target by the year 2037?", "opts": ["300 GW", "149 GW", "200 GW", "250 GW"], "ans": 3, "p1": "Repeated From Previous Sources: Veranda Part 4 Q.484 — NTPC's 250 GW long-term installed capacity target by 2037.", "p2": "Exam Fact: Includes major expansion in solar, wind, pumped hydro, and nuclear energy."}, {"id": 10, "slide_q": 514, "cat": "Infrastructure, Ports & Energy", "q": "Under the ₹14,500 crore Viability Gap Funding (VGF) scheme, how much energy storage capacity is targeted to come specifically from Battery Energy Storage Systems (BESS)?", "opts": ["30 GW", "15 GW", "45 GW", "60 GW"], "ans": 0, "p1": "Repeated From Previous Sources: Veranda Part 4 Q.489 — 30 GW BESS storage capacity under ₹14,500 crore VGF scheme.", "p2": "Exam Fact: VGF provides up to 30%–40% capital cost grant to make grid-scale battery storage commercially viable."}, {"id": 11, "slide_q": 520, "cat": "Infrastructure, Ports & Energy", "q": "In which Indian state is Vizhinjam International Seaport (India's first deep-water container transshipment port) located?", "opts": ["Karnataka", "Tamil Nadu", "Kerala", "Andhra Pradesh"], "ans": 2, "p1": "Repeated From Previous Sources: Veranda Part 1 (New) Q.34 & Veranda Part 2 (New) Q.2 — Vizhinjam International Seaport located in Kerala.", "p2": "Exam Fact: Natural draft of ~20 meters allows ultra-large container vessels (ULCVs) to berth without heavy dredging."}, {"id": 12, "slide_q": 522, "cat": "Infrastructure, Ports & Energy", "q": "Regarding the ₹14,500 crore Viability Gap Funding (VGF) Scheme for Energy Storage: (1) Aims to build 92 GW total storage capacity; (2) Includes 60 GW from Hydro Pumped Storage Plants; (3) BESS share is 30 GW (not higher); (4) Implementation period is 5 years (2026–2031). Which statements are correct?", "opts": ["1 and 2 only (5-year tenure 2026–2031; BESS share 30 GW)", "1, 2, and 3 only", "2 and 4 only", "All 1, 2, 3, and 4"], "ans": 0, "p1": "Repeated From Previous Sources: Veranda Part 4 Q.489 — ₹14,500 crore Viability Gap Funding (VGF) scheme (92 GW total, 60 GW Hydro PSP, 2026–2031).", "p2": "Exam Fact: Implemented by the Ministry of Power (Union Minister: Manohar Lal Khattar)."}, {"id": 13, "slide_q": 529, "cat": "Government Schemes & Initiatives", "q": "Regarding the Electronics Component Manufacturing Scheme (ECMS): (1) MeitY approved 12 new projects worth ₹7,503 crore; (2) Total approved projects stand at 118 across 16 states (not 218 across 26 states); (3) Creates ~7,000 direct jobs; (4) Covers copper foil and iron/alloy materials. Which statements are correct?", "opts": ["All 1, 2, 3, and 4", "1 and 2 only", "2 and 3 only", "1, 3, and 4 only (118 total projects across 16 states)"], "ans": 3, "p1": "Repeated From Previous Sources: Veranda Part 4 Q.475 — ECMS 118 total projects across 16 states.", "p2": "Exam Fact: Administered by the Ministry of Electronics and Information Technology (MeitY)."}, {"id": 14, "slide_q": 536, "cat": "Environment, Parks & GI Tags", "q": "From which Indian state did the traditional clay-based percussion instrument 'Mandar' receive a GI tag?", "opts": ["Odisha", "Chhattisgarh", "Jharkhand", "Bihar"], "ans": 2, "p1": "Repeated From Previous Sources: Priya Ma'am 6M GA (New) Q.93 — Mandar traditional percussion instrument of Jharkhand receiving GI tag.", "p2": "Exam Fact: Mandar is central to tribal folk music and Karma/Sarhul dances in Jharkhand."}, {"id": 15, "slide_q": 552, "cat": "Awards & Honours", "q": "The 'Kochon Prize' for combating tuberculosis (received by Indian non-profit REACH) is presented by a foundation from which country?", "opts": ["Switzerland", "Japan", "South Korea", "Sweden"], "ans": 2, "p1": "Repeated From Previous Sources: Veranda Part 4 Q.598 — Kochon Prize from South Korea received by Indian non-profit REACH.", "p2": "Exam Fact: REACH (Resource Group for Education and Advocacy for Community Health) is headquartered in Chennai, Tamil Nadu."}, {"id": 16, "slide_q": 554, "cat": "Environment, Parks & GI Tags", "q": "Which two agricultural spice products from Unjha, Gujarat received Geographical Indication (GI) tags?", "opts": ["Unjha Cumin (Jeera) and Unjha Fennel (Saunf)", "Unjha Fenugreek and Coriander", "Unjha Turmeric and Ginger", "Unjha Mustard and Sesame"], "ans": 0, "p1": "Repeated From Previous Sources: Priya Ma'am 6M GA (New) Q.55 — Unjha Cumin (Jeera) and Unjha Fennel (Saunf) of Gujarat receiving GI tags.", "p2": "Exam Fact: Unjha is Asia's largest regulated spice market yard."}, {"id": 17, "slide_q": 555, "cat": "Awards & Honours", "q": "Renowned theoretical physicist Ashoke Sen became the first Indian to receive the Oskar Klein Medal. Which academic chair does he hold at ICTS Bengaluru?", "opts": ["C. V. Raman Chair", "ICTS-Infosys Madhava Chair", "Homi Bhabha Chair", "S. N. Bose Chair"], "ans": 1, "p1": "Repeated From Previous Sources: Veranda Part 4 Q.581 — Physicist Ashoke Sen winning the Oskar Klein Medal.", "p2": "Exam Fact: The Oskar Klein Medal is awarded annually by Stockholm University and the Royal Swedish Academy of Sciences."}, {"id": 18, "slide_q": 558, "cat": "Awards & Honours", "q": "Who from Prasar Bharati won the ABU Broadcast Engineering Excellence Award 2026?", "opts": ["N. Nandakumar Singh", "Gaurav Dwivedi", "Navneet Kumar Sehgal", "Mayank Agrawal"], "ans": 0, "p1": "Repeated From Previous Sources: Priya Ma'am 6M GA (New) Q.218 & Veranda Part 2 (New) Q.218 — N. Nandakumar Singh winning ABU Broadcast Engineering Excellence Award 2026.", "p2": "Exam Fact: Prasar Bharati (India's public broadcaster comprising Doordarshan and Akashvani) was established on 23 November 1997."}, {"id": 19, "slide_q": 581, "cat": "Awards & Honours", "q": "Theoretical physicist Ashoke Sen became the first Indian physicist to win which prestigious Swedish physics medal?", "opts": ["Ramanujan Medal", "Boltzmann Medal", "Dirac Medal", "Oskar Klein Medal"], "ans": 3, "p1": "Repeated From Previous Sources: Veranda Part 4 Q.555 — Ashoke Sen first Indian physicist to win the Oskar Klein Medal.", "p2": "Exam Fact: Prof. Ashoke Sen is also a recipient of the Fundamental Physics Prize and Padma Bhushan."}, {"id": 20, "slide_q": 587, "cat": "Awards & Honours", "q": "Prof. Mahesh Kakde (IISc Bengaluru), winner of the 2026 SASTRA / ICTP Ramanujan Prize, is which numbered Indian recipient of the award?", "opts": ["3rd", "5th", "4th", "6th"], "ans": 1, "p1": "Repeated From Previous Sources: Priya Ma'am 6M GA (New) Q.108 — Prof. Mahesh Kakde (IISc Bengaluru) winning the 2026 Ramanujan Prize.", "p2": "Exam Fact: Carries a cash prize of USD 10,000 for young mathematicians from developing countries."}, {"id": 21, "slide_q": 594, "cat": "Environment, Parks & GI Tags", "q": "From which Indian state did 'Ambaji Mohanthal Prasad' receive a Geographical Indication (GI) tag?", "opts": ["Gujarat", "Rajasthan", "Maharashtra", "Madhya Pradesh"], "ans": 0, "p1": "Repeated From Previous Sources: Priya Ma'am 6M GA (New) Q.100 — Ambaji Mohanthal Prasad of Gujarat receiving GI tag.", "p2": "Exam Fact: Traditional besan-ghee sweet offered at the Ambaji Shakti Peeth."}, {"id": 22, "slide_q": 598, "cat": "Awards & Honours", "q": "Which Indian non-profit organization working on tuberculosis elimination received the 2026 Kochon Prize?", "opts": ["REACH (Resource Group for Education and Advocacy for Community Health)", "PRATHAM Education Foundation", "Akshaya Patra Foundation", "Goonj"], "ans": 0, "p1": "Repeated From Previous Sources: Veranda Part 4 Q.552 — Indian non-profit REACH winning the 2026 Kochon Prize.", "p2": "Exam Fact: India's National TB Elimination Programme (NTEP) aims to eliminate tuberculosis."}];
+
+let mode = 'learn';
+let hideAnswers = false;
+let userAnswers = {};
+
+function setup() {
+  const select = document.getElementById('catSelect');
+  const uniqueCats = [...new Set(QUESTIONS.map(q => q.cat))];
+  uniqueCats.forEach(cat => {
+    const count = QUESTIONS.filter(q => q.cat === cat).length;
+    const option = document.createElement('option');
+    option.value = cat;
+    option.textContent = `${cat} (${count})`;
+    select.appendChild(option);
+  });
+  refreshStats();
+  render();
+}
+
+function setMode(newMode) {
+  mode = newMode;
+  document.getElementById('btn-learn').classList.toggle('active', mode === 'learn');
+  document.getElementById('btn-practice').classList.toggle('active', mode === 'practice');
+  document.getElementById('blurBtn').classList.toggle('hidden', mode !== 'learn');
+  render();
+}
+
+function toggleBlur() {
+  hideAnswers = !hideAnswers;
+  document.getElementById('blurBtn').textContent = hideAnswers
+    ? '👁️ Show All Answers'
+    : '👁️ Hide Answers (Self-Test)';
+  render();
+}
+
+function getFilteredList() {
+  const cat = document.getElementById('catSelect').value;
+  const term = document.getElementById('searchBox').value.trim().toLowerCase();
+
+  return QUESTIONS.filter(item => {
+    if (cat !== 'ALL' && item.cat !== cat) return false;
+    if (!term) return true;
+    return (
+      item.q.toLowerCase().includes(term) ||
+      item.opts.some(o => o.toLowerCase().includes(term)) ||
+      item.p1.toLowerCase().includes(term) ||
+      item.p2.toLowerCase().includes(term) ||
+      String(item.slide_q).includes(term)
+    );
+  });
+}
+
+function render() {
+  const list = getFilteredList();
+  document.getElementById('showingCount').textContent = `Showing ${list.length} question${list.length === 1 ? '' : 's'}`;
+  const container = document.getElementById('cardsContainer');
+
+  if (list.length === 0) {
+    container.innerHTML = `<div class="no-results">No questions match your filter. Clear search or switch category.</div>`;
+    return;
+  }
+
+  container.innerHTML = list
+    .map(item => (mode === 'learn' ? buildLearnCard(item) : buildPracticeCard(item)))
+    .join('');
+}
+
+function buildLearnCard(item) {
+  const answerText = item.opts[item.ans];
+  const blurClass = hideAnswers ? 'blurred' : '';
+  return `
+    <div class="card">
+      <div class="card-top">
+        <div class="badge-group">
+          <span class="badge-num">Q.${item.id}</span>
+          <span class="badge-seq">Slide #${item.slide_q}</span>
+        </div>
+        <span class="badge-cat">${item.cat}</span>
+      </div>
+      <div class="question-text">${item.q}</div>
+      <div class="learn-answer-box ${blurClass}" onclick="this.classList.remove('blurred')" title="Click to reveal answer">
+        ✓ Answer: ${answerText}
+      </div>
+      <div class="exam-points">
+        <div class="exam-points-heading">📌 2 Exam-Related Extra Points</div>
+        <ul>
+          <li>${item.p1}</li>
+          <li>${item.p2}</li>
+        </ul>
+      </div>
+    </div>
+  `;
+}
+
+function buildPracticeCard(item) {
+  const record = userAnswers[item.id];
+  const isAnswered = record !== undefined;
+  const letters = ['A', 'B', 'C', 'D'];
+
+  const optsMarkup = item.opts
+    .map((opt, idx) => {
+      let cls = '';
+      if (isAnswered) {
+        if (idx === item.ans) cls = 'correct';
+        else if (idx === record.picked && !record.correct) cls = 'wrong';
+      }
+      return `
+        <button class="option-btn ${cls}" ${isAnswered ? 'disabled' : ''} onclick="selectOption(${item.id}, ${idx})">
+          <span class="opt-circle">${letters[idx]}</span>
+          <span>${opt}</span>
+        </button>
+      `;
+    })
+    .join('');
+
+  const bannerMarkup = isAnswered
+    ? record.correct
+      ? `<span class="result-pill right">✓ Correct!</span>`
+      : `<span class="result-pill wrong">✕ Wrong Answer</span>`
+    : '';
+
+  return `
+    <div class="card" id="card-${item.id}">
+      <div class="card-top">
+        <div class="badge-group">
+          <span class="badge-num">Q.${item.id}</span>
+          <span class="badge-seq">Slide #${item.slide_q}</span>
+        </div>
+        <span class="badge-cat">${item.cat}</span>
+      </div>
+      <div class="question-text">${item.q}</div>
+      <div class="options-list">
+        ${optsMarkup}
+      </div>
+      <div class="answer-panel ${isAnswered ? 'visible' : ''}" id="panel-${item.id}">
+        <div class="result-banner">
+          ${bannerMarkup}
+          <div class="correct-label">Correct Answer: <span>${letters[item.ans]}. ${item.opts[item.ans]}</span></div>
+        </div>
+        <div class="exam-points">
+          <div class="exam-points-heading">📌 2 Exam-Related Extra Points</div>
+          <ul>
+            <li>${item.p1}</li>
+            <li>${item.p2}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+function selectOption(qId, pickedIdx) {
+  if (userAnswers[qId] !== undefined) return;
+  const item = QUESTIONS.find(q => q.id === qId);
+  if (!item) return;
+
+  userAnswers[qId] = {
+    picked: pickedIdx,
+    correct: pickedIdx === item.ans
+  };
+
+  refreshStats();
+  const cardEl = document.getElementById(`card-${qId}`);
+  if (cardEl) {
+    cardEl.outerHTML = buildPracticeCard(item);
+  }
+}
+
+function refreshStats() {
+  const keys = Object.keys(userAnswers);
+  const attempted = keys.length;
+  const correct = keys.filter(k => userAnswers[k].correct).length;
+  const wrong = attempted - correct;
+
+  document.getElementById('cnt-attempted').textContent = attempted;
+  document.getElementById('cnt-correct').textContent = correct;
+  document.getElementById('cnt-wrong').textContent = wrong;
+}
+
+function resetAll() {
+  userAnswers = {};
+  refreshStats();
+  render();
+}
+
+setup();
+</script>
+</body>
+</html>
