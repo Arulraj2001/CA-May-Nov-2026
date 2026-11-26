@@ -3,8 +3,29 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="robots" content="noindex, nofollow">
-<title>All-in-One Study Hub — Banking, Static GK &amp; Current Affairs</title>
+<meta name="robots" content="index, follow">
+<title>Banking Awareness, Static GK &amp; Current Affairs 2026 MCQs | SBI &amp; IBPS Study Hub</title>
+<meta name="description" content="Free interactive study hub with 2,832 MCQs and flashcards for SBI Clerk Mains and IBPS PO/Clerk: Banking Awareness, Static GK (Aug–Oct 2026), and 6-Month Current Affairs.">
+<meta name="keywords" content="Banking Awareness MCQs 2026, Static GK 2026, SBI Clerk Mains GA, IBPS Mains General Awareness, Veranda 6 Month Current Affairs, CA May Nov 2026">
+<meta name="author" content="Arulraj2001">
+<link rel="canonical" href="https://arulraj2001.github.io/CA-May-Nov-2026/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CA May–Nov 2026 Study Hub">
+<meta property="og:title" content="Banking Awareness, Static GK &amp; Current Affairs 2026 MCQs | Study Hub">
+<meta property="og:description" content="2,832 interactive MCQs &amp; flashcards across 22 packs: Banking Awareness, Static GK, SBI Clerk Mains 6M GA, and Veranda 6M Current Affairs.">
+<meta property="og:url" content="https://arulraj2001.github.io/CA-May-Nov-2026/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Banking Awareness, Static GK &amp; Current Affairs 2026 MCQs">
+<meta name="twitter:description" content="2,832 interactive MCQs &amp; flashcards for SBI &amp; IBPS Mains preparation.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "CA May–Nov 2026 Study Hub",
+  "url": "https://arulraj2001.github.io/CA-May-Nov-2026/",
+  "description": "Interactive Learn, Practice, and Quick Quiz hub with 2,832 MCQs and flashcards for Banking Awareness, Static GK, and Current Affairs (May–Nov 2026)."
+}
+</script>
 <style>
   :root {
     --bg-page: #f8fafc;
@@ -823,6 +844,15 @@
     <div class="pagination-bar" id="topPagination"></div>
     <div class="cards-list" id="cardsContainer"></div>
     <div class="pagination-bar" id="bottomPagination"></div>
+    <footer style="margin-top:28px;padding-top:14px;border-top:1px solid var(--border-light);font-size:0.8rem;color:var(--text-muted);display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;align-items:center;">
+      <span>Browse static printable archives:</span>
+      <nav style="display:flex;flex-wrap:wrap;gap:12px;">
+        <a href="static-gk.html" style="color:var(--primary);text-decoration:none;font-weight:600;">Static GK (794)</a>
+        <a href="banking-awareness.html" style="color:var(--primary);text-decoration:none;font-weight:600;">Banking Awareness (788)</a>
+        <a href="sbi-clerk-mains-ga.html" style="color:var(--primary);text-decoration:none;font-weight:600;">SBI Clerk Mains 6M GA (266)</a>
+        <a href="veranda-6m-ca.html" style="color:var(--primary);text-decoration:none;font-weight:600;">Veranda 6M CA (984)</a>
+      </nav>
+    </footer>
   </main>
 </div>
 
@@ -870,6 +900,13 @@ function loadState() {
     if (rawP) {
       prefs = { ...prefs, ...JSON.parse(rawP) };
     }
+  } catch (e) {}
+
+  try {
+    const params = new URLSearchParams(window.location.search);
+    if (params.get("view")) prefs.view = params.get("view");
+    const m = params.get("mode");
+    if (m === "learn" || m === "practice" || m === "quiz") prefs.mode = m;
   } catch (e) {}
 
   if (prefs.dark) document.body.classList.add("dark");

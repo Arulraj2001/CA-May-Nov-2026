@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://arulraj2001.github.io/CA-May-Nov-2026/sitemap.xml

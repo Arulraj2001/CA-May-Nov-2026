@@ -6,14 +6,44 @@ modes, progress persistence (localStorage), and duplicate tagging.
 
 from __future__ import annotations
 
+import html as html_lib
 import json
 import re
+from datetime import date
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
 SOURCES_DIR = ROOT / "sources"
 OUTPUT_FILE = ROOT / "All_In_One_Study_Hub.html"
 PAGES_INDEX_FILE = ROOT / "index.html"
+SITE_URL = "https://arulraj2001.github.io/CA-May-Nov-2026"
+
+STATIC_GROUP_PAGES = [
+    {
+        "group": "Static GK",
+        "slug": "static-gk.html",
+        "title": "Static GK 2026 MCQs & Verified Flashcards | SBI & IBPS Mains",
+        "description": "794 Static GK questions and verified flashcards covering Banking HQ, Abbreviations, Indian States, National Parks, Ramsar Sites, Countries & Currencies (Aug–Oct 2026).",
+    },
+    {
+        "group": "Banking Awareness",
+        "slug": "banking-awareness.html",
+        "title": "Banking Awareness 2026 MCQs (Fact-Checked & PDF Bank) | SBI & IBPS",
+        "description": "788 Banking Awareness MCQs including 2026 fact-checked updates (RBI rates, appointments, schemes) and Banking Awareness PDF New & Repeated questions.",
+    },
+    {
+        "group": "SBI Clerk Mains 6M GA",
+        "slug": "sbi-clerk-mains-ga.html",
+        "title": "SBI Clerk Mains 6-Month General Awareness (GA) MCQs 2026",
+        "description": "266 SBI Clerk Mains 6-Month General Awareness MCQs (New & Repeated) with detailed exam facts for banking mains preparation.",
+    },
+    {
+        "group": "Veranda 6M CA Rapid Revision",
+        "slug": "veranda-6m-ca.html",
+        "title": "Veranda 6-Month Current Affairs Rapid Revision (Parts 1–6) MCQs",
+        "description": "984 Current Affairs MCQs across Parts 1 to 6 (Slides #1–#1000) covering May–Nov 2026 banking, economy, national, international, and sports news.",
+    },
+]
 
 # Ordered pack definitions mapped to renamed files in sources/
 PACK_SPECS = [
@@ -390,8 +420,29 @@ HTML_TEMPLATE = r"""<!DOCTYPE html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="robots" content="noindex, nofollow">
-<title>All-in-One Study Hub — Banking, Static GK &amp; Current Affairs</title>
+<meta name="robots" content="index, follow">
+<title>Banking Awareness, Static GK &amp; Current Affairs 2026 MCQs | SBI &amp; IBPS Study Hub</title>
+<meta name="description" content="Free interactive study hub with 2,832 MCQs and flashcards for SBI Clerk Mains and IBPS PO/Clerk: Banking Awareness, Static GK (Aug–Oct 2026), and 6-Month Current Affairs.">
+<meta name="keywords" content="Banking Awareness MCQs 2026, Static GK 2026, SBI Clerk Mains GA, IBPS Mains General Awareness, Veranda 6 Month Current Affairs, CA May Nov 2026">
+<meta name="author" content="Arulraj2001">
+<link rel="canonical" href="https://arulraj2001.github.io/CA-May-Nov-2026/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CA May–Nov 2026 Study Hub">
+<meta property="og:title" content="Banking Awareness, Static GK &amp; Current Affairs 2026 MCQs | Study Hub">
+<meta property="og:description" content="2,832 interactive MCQs &amp; flashcards across 22 packs: Banking Awareness, Static GK, SBI Clerk Mains 6M GA, and Veranda 6M Current Affairs.">
+<meta property="og:url" content="https://arulraj2001.github.io/CA-May-Nov-2026/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Banking Awareness, Static GK &amp; Current Affairs 2026 MCQs">
+<meta name="twitter:description" content="2,832 interactive MCQs &amp; flashcards for SBI &amp; IBPS Mains preparation.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "CA May–Nov 2026 Study Hub",
+  "url": "https://arulraj2001.github.io/CA-May-Nov-2026/",
+  "description": "Interactive Learn, Practice, and Quick Quiz hub with 2,832 MCQs and flashcards for Banking Awareness, Static GK, and Current Affairs (May–Nov 2026)."
+}
+</script>
 <style>
   :root {
     --bg-page: #f8fafc;
@@ -1210,6 +1261,15 @@ HTML_TEMPLATE = r"""<!DOCTYPE html>
     <div class="pagination-bar" id="topPagination"></div>
     <div class="cards-list" id="cardsContainer"></div>
     <div class="pagination-bar" id="bottomPagination"></div>
+    <footer style="margin-top:28px;padding-top:14px;border-top:1px solid var(--border-light);font-size:0.8rem;color:var(--text-muted);display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;align-items:center;">
+      <span>Browse static printable archives:</span>
+      <nav style="display:flex;flex-wrap:wrap;gap:12px;">
+        <a href="static-gk.html" style="color:var(--primary);text-decoration:none;font-weight:600;">Static GK (794)</a>
+        <a href="banking-awareness.html" style="color:var(--primary);text-decoration:none;font-weight:600;">Banking Awareness (788)</a>
+        <a href="sbi-clerk-mains-ga.html" style="color:var(--primary);text-decoration:none;font-weight:600;">SBI Clerk Mains 6M GA (266)</a>
+        <a href="veranda-6m-ca.html" style="color:var(--primary);text-decoration:none;font-weight:600;">Veranda 6M CA (984)</a>
+      </nav>
+    </footer>
   </main>
 </div>
 
@@ -1257,6 +1317,13 @@ function loadState() {
     if (rawP) {
       prefs = { ...prefs, ...JSON.parse(rawP) };
     }
+  } catch (e) {}
+
+  try {
+    const params = new URLSearchParams(window.location.search);
+    if (params.get("view")) prefs.view = params.get("view");
+    const m = params.get("mode");
+    if (m === "learn" || m === "practice" || m === "quiz") prefs.mode = m;
   } catch (e) {}
 
   if (prefs.dark) document.body.classList.add("dark");
@@ -1808,6 +1875,173 @@ render();
 """
 
 
+def render_static_group_page(page_spec: dict, packs_meta: list[dict], all_items: list[dict]) -> str:
+    """Render a static, search-engine-crawlable HTML archive page for a subject group."""
+    group = page_spec["group"]
+    group_packs = [p for p in packs_meta if p["group"] == group]
+    pack_map = {p["id"]: p for p in group_packs}
+    items = [it for it in all_items if it["pack"] in pack_map]
+    canonical = f"{SITE_URL}/{page_spec['slug']}"
+
+    # Build lightweight FAQPage JSON-LD from first 25 items for rich search results
+    faq_entities = []
+    for it in items[:25]:
+        ans_text = it["opts"][it["ans"]] if it["type"] == "mcq" else it["a"]
+        extra = " ".join(x for x in (it.get("p1", ""), it.get("p2", "")) if x)
+        full_ans = f"{ans_text}. {extra}".strip() if extra else ans_text
+        faq_entities.append(
+            {
+                "@type": "Question",
+                "name": it["q"],
+                "acceptedAnswer": {"@type": "Answer", "text": full_ans},
+            }
+        )
+    json_ld = json.dumps(
+        {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": faq_entities,
+        },
+        ensure_ascii=False,
+    ).replace("</", "<\\/")
+
+    sections_html = []
+    letters = ["A", "B", "C", "D", "E"]
+    for p in group_packs:
+        p_items = [it for it in items if it["pack"] == p["id"]]
+        cards = []
+        for it in p_items:
+            q_esc = html_lib.escape(it["q"])
+            cat_esc = html_lib.escape(it["cat"])
+            if it["type"] == "mcq":
+                ans_esc = html_lib.escape(it["opts"][it["ans"]])
+                opts_li = "".join(
+                    f'<li class="{"correct" if idx == it["ans"] else ""}"><strong>{letters[idx]}.</strong> {html_lib.escape(opt)}</li>'
+                    for idx, opt in enumerate(it["opts"])
+                )
+                opts_html = f'<ul class="opts">{opts_li}</ul>'
+            else:
+                ans_esc = html_lib.escape(it["a"])
+                opts_html = ""
+            notes = "".join(
+                f"<p class=\"note\">{html_lib.escape(n)}</p>"
+                for n in (it.get("p1", ""), it.get("p2", ""))
+                if n
+            )
+            badge = '<span class="badge">Fact-Check Updated</span>' if it["factUpdated"] else ""
+            cards.append(
+                f'<article class="q-item">'
+                f'<div class="meta"><span>#{it["num"]} • {cat_esc}</span>{badge}</div>'
+                f"<h3>{q_esc}</h3>"
+                f"{opts_html}"
+                f'<p class="ans"><strong>Answer:</strong> {ans_esc}</p>'
+                f"{notes}"
+                f"</article>"
+            )
+        sections_html.append(
+            f'<section id="{html_lib.escape(p["id"])}">'
+            f'<h2>{html_lib.escape(p["name"])} ({len(p_items)} Questions)</h2>'
+            f'{"".join(cards)}'
+            f"</section>"
+        )
+
+    toc_links = "".join(
+        f'<a href="#{html_lib.escape(p["id"])}">{html_lib.escape(p["name"])} ({p["count"]})</a>'
+        for p in group_packs
+    )
+    from urllib.parse import quote
+    hub_link = f"./?view={quote('GROUP:' + group)}&mode=practice"
+
+    return f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow">
+<title>{html_lib.escape(page_spec["title"])}</title>
+<meta name="description" content="{html_lib.escape(page_spec["description"])}">
+<link rel="canonical" href="{canonical}">
+<meta property="og:type" content="article">
+<meta property="og:title" content="{html_lib.escape(page_spec["title"])}">
+<meta property="og:description" content="{html_lib.escape(page_spec["description"])}">
+<meta property="og:url" content="{canonical}">
+<script type="application/ld+json">{json_ld}</script>
+<style>
+  body {{ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Arial, sans-serif; background: #f8fafc; color: #0f172a; line-height: 1.6; margin: 0; }}
+  header {{ background: #ffffff; border-bottom: 1px solid #e2e8f0; padding: 18px 20px; }}
+  .wrap {{ max-width: 960px; margin: 0 auto; padding: 0 16px; }}
+  .top-nav {{ display: flex; flex-wrap: wrap; gap: 12px; font-size: 0.86rem; margin-bottom: 10px; }}
+  .top-nav a {{ color: #1d4ed8; text-decoration: none; font-weight: 600; }}
+  h1 {{ font-size: 1.45rem; margin: 0 0 6px; }}
+  .cta {{ display: inline-block; margin-top: 10px; background: #1d4ed8; color: #fff; text-decoration: none; font-weight: 700; padding: 8px 14px; border-radius: 8px; font-size: 0.88rem; }}
+  .toc {{ display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0; }}
+  .toc a {{ background: #eff6ff; border: 1px solid #bfdbfe; color: #1d4ed8; text-decoration: none; padding: 4px 10px; border-radius: 999px; font-size: 0.82rem; font-weight: 600; }}
+  main {{ padding: 10px 0 48px; }}
+  h2 {{ font-size: 1.2rem; margin: 26px 0 12px; padding-bottom: 6px; border-bottom: 2px solid #e2e8f0; }}
+  .q-item {{ background: #fff; border: 1px solid #e2e8f0; border-radius: 10px; padding: 14px 16px; margin-bottom: 12px; }}
+  .meta {{ display: flex; justify-content: space-between; font-size: 0.78rem; color: #64748b; margin-bottom: 6px; }}
+  .badge {{ background: #fffbeb; border: 1px solid #f59e0b; color: #92400e; padding: 1px 7px; border-radius: 5px; font-weight: 700; }}
+  h3 {{ font-size: 1rem; margin: 0 0 8px; }}
+  .opts {{ list-style: none; padding: 0; margin: 0 0 8px; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 6px; }}
+  .opts li {{ background: #f1f5f9; border: 1px solid #e2e8f0; padding: 5px 9px; border-radius: 6px; font-size: 0.88rem; }}
+  .opts li.correct {{ background: #f0fdf4; border-color: #22c55e; color: #15803d; font-weight: 600; }}
+  .ans {{ margin: 4px 0; color: #15803d; font-size: 0.92rem; }}
+  .note {{ margin: 4px 0 0; font-size: 0.86rem; color: #475569; }}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <nav class="top-nav">
+      <a href="./">← Interactive Study Hub</a>
+      <a href="static-gk.html">Static GK</a>
+      <a href="banking-awareness.html">Banking Awareness</a>
+      <a href="sbi-clerk-mains-ga.html">SBI Clerk Mains GA</a>
+      <a href="veranda-6m-ca.html">Veranda 6M CA</a>
+    </nav>
+    <h1>{html_lib.escape(page_spec["title"])}</h1>
+    <p style="margin:0;color:#475569;font-size:0.92rem;">{html_lib.escape(page_spec["description"])}</p>
+    <a class="cta" href="{hub_link}">✍️ Open {html_lib.escape(group)} in Interactive Practice Mode →</a>
+  </div>
+</header>
+<main class="wrap">
+  <div class="toc">{toc_links}</div>
+  {"".join(sections_html)}
+</main>
+</body>
+</html>
+"""
+
+
+def write_seo_files(packs_meta: list[dict], all_items: list[dict]) -> None:
+    """Write static subject pages, robots.txt, and sitemap.xml for search indexing."""
+    today = date.today().isoformat()
+    sitemap_urls = [f"{SITE_URL}/"]
+
+    for page_spec in STATIC_GROUP_PAGES:
+        out_path = ROOT / page_spec["slug"]
+        out_path.write_text(
+            render_static_group_page(page_spec, packs_meta, all_items),
+            encoding="utf-8",
+        )
+        sitemap_urls.append(f"{SITE_URL}/{page_spec['slug']}")
+
+    robots_txt = f"User-agent: *\nAllow: /\n\nSitemap: {SITE_URL}/sitemap.xml\n"
+    (ROOT / "robots.txt").write_text(robots_txt, encoding="utf-8")
+
+    url_entries = "\n".join(
+        f"  <url>\n    <loc>{u}</loc>\n    <lastmod>{today}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>{'1.0' if u.endswith('/') else '0.8'}</priority>\n  </url>"
+        for u in sitemap_urls
+    )
+    sitemap_xml = (
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+        f"{url_entries}\n"
+        "</urlset>\n"
+    )
+    (ROOT / "sitemap.xml").write_text(sitemap_xml, encoding="utf-8")
+
+
 def main() -> None:
     packs_meta, all_items = build_dataset()
     packs_json = json.dumps(packs_meta, ensure_ascii=False).replace("</", "<\\/")
@@ -1818,10 +2052,11 @@ def main() -> None:
     )
     OUTPUT_FILE.write_text(html, encoding="utf-8")
     PAGES_INDEX_FILE.write_text(html, encoding="utf-8")
+    write_seo_files(packs_meta, all_items)
 
     dup_copies = sum(1 for it in all_items if it["isDupCopy"])
     fact_count = sum(1 for it in all_items if it["factUpdated"])
-    print(f"Built {OUTPUT_FILE.name} & {PAGES_INDEX_FILE.name}")
+    print(f"Built {OUTPUT_FILE.name}, {PAGES_INDEX_FILE.name}, robots.txt, sitemap.xml, and {len(STATIC_GROUP_PAGES)} static SEO pages")
     print(f"  Packs: {len(packs_meta)}")
     print(f"  Total items: {len(all_items)}")
     print(f"  Unique questions: {len(all_items) - dup_copies} (cross-pack duplicate copies: {dup_copies})")
